@@ -67,9 +67,13 @@ module.exports = {
       'vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js',
       'vendor/angular-ui-router/release/angular-ui-router.js',
       'vendor/angular-ui-utils/modules/route/route.js',
+      'vendor/jquery/dist/jquery.min.js',
+      'vendor/lodash/lodash.min.js',
       'vendor/angular-xeditable/dist/js/xeditable.js',
       'vendor/sugar/release/sugar.min.js',
-      'vendor/ckeditor/ckeditor.js'
+      'vendor/ckeditor/ckeditor.js',
+      'vendor/typeahead.js/dist/typeahead.bundle.min.js',
+      'vendor/angular-typeahead/angular-typeahead.min.js'
     ],
     dirs: [
       'vendor/ckeditor/**'

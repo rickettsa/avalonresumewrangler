@@ -2,7 +2,8 @@
   <!-- Input Group -->
   <div class="input-group">
     <!-- Query -->
-    <input type="text" class="form-control" placeholder="Search by title, keyword, ID and more..." ng-model="query" options="typeaheadOptions" datasets="typeaheadData" sf-typeahead autofocus>
+    <!-- <input type="text" class="form-control" placeholder="Search by title, keyword, ID and more..." ng-model="query" options="typeaheadOptions" datasets="typeaheadData" sf-typeahead autofocus> -->
+      <input type="text" class="form-control" placeholder="Search by skill, project, keyword, and more..." ng-model="query" autofocus>
 
       <!-- Clear Search Button -->
       <i class="fa fa-times" ng-click="clearSearch()" ng-show="query || query.length > 0"></i>

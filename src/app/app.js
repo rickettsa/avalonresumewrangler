@@ -4,7 +4,9 @@ angular.module( 'resumeWrangler', [
   'resumeWrangler.home',
   'resumeWrangler.edit',
   'ui.router',
-  'xeditable'
+  'ui.bootstrap',
+  'xeditable',
+  'siyfion.sfTypeahead'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {

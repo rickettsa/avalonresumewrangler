@@ -9,7 +9,10 @@
     "angular-ui-router": "~0.2",
     "angular-xeditable": "~0.1.8",
     "sugar": "~1.4.1",
-    "ckeditor": "~4.4.7"
+    "ckeditor": "~4.4.7",
+    "typeahead.js": "~0.11.1",
+    "angular-typeahead": "~0.2.2",
+    "lodash": "~3.7.0"
   },
   "dependencies": {}
 }
