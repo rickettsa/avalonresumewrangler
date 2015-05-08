@@ -3,6 +3,7 @@ angular.module( 'resumeWrangler', [
   'templates-common',
   'resumeWrangler.home',
   'resumeWrangler.edit',
+  'resumeWrangler.projects',
   'ui.router',
   'ui.bootstrap',
   'xeditable',
