@@ -68,6 +68,7 @@ module.exports = {
       'vendor/angular-ui-router/release/angular-ui-router.js',
       'vendor/angular-ui-utils/modules/route/route.js',
       'vendor/jquery/dist/jquery.min.js',
+      'vendor/jquery/dist/jquery.min.map',
       'vendor/lodash/lodash.min.js',
       'vendor/angular-xeditable/dist/js/xeditable.js',
       'vendor/sugar/release/sugar.min.js',

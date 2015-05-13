@@ -1,16 +1,16 @@
-<form class="ds-navbar-search-form" role="search" ng-submit="search()">
+<form class="ds-navbar-search-form" role="search" ng-submit="runSearch()" novalidate>
   <!-- Input Group -->
   <div class="input-group">
     <!-- Query -->
     <!-- <input type="text" class="form-control" placeholder="Search by title, keyword, ID and more..." ng-model="query" options="typeaheadOptions" datasets="typeaheadData" sf-typeahead autofocus> -->
-      <input type="text" class="form-control" placeholder="Search by skill, project, keyword, and more..." ng-model="query" autofocus>
+      <input type="text" class="form-control" ng-model="currentSearch.query" placeholder="Search by skill, project, keyword, and more..." autofocus>
 
       <!-- Clear Search Button -->
-      <i class="fa fa-times" ng-click="clearSearch()" ng-show="query || query.length > 0"></i>
+      <!-- <i class="fa fa-times" ng-click="clearSearch()" ng-show="query || query.length > 0"></i> -->
 
       <!-- Submit -->
       <span class="input-group-btn">
         <button class="btn btn-primary" type="submit">Go</button>
       </span>
     </div>
-  </form>
+</form>

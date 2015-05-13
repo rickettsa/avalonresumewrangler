@@ -10,6 +10,18 @@ angular.module('resumeWrangler')
     return {
       templateUrl: 'templates/search-form.tpl.html',
       restrict: 'E',
-      scope: {}
+      scope: {},
+      controller: function($scope, resumeCRUDService, $state, $rootScope){
+
+        $scope.searchResponse = {};
+        $scope.currentSearch = {};
+
+        $scope.runSearch = function(){
+          $rootScope.cachedSearch = {};
+          $rootScope.cachedSearch.query = $scope.currentSearch.query;
+          $state.go('searchResults', {}, { reload: false });
+        };
+
+      }
     };
   });

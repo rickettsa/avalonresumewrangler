@@ -23,5 +23,13 @@ angular.module('resumeWrangler')
       });
     };
 
+    service.runQuery = function(currentSearch){
+      return $http({
+        method: "GET",
+        cache: true,
+        url: 'http://private-b7b35-avalonresumesearch.apiary-mock.com/api/resumes/search'
+      });
+    };
+
     return service;
   });

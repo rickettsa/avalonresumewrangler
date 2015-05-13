@@ -23,23 +23,44 @@ angular.module( 'resumeWrangler.home', [
  * this way makes each module more "self-contained".
  */
 .config(function config( $stateProvider ) {
-  $stateProvider.state( 'home', {
-    url: '/home',
-    views: {
-      "main": {
-        controller: 'HomeCtrl',
-        templateUrl: 'home/home.tpl.html'
-      }
-    },
-    data:{ pageTitle: 'Home' }
-  });
-})
+    $stateProvider
+      .state('home', {
+        url: '/home',
+        views: {
+          "main": {
+            controller: 'HomeCtrl',
+            templateUrl: 'home/home.tpl.html'
+          }
+        },
+        resolve: {
+          searchResponse: function() {
+            return {};
+          }
+        },
+        data: {"pageTitle": "Home"}
+      })
+      .state('searchResults', {
+        url: '/search-results',
+        views: {
+          "main": {
+            controller: 'HomeCtrl',
+            templateUrl: 'home/home.searchResults.tpl.html'
+          }
+        },
+        resolve: {
+          searchResponse: function($rootScope, resumeCRUDService){
+            return resumeCRUDService.runQuery($rootScope.cachedSearch);
+          }
+        },
+        data: {"pageTitle": "Search Results"}
+      });
+  })
 
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'HomeCtrl', function HomeController( $scope ) {
-})
+.controller( 'HomeCtrl', function HomeController( $scope, searchResponse  ) {
+    $scope.searchResponse = searchResponse.data;
 
-;
+});
 
