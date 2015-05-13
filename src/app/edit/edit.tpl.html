@@ -6,6 +6,10 @@
         <div>
             <div class="contact-header">
                 <h1>{{ resume.ContactInfo.PersonName.GivenName }} {{ resume.ContactInfo.PersonName.FamilyName }}</h1>
+
+                <h4><a href="mailto:{{ resume.ContactInfo.ContactMethod.InternetEmailAddress }}">{{ resume.ContactInfo.ContactMethod.InternetEmailAddress }}</a></h4>
+                <h4><a href="tel:+{{ resume.ContactInfo.ContactMethod.Mobile }}">{{ resume.ContactInfo.ContactMethod.Mobile }}</a></h4>
+
                 <h3>{{ resume.EmploymentHistory.EmployerOrg.EmployerOrgName }}</h3>
                 <h4>{{ resume.EmploymentHistory.EmployerOrg.PositionHistory[0].Title }}</h4>
             </div>
