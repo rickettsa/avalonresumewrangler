@@ -45,8 +45,8 @@ angular.module( 'resumeWrangler.edit', [
       $scope.resume = resumeResponse.data.Resume.StructuredXMLResume;
 
       $scope.skillNames = _.pluck(skillsResponse.data.skills, 'dispName');
-      $scope.getSkillImg = function(skillName){
 
+      $scope.getSkillImg = function(skillName){
         var skillNode = _.findBySubVal($scope.skillsData, 'dispName', [skillName]);
         return '/assets/icons/' + skillNode[0].image;
       }

@@ -18,7 +18,7 @@ angular.module( 'resumeWrangler', [
     editableOptions.theme = 'bs3'; //xeditable option to use bootstrap 3
     var uiRouterDebug = 0;
 
-
+    //http://stackoverflow.com/questions/20745761/what-is-the-angular-ui-router-lifecycle-for-debugging-silent-errors/20786262#20786262
     if (uiRouterDebug){
       /* START ui.router debug */
       $rootScope.$on('$stateChangeStart',function(event, toState, toParams, fromState, fromParams){

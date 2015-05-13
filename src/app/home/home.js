@@ -60,7 +60,18 @@ angular.module( 'resumeWrangler.home', [
  * And of course we define a controller for our route.
  */
 .controller( 'HomeCtrl', function HomeController( $scope, searchResponse  ) {
-    $scope.searchResponse = searchResponse.data;
+    $scope.searchResponse = searchResponse.data.ResumeSearchResults.Resume || '';
+
+    $scope.getAvatarImgName = function(emailAddr){
+      var getEmailPrefix = function(str, group1){
+        return group1.toLowerCase();
+      };
+
+      var consultantNameAbbrev = emailAddr.replace(/^(.*)@.*$/, getEmailPrefix);
+      var imgSrc = '/assets/avatars/' + consultantNameAbbrev + '.jpg';
+      console.log(imgSrc);
+      return imgSrc;
+    }
 
 });
 

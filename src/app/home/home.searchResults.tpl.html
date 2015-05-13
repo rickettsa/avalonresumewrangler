@@ -1,2 +1,32 @@
+<div class="row">
+    <div class="col-md-12" ng-repeat="result in searchResponse">
+        <hr/>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="{{ getAvatarImgName( result.StructuredXMLResume.ContactInfo.ContactMethod.InternetEmailAddress ) }}"/>
+                    </div>
+                    <div class="col-md-10">
+                        <h1>{{ result.StructuredXMLResume.ContactInfo.PersonName.GivenName }} {{ result.StructuredXMLResume.ContactInfo.PersonName.FamilyName }}</h1>
+                        <h4>{{ result.StructuredXMLResume.ContactInfo.ContactMethod.InternetEmailAddress }}</h4>
+                        <h4>{{ result.StructuredXMLResume.ContactInfo.ContactMethod.Mobile }}</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h4><span class="header-label">{{ result.StructuredXMLResume.EmploymentHistory.EmployerOrg.PositionHistory[0].StartDate }}:</span> {{ result.StructuredXMLResume.EmploymentHistory.EmployerOrg.PositionHistory[0].Title }}, {{ result.StructuredXMLResume.EmploymentHistory.EmployerOrg.PositionHistory[0].OrgName.OrganizationName }}</h4>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Skill</th>
+                        <th>Experience</th>
+                    </tr>
+                    <tr ng-repeat="skill in result.StructuredXMLResume.Qualifications.Competency">
+                        <td>{{ skill.CompetencyDisplayName }}</td>
+                        <td>{{ skill.YearsExperience }}yrs</td>
+                    </tr>
+                </table>
+            </div>
+    </div>
+</div>
 
 {{ searchResponse }}
