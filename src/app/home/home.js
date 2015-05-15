@@ -43,7 +43,7 @@ angular.module( 'resumeWrangler.home', [
         url: '/search-results',
         views: {
           "main": {
-            controller: 'HomeCtrl',
+            controller: 'SearchResultsCtrl',
             templateUrl: 'home/home.searchResults.tpl.html'
           }
         },
@@ -59,10 +59,25 @@ angular.module( 'resumeWrangler.home', [
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'HomeCtrl', function HomeController( $scope, searchResponse, $rootScope  ) {
-    $scope.currentSearch = $rootScope.cachedSearch;
+.controller( 'HomeCtrl', function HomeController( $scope, $rootScope  ) {
 
-    $scope.searchResponse = searchResponse.data.ResumeSearchResults.Resume || '';
+})
+
+
+.controller( 'SearchResultsCtrl', function SearchResultsCtrl( $scope, searchResponse, $rootScope  ) {
+
+    $scope.searchResponse = searchResponse.data.ResumeSearchResults.Resume;
+    $scope.query = $rootScope.cachedSearch && $rootScope.cachedSearch.query ? $rootScope.cachedSearch.query : ''; //this is needed for 1st view of search results, so highlight works
+
+    $scope.currentSearch = {};
+
+    //handles subsequent search requests after data is initially loaded
+    $scope.$on('run-global-search', function(event, args){
+      console.log("broadcast recieved: " + args.query);
+      $scope.query = args.query;
+    });
+
+    $scope.$on('go', function () { alert('event is clicked') });
 
     $scope.getAvatarImgName = function(emailAddr){
       var getEmailPrefix = function(str, group1){
@@ -71,7 +86,9 @@ angular.module( 'resumeWrangler.home', [
       var consultantNameAbbrev = emailAddr.replace(/^(.*)@.*$/, getEmailPrefix);
       var imgSrc = '/assets/avatars/' + consultantNameAbbrev + '.jpg';
       return imgSrc;
-    }
+    };
+
+
 
 });
 

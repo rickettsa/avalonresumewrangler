@@ -3,86 +3,84 @@
         <!-- click-edit-link http://plnkr.co/edit/EsW7mV?p=preview -->
         <!-- plus button http://plnkr.co/edit/xUDrOS?p=preview -->
         <!-- http://vitalets.github.io/angular-xeditable/ -->
-        <div>
-            <div class="contact-header">
+            <div class="col-md-6">
                 <h1>{{ resume.ContactInfo.PersonName.GivenName }} {{ resume.ContactInfo.PersonName.FamilyName }}</h1>
-
-                <h4><a href="mailto:{{ resume.ContactInfo.ContactMethod.InternetEmailAddress }}">{{ resume.ContactInfo.ContactMethod.InternetEmailAddress }}</a></h4>
-                <h4><a href="tel:+{{ resume.ContactInfo.ContactMethod.Mobile }}">{{ resume.ContactInfo.ContactMethod.Mobile }}</a></h4>
-
-                <h3>{{ resume.EmploymentHistory.EmployerOrg.EmployerOrgName }}</h3>
-                <h4>{{ resume.EmploymentHistory.EmployerOrg.PositionHistory[0].Title }}</h4>
+                <h2>{{ resume.EmploymentHistory.EmployerOrg.PositionHistory[0].Title }}</h2>
+                <h3><a href="mailto:{{ resume.ContactInfo.ContactMethod.InternetEmailAddress }}">{{ resume.ContactInfo.ContactMethod.InternetEmailAddress }}</a></h3>
+                <h3><a href="tel:+{{ resume.ContactInfo.ContactMethod.Mobile }}">{{ resume.ContactInfo.ContactMethod.Mobile }}</a></h3>
+            </div>
+            <div class="col-md-6">
+                <h1>{{ resume.EmploymentHistory.EmployerOrg.EmployerOrgName }}</h1>
             </div>
 
-            <h2>Experience</h2>
-            <div class="exper">
-                <div ng-repeat="pos in resume.EmploymentHistory.EmployerOrg.PositionHistory">
-                    <hr/>
-                    <h2><a href="#" e-required e-placeholder="Organization Name" editable-text="pos.OrgName.OrganizationName">{{ pos.OrgName.OrganizationName || "empty" }}</a></h2>
-                    <h3><a href="#" e-required e-placeholder="Position Title" editable-text="pos.Title">{{ pos.Title || "empty" }}</a></h3>
-                    <p><a href="#" e-required e-placeholder="Description" editable-text="pos.Description">{{ pos.Description || "empty" }}</a></p>
-                    <span><a href="#" e-required e-placeholder="Start Date" editable-text="pos.StartDate.StringDate">{{ pos.StartDate.StringDate || "empty" }}</a></span>
-                    <span ng-if="pos.EndDate.StringDate"> - </span>
-                    <span><a href="#" e-required e-placeholder="End Date" editable-text="pos.EndDate.StringDate">{{ pos.EndDate.StringDate || "empty" }}</a></span>
-                    <!-- Integrate CKEDitor http://jsfiddle.net/jWANb/2/ -->
-                    <!-- <div class="ck-editor" ng-model="text">{{ pos.Description }}</div> -->
+            <div class="col-md-12">
+                <h2>Experience</h2>
+                <div class="exper well">
+                    <div ng-repeat="pos in resume.EmploymentHistory.EmployerOrg.PositionHistory">
+                        <h3><a href="#" e-required e-placeholder="Organization Name" editable-text="pos.OrgName.OrganizationName">{{ pos.OrgName.OrganizationName || "empty" }}</a></h3>
+                        <h3><a href="#" e-required e-placeholder="Position Title" editable-text="pos.Title">{{ pos.Title || "empty" }}</a></h3>
+                        <!-- <p><a href="#" e-required e-placeholder="Description" editable-text="pos.Description">{{ pos.Description || "empty" }}</a></p> -->
+                        <span><a href="#" e-required e-placeholder="Start Date" editable-text="pos.StartDate">{{ pos.StartDate || "empty" }}</a></span>
+                        <span> to </span>
+                        <span><a href="#" e-required e-placeholder="End Date" editable-text="pos.EndDate">{{ pos.EndDate || "empty" }}</a></span>
+                        <br /><br />
+                        <!-- Integrate CKEDitor http://jsfiddle.net/jWANb/2/ -->
+                        <div class="ck-editor" ng-model="description" ng-init="description = pos.Description">{{ pos.Description }}</div>
+                        <!-- <div class="description-noEdit well" ng-bind-html="pos.Description"></div> --?
 
+
+                        <!-- START SKILLS TABLE -->
+                        <div ng-if="pos.Competency">
+                            <table id="skills-table" class="table table-hover table-condensed">
+                                <thead>
+                                <th>Skill</th>
+                                <th>Role</th>
+                                <th>Edit</th>
+                                </thead>
+                                <tr ng-repeat="skillRole in pos.Competency">
+                                    <td>
+                                        <!-- if an image is found, don't bother showing text -->
+                                        <img class="skill-icon" ng-src="{{ getSkillImg(skillRole.CompetencyDisplayName) }}" alt="{{ getSkillImg(skillRole.CompetencyDisplayName) }}" ng-click="rowform.$show();$(this).hide()"/>
+                                        <!-- show text when editing and hide image -->
+                                        <p ng-show="showSkillName" class="CompetencyDisplayName" editable-text="skillRole.CompetencyDisplayName" e-name="CompetencyDisplayName" e-form="rowform" ng-click="rowform.$show()" e-typeahead="skill for skill in skillNames | filter:$viewValue | limitTo:10" typeahead-editable="false">
+                                        <!-- {{ showSkill(skillRole) }} -->
+                                        {{ skillRole.CompetencyDisplayName }}</p>
+                                    </td>
+                                    <td>
+                                        <!-- editable role (text with validation) -->
+                                        <span editable-text="skillRole.CompetencyEvidence" e-name="CompetencyEvidence" e-form="rowform" e-required ng-click="rowform.$show()">
+                                            {{ skillRole.CompetencyEvidence || 'empty' }}
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <form editable-form name="rowform" onbeforesave="saveUser($data, skillRole.id)"
+                                              ng-show="rowform.$visible" class="form-buttons form-inline" shown="inserted == skillRole">
+                                            <button type="submit" ng-disabled="rowform.$waiting" class="btn btn-success">
+                                                <span class="glyphicon glyphicon-ok"></span>
+                                            </button>
+                                            <button type="button" ng-disabled="rowform.$waiting" ng-click="rowform.$cancel()"
+                                                    class="btn btn-default">
+                                                cancel
+                                            </button>
+                                        </form>
+                                        <div class="buttons" ng-show="!rowform.$visible">
+                                            <button class="btn btn-success" ng-click="rowform.$show()"><span class="glyphicon glyphicon-pencil"></span></span></button>
+                                            <button class="btn btn-danger" ng-click="removeSkill($index, pos.Competency)"><span class="glyphicon glyphicon-remove"></span></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <button class="add-skill btn btn-success" ng-click="addSkillRole(pos.Competency)"><span class="glyphicon glyphicon-plus"></i> Skill</button>
+
+                            <!-- END SKILLS TABLE -->
+
+
+                            <hr/>
+                        <hr/>
+                        <hr/>
+                    </div>
                 </div>
             </div>
-
-
-<br/>
-
-            <!-- SKILLS TABLE -->
-            <div>
-
-                <table class="table table-hover table-condensed">
-                    <thead>
-                        <th>Skill</th>
-                        <th>Role</th>
-                        <th>Edit</th>
-                    </thead>
-                    <tr ng-repeat="skillRole in skillRoleMatrix">
-                        <td>
-                            <!-- editable status (select-local) -->
-                            <img class="skill-icon" src="{{ getSkillImg(skillRole.skill) }}" alt="{{ getSkillImg(skillRole.skill) }}"/>
-                            <span editable-text="skillRole.skill" e-name="skill" e-form="rowform" ng-click="rowform.$show()" e-typeahead="skill for skill in skillNames | filter:$viewValue | limitTo:10" typeahead-editable="false">
-                                <!-- {{ showSkill(skillRole) }} -->
-                                {{ skillRole.skill }}
-                            </span>
-                        </td>
-                        <td>
-                            <!-- editable username (text with validation) -->
-                            <span editable-text="skillRole.name" e-name="name" e-form="rowform" onbeforesave="checkName($data, skillRole.id)" e-required ng-click="rowform.$show()">
-                                {{ skillRole.name || 'empty' }}
-                            </span>
-                        </td>
-                        <td>
-                            <!-- form -->
-                            <form editable-form name="rowform" onbeforesave="saveUser($data, skillRole.id)"
-                                  ng-show="rowform.$visible" class="form-buttons form-inline" shown="inserted == skillRole">
-                                <button type="submit" ng-disabled="rowform.$waiting" class="btn btn-success">
-                                    <span class="glyphicon glyphicon-ok"></span>
-                                </button>
-                                <button type="button" ng-disabled="rowform.$waiting" ng-click="rowform.$cancel()"
-                                        class="btn btn-default">
-                                    cancel
-                                </button>
-                            </form>
-                            <div class="buttons" ng-show="!rowform.$visible">
-                                <button class="btn btn-success" ng-click="rowform.$show()"><span class="glyphicon glyphicon-pencil"></span></span></button>
-                                <button class="btn btn-danger" ng-click="removeUser($index)"><span class="glyphicon glyphicon-remove"></span></button>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <button class="add-skill btn btn-success" ng-click="addUser()"><span class="glyphicon glyphicon-plus"></i> Skill</button>
-            </div>
-
-
-
-            {{ resume }}
-        </div>
 
     </div>
 </div>
