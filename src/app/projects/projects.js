@@ -41,13 +41,20 @@ angular.module( 'resumeWrangler.projects', [
       }
     });
 
-    $scope.skillsData = skillsResponse.data.skills;
-    $scope.project = projectResponse.data;
+    $scope.project = projectResponse.data.Project;
 
+    $scope.skillsData = skillsResponse.data.skills;
     $scope.skillNames = _.pluck(skillsResponse.data.skills, 'dispName');
+    $scope.showSkillName = 0;
     $scope.getSkillImg = function(skillName){
       var skillNode = _.findBySubVal($scope.skillsData, 'dispName', [skillName]);
-      return '/assets/icons/' + skillNode[0].image;
-    }
+      if (skillNode.length > 0){
+        $scope.showSkillName = 0;
+        return '/assets/icons/' + skillNode[0].image;
+      } else {
+        $scope.showSkillName = 1;
+        return '/assets/icons/generic.jpg';
+      }
+    };
 
   });

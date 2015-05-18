@@ -1,5 +1,125 @@
-<div class="col-md-12">
+<div class="col-md-12 well">
     <div class="row">
-        {{ project }}
+        <div class="col-md-8">
+            <h1><a href="#" e-required e-placeholder="Project Name" editable-text="project.ProjectSummary.ProjectName">{{ project.ProjectSummary.ProjectName || "empty" }}</a></h1>
+            <h3><a href="#" e-required e-placeholder="Client Name" editable-text="project.ClientOrganizationName">{{ project.ClientOrganizationName || "empty" }}</a></h3>
+            <h4><a href="mailto:{{ project.ClientWebsite }}" e-required e-placeholder="Client Email" editable-text="project.ClientWebsite">{{ project.ClientWebsite }}</a></h4>
+        </div>
+        <div class="col-md-4">
+            <table class="project-dates">
+                <tr>
+                    <td>
+                        <span>Start Date: </span>
+                    </td>
+                    <td>
+                        <a href="#" e-required e-placeholder="Project Name" editable-text="project.AssignmentDateRange.StartDate">{{ project.AssignmentDateRange.StartDate || "empty" }}</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>End Date:</span>
+                    </td>
+                    <td>
+                        <a href="#" e-required e-placeholder="Project Name" editable-text="project.AssignmentDateRange.ExpectedEndDate">{{ project.AssignmentDateRange.ExpectedEndDate || "empty" }}</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Extension Date:</span>
+                    </td>
+                    <td>
+                        <a href="#" e-required e-placeholder="Project Name" editable-text="project.AssignmentDateRange.ActualEndDate">{{ project.AssignmentDateRange.ActualEndDate || "empty" }}</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Global Description: </h2>
+            <div class="well light-well">
+                <p>
+                <a href="#" e-rows="8" e-cols="80" e-style="width: 90%" data-type="textarea" e-required e-placeholder="Project Description" editable-textarea="project.ProjectSummary.Description">{{ project.ProjectSummary.Description || "empty" }}</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Technology Stack:</h2>
+                <div class="well light-well">
+                    <div class="col-md-3">
+                        <h4>Front End:</h4>
+
+                        <ul>
+                            <li ng-repeat="tech in project.TechnologyStack.Technology | excludeOthers:'frontend'">
+                                <!-- if an image is found, don't bother showing text -->
+                                <!-- <img class="skill-icon" ng-src="{{ getSkillImg(tech.CompetencyDisplayName) }}" alt="{{ getSkillImg(tech.CompetencyDisplayName) }}"/>-->
+                                <!-- show text when editing and hide image -->
+                                <p class="" editable-text="tech.name" e-name="stackTechName" e-typeahead="skill for skill in skillNames | filter:$viewValue | limitTo:10" typeahead-editable="false">
+                                    <!-- {{ showSkill(skillRole) }} -->
+                                    {{ tech.name }}</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Back End:</h4>
+                        <ul>
+                            <li ng-repeat="tech in project.TechnologyStack.Technology | excludeOthers:'backend'">
+                                <!-- if an image is found, don't bother showing text -->
+                                <!-- <img class="skill-icon" ng-src="{{ getSkillImg(tech.CompetencyDisplayName) }}" alt="{{ getSkillImg(tech.CompetencyDisplayName) }}"/>-->
+                                <!-- show text when editing and hide image -->
+                                <p class="" editable-text="tech.name" e-name="stackTechName" e-typeahead="skill for skill in skillNames | filter:$viewValue | limitTo:10" typeahead-editable="false">
+                                    <!-- {{ showSkill(skillRole) }} -->
+                                    {{ tech.name }}</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Middleware:</h4>
+                        <ul>
+                            <li ng-repeat="tech in project.TechnologyStack.Technology | excludeOthers:'middleware'">
+                                <!-- if an image is found, don't bother showing text -->
+                                <!-- <img class="skill-icon" ng-src="{{ getSkillImg(tech.CompetencyDisplayName) }}" alt="{{ getSkillImg(tech.CompetencyDisplayName) }}"/>-->
+                                <!-- show text when editing and hide image -->
+                                <p class="" editable-text="tech.name" e-name="stackTechName" e-typeahead="skill for skill in skillNames | filter:$viewValue | limitTo:10" typeahead-editable="false">
+                                    <!-- {{ showSkill(skillRole) }} -->
+                                    {{ tech.name }}</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Bug Reporting:</h4>
+                        <ul>
+                            <li ng-repeat="tech in project.TechnologyStack.Technology | excludeOthers:'bugreporting'">
+                                <!-- if an image is found, don't bother showing text -->
+                                <!-- <img class="skill-icon" ng-src="{{ getSkillImg(tech.CompetencyDisplayName) }}" alt="{{ getSkillImg(tech.CompetencyDisplayName) }}"/>-->
+                                <!-- show text when editing and hide image -->
+                                <p class="" editable-text="tech.name" e-name="stackTechName" e-typeahead="skill for skill in skillNames | filter:$viewValue | limitTo:10" typeahead-editable="false">
+                                    <!-- {{ showSkill(skillRole) }} -->
+                                    {{ tech.name }}</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Consultants:</h2>
+            <div class="well light-well">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+        </div>
     </div>
 </div>

@@ -1,5 +1,5 @@
 <div class="col-md-12">
-    <div class="row">
+    <div class="row well">
         <!-- click-edit-link http://plnkr.co/edit/EsW7mV?p=preview -->
         <!-- plus button http://plnkr.co/edit/xUDrOS?p=preview -->
         <!-- http://vitalets.github.io/angular-xeditable/ -->
@@ -15,8 +15,8 @@
 
             <div class="col-md-12">
                 <h2>Experience</h2>
-                <div class="exper well">
-                    <div ng-repeat="pos in resume.EmploymentHistory.EmployerOrg.PositionHistory">
+                <div class="exper">
+                    <div class="well light-well" ng-repeat="pos in resume.EmploymentHistory.EmployerOrg.PositionHistory">
                         <h3><a href="#" e-required e-placeholder="Organization Name" editable-text="pos.OrgName.OrganizationName">{{ pos.OrgName.OrganizationName || "empty" }}</a></h3>
                         <h3><a href="#" e-required e-placeholder="Position Title" editable-text="pos.Title">{{ pos.Title || "empty" }}</a></h3>
                         <!-- <p><a href="#" e-required e-placeholder="Description" editable-text="pos.Description">{{ pos.Description || "empty" }}</a></p> -->
@@ -26,9 +26,8 @@
                         <br /><br />
                         <!-- Integrate CKEDitor http://jsfiddle.net/jWANb/2/ -->
                         <div class="ck-editor" ng-model="description" ng-init="description = pos.Description">{{ pos.Description }}</div>
-                        <!-- <div class="description-noEdit well" ng-bind-html="pos.Description"></div> --?
-
-
+                        <!-- <div class="description-noEdit well" ng-bind-html="pos.Description"></div> -->
+                        <br/>
                         <!-- START SKILLS TABLE -->
                         <div ng-if="pos.Competency">
                             <table id="skills-table" class="table table-hover table-condensed">
@@ -74,10 +73,6 @@
 
                             <!-- END SKILLS TABLE -->
 
-
-                            <hr/>
-                        <hr/>
-                        <hr/>
                     </div>
                 </div>
             </div>

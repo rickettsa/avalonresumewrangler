@@ -41,13 +41,11 @@ angular.module( 'resumeWrangler.edit', [
         }
       });
 
-      $scope.skillsData = skillsResponse.data.skills;
       $scope.resume = resumeResponse.data.Resume.StructuredXMLResume;
 
+      $scope.skillsData = skillsResponse.data.skills;
       $scope.skillNames = _.pluck(skillsResponse.data.skills, 'dispName');
-
       $scope.showSkillName = 0;
-
       $scope.getSkillImg = function(skillName){
         var skillNode = _.findBySubVal($scope.skillsData, 'dispName', [skillName]);
         if (skillNode.length > 0){
