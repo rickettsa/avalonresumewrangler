@@ -72,4 +72,33 @@ angular.module( 'resumeWrangler.projects', [
       $state.go('edit', params);
     };
 
+    $scope.addConsultant = function(){
+      var emptyConsultant = {
+        "filledBy": {
+          "ContactInfo": {
+            "PersonName": {
+              "id": "00000000000",
+              "GivenName": "GivenName",
+              "FamilyName": "FamilyName"
+            },
+            "ContactMethod": {
+              "Mobile": "000-000-0000",
+              "Fax": "555-444-3333",
+              "InternetEmailAddress": "generic@avalonconsult.com",
+              "PostalAddress": {
+                "City": "Nowhere",
+                "State": "ZZ"
+              }
+            }
+          }
+        },
+        "PositionTitle": "Position Title",
+        "PositionResponsibilies": "Position Responsibilities",
+        "CompetenciesRequired": {
+          "Competency": []
+        }
+      };
+      $scope.project.PositionHistory.Position.push(emptyConsultant);
+    };
+
   });

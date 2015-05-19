@@ -123,26 +123,56 @@
                     <div class="row">
                         <div class="col-md-4">
                             <img class="consultant-avatar img-rounded" ng-src="{{ getAvatarImgName( position.filledBy.ContactInfo.ContactMethod.InternetEmailAddress ) }}"/>
-                            <h4 ng-click="goToResume( position.filledBy.ContactInfo.ContactMethod.InternetEmailAddress.toLowerCase() )"><a href="#">{{ position.filledBy.ContactInfo.PersonName.GivenName }} {{ position.filledBy.ContactInfo.PersonName.FamilyName }}</a></h4>
+                            <h4 ng-if="position.filledBy.ContactInfo.ContactMethod.InternetEmailAddress !== 'generic@avalonconsult.com'" ng-click="goToResume( position.filledBy.ContactInfo.ContactMethod.InternetEmailAddress.toLowerCase() )"><a href="#">{{ position.filledBy.ContactInfo.PersonName.GivenName }} {{ position.filledBy.ContactInfo.PersonName.FamilyName }}</a></h4>
                             <a href="mailto:{{ position.filledBy.ContactInfo.ContactMethod.InternetEmailAddress.toLowerCase() }}"><i class="glyphicon glyphicon-envelope"></i> Email</a>
                             <br/>
                             <a href="tel:+{{ position.filledBy.ContactInfo.ContactMethod.Mobile }}"><i class="glyphicon glyphicon-phone"></i> {{ position.filledBy.ContactInfo.ContactMethod.Mobile }}</a>
                             <h4>{{ position.filledBy.ContactInfo.ContactMethod.PostalAddress.City }}, {{ position.filledBy.ContactInfo.ContactMethod.PostalAddress.State }}</h4>
                         </div>
                         <div class="col-md-8">
-                            <h3 class="position-title">{{ position.PositionTitle }}</h3>
+                            <h3 class="position-title" editable-text="position.PositionTitle" e-name="positionTitle"><a href="#">{{ position.PositionTitle }}</a></h3>
                             <h4 class="uneditable">{{ position.PositionResponsibilies }}</h4>
-                            <ul class="consultant-skills-list">
+                            <ul class="consultant-skills-list" ng-if="position.CompetenciesRequired.Competency.length > 0">
                                 <li ng-repeat="skill in position.CompetenciesRequired.Competency">
                                     <h4 class="" e-style="width: 60%" editable-text="skill.DisplayName" e-name="consultantSkillName" e-typeahead="skill for skill in skillNames | filter:$viewValue | limitTo:10" typeahead-editable="false">
                                         {{ skill.DisplayName }}
                                     </h4>
                                 </li>
                             </ul>
+                            <button class="add-skill btn btn-success" ng-click="addSkill($index)" ng-if="position.CompetenciesRequired.Competency.length === 0"><span class="glyphicon glyphicon-plus"></i> Skill</button>
                         </div>
                     </div>
                 </div>
+                <button class="add-consultant btn btn-success" ng-click="addConsultant()"><span class="glyphicon glyphicon-plus"></i> Consultant</button>
             </div>
         </div>
     </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Client Contacts:</h2>
+            <div class="well light-well">
+                <div class="col-md-6 consultant well" ng-repeat="contact in project.ClientContacts.ClientContact">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="consultant-avatar img-rounded" src="/assets/avatars/generic.jpg"/>
+                            <h4><a href="#">{{ contact.ContactInfo.PersonName.GivenName }} {{ contact.ContactInfo.PersonName.FamilyName }}</a></h4>
+                            <a href="mailto:{{ contact.ContactInfo.ContactMethod.InternetEmailAddress.toLowerCase() }}"><i class="glyphicon glyphicon-envelope"></i> Email</a>
+                            <br/>
+                            <a href="tel:+{{ contact.ContactInfo.ContactMethod.Mobile }}"><i class="glyphicon glyphicon-phone"></i> {{ contact.ContactInfo.ContactMethod.Mobile }}</a>
+                            <!-- <h4>{{ position.filledBy.ContactInfo.ContactMethod.PostalAddress.City }}, {{ position.filledBy.ContactInfo.ContactMethod.PostalAddress.State }}</h4> -->
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="position-title" editable-text="contact.ContactInfo.PositionTitle" e-name="positionTitle"><a href="#">{{ contact.ContactInfo.PositionTitle }}</a></h3>
+                            <h4 >{{ contact.ContactInfo.PositionResponsibilies }}</h4>
+                        </div>
+                    </div>
+                </div>
+                <button class="add-client-contact btn btn-success" ng-click="addClientContact()"><span class="glyphicon glyphicon-plus"></i> Client Contact</button>
+            </div>
+        </div>
+    </div>
+
+
 </div>
