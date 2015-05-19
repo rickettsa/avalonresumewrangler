@@ -14,7 +14,7 @@
             </div>
 
             <div class="col-md-12">
-                <h2>Experience</h2>
+                <h2>Experience:</h2>
                 <div class="exper">
                     <div class="well light-well" ng-repeat="pos in resume.EmploymentHistory.EmployerOrg.PositionHistory">
                         <h3><a href="#" e-required e-placeholder="Organization Name" editable-text="pos.OrgName.OrganizationName">{{ pos.OrgName.OrganizationName || "empty" }}</a></h3>
@@ -23,7 +23,9 @@
                         <span><a href="#" e-required e-placeholder="Start Date" editable-text="pos.StartDate">{{ pos.StartDate || "empty" }}</a></span>
                         <span> to </span>
                         <span><a href="#" e-required e-placeholder="End Date" editable-text="pos.EndDate">{{ pos.EndDate || "empty" }}</a></span>
-                        <br /><br />
+                        <h4 class="uneditable" ng-if="pos.GlobalDescription">{{ pos.GlobalDescription }}</h4>
+                        <br ng-if="!pos.GlobalDescription"/>
+                        <br ng-if="!pos.GlobalDescription"/>
                         <!-- Integrate CKEDitor http://jsfiddle.net/jWANb/2/ -->
                         <div class="ck-editor" ng-model="description" ng-init="description = pos.Description">{{ pos.Description }}</div>
                         <!-- <div class="description-noEdit well" ng-bind-html="pos.Description"></div> -->

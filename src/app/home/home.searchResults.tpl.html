@@ -15,10 +15,11 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <h4><span class="header-label">{{ result.StructuredXMLResume.EmploymentHistory.EmployerOrg.PositionHistory[0].StartDate }}:</span> {{ result.StructuredXMLResume.EmploymentHistory.EmployerOrg.PositionHistory[0].Title }}, {{ result.StructuredXMLResume.EmploymentHistory.EmployerOrg.PositionHistory[0].OrgName.OrganizationName }}</h4>
+                <h4><i>{{ result.StructuredXMLResume.EmploymentHistory.EmployerOrg.PositionHistory[0].Title }}</i>, {{ result.StructuredXMLResume.EmploymentHistory.EmployerOrg.PositionHistory[0].OrgName.OrganizationName }}</h4>
+                <h4><span class="header-label">{{ result.StructuredXMLResume.EmploymentHistory.EmployerOrg.PositionHistory[0].StartDate }}</span></h4>
                 <table class="table table-striped">
                     <tr>
-                        <th>Skill</th>
+                        <th>Skills</th>
                         <th>Experience</th>
                     </tr>
                     <tr ng-repeat="skill in result.StructuredXMLResume.Qualifications.Competency">

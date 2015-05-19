@@ -9,6 +9,14 @@
             <table class="project-dates">
                 <tr>
                     <td>
+                        <span>Practice: </span>
+                    </td>
+                    <td>
+                        <a href="#" e-required e-placeholder="Geo Practice" editable-text="project.ProjectSummary.GeoPractice">{{ project.ProjectSummary.GeoPractice || "empty" }}</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <span>Start Date: </span>
                     </td>
                     <td>
@@ -40,7 +48,7 @@
             <h2>Global Description: </h2>
             <div class="well light-well">
                 <p>
-                <a href="#" e-rows="8" e-cols="80" e-style="width: 90%" data-type="textarea" e-required e-placeholder="Project Description" editable-textarea="project.ProjectSummary.Description">{{ project.ProjectSummary.Description || "empty" }}</a>
+                <a href="#" e-rows="8" e-cols="80" e-style="width: 90%" data-type="textarea" e-required e-placeholder="Project Description" editable-textarea="project.ProjectSummary.ProjectDescription">{{ project.ProjectSummary.ProjectDescription || "empty" }}</a>
                 </p>
             </div>
         </div>
@@ -53,53 +61,53 @@
                     <div class="col-md-3">
                         <h4>Front End:</h4>
 
-                        <ul>
+                        <ul class="list-unstyled">
                             <li ng-repeat="tech in project.TechnologyStack.Technology | excludeOthers:'frontend'">
                                 <!-- if an image is found, don't bother showing text -->
                                 <!-- <img class="skill-icon" ng-src="{{ getSkillImg(tech.CompetencyDisplayName) }}" alt="{{ getSkillImg(tech.CompetencyDisplayName) }}"/>-->
                                 <!-- show text when editing and hide image -->
-                                <p class="" editable-text="tech.name" e-name="stackTechName" e-typeahead="skill for skill in skillNames | filter:$viewValue | limitTo:10" typeahead-editable="false">
+                                <h4 class="" editable-text="tech.name" e-name="stackTechName" e-typeahead="skill for skill in skillNames | filter:$viewValue | limitTo:10" typeahead-editable="false">
                                     <!-- {{ showSkill(skillRole) }} -->
-                                    {{ tech.name }}</p>
+                                    {{ tech.name }}</h4>
                             </li>
                         </ul>
                     </div>
                     <div class="col-md-3">
                         <h4>Back End:</h4>
-                        <ul>
+                        <ul class="list-unstyled">
                             <li ng-repeat="tech in project.TechnologyStack.Technology | excludeOthers:'backend'">
                                 <!-- if an image is found, don't bother showing text -->
                                 <!-- <img class="skill-icon" ng-src="{{ getSkillImg(tech.CompetencyDisplayName) }}" alt="{{ getSkillImg(tech.CompetencyDisplayName) }}"/>-->
                                 <!-- show text when editing and hide image -->
-                                <p class="" editable-text="tech.name" e-name="stackTechName" e-typeahead="skill for skill in skillNames | filter:$viewValue | limitTo:10" typeahead-editable="false">
+                                <h4 class="" editable-text="tech.name" e-name="stackTechName" e-typeahead="skill for skill in skillNames | filter:$viewValue | limitTo:10" typeahead-editable="false">
                                     <!-- {{ showSkill(skillRole) }} -->
-                                    {{ tech.name }}</p>
+                                    {{ tech.name }}</h4>
                             </li>
                         </ul>
                     </div>
                     <div class="col-md-3">
                         <h4>Middleware:</h4>
-                        <ul>
+                        <ul class="list-unstyled">
                             <li ng-repeat="tech in project.TechnologyStack.Technology | excludeOthers:'middleware'">
                                 <!-- if an image is found, don't bother showing text -->
                                 <!-- <img class="skill-icon" ng-src="{{ getSkillImg(tech.CompetencyDisplayName) }}" alt="{{ getSkillImg(tech.CompetencyDisplayName) }}"/>-->
                                 <!-- show text when editing and hide image -->
-                                <p class="" editable-text="tech.name" e-name="stackTechName" e-typeahead="skill for skill in skillNames | filter:$viewValue | limitTo:10" typeahead-editable="false">
+                                <h4 class="" editable-text="tech.name" e-name="stackTechName" e-typeahead="skill for skill in skillNames | filter:$viewValue | limitTo:10" typeahead-editable="false">
                                     <!-- {{ showSkill(skillRole) }} -->
-                                    {{ tech.name }}</p>
+                                    {{ tech.name }}</h4>
                             </li>
                         </ul>
                     </div>
                     <div class="col-md-3">
                         <h4>Bug Reporting:</h4>
-                        <ul>
+                        <ul class="list-unstyled">
                             <li ng-repeat="tech in project.TechnologyStack.Technology | excludeOthers:'bugreporting'">
                                 <!-- if an image is found, don't bother showing text -->
                                 <!-- <img class="skill-icon" ng-src="{{ getSkillImg(tech.CompetencyDisplayName) }}" alt="{{ getSkillImg(tech.CompetencyDisplayName) }}"/>-->
                                 <!-- show text when editing and hide image -->
-                                <p class="" editable-text="tech.name" e-name="stackTechName" e-typeahead="skill for skill in skillNames | filter:$viewValue | limitTo:10" typeahead-editable="false">
+                                <h4 class="" editable-text="tech.name" e-name="stackTechName" e-typeahead="skill for skill in skillNames | filter:$viewValue | limitTo:10" typeahead-editable="false">
                                     <!-- {{ showSkill(skillRole) }} -->
-                                    {{ tech.name }}</p>
+                                    {{ tech.name }}</h4>
                             </li>
                         </ul>
                     </div>
@@ -111,13 +119,28 @@
         <div class="col-md-12">
             <h2>Consultants:</h2>
             <div class="well light-well">
-                <div class="col-md-3">
-                </div>
-                <div class="col-md-3">
-                </div>
-                <div class="col-md-3">
-                </div>
-                <div class="col-md-3">
+                <div class="col-md-6 consultant well" ng-repeat="position in project.PositionHistory.Position">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="consultant-avatar img-rounded" ng-src="{{ getAvatarImgName( position.filledBy.ContactInfo.ContactMethod.InternetEmailAddress ) }}"/>
+                            <h4 ng-click="goToResume( position.filledBy.ContactInfo.ContactMethod.InternetEmailAddress.toLowerCase() )"><a href="#">{{ position.filledBy.ContactInfo.PersonName.GivenName }} {{ position.filledBy.ContactInfo.PersonName.FamilyName }}</a></h4>
+                            <a href="mailto:{{ position.filledBy.ContactInfo.ContactMethod.InternetEmailAddress.toLowerCase() }}"><i class="glyphicon glyphicon-envelope"></i> Email</a>
+                            <br/>
+                            <a href="tel:+{{ position.filledBy.ContactInfo.ContactMethod.Mobile }}"><i class="glyphicon glyphicon-phone"></i> {{ position.filledBy.ContactInfo.ContactMethod.Mobile }}</a>
+                            <h4>{{ position.filledBy.ContactInfo.ContactMethod.PostalAddress.City }}, {{ position.filledBy.ContactInfo.ContactMethod.PostalAddress.State }}</h4>
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="position-title">{{ position.PositionTitle }}</h3>
+                            <h4 class="uneditable">{{ position.PositionResponsibilies }}</h4>
+                            <ul class="consultant-skills-list">
+                                <li ng-repeat="skill in position.CompetenciesRequired.Competency">
+                                    <h4 class="" e-style="width: 60%" editable-text="skill.DisplayName" e-name="consultantSkillName" e-typeahead="skill for skill in skillNames | filter:$viewValue | limitTo:10" typeahead-editable="false">
+                                        {{ skill.DisplayName }}
+                                    </h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

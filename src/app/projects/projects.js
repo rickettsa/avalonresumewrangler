@@ -24,7 +24,7 @@ angular.module( 'resumeWrangler.projects', [
         data:{ pageTitle: 'Edit Project' }
       });
   })
-  .controller('ProjectsCtrl', function ($http, $scope, $filter, projectResponse, skillsResponse) {
+  .controller('ProjectsCtrl', function ($http, $scope, $filter, $state, projectResponse, skillsResponse) {
 
     _.mixin({
       /**
@@ -55,6 +55,21 @@ angular.module( 'resumeWrangler.projects', [
         $scope.showSkillName = 1;
         return '/assets/icons/generic.jpg';
       }
+    };
+
+    $scope.getAvatarImgName = function(emailAddr){
+      var getEmailPrefix = function(str, group1){
+        return group1.toLowerCase();
+      };
+      var consultantNameAbbrev = emailAddr.replace(/^(.*)@.*$/, getEmailPrefix);
+      var imgSrc = '/assets/avatars/' + consultantNameAbbrev + '.jpg';
+      return imgSrc;
+    };
+
+    $scope.goToResume = function(email){
+      var params = {};
+      params.email = email;
+      $state.go('edit', params);
     };
 
   });
