@@ -1,16 +1,13 @@
 <div class="col-md-12">
-    <div class="row well">
+    <div class="row well dashed-well">
         <!-- click-edit-link http://plnkr.co/edit/EsW7mV?p=preview -->
         <!-- plus button http://plnkr.co/edit/xUDrOS?p=preview -->
         <!-- http://vitalets.github.io/angular-xeditable/ -->
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <h1>{{ resume.ContactInfo.PersonName.GivenName }} {{ resume.ContactInfo.PersonName.FamilyName }}</h1>
                 <h2>{{ resume.EmploymentHistory.EmployerOrg.PositionHistory[0].Title }}</h2>
                 <h3><a href="mailto:{{ resume.ContactInfo.ContactMethod.InternetEmailAddress }}">{{ resume.ContactInfo.ContactMethod.InternetEmailAddress }}</a></h3>
                 <h3><a href="tel:+{{ resume.ContactInfo.ContactMethod.Mobile }}">{{ resume.ContactInfo.ContactMethod.Mobile }}</a></h3>
-            </div>
-            <div class="col-md-6">
-                <h1>{{ resume.EmploymentHistory.EmployerOrg.EmployerOrgName }}</h1>
             </div>
 
             <div class="col-md-12">

@@ -4,6 +4,7 @@ angular.module( 'resumeWrangler', [
   'resumeWrangler.home',
   'resumeWrangler.edit',
   'resumeWrangler.projects',
+  'resumeWrangler.view',
   'ui.router',
   'ui.bootstrap',
   'xeditable',

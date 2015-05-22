@@ -40,7 +40,8 @@
             <span class="icon-bar"></span>
           </button>
           <div class="navbar-brand">
-            Resume Wrangler
+              <img src="http://blogs.avalonconsult.com/files/2013/04/avalon-transparent.png"/>
+            &#x2003;Resume Wrangler
             <small>
               <a href="http://github.com/ngbp/ngbp/blob/v<%= version %>-release/CHANGELOG.md">
                 v<%= version %>
@@ -56,6 +57,12 @@
                 Home
               </a>
             </li>
+              <li ui-sref-active="active">
+                  <a href ui-sref="view">
+                      <i class="glyphicon glyphicon-eye-open"></i>
+                      View
+                  </a>
+              </li>
             <li ui-sref-active="active">
               <a href ui-sref="edit">
                 <i class="fa fa-edit"></i>
