@@ -6,7 +6,7 @@
  * @description Create,Read,Update,Delete service for resume JSON from backend.
  */
 angular.module('resumeWrangler')
-  .service('resumeCRUDService', function($rootScope, $http) {
+  .service('resumeCRUDService', function($rootScope, $http, configuration) {
     var service = {};
 
     /**
@@ -19,7 +19,7 @@ angular.module('resumeWrangler')
       return $http({
         method: "GET",
         cache: true,
-        url: 'http://private-b7b35-avalonresumesearch.apiary-mock.com/api/resume/0000000124'
+        url: configuration.api + '/api/resume/0000000124'
       });
     };
 
@@ -27,7 +27,7 @@ angular.module('resumeWrangler')
       return $http({
         method: "GET",
         cache: true,
-        url: 'http://private-b7b35-avalonresumesearch.apiary-mock.com/api/resumes/search'
+        url: configuration.api + '/api/resumes/search'
       });
     };
 

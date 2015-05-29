@@ -29,7 +29,7 @@ angular.module('resumeWrangler')
         limit: 10,
         remote: {
           //url: Authentication.getApiUrl() + '/instances/search/suggestions?q=%QUERY', // The API endpoint for search suggestions
-          url: 'http://private-b7b35-avalonresumesearch.apiary-mock.com/api/skills',
+          url: configuration.api + '/api/skills',
           /**
            * Reduce the response down to an array of objects since the API doesn't return that outright.
            * @param {Object} parsedResponse

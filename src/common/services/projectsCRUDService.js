@@ -6,7 +6,7 @@
  * @description Create,Read,Update,Delete service for resume JSON from backend.
  */
 angular.module('resumeWrangler')
-  .service('projectsCRUDService', function($rootScope, $http) {
+  .service('projectsCRUDService', function($rootScope, $http, configuration) {
     var service = {};
 
     /**
@@ -17,7 +17,7 @@ angular.module('resumeWrangler')
       return $http({
         method: "GET",
         cache: true,
-        url: 'http://private-b7b35-avalonresumesearch.apiary-mock.com/api/project/0000000005'
+        url: configuration.api + '/api/project/0000000005'
       });
     };
 
