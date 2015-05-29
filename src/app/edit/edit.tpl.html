@@ -42,6 +42,9 @@
                                         <p ng-show="showSkillName" class="CompetencyDisplayName" editable-text="skillRole.CompetencyDisplayName" e-name="CompetencyDisplayName" e-form="rowform" ng-click="rowform.$show()" e-typeahead="skill for skill in skillNames | filter:$viewValue | limitTo:10" typeahead-editable="false">
                                         <!-- {{ showSkill(skillRole) }} -->
                                         {{ skillRole.CompetencyDisplayName }}</p>
+
+                                        <!-- Show Add skill button if typeahead suggestions is empty -->
+                                        <!-- http://jsfiddle.net/nachoorme/RZK9u/1/ -->
                                     </td>
                                     <td>
                                         <!-- editable role (text with validation) -->

@@ -6,7 +6,7 @@
  * @description Create,Read,Update,Delete service for skills JSON from backend.
  */
 angular.module('resumeWrangler')
-  .service('SkillsService', function($rootScope, $http) {
+  .service('SkillsService', function($rootScope, $http, configuration) {
     var service = {};
 
     /**
@@ -18,7 +18,7 @@ angular.module('resumeWrangler')
       return $http({
         method: "GET",
         cache: true,
-        url: 'http://private-b7b35-avalonresumesearch.apiary-mock.com/api/skills'
+        url: configuration.api + '/api/skills'
       });
     };
 

@@ -5,11 +5,13 @@ angular.module( 'resumeWrangler', [
   'resumeWrangler.edit',
   'resumeWrangler.projects',
   'resumeWrangler.view',
+  'services.config',
   'ui.router',
   'ui.bootstrap',
   'xeditable',
   'siyfion.sfTypeahead',
-  'ngSanitize'
+  'ngSanitize',
+  'restangular'
 ])
 
   .filter('highlight', function () {
@@ -44,9 +46,11 @@ angular.module( 'resumeWrangler', [
   $urlRouterProvider.otherwise( '/home' );
 })
 
-.run( function(editableOptions, $rootScope){
+.run( function(editableOptions, $rootScope, Restangular){
     editableOptions.theme = 'bs3'; //xeditable option to use bootstrap 3
     var uiRouterDebug = 0;
+
+    //environmental configuration handled as in http://newtriks.com/2013/11/29/environment-specific-configuration-in-angularjs-using-grunt/
 
     //http://stackoverflow.com/questions/20745761/what-is-the-angular-ui-router-lifecycle-for-debugging-silent-errors/20786262#20786262
     if (uiRouterDebug){

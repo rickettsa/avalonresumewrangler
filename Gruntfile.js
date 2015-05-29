@@ -279,6 +279,44 @@ module.exports = function ( grunt ) {
         }
       }
     },
+    //http://newtriks.com/2013/11/29/environment-specific-configuration-in-angularjs-using-grunt/
+    replace: {
+      development: {
+        options: {
+          patterns: [
+            {
+              json: grunt.file.readJSON('./config/environments/development.json')
+            }
+          ]
+        },
+        files: [
+          {
+            expand: true,
+            flatten: true,
+            src: ['./config/config.js'],
+            dest: '<%= build_dir %>/config/'
+          }
+        ]
+      },
+      apiary: {
+        options: {
+          patterns: [
+            {
+              json: grunt.file.readJSON('./config/environments/apiary.json')
+            }
+          ]
+        },
+        files: [
+          {
+            expand: true,
+            flatten: true,
+            src: ['./config/config.js'],
+            dest: '<%= build_dir %>/config/'
+          }
+        ]
+      }
+    },
+
 
     /**
      * `grunt-contrib-less` handles our LESS compilation and uglification automatically.
@@ -567,7 +605,7 @@ module.exports = function ( grunt ) {
    */
   grunt.renameTask( 'watch', 'delta' );
   //grunt.registerTask( 'watch', [ 'build', 'karma:unit', 'connect:livereload', 'delta' ] );
-  grunt.registerTask( 'watch', [ 'build', 'connect:livereload', 'delta' ] );
+  grunt.registerTask( 'watch', [ 'build', 'connect:livereload', 'replace:development', 'delta' ] );
 
   /**
    * The default task is to build and compile.

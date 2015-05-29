@@ -75,7 +75,9 @@ module.exports = {
       'vendor/typeahead.js/dist/typeahead.bundle.min.js',
       'vendor/angular-typeahead/angular-typeahead.min.js',
       'vendor/angular-sanitize/angular-sanitize.min.js',
-      'vendor/angular-sanitize/angular-sanitize.min.js.map'
+      'vendor/angular-sanitize/angular-sanitize.min.js.map',
+      'vendor/restangular/restangular.js',
+      'config/config.js'
     ],
     dirs: [
       'vendor/ckeditor/**'
