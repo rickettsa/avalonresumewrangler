@@ -76,7 +76,6 @@ module.exports = {
       'vendor/angular-typeahead/angular-typeahead.min.js',
       'vendor/angular-sanitize/angular-sanitize.min.js',
       'vendor/angular-sanitize/angular-sanitize.min.js.map',
-      'vendor/restangular/restangular.js',
       'config/config.js'
     ],
     dirs: [

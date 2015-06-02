@@ -17,7 +17,19 @@ angular.module('resumeWrangler')
       return $http({
         method: "GET",
         cache: true,
-        url: configuration.api + '/api/project/0000000005'
+        url: configuration.api + '/api/projects/0000000005'
+      });
+    };
+
+    service.updateProject = function(id, payload) {
+      return $http({
+        method: "PUT",
+        cache: true,
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        url: configuration.api + '/api/projects/' + id,
+        data: { "Project": [ payload ]}
       });
     };
 

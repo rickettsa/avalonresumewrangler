@@ -24,7 +24,7 @@ angular.module( 'resumeWrangler.projects', [
         data:{ pageTitle: 'Edit Project' }
       });
   })
-  .controller('ProjectsCtrl', function ($http, $scope, $filter, $state, projectResponse, skillsResponse) {
+  .controller('ProjectsCtrl', function ($http, $scope, $filter, $state, projectResponse, skillsResponse, projectsCRUDService) {
 
     _.mixin({
       /**
@@ -99,6 +99,17 @@ angular.module( 'resumeWrangler.projects', [
         }
       };
       $scope.project.PositionHistory.Position.push(emptyConsultant);
+    };
+
+
+    $scope.updateProject = function(){
+      projectsCRUDService.updateProject($scope.project.id, $scope.project)
+        .success(function(){
+          console.log("updateProject SUCCESS");
+        })
+        .error(function(){
+          console.log("updateProject FAILED");
+        });
     };
 
   });

@@ -24,7 +24,7 @@ angular.module( 'resumeWrangler.edit', [
             data:{ pageTitle: 'Edit Resume' }
       });
     })
-    .controller('EditCtrl', function ($http, $scope, $filter, resumeResponse, skillsResponse) {
+    .controller('EditCtrl', function ($http, $scope, $filter, resumeResponse, skillsResponse, resumeCRUDService) {
 
       _.mixin({
         /**
@@ -105,6 +105,16 @@ angular.module( 'resumeWrangler.edit', [
         CompetencyEvidence: null
       };
       competencyArray.push($scope.inserted);
+    };
+
+    $scope.updateResume = function(){
+      resumeCRUDService.updateResume($scope.resume.ContactInfo.PersonName.id, $scope.resume)
+        .success(function(){
+          console.log("updateResume SUCCESS");
+        })
+        .error(function(){
+          console.log("updateResume FAILED");
+        });
     };
 
   });
