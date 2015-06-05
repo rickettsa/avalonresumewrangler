@@ -14,20 +14,31 @@ div[id^="cke_editor-"]{
     display: hidden;
 }
 
-#skills-table{
-    border: 1px solid #b6b6b6;
+.cke_top, .cke_bottom{
+    background-image: none !important;
+    background: #F2F2F2 !important;
+}
+
+.cke_chrome{
+    border: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.skills-table{
+    border: none;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
-    box-shadow: 0 0 3px rgba(0,0,0,.15);
+    box-shadow: none;
     thead{
-        background-image: -webkit-linear-gradient(top,#ebebeb,#cfd1cf);
         box-shadow: 0 1px 0 #fff inset;
-        background: #cfd1cf;
-        border: 1px solid #bfbfbf;
-        border-top: 1px solid white;
+        background: #F2F2F2;
     }
     .editable-wrap{
         display: inline;
+    }
+    th{
+        text-align: center;
     }
 }
 
@@ -42,4 +53,9 @@ div[id^="cke_editor-"]{
 .dashed-well{
     border: 4px dashed gray;
 
+}
+
+p a {
+    font-size: 15px;
+    line-height: 1.6;
 }

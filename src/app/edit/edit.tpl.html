@@ -3,15 +3,22 @@
         <!-- click-edit-link http://plnkr.co/edit/EsW7mV?p=preview -->
         <!-- plus button http://plnkr.co/edit/xUDrOS?p=preview -->
         <!-- http://vitalets.github.io/angular-xeditable/ -->
-            <div class="col-md-12">
+            <div class="col-md-6">
                 <h1>{{ resume.ContactInfo.PersonName.GivenName }} {{ resume.ContactInfo.PersonName.FamilyName }}</h1>
-                <h2>{{ resume.EmploymentHistory.EmployerOrg.PositionHistory[0].Title }}</h2>
+                <h3>Hire Date: <a href="#" e-required e-placeholder="Hire Date" editable-text="resume.EmploymentHistory.EmployerOrg.HireDate" onaftersave="updateResume()">{{ resume.EmploymentHistory.EmployerOrg.HireDate || "empty" }}</a></h3>
                 <h3><a href="mailto:{{ resume.ContactInfo.ContactMethod.InternetEmailAddress }}">{{ resume.ContactInfo.ContactMethod.InternetEmailAddress }}</a></h3>
                 <h3><a href="tel:+{{ resume.ContactInfo.ContactMethod.Mobile }}">{{ resume.ContactInfo.ContactMethod.Mobile }}</a></h3>
+            </div>
+            <div class="col-md-6">
+                <h2>Generic Title</h2>
+                <h3><a href="#" e-required e-placeholder="Generic Title" editable-text="resume.EmploymentHistory.EmployerOrg.GenericTitle" onaftersave="updateResume()">{{ resume.EmploymentHistory.EmployerOrg.GenericTitle || "empty" }}</a></h3>
+                <h2>General Description</h2>
+                <p><a href="#" e-required e-placeholder="Overall Description" editable-text="resume.EmploymentHistory.EmployerOrg.OverallDescription" onaftersave="updateResume()">{{ resume.EmploymentHistory.EmployerOrg.OverallDescription || "empty" }}</a></p>
             </div>
 
             <div class="col-md-12">
                 <h2>Experience:</h2>
+                <button class="add-skill btn btn-success" ng-click="addExperience('start')"><span class="glyphicon glyphicon-plus"></i> Experience</button>
                 <div class="exper">
                     <div class="well light-well" ng-repeat="pos in resume.EmploymentHistory.EmployerOrg.PositionHistory">
                         <h3><a href="#" e-required e-placeholder="Organization Name" editable-text="pos.OrgName.OrganizationName" onaftersave="updateResume()">{{ pos.OrgName.OrganizationName || "empty" }}</a></h3>
@@ -28,7 +35,7 @@
                         <!-- <div class="description-noEdit well" ng-bind-html="pos.Description"></div> -->
                         <!-- START SKILLS TABLE -->
                         <div ng-if="pos.Competency">
-                            <table id="skills-table" class="table table-hover table-condensed">
+                            <table class="skills-table table table-hover table-condensed">
                                 <thead>
                                 <th>Skill</th>
                                 <th>Role</th>
@@ -76,6 +83,56 @@
                     </div>
                 </div>
             </div>
+            <button class="add-skill btn btn-success" ng-click="addExperience('end')"><span class="glyphicon glyphicon-plus"></i> Experience</button>
 
     </div>
+
+    <div class="col-md-12">
+        <h2>Lifetime Skillset:</h2>
+        <div ng-if="resume.Qualifications.Competency.length > 0">
+            <table class="skills-table table table-hover table-condensed">
+                <thead>
+                <th>Skill</th>
+                <th>Experience</th>
+                <th>Edit</th>
+                </thead>
+                <tr ng-repeat="skillRole in resume.Qualifications.Competency">
+                    <td>
+                        <!-- if an image is found, don't bother showing text -->
+                        <img class="skill-icon" ng-src="{{ getSkillImg(skillRole.CompetencyDisplayName) }}" alt="{{ getSkillImg(skillRole.CompetencyDisplayName) }}" ng-click="rowform.$show();$(this).hide()"/>
+                        <!-- show text when editing and hide image -->
+                        <p ng-show="showSkillName" class="CompetencyDisplayName" editable-text="skillRole.CompetencyDisplayName" onaftersave="updateResume()" e-name="CompetencyDisplayName" e-form="lifeskillsForm" ng-click="rowform.$show()" e-typeahead="skill for skill in skillNames | filter:$viewValue | limitTo:10" typeahead-editable="false">
+                            {{ skillRole.CompetencyDisplayName }}</p>
+                    </td>
+                    <td>
+                        <span editable-text="skillRole.YearsExperience" onaftersave="updateResume()" e-name="YearsExperience" e-form="lifeskillsForm" e-required ng-click="rowform.$show()">
+                            {{ skillRole.YearsExperience || 'empty' }}
+                        </span>
+                    </td>
+                    <td>
+                        <form editable-form name="lifeskillsForm" onaftersave="updateResume()" ng-show="rowform.$visible" class="form-buttons form-inline" shown="inserted == skillRole">
+                            <button type="submit" ng-disabled="rowform.$waiting" class="btn btn-success">
+                                <span class="glyphicon glyphicon-ok"></span>
+                            </button>
+                            <button type="button" ng-disabled="rowform.$waiting" ng-click="rowform.$cancel()"
+                                    class="btn btn-default">
+                                cancel
+                            </button>
+                        </form>
+                        <div class="buttons" ng-show="!rowform.$visible">
+                            <button class="btn btn-success" ng-click="rowform.$show()"><span class="glyphicon glyphicon-pencil"></span></span></button>
+                            <button class="btn btn-danger" ng-click="removeSkill($index, resume.Qualifications.Competency)"><span class="glyphicon glyphicon-remove"></span></button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <button class="add-skill btn btn-success" ng-click="addLifeSkillRole(resume.Qualifications.Competency)"><span class="glyphicon glyphicon-plus"></i> Skill</button>
+
+    </div>
+
+    <div class="col-md-12">
+        <h2>Education:</h2>
+    </div>
+
+
 </div>

@@ -107,6 +107,44 @@ angular.module( 'resumeWrangler.edit', [
       competencyArray.push($scope.inserted);
     };
 
+    // add user
+    $scope.addLifeSkillRole = function(competencyArray) {
+      $scope.inserted = {
+        abbrev: '',
+        CompetencyDisplayName: null,
+        YearsExperience: null
+      };
+      competencyArray.push($scope.inserted);
+    };
+
+    $scope.addExperience = function(addPosition){
+      var blankExperience = {
+        "positionType": "contract",
+        "projectId": "",
+        "Title": "Postition Title",
+        "OrgName": {
+          "OrganizationName": "Organization Name"
+        },
+        "Description": "Description of my role in the project.",
+        "StartDate": "1800-01-01",
+        "EndDate": "1900-01-01",
+        "Competency": [
+          {
+            "id": "",
+            "abbrev": "none",
+            "CompetencyDisplayName": "Some Skill Name",
+            "CompetencyEvidence": "Description of how skill was used"
+          }
+        ]
+      };
+      if (!_.isEmpty(addPosition) && addPosition === "end"){
+        $scope.resume.EmploymentHistory.EmployerOrg.PositionHistory.push(blankExperience);
+      } else {
+        $scope.resume.EmploymentHistory.EmployerOrg.PositionHistory.unshift(blankExperience);
+      }
+    };
+
+
     $scope.updateResume = function(){
       resumeCRUDService.updateResume($scope.resume.ContactInfo.PersonName.id, $scope.resume)
         .success(function(){
