@@ -148,6 +148,9 @@ angular.module( 'resumeWrangler.edit', [
     $scope.updateResume = function(){
       resumeCRUDService.updateResume($scope.resume.ContactInfo.PersonName.id, $scope.resume)
         .success(function(){
+
+          //is this skill known? if not, make sure you post back to the skills API
+
           console.log("updateResume SUCCESS");
         })
         .error(function(){

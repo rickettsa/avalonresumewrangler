@@ -15,17 +15,22 @@
     <meta property="og:url" content="http://bit.ly/ngBoilerplate" />
     <meta property="og:image" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png?1366128846" />
     <meta property="og:description" content="Non-Trivial AngularJS Made Easy: Everything you need to kickstart AngularJS projects: a best-practice directory structure, an intelligent build system, and the best web design libraries around.">
+    <meta name="google-signin-client_id" content="486964627874-jhej0dhmph3iblbjuvhfrovai0pissbl.apps.googleusercontent.com">
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- font awesome from BootstrapCDN -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
 
     <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
     <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
 
     <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
     <script type="text/javascript" src="<%= file %>"></script><% }); %>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 
   </head>
   <body>
@@ -41,13 +46,14 @@
           </button>
           <div class="navbar-brand">
               <img src="http://blogs.avalonconsult.com/files/2013/04/avalon-transparent.png"/>
+
             &#x2003;Resume Wrangler
             <small>
               <a href="http://github.com/ngbp/ngbp/blob/v<%= version %>-release/CHANGELOG.md">
                 v<%= version %>
               </a>
             </small>
-          </div>
+
         </div>
         <div class="collapse navbar-collapse" collapse="menuCollapsed">
           <ul class="nav navbar-nav">
@@ -60,7 +66,7 @@
               <li ui-sref-active="active">
                   <a href ui-sref="view">
                       <i class="glyphicon glyphicon-eye-open"></i>
-                      View
+                      Resume
                   </a>
               </li>
             <li ui-sref-active="active">
@@ -82,7 +88,9 @@
               <!--</a>-->
             <!--</li>-->
           </ul>
+            <ds-user-login></ds-user-login>
         </div>
+
 
         <div class="col-md-12">
           <div class="row">
