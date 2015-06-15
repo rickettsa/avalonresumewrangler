@@ -6,6 +6,7 @@
     yum: name={{item}} state=present
     with_items:
       - libselinux-python
+      - vim
   vars_files:
     - ans_cfg/apache.yml
   roles:
