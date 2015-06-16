@@ -6,16 +6,28 @@
  * @description Create,Read,Update,Delete service for skills JSON from backend.
  */
 angular.module('resumeWrangler')
-  .service('LoginService', function($rootScope, $http, configuration) {
-    var service = {};
+  .service('LoginService', function($rootScope, $http, Session) {
+    var loginService = {};
 
-    service.getBasicProfile = function(googleUser){
-      var profile = googleUser.getBasicProfile();
-      console.log('ID: ' + profile.getId());
-      console.log('Name: ' + profile.getName());
-      console.log('Image URL: ' + profile.getImageUrl());
-      console.log('Email: ' + profile.getEmail());
+    loginService.login = function (profile) {
+        Session.create(profile);
     };
 
-    return service;
+    loginService.logout = function () {
+      Session.destroy();
+    };
+
+    loginService.isAuthenticated = function () {
+      return !!Session.userId;
+    };
+
+    loginService.isAuthorized = function (authorizedRoles) {
+      if (!angular.isArray(authorizedRoles)) {
+        authorizedRoles = [authorizedRoles];
+      }
+      return (loginService.isAuthenticated() &&
+        authorizedRoles.indexOf(Session.userRole) !== -1);
+    };
+
+    return loginService;
   });

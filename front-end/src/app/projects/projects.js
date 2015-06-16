@@ -21,7 +21,8 @@ angular.module( 'resumeWrangler.projects', [
             return SkillsService.fetchSkills();
           }
         },
-        data:{ pageTitle: 'Edit Project' }
+        data:{ pageTitle: 'Edit Project'
+        }
       });
   })
   .controller('ProjectsCtrl', function ($http, $scope, $filter, $state, projectResponse, skillsResponse, projectsCRUDService) {

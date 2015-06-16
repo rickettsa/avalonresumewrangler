@@ -10,9 +10,11 @@ angular.module( 'resumeWrangler', [
   'ui.bootstrap',
   'xeditable',
   'siyfion.sfTypeahead',
-  'ngSanitize'
+  'ngSanitize',
+  'AppConfig'
 ])
 
+/**** START FILTERS ****/
   .filter('highlight', function () {
     return function (text, search, caseSensitive) {
       if (text && (search || angular.isNumber(search))) {
@@ -41,15 +43,36 @@ angular.module( 'resumeWrangler', [
     };
   })
 
-.config( function myAppConfig ( $stateProvider, $urlRouterProvider, configuration ) {
+/**** END FILTERS ****/
+
+.config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
     //ui.router default
     $urlRouterProvider.otherwise( '/home' );
 
 })
 
-.run( function(editableOptions, $rootScope, configuration){
+.run( function(editableOptions, $rootScope, configuration, AppConfig, LoginService){
     editableOptions.theme = 'bs3'; //xeditable option to use bootstrap 3
     var uiRouterDebug = 0;
+
+    //https://medium.com/opinionated-angularjs/techniques-for-authentication-in-angularjs-applications-7bbf0346acec
+    $rootScope.$on('$stateChangeStart', function (event, next) {
+      console.log("Auth Check Starting...");
+
+      var authorizedRoles = next.data.authorizedRoles;
+      if (!LoginService.isAuthorized(authorizedRoles)) {
+        event.preventDefault();
+        if (LoginService.isAuthenticated()) {
+          // user is not allowed
+          //$rootScope.$broadcast(AppConfig.AUTH_EVENTS.notAuthorized);
+          console.log("Authenticated!");
+        } else {
+          // user is not logged in
+          //$rootScope.$broadcast(AppConfig.AUTH_EVENTS.notAuthenticated);
+          console.log("Not Authenticated!");
+        }
+      }
+    });
 
 
     //http://stackoverflow.com/questions/20745761/what-is-the-angular-ui-router-lifecycle-for-debugging-silent-errors/20786262#20786262
@@ -82,12 +105,15 @@ angular.module( 'resumeWrangler', [
   }
 )
 
-.controller( 'AppCtrl', function AppCtrl ( $scope, $location ) {
+.controller( 'AppCtrl', function AppCtrl ($scope, $location) {
+
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
     if ( angular.isDefined( toState.data.pageTitle ) ) {
       $scope.pageTitle = toState.data.pageTitle + ' | resumeWrangler' ;
     }
   });
+
+
 })
 
 ;

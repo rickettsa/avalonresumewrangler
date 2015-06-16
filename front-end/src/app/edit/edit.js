@@ -21,7 +21,9 @@ angular.module( 'resumeWrangler.edit', [
                 return SkillsService.fetchSkills();
               }
             },
-            data:{ pageTitle: 'Edit Resume' }
+            data:{ "pageTitle": 'Edit Resume',
+                   "authorizedRoles": ['editor', 'admin']
+            }
       });
     })
     .controller('EditCtrl', function ($http, $scope, $filter, resumeResponse, skillsResponse, resumeCRUDService) {

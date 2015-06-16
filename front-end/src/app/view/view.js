@@ -1,7 +1,7 @@
 angular.module( 'resumeWrangler.view', [
-        'ui.router',
-        'placeholders',
-        'ui.bootstrap'
+      'ui.router',
+      'placeholders',
+      'ui.bootstrap'
     ])
     .config(function config( $stateProvider ) {
       $stateProvider
@@ -21,7 +21,9 @@ angular.module( 'resumeWrangler.view', [
                 return SkillsService.fetchSkills();
               }
             },
-            data:{ pageTitle: 'View Resume' }
+            data:{ "pageTitle": 'View Resume',
+                   "authorizedRoles": ['all']
+            }
       });
     })
     .controller('ViewCtrl', function ($http, $scope, $filter, resumeResponse, skillsResponse) {

@@ -14,7 +14,8 @@
  */
 angular.module( 'resumeWrangler.home', [
   'ui.router',
-  'plusOne'
+  'plusOne',
+  'AppConfig'
 ])
 
 /**
@@ -37,7 +38,9 @@ angular.module( 'resumeWrangler.home', [
             return {};
           }
         },
-        data: {"pageTitle": "Home"}
+        data: {"pageTitle": "Home",
+               "authorizedRoles": ['all']
+        }
       })
       .state('searchResults', {
         url: '/search-results',
@@ -52,7 +55,9 @@ angular.module( 'resumeWrangler.home', [
             return resumeCRUDService.runQuery($rootScope.cachedSearch);
           }
         },
-        data: {"pageTitle": "Search Results"}
+        data: {"pageTitle": "Search Results",
+                "authorizedRoles": ['all']
+        }
       });
   })
 
