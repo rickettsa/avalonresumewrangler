@@ -21,7 +21,8 @@ angular.module( 'resumeWrangler.projects', [
             return SkillsService.fetchSkills();
           }
         },
-        data:{ pageTitle: 'Edit Project'
+        data:{ pageTitle: 'Edit Project',
+          "authorizedRoles": ['editor', 'admin']
         }
       });
   })

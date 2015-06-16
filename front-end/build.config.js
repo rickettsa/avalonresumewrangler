@@ -76,13 +76,15 @@ module.exports = {
       'vendor/angular-typeahead/angular-typeahead.min.js',
       'vendor/angular-sanitize/angular-sanitize.min.js',
       'vendor/angular-sanitize/angular-sanitize.min.js.map',
-      'config/config.js'
+      'config/config.js',
+      'vendor/angular-loading-bar/loading-bar.min.js'
     ],
     dirs: [
       'vendor/ckeditor/**'
     ],
     css: [
-      'vendor/angular-xeditable/dist/css/xeditable.css'
+      'vendor/angular-xeditable/dist/css/xeditable.css',
+      'vendor/angular-loading-bar/loading-bar.min.css'
     ],
     assets: [
       'vendor/bootstrap/dist/fonts/*'

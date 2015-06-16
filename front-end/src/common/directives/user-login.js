@@ -6,7 +6,7 @@
  * @description Search form directive.
  */
 angular.module('resumeWrangler')
-  .directive('dsUserLogin', function($rootScope) {
+  .directive('dsUserLogin', function($rootScope, $state) {
     return {
       templateUrl: 'templates/user-login.tpl.html',
       restrict: 'E',
@@ -44,9 +44,6 @@ angular.module('resumeWrangler')
 
         //not scoped on purpose so it works with Google login button
         function onSignIn(googleUser) {
-          console.log("GOOGLE onSignIn");
-
-
           var profile = googleUser.getBasicProfile();
 
           //Create application session to match Google session if auth succeeds
@@ -58,11 +55,11 @@ angular.module('resumeWrangler')
         };
         window.onSignIn = onSignIn;
 
+
         $scope.signOut = function() {
           var auth2 = gapi.auth2.getAuthInstance();
           auth2.signOut().then(function() {
             LoginService.logout();
-            console.log("SignOut.Loout APPLY");
             $scope.$apply();
           });
         };

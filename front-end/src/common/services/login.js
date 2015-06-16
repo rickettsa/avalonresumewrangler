@@ -26,7 +26,7 @@ angular.module('resumeWrangler')
         authorizedRoles = [authorizedRoles];
       }
       return (loginService.isAuthenticated() &&
-        authorizedRoles.indexOf(Session.userRole) !== -1);
+        _.intersection(authorizedRoles, Session.userRole).length > 0);
     };
 
     return loginService;

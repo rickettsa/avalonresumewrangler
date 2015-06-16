@@ -37,8 +37,8 @@ angular.module('resumeWrangler')
   };
 
   var lookup = {
-    "beckera@avalonconsult.com": ["editor","admin"],
-    "abembecker@gmail.com": ["guest"]
+    "beckera@avalonconsult.com": ["editor", "admin"],
+    "abembecker@gmail.com": ["guest", "all"]
   };
 
   this.roleLookup = function(userEmail){

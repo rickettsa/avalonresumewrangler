@@ -22,7 +22,7 @@ angular.module( 'resumeWrangler.view', [
               }
             },
             data:{ "pageTitle": 'View Resume',
-                   "authorizedRoles": ['all']
+              "authorizedRoles": ['all', 'editor', 'admin']
             }
       });
     })

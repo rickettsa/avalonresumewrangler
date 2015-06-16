@@ -39,7 +39,7 @@ angular.module( 'resumeWrangler.home', [
           }
         },
         data: {"pageTitle": "Home",
-               "authorizedRoles": ['all']
+               "authorizedRoles": ['all', 'editor', 'admin']
         }
       })
       .state('searchResults', {
@@ -56,7 +56,7 @@ angular.module( 'resumeWrangler.home', [
           }
         },
         data: {"pageTitle": "Search Results",
-                "authorizedRoles": ['all']
+          "authorizedRoles": ['all', 'editor', 'admin']
         }
       });
   })

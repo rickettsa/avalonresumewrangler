@@ -68,13 +68,13 @@
                       Resume
                   </a>
               </li>
-            <li ui-sref-active="active">
+            <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
               <a href ui-sref="edit">
                 <i class="fa fa-edit"></i>
                 Resume
               </a>
             </li>
-              <li ui-sref-active="active">
+              <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
                   <a href ui-sref="projects">
                       <i class="fa fa-edit"></i>
                       Projects

@@ -21,8 +21,8 @@ angular.module( 'resumeWrangler.edit', [
                 return SkillsService.fetchSkills();
               }
             },
-            data:{ "pageTitle": 'Edit Resume',
-                   "authorizedRoles": ['editor', 'admin']
+            data:{ "pageTitle": "Edit Resume",
+                   "authorizedRoles": ["editor", "admin"]
             }
       });
     })

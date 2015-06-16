@@ -11,7 +11,8 @@ angular.module( 'resumeWrangler', [
   'xeditable',
   'siyfion.sfTypeahead',
   'ngSanitize',
-  'AppConfig'
+  'AppConfig',
+  'angular-loading-bar'
 ])
 
 /**** START FILTERS ****/
@@ -65,11 +66,11 @@ angular.module( 'resumeWrangler', [
         if (LoginService.isAuthenticated()) {
           // user is not allowed
           //$rootScope.$broadcast(AppConfig.AUTH_EVENTS.notAuthorized);
-          console.log("Authenticated!");
+          console.log("You do not have permissions to view this page!");
         } else {
           // user is not logged in
           //$rootScope.$broadcast(AppConfig.AUTH_EVENTS.notAuthenticated);
-          console.log("Not Authenticated!");
+          console.log("You are not logged in!");
         }
       }
     });
@@ -101,11 +102,10 @@ angular.module( 'resumeWrangler', [
       });
       /* END ui.router debug */
     }
-
   }
 )
 
-.controller( 'AppCtrl', function AppCtrl ($scope, $location) {
+.controller( 'AppCtrl', function AppCtrl ($scope, $location, LoginService) {
 
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
     if ( angular.isDefined( toState.data.pageTitle ) ) {
@@ -113,6 +113,9 @@ angular.module( 'resumeWrangler', [
     }
   });
 
+  $scope.isAuthorized = function(roles){
+         return LoginService.isAuthorized(roles);
+  };
 
 })
 
