@@ -51,6 +51,7 @@ angular.module( 'resumeWrangler.skills', [
 
     $scope.skills = skillsResponse.data.skills;
     $scope.skillNames = _.pluck(skillsResponse.data.skills, 'dispName');
+    $scope.currentSkill = {};
 
     $scope.skillFilters = [
       {"name": "Front End",
@@ -70,8 +71,22 @@ angular.module( 'resumeWrangler.skills', [
       },
       {"name": "IDE",
         "value": "ide"
+      },
+      {"name": "Curated",
+        "value": "curated"
+      },
+      {"name": "Uncurated",
+        "value": "uncurated"
       }
     ];
+
+    $scope.editMode = 0;
+
+    $scope.selectSkill = function(key, value){
+      $scope.editMode = 1;
+      $scope.currentSkill = value;
+      $scope.currentSkill.normName = key;
+    };
 
     $scope.getSkillImg = function(skillName){
       var skillNode = _.findBySubVal($scope.skillsData, 'dispName', [skillName]);
@@ -89,18 +104,37 @@ angular.module( 'resumeWrangler.skills', [
       competencyArray.splice(index, 1);
     };
 
-    $scope.addLifeSkillRole = function(competencyArray) {
-      $scope.inserted = {
-        abbrev: '',
-        CompetencyDisplayName: null,
-        YearsExperience: null
+    $scope.addSkill = function() {
+      $scope.currentSkill = {
+        "newSkillName": {
+          "dispName": "",
+          "image": "",
+          "stackPositions": [""],
+          "stackNames": [""],
+          "curated": "true",
+          "descr": ""
+        }
       };
-      competencyArray.push($scope.inserted);
+    };
+
+    $scope.saveSkill = function() {
+      $scope.inserted = {
+        "$scope.currentSkill.normName": {
+          "dispName": $scope.currentSkill.dispName,
+          "image": $scope.currentSkill.image,
+          "stackPositions": $scope.currentSkill.stackPositions,
+          "stackNames": $scope.currentSkill.stackNames,
+          "curated": "true",
+          "descr": $scope.currentSkill.descr
+        }
+      };
+      skills.push($scope.inserted);
+      $scope.updateSkills($scope.skills);
     };
 
 
-    $scope.updateSkillsDB = function(){
-      SkillsService.updateResume($scope.resume.ContactInfo.PersonName.id, $scope.resume)
+    $scope.updateSkills = function(){
+      SkillsService.updateSkills($scope.skills)
         .success(function(){
           //is this skill known? if not, make sure you post back to the skills API
           console.log("updateResume SUCCESS");

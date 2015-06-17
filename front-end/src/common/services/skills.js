@@ -22,6 +22,14 @@ angular.module('resumeWrangler')
       });
     };
 
+    service.updateSkills = function(payload) {
+      return $http({
+        method: "POST",
+        url: configuration.api + '/api/skills',
+        data: payload
+      });
+    };
+
     service.getTypeaheadSource = function() {
       return new Bloodhound({
         datumTokenizer: Bloodhound.tokenizers.obj.whitespace('hint'),
