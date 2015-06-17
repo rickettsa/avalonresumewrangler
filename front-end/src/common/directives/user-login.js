@@ -19,7 +19,7 @@ angular.module('resumeWrangler')
             return Session.userRole;
           },
           function(newValue, oldValue){
-            console.log("userRole Watch: " + newValue);
+            //console.log("userRole Watch: " + newValue);
             if (newValue){
               $scope.userRole = newValue.toString();
             } else {
@@ -49,7 +49,6 @@ angular.module('resumeWrangler')
           //Create application session to match Google session if auth succeeds
           LoginService.login(profile);
           if (LoginService.isAuthenticated()){
-              console.log("SignIn.Login APPLY");
               $scope.$apply();
           }
         };

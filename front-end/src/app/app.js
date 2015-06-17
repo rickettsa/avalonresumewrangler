@@ -5,6 +5,7 @@ angular.module( 'resumeWrangler', [
   'resumeWrangler.edit',
   'resumeWrangler.projects',
   'resumeWrangler.view',
+  'resumeWrangler.skills',
   'services.config',
   'ui.router',
   'ui.bootstrap',
@@ -55,22 +56,31 @@ angular.module( 'resumeWrangler', [
 .run( function(editableOptions, $rootScope, configuration, AppConfig, LoginService){
     editableOptions.theme = 'bs3'; //xeditable option to use bootstrap 3
     var uiRouterDebug = 0;
+    var authDebug = 0;
 
     //https://medium.com/opinionated-angularjs/techniques-for-authentication-in-angularjs-applications-7bbf0346acec
     $rootScope.$on('$stateChangeStart', function (event, next) {
-      console.log("Auth Check Starting...");
+      if (authDebug){
+        console.log("Auth Check Starting...");
+      }
 
       var authorizedRoles = next.data.authorizedRoles;
       if (!LoginService.isAuthorized(authorizedRoles)) {
-        event.preventDefault();
+        //event.preventDefault();
+        // 06-17-2015 this prevent default causes page view content not to load when page is refreshed
+        // does not seem to break anything to remove..
         if (LoginService.isAuthenticated()) {
           // user is not allowed
           //$rootScope.$broadcast(AppConfig.AUTH_EVENTS.notAuthorized);
-          console.log("You do not have permissions to view this page!");
+          if (authDebug) {
+            console.log("You do not have permissions to view this page!");
+          }
         } else {
           // user is not logged in
           //$rootScope.$broadcast(AppConfig.AUTH_EVENTS.notAuthenticated);
-          console.log("You are not logged in!");
+          if (authDebug) {
+            console.log("You are not logged in!");
+          }
         }
       }
     });

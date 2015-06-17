@@ -62,12 +62,12 @@ module.exports = {
    */
   vendor_files: {
     js: [
+      'vendor/jquery/dist/jquery.min.js',
+      'vendor/jquery/dist/jquery.min.map',
       'vendor/angular/angular.js',
       'vendor/angular-bootstrap/ui-bootstrap-tpls.min.js',
       'vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js',
       'vendor/angular-ui-router/release/angular-ui-router.js',
-      'vendor/jquery/dist/jquery.min.js',
-      'vendor/jquery/dist/jquery.min.map',
       'vendor/lodash/lodash.min.js',
       'vendor/angular-xeditable/dist/js/xeditable.js',
       'vendor/sugar/release/sugar.min.js',

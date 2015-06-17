@@ -1,3 +1,11 @@
+"use strict";
+
+/**
+ * @ngdoc module
+ * @name resumeWrangler.edit
+ * @description Controls Editing of the user's resume.
+ */
+
 angular.module( 'resumeWrangler.edit', [
         'ui.router',
         'placeholders',
@@ -14,7 +22,7 @@ angular.module( 'resumeWrangler.edit', [
               }
             },
             resolve: {
-              resumeResponse: function(resumeCRUDService){
+              resumeResponse: function(resumeCRUDService, Session){
                 return resumeCRUDService.fetchResume('0000000124');
               },
               skillsResponse: function(SkillsService){
