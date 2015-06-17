@@ -22,7 +22,7 @@ angular.module( 'resumeWrangler.projects', [
           }
         },
         data:{ pageTitle: 'Edit Project',
-          "authorizedRoles": ['editor', 'admin']
+          "authorizedRoles": ['project-editor', 'admin']
         }
       });
   })

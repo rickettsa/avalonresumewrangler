@@ -62,6 +62,7 @@ angular.module('resumeWrangler')
             LoginService.logout();
             $scope.$apply();
           });
+          $state.go('home');
         };
 
       }
