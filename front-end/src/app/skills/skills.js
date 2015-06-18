@@ -24,6 +24,12 @@ angular.module( 'resumeWrangler.skills', [
         resolve: {
           skillsResponse: function(SkillsService){
             return SkillsService.fetchSkills();
+          },
+          stacksResponse: function(SkillsService){
+            return SkillsService.fetchStacks();
+          },
+          stackPositionResponse: function(SkillsService){
+            return SkillsService.fetchStackPositions();
           }
         },
         data:{ "pageTitle": "Edit Resume",
@@ -31,7 +37,7 @@ angular.module( 'resumeWrangler.skills', [
         }
       });
   })
-  .controller('SkillsCtrl', function ($http, $scope, $filter, skillsResponse, SkillsService) {
+  .controller('SkillsCtrl', function ($http, $scope, $filter, skillsResponse, stacksResponse, stackPositionResponse, SkillsService) {
 
     _.mixin({
       /**
@@ -52,6 +58,8 @@ angular.module( 'resumeWrangler.skills', [
     $scope.skills = skillsResponse.data.skills;
     $scope.skillNames = _.pluck(skillsResponse.data.skills, 'dispName');
     $scope.currentSkill = {};
+    $scope.currentSkill.stackPositions = [];
+    $scope.currentSkill.stackNames = [];
 
     $scope.skillFilters = [
       {"name": "Front End",
@@ -80,10 +88,7 @@ angular.module( 'resumeWrangler.skills', [
       }
     ];
 
-    $scope.editMode = 0;
-
     $scope.selectSkill = function(key, value){
-      $scope.editMode = 1;
       $scope.currentSkill = value;
       $scope.currentSkill.normName = key;
     };
@@ -109,8 +114,8 @@ angular.module( 'resumeWrangler.skills', [
         "newSkillName": {
           "dispName": "",
           "image": "",
-          "stackPositions": [""],
-          "stackNames": [""],
+          "stackPositions": [],
+          "stackNames": [],
           "curated": "true",
           "descr": ""
         }
@@ -128,10 +133,9 @@ angular.module( 'resumeWrangler.skills', [
           "descr": $scope.currentSkill.descr
         }
       };
-      skills.push($scope.inserted);
+      $scope.skills.push($scope.inserted);
       $scope.updateSkills($scope.skills);
     };
-
 
     $scope.updateSkills = function(){
       SkillsService.updateSkills($scope.skills)
@@ -143,5 +147,52 @@ angular.module( 'resumeWrangler.skills', [
           console.log("updateResume FAILED");
         });
     };
+
+
+    $scope.stacks = stacksResponse.data.stacks;
+    $scope.positions = stackPositionResponse.data.positions;
+
+    $scope.togglePos = function(member){
+      //group already contains this member, remove
+      if (_.includes($scope.currentSkill.stackPositions, member.id)){
+            //this function modifies the group array
+            var removed = _.remove($scope.currentSkill.stackPositions, function(n){
+              return n === member.id;
+            });
+      } else {
+        $scope.currentSkill.stackPositions.push(member.id);
+      }
+    };
+
+    $scope.toggleStack = function(member){
+      //group already contains this member, remove
+      if (_.includes($scope.currentSkill.stackNames, member.id)){
+        //this function modifies the group array
+        var removed = _.remove($scope.currentSkill.stackNames, function(n){
+          return n === member.id;
+        });
+      } else {
+        $scope.currentSkill.stackNames.push(member.id);
+      }
+    };
+
+    $scope.isPosSelected = function(pos){
+      if (_.includes($scope.currentSkill.stackPositions, pos.id)){
+        return 'selected';
+      }
+    };
+
+    $scope.isStackSelected = function(stack){
+      if (_.includes($scope.currentSkill.stackNames, stack.id)){
+        return 'selected';
+      }
+    };
+
+    $scope.isSkillSelected = function(key){
+      if ($scope.currentSkill.normName === key){
+        return 'selected';
+      }
+    };
+
 
   });

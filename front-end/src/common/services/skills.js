@@ -24,8 +24,40 @@ angular.module('resumeWrangler')
 
     service.updateSkills = function(payload) {
       return $http({
-        method: "POST",
+        method: "PUT",
         url: configuration.api + '/api/skills',
+        data: payload
+      });
+    };
+
+    service.fetchStacks = function() {
+      return $http({
+        method: "GET",
+        cache: true,
+        url: configuration.api + '/api/stacks'
+      });
+    };
+
+    service.updateStacks = function(payload) {
+      return $http({
+        method: "PUT",
+        url: configuration.api + '/api/stacks',
+        data: payload
+      });
+    };
+
+    service.fetchStackPositions = function() {
+      return $http({
+        method: "GET",
+        cache: true,
+        url: configuration.api + '/api/stack-positions'
+      });
+    };
+
+    service.updateStackPositions = function(payload) {
+      return $http({
+        method: "PUT",
+        url: configuration.api + '/api/stack-positions',
         data: payload
       });
     };
