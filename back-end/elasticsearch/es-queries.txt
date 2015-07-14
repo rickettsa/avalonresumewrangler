@@ -1,0 +1,45 @@
+
+CRUD
+
+* Create a resume; let ES generate an id
+
+POST /resumes/resume/
+(body: resume json)
+
+* Update a resume
+
+POST /resumes/resume/<id>
+(body: resume json)
+
+* Get a resume
+
+GET /resumes/resume/<id>
+
+* Delete a resume
+
+DELETE /resumes/resume/<id>
+
+-----------------------
+
+SEARCH
+
+* Resumes that mention a certain skill [set]
+  (Resume.StructuredXMLResume.Qualifications.Competency.abbrev holds skill
+  name; search for resumes that have the specified skill [set])
+
+
+* Resumes that mention a certain project
+  (Are there projects inside the current resume data? Where?)
+
+
+* The person who owns a resume
+  (Resume.StructuredXMLResume.ContactInfo)
+
+
+* Resumes owned by a person
+  (search for all resumes where Resume.StructuredXMLResume.ContactInfo.PersonName == specified person)
+
+
+* Contact info for a person
+  (Resume.StructuredXMLResume.ContactInfo; ContactMethod has phone/email)
+
