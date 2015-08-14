@@ -13,7 +13,7 @@ declare variable $ES-INDEX := 'resumes';
 declare variable $ES-TYPE := 'resume';
 declare variable $ES-HOST-INDEX-TYPE := fn:string-join( ($ES-HOST, $ES-INDEX, $ES-TYPE), '/' ) || '/';
 
-declare variable $ZIP-PATH := 'C:\Users\kerisman\home\avalon\src\abe-becker-resume-wrangler\avalon-resumes-xml_1.1.zip';
+declare variable $ZIP-PATH := 'C:\Users\kerisman\home\avalon\src\abe-becker-resume-wrangler\avalon-resumes-xml_1.2.zip';
 
 declare variable $ML-RESUME-COLLECTION := 'resume';
 
@@ -45,14 +45,18 @@ declare function local:doc-id( $r as element(hr:Resume) ) as xs:string {
 };
 
 declare function local:json-config() {
-(:    let $c := json:config("custom"):)
-    let $c := json:config("full")
+    let $c := json:config("custom")
     let $_ := map:put( $c, 'array-element-names', (
         xs:QName('hr:Competency'),
         xs:QName('hr:Achievement'),
         xs:QName('hr:SecurityCredential'),
         xs:QName('hr:PositionHistory'))
     )
+    (: the full-element-names option causes the JSON to be less clean, but
+       without it, the resulting set of JSON documents has some inconsistencies
+       and won't load in Elasticsearch :)
+    let $_ := map:put($c, 'full-element-names', (xs:QName('hr:EducationHistory'), xs:QName('hr:Qualifications'), xs:QName('hr:Description')) )
+
     let $_ := map:put($c, "whitespace", "ignore")
     let $_ := map:put($c, "attribute-names",("positionType",'projectId','abbrev',"currentEmployer",'id', 'name', 'description', 'schoolType', 'lastUsed','schemaLocation'))
     return $c
@@ -71,6 +75,18 @@ declare function local:json-resume-to-xml( $r as xs:string ) {
     return json:transform-from-json( $r, $c )
 };
 
+(: create a mapping for resumes :)
+(:FIXME
+declare function local:create-mapping() {
+    let $m := '
+    {
+        
+    }'
+    return
+        xdmp:http-post( $ES-HOST-INDEX-TYPE, (), $m )
+};
+:)
+
 (: load a single resume into MarkLogic :)
 declare function local:load-resume(
     $r             as element(hr:Resume),
@@ -85,150 +101,6 @@ declare function local:load-resume(
         else $path-from-zip || $doc-id
     return
         xdmp:document-insert( $doc-id, $r, (), ($ML-RESUME-COLLECTION) )
-};
-
-declare function local:create-es-index() {
-    let $definition := text{
-    '{
-      "settings": { },
-      "mappings": {
-        "resumes": {
-          "mappings": {
-            "resume": {
-              "properties": {
-                "Resume": {
-                  "properties": {
-                    "StructuredXMLResume": {
-                      "properties": {
-                        "ContactInfo": {
-                          "properties": {
-                            "ContactMethod": {
-                              "properties": {
-                                "InternetEmailAddress": {
-                                  "type": "string"
-                                },
-                                "Mobile": {
-                                  "type": "string"
-                                }
-                              }
-                            },
-                            "PersonName": {
-                              "properties": {
-                                "FamilyName": {
-                                  "type": "string"
-                                },
-                                "GivenName": {
-                                  "type": "string"
-                                }
-                              }
-                            }
-                          }
-                        },
-                        "EducationHistory": {
-                          "properties": {
-                            "SchoolOrInstitution": {
-                              "School": {
-                                "SchoolName": {
-                                  "type": "string"
-                                }
-                              },
-                              "Degree": {
-                                "DegreeName": {
-                                  "type": "string"
-                                },
-                                "DegreeMajor": {
-                                  "Name": {
-                                    "type": "string"
-                                  }
-                                },
-                                "DatesOfAttendance": {
-                                  "StartDate": {
-                                    "type": "string"
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        },
-                        "EmploymentHistory": {
-                          "properties": {
-                            "EmployerOrg": {
-                              "properties": {
-                                "EmployerOrgName": {
-                                  "type": "string"
-                                },
-                                "PositionHistory": {
-                                  "properties": {
-                                    "Description": {
-                                      "properties": {
-                                        "p": {
-                                          "type": "string"
-                                        },
-                                        "ul": {
-                                          "properties": {
-                                            "li": {
-                                              "type": "string"
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "OrgName": {
-                                      "properties": {
-                                        "OrganizationName": {
-                                          "type": "string"
-                                        }
-                                      }
-                                    },
-                                    "StartDate": {
-                                      "type": "date",
-                                      "format": "dateOptionalTime"
-                                    },
-                                    "Title": {
-                                      "type": "string"
-                                    },
-                                    "positionType": {
-                                      "type": "string"
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        },
-                        "Qualifications": {
-                          "properties": {
-                            "Competency": {
-                              "properties": {
-                                "CompetencyDisplayName": {
-                                  "type": "string"
-                                },
-                                "YearsExperience": {
-                                  "type": "string"
-                                },
-                                "abbrev": {
-                                  "type": "string"
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    },
-                    "schemaLocation": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }'
-    }
-    return
-        xdmp:http-post( $ES-HOST-INDEX-TYPE, (), $definition )
 };
 
 (: index a single resume into ElasticSearch :)
@@ -269,6 +141,11 @@ declare function local:load-resumes(
                     element http-response { $e[1] },
                     element es-response { xdmp:quote($e[2]) }
                 }
+            (:
+            else if($load-cb)
+            then
+                ...load couchbase
+            :)
             else if($load-ml)
             then
                 (: load resume into MarkLogic :)
@@ -289,6 +166,8 @@ declare function local:delete-es-index() {
     return xdmp:http-delete($es-index)
 };
 
+(::::::::::::::)
+
 (: Perform round-trip conversion from XML to JSON and back to XML to check that conversion settings are right
 let $r := xdmp:unquote(xdmp:filesystem-file('C:\users\kerisman\home\avalon\src\abe-becker-resume-wrangler\avalon-resume-template.xml'))/node()
 let $rjson := local:resume-to-json($r)
@@ -303,7 +182,7 @@ return local:json-resume-to-xml($r)
 (:local:load-resumes-into-ml( $ZIP-PATH ):)
 (:local:delete-all-resumes-from-ml():)
 
-(: Convert XML resumes to JSON and load into ES, capturing and returning any errors
+(: Convert XML resumes to JSON and load into ES, capturing and returning any errors 
 let $report := local:load-resumes-into-es( $ZIP-PATH )
 return
     for $resume in $report
@@ -317,11 +196,27 @@ return
         then $name || ': success'
         else $name || ': error code ' || $code
 :)
-    
+
 (:local:delete-es-index():)
-(:local:create-es-index():)
+(:
+  ( xdmp:http-put( fn:string-join( ($ES-HOST, $ES-INDEX), '/' ) || '/', (), () ) (: create index with no options :)
+    ,
+    local:create-mapping()
+  )
+:)
 
 (: Return the JSON strings generated as an intermediate step before loading ES
 let $rjson := local:load-resumes($ZIP-PATH, fn:false(), fn:false())[1]
 return local:json-resume-to-xml( text{$rjson} )
 :)
+
+(: FIXME: return the json that results from the transformation done when loading
+    let $zip := xdmp:external-binary( $ZIP-PATH )
+    let $zip-paths := for $x in xdmp:zip-manifest( $zip )//zip:part/text() return $x
+    return
+        for $path in $zip-paths
+        let $resume := xdmp:zip-get($zip, $path)/node()
+        return local:resume-to-json($resume)
+:)
+(:        where $resume//hr:FamilyName/fn:string() eq 'Thayer' return local:resume-to-json($resume) :)
+

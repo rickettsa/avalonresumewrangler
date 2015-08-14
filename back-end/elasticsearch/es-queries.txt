@@ -32,14 +32,83 @@ SEARCH
   (Are there projects inside the current resume data? Where?)
 
 
-* The person who owns a resume
-  (Resume.StructuredXMLResume.ContactInfo)
-
-
 * Resumes owned by a person
   (search for all resumes where Resume.StructuredXMLResume.ContactInfo.PersonName == specified person)
 
 
+These aren't really search (not sure where I was going with this):
 * Contact info for a person
   (Resume.StructuredXMLResume.ContactInfo; ContactMethod has phone/email)
+* The person who owns a resume
+  (Resume.StructuredXMLResume.ContactInfo)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ES Query DSL -- understand the following and the rest builds upon it (from https://www.youtube.com/watch?v=bZGSHm-XE1A):
+    - There are "queries" and there are "filters". Filters are used when you
+      want a binary answer -- either match or do not match a document based on
+      some criteria. Queries give you relevance (i.e. "degree of match").
+      Queries are used for full text searches, filters for exact values.
+      Remember: filters are FASTER so you want to filter first, then query
+      remaining docs.
+    - match all query: GET /_search { 'query': { match_all: {} } }
+    - simple query: GET /_search { 'query': { 'match': { 'title': 'search' } } }
+        ~ equivalent to GET /_search {}
+    - Filters require a certain syntactical structure, e.g.:
+        GET /_search
+        {
+            'query': {
+                'filtered': {
+                    'query': { ... },
+                    'filter': { 'term': { 'status': 'active' } }
+                }
+            }
+        }
+        (you can omit the query.filtered.query and it will do match_all by default)
+
+    - term query: term filter + relevance; probably won't use often -- match query will be used more
+      often but understanding term query will help with match query
+    - relevance score is based on tf-idf, field length norm (which favors
+      matching terms in short fields over long fields, e.g. match in title
+      field is more relevant than match in email body)
+    - bool query:
+        'bool': {
+            'must': [queries],          # AND
+            'should': [queries],        # this is not as clear...read on
+            'must_not': [queries]       # NOT
+            'minimum_should_match': ?   # ...this is pretty strange...read on
+        }
+
+        * if you have NO must queries, at least one should match => minimum_should_match parameter defalts to 1
+        * if you have a must clause, then the should clauses are optional => minimum_should_match = 0
+          ...but if none of them have to match, why even include them? Because including them affects the relevance scores.
+            - bool filter -- T/F
+            - bool query -- _score
+
+    - match query: understands mapping and analysis. It passes your query
+      through the analyzer and rewrites it into low level queries that actually
+      execute it
+        { 'match': { 'title': "QUICK!" } } --(analyze...)-->
+        title:quick --(rewrite...)--> 
+        { 'match': { 'title': "quick" } }
+        
+        * multi word queries rewritten to OR queries (bool queries w/"should" clause)
+
+    - fuzzy queries use levenshtein edit distance ("fuzziness": "AUTO"
+
+    - phrase/proximity queries: by default, only match a phrase with specific
+      order of words; can use a "slop" parameter to be more permissive of
+      variation in order of words matched
+
+    - multi-field queries ("advanced search" on websites) -- just use a simple
+      bool query b/c you know what fields each word should be in
+    - not so easy if you just have a single text field with a phrase in it
+    - dis_max query
+    - autocomplete (generates list of matches using ngrams -- "fox" => {f,fo,fox})
+
+    - matching phrases depending on what fields they're stored in...
+        * "best_fields": whole concept in single field
+        * "most_fields": same text, different analyzers
+        * "cross_fields": treat multiple fields as one
+
 

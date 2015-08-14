@@ -1,27 +1,15 @@
 #!flask/bin/python
 from flask import Flask, jsonify, request, abort, make_response
-from elasticsearch import Elasticsearch
 import json
+
+from datalayer import DataLayer
 
 ES_INDEX = 'resumes'
 RESUME_TYPE = 'resume'
 
 app = Flask(__name__)
-es = Elasticsearch()
 
-#-------
-
-#
-#   FIXME: need to make a more elaborate plan (but maybe not
-#   immediately)...need a superclass with a factory method to instantiate
-#   abstract subclasses for ES/ML. The subclasses will override functions in
-#   the superclass to maintain the interface; they will return the data needed
-#   by the API. The superclass will probably be the one with the flask routing.
-#   The subclasses will just have functions like create_resume, get_resume,
-#   etc. to interact with the data store.
-#
-#   For now, just support ES
-#
+dl = DataLayer.factory('Elasticsearch')
 
 #-------
 
@@ -38,9 +26,9 @@ def _create_resume(id=None):
         resume = jdata
 
         if(id is not None):
-            es.index(index=ES_INDEX, doc_type=RESUME_TYPE, body=resume, id=id)
+            dl.create_resume(resume, id)
         else:
-            es.index(index=ES_INDEX, doc_type=RESUME_TYPE, body=resume)
+            dl.create_resume(resume)
         
         return ''
 
@@ -63,7 +51,7 @@ def update_resume(id):
 #
 @app.route('/api/resumes', methods=['GET'])
 def list_resumes():
-    resumes = es.search(index=ES_INDEX, doc_type=RESUME_TYPE)
+    resumes = dl.list_resumes()
     return jsonify( resumes )
 
 # Get a specific resume
@@ -71,7 +59,7 @@ def list_resumes():
 #
 @app.route('/api/resumes/<id>', methods=['GET'])
 def get_resume(id):
-    resume = es.get(index=ES_INDEX, doc_type=RESUME_TYPE, id=id)
+    resume = dl.get_resume(id)
     if len(id) == 0:
         abort(404)
     return jsonify( resume )
@@ -81,13 +69,18 @@ def get_resume(id):
 #
 @app.route('/api/resumes/<id>', methods=['DELETE'])
 def delete_resume(id):
-    es.delete(index=ES_INDEX, doc_type=RESUME_TYPE, id=id)
+    dl.delete_resume(id)
     return ''
 
 #-------
 
 #FIXME: need to define requirements for search function
-# IDEAS:
+# Minimal requirements to start with:
+#   - resumes that mention a particular skill/skill set
+#   - resumes that mention a particular project
+#   - find resumes by person name
+#
+# Other possibilities:
 #   - full text search
 #   - [search by name, skills, ...]
 #   - support pagination
@@ -95,7 +88,6 @@ def delete_resume(id):
 #   - support facets??? how is this supposed to work?
 #   - (later: highlighted search snippets)
 
-#   - [format: do we need to support anything other than json?]
 #   - structure: just a list of resumes wrapped in "ResumeSearchResults"
 
 # Search for resumes
@@ -113,3 +105,4 @@ def not_found(error):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
