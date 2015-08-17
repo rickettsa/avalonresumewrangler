@@ -1,3 +1,4 @@
 vagrant/.vagrant
 **/*.pyc
 **/*.swp
+back-end/api/venv
