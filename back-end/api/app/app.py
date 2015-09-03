@@ -54,6 +54,26 @@ def list_resumes():
     resumes = dl.list_resumes()
     return jsonify( resumes )
 
+#
+# Search for resumes
+#   GET http://localhost:5000/api/resumes/search?lastname=mefford&skill=java&skill=python
+#
+#FIXME: add search by project
+#
+#FIXME: improvements
+#   - full text search with scoring
+#   - pagination
+#   - sorting, faceting, etc.
+#   - snippet highlighting?
+#
+@app.route('/api/resumes/search', methods=['GET'])
+def find_resumes():
+    fn = request.args.get('firstname')
+    ln = request.args.get('lastname')
+    skills = request.args.getlist('skill')
+    results = dl.find_resumes(firstname=fn, lastname=ln, skills=skills)
+    return jsonify( results )
+
 # Get a specific resume
 #   GET http://localhost:5000/api/resumes/AU2W0hYTw_8sJsjY6vi8
 #
@@ -71,30 +91,6 @@ def get_resume(id):
 def delete_resume(id):
     dl.delete_resume(id)
     return ''
-
-#-------
-
-#FIXME: need to define requirements for search function
-# Minimal requirements to start with:
-#   - resumes that mention a particular skill/skill set
-#   - resumes that mention a particular project
-#   - find resumes by person name
-#
-# Other possibilities:
-#   - full text search
-#   - [search by name, skills, ...]
-#   - support pagination
-#   - support sorting by specified field
-#   - support facets??? how is this supposed to work?
-#   - (later: highlighted search snippets)
-
-#   - structure: just a list of resumes wrapped in "ResumeSearchResults"
-
-# Search for resumes
-#   GET http://localhost:5000/api/resume/search?...
-#@app.route('/api/resumes/search')
-#def search(...):
-#    ...
 
 #-------
 

@@ -25,7 +25,7 @@ class DataLayer:
     @staticmethod
     def uuid(): return uuid.uuid4()
 
-    def create_resume(self, resume):
+    def create_resume(self, resume, id):
         raise UnimplementedError()
     def update_resume(self, resume, id):
         raise UnimplementedError()
