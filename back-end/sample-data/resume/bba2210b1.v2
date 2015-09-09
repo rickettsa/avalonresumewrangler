@@ -1,0 +1,54 @@
+{
+    "userId": "a673b4f1",
+    "firstName": "Bobby",
+    "lastName": "Baraner",
+    "employmentHistory": [
+        {
+            "employerOrgName": "Avalon Consulting, LLC",
+            "position": [
+                {
+                    "positionType": "fulltime",
+                    "description": "<p>This is a description of consultant's job in general at direct employer (no clientProjectId in this position).</p>",
+                    "startDate": "2012-11-01"
+                },
+                {
+                    "clientProjectId": "221a43b2c2",
+                    "clientName": "Johnson, Smith, and Jones Law Firm",
+                    "positionType": "contract",
+                    "startDate": "2013-01-01",
+                    "endDate": "2014-12-31",
+                    "description": "<p>This is a description of consultant's work on this client project.</p>"
+                }
+            ]
+        },
+        {
+            "employerOrgName": "ACME Mining",
+            "position": [
+                {
+                    "positionType": "fulltime",
+                    "title": "Subterranian collapsation risk analyst",
+                    "startDate": "2004-01-01",
+                    "endDate": "2012-11-01",
+                    "description": "<p>This is a description of a former job.</p>"
+                }
+            ]
+        }
+    ],
+    "educationHistory": [
+        {
+            "schoolName": "Chandler School",
+            "degreeName": "BS",
+            "degreeMajor": "Materials Science",
+            "startDate": "1999-01-01",
+            "endDate": "1999-01-02"
+        }
+    ],
+    "skills": [
+        {   "name": "Python",
+            "years": 10
+        },
+        {   "name": "Flask",
+            "years": 4
+        }
+    ]
+}

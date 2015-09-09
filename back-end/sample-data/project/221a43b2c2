@@ -1,0 +1,60 @@
+{
+    "clientName": "Johnson, Smith, and Jones Law Firm",
+    "clientDescription": "Virtuosos of Legal Orchestration.",
+    "clientWebsite": "www.johnsonsmithandjonesthelegalvirtuosos.com",
+    "clientContacts": [
+        {
+            "type": "business",
+            "firstName": "Hugo",
+            "lastName": "Suya",
+            "title": "Business director",
+            "cell": "222-222-2222",
+            "email": "hugosuya@johnsonsmithandjonesthelegalvirtuosos.com"
+        }
+    ],
+    "confidential": false,
+    "startDate": "2000-01-01",
+    "expectedEndDate": "2001-01-01",
+    "endDate": "2002-01-01",
+    "summary": "<p>Build a website for Johnson, Smith, and Jones Law Firm.</p>",
+    "projectSkills": [
+        "Elasticsearch",
+        "Python",
+        "Flask",
+        "jQuery"
+    ],
+    "positions": [
+        {
+            "title": "Senior Architect",
+            "responsibilities": "Web application architecture",
+            "filledBy": [
+                {
+                    "userId": "33cd654a2",
+                    "startDate": "2000-01-01",
+                    "endDate": "2002-01-01"
+                }
+            ],
+            "positionSkills": [
+                "Elasticsearch",
+                "Python",
+                "Flask"
+            ]
+        },
+        {
+            "title": "Web Developer",
+            "responsibilities": "UI design and development",
+            "filledBy": [
+                {
+                    "userId": "a673b4f1",
+                    "startDate": "2000-01-01",
+                    "endDate": "2002-01-01"
+                }
+            ],
+            "positionSkills": [
+                "jQuery",
+                "Python",
+                "Flask"
+            ]
+        }
+    ]
+}
