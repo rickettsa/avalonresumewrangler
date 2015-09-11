@@ -50,11 +50,11 @@ def transform_employment_history( root, ns ):
                 if e.tag != 'Description':
                     final_desc += ElementTree.tostring(e, method='html')
 
-            positions.append( { 'positionType': position_type, 'Title': title,
-                'OrganizationName': org_name, 'Description': final_desc.replace('\n', ''),
-                'StartDate': start_date }
+            positions.append( { 'positionType': position_type, 'title': title,
+                'clientName': org_name, 'description': final_desc.replace('\n', ''),
+                'startDate': start_date }
             )
-        eh.append( { 'EmployerOrgName': emp_name, 'Position': positions } )
+        eh.append( { 'employerOrgName': emp_name, 'positions': positions } )
 
     return eh
 
@@ -66,8 +66,8 @@ def transform_education_history( root, ns):
         degree_major = school.find('./d:Degree/d:DegreeMajor/d:Name', ns).text
         start_date = school.find('./d:Degree/d:DatesOfAttendance/d:StartDate', ns).text
 
-        eh.append( { 'SchoolName': school_name, 'DegreeName': degree_name,
-            'DegreeMajor': degree_major, 'startDate': start_date }
+        eh.append( { 'schoolName': school_name, 'degreeName': degree_name,
+            'degreeMajor': degree_major, 'startDate': start_date }
         )
     return eh
 
@@ -89,13 +89,13 @@ def transform( xml_res, ns ):
     d = transform_contact_info( tree, ns )
 
     emp_hist = transform_employment_history( tree, ns )
-    d['EmploymentHistory'] = emp_hist
+    d['employmentHistory'] = emp_hist
 
     edu_hist = transform_education_history( tree, ns )
-    d['EducationHistory'] = edu_hist
+    d['educationHistory'] = edu_hist
 
     q = transform_qualifications( tree, ns )
-    d['Competency'] = q
+    d['skills'] = q
 
     return d
 #-------------

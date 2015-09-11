@@ -1,0 +1,40 @@
+{
+    "project": {
+        "properties": {
+            "clientName": { "type": "string" },
+            "clientDescription": { "type": "string" },
+            "clientWebsite": { "type": "string" },
+            "name": { "type": "string" },
+            "confidential": { "type": "boolean" },
+            "startDate": { "type": "date" },
+            "expectedEndDate": { "type": "date"},
+            "endDate": { "type": "date"},
+            "summary": { "type": "string" },
+            "clientContacts": {
+                "properties": {
+                    "type": { "type": "string" },
+                    "firstName": { "type": "string" },
+                    "lastName": { "type": "string" },
+                    "title": { "type": "string" },
+                    "cell": { "type": "string" },
+                    "email": { "type": "string" }
+                }
+            },
+            "projectSkills": { "type": "string" },
+            "positions": {
+                "properties": {
+                    "title": { "type": "string" },
+                    "responsibilities": { "type": "string" },
+                    "filledBy": {
+                        "properties": {
+                            "userId": { "type": "string" },
+                            "startDate": { "type": "date" },
+                            "endDate": { "type": "date" }
+                        }
+                    },
+                    "positionSkills": { "type": "string" }
+                }
+            }
+        }
+    }
+}

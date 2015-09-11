@@ -14,7 +14,7 @@ def _create_entity(creation_function, id=None):
     '''Look at the request object to find JSON in the body.
     From this, create a document in Elasticsearch. The provided creation
     function is used to create the document. This will determine the type
-    of document created (a resume, project, etc.).'''
+    of document created (resume, project, etc.).'''
 
     if request.headers['Content-Type'] == 'application/json':
         if not request.json:

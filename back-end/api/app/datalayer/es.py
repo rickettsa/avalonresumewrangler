@@ -4,7 +4,6 @@ from elasticsearch import Elasticsearch, exceptions
 
 #-------
 
-# Combine several "must" queries into a bool query
 def bool_query( must_queries ):
     return {
         'query': {
@@ -14,12 +13,11 @@ def bool_query( must_queries ):
 
 def filtered_term_query(term, value): return { 'filtered': { 'filter': { 'term': { term: value } } } }
 
-#FIXME: change 'Competency' to 'Skill' or 'Skills'
 def nested_query(s):
     return { 'nested': {
-            'path': 'Competency',
+            'path': 'skills',
             'query': {
-                'match': { 'Competency.name': s }
+                'match': { 'skills.name': s }
             }
         }
     }
@@ -29,24 +27,33 @@ def nested_query(s):
 class ESDataLayer(DataLayer):
     '''A data layer for Elasticsearch.'''
 
+    VALID_DOC_TYPES = ['project', 'resume', 'user']
+
+    USER_INDEX = 'users'
+    USER_TYPE = 'user'
+
     RESUME_INDEX = 'resumes'
     RESUME_TYPE = 'resume'
 
     PROJECT_INDEX = 'projects'
     PROJECT_TYPE = 'project'
 
-    USER_INDEX = 'users'
-    USER_TYPE = 'user'
-
     def __init__(self):
         self.es = Elasticsearch()
 
-    def create_index(self):
-        self.es.indices.create(index=self.RESUME_INDEX)
+    def create_index(self, index):
+        self.es.indices.create(index)
 
-    def create_mapping(self, mapping):
-        self.es.indices.put_mapping(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, body=mapping)
+    def create_mapping(self, mapping, index, type):
+        self.es.indices.put_mapping(type, mapping, index)
 
+    #-------
+
+    def create_or_update_doc(self, doc, doc_type):
+        if( doc_type == 'user' ): self.create_or_update_user(doc)
+        if( doc_type == 'resume' ): self.create_or_update_resume(doc)
+        if( doc_type == 'project' ): self.create_or_update_project(doc)
+    
     #------- Users
 
     def create_or_update_user(self, user, id=None):
@@ -200,8 +207,8 @@ class ESDataLayer(DataLayer):
 
     #-------
 
-    def delete_index(self):
-        self.es.indices.delete(self.RESUME_INDEX, ignore=[400, 404])
+    def delete_index(self, index):
+        self.es.indices.delete(index, ignore=[400, 404])
 
 
 if __name__ == '__main__':
@@ -215,5 +222,5 @@ if __name__ == '__main__':
     except exceptions.NotFoundError:
         print '(index missing)'
 #    print dl.get_resume('AU76Hwu_NXud7rAthNR8')
-#    dl.create_resume('r')
+#    dl.create_or_update_resume('r')
 

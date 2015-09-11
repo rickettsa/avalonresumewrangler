@@ -5,7 +5,7 @@
     "employmentHistory": [
         {
             "employerOrgName": "Avalon Consulting, LLC",
-            "position": [
+            "positions": [
                 {
                     "positionType": "fulltime",
                     "description": "<p>This is a description of consultant's job in general at direct employer (no clientProjectId in this position).</p>",
@@ -15,15 +15,15 @@
                     "clientProjectId": "221a43b2c2",
                     "clientName": "Johnson, Smith, and Jones Law Firm",
                     "positionType": "contract",
+                    "description": "<p>This is a description of consultant's work on this client project.</p>",
                     "startDate": "2013-01-01",
-                    "endDate": "2014-12-31",
-                    "description": "<p>This is a description of consultant's work on this client project.</p>"
+                    "endDate": "2014-12-31"
                 }
             ]
         },
         {
             "employerOrgName": "ACME Mining",
-            "position": [
+            "positions": [
                 {
                     "positionType": "fulltime",
                     "title": "Subterranian collapsation risk analyst",

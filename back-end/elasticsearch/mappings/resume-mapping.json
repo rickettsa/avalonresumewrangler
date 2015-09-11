@@ -1,0 +1,48 @@
+{
+    "resume": {
+        "properties": {
+            "skills": {
+                "type": "nested",
+                "properties": {
+                    "name": { "type": "string" },
+                    "years": { "type": "string" }
+                }
+            },
+            "educationHistory": {
+                "type": "nested",
+                "properties": {
+                    "schoolName": { "type": "string" },
+                    "degreeName": { "type": "string" },
+                    "degreeMajor": { "type": "string" },
+                    "startDate": {
+                        "type": "date",
+                        "format": "dateOptionalTime"
+                    },
+                    "endDate": { "type": "date" }
+                }
+            },
+            "employmentHistory": {
+                "type": "nested",
+                "properties": {
+                    "employerOrgName": { "type": "string" },
+                    "positions": {
+                        "properties": {
+                            "clientProjectId": { "type": "string" },
+                            "clientName": { "type": "string" },
+                            "positionType": { "type": "string" },
+                            "title": { "type": "string" },
+                            "description": { "type": "string" },
+                            "startDate": { "type": "date" },
+                            "endDate": { "type": "date" }
+                        }
+                    }
+                }
+            },
+            "userId": { "type": "string" },
+            "firstName": { "type": "string" },
+            "lastName": { "type": "string" },
+            "email": { "type": "string" },
+            "cell": { "type": "string" }
+        }
+    }
+}
