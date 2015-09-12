@@ -91,17 +91,12 @@ def list_resumes():
 
 @app.route('/api/resumes/search', methods=['GET'])
 def find_resumes():
-    #FIXME: add search by project
-    #
-    #FIXME: improvements
-    #   - full text search with scoring
-    #   - pagination
-    #   - sorting, faceting, etc.
-    #   - snippet highlighting?
+    userid = request.args.get('userid')
     fn = request.args.get('firstname')
     ln = request.args.get('lastname')
+    client_proj_id = request.args.get('client_project_id')
     skills = request.args.getlist('skill')
-    results = dl.find_resumes(firstname=fn, lastname=ln, skills=skills)
+    results = dl.find_resumes(userid, fn, ln, client_proj_id, skills)
     return jsonify( results )
 
 @app.route('/api/resumes/<id>', methods=['GET'])

@@ -13,11 +13,20 @@ def bool_query( must_queries ):
 
 def filtered_term_query(term, value): return { 'filtered': { 'filter': { 'term': { term: value } } } }
 
-def nested_query(s):
+def nested_skills_query(s):
     return { 'nested': {
             'path': 'skills',
             'query': {
                 'match': { 'skills.name': s }
+            }
+        }
+    }
+
+def nested_emp_hist_query(id):
+    return { 'nested': {
+            'path': 'employmentHistory',
+            'query': {
+                'match': { 'employmentHistory.positions.clientProjectId': id }
             }
         }
     }
@@ -49,10 +58,10 @@ class ESDataLayer(DataLayer):
 
     #-------
 
-    def create_or_update_doc(self, doc, doc_type):
-        if( doc_type == 'user' ): self.create_or_update_user(doc)
-        if( doc_type == 'resume' ): self.create_or_update_resume(doc)
-        if( doc_type == 'project' ): self.create_or_update_project(doc)
+    def create_or_update_doc(self, doc, doc_type, id=None):
+        if( doc_type == 'user' ): self.create_or_update_user(doc, id)
+        if( doc_type == 'resume' ): self.create_or_update_resume(doc, id)
+        if( doc_type == 'project' ): self.create_or_update_project(doc, id)
     
     #------- Users
 
@@ -112,17 +121,19 @@ class ESDataLayer(DataLayer):
     #NOTE: using variable.lower() in much of this code because ES mapping stores lowercased text in many cases as part of its normalization
     # (there may be better ways to index the data or other query types to use that don't require this step)
 
-    def find_resumes(self, firstname, lastname, skills=[]):
-        fn_query = ln_query = None
+    def find_resumes(self, userid, firstname, lastname, client_project_id, skills=[]):
+        userid_query = fn_query = ln_query = client_project_query = None
+        if userid is not None: userid_query = filtered_term_query( 'userId', userid.lower() )
         if firstname is not None: fn_query = filtered_term_query( 'firstName', firstname.lower() )
         if lastname is not None: ln_query = filtered_term_query( 'lastName', lastname.lower() )
-        skill_queries = [ nested_query( s.lower() ) for s in skills ] or None
-        queries = filter( lambda q: q is not None, [fn_query, ln_query, skill_queries] )
+        if client_project_id is not None: client_project_query = nested_emp_hist_query( client_project_id )
+        skill_queries = [ nested_skills_query( s.lower() ) for s in skills ] or None
+        queries = filter( lambda q: q is not None, [userid_query, fn_query, ln_query, client_project_query, skill_queries] )
         combined_query = bool_query( queries )
         return self.es.search(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, body=combined_query)['hits']
 
     def get_resume(self, id):
-        resume = self.es.get(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, id=id)
+        resume = self.es.get(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, id=id, ignore=[404])
         return resume
 
     def delete_resume(self, id):

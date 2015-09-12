@@ -64,7 +64,8 @@ for root, dirs, files in os.walk( input_dir ):
         print 'indexing docs of type', doc_type, '...'
         json_docs = [f for f in files if f[-5:] == '.json'] # skip non-json files
         for doc in json_docs:
+            id = doc[:-5]
             with open(os.path.join(input_dir, doc_type, doc), 'r') as f:
                 print 'indexing', doc_type, 'from file', doc, '...'
-                dl.create_or_update_doc( f.read(), doc_type )
+                dl.create_or_update_doc( f.read(), doc_type, id )
 
