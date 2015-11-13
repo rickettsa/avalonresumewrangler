@@ -71,10 +71,11 @@ angular.module( 'resumeWrangler.home', [
 
 .controller( 'SearchResultsCtrl', function SearchResultsCtrl( $scope, searchResponse, $rootScope  ) {
 
-    $scope.searchResponse = searchResponse.data.ResumeSearchResults.Resume;
+    $scope.searchResponse = searchResponse.data.hits;
     $scope.query = $rootScope.cachedSearch && $rootScope.cachedSearch.query ? $rootScope.cachedSearch.query : ''; //this is needed for 1st view of search results, so highlight works
 
     $scope.currentSearch = {};
+    $scope.search = {};
 
     //handles subsequent search requests after data is initially loaded
     $scope.$on('run-global-search', function(event, args){
@@ -85,15 +86,27 @@ angular.module( 'resumeWrangler.home', [
     $scope.$on('go', function () { alert('event is clicked') });
 
     $scope.getAvatarImgName = function(emailAddr){
-      var getEmailPrefix = function(str, group1){
-        return group1.toLowerCase();
-      };
-      var consultantNameAbbrev = emailAddr.replace(/^(.*)@.*$/, getEmailPrefix);
-      var imgSrc = '/assets/avatars/' + consultantNameAbbrev + '.jpg';
-      return imgSrc;
+      if (emailAddr && !_.isEmpty(emailAddr)){
+        var getEmailPrefix = function(str, group1){
+          return group1.toLowerCase();
+        };
+        var consultantNameAbbrev = emailAddr.replace(/^(.*)@.*$/, getEmailPrefix);
+        var imgSrc = '/assets/avatars/' + consultantNameAbbrev + '.jpg';
+        return imgSrc;
+      }
     };
 
-
+    $scope.search.getMostRecentPosition = function(data, key){
+        if (!_.isEmpty(data)){
+          var mostRecentEmployer = data[data.length - 1];
+          var mostRecentPosition = mostRecentEmployer.positions[mostRecentEmployer.positions.length - 1];
+          if (_.has(mostRecentPosition, key)){
+            return mostRecentPosition[key];
+          } else {
+            return 'empty';
+          }
+        }
+    };
 
 });
 

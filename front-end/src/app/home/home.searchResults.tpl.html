@@ -4,27 +4,27 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-3">
-                        <img class="consultant-avatar img-rounded" ng-src="{{ getAvatarImgName( result.StructuredXMLResume.ContactInfo.ContactMethod.InternetEmailAddress ) }}"/>
+                        <img class="consultant-avatar img-rounded" ng-src="{{ getAvatarImgName( result._source.email ) }}"/>
                     </div>
                     <div class="col-md-9">
-                        <h1>{{ result.StructuredXMLResume.ContactInfo.PersonName.GivenName }} {{ result.StructuredXMLResume.ContactInfo.PersonName.FamilyName }}</h1>
-                        <h4><a href="mailto:{{ result.StructuredXMLResume.ContactInfo.ContactMethod.InternetEmailAddress.toLowerCase() }}">{{ result.StructuredXMLResume.ContactInfo.ContactMethod.InternetEmailAddress.toLowerCase() }}</a></h4>
-                        <h4><a href="tel:+{{ result.StructuredXMLResume.ContactInfo.ContactMethod.Mobile }}">{{ result.StructuredXMLResume.ContactInfo.ContactMethod.Mobile }}</a></h4>
-                        <h4>{{ result.StructuredXMLResume.ContactInfo.ContactMethod.PostalAddress.City }}, {{ result.StructuredXMLResume.ContactInfo.ContactMethod.PostalAddress.State }}</h4>
+                        <h1>{{ result._source.firstName }} {{ result._source.lastName }}</h1>
+                        <h4><a href="mailto:{{ result._source.email }}">{{ result._source.email }}</a></h4>
+                        <h4><a href="tel:+{{ result._source.phone }}">{{ result._source.phone }}</a></h4>
+                        <h4>{{ result._source.city }}, {{ result._source.state }}</h4>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <h4><i>{{ result.StructuredXMLResume.EmploymentHistory.EmployerOrg.PositionHistory[0].Title }}</i>, {{ result.StructuredXMLResume.EmploymentHistory.EmployerOrg.PositionHistory[0].OrgName.OrganizationName }}</h4>
-                <h4><span class="header-label">{{ result.StructuredXMLResume.EmploymentHistory.EmployerOrg.PositionHistory[0].StartDate }}</span></h4>
+                <h4><i>{{ search.getMostRecentPosition(result._source.employmentHistory, 'title') }}</i>, {{ search.getMostRecentPosition(result._source.employmentHistory, 'clientName') }}</h4>
+                <h4><span class="header-label">{{ search.getMostRecentPosition(result._source.employmentHistory, 'startDate') }}</span></h4>
                 <table class="table table-striped">
                     <tr>
                         <th>Skills</th>
                         <th>Experience</th>
                     </tr>
-                    <tr ng-repeat="skill in result.StructuredXMLResume.Qualifications.Competency">
-                        <td ng-bind-html="skill.CompetencyDisplayName | highlight:query"></td>
-                        <td>{{ skill.YearsExperience }}yrs</td>
+                    <tr ng-repeat="skill in result._source.skills">
+                        <td ng-bind-html="skill.name | highlight:query"></td>
+                        <td>{{ skill.years }}yrs</td>
                     </tr>
                 </table>
             </div>
