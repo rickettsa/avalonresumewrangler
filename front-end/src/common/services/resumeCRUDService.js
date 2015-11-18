@@ -13,13 +13,13 @@ angular.module('resumeWrangler')
      * Get summary list of all resumes
      * @returns {promise}
      */
-    service.fetchResume = function() {
+    service.fetchResume = function(firstName,lastName) {
       //http://private-b7b35-avalonresumesearch.apiary-mock.com/api/resume/0000000124
       //return $http.get('http://private-b7b35-avalonresumesearch.apiary-mock.com/api/resume/' + id);
       return $http({
         method: "GET",
         cache: true,
-        url: configuration.api + '/api/resumes/0000000124'
+        url: configuration.api + '/api/resumes/search?firstname=' + firstName + '&lastname=' + lastName
       });
     };
 

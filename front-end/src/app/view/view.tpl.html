@@ -118,18 +118,23 @@
             <div class="col-md-12">
                 <h2>Experience:</h2>
                 <div class="exper">
-                    <div class="well light-well" ng-repeat="pos in resume.EmploymentHistory.EmployerOrg.PositionHistory">
-                        <h3><a href="#" e-placeholder="Organization Name">{{ pos.OrgName.OrganizationName || "empty" }}</a></h3>
+                    <div class="well light-well" ng-repeat="emplyr in resume.employmentHistory">
+                        <h3><a href="#" e-placeholder="Organization Name">{{ emplyr.employerOrgName || "empty" }}</a></h3>
+
+                        <div ng-repeat="pos in emplyr.positions">
                         <h3>{{ pos.Title || "empty" }}</h3>
-                        <!-- <p><a href="#" e-placeholder="Description">{{ pos.Description || "empty" }}</a></p> -->
-                        <span>{{ pos.StartDate || "empty" }}</span>
+                        <h4 ng-if="pos.clientName">{{ pos.clientName }}</h4>
+                        <span>{{ pos.startDate || "empty" }}</span>
                         <span> to </span>
-                        <span>{{ pos.EndDate || "empty" }}</span>
+                        <span>{{ pos.endDate || "empty" }}</span>
                         <h4 class="uneditable" ng-if="pos.GlobalDescription">{{ pos.GlobalDescription }}</h4>
                         <br ng-if="!pos.GlobalDescription"/>
                         <br ng-if="!pos.GlobalDescription"/>
                         <!-- Integrate CKEDitor http://jsfiddle.net/jWANb/2/ -->
-                        <div class="resume-descr" ng-model="description" ng-bind-html="pos.Description"></div>
+                        <div class="resume-descr" ng-model="description" ng-bind-html="pos.description"></div>
+
+
+
                         <br/>
                         <!-- <div class="description-noEdit well" ng-bind-html="pos.Description"></div> -->
                         <!-- START SKILLS TABLE -->
@@ -156,8 +161,9 @@
                                     </td>
                                 </tr>
                             </table>
+                        </div>
 
-                    </div>
+                    </div> <!-- end emplyr -->
                 </div>
             </div>
 

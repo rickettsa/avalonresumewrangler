@@ -14,8 +14,8 @@ angular.module( 'resumeWrangler.view', [
               }
             },
             resolve: {
-              resumeResponse: function(resumeCRUDService){
-                return resumeCRUDService.fetchResume('0000000124');
+              resumeResponse: function(resumeCRUDService, Session){
+                return resumeCRUDService.fetchResume(Session.firstName, Session.lastName);
               },
               skillsResponse: function(SkillsService){
                 return SkillsService.fetchSkills();
@@ -26,7 +26,7 @@ angular.module( 'resumeWrangler.view', [
             }
       });
     })
-    .controller('ViewCtrl', function ($http, $scope, $filter, resumeResponse, skillsResponse) {
+    .controller('ViewCtrl', function ($http, $scope, $filter, resumeResponse, skillsResponse, Session) {
 
       _.mixin({
         /**
@@ -43,7 +43,9 @@ angular.module( 'resumeWrangler.view', [
         }
       });
 
-      $scope.resume = resumeResponse.data.Resume.StructuredXMLResume;
+      $scope.session = Session;
+
+      $scope.resume = resumeResponse.data.hits[0]._source;
 
       $scope.skillsData = skillsResponse.data.skills;
       $scope.skillNames = _.pluck(skillsResponse.data.skills, 'dispName');

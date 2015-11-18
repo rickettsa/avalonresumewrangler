@@ -26,15 +26,16 @@
             <form name="skillDetails" novalidate>
                 <div class="form-group">
                     <label>Display Name</label>
-                    <input class="form-control" ng-model="currentSkill.dispName" type="text"></input>
-                    <label>Normalized Name</label>
-                    <input class="form-control" ng-model="currentSkill.normName" type="text"></input>
+                    <input class="form-control" ng-model="currentSkill.dispName" type="text" required></input>
+                    <label>Normalized Name (replace spaces with dash, no special chars)</label>
+                    <input class="form-control" ng-model="currentSkill.normName" type="text" ng-disabled="editingExisting" ng-pattern="normNameRegex" required></input>
                     <label>Image File Name</label>
                     <input class="form-control" ng-model="currentSkill.image" type="text"></input>
                     <label>Description</label>
                     <textarea  ng-model="currentSkill.descr"  class="form-control" rows="3"></textarea>
                     <br />
-                    <button class="add-skill btn btn-success" ng-click="saveSkill()"><i class="glyphicon glyphicon-ok"></i> Save</button>
+                    <button class="add-skill btn btn-success pull-right" ng-click="saveSkill(skills)" ng-disabled="skillDetails.$pristine || skillDetails.$invalid"><i class="glyphicon glyphicon-ok"></i> Save</button>
+                    <button class="add-skill btn btn-success" ng-click="addSkill()" ng-if="editingExisting"><i class="glyphicon glyphicon-plus"></i> New Skill</button>
                 </div>
             </form>
             <div class="row">
