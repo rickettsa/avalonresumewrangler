@@ -64,6 +64,9 @@ for root, dirs, files in os.walk( input_dir ):
         print 'indexing docs of type', doc_type, '...'
         json_docs = [f for f in files if f[-5:] == '.json'] # skip non-json files
         for doc in json_docs:
+#FIXME:this takes id from filename (e.g. a23b4cd7a.json). That's useful for sample data but
+#   real data we'll load won't use this naming scheme. Maybe this script could take an option
+#   like --ids-from-filenames or something
             id = doc[:-5]
             with open(os.path.join(input_dir, doc_type, doc), 'r') as f:
                 print 'indexing', doc_type, 'from file', doc, '...'

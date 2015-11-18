@@ -1,5 +1,10 @@
 {
     "username": "bbontrager",
     "lastName": "Bontrager",
-    "firstName": "Bonnie"
+    "firstName": "Bonnie",
+    "email": "bbontrager@fakemail.net",
+    "phone": "383-383-3838",
+    "city": "Donandale",
+    "state": "NY",
+    "zip": "22222"
 }

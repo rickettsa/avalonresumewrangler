@@ -4,16 +4,17 @@
     "lastName": "Baraner",
     "employmentHistory": [
         {
-            "employerOrgName": "Avalon Consulting, LLC",
+            "serviceProviderOrgName": "Avalon Consulting, LLC",
             "positions": [
                 {
+                    "contractingOrgName": "Avalon Consulting, LLC",
                     "positionType": "fulltime",
                     "description": "<p>This is a description of consultant's job in general at direct employer (no clientProjectId in this position).</p>",
                     "startDate": "2012-11-01"
                 },
                 {
                     "clientProjectId": "221a43b2c2",
-                    "clientName": "Johnson, Smith, and Jones Law Firm",
+                    "contractingOrgName": "Johnson, Smith, and Jones Law Firm",
                     "positionType": "contract",
                     "description": "<p>This is a description of consultant's work on this client project.</p>",
                     "startDate": "2013-01-01",
@@ -22,9 +23,10 @@
             ]
         },
         {
-            "employerOrgName": "ACME Mining",
+            "serviceProviderOrgName": "ACME Mining",
             "positions": [
                 {
+                    "contractingOrgName": "ACME Mining",
                     "positionType": "fulltime",
                     "title": "Subterranian collapsation risk analyst",
                     "startDate": "2004-01-01",

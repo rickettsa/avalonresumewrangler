@@ -51,10 +51,10 @@ def transform_employment_history( root, ns ):
                     final_desc += ElementTree.tostring(e, method='html')
 
             positions.append( { 'positionType': position_type, 'title': title,
-                'clientName': org_name, 'description': final_desc.replace('\n', ''),
+                'contractingOrgName': org_name, 'description': final_desc.replace('\n', ''),
                 'startDate': start_date }
             )
-        eh.append( { 'employerOrgName': emp_name, 'positions': positions } )
+        eh.append( { 'serviceProviderOrgName': emp_name, 'positions': positions } )
 
     return eh
 

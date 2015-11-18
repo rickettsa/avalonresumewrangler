@@ -1,5 +1,10 @@
 {
     "username": "mvillow",
     "firstName": "Mark",
-    "lastName": "Villow"
+    "lastName": "Villow",
+    "email": "mvillow@fakemail.net",
+    "phone": "999-999-9999",
+    "city": "Somewhaler",
+    "state": "FL",
+    "zip": "11111"
 }

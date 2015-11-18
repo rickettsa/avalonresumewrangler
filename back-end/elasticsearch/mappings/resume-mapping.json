@@ -24,11 +24,11 @@
             "employmentHistory": {
                 "type": "nested",
                 "properties": {
-                    "employerOrgName": { "type": "string" },
+                    "serviceProviderOrgName": { "type": "string" },
                     "positions": {
                         "properties": {
                             "clientProjectId": { "type": "string" },
-                            "clientName": { "type": "string" },
+                            "contractingOrgName": { "type": "string" },
                             "positionType": { "type": "string" },
                             "title": { "type": "string" },
                             "description": { "type": "string" },
