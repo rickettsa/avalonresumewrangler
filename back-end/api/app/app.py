@@ -1,10 +1,12 @@
 #!flask/bin/python
 from flask import Flask, jsonify, request, abort, make_response
+from flask.ext.cors import CORS
 import json
 
 from datalayer import DataLayer
 
 app = Flask(__name__)
+CORS(app)
 
 dl = DataLayer.factory('Elasticsearch')
 
