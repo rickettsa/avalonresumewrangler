@@ -22,11 +22,12 @@
                         <th>Skills</th>
                         <th>Experience</th>
                     </tr>
-                    <tr ng-repeat="skill in result._source.skills">
-                        <td ng-bind-html="skill.name | highlight:query"></td>
+                    <tr ng-repeat="skill in result._source.skills | limitTo:search.config.skillsDispLimit | orderBy:-years">
+                        <td ng-bind-html="skill.name | highlight:global.search.query"></td>
                         <td>{{ skill.years }}yrs</td>
                     </tr>
                 </table>
+                <a ng-if="result._source.skills.length - search.config.skillsDispLimit > 0">Show More Skills...</a>
             </div>
     </div>
 </div>

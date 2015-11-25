@@ -112,6 +112,11 @@ angular.module( 'resumeWrangler', [
       });
       /* END ui.router debug */
     }
+
+    $rootScope.global = {};
+    $rootScope.global.search = {};
+    $rootScope.global.search.cachedSearch = {};
+
   }
 )
 

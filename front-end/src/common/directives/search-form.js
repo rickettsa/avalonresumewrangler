@@ -13,11 +13,8 @@ angular.module('resumeWrangler')
       scope: {},
       controller: function($scope, resumeCRUDService, $state, $rootScope){
         $scope.runSearch = function(){
-          console.log("broadcast sent");
-          $rootScope.cachedSearch = {};
-          $rootScope.cachedSearch.query = $scope.query;
-          $state.go('searchResults', {}, { reload: false });
-          $rootScope.$broadcast('run-global-search', {"query": $scope.query });
+          $rootScope.global.search.cachedSearch.query = $scope.query;
+          $state.go('searchResults', {"query": $scope.query});
         };
 
       }

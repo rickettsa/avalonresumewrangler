@@ -43,7 +43,13 @@ angular.module( 'resumeWrangler.home', [
         }
       })
       .state('searchResults', {
-        url: '/search-results',
+        url: '/search-results?:query',
+        params: {
+          query: {
+            value: null,
+            squash: true
+          }
+        },
         views: {
           "main": {
             controller: 'SearchResultsCtrl',
@@ -51,8 +57,12 @@ angular.module( 'resumeWrangler.home', [
           }
         },
         resolve: {
-          searchResponse: function($rootScope, resumeCRUDService){
-            return resumeCRUDService.runQuery($rootScope.cachedSearch);
+          searchResponse: function($rootScope, resumeCRUDService, $stateParams){
+            if (!_.isEmpty($stateParams.query)){
+              return resumeCRUDService.runQuery($stateParams.query);
+            } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
+              return resumeCRUDService.runQuery($rootScope.global.search.cachedSearch.query);
+            }
           }
         },
         data: {"pageTitle": "Search Results",
@@ -69,21 +79,22 @@ angular.module( 'resumeWrangler.home', [
 })
 
 
-.controller( 'SearchResultsCtrl', function SearchResultsCtrl( $scope, searchResponse, $rootScope  ) {
+.controller( 'SearchResultsCtrl', function SearchResultsCtrl( $scope, searchResponse, $rootScope, $stateParams, AppConfig ) {
 
     $scope.searchResponse = searchResponse.data.hits;
-    $scope.query = $rootScope.cachedSearch && $rootScope.cachedSearch.query ? $rootScope.cachedSearch.query : ''; //this is needed for 1st view of search results, so highlight works
+    $scope.global.search.query = $rootScope.cachedSearch && $rootScope.cachedSearch.query ? $rootScope.cachedSearch.query : ''; //this is needed for 1st view of search results, so highlight works
 
     $scope.currentSearch = {};
     $scope.search = {};
 
-    //handles subsequent search requests after data is initially loaded
-    $scope.$on('run-global-search', function(event, args){
-      console.log("broadcast recieved: " + args.query);
-      $scope.query = args.query;
-    });
+    $scope.search.config = AppConfig.search;
 
-    $scope.$on('go', function () { alert('event is clicked') });
+
+    if (!_.isEmpty($stateParams.query)){
+      $scope.global.search.query = $stateParams.query;
+    }
+
+
 
     $scope.getAvatarImgName = function(emailAddr){
       if (emailAddr && !_.isEmpty(emailAddr)){
