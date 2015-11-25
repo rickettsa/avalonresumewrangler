@@ -40,9 +40,7 @@
             },
             "userId": { "type": "string" },
             "firstName": { "type": "string" },
-            "lastName": { "type": "string" },
-            "email": { "type": "string" },
-            "cell": { "type": "string" }
+            "lastName": { "type": "string" }
         }
     }
 }

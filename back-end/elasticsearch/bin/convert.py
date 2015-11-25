@@ -2,22 +2,51 @@
 #
 #   Transform resume XML to JSON
 #
-#   Usage: python convert.py --input <path to dir with XML> --output <path to dir to be created for JSON>
+#   Usage: python convert.py <path to dir with XML> <path to dir to be created for JSON>
 #
 from xml.etree import ElementTree
 import json
 import sys, os, glob, re
-from optparse import OptionParser
+import argparse
+import random
+import hashlib
+from uuid import uuid4
+import collections
+
+SKIP_LIST = [
+    'KurtCagleResume.docx.html.xml'
+]
 
 ns = { 'd':'http://ns.hr-xml.org/2007-04-15' } 
 
 #-------------
-def transform_contact_info( root, ns ):
+def userid(username):
+    return hashlib.md5(username).hexdigest()
+
+def transform_contact_info_for_resume( root, ns ):
     fn = root.find('.//d:ContactInfo/d:PersonName/d:GivenName', ns).text
     ln = root.find('.//d:ContactInfo/d:PersonName/d:FamilyName', ns).text
-    cell = root.find('.//d:ContactInfo/d:ContactMethod/d:Mobile', ns).text
     email = root.find('.//d:ContactInfo/d:ContactMethod/d:InternetEmailAddress', ns).text
-    return { 'firstName': fn, 'lastName': ln, 'cell': cell, 'email': email }
+
+    username = (fn[0] + ln).lower()
+    uid = userid(username)
+
+    return { 'firstName': fn, 'lastName': ln, 'userId': uid }
+
+def transform_contact_info_for_user( root, ns ):
+    fn = root.find('.//d:ContactInfo/d:PersonName/d:GivenName', ns).text
+    ln = root.find('.//d:ContactInfo/d:PersonName/d:FamilyName', ns).text
+
+    username = (fn[0] + ln).lower()
+    uid = userid(username)
+
+    phone = root.find('.//d:ContactInfo/d:ContactMethod/d:Mobile', ns).text
+    email = root.find('.//d:ContactInfo/d:ContactMethod/d:InternetEmailAddress', ns).text
+    city = fn + random.choice(('vale', 'burg', 'haven'))
+    state = random.choice(('IL', 'TN', 'SC', 'MN', 'OH', 'CO', 'TX'))
+    zipcode = str( round(random.random() * 10**5) )
+    return { 'userId': uid, 'username': username, 'firstName': fn, 'lastName': ln, 'phone': phone, 'email': email,
+            'city': city, 'state': state, 'zip': zipcode }
 
 def desc_without_namespaces(desc):
     desc = re.sub( r'<Description xmlns:ns0=\"http://ns.hr-xml.org/2007-04-15\"', '', desc )
@@ -36,6 +65,9 @@ def transform_employment_history( root, ns ):
             desc = position.find('./d:Description', ns)
             start_date = position.find('./d:StartDate', ns).text
 
+            # generate a project id for the position (needed to link to a project)
+            project_id = str(uuid4())
+
             # change description to HTML by removing namespaces
 
             # remove namespace in text of element tree, clean up
@@ -50,7 +82,7 @@ def transform_employment_history( root, ns ):
                 if e.tag != 'Description':
                     final_desc += ElementTree.tostring(e, method='html')
 
-            positions.append( { 'positionType': position_type, 'title': title,
+            positions.append( { 'clientProjectId': project_id, 'positionType': position_type, 'title': title,
                 'contractingOrgName': org_name, 'description': final_desc.replace('\n', ''),
                 'startDate': start_date }
             )
@@ -82,39 +114,139 @@ def transform_qualifications( root, ns):
 
     return q
 
+# Generate a project for positions in each resume where OrganizationName doesn't match 'avalon consulting'
+def generate_project( json_res ):
+    userId = json_res['userId']
+    projects_json = []
+#FIXME: notice how I have to do employmentHistory[0][positions]? A recent change in the data structure means that employmentHistory no longer needs to be an array -- all it contains is positions. Need to fix this to make it cleaner but it will affect all the API code.
+    positions = json_res['employmentHistory'][0]['positions']
+    for position in positions:
+        contractingOrgName = position['contractingOrgName']
+        if contractingOrgName and contractingOrgName.startswith('Avalon Consulting'):
+            pass
+        else:
+            description = position['description']
+            startDate = position['startDate']
+            title = position['title']
+            projectId = position['clientProjectId']
+        
+            project_json = {
+              "projectId": projectId,
+              "clientName": contractingOrgName,
+              "clientDescription": description,
+              "clientWebsite": "www.company.com",
+              "confidential": False,
+              "name": "Project name",
+              "startDate": startDate,
+              "summary": "<p>Project summary.</p>",
+              "clientContacts": [
+                  {
+                      "type": "business",
+                      "firstName": "Hugo",
+                      "lastName": "Suya",
+                      "title": "Business director",
+                      "cell": "222-222-2222",
+                      "email": "hugosuya@company.com"
+                  }
+              ],
+              "projectSkills": [
+                  "Elasticsearch",
+                  "Python",
+                  "Flask",
+                  "jQuery"
+              ],
+              "positions": [
+                  {
+                      "title": title,
+                      "responsibilities": "Consulting",
+                      "filledBy": [
+                          {
+                              "userId": userId,
+                              "startDate": startDate,
+                          }
+                      ],
+                      "positionSkills": [
+                          "Elasticsearch",
+                          "Python",
+                          "Flask"
+                      ]
+                  }
+              ]
+            }
+            projects_json.append(project_json)
+    return projects_json
+
+# Transform an XML resume into JSON and generate user and project JSON documents based on the resume.
+# Returns an object with keys 'resume_json', 'user_json', and 'projects_json'.
 def transform( xml_res, ns ):
     with open(xml_res, 'rt') as f:
         tree = ElementTree.parse(f)
 
-    d = transform_contact_info( tree, ns )
+    resume = transform_contact_info_for_resume( tree, ns )
 
     emp_hist = transform_employment_history( tree, ns )
-    d['employmentHistory'] = emp_hist
+    resume['employmentHistory'] = emp_hist
 
     edu_hist = transform_education_history( tree, ns )
-    d['educationHistory'] = edu_hist
+    resume['educationHistory'] = edu_hist
 
     q = transform_qualifications( tree, ns )
-    d['skills'] = q
+    resume['skills'] = q
 
-    return d
+    user = transform_contact_info_for_user( tree, ns )
+
+    # generate a fake project based on the first position in the JSON resume that was just generated
+    projects = generate_project( resume )
+
+    result = collections.namedtuple('result', ['resume_json', 'user_json', 'projects_json'])
+    return result(resume, user, projects)
 #-------------
 
-parser = OptionParser()
-parser.add_option("-i", "--input-dir", dest="indir", help='existing directory containing XML input files')
-parser.add_option("-o", "--output-dir", dest="outdir", help='new directory to be created for JSON output files')
-(options, args) = parser.parse_args()
+#FIXME:
+#   [v] generate a directory with subdirs {project, resume, user} and generate the project & user data
+#   [v] user docs
+#       - email goes in user doc; 'cell' in the xml becomes 'phone' in user doc
+#       - for city, randomly choose one of ('vale', 'burg', 'haven') and append it to the firstname
+#       - random zip; random state (one of IL,TN,SC,MN,OH,CO,TX)
+#   [v] need to make userIds, put them in resumes and user docs (make these consistent)
+#   [v] project docs need to have userId keys
+#   [v] resume docs need to have clientProjectId keys
+#
+parser = argparse.ArgumentParser(description='convert resume XML input to JSON')
+parser.add_argument("indir", action='store',  help='existing directory containing XML input files')
+parser.add_argument("outdir", action='store',  help='new directory to be created for JSON output files')
+args = parser.parse_args()
 
-os.chdir(options.indir)
+os.chdir(args.indir)
 res_filenames = glob.glob('*.xml')
 
-os.mkdir(options.outdir)
+# create output directory structure
+os.mkdir(args.outdir)
+resume_dir = os.path.join(args.outdir, 'resume')
+os.mkdir( resume_dir )
+user_dir = os.path.join(args.outdir, 'user')
+os.mkdir( user_dir )
+project_dir = os.path.join(args.outdir, 'project')
+os.mkdir( project_dir )
 
-for xml_res in res_filenames:
-    json_res = transform(xml_res, ns)
-
-    output_filename = re.sub(r'\.xml$', '.json', xml_res)
+for i in range( len(res_filenames) ):
+    xml_res = res_filenames[i]
+    if xml_res not in SKIP_LIST:
+        result = transform(xml_res, ns)
     
-    with open(os.path.join(options.outdir, output_filename), 'w') as f:
-        json.dump(json_res, f, sort_keys=True, indent=4)
+        # Write data for resumes, users, and projects. Use filenames that can be used as the ids in ES for
+        # the docs when indexed.
+
+        resume_filename = str(uuid4()) + '.json'
+        with open(os.path.join(resume_dir, resume_filename), 'w') as f:
+            json.dump(result.resume_json, f, sort_keys=True, indent=4)
+    
+        user_filename = result.user_json['userId'] + '.json'
+        with open(os.path.join(user_dir, user_filename), 'w') as f:
+            json.dump(result.user_json, f, sort_keys=True, indent=4)
+    
+        if result.projects_json:
+            project_filename = result.projects_json[0]['projectId'] + '.json'
+            with open(os.path.join(project_dir, project_filename), 'w') as f:
+                json.dump(result.projects_json[0], f, sort_keys=True, indent=4)
 

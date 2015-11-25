@@ -99,15 +99,16 @@ def find_resumes():
 
     results = dl.find_resumes(userid, fn, ln, client_proj_id, skills)
 
-    # if expand_user_info was provided then for each resume, find userId and call dl.get_user(id),
+    # if expand_contact_info was provided then for each resume, find userId and call dl.get_user(id),
     # then add they key-value pairs from the user doc (assumed to be flat) inline to each resume
-    expand_user_info = request.args.get('expand_user_info')
-    for r in results['hits']:
-        res_data = r['_source']
-        user = dl.get_user( res_data['userId'] )
-        user_data = user['_source']
-        for field in user_data.keys():
-            res_data[field] = user_data[field]
+    expand_contact_info = request.args.get('expand_contact_info')
+    if expand_contact_info:
+        for r in results['hits']:
+            res_data = r['_source']
+            user = dl.get_user( res_data['userId'] )
+            user_data = user['_source']
+            for field in user_data.keys():
+                res_data[field] = user_data[field]
 
     return jsonify( results )
 
