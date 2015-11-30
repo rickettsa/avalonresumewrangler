@@ -22,11 +22,11 @@ angular.module( 'resumeWrangler.edit', [
               }
             },
             resolve: {
-              resumeResponse: function(resumeCRUDService, Session){
-                return resumeCRUDService.fetchResume('0000000124');
+              resumeResponse: function(resumeService, sessionService){
+                return resumeService.fetchResume('0000000124');
               },
-              skillsResponse: function(SkillsService){
-                return SkillsService.fetchSkills();
+              skillsResponse: function(skillsService){
+                return skillsService.fetchSkills();
               }
             },
             data:{ "pageTitle": "Edit Resume",
@@ -34,7 +34,7 @@ angular.module( 'resumeWrangler.edit', [
             }
       });
     })
-    .controller('EditCtrl', function ($http, $scope, $filter, resumeResponse, skillsResponse, resumeCRUDService) {
+    .controller('EditCtrl', function ($http, $scope, $filter, resumeResponse, skillsResponse, resumeService) {
 
       _.mixin({
         /**
@@ -156,7 +156,7 @@ angular.module( 'resumeWrangler.edit', [
 
 
     $scope.updateResume = function(){
-      resumeCRUDService.updateResume($scope.resume.ContactInfo.PersonName.id, $scope.resume)
+      resumeService.updateResume($scope.resume.ContactInfo.PersonName.id, $scope.resume)
         .success(function(){
 
           //is this skill known? if not, make sure you post back to the skills API

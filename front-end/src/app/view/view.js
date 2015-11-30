@@ -6,7 +6,17 @@ angular.module( 'resumeWrangler.view', [
     .config(function config( $stateProvider ) {
       $stateProvider
         .state( 'view', {
-            url: '/view',
+            url: '/view?:firstName&:lastName',
+            params: {
+              firstName: {
+                value: null,
+                squash: true
+              },
+              lastName: {
+                value: null,
+                squash: true
+              }
+            },
             views: {
               "main": {
                 controller: 'ViewCtrl',
@@ -14,11 +24,22 @@ angular.module( 'resumeWrangler.view', [
               }
             },
             resolve: {
-              resumeResponse: function(resumeCRUDService, Session){
-                return resumeCRUDService.fetchResume(Session.firstName, Session.lastName);
+              resumeResponse: function(resumeService, $stateParams){
+                if ($stateParams.firstName && $stateParams.lastName){
+                  return resumeService.fetchResume($stateParams.firstName, $stateParams.lastName);
+                } else {
+                  return {};
+                }
               },
-              skillsResponse: function(SkillsService){
-                return SkillsService.fetchSkills();
+              contactResponse: function(contactsService, $stateParams){
+                if ($stateParams.firstName && $stateParams.lastName){
+                  return contactsService.fetchContactByName($stateParams.firstName, $stateParams.lastName);
+                } else {
+                  return {};
+                }
+              },
+              skillsResponse: function(skillsService){
+                return skillsService.fetchSkills();
               }
             },
             data:{ "pageTitle": 'View Resume',
@@ -26,7 +47,7 @@ angular.module( 'resumeWrangler.view', [
             }
       });
     })
-    .controller('ViewCtrl', function ($http, $scope, $filter, resumeResponse, skillsResponse, Session) {
+    .controller('ViewCtrl', function ($http, $scope, $filter, resumeResponse, skillsResponse, sessionService, contactResponse) {
 
       _.mixin({
         /**
@@ -43,9 +64,10 @@ angular.module( 'resumeWrangler.view', [
         }
       });
 
-      $scope.session = Session;
+      //$scope.session = Session;
 
       $scope.resume = resumeResponse.data.hits[0]._source;
+      $scope.contact = contactResponse.data.hits[0]._source;
 
       $scope.skillsData = skillsResponse.data.skills;
       $scope.skillNames = _.pluck(skillsResponse.data.skills, 'dispName');

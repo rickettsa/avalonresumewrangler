@@ -14,10 +14,10 @@ angular.module( 'resumeWrangler.projects', [
           }
         },
         resolve: {
-          projectResponse: function(projectsCRUDService){
+          projectResponse: function(projectsService){
             return projectsCRUDService.fetchProject('0000000005');
           },
-          skillsResponse: function(SkillsService){
+          skillsResponse: function(skillsService){
             return SkillsService.fetchSkills();
           }
         },
@@ -26,7 +26,7 @@ angular.module( 'resumeWrangler.projects', [
         }
       });
   })
-  .controller('ProjectsCtrl', function ($http, $scope, $filter, $state, projectResponse, skillsResponse, projectsCRUDService) {
+  .controller('ProjectsCtrl', function ($http, $scope, $filter, $state, projectResponse, skillsResponse, projectsService) {
 
     _.mixin({
       /**
@@ -105,7 +105,7 @@ angular.module( 'resumeWrangler.projects', [
 
 
     $scope.updateProject = function(){
-      projectsCRUDService.updateProject($scope.project.id, $scope.project)
+      projectsService.updateProject($scope.project.id, $scope.project)
         .success(function(){
           console.log("updateProject SUCCESS");
         })

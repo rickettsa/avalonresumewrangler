@@ -6,7 +6,7 @@
  * @description Create user session.
  */
 angular.module('resumeWrangler')
-  .service('Session', function () {
+  .service('sessionService', function () {
 
       function _splitFullName(fullNm, output){
         if (!_.isEmpty(fullNm)){

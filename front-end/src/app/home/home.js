@@ -57,11 +57,11 @@ angular.module( 'resumeWrangler.home', [
           }
         },
         resolve: {
-          searchResponse: function($rootScope, resumeCRUDService, $stateParams){
+          searchResponse: function($rootScope, resumeService, $stateParams){
             if (!_.isEmpty($stateParams.query)){
-              return resumeCRUDService.runQuery($stateParams.query);
+              return resumeService.runQuery($stateParams.query);
             } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
-              return resumeCRUDService.runQuery($rootScope.global.search.cachedSearch.query);
+              return resumeService.runQuery($rootScope.global.search.cachedSearch.query);
             }
           }
         },

@@ -6,7 +6,7 @@
  * @description Create,Read,Update,Delete service for resume JSON from backend.
  */
 angular.module('resumeWrangler')
-  .service('resumeCRUDService', function($rootScope, $http, configuration) {
+  .service('resumeService', function($rootScope, $http, configuration) {
     var service = {};
 
     /**

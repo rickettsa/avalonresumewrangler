@@ -63,7 +63,7 @@
               </a>
             </li>
               <li ui-sref-active="active">
-                  <a href ui-sref="view">
+                  <a href ui-sref="view({ firstName: session.firstName, lastName: session.lastName})">
                       <i class="glyphicon glyphicon-eye-open"></i>
                       Resume
                   </a>

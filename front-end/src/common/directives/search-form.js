@@ -11,7 +11,7 @@ angular.module('resumeWrangler')
       templateUrl: 'templates/search-form.tpl.html',
       restrict: 'E',
       scope: {},
-      controller: function($scope, resumeCRUDService, $state, $rootScope){
+      controller: function($scope, resumeService, $state, $rootScope){
         $scope.runSearch = function(){
           $rootScope.global.search.cachedSearch.query = $scope.query;
           $state.go('searchResults', {"query": $scope.query});
