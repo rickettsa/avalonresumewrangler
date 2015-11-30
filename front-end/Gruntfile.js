@@ -234,7 +234,7 @@ module.exports = function ( grunt ) {
       },
       livereload: {
         options: {
-          open: true,
+          open: false, //now using grunt-open because I can specify which browser to use.
           middleware: function (connect) {
             return [
               connect.static('.tmp'),
@@ -246,6 +246,16 @@ module.exports = function ( grunt ) {
             ];
           }
         }
+      }
+    },
+
+    /**
+     * grunt-open makes build open in a specific browser
+     */
+    open: {
+      dev: {
+        url: 'http://localhost:<%= connect.options.port %>',
+        app: 'Google Chrome'
       }
     },
 
@@ -605,7 +615,7 @@ module.exports = function ( grunt ) {
    */
   grunt.renameTask( 'watch', 'delta' );
   //grunt.registerTask( 'watch', [ 'build', 'karma:unit', 'connect:livereload', 'delta' ] );
-  grunt.registerTask( 'watch', [ 'build', 'connect:livereload', 'replace:development', 'delta' ] );
+  grunt.registerTask( 'watch', [ 'build', 'connect:livereload', 'replace:development', 'open:dev', 'delta' ] );
 
   /**
    * The default task is to build and compile.

@@ -67,7 +67,7 @@ angular.module( 'resumeWrangler.view', [
       //$scope.session = Session;
 
       $scope.resume = resumeResponse.data.hits[0]._source;
-      $scope.contact = contactResponse.data.hits[0]._source;
+      $scope.contact = typeof contactResponse.data.hits === "array" ? contactResponse.data.hits[0]._source : {};
 
       $scope.skillsData = skillsResponse.data.skills;
       $scope.skillNames = _.pluck(skillsResponse.data.skills, 'dispName');

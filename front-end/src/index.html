@@ -65,25 +65,25 @@
               <li ui-sref-active="active">
                   <a href ui-sref="view({ firstName: session.firstName, lastName: session.lastName})">
                       <i class="glyphicon glyphicon-eye-open"></i>
-                      Resume
+                      My Resume
                   </a>
               </li>
             <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
               <a href ui-sref="edit">
                 <i class="fa fa-edit"></i>
-                Resume
+                Edit My Resume
               </a>
             </li>
             <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
               <a href ui-sref="projects">
                   <i class="fa fa-edit"></i>
-                  Projects
+                  Edit Projects
               </a>
             </li>
             <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
               <a href ui-sref="skills">
                   <i class="fa fa-edit"></i>
-                  Skills
+                  Edit Skills
               </a>
             </li>
             <!--<li>-->
