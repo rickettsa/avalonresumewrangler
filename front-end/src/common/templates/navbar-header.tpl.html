@@ -1,13 +1,13 @@
 <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" ng-click="global.toggleNavVis()" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" ui-sref="home">
                 <img src="/assets/site/avalon-transparent.png" ui-sref="home"/>
                 &#x2003;Resume Wrangler
             </a>
@@ -25,13 +25,11 @@
                         <i class="fa fa-search"></i>
                     </button>
                 </div>
+
+                <ds-user-login></ds-user-login>
             </form>
 
-            <div class="nav navbar-nav navbar-right">
-                <ds-user-login></ds-user-login>
-            </div>
-
-            <div id="navbar" class="navbar-collapse collapse navbar-right top">
+            <div class="navbar-collapse collapse navbar-right top" ng-class="global.navVisible === 1 ? 'display-block' : ''">
                 <ul class="nav navbar-nav">
                     <li ui-sref-active="active">
                         <a href ui-sref="home">
@@ -42,11 +40,6 @@
                     <li ui-sref-active="active">
                         <a href ui-sref="view({ firstName: session.firstName, lastName: session.lastName})">
                             <i class="glyphicon glyphicon-eye-open"></i> Resume
-                        </a>
-                    </li>
-                    <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
-                        <a href ui-sref="edit({ firstName: session.firstName, lastName: session.lastName})">
-                            <i class="fa fa-edit"></i> Resume
                         </a>
                     </li>
                     <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">

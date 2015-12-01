@@ -15,6 +15,15 @@ angular.module('resumeWrangler')
           $state.go('searchResults', {"query": $scope.global.search.query});
         };
 
+        //handle bootstrap nav expand
+        $scope.global.navVisible = 0;
+        $scope.global.toggleNavVis = function(){
+          if ($scope.global.navVisible === 0){
+            $scope.global.navVisible = 1;
+          } else {
+            $scope.global.navVisible = 0;
+          }
+        };
       }
     };
   });

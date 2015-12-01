@@ -1,16 +1,16 @@
 <div class="row">
-    <div class="col-md-12" ng-repeat="result in searchResponse">
-        <hr/>
+    <div class="col-md-12 well" ng-repeat="result in searchResponse">
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-3">
                         <img class="consultant-avatar img-rounded" ng-src="{{ getAvatarImgName( result._source.email ) }}"/>
                     </div>
                     <div class="col-md-9">
-                        <h1>{{ result._source.firstName }} {{ result._source.lastName }}</h1><a class="pull-left" ui-sref="view({ firstName:result._source.firstName, lastName:result._source.lastName  })"><i class="fa fa-sm fa-eye"></i> View Resume</a>
+                        <h1>{{ result._source.firstName }} {{ result._source.lastName }}</h1>
+                        <a class="pull-left" ui-sref="view({ firstName:result._source.firstName, lastName:result._source.lastName  })"><i class="fa fa-sm fa-eye"></i> View Resume</a>
                         <h4><a href="mailto:{{ result._source.email }}">{{ result._source.email }}</a></h4>
                         <h4><a href="tel:+{{ result._source.phone }}">{{ result._source.phone }}</a></h4>
-                        <h4>{{ result._source.city }}, {{ result._source.state }}</h4>
+                        <h4 ng-if="result._source.city || result._source.state">{{ result._source.city }}, {{ result._source.state }}</h4>
                         <h4>{{ result.timezone }}</h4>
                     </div>
                 </div>
