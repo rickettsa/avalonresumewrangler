@@ -74,12 +74,12 @@ angular.module( 'resumeWrangler.home', [
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'HomeCtrl', function HomeController( $scope, $rootScope  ) {
+.controller( 'HomeCtrl', function HomeController( $scope, $rootScope) {
 
 })
 
 
-.controller( 'SearchResultsCtrl', function SearchResultsCtrl( $scope, searchResponse, $rootScope, $stateParams, AppConfig ) {
+.controller( 'SearchResultsCtrl', function SearchResultsCtrl( $scope, searchResponse, $rootScope, $stateParams, AppConfig, $filter ) {
 
     $scope.searchResponse = searchResponse.data.hits;
     $scope.global.search.query = $rootScope.cachedSearch && $rootScope.cachedSearch.query ? $rootScope.cachedSearch.query : ''; //this is needed for 1st view of search results, so highlight works
@@ -94,6 +94,17 @@ angular.module( 'resumeWrangler.home', [
       $scope.global.search.query = $stateParams.query;
     }
 
+    $scope.rearrangeArrayByQuery = function(inputArr){
+      //find array elems that match query
+      var filtered = $filter('filter')(inputArr, $scope.global.search.query);
+      //remove those elements from original array
+      _.remove(inputArr, function (el) {
+        return _.indexOf(filtered, el) !== -1;
+      });
+      //add those elements to the beginning of array
+      var sorted = filtered.concat(inputArr);
+      return sorted;
+    }
 
 
     $scope.getAvatarImgName = function(emailAddr){

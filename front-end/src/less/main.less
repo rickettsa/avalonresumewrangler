@@ -18,6 +18,37 @@
  * definitions in our imported stylesheets.
  */
 
+/* Bootstrap OverRides */
+body .navbar{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+
+#rw-global-search{
+    margin-top: 13px;
+}
+
+/* Make navigation always collapsed */
+@media (min-width: 768px)
+{
+    .navbar-header
+    {
+        float: none;
+    }
+
+    .navbar-toggle
+    {
+        display: block;
+    }
+
+    .navbar-collapse.collapse
+    {
+        display: none !important;
+    }
+}
+
+
 @import 'variables.less';
 
 

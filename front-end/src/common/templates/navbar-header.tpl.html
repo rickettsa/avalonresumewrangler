@@ -1,0 +1,71 @@
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="/assets/site/avalon-transparent.png" ui-sref="home"/>
+                &#x2003;Resume Wrangler
+            </a>
+
+            <form id="rw-global-search" class="form-inline" ng-submit="runGlobalSearch()">
+                <label>Search By: </label>
+                <div class="form-group">
+                    <select name="searchType" ng-model="global.search.searchType" class="form-control">
+                        <option ng-repeat="option in global.search.categories" value="{{option}}">{{option}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input id="keywords-field" class="form-control" ng-model="global.search.query" autofocus="autofocus"/>
+                    <button class="btn btn-primary">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </form>
+
+            <div class="nav navbar-nav navbar-right">
+                <ds-user-login></ds-user-login>
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse navbar-right top">
+                <ul class="nav navbar-nav">
+                    <li ui-sref-active="active">
+                        <a href ui-sref="home">
+                            <i class="fa fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a href ui-sref="view({ firstName: session.firstName, lastName: session.lastName})">
+                            <i class="glyphicon glyphicon-eye-open"></i> Resume
+                        </a>
+                    </li>
+                    <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
+                        <a href ui-sref="edit({ firstName: session.firstName, lastName: session.lastName})">
+                            <i class="fa fa-edit"></i> Resume
+                        </a>
+                    </li>
+                    <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
+                        <a href ui-sref="projects">
+                            <i class="fa fa-edit"></i>
+                            Projects
+                        </a>
+                    </li>
+                    <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
+                        <a href ui-sref="skills">
+                            <i class="fa fa-edit"></i>
+                            Skills
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </div>
+</nav>

@@ -46,8 +46,8 @@ angular.module('resumeWrangler')
         headers: {
           'Content-Type': 'application/json'
         },
-        url: configuration.api + '/api/resumes/' + id,
-        data: { "Resume": { "StructuredXMLResume": payload }}
+        url: configuration.api + '/api/resumes/' + id + '/',
+        data: payload
       });
     };
 

@@ -14,27 +14,48 @@ angular.module( 'resumeWrangler.edit', [
     .config(function config( $stateProvider ) {
       $stateProvider
         .state( 'edit', {
-            url: '/edit',
-            views: {
-              "main": {
-                controller: 'EditCtrl',
-                templateUrl: 'edit/edit.tpl.html'
+          url: '/edit?:firstName&:lastName',
+          params: {
+            firstName: {
+              value: null,
+              squash: true
+            },
+            lastName: {
+              value: null,
+              squash: true
+            }
+          },
+          views: {
+            "main": {
+              controller: 'EditCtrl',
+              templateUrl: 'edit/edit.tpl.html'
+            }
+          },
+          resolve: {
+            resumeResponse: function(resumeService, $stateParams){
+              if ($stateParams.firstName && $stateParams.lastName){
+                return resumeService.fetchResume($stateParams.firstName, $stateParams.lastName);
+              } else {
+                return {};
               }
             },
-            resolve: {
-              resumeResponse: function(resumeService, sessionService){
-                return resumeService.fetchResume('0000000124');
-              },
-              skillsResponse: function(skillsService){
-                return skillsService.fetchSkills();
+            contactResponse: function(contactsService, $stateParams){
+              if ($stateParams.firstName && $stateParams.lastName){
+                return contactsService.fetchContactByName($stateParams.firstName, $stateParams.lastName);
+              } else {
+                return {};
               }
             },
+            skillsResponse: function(skillsService){
+              return skillsService.fetchSkills();
+            }
+          },
             data:{ "pageTitle": "Edit Resume",
                    "authorizedRoles": ["editor", "admin"]
             }
       });
     })
-    .controller('EditCtrl', function ($http, $scope, $filter, resumeResponse, skillsResponse, resumeService) {
+    .controller('EditCtrl', function ($http, $scope, $filter, resumeResponse, skillsResponse, contactResponse, resumeService) {
 
       _.mixin({
         /**
@@ -51,7 +72,14 @@ angular.module( 'resumeWrangler.edit', [
         }
       });
 
-      $scope.resume = resumeResponse.data.Resume.StructuredXMLResume;
+    $scope.resume = resumeResponse.data.hits[0]._source;
+    $scope.global.rwUserId = $scope.resume.userId;
+    $scope.global.resumeId = resumeResponse.data.hits[0]._id;
+    $scope.contact = typeof contactResponse.data.hits === "object" ? contactResponse.data.hits[0]._source : {};
+
+
+
+    console.log( typeof contactResponse);
 
       $scope.skillsData = skillsResponse.data.skills;
       $scope.skillNames = _.pluck(skillsResponse.data.skills, 'dispName');
@@ -148,15 +176,15 @@ angular.module( 'resumeWrangler.edit', [
         ]
       };
       if (!_.isEmpty(addPosition) && addPosition === "end"){
-        $scope.resume.EmploymentHistory.EmployerOrg.PositionHistory.push(blankExperience);
+        $scope.resume.employmentHistory[0].positions.push(blankExperience);
       } else {
-        $scope.resume.EmploymentHistory.EmployerOrg.PositionHistory.unshift(blankExperience);
+        $scope.resume.employmentHistory[0].positions.unshift(blankExperience);
       }
     };
 
 
     $scope.updateResume = function(){
-      resumeService.updateResume($scope.resume.ContactInfo.PersonName.id, $scope.resume)
+      resumeService.updateResume($scope.global.resumeId, $scope.resume)
         .success(function(){
 
           //is this skill known? if not, make sure you post back to the skills API
