@@ -104,7 +104,7 @@
                         <!-- if an image is found, don't bother showing text -->
                         <img class="skill-icon" ng-src="{{ getSkillImg(skillRole.name) }}" alt="{{ getSkillImg(skillRole.name) }}" ng-click="rowform.$show();$(this).hide()"/>
                         <!-- show text when editing and hide image -->
-                        <p ng-show="showSkillName" class="CompetencyDisplayName" editable-text="skillRole.CompetencyDisplayName" onaftersave="updateResume()" e-name="CompetencyDisplayName" e-form="lifeskillsForm" ng-click="rowform.$show()" e-typeahead="skill for skill in skillNames | filter:$viewValue | limitTo:10" typeahead-editable="false">
+                        <p ng-show="showSkillName" class="CompetencyDisplayName" editable-text="skillRole.name" onaftersave="updateResume()" e-name="CompetencyDisplayName" e-form="lifeskillsForm" ng-click="rowform.$show()" e-typeahead="skill for skill in skillNames | filter:$viewValue | limitTo:10" typeahead-editable="false">
                             {{ skillRole.name }}</p>
                     </td>
                     <td>
@@ -124,12 +124,12 @@
                         </form>
                         <div class="buttons" ng-show="!rowform.$visible">
                             <button class="btn btn-success" ng-click="rowform.$show()"><span class="glyphicon glyphicon-pencil"></span></span></button>
-                            <button class="btn btn-danger" ng-click="removeSkill($index, resume.Qualifications.Competency)"><span class="glyphicon glyphicon-remove"></span></button>
+                            <button class="btn btn-danger" ng-click="removeSkill($index, resume.skills)"><span class="glyphicon glyphicon-remove"></span></button>
                         </div>
                     </td>
                 </tr>
             </table>
-            <button class="add-skill btn btn-success" ng-click="addLifeSkillRole(resume.Qualifications.Competency)"><span class="glyphicon glyphicon-plus"></i> Skill</button>
+            <button class="add-skill btn btn-success" ng-click="addLifeSkillRole(resume.skills)"><span class="glyphicon glyphicon-plus"></i> Skill</button>
 
     </div>
 

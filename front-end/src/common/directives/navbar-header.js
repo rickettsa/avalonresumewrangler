@@ -11,8 +11,9 @@ angular.module('resumeWrangler')
       templateUrl: 'templates/navbar-header.tpl.html',
       controller: function($scope, $state, $rootScope){
         $scope.runGlobalSearch = function(){
-          $rootScope.global.search.cachedSearch.query = $scope.query;
-          $state.go('searchResults', {"query": $scope.global.search.query});
+          $rootScope.global.search.cachedSearch.query = $scope.global.search.query;
+          $rootScope.global.search.cachedSearch.searchType = $scope.global.search.searchType;
+          $state.go('searchResults', {"query": $scope.global.search.query, "type": $scope.global.search.searchType});
         };
 
         //handle bootstrap nav expand

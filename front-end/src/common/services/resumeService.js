@@ -16,10 +16,20 @@ angular.module('resumeWrangler')
     service.fetchResume = function(firstName,lastName) {
       //http://private-b7b35-avalonresumesearch.apiary-mock.com/api/resume/0000000124
       //return $http.get('http://private-b7b35-avalonresumesearch.apiary-mock.com/api/resume/' + id);
+      var nameStr;
+
+      if (!_.isEmpty(firstName)){
+        nameStr += 'firstname=' + firstName;
+      }
+
+      if(!_.isEmpty(lastName)){
+        nameStr += '&lastname=' + lastName;
+      }
+
       return $http({
         method: "GET",
         cache: true,
-        url: configuration.api + '/api/resumes/search?firstname=' + firstName + '&lastname=' + lastName
+        url: configuration.api + '/api/resumes/search?' + nameStr
       });
     };
 

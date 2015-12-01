@@ -43,9 +43,13 @@ angular.module( 'resumeWrangler.home', [
         }
       })
       .state('searchResults', {
-        url: '/search-results?:query',
+        url: '/search-results?:query&:type',
         params: {
           query: {
+            value: null,
+            squash: true
+          },
+          type: {
             value: null,
             squash: true
           }
@@ -58,11 +62,21 @@ angular.module( 'resumeWrangler.home', [
         },
         resolve: {
           searchResponse: function($rootScope, resumeService, $stateParams){
-            if (!_.isEmpty($stateParams.query)){
-              return resumeService.runQuery($stateParams.query);
-            } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
-              return resumeService.runQuery($rootScope.global.search.cachedSearch.query);
+            if ($stateParams.type === "Skill"){
+                if (!_.isEmpty($stateParams.query)){
+                  return resumeService.runQuery($stateParams.query);
+                } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
+                  return resumeService.runQuery($rootScope.global.search.cachedSearch.query);
+                }
+            } else if ($stateParams.type === "Last Name"){
+                if (!_.isEmpty($stateParams.query)){
+                  return resumeService.fetchResume($stateParams.query);
+                } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
+                  return resumeService.fetchResume($rootScope.global.search.cachedSearch.query);
+                }
             }
+
+
           }
         },
         data: {"pageTitle": "Search Results",
