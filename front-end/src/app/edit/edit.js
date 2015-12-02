@@ -55,7 +55,7 @@ angular.module( 'resumeWrangler.edit', [
             }
       });
     })
-    .controller('EditCtrl', function ($http, $scope, $filter, resumeResponse, skillsResponse, contactResponse, resumeService) {
+    .controller('EditCtrl', function ($http, $scope, $filter, resumeResponse, skillsResponse, contactResponse, resumeService, skillsService) {
 
       _.mixin({
         /**
@@ -77,24 +77,50 @@ angular.module( 'resumeWrangler.edit', [
     $scope.global.resumeId = resumeResponse.data.hits[0]._id;
     $scope.contact = typeof contactResponse.data.hits === "object" ? contactResponse.data.hits[0]._source : {};
 
+    $scope.edit = {};
 
 
-    console.log( typeof contactResponse);
 
-      $scope.skillsData = skillsResponse.data.skills;
-      $scope.skillNames = _.pluck(skillsResponse.data.skills, 'dispName');
-      $scope.showSkillName = 0;
-      $scope.getSkillImg = function(skillName){
-        var skillNode = _.findBySubVal($scope.skillsData, 'dispName', [skillName]);
-        if (skillNode.length > 0){
-          $scope.showSkillName = 0;
-          return '/assets/icons/' + skillNode[0].image;
-        } else {
-          $scope.showSkillName = 1;
-          return '/assets/icons/generic.jpg';
+    $scope.edit.skillsData = skillsResponse.data.skills;
+    $scope.edit.skillNames = _.pluck(skillsResponse.data.skills, 'dispName');
+    $scope.edit.showSkillName = 0;
+
+    var suggestions = skillsService.getTypeaheadSource();
+    suggestions.initialize();
+
+    $scope.typeaheadOptions = { // Options for the Twitter typeahead
+      highlight: true, // Highlight suggestions
+      minLength: 2 // Don't start looking for suggestions until 3 chars are entered
+    };
+
+    $scope.typeaheadData = { // Data for the Twitter typeahead
+      displayKey: 'displayName',
+      suggestionKey: 'displayName',
+      source: suggestions.ttAdapter(),
+      templates: {
+        empty: '<div class="ds-empty-message">There are no suggestions for your query</div>',
+        header: '<span>Suggested Search Results</span>',
+        /**
+         * Suggestion template.
+         * @param {Object} data
+         * @returns {string}
+         */
+        suggestion: function(data) {
+          return _.template('<p>${displayName}</p>')(data);
         }
-
       }
+    };
+
+    $scope.edit.getSkillImg = function(skillName){
+      var skillNode = _.findBySubVal($scope.skillsData, 'dispName', [skillName]);
+      if (skillNode.length > 0){
+        $scope.showSkillName = 0;
+        return '/assets/icons/' + skillNode[0].image;
+      } else {
+        $scope.showSkillName = 1;
+        return '/assets/icons/generic.jpg';
+      }
+    }
 
       //x-editable setup
       $scope.user = {
@@ -109,34 +135,33 @@ angular.module( 'resumeWrangler.edit', [
 
 
     $scope.groups = [];
-    $scope.loadGroups = function() {
-      return $scope.groups.length ? null : $http.get('/groups').success(function(data) {
-        $scope.groups = data;
-      });
-    };
+//    $scope.edit.loadGroups = function() {
+//      return $scope.groups.length ? null : $http.get('/groups').success(function(data) {
+//        $scope.groups = data;
+//      });
+//    };
+//
+//    $scope.edit.showGroup = function(user) {
+//      if(user.group && $scope.groups.length) {
+//        var selected = $filter('filter')($scope.groups, {id: user.group});
+//        return selected.length ? selected[0].text : 'Not set';
+//      } else {
+//        return user.groupName || 'Not set';
+//      }
+//    };
+//
+//    $scope.edit.saveUser = function(data, id) {
+//      //$scope.user not updated yet
+//      angular.extend(data, {id: id});
+//      //return $http.post('/saveUser', data);
+//    };
 
-    $scope.showGroup = function(user) {
-      if(user.group && $scope.groups.length) {
-        var selected = $filter('filter')($scope.groups, {id: user.group});
-        return selected.length ? selected[0].text : 'Not set';
-      } else {
-        return user.groupName || 'Not set';
-      }
-    };
-
-    $scope.saveUser = function(data, id) {
-      //$scope.user not updated yet
-      angular.extend(data, {id: id});
-      //return $http.post('/saveUser', data);
-    };
-
-    // remove user
-    $scope.removeSkill = function(index, competencyArray) {
+    $scope.edit.removeSkill = function(index, competencyArray) {
       competencyArray.splice(index, 1);
     };
 
     // add user
-    $scope.addSkillRole = function(competencyArray) {
+    $scope.edit.addSkillRole = function(competencyArray) {
       $scope.inserted = {
         abbrev: '',
         CompetencyDisplayName: null,
@@ -146,7 +171,7 @@ angular.module( 'resumeWrangler.edit', [
     };
 
     // add user
-    $scope.addLifeSkillRole = function(competencyArray) {
+    $scope.edit.addLifeSkillRole = function(competencyArray) {
       $scope.inserted = {
         abbrev: '',
         CompetencyDisplayName: null,
@@ -155,7 +180,7 @@ angular.module( 'resumeWrangler.edit', [
       competencyArray.push($scope.inserted);
     };
 
-    $scope.addExperience = function(addPosition){
+    $scope.edit.addExperience = function(addPosition){
       var blankExperience = {
         "positionType": "contract",
         "projectId": "",
@@ -182,8 +207,16 @@ angular.module( 'resumeWrangler.edit', [
       }
     };
 
+    $scope.edit.editSkill = function(skillRole){
+      skillRole.isEditing = true;
+    };
 
-    $scope.updateResume = function(){
+    $scope.edit.saveSkills = function(skills, currentSkillRole){
+      currentSkillRole.isEditing = false;
+      $scope.edit.updateResume();
+    };
+
+    $scope.edit.updateResume = function(){
       resumeService.updateResume($scope.global.resumeId, $scope.resume)
         .success(function(){
 
