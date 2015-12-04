@@ -162,6 +162,12 @@ def delete_project(id):
     dl.delete_project(id)
     return ''
 
+#------- Skills
+
+@app.route('/api/skills', methods=['GET'])
+def get_skills():
+    return app.send_static_file('skills.json')
+
 #-------
 
 @app.errorhandler(404)
