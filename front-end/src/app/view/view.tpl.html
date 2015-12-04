@@ -1,14 +1,3 @@
-<div class="col-md-12">
-    <div class="row well">
-        <div class="pull-right">
-            <span>Download As:</span>
-            &#x2003;
-            <a href="#"><img class="download-icon" src="/assets/icons/pdf.png"/></a>
-            &#x2003;
-            <a href="#"><img class="download-icon" src="/assets/icons/word-doc.png"/></a>
-        </div>
-    </div>
-</div>
 <div class="col-md-3">
     <div class="row well">
         <h2>Filter Resume:</h2>
@@ -106,24 +95,39 @@
         <!-- plus button http://plnkr.co/edit/xUDrOS?p=preview -->
         <!-- http://vitalets.github.io/angular-xeditable/ -->
             <div class="col-md-12">
-                <img src="http://blogs.avalonconsult.com/files/2013/04/avalon-transparent.png"/>
+                    <div>
+                        <div class="pull-left" ng-if="isAuthorized(['editor','admin'])
+                                && contact.firstName === session.firstName
+                                && contact.lastName === session.lastName">
+                            <a href ui-sref="edit({ firstName: session.firstName, lastName: session.lastName})">
+                                <i class="fa fa-2x fa-edit"></i> Edit Resume
+                            </a>
+                        </div>
+                        <div class="pull-right">
+                            <span>Download As:</span>
+                            &#x2003;
+                            <a href="#"><img class="download-icon" src="/assets/icons/pdf.png"/></a>
+                            &#x2003;
+                            <a href="#"><img class="download-icon" src="/assets/icons/word-doc.png"/></a>
+                        </div>
+                    </div>
             </div>
-            <div class="col-md-12">
-                <h1>{{ resume.ContactInfo.PersonName.GivenName }} {{ resume.ContactInfo.PersonName.FamilyName }}</h1>
-                <h2>{{ resume.EmploymentHistory.EmployerOrg.PositionHistory[0].Title }}</h2>
-                <h4><a href="mailto:{{ resume.ContactInfo.ContactMethod.InternetEmailAddress }}">{{ resume.ContactInfo.ContactMethod.InternetEmailAddress }}</a></h4>
-                <h4><a href="tel:+{{ resume.ContactInfo.ContactMethod.Mobile }}">{{ resume.ContactInfo.ContactMethod.Mobile }}</a></h4>
+            <div class="col-md-12" ng-if="contact.firstName">
+                <h1>{{ contact.firstName }} {{ contact.lastName }}</h1>
+                <h4><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></h4>
+                <h4><a href="tel:+{{ contact.phone }}">{{ contact.phone }}</a></h4>
+                <h4>{{ contact.timezone }}</h4>
             </div>
 
             <div class="col-md-12">
                 <h2>Experience:</h2>
                 <div class="exper">
-                    <div class="well light-well" ng-repeat="emplyr in resume.employmentHistory">
-                        <h3><a href="#" e-placeholder="Organization Name">{{ emplyr.employerOrgName || "empty" }}</a></h3>
+                    <div ng-repeat="emplyr in resume.employmentHistory">
+                    <div class="well light-well" ng-repeat="pos in emplyr.positions">
+                        <h3><a href="#" e-placeholder="Service Provider Organization Name">{{ emplyr.serviceProviderOrgName || "empty" }}</a></h3>
 
-                        <div ng-repeat="pos in emplyr.positions">
-                        <h3>{{ pos.Title || "empty" }}</h3>
-                        <h4 ng-if="pos.clientName">{{ pos.clientName }}</h4>
+                        <h3>{{ pos.title || "empty" }}</h3>
+                        <h4 ng-if="pos.contractingOrgName">{{ pos.contractingOrgName }}</h4>
                         <span>{{ pos.startDate || "empty" }}</span>
                         <span> to </span>
                         <span>{{ pos.endDate || "empty" }}</span>
@@ -138,7 +142,7 @@
                         <br/>
                         <!-- <div class="description-noEdit well" ng-bind-html="pos.Description"></div> -->
                         <!-- START SKILLS TABLE -->
-                        <div ng-if="pos.Competency">
+                        <div ng-if="pos.skills">
                             <table id="skills-table view" class="table table-hover table-condensed">
                                 <thead>
                                 <th>Skill</th>

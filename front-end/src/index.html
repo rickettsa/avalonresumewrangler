@@ -33,82 +33,80 @@
 
   </head>
   <body>
-    <div class="container">
-      <div class="navbar navbar-default">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" ng-init="menuCollapsed = true"
-            ng-click="menuCollapsed = ! menuCollapsed">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div class="navbar-brand">
-              <img src="http://blogs.avalonconsult.com/files/2013/04/avalon-transparent.png"/>
 
-            &#x2003;Resume Wrangler
-            <small>
-              <a href="http://github.com/ngbp/ngbp/blob/v<%= version %>-release/CHANGELOG.md">
-                v<%= version %>
-              </a>
-            </small>
+  <rw-navbar-header></rw-navbar-header>
 
-        </div>
-        <div class="collapse navbar-collapse" collapse="menuCollapsed">
-          <ul class="nav navbar-nav">
-            <li ui-sref-active="active">
-              <a href ui-sref="home">
-                <i class="fa fa-home"></i>
-                Home
-              </a>
-            </li>
-              <li ui-sref-active="active">
-                  <a href ui-sref="view">
-                      <i class="glyphicon glyphicon-eye-open"></i>
-                      Resume
-                  </a>
-              </li>
-            <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
-              <a href ui-sref="edit">
-                <i class="fa fa-edit"></i>
-                Resume
-              </a>
-            </li>
-            <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
-              <a href ui-sref="projects">
-                  <i class="fa fa-edit"></i>
-                  Projects
-              </a>
-            </li>
-            <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
-              <a href ui-sref="skills">
-                  <i class="fa fa-edit"></i>
-                  Skills
-              </a>
-            </li>
-            <!--<li>-->
-              <!--<a href="#">-->
-                <!--<i class="fa fa-book"></i>-->
-                <!--Read the Docs-->
+    <!--<div class="container">-->
+      <!--<div class="navbar navbar-default">-->
+        <!--<div class="navbar-header">-->
+          <!--<button type="button" class="navbar-toggle" ng-init="menuCollapsed = true"-->
+            <!--ng-click="menuCollapsed = ! menuCollapsed">-->
+            <!--<span class="sr-only">Toggle navigation</span>-->
+            <!--<span class="icon-bar"></span>-->
+            <!--<span class="icon-bar"></span>-->
+            <!--<span class="icon-bar"></span>-->
+          <!--</button>-->
+          <!--<div class="navbar-brand">-->
+              <!--<img src="http://blogs.avalonconsult.com/files/2013/04/avalon-transparent.png"/>-->
+
+            <!--&#x2003;Resume Wrangler-->
+            <!--<small>-->
+              <!--<a href="http://github.com/ngbp/ngbp/blob/v<%= version %>-release/CHANGELOG.md">-->
+                <!--v<%= version %>-->
+              <!--</a>-->
+            <!--</small>-->
+
+        <!--</div>-->
+        <!--<div class="collapse navbar-collapse" collapse="menuCollapsed">-->
+          <!--<ul class="nav navbar-nav">-->
+            <!--<li ui-sref-active="active">-->
+              <!--<a href ui-sref="home">-->
+                <!--<i class="fa fa-home"></i>-->
+                <!--Home-->
               <!--</a>-->
             <!--</li>-->
-          </ul>
-          <div class="pull-right">
-              <ds-user-login></ds-user-login>
-          </div>
+              <!--<li ui-sref-active="active">-->
+                  <!--<a href ui-sref="view({ firstName: session.firstName, lastName: session.lastName})">-->
+                      <!--<i class="glyphicon glyphicon-eye-open"></i>-->
+                      <!--My Resume-->
+                  <!--</a>-->
+              <!--</li>-->
+            <!--<li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">-->
+              <!--<a href ui-sref="edit({ firstName: session.firstName, lastName: session.lastName})">-->
+                <!--<i class="fa fa-edit"></i>-->
+                <!--Edit My Resume-->
+              <!--</a>-->
+            <!--</li>-->
+            <!--<li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">-->
+              <!--<a href ui-sref="projects">-->
+                  <!--<i class="fa fa-edit"></i>-->
+                  <!--Edit Projects-->
+              <!--</a>-->
+            <!--</li>-->
+            <!--<li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">-->
+              <!--<a href ui-sref="skills">-->
+                  <!--<i class="fa fa-edit"></i>-->
+                  <!--Edit Skills-->
+              <!--</a>-->
+            <!--</li>-->
+          <!--</ul>-->
+          <!--<div class="pull-right">-->
+              <!--<ds-user-login></ds-user-login>-->
+          <!--</div>-->
+        <!--</div>-->
 
-        </div>
 
+        <!--<div class="col-md-12">-->
+          <!--<div class="row">-->
+              <!--<ds-search-form></ds-search-form>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
 
-        <div class="col-md-12">
-          <div class="row">
-              <ds-search-form></ds-search-form>
-          </div>
-        </div>
-      </div>
-    </div>
-
+  <div class="container">
     <div ui-view="main"></div>
+  </div>
 
     <footer class="footer">
       <div class="container">

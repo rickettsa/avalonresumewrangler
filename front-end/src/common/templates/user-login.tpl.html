@@ -1,5 +1,10 @@
-<div id="google-login" class="g-signin2 btn" data-onsuccess="onSignIn"></div><span ng-show="isAuthenticated">As: {{userRole}}</span>&#x2003;&#x2003;<a href="#" ng-show="isAuthenticated" ng-click="signOut()">Sign out</a>
-
+<div id="rw-google-login-wrapper">
+<div id="google-login" class="g-signin2 btn" data-onsuccess="onSignIn"></div>
+<div class="rw-user-login-status-wrapper">
+    <span class="rw-google-user-role" ng-show="isAuthenticated">As: {{userRole}}</span>
+    <a class="rw-sign-out" href="#" ng-show="isAuthenticated" ng-click="signOut()">Sign out</a>
+</div>
+</div>
 
 <!-- https://developers.google.com/+/web/signin/customize
 

@@ -15,13 +15,15 @@
 #
 import sys, os
 
-DATALAYER_LIB_PATH = '/home/kerisman/work/avalonresumewrangler/back-end/api/app/datalayer'
+GIT_BASE_DIR = '/Volumes/Macintosh HD/Users/abembecker/Development/Avalon/resumeWrangler/BeanStalk_AvalonResumeWrangler'
+
+DATALAYER_LIB_PATH = GIT_BASE_DIR + '/back-end/api/app/datalayer'
 
 sys.path.append(DATALAYER_LIB_PATH)
 from datalayer import DataLayer
 
-RESUME_MAPPING = '/home/kerisman/work/avalonresumewrangler/back-end/elasticsearch/mappings/resume-mapping.json'
-PROJECT_MAPPING = '/home/kerisman/work/avalonresumewrangler/back-end/elasticsearch/mappings/project-mapping.json'
+RESUME_MAPPING = GIT_BASE_DIR + '/back-end/elasticsearch/mappings/resume-mapping.json'
+PROJECT_MAPPING = GIT_BASE_DIR + '/back-end/elasticsearch/mappings/project-mapping.json'
 
 #-------
 

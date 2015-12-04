@@ -18,6 +18,63 @@
  * definitions in our imported stylesheets.
  */
 
+/* Bootstrap OverRides */
+body .navbar{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#rw-google-login-wrapper{
+    display: inline;
+}
+
+.rw-user-login-status-wrapper{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.rw-google-user-role{
+    display: block;
+}
+
+.container .navbar-header .navbar-brand {
+    padding: 8px 15px;
+}
+
+h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+hr {
+    margin: 0px;
+}
+
+/* Make navigation always collapsed */
+@media (min-width: 768px)
+{
+    .navbar-header
+    {
+        float: none;
+    }
+
+    .navbar-toggle
+    {
+        display: block;
+    }
+
+    .navbar-collapse.collapse
+    {
+        display: none !important;
+    }
+
+    .navbar-collapse.display-block{
+        display: block !important;
+    }
+
+}
+
+
 @import 'variables.less';
 
 

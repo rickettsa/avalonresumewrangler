@@ -43,7 +43,17 @@ angular.module( 'resumeWrangler.home', [
         }
       })
       .state('searchResults', {
-        url: '/search-results',
+        url: '/search-results?:query&:type',
+        params: {
+          query: {
+            value: null,
+            squash: true
+          },
+          type: {
+            value: null,
+            squash: true
+          }
+        },
         views: {
           "main": {
             controller: 'SearchResultsCtrl',
@@ -51,8 +61,22 @@ angular.module( 'resumeWrangler.home', [
           }
         },
         resolve: {
-          searchResponse: function($rootScope, resumeCRUDService){
-            return resumeCRUDService.runQuery($rootScope.cachedSearch);
+          searchResponse: function($rootScope, resumeService, $stateParams){
+            if ($stateParams.type === "Skill"){
+                if (!_.isEmpty($stateParams.query)){
+                  return resumeService.runQuery($stateParams.query);
+                } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
+                  return resumeService.runQuery($rootScope.global.search.cachedSearch.query);
+                }
+            } else if ($stateParams.type === "Last Name"){
+                if (!_.isEmpty($stateParams.query)){
+                  return resumeService.fetchResume($stateParams.query);
+                } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
+                  return resumeService.fetchResume($rootScope.global.search.cachedSearch.query);
+                }
+            }
+
+
           }
         },
         data: {"pageTitle": "Search Results",
@@ -64,26 +88,38 @@ angular.module( 'resumeWrangler.home', [
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'HomeCtrl', function HomeController( $scope, $rootScope  ) {
+.controller( 'HomeCtrl', function HomeController( $scope, $rootScope) {
 
 })
 
 
-.controller( 'SearchResultsCtrl', function SearchResultsCtrl( $scope, searchResponse, $rootScope  ) {
+.controller( 'SearchResultsCtrl', function SearchResultsCtrl( $scope, searchResponse, $rootScope, $stateParams, AppConfig, $filter ) {
 
     $scope.searchResponse = searchResponse.data.hits;
-    $scope.query = $rootScope.cachedSearch && $rootScope.cachedSearch.query ? $rootScope.cachedSearch.query : ''; //this is needed for 1st view of search results, so highlight works
+    $scope.global.search.query = $rootScope.cachedSearch && $rootScope.cachedSearch.query ? $rootScope.cachedSearch.query : ''; //this is needed for 1st view of search results, so highlight works
 
     $scope.currentSearch = {};
     $scope.search = {};
 
-    //handles subsequent search requests after data is initially loaded
-    $scope.$on('run-global-search', function(event, args){
-      console.log("broadcast recieved: " + args.query);
-      $scope.query = args.query;
-    });
+    $scope.search.config = AppConfig.search;
 
-    $scope.$on('go', function () { alert('event is clicked') });
+
+    if (!_.isEmpty($stateParams.query)){
+      $scope.global.search.query = $stateParams.query;
+    }
+
+    $scope.rearrangeArrayByQuery = function(inputArr){
+      //find array elems that match query
+      var filtered = $filter('filter')(inputArr, $scope.global.search.query);
+      //remove those elements from original array
+      _.remove(inputArr, function (el) {
+        return _.indexOf(filtered, el) !== -1;
+      });
+      //add those elements to the beginning of array
+      var sorted = filtered.concat(inputArr);
+      return sorted;
+    }
+
 
     $scope.getAvatarImgName = function(emailAddr){
       if (emailAddr && !_.isEmpty(emailAddr)){

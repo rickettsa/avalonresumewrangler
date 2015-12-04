@@ -6,7 +6,7 @@
  * @description Create,Read,Update,Delete service for skills JSON from backend.
  */
 angular.module('resumeWrangler')
-  .service('SkillsService', function($rootScope, $http, configuration) {
+  .service('skillsService', function($rootScope, $http, configuration) {
     var service = {};
 
     /**
@@ -18,7 +18,7 @@ angular.module('resumeWrangler')
       return $http({
         method: "GET",
         cache: true,
-        url: configuration.api + '/api/skills'
+        url: configuration.apiary + '/api/skills'
       });
     };
 
@@ -69,7 +69,7 @@ angular.module('resumeWrangler')
         limit: 10,
         remote: {
           //url: Authentication.getApiUrl() + '/instances/search/suggestions?q=%QUERY', // The API endpoint for search suggestions
-          url: configuration.api + '/api/skills',
+          url: configuration.apiary + '/api/skills',
           /**
            * Reduce the response down to an array of objects since the API doesn't return that outright.
            * @param {Object} parsedResponse
@@ -85,12 +85,11 @@ angular.module('resumeWrangler')
               _.forEach(keys, function(skill) {
                 var retObj = {};
                 retObj.abbrev = skill;
-                retObj.displayName = skills[skill]["display-name"];
+                retObj.displayName = skills[skill]["dispName"];
                 retObj.image = skills[skill]["image"];
-                return retObj;
+                ret.push(retObj);
               });
             }
-
             return ret;
           }
         }

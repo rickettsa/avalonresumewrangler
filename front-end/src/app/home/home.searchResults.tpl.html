@@ -1,6 +1,5 @@
 <div class="row">
-    <div class="col-md-12" ng-repeat="result in searchResponse">
-        <hr/>
+    <div class="col-md-12 well" ng-repeat="result in searchResponse">
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-3">
@@ -8,25 +7,28 @@
                     </div>
                     <div class="col-md-9">
                         <h1>{{ result._source.firstName }} {{ result._source.lastName }}</h1>
+                        <a class="pull-left" ui-sref="view({ firstName:result._source.firstName, lastName:result._source.lastName  })"><i class="fa fa-sm fa-eye"></i> View Resume</a>
                         <h4><a href="mailto:{{ result._source.email }}">{{ result._source.email }}</a></h4>
                         <h4><a href="tel:+{{ result._source.phone }}">{{ result._source.phone }}</a></h4>
-                        <h4>{{ result._source.city }}, {{ result._source.state }}</h4>
+                        <h4 ng-if="result._source.city || result._source.state">{{ result._source.city }}, {{ result._source.state }}</h4>
+                        <h4>{{ result.timezone }}</h4>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <h4><i>{{ search.getMostRecentPosition(result._source.employmentHistory, 'title') }}</i>, {{ search.getMostRecentPosition(result._source.employmentHistory, 'clientName') }}</h4>
-                <h4><span class="header-label">{{ search.getMostRecentPosition(result._source.employmentHistory, 'startDate') }}</span></h4>
+                <h4><i>{{ result._source.employmentHistory[0].positions[0].title }}</i>, {{ result._source.employmentHistory[0].positions[0].contractingOrgName }}</h4>
+                <h4><span class="header-label">{{ result._source.employmentHistory[0].positions[0].startDate }}</span></h4>
                 <table class="table table-striped">
                     <tr>
                         <th>Skills</th>
                         <th>Experience</th>
                     </tr>
-                    <tr ng-repeat="skill in result._source.skills">
-                        <td ng-bind-html="skill.name | highlight:query"></td>
+                    <tr ng-repeat="skill in result._source.skills | limitTo:search.config.skillsDispLimit | orderBy:-years">
+                        <td ng-bind-html="skill.name | highlight:global.search.query"></td>
                         <td>{{ skill.years }}yrs</td>
                     </tr>
                 </table>
+                <a ng-if="result._source.skills.length - search.config.skillsDispLimit > 0">Show More Skills...</a>
             </div>
     </div>
 </div>

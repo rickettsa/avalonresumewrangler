@@ -53,7 +53,7 @@ angular.module( 'resumeWrangler', [
 
 })
 
-.run( function(editableOptions, $rootScope, configuration, AppConfig, LoginService){
+.run( function(editableOptions, $rootScope, configuration, AppConfig, loginService){
     editableOptions.theme = 'bs3'; //xeditable option to use bootstrap 3
     var uiRouterDebug = 0;
     var authDebug = 0;
@@ -65,11 +65,11 @@ angular.module( 'resumeWrangler', [
       }
 
       var authorizedRoles = next.data.authorizedRoles;
-      if (!LoginService.isAuthorized(authorizedRoles)) {
+      if (!loginService.isAuthorized(authorizedRoles)) {
         //event.preventDefault();
         // 06-17-2015 this prevent default causes page view content not to load when page is refreshed
         // does not seem to break anything to remove..
-        if (LoginService.isAuthenticated()) {
+        if (loginService.isAuthenticated()) {
           // user is not allowed
           //$rootScope.$broadcast(AppConfig.AUTH_EVENTS.notAuthorized);
           if (authDebug) {
@@ -112,10 +112,15 @@ angular.module( 'resumeWrangler', [
       });
       /* END ui.router debug */
     }
+
+    $rootScope.global = {};
+    $rootScope.global.search = {};
+    $rootScope.global.search.cachedSearch = {};
+
   }
 )
 
-.controller( 'AppCtrl', function AppCtrl ($scope, $location, LoginService) {
+.controller( 'AppCtrl', function AppCtrl ($scope, $location, loginService, sessionService) {
 
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
     if ( angular.isDefined( toState.data.pageTitle ) ) {
@@ -124,8 +129,13 @@ angular.module( 'resumeWrangler', [
   });
 
   $scope.isAuthorized = function(roles){
-         return LoginService.isAuthorized(roles);
+         return loginService.isAuthorized(roles);
   };
+
+  $scope.session = sessionService;
+
+  $scope.global.search.categories = ["Skill","Last Name","Project Name"];
+  $scope.global.search.searchType = $scope.global.search.categories[0];
 
 })
 

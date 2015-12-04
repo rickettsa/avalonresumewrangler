@@ -6,7 +6,7 @@
  * @description Create,Read,Update,Delete service for resume JSON from backend.
  */
 angular.module('resumeWrangler')
-  .service('resumeCRUDService', function($rootScope, $http, configuration) {
+  .service('resumeService', function($rootScope, $http, configuration) {
     var service = {};
 
     /**
@@ -16,18 +16,27 @@ angular.module('resumeWrangler')
     service.fetchResume = function(firstName,lastName) {
       //http://private-b7b35-avalonresumesearch.apiary-mock.com/api/resume/0000000124
       //return $http.get('http://private-b7b35-avalonresumesearch.apiary-mock.com/api/resume/' + id);
+      var nameStr;
+
+      if (!_.isEmpty(firstName)){
+        nameStr += 'firstname=' + firstName;
+      }
+
+      if(!_.isEmpty(lastName)){
+        nameStr += '&lastname=' + lastName;
+      }
+
       return $http({
         method: "GET",
         cache: true,
-        url: configuration.api + '/api/resumes/search?firstname=' + firstName + '&lastname=' + lastName
+        url: configuration.api + '/api/resumes/search?' + nameStr
       });
     };
 
     service.runQuery = function(currentSearch){
       return $http({
         method: "GET",
-        cache: true,
-        url: configuration.api + '/api/resumes/search'
+        url: configuration.api + '/api/resumes/search?expand_user_info=true&skill=' + currentSearch
       });
     };
 
@@ -47,8 +56,8 @@ angular.module('resumeWrangler')
         headers: {
           'Content-Type': 'application/json'
         },
-        url: configuration.api + '/api/resumes/' + id,
-        data: { "Resume": { "StructuredXMLResume": payload }}
+        url: configuration.api + '/api/resumes/' + id + '/',
+        data: payload
       });
     };
 

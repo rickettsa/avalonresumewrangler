@@ -11,12 +11,12 @@ angular.module('resumeWrangler')
       templateUrl: 'templates/user-login.tpl.html',
       restrict: 'E',
       scope: true,
-      controller: function($scope, $state, $rootScope, Session, LoginService) {
+      controller: function($scope, $state, $rootScope, sessionService, loginService) {
 
         $scope.userRole = "";
         $scope.$watch(
           function(){
-            return Session.userRole;
+            return sessionService.userRole;
           },
           function(newValue, oldValue){
             //console.log("userRole Watch: " + newValue);
@@ -29,12 +29,12 @@ angular.module('resumeWrangler')
         );
 
 
-        $scope.session = Session;
+        $scope.session = sessionService;
 
         $scope.isAuthenticated = false;
         $scope.$watch(
           function(){
-            return LoginService.isAuthenticated();
+            return loginService.isAuthenticated();
           },
           function(newValue, oldValue){
             $scope.isAuthenticated = newValue;
@@ -47,8 +47,8 @@ angular.module('resumeWrangler')
           var profile = googleUser.getBasicProfile();
 
           //Create application session to match Google session if auth succeeds
-          LoginService.login(profile);
-          if (LoginService.isAuthenticated()){
+          loginService.login(profile);
+          if (loginService.isAuthenticated()){
               $scope.$apply();
           }
         };
@@ -58,7 +58,7 @@ angular.module('resumeWrangler')
         $scope.signOut = function() {
           var auth2 = gapi.auth2.getAuthInstance();
           auth2.signOut().then(function() {
-            LoginService.logout();
+            loginService.logout();
             $scope.$apply();
           });
           $state.go('home');

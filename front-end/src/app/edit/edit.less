@@ -1,15 +1,3 @@
-.skill-icon{
-    max-width: 6em;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-}
-
-.CompetencyDisplayName{
-    text-align: center;
-    font-size: 18px;
-}
-
 div[id^="cke_editor-"]{
     display: hidden;
 }
@@ -26,19 +14,51 @@ div[id^="cke_editor-"]{
 }
 
 .skills-table{
-    border: none;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
+    border-radius: 8px;
     box-shadow: none;
     thead{
         box-shadow: 0 1px 0 #fff inset;
-        background: #F2F2F2;
-    }
-    .editable-wrap{
-        display: inline;
+        font-weight: bold;
+        font-size: large;
     }
     th{
-        text-align: center;
+        padding: 3px;
+        color: #60676a;
+    }
+    tr{
+        border-bottom: 1px solid #bfd4e5;
+        td{
+            padding: 3px;
+            .skill-icon{
+                max-width: 3em;
+                float: left;
+            }
+            .skill-name{
+                float: left;
+                vertical-align: middle;
+                margin: 10px 0px 0px 5px;
+            }
+            .skill-controls{
+                .edit{
+                    color: #385cb3;
+                }
+                .edit:hover{
+                    color: #2c4487;
+                }
+                .remove{
+                    color: #c40006;
+                }
+                .remove:hover{
+                    color: #640006;
+                }
+                .save{
+                    color: #008000;
+                }
+                .save:hover{
+                    color: #004000;
+                }
+            }
+        }
     }
 }
 
@@ -51,11 +71,44 @@ div[id^="cke_editor-"]{
 }
 
 .dashed-well{
-    border: 4px dashed gray;
-
+    border: 4px dashed #d9d9d9;
 }
 
 p a {
     font-size: 15px;
     line-height: 1.6;
+}
+
+
+
+
+.tt-hint {
+    color: #999;
+}
+
+.tt-menu,.tt-dropdown-menu { /* UPDATE: newer versions use tt-menu instead of tt-dropdown-menu */
+    width: 422px;
+    margin-top: 12px;
+    padding: 8px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.tt-suggestion {
+    padding: 3px 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.tt-suggestion.tt-is-under-cursor { /* UPDATE: newer versions use .tt-suggestion.tt-cursor */
+    color: #fff;
+    background-color: #0097cf;
+
+}
+
+.tt-suggestion p {
+    margin: 0;
 }
