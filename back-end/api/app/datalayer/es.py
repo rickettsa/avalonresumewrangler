@@ -93,8 +93,17 @@ class ESDataLayer(DataLayer):
         user = self.es.get(index=self.USER_INDEX, doc_type=self.USER_TYPE, id=id)
         return user
 
+    # Delete the specified user and also delete any resumes that reference the user.
     def delete_user(self, id):
         self.es.delete(index=self.USER_INDEX, doc_type=self.USER_TYPE, id=id)
+
+        # maintain referential integrity: delete resumes that reference the now-obsolete user
+        resumes = self.find_resumes(userid=id)
+        for resume in resumes['hits']:
+            resume_id = resume['_id']
+            print 'would delete resume with id', resume_id
+            print resume
+            self.es.delete(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, id=resume_id)
 
     #------- Resumes
 
@@ -121,7 +130,7 @@ class ESDataLayer(DataLayer):
     #NOTE: using variable.lower() in much of this code because ES mapping stores lowercased text in many cases as part of its normalization
     # (there may be better ways to index the data or other query types to use that don't require this step)
 
-    def find_resumes(self, userid, firstname, lastname, client_project_id, skills=[]):
+    def find_resumes(self, userid=None, firstname=None, lastname=None, client_project_id=None, skills=[]):
         userid_query = fn_query = ln_query = client_project_query = None
         if userid is not None: userid_query = filtered_term_query( 'userId', userid.lower() )
         if firstname is not None: fn_query = filtered_term_query( 'firstName', firstname.lower() )
