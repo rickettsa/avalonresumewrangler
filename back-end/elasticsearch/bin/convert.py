@@ -13,11 +13,26 @@ import hashlib
 from uuid import uuid4
 import collections
 
+AUX_CONTACT_FILE = '/home/kerisman/Downloads/avalon_contacts.json'
+
 SKIP_LIST = [
     'KurtCagleResume.docx.html.xml'
 ]
 
 ns = { 'd':'http://ns.hr-xml.org/2007-04-15' } 
+
+aux_contact_info = {}
+
+def aux_contact_info():
+    lines = []
+    aux_contact_info = {}
+    with open(AUX_CONTACT_FILE, 'r') as f:
+        lines = f.read().split('\n')
+    for l in lines:
+        if(l):
+            contact = eval(l)
+            aux_contact_info[ contact['name'].replace(' ', '') ] = contact
+    return aux_contact_info
 
 #-------------
 def userid(username):
@@ -42,11 +57,29 @@ def transform_contact_info_for_user( root, ns ):
 
     phone = root.find('.//d:ContactInfo/d:ContactMethod/d:Mobile', ns).text
     email = root.find('.//d:ContactInfo/d:ContactMethod/d:InternetEmailAddress', ns).text
+
+    #FIXME: fake city
     city = fn + random.choice(('vale', 'burg', 'haven'))
+
+    #FIXME: fake state
     state = random.choice(('IL', 'TN', 'SC', 'MN', 'OH', 'CO', 'TX'))
-    zipcode = str( round(random.random() * 10**5) )
+
+    #FIXME: fake zip
+    zipcode = str(int(round(random.random() * 10**5)))
+
+    #FIXME: placeholder timezone
+    tz = '(GMT-06:00) Central Standard Time (America/Chicago)'
+
+    #FIXME:merge contact info from avalon_contacts.json into what has already been found in the xml
+    #   (this is ugly and complicated...just getting data ready for demo)
+    key = fn + ln
+    if(aux_contact_info.has_key(key)):
+        phone = aux_contact_info[key]['phone']
+        email = aux_contact_info[key]['email']
+        tz = aux_contact_info[key]['timezone']
+
     return { 'userId': uid, 'username': username, 'firstName': fn, 'lastName': ln, 'phone': phone, 'email': email,
-            'city': city, 'state': state, 'zip': zipcode }
+            'city': city, 'state': state, 'zip': zipcode, 'timezone': tz }
 
 def desc_without_namespaces(desc):
     desc = re.sub( r'<Description xmlns:ns0=\"http://ns.hr-xml.org/2007-04-15\"', '', desc )
@@ -212,6 +245,9 @@ def transform( xml_res, ns ):
 #   [v] project docs need to have userId keys
 #   [v] resume docs need to have clientProjectId keys
 #
+
+aux_contact_info = aux_contact_info()
+
 parser = argparse.ArgumentParser(description='convert resume XML input to JSON')
 parser.add_argument("indir", action='store',  help='existing directory containing XML input files')
 parser.add_argument("outdir", action='store',  help='new directory to be created for JSON output files')
