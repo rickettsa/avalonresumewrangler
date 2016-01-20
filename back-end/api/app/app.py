@@ -43,20 +43,10 @@ def create_user():
     id = _create_entity(dl.create_or_update_user)
     return make_response('ok', 200, {'id': id} )
 
-# OPTIONS needed for AngularJS
-@app.route('/api/users', methods=['OPTIONS'])
-def create_user__options():
-    return make_response('ok', 200)
-
 @app.route('/api/users/<id>', methods=['PUT'])
 def update_user(id):
     _create_entity(dl.create_or_update_user, id)
     return ''
-
-# OPTIONS needed for AngularJS
-@app.route('/api/users/<id>', methods=['OPTIONS'])
-def update_user__options(id):
-    return make_response('ok',200)
 
 @app.route('/api/users/search', methods=['GET'])
 def find_users():
@@ -91,25 +81,24 @@ def create_resume():
     id = _create_entity(dl.create_or_update_resume)
     return ''
 
-# OPTIONS needed for AngularJS
-@app.route('/api/resumes', methods=['OPTIONS'])
-def create_resume__options():
-    return make_response('ok', 200)
-
 @app.route('/api/resumes/<id>', methods=['PUT'])
 def update_resume(id):
     _create_entity(dl.create_or_update_resume, id)
     return ''
 
-# OPTIONS needed for AngularJS
-@app.route('/api/resumes/<id>', methods=['OPTIONS'])
-def update_resume__options(id):
-    return make_response('ok', 200)
-
 @app.route('/api/resumes', methods=['GET'])
 def list_resumes():
     resumes = dl.list_resumes()
     return make_response( json.dumps(resumes), 200, {'Content-Type': 'application/json'} )
+
+def _matches_one_of(r, l):
+    '''If string s is in list l (case-insensitive match), return True. False otherwise.'''
+    if len(l) > 0:
+        if l[0].lower() == r.lower():
+            return True
+        else:
+            return _matches_one_of(r, l[1:])
+    return False
 
 @app.route('/api/resumes/search', methods=['GET'])
 def find_resumes():
@@ -120,6 +109,21 @@ def find_resumes():
     skills = request.args.getlist('skill')
 
     results = dl.find_resumes(userid, fn, ln, client_proj_id, skills)
+
+    # for each resume, re-order the skills section to show the searched skill(s) first
+    for r in results['hits']:
+        res_data = r['_source']
+        skills_section = res_data['skills']
+        prioritized_skills = []
+        for i in range( 0, len(skills_section) ):
+            skill_name = skills_section[i]['name']
+            # if skill_name matches one of the searched skills then insert at front of priority list; otherwise append to back
+            if _matches_one_of(skill_name, skills):
+                prioritized_skills.insert(0, skills_section[i])
+            else:
+                prioritized_skills.append(skills_section[i])
+
+        res_data['skills'] = prioritized_skills
 
     # if expand_contact_info was provided then for each resume, find userId and call dl.get_user(id),
     # then add they key-value pairs from the user doc (assumed to be flat) inline to each resume
@@ -154,20 +158,10 @@ def create_project():
     id = _create_entity(dl.create_or_update_project)
     return ''
 
-# OPTIONS needed for AngularJS
-@app.route('/api/projects', methods=['OPTIONS'])
-def create_project__options():
-    return make_response('ok', 200)
-
 @app.route('/api/projects/<id>', methods=['PUT'])
 def update_project(id):
     _create_entity(dl.create_or_update_project, id)
     return ''
-
-# OPTIONS needed for AngularJS
-@app.route('/api/projects/<id>', methods=['OPTIONS'])
-def update_project__options(id):
-    return make_response('ok', 200)
 
 @app.route('/api/projects/search', methods=['GET'])
 def find_projects():
