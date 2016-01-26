@@ -43,10 +43,20 @@ def create_user():
     id = _create_entity(dl.create_or_update_user)
     return make_response('ok', 200, {'id': id} )
 
+# OPTIONS needed for AngularJS
+@app.route('/api/users', methods=['OPTIONS'])
+def create_user__options():
+    return make_response('ok', 200)
+
 @app.route('/api/users/<id>', methods=['PUT'])
 def update_user(id):
     _create_entity(dl.create_or_update_user, id)
     return ''
+
+# OPTIONS needed for AngularJS
+@app.route('/api/users/<id>', methods=['OPTIONS'])
+def update_user__options(id):
+    return make_response('ok',200)
 
 @app.route('/api/users/search', methods=['GET'])
 def find_users():
@@ -81,10 +91,20 @@ def create_resume():
     id = _create_entity(dl.create_or_update_resume)
     return ''
 
+# OPTIONS needed for AngularJS
+@app.route('/api/resumes', methods=['OPTIONS'])
+def create_resume__options():
+    return make_response('ok', 200)
+
 @app.route('/api/resumes/<id>', methods=['PUT'])
 def update_resume(id):
     _create_entity(dl.create_or_update_resume, id)
     return ''
+
+# OPTIONS needed for AngularJS
+@app.route('/api/resumes/<id>', methods=['OPTIONS'])
+def update_resume__options(id):
+    return make_response('ok', 200)
 
 @app.route('/api/resumes', methods=['GET'])
 def list_resumes():
@@ -158,10 +178,20 @@ def create_project():
     id = _create_entity(dl.create_or_update_project)
     return ''
 
+# OPTIONS needed for AngularJS
+@app.route('/api/projects', methods=['OPTIONS'])
+def create_project__options():
+    return make_response('ok', 200)
+
 @app.route('/api/projects/<id>', methods=['PUT'])
 def update_project(id):
     _create_entity(dl.create_or_update_project, id)
     return ''
+
+# OPTIONS needed for AngularJS
+@app.route('/api/projects/<id>', methods=['OPTIONS'])
+def update_project__options(id):
+    return make_response('ok', 200)
 
 @app.route('/api/projects/search', methods=['GET'])
 def find_projects():
