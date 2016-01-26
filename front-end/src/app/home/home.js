@@ -61,7 +61,7 @@ angular.module( 'resumeWrangler.home', [
           }
         },
         resolve: {
-          searchResponse: function($rootScope, resumeService, projectService, $stateParams){
+          searchResponse: function($rootScope, resumeService, projectsService, $stateParams){
             if ($stateParams.type === "Skill"){
                 if (!_.isEmpty($stateParams.query)){
                   return resumeService.runQuery($stateParams.query);
@@ -76,9 +76,9 @@ angular.module( 'resumeWrangler.home', [
                 }
             } else if ($stateParams.type === "Project"){
                 if (!_.isEmpty($stateParams.query)){
-                  return resumeService.fetchProject($stateParams.query);
+                  return projectsService.fetchProject($stateParams.query);
                 } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
-                  return resumeService.fetchProject($rootScope.global.search.cachedSearch.query);
+                  return projectsService.fetchProject($rootScope.global.search.cachedSearch.query);
                 }
             }
           }
