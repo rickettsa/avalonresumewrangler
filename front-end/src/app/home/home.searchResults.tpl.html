@@ -31,4 +31,8 @@
                 <a ng-if="result._source.skills.length - search.config.skillsDispLimit > 0">Show More Skills...</a>
             </div>
     </div>
+    <div class="col-md-12" ng-if="searchResponse.length === 0">
+        <div class="alert alert-danger" role="alert"><i class="fa fa-warning"></i> Your search returned 0 results.. </div>
+    </div>
+
 </div>

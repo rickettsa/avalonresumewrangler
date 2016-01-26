@@ -1,9 +1,9 @@
 <div class="col-md-12 dashed-well">
     <div class="row">
         <div class="col-md-8">
-            <h1><a href="#" e-required e-placeholder="Project Name" editable-text="project.ProjectSummary.ProjectName" onaftersave="updateProject()">{{ project.ProjectSummary.ProjectName || "empty" }}</a></h1>
-            <h3><a href="#" e-required e-placeholder="Client Name" editable-text="project.ClientOrganizationName" onaftersave="updateProject()">{{ project.ClientOrganizationName || "empty" }}</a></h3>
-            <h4><a href="mailto:{{ project.ClientWebsite }}" e-required e-placeholder="Client Email" editable-text="project.ClientWebsite" onaftersave="updateProject()">{{ project.ClientWebsite }}</a></h4>
+            <h1><a href="#" e-required e-placeholder="Project Name" editable-text="project.name" onaftersave="updateProject()">{{ project.name || "empty" }}</a></h1>
+            <h3><a href="#" e-required e-placeholder="Client Name" editable-text="project.clientName" onaftersave="updateProject()">{{ project.clientName || "empty" }}</a></h3>
+            <h4><a href="mailto:{{ project.clientWebsite }}" e-required e-placeholder="Client Email" editable-text="project.clientWebsite" onaftersave="updateProject()">{{ project.clientWebsite }}</a></h4>
         </div>
         <div class="col-md-4">
             <table class="project-dates">
@@ -20,7 +20,7 @@
                         <span>Start Date: </span>
                     </td>
                     <td>
-                        <a href="#" e-required e-placeholder="Project Name" editable-text="project.AssignmentDateRange.StartDate" onaftersave="updateProject()">{{ project.AssignmentDateRange.StartDate || "empty" }}</a>
+                        <a href="#" e-required e-placeholder="Project Name" editable-text="project.startDate" onaftersave="updateProject()">{{ project.startDate || "empty" }}</a>
                     </td>
                 </tr>
                 <tr>
@@ -48,7 +48,8 @@
             <h2>Global Description: </h2>
             <div class="well light-well">
                 <p>
-                <a href="#" e-rows="8" e-cols="80" e-style="width: 90%" data-type="textarea" e-required e-placeholder="Project Description" editable-textarea="project.ProjectSummary.ProjectDescription" onaftersave="updateProject()">{{ project.ProjectSummary.ProjectDescription || "empty" }}</a>
+                <!--<a href="#" e-rows="8" e-cols="80" e-style="width: 90%" data-type="textarea" e-required e-placeholder="Project Description" editable-textarea="project.clientDescription" onaftersave="updateProject()">{{ project.clientDescription || "empty" }}</a>-->
+                <div class="ck-editor" ng-model="project.clientDescription" ng-init="description = project.clientDescription">{{ project.clientDescription }}</div>
                 </p>
             </div>
         </div>
@@ -153,18 +154,18 @@
         <div class="col-md-12">
             <h2>Client Contacts:</h2>
             <div class="well light-well">
-                <div class="col-md-6 consultant well" ng-repeat="contact in project.ClientContacts.ClientContact">
+                <div class="col-md-6 consultant well" ng-repeat="contact in project.clientContacts">
                     <div class="row">
                         <div class="col-md-4">
                             <img class="consultant-avatar img-rounded" src="/assets/avatars/generic.jpg"/>
-                            <h4><a href="#">{{ contact.ContactInfo.PersonName.GivenName }} {{ contact.ContactInfo.PersonName.FamilyName }}</a></h4>
-                            <a href="mailto:{{ contact.ContactInfo.ContactMethod.InternetEmailAddress.toLowerCase() }}"><i class="glyphicon glyphicon-envelope"></i> Email</a>
+                            <h4><a href="#">{{ contact.firstName }} {{ contact.lastName }}</a></h4>
+                            <a href="mailto:{{ contact.email }}"><i class="glyphicon glyphicon-envelope"></i> Email</a>
                             <br/>
-                            <a href="tel:+{{ contact.ContactInfo.ContactMethod.Mobile }}"><i class="glyphicon glyphicon-phone"></i> {{ contact.ContactInfo.ContactMethod.Mobile }}</a>
+                            <a href="tel:+{{ contact.cell }}"><i class="glyphicon glyphicon-phone"></i> {{ contact.cell }}</a>
                             <!-- <h4>{{ position.filledBy.ContactInfo.ContactMethod.PostalAddress.City }}, {{ position.filledBy.ContactInfo.ContactMethod.PostalAddress.State }}</h4> -->
                         </div>
                         <div class="col-md-8">
-                            <h3 class="position-title" editable-text="contact.ContactInfo.PositionTitle" onaftersave="updateProject()" e-name="positionTitle"><a href="#">{{ contact.ContactInfo.PositionTitle }}</a></h3>
+                            <h3 class="position-title" editable-text="contact.title" onaftersave="updateProject()" e-name="positionTitle"><a href="#">{{ contact.title }}</a></h3>
                             <h4 >{{ contact.ContactInfo.PositionResponsibilies }}</h4>
                         </div>
                     </div>

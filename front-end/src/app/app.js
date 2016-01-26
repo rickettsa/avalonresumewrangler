@@ -36,12 +36,16 @@ angular.module( 'resumeWrangler', [
   .filter('excludeOthers', function(){
     return function(items, name){
       var arrayToReturn = [];
-      for (var i=0; i<items.length; i++){
-        if (items[i].type === name) {
-          arrayToReturn.push(items[i]);
-        }
+      if (typeof items === "object" || typeof items === "array"){
+          for (var i=0; i<items.length; i++){
+            if (items[i].type === name) {
+              arrayToReturn.push(items[i]);
+            }
+          }
+          return arrayToReturn;
+      } else {
+          return items;
       }
-      return arrayToReturn;
     };
   })
 

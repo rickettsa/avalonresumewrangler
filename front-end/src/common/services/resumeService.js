@@ -19,11 +19,11 @@ angular.module('resumeWrangler')
       var nameStr;
 
       if (!_.isEmpty(firstName)){
-        nameStr += 'firstname=' + firstName;
+        nameStr = "firstname=" + firstName;
       }
 
       if(!_.isEmpty(lastName)){
-        nameStr += '&lastname=' + lastName;
+        nameStr += "&lastname=" + lastName;
       }
 
       return $http({

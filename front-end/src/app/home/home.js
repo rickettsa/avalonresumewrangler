@@ -43,7 +43,7 @@ angular.module( 'resumeWrangler.home', [
         }
       })
       .state('searchResults', {
-        url: '/search-results?:query&:type',
+        url: '/search-results?:query&:type&:skill&:last&:proj',
         params: {
           query: {
             value: null,
@@ -61,7 +61,7 @@ angular.module( 'resumeWrangler.home', [
           }
         },
         resolve: {
-          searchResponse: function($rootScope, resumeService, $stateParams){
+          searchResponse: function($rootScope, resumeService, projectService, $stateParams){
             if ($stateParams.type === "Skill"){
                 if (!_.isEmpty($stateParams.query)){
                   return resumeService.runQuery($stateParams.query);
@@ -70,13 +70,17 @@ angular.module( 'resumeWrangler.home', [
                 }
             } else if ($stateParams.type === "Last Name"){
                 if (!_.isEmpty($stateParams.query)){
-                  return resumeService.fetchResume($stateParams.query);
+                  return resumeService.fetchResume(null,$stateParams.query);
                 } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
-                  return resumeService.fetchResume($rootScope.global.search.cachedSearch.query);
+                  return resumeService.fetchResume(null,$rootScope.global.search.cachedSearch.query);
+                }
+            } else if ($stateParams.type === "Project"){
+                if (!_.isEmpty($stateParams.query)){
+                  return resumeService.fetchProject($stateParams.query);
+                } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
+                  return resumeService.fetchProject($rootScope.global.search.cachedSearch.query);
                 }
             }
-
-
           }
         },
         data: {"pageTitle": "Search Results",

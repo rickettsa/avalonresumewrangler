@@ -22,14 +22,14 @@ angular.module( 'resumeWrangler.skills', [
           }
         },
         resolve: {
-          skillsResponse: function(SkillsService){
-            return SkillsService.fetchSkills();
+          skillsResponse: function(skillsService){
+            return skillsService.fetchSkills();
           },
-          stacksResponse: function(SkillsService){
-            return SkillsService.fetchStacks();
+          stacksResponse: function(skillsService){
+            return skillsService.fetchStacks();
           },
-          stackPositionResponse: function(SkillsService){
-            return SkillsService.fetchStackPositions();
+          stackPositionResponse: function(skillsService){
+            return skillsService.fetchStackPositions();
           }
         },
         data:{ "pageTitle": "Edit Resume",
@@ -41,7 +41,7 @@ angular.module( 'resumeWrangler.skills', [
                                       skillsResponse,
                                       stacksResponse,
                                       stackPositionResponse,
-                                      SkillsService
+                                      skillsService
     ){
 
     _.mixin({
@@ -148,7 +148,7 @@ angular.module( 'resumeWrangler.skills', [
     };
 
     $scope.updateSkills = function(){
-      SkillsService.updateSkills($scope.skills)
+      skillsService.updateSkills($scope.skills)
         .success(function(){
           //is this skill known? if not, make sure you post back to the skills API
           console.log("updateResume SUCCESS");

@@ -13,11 +13,11 @@ angular.module('resumeWrangler')
      * Get summary list of all resumes
      * @returns {promise}
      */
-    service.fetchProject = function() {
+    service.fetchProject = function(projectId) {
       return $http({
         method: "GET",
         cache: true,
-        url: configuration.api + '/api/projects/0000000005'
+        url: configuration.api + '/api/projects/' + projectId
       });
     };
 
