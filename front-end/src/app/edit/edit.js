@@ -50,9 +50,9 @@ angular.module( 'resumeWrangler.edit', [
               return skillsService.fetchSkills();
             }
           },
-            data:{ "pageTitle": "Edit Resume",
-                   "authorizedRoles": ["editor", "admin"]
-            }
+          data:{ "pageTitle": "Edit Resume",
+                 "authorizedRoles": ["editor", "admin"]
+          }
       });
     })
     .controller('EditCtrl', function ($http, $scope, $filter, resumeResponse, skillsResponse, contactResponse, resumeService, skillsService) {
@@ -85,6 +85,12 @@ angular.module( 'resumeWrangler.edit', [
     $scope.edit.skillNames = _.pluck(skillsResponse.data.skills, 'dispName');
     $scope.edit.showSkillName = 0;
 
+    //Make sure you save the resume for the user as they navigate away
+    $scope.$on("$destroy", function(){
+      $scope.edit.updateResume();
+    });
+
+
     var suggestions = skillsService.getTypeaheadSource();
     suggestions.initialize();
 
@@ -111,9 +117,9 @@ angular.module( 'resumeWrangler.edit', [
       }
     };
 
-    $scope.edit.getSkillImg = function(skillName){
-      var skillNode = _.findBySubVal($scope.skillsData, 'dispName', [skillName]);
-      if (skillNode.length > 0){
+    $scope.edit.getSkillImg = function(skill){
+      var skillNode = _.findBySubVal($scope.edit.skillsData, 'dispName', [skill.name]);
+      if (skillNode.length > 0 && skillNode[0].hasOwnProperty("image") && !_.isEmpty(skillNode[0].image)){
         $scope.showSkillName = 0;
         return '/assets/icons/' + skillNode[0].image;
       } else {
@@ -167,7 +173,7 @@ angular.module( 'resumeWrangler.edit', [
         CompetencyDisplayName: null,
         CompetencyEvidence: null
       };
-      competencyArray.push($scope.inserted);
+      competencyArray.unshift($scope.inserted);
     };
 
     // add user
@@ -177,7 +183,7 @@ angular.module( 'resumeWrangler.edit', [
         CompetencyDisplayName: null,
         YearsExperience: null
       };
-      competencyArray.push($scope.inserted);
+      competencyArray.unshift($scope.inserted);
     };
 
     $scope.edit.addExperience = function(addPosition){
