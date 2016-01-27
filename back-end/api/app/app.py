@@ -233,9 +233,14 @@ def get_skills():
     return make_response( json.dumps(output_skills), 200, {'Content-Type': 'application/json'} )
 
 @app.route('/api/skills/<id>', methods=['PUT'])
-def update_skill(id):
+def create_or_update_skill(id):
     _create_entity(dl.create_or_update_skill, id)
     return ''
+
+# OPTIONS needed for AngularJS
+@app.route('/api/skills/<id>', methods=['OPTIONS'])
+def create_or_update_skill__options(id):
+    return make_response('ok', 200)
 
 @app.route('/api/skills/<id>', methods=['DELETE'])
 def delete_skill(id):
@@ -261,6 +266,11 @@ def create_or_update_stack(id):
     _create_entity(dl.create_or_update_stack, id)
     return ''
 
+# OPTIONS needed for AngularJS
+@app.route('/api/stacks/<id>', methods=['OPTIONS'])
+def create_or_update_stack__options(id):
+    return make_response('ok', 200)
+
 @app.route('/api/stacks/<id>', methods=['DELETE'])
 def delete_stack(id):
     dl.delete_stack(id)
@@ -284,6 +294,11 @@ def get_stack_positions():
 def create_or_update_stack_position(id):
     _create_entity(dl.create_or_update_stack_position, id)
     return ''
+
+# OPTIONS needed for AngularJS
+@app.route('/api/stack-positions/<id>', methods=['OPTIONS'])
+def create_or_update_stack_positions__options(id):
+    return make_response('ok', 200)
 
 @app.route('/api/stack-positions/<id>', methods=['DELETE'])
 def delete_stack_position(id):
