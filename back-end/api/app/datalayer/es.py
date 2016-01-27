@@ -85,8 +85,8 @@ class ESDataLayer(DataLayer):
         return doc_id
 
     def list_users(self):
-        users = self.es.search(index=self.USER_INDEX, doc_type=self.USER_TYPE, body={ 'query': { 'match_all': {} }})
-#FIXME: can pass size arg        users = self.es.search(index=self.USER_INDEX, doc_type=self.USER_TYPE, body={ 'query': { 'match_all': {} }}, size=10)
+#FIXME:hard-coded size -- figure out the proper way to get ALL RESULTS and do it in all the "list" methods in this class
+        users = self.es.search(index=self.USER_INDEX, doc_type=self.USER_TYPE, body={ 'query': { 'match_all': {} }}, size=10000)
         return [ u for u in users['hits']['hits'] ]
 
     def find_users(self, username, firstname, lastname):
@@ -132,7 +132,7 @@ class ESDataLayer(DataLayer):
     def list_resumes(self):
         #FIXME:
         # - is "list resume" functionality even needed?
-        resumes = self.es.search(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, _source=False)
+        resumes = self.es.search(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, _source=False, size=10000)
         return [ r for r in resumes['hits']['hits'] ]
 
     #NOTE: using variable.lower() in much of this code because ES mapping stores lowercased text in many cases as part of its normalization
@@ -240,7 +240,7 @@ class ESDataLayer(DataLayer):
         return id
 
     def list_skills(self):
-        skills = self.es.search(index=self.SKILL_INDEX, doc_type=self.SKILL_TYPE)
+        skills = self.es.search(index=self.SKILL_INDEX, doc_type=self.SKILL_TYPE, size=10000)
         return [ s for s in skills['hits']['hits'] ]
 
     def delete_skill(self, id):
@@ -253,7 +253,7 @@ class ESDataLayer(DataLayer):
         return id
 
     def list_stacks(self):
-        stacks = self.es.search(index=self.STACK_INDEX, doc_type=self.STACK_TYPE)
+        stacks = self.es.search(index=self.STACK_INDEX, doc_type=self.STACK_TYPE, size=10000)
         return [ s for s in stacks['hits']['hits'] ]
 
     def delete_stack(self, id):
@@ -266,7 +266,7 @@ class ESDataLayer(DataLayer):
         return id
 
     def list_stack_positions(self):
-        stackpos = self.es.search(index=self.STACK_POS_INDEX, doc_type=self.STACK_POS_TYPE)
+        stackpos = self.es.search(index=self.STACK_POS_INDEX, doc_type=self.STACK_POS_TYPE, size=10000)
         return [ s for s in stackpos['hits']['hits'] ]
 
     def delete_stack_position(self, id):
