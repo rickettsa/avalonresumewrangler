@@ -18,7 +18,6 @@ angular.module('resumeWrangler')
       //return $http.get('http://private-b7b35-avalonresumesearch.apiary-mock.com/api/resume/' + id);
       return $http({
         method: "GET",
-        cache: true,
         url: configuration.api + '/api/users/search?firstname=' + firstName + '&lastname=' + lastName
       });
     };
@@ -33,7 +32,6 @@ angular.module('resumeWrangler')
 //    service.createResume = function(payload) {
 //      return $http({
 //        method: "POST",
-//        cache: true,
 //        url: configuration.api + '/api/resumes/',
 //        data: payload
 //      });
@@ -42,7 +40,6 @@ angular.module('resumeWrangler')
 //    service.updateResume = function(id, payload) {
 //      return $http({
 //        method: "PUT",
-//        cache: true,
 //        headers: {
 //          'Content-Type': 'application/json'
 //        },

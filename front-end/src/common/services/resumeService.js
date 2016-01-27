@@ -28,7 +28,6 @@ angular.module('resumeWrangler')
 
       return $http({
         method: "GET",
-        cache: true,
         url: configuration.api + '/api/resumes/search?' + nameStr
       });
     };
@@ -43,7 +42,6 @@ angular.module('resumeWrangler')
     service.createResume = function(payload) {
       return $http({
         method: "POST",
-        cache: true,
         url: configuration.api + '/api/resumes/',
         data: payload
       });
@@ -52,11 +50,10 @@ angular.module('resumeWrangler')
     service.updateResume = function(id, payload) {
       return $http({
         method: "PUT",
-        cache: true,
         headers: {
           'Content-Type': 'application/json'
         },
-        url: configuration.api + '/api/resumes/' + id + '/',
+        url: configuration.api + '/api/resumes/' + id,
         data: payload
       });
     };

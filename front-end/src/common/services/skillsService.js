@@ -17,7 +17,6 @@ angular.module('resumeWrangler')
       //http://private-b7b35-avalonresumesearch.apiary-mock.com/api/skills
       return $http({
         method: "GET",
-        cache: true,
         url: configuration.apiary + '/api/skills'
       });
     };
@@ -33,7 +32,6 @@ angular.module('resumeWrangler')
     service.fetchStacks = function() {
       return $http({
         method: "GET",
-        cache: true,
         url: configuration.apiary + '/api/stacks'
       });
     };
@@ -49,7 +47,6 @@ angular.module('resumeWrangler')
     service.fetchStackPositions = function() {
       return $http({
         method: "GET",
-        cache: true,
         url: configuration.apiary + '/api/stack-positions'
       });
     };

@@ -74,11 +74,11 @@ angular.module( 'resumeWrangler.home', [
                 } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
                   return resumeService.fetchResume(null,$rootScope.global.search.cachedSearch.query);
                 }
-            } else if ($stateParams.type === "Project"){
+            } else if ($stateParams.type === "Project Name"){
                 if (!_.isEmpty($stateParams.query)){
-                  return projectsService.fetchProject($stateParams.query);
+                  return projectsService.fetchProjects($stateParams.query);
                 } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
-                  return projectsService.fetchProject($rootScope.global.search.cachedSearch.query);
+                  return projectsService.fetchProjects($rootScope.global.search.cachedSearch.query);
                 }
             }
           }

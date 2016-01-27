@@ -13,49 +13,58 @@ div[id^="cke_editor-"]{
     -webkit-box-shadow: none !important;
 }
 
-.skills-table{
-    border-radius: 8px;
-    box-shadow: none;
-    thead{
-        box-shadow: 0 1px 0 #fff inset;
-        font-weight: bold;
-        font-size: large;
-    }
-    th{
-        padding: 3px;
-        color: #60676a;
-    }
-    tr{
-        border-bottom: 1px solid #bfd4e5;
-        td{
+.skills-scroller {
+    overflow: scroll;
+    max-height: 20em;
+    padding: 1em;
+    .skills-table {
+        border-radius: 8px;
+        box-shadow: none;
+        width: 100%;
+        thead {
+            box-shadow: 0 1px 0 #fff inset;
+            font-weight: bold;
+            font-size: large;
+        }
+        th {
             padding: 3px;
-            .skill-icon{
-                max-width: 3em;
-                float: left;
-            }
-            .skill-name{
-                float: left;
-                vertical-align: middle;
-                margin: 10px 0px 0px 5px;
-            }
-            .skill-controls{
-                .edit{
-                    color: #385cb3;
+            color: #60676a;
+        }
+        tr {
+            border-bottom: 1px solid #bfd4e5;
+            td {
+                padding: 3px;
+
+                .skill-icon {
+                    max-width: 3em;
+                    float: left;
                 }
-                .edit:hover{
-                    color: #2c4487;
+                .skill-name {
+                    float: left;
+                    vertical-align: middle;
+                    margin: 10px 0px 0px 5px;
+                    font-weight: bold;
                 }
-                .remove{
-                    color: #c40006;
-                }
-                .remove:hover{
-                    color: #640006;
-                }
-                .save{
-                    color: #008000;
-                }
-                .save:hover{
-                    color: #004000;
+                .skill-controls {
+                    cursor: pointer;
+                    .edit {
+                        color: rgba(145, 115, 174, 0.86);
+                    }
+                    .edit:hover {
+                        color: #2c4487;
+                    }
+                    .remove {
+                        color: rgba(163, 0, 7, 0.56);
+                    }
+                    .remove:hover {
+                        color: #640006;
+                    }
+                    .save {
+                        color: #008000;
+                    }
+                    .save:hover {
+                        color: #004000;
+                    }
                 }
             }
         }

@@ -10,21 +10,36 @@ angular.module('resumeWrangler')
     var service = {};
 
     /**
-     * Get summary list of all resumes
+     * Get summary list of a specific projects
      * @returns {promise}
      */
     service.fetchProject = function(projectId) {
       return $http({
         method: "GET",
-        cache: true,
         url: configuration.api + '/api/projects/' + projectId
+      });
+    };
+
+    /**
+     * Get summary list of all projects
+     * @returns {promise}
+     */
+    service.fetchProjects = function(skill) {
+      var url = configuration.api + '/api/projects/search';
+
+      if (!_.isEmpty(skill)){
+          url += '?project_skills=' + skill;
+      }
+
+      return $http({
+        method: "GET",
+        url: url
       });
     };
 
     service.updateProject = function(id, payload) {
       return $http({
         method: "PUT",
-        cache: true,
         headers: {
           'Content-Type': 'application/json'
         },
