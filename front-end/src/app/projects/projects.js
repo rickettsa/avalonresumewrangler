@@ -15,10 +15,10 @@ angular.module( 'resumeWrangler.projects', [
         },
         resolve: {
           projectResponse: function(projectsService){
-            return projectsCRUDService.fetchProject('0000000005');
+            return projectsService.fetchProject('02a5c504-bfc6-4b9b-ac2d-1208e53b1c31');
           },
           skillsResponse: function(skillsService){
-            return SkillsService.fetchSkills();
+            return skillsService.fetchSkills();
           }
         },
         data:{ pageTitle: 'Edit Project',
@@ -43,7 +43,7 @@ angular.module( 'resumeWrangler.projects', [
       }
     });
 
-    $scope.project = projectResponse.data.Project;
+    $scope.project = projectResponse.data._source;
 
     $scope.skillsData = skillsResponse.data.skills;
     $scope.skillNames = _.pluck(skillsResponse.data.skills, 'dispName');

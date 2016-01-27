@@ -34,7 +34,7 @@ angular.module('resumeWrangler')
       return $http({
         method: "GET",
         cache: true,
-        url: configuration.api + '/api/stacks'
+        url: configuration.apiary + '/api/stacks'
       });
     };
 
@@ -50,7 +50,7 @@ angular.module('resumeWrangler')
       return $http({
         method: "GET",
         cache: true,
-        url: configuration.api + '/api/stack-positions'
+        url: configuration.apiary + '/api/stack-positions'
       });
     };
 
