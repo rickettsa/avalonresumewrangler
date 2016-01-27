@@ -192,7 +192,73 @@ def delete_project(id):
 
 @app.route('/api/skills', methods=['GET'])
 def get_skills():
-    return app.send_static_file('skills.json')
+    skills = dl.list_skills()
+    skill_objects = {}
+    for s in skills:
+        skill_id = s['_id']
+        skill_obj = s['_source']
+        skill_obj['id'] = skill_id
+        skill_objects[skill_id] = skill_obj
+    output_skills = { 'skills': skill_objects }
+    return make_response( json.dumps(output_skills), 200, {'Content-Type': 'application/json'} )
+
+@app.route('/api/skills/<id>', methods=['PUT'])
+def update_skill(id):
+    _create_entity(dl.create_or_update_skill, id)
+    return ''
+
+@app.route('/api/skills/<id>', methods=['DELETE'])
+def delete_skill(id):
+    dl.delete_skill(id)
+    return ''
+
+#------- Stacks
+
+@app.route('/api/stacks', methods=['GET'])
+def get_stacks():
+    stacks = dl.list_stacks()
+    stack_objects = {}
+    for s in stacks:
+        stack_id = s['_id']
+        stack_obj = s['_source']
+        stack_obj['id'] = stack_id
+        stack_objects[stack_id] = stack_obj
+    output_stacks = { 'stacks': stack_objects }
+    return make_response( json.dumps(output_stacks), 200, {'Content-Type': 'application/json'} )
+
+@app.route('/api/stacks/<id>', methods=['PUT'])
+def create_or_update_stack(id):
+    _create_entity(dl.create_or_update_stack, id)
+    return ''
+
+@app.route('/api/stacks/<id>', methods=['DELETE'])
+def delete_stack(id):
+    dl.delete_stack(id)
+    return ''
+
+#------- Stack Positions
+
+@app.route('/api/stack-positions', methods=['GET'])
+def get_stack_positions():
+    stack_positions = dl.list_stack_positions()
+    stackpos_objects = {}
+    for s in stack_positions:
+        stackpos_id = s['_id']
+        stackpos_obj = s['_source']
+        stackpos_obj['id'] = stackpos_id
+        stackpos_objects[stackpos_id] = stackpos_obj
+    output_stackpos = { 'positions': stackpos_objects }
+    return make_response( json.dumps(output_stackpos), 200, {'Content-Type': 'application/json'} )
+
+@app.route('/api/stack-positions/<id>', methods=['PUT'])
+def create_or_update_stack_position(id):
+    _create_entity(dl.create_or_update_stack_position, id)
+    return ''
+
+@app.route('/api/stack-positions/<id>', methods=['DELETE'])
+def delete_stack_position(id):
+    dl.delete_stack_position(id)
+    return ''
 
 #-------
 

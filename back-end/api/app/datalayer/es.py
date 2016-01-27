@@ -47,6 +47,15 @@ class ESDataLayer(DataLayer):
     PROJECT_INDEX = 'projects'
     PROJECT_TYPE = 'project'
 
+    SKILL_INDEX = 'skills'
+    SKILL_TYPE = 'skill'
+
+    STACK_INDEX = 'stacks'
+    STACK_TYPE = 'stack'
+
+    STACK_POS_INDEX = 'stack-positions'
+    STACK_POS_TYPE = 'stack-position'
+
     def __init__(self):
         self.es = Elasticsearch()
 
@@ -76,8 +85,8 @@ class ESDataLayer(DataLayer):
         return doc_id
 
     def list_users(self):
-        #FIXME:support pagination or figure out a better way to get all results
-        users = self.es.search(index=self.USER_INDEX, doc_type=self.USER_TYPE, size=999999999)
+        users = self.es.search(index=self.USER_INDEX, doc_type=self.USER_TYPE, body={ 'query': { 'match_all': {} }})
+#FIXME: can pass size arg        users = self.es.search(index=self.USER_INDEX, doc_type=self.USER_TYPE, body={ 'query': { 'match_all': {} }}, size=10)
         return [ u for u in users['hits']['hits'] ]
 
     def find_users(self, username, firstname, lastname):
@@ -122,9 +131,8 @@ class ESDataLayer(DataLayer):
 
     def list_resumes(self):
         #FIXME:
-        # - hard coding a magic number for now; need to either support paging or find out the proper way to get all results
         # - is "list resume" functionality even needed?
-        resumes = self.es.search(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, size=999999999, _source=False)
+        resumes = self.es.search(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, _source=False)
         return [ r for r in resumes['hits']['hits'] ]
 
     #NOTE: using variable.lower() in much of this code because ES mapping stores lowercased text in many cases as part of its normalization
@@ -224,6 +232,45 @@ class ESDataLayer(DataLayer):
 
     def delete_project(self, id):
         self.es.delete(index=self.PROJECT_INDEX, doc_type=self.PROJECT_TYPE, id=id)
+
+    #------- Skills
+
+    def create_or_update_skill(self, skill, id):
+        self.es.index(index=self.SKILL_INDEX, doc_type=self.SKILL_TYPE, body=skill, id=id)
+        return id
+
+    def list_skills(self):
+        skills = self.es.search(index=self.SKILL_INDEX, doc_type=self.SKILL_TYPE)
+        return [ s for s in skills['hits']['hits'] ]
+
+    def delete_skill(self, id):
+        self.es.delete(index=self.SKILL_INDEX, doc_type=self.SKILL_TYPE, id=id)
+
+    #------- Stacks
+
+    def create_or_update_stack(self, stack, id):
+        self.es.index(index=self.STACK_INDEX, doc_type=self.STACK_TYPE, body=stack, id=id)
+        return id
+
+    def list_stacks(self):
+        stacks = self.es.search(index=self.STACK_INDEX, doc_type=self.STACK_TYPE)
+        return [ s for s in stacks['hits']['hits'] ]
+
+    def delete_stack(self, id):
+        self.es.delete(index=self.STACK_INDEX, doc_type=self.STACK_TYPE, id=id)
+
+    #------- Stack Positions
+
+    def create_or_update_stack_position(self, stack_position, id):
+        self.es.index(index=self.STACK_POS_INDEX, doc_type=self.STACK_POS_TYPE, body=stack_position, id=id)
+        return id
+
+    def list_stack_positions(self):
+        stackpos = self.es.search(index=self.STACK_POS_INDEX, doc_type=self.STACK_POS_TYPE)
+        return [ s for s in stackpos['hits']['hits'] ]
+
+    def delete_stack_position(self, id):
+        self.es.delete(index=self.STACK_POS_INDEX, doc_type=self.STACK_POS_TYPE, id=id)
 
     #-------
 

@@ -16,6 +16,7 @@
 import sys, os
 
 GIT_BASE_DIR = '/Volumes/Macintosh HD/Users/abembecker/Development/Avalon/resumeWrangler/BeanStalk_AvalonResumeWrangler'
+#GIT_BASE_DIR = '/home/kerisman/work/avalonresumewrangler'
 
 DATALAYER_LIB_PATH = GIT_BASE_DIR + '/back-end/api/app/datalayer'
 
@@ -26,16 +27,21 @@ RESUME_MAPPING = GIT_BASE_DIR + '/back-end/elasticsearch/mappings/resume-mapping
 PROJECT_MAPPING = GIT_BASE_DIR + '/back-end/elasticsearch/mappings/project-mapping.json'
 
 #-------
-
 def delete_existing_data( datalayer ):
     datalayer.delete_index( datalayer.USER_INDEX )
     datalayer.delete_index( datalayer.RESUME_INDEX )
     datalayer.delete_index( datalayer.PROJECT_INDEX )
+    datalayer.delete_index( datalayer.SKILL_INDEX )
+    datalayer.delete_index( datalayer.STACK_INDEX )
+    datalayer.delete_index( datalayer.STACK_POS_INDEX )
 
 def create_new_indexes( datalayer ):
     datalayer.create_index( datalayer.USER_INDEX )
     datalayer.create_index( datalayer.RESUME_INDEX )
     datalayer.create_index( datalayer.PROJECT_INDEX )
+    datalayer.create_index( datalayer.SKILL_INDEX )
+    datalayer.create_index( datalayer.STACK_INDEX )
+    datalayer.create_index( datalayer.STACK_POS_INDEX )
 
 def create_new_mappings( datalayer ):
     with open(RESUME_MAPPING, 'r') as f:
