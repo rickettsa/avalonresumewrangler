@@ -44,7 +44,7 @@ angular.module('resumeWrangler')
           'Content-Type': 'application/json'
         },
         url: configuration.api + '/api/projects/' + id,
-        data: { "Project": [ payload ]}
+        data: payload
       });
     };
 

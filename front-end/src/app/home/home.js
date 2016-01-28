@@ -64,9 +64,9 @@ angular.module( 'resumeWrangler.home', [
           searchResponse: function($rootScope, resumeService, projectsService, $stateParams){
             if ($stateParams.type === "Skill"){
                 if (!_.isEmpty($stateParams.query)){
-                  return resumeService.runQuery($stateParams.query);
+                  return resumeService.skillSearch($stateParams.query);
                 } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
-                  return resumeService.runQuery($rootScope.global.search.cachedSearch.query);
+                  return resumeService.skillSearch($rootScope.global.search.cachedSearch.query);
                 }
             } else if ($stateParams.type === "Last Name"){
                 if (!_.isEmpty($stateParams.query)){
@@ -74,7 +74,7 @@ angular.module( 'resumeWrangler.home', [
                 } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
                   return resumeService.fetchResume(null,$rootScope.global.search.cachedSearch.query);
                 }
-            } else if ($stateParams.type === "Project Name"){
+            } else if ($stateParams.type === "Project"){
                 if (!_.isEmpty($stateParams.query)){
                   return projectsService.fetchProjects($stateParams.query);
                 } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){

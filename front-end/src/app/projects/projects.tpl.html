@@ -3,7 +3,7 @@
         <div class="col-md-8">
             <h1><a href="#" e-required e-placeholder="Project Name" editable-text="project.name" onaftersave="updateProject()">{{ project.name || "empty" }}</a></h1>
             <h3><a href="#" e-required e-placeholder="Client Name" editable-text="project.clientName" onaftersave="updateProject()">{{ project.clientName || "empty" }}</a></h3>
-            <h4><a href="mailto:{{ project.clientWebsite }}" e-required e-placeholder="Client Email" editable-text="project.clientWebsite" onaftersave="updateProject()">{{ project.clientWebsite }}</a></h4>
+            <h4><a href="mailto:{{ project.clientWebsite }}" e-required e-placeholder="Client Website" editable-text="project.clientWebsite" onaftersave="updateProject()">{{ project.clientWebsite }}</a></h4>
         </div>
         <div class="col-md-4">
             <table class="project-dates">
@@ -49,7 +49,7 @@
             <div class="well light-well">
                 <p>
                 <!--<a href="#" e-rows="8" e-cols="80" e-style="width: 90%" data-type="textarea" e-required e-placeholder="Project Description" editable-textarea="project.clientDescription" onaftersave="updateProject()">{{ project.clientDescription || "empty" }}</a>-->
-                <div class="ck-editor" ng-model="project.clientDescription" ng-init="description = project.clientDescription">{{ project.clientDescription }}</div>
+                <div class="ck-editor" ng-model="project.summary" ng-init="description = project.summary">{{ project.summary }}</div>
                 </p>
             </div>
         </div>
@@ -120,10 +120,10 @@
         <div class="col-md-12">
             <h2>Consultants:</h2>
             <div class="well light-well">
-                <div class="col-md-6 consultant well" ng-repeat="position in project.PositionHistory.Position">
+                <div class="col-md-6 consultant well" ng-repeat="position in project.positions">
                     <div class="row">
                         <div class="col-md-4">
-                            <img class="consultant-avatar img-rounded" ng-src="{{ getAvatarImgName( position.filledBy.ContactInfo.ContactMethod.InternetEmailAddress ) }}"/>
+                            <img class="consultant-avatar img-rounded" ng-src="{{ getAvatarImgName( 'generic@avalonconsult.com' ) }}"/>
                             <h4 ng-if="position.filledBy.ContactInfo.ContactMethod.InternetEmailAddress !== 'generic@avalonconsult.com'" ng-click="goToResume( position.filledBy.ContactInfo.ContactMethod.InternetEmailAddress.toLowerCase() )"><a href="#">{{ position.filledBy.ContactInfo.PersonName.GivenName }} {{ position.filledBy.ContactInfo.PersonName.FamilyName }}</a></h4>
                             <a href="mailto:{{ position.filledBy.ContactInfo.ContactMethod.InternetEmailAddress.toLowerCase() }}"><i class="glyphicon glyphicon-envelope"></i> Email</a>
                             <br/>

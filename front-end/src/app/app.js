@@ -138,7 +138,7 @@ angular.module( 'resumeWrangler', [
 
   $scope.session = sessionService;
 
-  $scope.global.search.categories = ["Skill","Last Name","Project Name"];
+  $scope.global.search.categories = ["Skill","Last Name","Project"];
   $scope.global.search.searchType = $scope.global.search.categories[0];
 
 })

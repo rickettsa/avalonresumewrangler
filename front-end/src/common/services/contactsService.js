@@ -22,12 +22,6 @@ angular.module('resumeWrangler')
       });
     };
 
-//    service.runQuery = function(currentSearch){
-//      return $http({
-//        method: "GET",
-//        url: configuration.api + '/api/resumes/search?expand_user_info=true&skill=' + currentSearch
-//      });
-//    };
 //
 //    service.createResume = function(payload) {
 //      return $http({
