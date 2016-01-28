@@ -17,7 +17,7 @@ angular.module('resumeWrangler')
       //http://private-b7b35-avalonresumesearch.apiary-mock.com/api/skills
       return $http({
         method: "GET",
-        url: configuration.apiary + '/api/skills'
+        url: configuration.api + '/api/skills'
       });
     };
 
@@ -25,6 +25,14 @@ angular.module('resumeWrangler')
       return $http({
         method: "PUT",
         url: configuration.api + '/api/skills',
+        data: payload
+      });
+    };
+
+    service.updateSkill = function(id, payload) {
+      return $http({
+        method: "PUT",
+        url: configuration.api + '/api/skills/' + id,
         data: payload
       });
     };

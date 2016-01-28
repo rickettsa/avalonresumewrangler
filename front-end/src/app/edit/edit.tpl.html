@@ -37,7 +37,7 @@
                         <!-- <div class="description-noEdit well" ng-bind-html="pos.Description"></div> -->
 
                         <!-- START POSITION SKILLS TABLE -->
-                        <div ng-if="pos.skills">
+                        <div ng-if="pos.skills.length > 0">
                             <table class="">
                                 <thead>
                                 <th>Skill</th>
@@ -107,7 +107,7 @@
                             <th>Experience</th>
                             <th>Edit</th>
                             </thead> -->
-                            <tr ng-repeat="skillRole in resume.skills | filter:edit.skillFilter" ng-init="skillRole.isEditing = false">
+                            <tr ng-repeat="skillRole in resume.skills | filter:edit.skillFilter | orderBy:skillRole.name" ng-init="skillRole.isEditing = false">
                                 <td class="icon" ng-if="skillRole.isEditing === false">
                                     <img class="skill-icon" ng-src="{{ edit.getSkillImg(skillRole) }}" alt="img"/>
                                     <p  class="skill-name">{{ skillRole.name }}</p>

@@ -119,6 +119,39 @@
                 <h4>{{ contact.timezone }}</h4>
             </div>
 
+
+        <!-- skills -->
+        <div class="col-md-12" ng-if="resume.skills.length > 0">
+            <h2>Development Skills</h2>
+            <label>Filter By:</label><input type="text" class="form-control" ng-model="view.skillFilter"></input>
+            <div class="skills-scroller well">
+                <form>
+                    <table class="skills-table">
+                        <!-- <thead>
+                        <th>Skill</th>
+                        <th>Experience</th>
+                        <th>Edit</th>
+                        </thead> -->
+                        <tr ng-repeat="skillRole in resume.skills | filter:view.skillFilter | orderBy:skillRole.name" ng-init="skillRole.isEditing = false">
+                            <td class="icon" ng-if="skillRole.isEditing === false">
+                                <img class="skill-icon" ng-src="{{ view.getSkillImg(skillRole) }}" alt="img"/>
+                                <p ng-bind-html="skillRole.name | highlight:view.skillFilter"  class="skill-name"></p>
+                            </td>
+                            <td class="skillname" ng-if="skillRole.isEditing === true">
+                                <input class="form-control" ng-model="skillRole.name" placeholder="Skill Name" options="typeaheadOptions" datasets="typeaheadData" sf-typeahead autofocus/>
+                            </td>
+                            <td class="experience-read" ng-if="skillRole.isEditing === false">
+                                {{ skillRole.years + ' years' || 'empty' }}
+                            </td>
+                            <td class="experience-edit" ng-if="skillRole.isEditing === true">
+                                <input class="form-control" ng-model="skillRole.years" placeholder="Years Experience" ng-pattern="'[0-9]+'"/>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
             <div class="col-md-12">
                 <h2>Experience:</h2>
                 <div class="exper">
@@ -142,7 +175,7 @@
                         <br/>
                         <!-- <div class="description-noEdit well" ng-bind-html="pos.Description"></div> -->
                         <!-- START SKILLS TABLE -->
-                        <div ng-if="pos.skills">
+                        <div ng-if="pos.skills.length > 0">
                             <table id="skills-table view" class="table table-hover table-condensed">
                                 <thead>
                                 <th>Skill</th>
@@ -167,7 +200,11 @@
                             </table>
                         </div>
 
-                    </div> <!-- end emplyr -->
+                    </div>
+
+
+                        <!-- end emplyr -->
+
                 </div>
             </div>
 
