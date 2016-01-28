@@ -6,7 +6,13 @@ angular.module( 'resumeWrangler.projects', [
   .config(function config( $stateProvider ) {
     $stateProvider
       .state( 'projects', {
-        url: '/projects',
+        url: '/projects?:id',
+        params: {
+          id: {
+            value: null,
+            squash: true
+          }
+        },
         views: {
           "main": {
             controller: 'ProjectsCtrl',
@@ -14,8 +20,8 @@ angular.module( 'resumeWrangler.projects', [
           }
         },
         resolve: {
-          projectResponse: function(projectsService){
-            return projectsService.fetchProject('02a5c504-bfc6-4b9b-ac2d-1208e53b1c31');
+          projectResponse: function($stateParams, projectsService){
+            return projectsService.fetchProject($stateParams.id);
           },
           skillsResponse: function(skillsService){
             return skillsService.fetchSkills();
@@ -26,6 +32,9 @@ angular.module( 'resumeWrangler.projects', [
         }
       });
   })
+
+  //https://confluence.avalonconsult.com/display/enterprisesearch/Projects
+
   .controller('ProjectsCtrl', function ($http, $scope, $filter, $state, projectResponse, skillsResponse, projectsService) {
 
     _.mixin({
@@ -59,6 +68,11 @@ angular.module( 'resumeWrangler.projects', [
       }
     };
 
+    //Make sure you save the resume for the user as they navigate away
+    $scope.$on("$destroy", function(){
+      $scope.updateProject();
+    });
+
     $scope.getAvatarImgName = function(emailAddr){
       var getEmailPrefix = function(str, group1){
         return group1.toLowerCase();
@@ -76,36 +90,26 @@ angular.module( 'resumeWrangler.projects', [
 
     $scope.addConsultant = function(){
       var emptyConsultant = {
-        "filledBy": {
-          "ContactInfo": {
-            "PersonName": {
-              "id": "00000000000",
-              "GivenName": "GivenName",
-              "FamilyName": "FamilyName"
-            },
-            "ContactMethod": {
-              "Mobile": "000-000-0000",
-              "Fax": "555-444-3333",
-              "InternetEmailAddress": "generic@avalonconsult.com",
-              "PostalAddress": {
-                "City": "Nowhere",
-                "State": "ZZ"
-              }
-            }
+        "filledBy": [
+          {
+            "startDate": "1000-01-01",
+            "userId": "7cfdd141dc2cb94a12ee59f7aee6101f"
           }
-        },
-        "PositionTitle": "Position Title",
-        "PositionResponsibilies": "Position Responsibilities",
-        "CompetenciesRequired": {
-          "Competency": []
-        }
+        ],
+        "positionSkills": [
+          "Elasticsearch",
+          "Python",
+          "Flask"
+        ],
+        "responsibilities": "Consulting",
+        "title": "Senior Consultant - Scrum Master"
       };
-      $scope.project.PositionHistory.Position.push(emptyConsultant);
+      $scope.project.positions.push(emptyConsultant);
     };
 
 
     $scope.updateProject = function(){
-      projectsService.updateProject($scope.project.id, $scope.project)
+      projectsService.updateProject($scope.project.projectId, $scope.project)
         .success(function(){
           console.log("updateProject SUCCESS");
         })

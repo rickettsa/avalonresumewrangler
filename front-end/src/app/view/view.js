@@ -64,6 +64,8 @@ angular.module( 'resumeWrangler.view', [
         }
       });
 
+    $scope.view = $scope.view || {};
+
       $scope.resume = resumeResponse.data.hits[0]._source;
       $scope.contact = contactResponse.data.hits && contactResponse.data.hits.length > 0 ? contactResponse.data.hits[0]._source : {};
 
@@ -130,5 +132,18 @@ angular.module( 'resumeWrangler.view', [
       };
       competencyArray.push($scope.inserted);
     };
+
+
+    $scope.view.getSkillImg = function(skill){
+      var skillNode = _.findBySubVal($scope.skillsData, 'dispName', [skill.name]);
+      if (skillNode.length > 0 && skillNode[0].hasOwnProperty("image") && !_.isEmpty(skillNode[0].image)){
+        $scope.showSkillName = 0;
+        return '/assets/icons/' + skillNode[0].image;
+      } else {
+        $scope.showSkillName = 1;
+        return '/assets/icons/generic.jpg';
+      }
+    };
+
 
   });

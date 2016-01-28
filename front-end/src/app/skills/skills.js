@@ -63,6 +63,7 @@ angular.module( 'resumeWrangler.skills', [
     $scope.skills = skillsResponse.data.skills;
     $scope.skillNames = _.pluck(skillsResponse.data.skills, 'dispName');
     $scope.currentSkill = {};
+    $scope.skills.skillListFilter = '';
     $scope.currentSkill.stackPositions = [];
     $scope.currentSkill.stackNames = [];
     $scope.editingExisting = 0;
@@ -133,22 +134,20 @@ angular.module( 'resumeWrangler.skills', [
 
     $scope.saveSkill = function(skills) {
       $scope.inserted = {
-        "$scope.currentSkill.normName": {
           "dispName": $scope.currentSkill.dispName,
           "image": $scope.currentSkill.image,
           "stackPositions": $scope.currentSkill.stackPositions,
           "stackNames": $scope.currentSkill.stackNames,
           "curated": "true",
           "descr": $scope.currentSkill.descr
-        }
-      };
-        skills["$scope.currentSkill.normName"] = $scope.inserted;
-        $scope.updateSkills($scope.skills);
+        };
+
+        $scope.updateSkill($scope.currentSkill.normName, $scope.inserted);
         $scope.skillDetails.$setPristine();
     };
 
-    $scope.updateSkills = function(){
-      skillsService.updateSkills($scope.skills)
+    $scope.updateSkill = function(id, payload){
+      skillsService.updateSkill(id, payload)
         .success(function(){
           //is this skill known? if not, make sure you post back to the skills API
           console.log("updateResume SUCCESS");
@@ -163,6 +162,7 @@ angular.module( 'resumeWrangler.skills', [
     $scope.positions = stackPositionResponse.data.positions;
 
     $scope.togglePos = function(member){
+      $scope.skillDetails.skillImg.$setDirty();
       //group already contains this member, remove
       if (_.includes($scope.currentSkill.stackPositions, member.id)){
             //this function modifies the group array
@@ -175,7 +175,7 @@ angular.module( 'resumeWrangler.skills', [
     };
 
     $scope.toggleStack = function(member){
-      $scope.skillDetails.$setDirty();
+      $scope.skillDetails.skillImg.$setDirty();
       //group already contains this member, remove
       if (_.includes($scope.currentSkill.stackNames, member.id)){
         //this function modifies the group array

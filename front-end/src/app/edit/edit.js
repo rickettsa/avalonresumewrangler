@@ -189,22 +189,14 @@ angular.module( 'resumeWrangler.edit', [
     $scope.edit.addExperience = function(addPosition){
       var blankExperience = {
         "positionType": "contract",
+        "clientName": "Client Name",
+        "clientProjectId": "",
         "projectId": "",
-        "Title": "Postition Title",
-        "OrgName": {
-          "OrganizationName": "Organization Name"
-        },
-        "Description": "Description of my role in the project.",
-        "StartDate": "1800-01-01",
-        "EndDate": "1900-01-01",
-        "Competency": [
-          {
-            "id": "",
-            "abbrev": "none",
-            "CompetencyDisplayName": "Some Skill Name",
-            "CompetencyEvidence": "Description of how skill was used"
-          }
-        ]
+        "title": "Postition Title",
+        "description": "Description of my role in the project.",
+        "startDate": "1800-01-01",
+        "endDate": "1900-01-01",
+        "skills": []
       };
       if (!_.isEmpty(addPosition) && addPosition === "end"){
         $scope.resume.employmentHistory[0].positions.push(blankExperience);

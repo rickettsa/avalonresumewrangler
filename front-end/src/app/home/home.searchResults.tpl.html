@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" ng-if="searchResponse[0]._index === 'resumes'">
     <div class="col-md-12 well" ng-repeat="result in searchResponse">
             <div class="col-md-6">
                 <div class="row">
@@ -7,11 +7,11 @@
                     </div>
                     <div class="col-md-9">
                         <h1>{{ result._source.firstName }} {{ result._source.lastName }}</h1>
-                        <a class="pull-left" ui-sref="view({ firstName:result._source.firstName, lastName:result._source.lastName  })"><i class="fa fa-sm fa-eye"></i> View Resume</a>
                         <h4><a href="mailto:{{ result._source.email }}">{{ result._source.email }}</a></h4>
                         <h4><a href="tel:+{{ result._source.phone }}">{{ result._source.phone }}</a></h4>
                         <h4 ng-if="result._source.city || result._source.state">{{ result._source.city }}, {{ result._source.state }}</h4>
                         <h4>{{ result.timezone }}</h4>
+                        <a class="pull-left" ui-sref="view({ firstName:result._source.firstName, lastName:result._source.lastName  })"><i class="fa fa-sm fa-eye"></i> View Resume</a>
                     </div>
                 </div>
             </div>
@@ -35,4 +35,40 @@
         <div class="alert alert-danger" role="alert"><i class="fa fa-warning"></i> Your search returned 0 results.. </div>
     </div>
 
+</div>
+
+
+
+
+
+<div class="row" ng-if="searchResponse[0]._index === 'projects'">
+    <div class="col-md-12 well" ng-repeat="result in searchResponse">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>{{ result._source.name }}</h1>
+                    <h3>{{ result._source.clientName }}</h3>
+                    <h4>{{ result.clientWebsite }}</h4>
+                    <a class="search-result-link pull-left" ui-sref="projects({ id:result._id  })"><i class="fa fa-sm fa-eye"></i> View Project Details</a>
+                    <h4>{{ result.clientDescription }}</h4>
+                    <h4>{{ result.summary }}</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h4><i>{{ result._source.startDate }}</i></h4>
+            <table class="table table-striped">
+                <tr>
+                    <th>Skills</th>
+                </tr>
+                <tr ng-repeat="skill in result._source.projectSkills | limitTo:search.config.skillsDispLimit | orderBy:-years">
+                    <td ng-bind-html="skill | highlight:global.search.query"></td>
+                </tr>
+            </table>
+            <a ng-if="result._source.skills.length - search.config.skillsDispLimit > 0">Show More Skills...</a>
+        </div>
+    </div>
+    <div class="col-md-12" ng-if="searchResponse.length === 0">
+        <div class="alert alert-danger" role="alert"><i class="fa fa-warning"></i> Your search returned 0 results.. </div>
+    </div>
 </div>

@@ -32,10 +32,10 @@ angular.module('resumeWrangler')
       });
     };
 
-    service.runQuery = function(currentSearch){
+    service.skillSearch = function(skillName){
       return $http({
         method: "GET",
-        url: configuration.api + '/api/resumes/search?expand_user_info=true&skill=' + currentSearch
+        url: configuration.api + '/api/resumes/search?expand_contact_info=true&skill=' + skillName
       });
     };
 

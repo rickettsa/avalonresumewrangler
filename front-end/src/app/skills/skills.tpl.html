@@ -13,6 +13,7 @@
                 </div>
                 <div class="col-md-7">
                     <h3>Skills:</h3>
+                    <!--<input class="form-control" ng-model="skills.skillListFilter" placeholder="Filter Skills by a Term..."></div>-->
                     <div class="master-skills-list stack-meta-well well">
                         <ul>
                             <li ng-click="selectSkill(key, value)" ng-repeat="(key, value) in skills | orderBy: dispName" ng-class="isSkillSelected(key)">{{ value.dispName }}</li>
@@ -30,7 +31,7 @@
                     <label>Normalized Name (replace spaces with dash, no special chars)</label>
                     <input class="form-control" ng-model="currentSkill.normName" type="text" ng-disabled="editingExisting" ng-pattern="normNameRegex" required></input>
                     <label>Image File Name</label>
-                    <input class="form-control" ng-model="currentSkill.image" type="text"></input>
+                    <input name="skillImg" class="form-control" ng-model="currentSkill.image" type="text"></input>
                     <label>Description</label>
                     <textarea  ng-model="currentSkill.descr"  class="form-control" rows="3"></textarea>
                     <br />
