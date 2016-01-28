@@ -145,6 +145,7 @@ def find_resumes():
 
         res_data['skills'] = prioritized_skills
 
+#FIXME: it would require external API change, but expand_user_info would be a better name than expand_contact_info
     # if expand_contact_info was provided then for each resume, find userId and call dl.get_user(id),
     # then add they key-value pairs from the user doc (assumed to be flat) inline to each resume
     expand_contact_info = request.args.get('expand_contact_info')
@@ -195,6 +196,7 @@ def update_project__options(id):
 
 @app.route('/api/projects/search', methods=['GET'])
 def find_projects():
+    q = request.args.get('q')
     client_name = request.args.get('client_name')
     start_date_min = request.args.get('start_date_min')
     start_date_max = request.args.get('start_date_max')
@@ -202,7 +204,7 @@ def find_projects():
     end_date_max = request.args.get('end_date_max')
     summary = request.args.get('summary')
     project_skills = request.args.getlist('project_skills')
-    results = dl.find_projects( client_name, start_date_min, start_date_max, end_date_min, end_date_max, summary, project_skills )
+    results = dl.find_projects( client_name, start_date_min, start_date_max, end_date_min, end_date_max, summary, project_skills, q )
     return jsonify( results )
 
 @app.route('/api/projects/<id>', methods=['GET'])

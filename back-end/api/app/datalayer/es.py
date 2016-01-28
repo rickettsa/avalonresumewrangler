@@ -168,7 +168,23 @@ class ESDataLayer(DataLayer):
         self.es.index(index=self.PROJECT_INDEX, doc_type=self.PROJECT_TYPE, body=project, id=doc_id)
         return doc_id
 
-    def find_projects(self, client_name, start_date_min, start_date_max, end_date_min, end_date_max, summary, project_skills):
+    def find_projects_fulltext(self, q):
+        fulltext_query = {
+            "query": {
+                "query_string": {
+                    "fields": ["clientName", "clientDescription", "name", "summary", "projectSkills"],
+                    "query": q
+                }
+            }
+        }
+        return self.es.search(index=self.PROJECT_INDEX, doc_type=self.PROJECT_TYPE, body=fulltext_query)['hits']
+    
+    def find_projects(self, client_name, start_date_min, start_date_max, end_date_min, end_date_max, summary, project_skills, q=None):
+        # if q param supplied, run a full text search
+        if q is not None:
+            return self.find_projects_fulltext(q)
+
+        # run search against specific fields
         skill_queries = []
         for s in project_skills:
             skill_queries += [ { "match": { "projectSkills": s } } ]
