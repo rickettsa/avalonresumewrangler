@@ -96,7 +96,7 @@ class ESDataLayer(DataLayer):
         if lastname is not None: ln_query = filtered_term_query( 'lastName', lastname.lower() )
         queries = filter( lambda q: q is not None, [un_query, fn_query, ln_query] )
         combined_query = bool_query( queries )
-        return self.es.search(index=self.USER_INDEX, doc_type=self.USER_TYPE, body=combined_query)['hits']
+        return self.es.search(index=self.USER_INDEX, doc_type=self.USER_TYPE, body=combined_query, size=10000)['hits']
 
     def get_user(self, id):
         user = self.es.get(index=self.USER_INDEX, doc_type=self.USER_TYPE, id=id)
@@ -147,7 +147,7 @@ class ESDataLayer(DataLayer):
         skill_queries = [ nested_skills_query( s.lower() ) for s in skills ] or None
         queries = filter( lambda q: q is not None, [userid_query, fn_query, ln_query, client_project_query, skill_queries] )
         combined_query = bool_query( queries )
-        return self.es.search(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, body=combined_query)['hits']
+        return self.es.search(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, body=combined_query, size=1000)['hits']
 
     def get_resume(self, id):
         resume = self.es.get(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, id=id, ignore=[404])
@@ -177,7 +177,7 @@ class ESDataLayer(DataLayer):
                 }
             }
         }
-        return self.es.search(index=self.PROJECT_INDEX, doc_type=self.PROJECT_TYPE, body=fulltext_query)['hits']
+        return self.es.search(index=self.PROJECT_INDEX, doc_type=self.PROJECT_TYPE, body=fulltext_query, size=10000)['hits']
     
     def find_projects(self, client_name, start_date_min, start_date_max, end_date_min, end_date_max, summary, project_skills, q=None):
         # if q param supplied, run a full text search
@@ -240,7 +240,7 @@ class ESDataLayer(DataLayer):
             }}
         must_queries = filter( lambda x: x is not None, [ client_name_query, start_date_query, end_date_query, summary_query, skill_queries ] )
         project_query = bool_query( must_queries )
-        return self.es.search(index=self.PROJECT_INDEX, doc_type=self.PROJECT_TYPE, body=project_query)['hits']
+        return self.es.search(index=self.PROJECT_INDEX, doc_type=self.PROJECT_TYPE, body=project_query, size=10000)['hits']
 
     def get_project(self, id):
         project = self.es.get(index=self.PROJECT_INDEX, doc_type=self.PROJECT_TYPE, id=id)
