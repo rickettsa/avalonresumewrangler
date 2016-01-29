@@ -145,10 +145,9 @@ def find_resumes():
 
         res_data['skills'] = prioritized_skills
 
-#FIXME: it would require external API change, but expand_user_info would be a better name than expand_contact_info
-    # if expand_contact_info was provided, add info from user docs inline to each resume
-    expand_contact_info = request.args.get('expand_contact_info')
-    if expand_contact_info:
+    # if expand_user_info was provided, add info from user docs inline to each resume
+    expand_user_info = request.args.get('expand_user_info')
+    if expand_user_info:
         for r in results['hits']:
             res_data = r['_source']
             user = dl.get_user( res_data['userId'] )
