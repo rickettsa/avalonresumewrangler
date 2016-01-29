@@ -106,6 +106,13 @@ def update_resume(id):
 def update_resume__options(id):
     return make_response('ok', 200)
 
+def _expanded_resume(resume):
+    user = dl.get_user( resume['userId'] )
+    user_data = user['_source']
+    for field in user_data.keys():
+        resume[field] = user_data[field]
+    return resume
+
 @app.route('/api/resumes', methods=['GET'])
 def list_resumes():
     resumes = dl.list_resumes()
@@ -150,10 +157,7 @@ def find_resumes():
     if expand_user_info:
         for r in results['hits']:
             res_data = r['_source']
-            user = dl.get_user( res_data['userId'] )
-            user_data = user['_source']
-            for field in user_data.keys():
-                res_data[field] = user_data[field]
+            r['_source'] = _expanded_resume(res_data)
 
     return jsonify( results )
 
@@ -163,6 +167,10 @@ def get_resume(id):
         abort(404)
     else:
         resume = dl.get_resume(id)
+        expand_user_info = request.args.get('expand_user_info')
+        if expand_user_info:
+            res_data = resume['_source']
+            resume['_source'] = _expanded_resume(res_data)
         return jsonify( resume )
 
 @app.route('/api/resumes/<id>', methods=['DELETE'])
@@ -192,6 +200,19 @@ def update_project(id):
 def update_project__options(id):
     return make_response('ok', 200)
 
+def _expanded_project(project):
+    positions = project['positions']
+    for i in range(len(positions)):
+        users_filling_position = positions[i]['filledBy']
+        for j in range(len(users_filling_position)):
+            user = dl.get_user( users_filling_position[j]['userId'] )
+            user_data = user['_source']
+            # put fields from user_data under filledBy as siblings to userId
+            for field in user_data.keys():
+                project['positions'][i]['filledBy'][j][field] = user_data[field]
+    return project
+
+
 @app.route('/api/projects', methods=['GET'])
 def list_projects():
     projects = dl.list_projects()
@@ -208,22 +229,15 @@ def find_projects():
     summary = request.args.get('summary')
     project_skills = request.args.getlist('project_skills')
 
-    results = dl.find_projects( client_name, start_date_min, start_date_max, end_date_min, end_date_max, summary, project_skills, q )
+    results = dl.find_projects( client_name, start_date_min, start_date_max,
+        end_date_min, end_date_max, summary, project_skills, q )
 
     # if expand_user_info was provided, add info from user docs inline to each resume
     expand_user_info = request.args.get('expand_user_info')
     if expand_user_info:
         for r in results['hits']:
             proj_data = r['_source']
-            positions = proj_data['positions']
-            for i in range(len(positions)):
-                users_filling_position = positions[i]['filledBy']
-                for j in range(len(users_filling_position)):
-                    user = dl.get_user( users_filling_position[j]['userId'] )
-                    user_data = user['_source']
-                    # put fields from user_data under filledBy as siblings to userId
-                    for field in user_data.keys():
-                        proj_data['positions'][i]['filledBy'][j][field] = user_data[field]
+            r['_source'] = _expanded_project(proj_data)
 
     return jsonify( results )
 
@@ -233,6 +247,10 @@ def get_project(id):
         abort(404)
     else:
         project = dl.get_project(id)
+        expand_user_info = request.args.get('expand_user_info')
+        if expand_user_info:
+            proj_data = project['_source']
+            project['_source'] = _expanded_project(proj_data)
         return jsonify(project)
 
 @app.route('/api/projects/<id>', methods=['DELETE'])
