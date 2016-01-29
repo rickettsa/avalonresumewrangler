@@ -146,8 +146,7 @@ def find_resumes():
         res_data['skills'] = prioritized_skills
 
 #FIXME: it would require external API change, but expand_user_info would be a better name than expand_contact_info
-    # if expand_contact_info was provided then for each resume, find userId and call dl.get_user(id),
-    # then add they key-value pairs from the user doc (assumed to be flat) inline to each resume
+    # if expand_contact_info was provided, add info from user docs inline to each resume
     expand_contact_info = request.args.get('expand_contact_info')
     if expand_contact_info:
         for r in results['hits']:
@@ -194,6 +193,11 @@ def update_project(id):
 def update_project__options(id):
     return make_response('ok', 200)
 
+@app.route('/api/projects', methods=['GET'])
+def list_projects():
+    projects = dl.list_projects()
+    return make_response( json.dumps(projects), 200, {'Content-Type': 'application/json'} )
+
 @app.route('/api/projects/search', methods=['GET'])
 def find_projects():
     q = request.args.get('q')
@@ -204,7 +208,24 @@ def find_projects():
     end_date_max = request.args.get('end_date_max')
     summary = request.args.get('summary')
     project_skills = request.args.getlist('project_skills')
+
     results = dl.find_projects( client_name, start_date_min, start_date_max, end_date_min, end_date_max, summary, project_skills, q )
+
+    # if expand_user_info was provided, add info from user docs inline to each resume
+    expand_user_info = request.args.get('expand_user_info')
+    if expand_user_info:
+        for r in results['hits']:
+            proj_data = r['_source']
+            positions = proj_data['positions']
+            for i in range(len(positions)):
+                users_filling_position = positions[i]['filledBy']
+                for j in range(len(users_filling_position)):
+                    user = dl.get_user( users_filling_position[j]['userId'] )
+                    user_data = user['_source']
+                    # put fields from user_data under filledBy as siblings to userId
+                    for field in user_data.keys():
+                        proj_data['positions'][i]['filledBy'][j][field] = user_data[field]
+
     return jsonify( results )
 
 @app.route('/api/projects/<id>', methods=['GET'])
