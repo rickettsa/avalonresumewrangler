@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Aaron</GivenName>
+            <FamilyName>Mefford</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Architect for Johnson Health Tech DAPI platform</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Design a distributed architecture
+                capable of ingesting machine data from 80,000
+                machines generating a snapshot every 30s, greater
+                than 1 PetaByte per year.</li>
+                     <li>Integrate data ingestion
+                architecture with existing application.</li>
+                     <li>Validate new platform through load
+                testing.</li>
+                     <li>Build Amazon AWS CloudFormation
+                templates for deployment</li>
+                  </ul>
+                  <p>Roles</p>
+                  <p>: Architect, Developer, Tester</p>
+                  <p>Technical Environment</p>
+                  <p>: NodeJS, MongoDB, Apache Flume-NG, Thrift</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Principal Consultant</Title>
+               <OrganizationName>Define Media Group</OrganizationName>
+               <Description>
+                  <p>Architect, Build and maintain scalable distributed web crawler for SEO Analytics capable of crawling websites of any size using Amazon AWS, Amazon Elastic Map Reduce, Hadoop, and ElasticSearch.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>IAC/Ask.com/About.com</OrganizationName>
+               <Description>
+                  <p>SW Engrg (Sys) Mgmt 4</p>
+                  <p>Manage and Maintain internal Sales Order System (SOS), responsible for tracking all of About.com ad sales and metrics, using Oracle, Mongo DB, and Hadoop.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Director of Software Development</Title>
+               <OrganizationName>New York Times/About.com Group</OrganizationName>
+               <Description>
+                  <p>Built SEO Management Tool capable of crawling and analyzing sites with 15MM pages, storing data in SOLR indexes and MySQL. Increased monthly crawl capacity from 10k to 100MM pages. Managed a team of developers, mentoring them in large scale system design.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Sr Architect/Principal Engineer</Title>
+               <OrganizationName>UnitedOnline(UOL) WebServices</OrganizationName>
+               <Description>
+                  <p>Scaled NamesDatabase.com from 8MM to 30MM users. Created a new business unit offering Virtual Private Web Hosting, to augment the shared hosting business, providing a 5x increase in per-subscriber value. Implemented a message based provisioning architecture to support near real time delivery of services. Made domain registration system modular creating competition among partner registrars driving the cost of registrations from $11 each to $7. Created a real-time fraud detection application significantly reducing chargeback rate.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Email capacity planning for 40% of the Internets email. Architected and developed ecommerce solution providing hosting services to 20,000 merchants. Managed and maintained AT&amp;T Small Business Hosting platform, winner of PC Magazine award for best small business hosting solution.</Title>
+               <OrganizationName>Excite@Home/Imall Inc.</OrganizationName>
+               <Description>
+                  <p>Sr Systems Programmer</p>
+                  <p>Email capacity planning for 40% of the Internets email. Architected and developed ecommerce solution providing hosting services to 20,000 merchants. Managed and maintained AT&amp;T Small Business Hosting platform, winner of PC Magazine award for best small business hosting solution.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>MIS Lead Technician/System Administrator</Title>
+               <OrganizationName>Corel Inc.</OrganizationName>
+               <Description>
+                  <p>Assembled, tested, and distributed 700 computers in the first month on the job. Provided operating system support to application developers and testers. Lead a team of technicians managing 2500+ computers. Designed and assembled hard disk duplication platform reducing crashed system downtime from 60 min to 5 min.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory/>
+      <Qualifications>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hadoop">
+            <CompetencyDisplayName>Hadoop</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="google-dfp">
+            <CompetencyDisplayName>Google DFP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="perl">
+            <CompetencyDisplayName>PERL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="python">
+            <CompetencyDisplayName>Python</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ruby">
+            <CompetencyDisplayName>Ruby</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="cs">
+            <CompetencyDisplayName>C#</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vb">
+            <CompetencyDisplayName>VB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="asp.net">
+            <CompetencyDisplayName>ASP.NET</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="c++">
+            <CompetencyDisplayName>C++</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="bash">
+            <CompetencyDisplayName>BASH</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="json">
+            <CompetencyDisplayName>JSON</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="soa">
+            <CompetencyDisplayName>SOA</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rest">
+            <CompetencyDisplayName>REST</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="thrift">
+            <CompetencyDisplayName>Thrift</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="nodejs">
+            <CompetencyDisplayName>NodeJS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="solr">
+            <CompetencyDisplayName>SOLR</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="elasticsearch">
+            <CompetencyDisplayName>ElasticSearch</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mongodb">
+            <CompetencyDisplayName>MongoDB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="memcache">
+            <CompetencyDisplayName>MemCache</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-access">
+            <CompetencyDisplayName>MS Access</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-foxpro">
+            <CompetencyDisplayName>MS FoxPro</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="postgresql">
+            <CompetencyDisplayName>PostGreSQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dbm">
+            <CompetencyDisplayName>DBM</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

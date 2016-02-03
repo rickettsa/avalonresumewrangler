@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Doug</GivenName>
+            <FamilyName>Mann</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Comcast</OrganizationName>
+               <Description>
+                  <p>For Comcast, Doug worked with their engineering team, admins, and architects to diagnose, repair, and learn from data size issues, cluster instability, and query performance problems. He advocated HDP best practices in tackling these issues, leading to use of ORC files instead of text to improve storage size and query times, and taught effective cluster parameter adjustments to optimize cluster resource use and minimize memory overflows.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>AAA Insurance</OrganizationName>
+               <Description>
+                  <p>Doug led in-depth sessions on HCatalog, Pig, Sqoop, Ambari, and Hue, describing the components individually, then how they interact, finally highlighting and demonstrating advanced features such as Pig regular expressions and UDFs, Sqoop's command-line capabilities regarding password handling and column selection, and debugging using Ambari. Doug also ported to HDP from Cloudera a Pig UDF on unstructured text analysis from academic Github code AAA was interested in and showed them how to run analyses with it on their actual claim data.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Bell Helicopter</OrganizationName>
+               <Description>
+                  <p>At Bell Helicopter, Doug installed HDP on cloud-based Linux VMs running on Microsoft Windows Azure. Following the install, Doug trained Bell engineers in using Hadoop tools such as Oozie, Pig, and Hive, provided insight to integrate with current analytics and tools, and led meetings to update project progress.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>SC Johnson</OrganizationName>
+               <Description>
+                  <p>Doug setup a development cluster for SC Johnson and guided their developers and admins through usage of Ambari, Hue, Pig, Hive, HCatalog, and Oozie, making sure their employees were comfortable with the Hadoop ecosystem before they moved forward with a production environment.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Dell Corporation</OrganizationName>
+               <Description>
+                  <p>While at Dell, Doug designed and wrote complex scripting for data ingest in Bash, Python, and custom Java MapReduce for several different data sources, including XML and log files, both structured and unstructured. He wrote numerous Hive and XPath scripts to deliver reporting use cases needed by the client. Doug also provided extensive documentation and performance testing, leading several demonstrations of the completed work to stakeholders.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Real Gravity/Scripps Network</OrganizationName>
+               <Description>
+                  <p>Doug attended conference calls and increased team understanding of the project by producing detailed data visualization from limited access to database schema information.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Software Development Engineer</Title>
+               <OrganizationName>Microsoft Corporation</OrganizationName>
+               <Description>
+                  <p>Doug worked at Microsoft in Redmond, Washington immediately following graduation as a developer for Windows Phone's location-based services team. While on that team, Doug was responsible for the following:</p>
+                  <ul>
+                     <li>collaborating with software
+                testers, program managers, and other developers to
+                expand and improve location-serving
+                functionality,</li>
+                     <li>directly maintaining live-site
+                service health by monitoring relevant events and
+                telemetry data, investigating and resolving unusual
+                occurrences as they arise,</li>
+                     <li>utilizing very large crowd-sourced
+                datasets and MapReduce to analyze current and
+                historical service usage to inform service-tuning
+                decisions and improve location accuracy, and</li>
+                     <li>designing, defending, and
+                implementing service improvements.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Software Engineering Intern</Title>
+               <OrganizationName>National Instruments Corporation</OrganizationName>
+               <Description>
+                  <p>Before his senior year at Rose-Hulman, Doug worked as an intern at National Instruments in Austin, Texas on the product TestStand, During his ten weeks there, he fully specified, designed, implemented, and tested a new user-requested feature to be included in TestStand 2012, working with multithreaded C++ on complex portions of TestStand's engine.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Software Engineering Intern</Title>
+               <OrganizationName>Garmin International, Inc.</OrganizationName>
+               <Description>
+                  <p>Following his sophomore year at Rose-Hulman, Doug worked an internship at Garmin in Olathe, Kansas on the TCAS II team, for which he first automated the migration of requirements for Automatic Dependent Surveillance-Broadcast (ADS-B) implementation to a new in-house database system, then developed and verified Traffic Alert and Collision Avoidance (TCAS) algorithms in embedded C and C++.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName/>
+            </School>
+            <Degree>
+               <DegreeName>BS</DegreeName>
+               <DegreeMajor>
+                  <Name/>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="hadoop">
+            <CompetencyDisplayName>Hadoop</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mapreduce">
+            <CompetencyDisplayName>MapReduce</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hive">
+            <CompetencyDisplayName>Hive</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="pig">
+            <CompetencyDisplayName>Pig</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oozie">
+            <CompetencyDisplayName>Oozie</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hbase">
+            <CompetencyDisplayName>HBase</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hortonworks">
+            <CompetencyDisplayName>Hortonworks</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="microsoft-windows">
+            <CompetencyDisplayName>Microsoft Windows</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="bash">
+            <CompetencyDisplayName>BASH</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="cs">
+            <CompetencyDisplayName>C#</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="eclipse">
+            <CompetencyDisplayName>Eclipse</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="git">
+            <CompetencyDisplayName>Git</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="haskell">
+            <CompetencyDisplayName>Haskell</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="intellij-idea">
+            <CompetencyDisplayName>IntelliJ IDEA</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="maven">
+            <CompetencyDisplayName>Maven</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="r">
+            <CompetencyDisplayName>R</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="svn">
+            <CompetencyDisplayName>SVN</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="unix">
+            <CompetencyDisplayName>UNIX</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="visual-studio">
+            <CompetencyDisplayName>Visual Studio</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xpath">
+            <CompetencyDisplayName>XPath</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-sql-server">
+            <CompetencyDisplayName>MS SQL Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

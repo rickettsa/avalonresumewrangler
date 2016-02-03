@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Niels</GivenName>
+            <FamilyName>Nielsen</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>703-926-4600</Mobile>
+            <InternetEmailAddress>nielsenn@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Project Manager</Title>
+               <OrganizationName>Wolters Kluwer Health</OrganizationName>
+               <Description>
+                  <p>Wolters Kluwer publishes over 3000 medical textbooks, reference works, and online products. The high-resolution images, print-ready PDFs and application files represent millions of dollars of investment that are reused to produce new editions, reprints and derivative products. Avalon was engaged to create a repository for the 1.5 million files massing more than 5.5 terabytes, using MarkLogic as the primary technology. The application allows Wolters Kluwer employees and partners to upload finished assets, browse and search the collection, and export assets for reuse.</p>
+                  <p>Niels managed overall delivery to the client, including developing requirements, functional and performance testing, and</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Project Manager</Title>
+               <OrganizationName>Marriott International</OrganizationName>
+               <Description>
+                  <p>Marriott International operates the seventh largest eCommerce site in the world. The site includes over 500,000 pieces of content, managed through Vignette's Content Management software. Marriott has implemented a multi-year program to redesign Marriot.com. The Avalon project team has worked closely with business and technical stakeholders to turn functional requirements into detailed designs for new content types, create and test the new content types, train users, and conduct detailed analysis for the migration of approximately half of Marriott's content into the new structure. The new approach to content management has cut the time and cost of creating content to a fraction of what it took previously and gives content managers much greater visibility into and control over their content.</p>
+                  <p>Niels has led a project team to redesign content types, rationalize and reorganize the content structure, implement a functional security model for content authors, develop custom reports for content managers, update publishing workflows, and define and enhance the content management process. The team has also conducted multiple rounds of functional testing, created performance test data, and supported the full development lifecycle across multiple projects.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Search Consultant</Title>
+               <OrganizationName>MasterCard</OrganizationName>
+               <Description>
+                  <p>MasterCard International uses The Exchange as a key platform for publishing information needed by global account teams. Built on Vignette Business Collaboration Server (VBCS), it has approximately 2500 users. Users expect to be able to find what they need in the 20,000+ pieces of content in The Exchange and are dissatisfied with the search experience and results.</p>
+                  <p>Niels lead a team conducing Avalon's Search Workshop for MasterCard. We identified user goals for search, defined and created mock-ups for a new search experience, and created a new architecture to support the redesigned search.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Search Consultant</Title>
+               <OrganizationName>Johns Hopkins Advanced Physics Laboratory (APL)</OrganizationName>
+               <Description>
+                  <p>Johns Hopkins APL has a multi-year program called Connexus to foster collaboration among the 6000 engineers and scientists working on mission critical projects for US Government agencies such as the Department of the Navy and NASA. Niels consulted on a search strategy and roadmap to show how a unified search platform and search applications can support the goals of the Connexus program.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Offering Development Leader</Title>
+               <OrganizationName>EDS Portfolio Management</OrganizationName>
+               <Description>
+                  <p>EDS delivers over $2 billion annually in applications management services to global enterprise clients. The Applications Management offering transformed the entire process for selling and delivering applications management services to align with the ITIL framework.</p>
+                  <ul>
+                     <li>Created product plan and
+                release strategy; lead 15 person development team
+                to deliver multiple releases of the Applications
+                Management product offering.</li>
+                     <li>Implemented standard
+                requirements management processes and tools,
+                including the use of Borland Caliber RM, to
+                streamline the development of the offering.</li>
+                     <li>Developed sales, pricing, and
+                delivery standards and guidelines used by EDS's
+                40,000-person Applications Services
+                organization.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Identity Management Program Manager</Title>
+               <OrganizationName>Sprint Nextel</OrganizationName>
+               <Description>
+                  <p>For Sprint Nextel, implemented identity provisioning and authentication systems to improve employee productivity, reduce fraud loss, and ensure Sarbanes-Oxley compliance.</p>
+                  <ul>
+                     <li>Developed a standard portfolio
+                of identity management services including directory
+                services, user provisioning, role-based security,
+                password management, and single sign-on
+                capabilities offered to all internal system
+                owners.</li>
+                     <li>Managed a project to integrate
+                Nextel's sales portal into the enterprise directory
+                structure; eliminating duplicate entry of users and
+                closing a significant security gap.  Standardized
+                the user identities of all employees, contractors
+                and trading partners.</li>
+                     <li>Implemented single sign-on
+                between Nextel's enterprise portal and 30 other
+                applications.  </li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Portal Program Manager</Title>
+               <OrganizationName>Sprint Nextel</OrganizationName>
+               <Description>
+                  <p>Developed Nextel's enterprise intranet portal, transforming the portal from a site for call centers to become an award-winning enterprise portal used by the entire corporation to access content and applications.</p>
+                  <ul>
+                     <li>Lead the portal project team
+                from an initial 7-week assessment with a team of
+                five to a multi-year program with a 50 person team
+                that generated over $20 million in services and
+                hardware resale revenue to EDS.  </li>
+                     <li>Created a team structure and
+                processes that scaled to handle 30 simultaneous
+                projects and ensured high-quality, on-time
+                delivery.  </li>
+                     <li>Integrated content and
+                applications from all functional areas at Nextel
+                into the portal; implemented user provisioning,
+                password management, content management, enterprise
+                information architecture and taxonomy,
+                collaboration, application single sign-on, and
+                enterprise search services.  </li>
+                     <li>Managed the design and
+                deployment of a secure, highly-scalable, and
+                reliable hardware infrastructure across production,
+                fail-over, testing, and development environments. 
+                </li>
+                     <li>Led performance testing for the
+                portal.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Program Manager</Title>
+               <OrganizationName>American Red Cross</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Headed a team that analyzed
+                data management problems and created innovative
+                solutions for managing the nation's largest blood
+                donor database.</li>
+                     <li>Supervised a team developing
+                mobile disaster recovery capabilities integrated
+                with the Red Cross's national disaster recovery
+                operations center.</li>
+                     <li>Secured renewal and add-on
+                business, more than doubling the initial revenue
+                forecast.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Project Manager</Title>
+               <OrganizationName>Washington Post</OrganizationName>
+               <Description>
+                  <p>The Washington Post's advertising order entry and billing system accounts for 85 percent of the newspaper's revenue. The legacy system had to be replaced because it was not Y2K compliant.</p>
+                  <ul>
+                     <li>Used CMMI Level 3 processes to
+                document requirements; developed and implemented
+                system and user acceptance testing; coordinated
+                training for 200 end users.</li>
+                     <li>Managed consultants,
+                contractors, a third-party developer, and client
+                employees to develop 15 system interfaces to
+                financial, newspaper production, and distribution
+                systems.</li>
+                     <li>Supported the transition of
+                work to an EDS managed work center.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory/>
+      <Qualifications/>
+   </StructuredXMLResume>
+</Resume>

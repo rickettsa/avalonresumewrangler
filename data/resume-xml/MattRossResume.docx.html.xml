@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Matt</GivenName>
+            <FamilyName>Ross</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>571-409-0392</Mobile>
+            <InternetEmailAddress>rossm@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>MarkLogic Technical Lead</Title>
+               <OrganizationName>Centers for Medicare and Medicaid Services</OrganizationName>
+               <Description>
+                  <p>MarkLogic Implementation</p>
+                  <p>The Centers for Medicare and Medicaid is the agency responsible for implementation of the Federally Facilitated Marketplace (FFM) of Healthcare.gov. CMS required a tool that enables case workers to view insurance applications, export them in PDF format, modify attested information, recalculate eligibility and subsidies, and write the modified application back to FFM. The Change Utility (CU) was developed with MarkLogic as the content repository, PDF generator, and integration point with FFM. Matt serves as the lead MarkLogic developer on CU and also performs application forensics to determine the history of changes made to insurance applications, whether made by CU or not. The Change Utility went live in July, 2014 and several maintenance and enhancement releases have been completed.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>MarkLogic Lead Developer</Title>
+               <OrganizationName>United States Patent and Trade Office</OrganizationName>
+               <Description>
+                  <p>MarkLogic Implementation</p>
+                  <p>The United States Patent and Trademark Office (USPTO) has converted its major reference manuals, such as the Manual of Patent Examination Procedures (MPEP), from print to online access. The online manuals feature extensive browse, search, and annotation capabilities and were developed with MarkLogic as the content repository and application platform. Matt served as the lead MarkLogic developer for extending the features of these online manuals and adding new titles. Most recently Matt developed the online version of the Cooperative Patent Classification (CPC) manual; the public launch took place in April, 2014.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>MarkLogic and jQuery Developer</Title>
+               <OrganizationName>Wolters Kluwer Health</OrganizationName>
+               <Description>
+                  <p>MarkLogic Implementation</p>
+                  <p>Wolters Kluwer publishes over 3000 medical textbooks, reference works, and online products. The high-resolution images, print-ready PDFs and application files represent millions of dollars of investment that could be reused to produce new editions, reprints and derivative products.</p>
+                  <p>Avalon Consulting, LLC was engaged to create a repository for the 1.5 million files massing more than 6.5 terabytes, with annual growth of 600GB, using XQuery and JQuery for the web front end and MarkLogic as the database technology. The application, known as TheVault, allows Wolters Kluwer employees and partners to upload finished assets, browse and search the collection, create art and word manuscripts for new editions of books, and export assets for reuse.</p>
+                  <p>Matt designed and developed several front-end components including metadata submission and image permissions management. He managed the development team for the project is responsible for the application build and deployment process. In the most recent release he designed the user interface and developed core library functions for a lightbox-style file collaboration feature.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Project Manager</Title>
+               <OrganizationName>Association of American Medical Colleges (AAMC)</OrganizationName>
+               <Description>
+                  <p>Pivio Product</p>
+                  <p>The Association of American Medical Colleges (AAMC) and the National Board of Medical Examiners (NBME) are developing a new software tool called Pivio that will connect data needed by medical students, residents, and physicians across their academic and professional careers, assisting them with lifelong career growth and improvement. The Pivio system is a "secure lockbox" based on a Software-as-a-Service product that will enable users to choose to share data with licensing and credential verification organizations and others.</p>
+                  <p>Matt served as the Project Manager for this effort, coordinating work across AAMC and NBME teams and ensuring successful delivery by the SaaS vendor, CECity.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Lead Technical Manager</Title>
+               <OrganizationName>Consumer Electronics Association (CEA)</OrganizationName>
+               <Description>
+                  <p>eCycling Locator Application and interactive web launch</p>
+                  <p>In an effort to address consumers' concerns regarding the impact of electronics on the environment, CEA launched eCycling - an initiative with a goal to recycle one billion pounds of electronics annually by 2016. An integral part of this initiative included the development of an online, interactive directory of electronics recycling outlets (totaling approximately 3,500) across the US. This web-interface required data integration with other trade associations for updates of those outlets, and an ability to filter and remove vendors who conduct eWaste, the transport of recyclable electronics to landfills outside the US.</p>
+                  <p>Matt managed the project's vendor selection and led the web application design, development, and rollout of CEA's new eCycling website</p>
+                  <p>www.greenergadgets.org</p>
+                  <p>. He also served as the principal customer liaison, working closely with business and technical stakeholders to ensure the application met program and usability requirements.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Lead Technical Manager</Title>
+               <OrganizationName>American Red Cross</OrganizationName>
+               <Description>
+                  <p>Learning Management System Implementation</p>
+                  <p>The American Red Cross wanted to implement a Learning Management System which would support 700 chapters and impact 8.5+ million users. The project included integration with data warehouse and payment processor, and the consolidation of Red Cross preparedness, Health, and Safety Services.</p>
+                  <p>As Lead Technical Manager, Matt managed all facets, both technical and business, of the selection and implementation of the organization's new COTS Learning Management System. He also served as a business analyst and liaison, developing and presenting business case and cost savings models from consolidation.</p>
+                  <p>Matt worked closely with the organization's management and technical resources to deliver the system's proof-of-concept which included demonstrations, search, portal integration, and customization reviews. Unanimous approval from Red Cross stakeholders for the selected LMS system was successfully achieved. Mr. Ross continued to lead his team through the integration, contract negotiation with vendors, and final implementation.</p>
+                  <p>Deployment of website</p>
+                  <p>www.redcross.org</p>
+                  <p>using Vignette Management System</p>
+                  <p>Lead Technical Manager</p>
+                  <p>Matt was selected to manage the development and implementation of a new public website</p>
+                  <p>www.redcross.org</p>
+                  <p>using the Vignette Content Management system and Vignette Portal. As Technical Manager, he managed the activities for the internal development team, all consultants, and hosting vendor. The resultant website was delivered with improved quality, increased content management functionality, and improved performance.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>MBA, Cum Laude</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>B.S.</DegreeName>
+               <DegreeMajor>
+                  <Name/>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="xquery">
+            <CompetencyDisplayName>XQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xpath">
+            <CompetencyDisplayName>XPath</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jquery">
+            <CompetencyDisplayName>JQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ajax">
+            <CompetencyDisplayName>AJAX</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="css">
+            <CompetencyDisplayName>CSS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-sql-server">
+            <CompetencyDisplayName>MS SQL Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="aws">
+            <CompetencyDisplayName>AWS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="wordpress">
+            <CompetencyDisplayName>WordPress</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="crystal-reports">
+            <CompetencyDisplayName>Crystal Reports</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hadoop">
+            <CompetencyDisplayName>Hadoop</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

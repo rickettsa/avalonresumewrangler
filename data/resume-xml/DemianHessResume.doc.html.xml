@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Demian</GivenName>
+            <FamilyName>Hess</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>301-941-1294</Mobile>
+            <InternetEmailAddress>hessd@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Wolters Kluwer Law &amp; Business</OrganizationName>
+               <Description>
+                  <p>Wolters Kluwer Law &amp; Business (WKLB) is a leading global provider of intelligent solutions for legal and business professionals. WKLB is launching a new service for securities attorneys who are creating and reviewing filings to the SEC. This subscription service combines access to all current and past corporate SEC filings as well as securities law, regulations, and rulings.</p>
+                  <p>Demian served as a technical lead implementing document comparison features, XML conversions to HTML and PDF, and overseeing the work of the development team to ensure programming consistency.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>National Archives and Records Administration</OrganizationName>
+               <Description>
+                  <p>The National Archives and Records Administration (NARA) is the nation's record keeper. Each year they receive millions of records from all government agencies for permanent archiving. Increasingly, records are received and managed digitally through the Electronic Records Archive (ERA) system. Defining, managing, mapping, and reporting on digital asset metadata is as important as managing the records themselves.</p>
+                  <p>Demian has supported multiple NARA projects as a data architect responsible for developing conversion scripts, analyzing metadata and creating reports, and performing content modeling and XML schema creation.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Wolters Kluwer Health</OrganizationName>
+               <Description>
+                  <p>Wolters Kluwer Health is a leading provider of information for professionals and students in medicine, nursing and pharmacy. Wolters Kluwer needed a digital asset management system to store more than 6TB of binary assets and XML from all of their publications</p>
+                  <p>Demian joined as the lead architect on the project. As part of his role, Demian:</p>
+                  <ul>
+                     <li>Designed the MarkLogic solution
+                that met the needs of the editors and could scale
+                as content grew over time.</li>
+                     <li>Developed a solution for migrating
+                6 terabytes of content from local disk drives to an
+                Amazon cloud infrastructure.</li>
+                     <li>Managed the development team
+                responsible for importing data, enriching the data,
+                and building the application.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>U.S. Patent and Trademark Office</OrganizationName>
+               <Description>
+                  <p>The U. S. Patent and Trademark Office (USPTO) needed to move their Manual for Patent Examiners Procedures (MPEP) onto the web so that Patent Examiners had better access to the content. USPTO selected MarkLogic as the platform to provide access to the MPEP.</p>
+                  <p>Demian Hess was brought in as a consultant on the project to make fixes to the front end application. As part of his duties, Demian:</p>
+                  <ul>
+                     <li>Analyzed and optimized query
+                performance.</li>
+                     <li>Replaced GWT javascript features
+                with standard jQuery components.</li>
+                     <li>Developed a jQuery navigation
+                plugin to meet 508 compliance requirements.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>CQ Press</OrganizationName>
+               <Description>
+                  <p>Responsible for setting development standards and guidelines, assessing new</p>
+                  <p>technologies, preparing estimates and schedules, overseeing contractors and mentoring</p>
+                  <p>junior programmers, and designing and building customer-facing and back-office systems to support CQ Press' publishing mission. Accomplishments include:</p>
+                  <ul>
+                     <li>Responsible for all XSLT and
+                XQuery programming for an RSuite-based editorial
+                system that supports CQ Press' core products for
+                the government and professional market.</li>
+                     <li>Development of a custom publishing
+                system for print-on-demand and online</li>
+                  </ul>
+                  <p>textbooks.</p>
+                  <ul>
+                     <li>Developed the first prototypes and
+                conceptual models for FirstStreetTM, a product that combines staff
+                directories, lobbyist, and FEC data for the
+                government, professional and reference markets
+                (http://firststreet.cqpress.com).</li>
+                     <li>Created a web-based portal for all
+                CQ Press journalism products that features
+                interactive exercises, flashcards, quizzes, a
+                textbook reader, and WordPress integration for
+                blogging and course management 
+                (http://journalism.cqpress.com).</li>
+                     <li>Designed and implemented a
+                web-based interactive system for "Elections in West
+                Europa," a political science textbook, that can be
+                extended to support other "simulations" (http://college.cqpress.com/simulations/westeuropa/).</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>PubMed Central, NCBI, National Library of Medicine</OrganizationName>
+               <Description>
+                  <p>Member of the data transformations group responsible for XML transformations and</p>
+                  <p>maintaining and developing the NLM Journal Article DTD. Accomplishments included:</p>
+                  <ul>
+                     <li>Proposing and implementing a
+                regression testing system to ensure the quality of
+                XSL conversions. Based on the success of the
+                system, NCBI mandated that all PubMed groups create
+                similar QA processes.</li>
+                     <li>Created the PubMed Stylechecker, a
+                tool for publishers to ensure that their XML
+                conforms to NCBI standards.</li>
+                     <li>Created and maintained more than a
+                dozen XSL scripts to convert full-text XML to the
+                NLM Journal Archiving DTD.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Reed Elsevier, Philadelphia, PA</OrganizationName>
+               <Description>
+                  <p>As a technical consultant, Demian served as project manager for the launch of a new platform for online medical textbooks. Accomplishments included the successful, on-time launch of more than eighteen textbooks that generated more than $2 million in revenue for the company.</p>
+                  <p>Demian also served in the online journals production group, managing XML/SGML content for ten STM titles. Accomplishments included:</p>
+                  <ul>
+                     <li>Named a "Star Performer" for
+                migrating legacy, print-only titles to the
+                web.</li>
+                     <li>Completed advanced training in
+                Omnimark programming for processing SGML and
+                semi-structured textual content.</li>
+                     <li>Creation of an MS Access-based
+                system for tracking the department workflow.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory/>
+      <Qualifications>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sgml">
+            <CompetencyDisplayName>SGML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xsd">
+            <CompetencyDisplayName>XSD</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xslt">
+            <CompetencyDisplayName>XSLT</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xsl-fo">
+            <CompetencyDisplayName>XSL-FO</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xquery">
+            <CompetencyDisplayName>XQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dom">
+            <CompetencyDisplayName>DOM</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sax">
+            <CompetencyDisplayName>SAX</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="omnimark">
+            <CompetencyDisplayName>Omnimark</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="requirements-gathering">
+            <CompetencyDisplayName>requirements gathering</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="project-management">
+            <CompetencyDisplayName>project management</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="database-design">
+            <CompetencyDisplayName>database design</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="cs">
+            <CompetencyDisplayName>C#</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev=".net">
+            <CompetencyDisplayName>.NET</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="php">
+            <CompetencyDisplayName>PHP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="css">
+            <CompetencyDisplayName>CSS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="wordpress">
+            <CompetencyDisplayName>WordPress</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dotnetnuke">
+            <CompetencyDisplayName>DotNetNuke</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rsuite">
+            <CompetencyDisplayName>RSuite</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

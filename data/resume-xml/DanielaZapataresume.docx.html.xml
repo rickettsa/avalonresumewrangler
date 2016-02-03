@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Daniela</GivenName>
+            <FamilyName>Zapata</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Worked with Engineering for new features in Liferay 7</Title>
+               <OrganizationName>Avalon Consulting, LLC</OrganizationName>
+               <Description>
+                  <p>SOLR upgrade from version 3.6 to 4.0</p>
+                  <p>Customization of SOLR to meet client specific requirements</p>
+                  <p>Implementation of spell checking Feature</p>
+                  <p>Portlet/portal customization to index new models</p>
+                  <p>New portlet development and bug fixing</p>
+                  <p>Support and architecture recommendation</p>
+                  <p>Portal customizations</p>
+                  <p>Design/Migration of an old infrastructure into Liferay (workflows, staging, 3</p>
+                  <p>rd</p>
+                  <p>party oauth login integration, etc.)</p>
+                  <p>Elaboration of licensing reports</p>
+                  <p>OO programming and agile methodologies</p>
+                  <p>Export/Import infrastructure customization for document publishing</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>Masters, Biomedical Engineering and Signals</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>B.S.</DegreeName>
+               <DegreeMajor>
+                  <Name/>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="c">
+            <CompetencyDisplayName>C</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="matlab">
+            <CompetencyDisplayName>MATLAB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="velocity">
+            <CompetencyDisplayName>Velocity</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="groovy">
+            <CompetencyDisplayName>Groovy</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="android">
+            <CompetencyDisplayName>Android</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="spring">
+            <CompetencyDisplayName>Spring</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="struts">
+            <CompetencyDisplayName>Struts</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="lucene">
+            <CompetencyDisplayName>Lucene</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="solr">
+            <CompetencyDisplayName>SOLR</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mockito">
+            <CompetencyDisplayName>Mockito</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="liferay">
+            <CompetencyDisplayName>Liferay</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="css">
+            <CompetencyDisplayName>CSS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jsp">
+            <CompetencyDisplayName>JSP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="linux">
+            <CompetencyDisplayName>Linux</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="microsoft-windows">
+            <CompetencyDisplayName>Microsoft Windows</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="maven">
+            <CompetencyDisplayName>Maven</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="git">
+            <CompetencyDisplayName>Git</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="intellij-idea">
+            <CompetencyDisplayName>IntelliJ IDEA</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="eclipse">
+            <CompetencyDisplayName>Eclipse</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jasper-reports">
+            <CompetencyDisplayName>Jasper Reports</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

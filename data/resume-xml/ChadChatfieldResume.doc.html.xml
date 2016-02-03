@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Chad</GivenName>
+            <FamilyName>Chatfield</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>303-210-6823</Mobile>
+            <InternetEmailAddress>chatfieldc@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>The RanchBook, LLC</OrganizationName>
+               <Description>
+                  <p>Led lean startup analysis and support for The RanchBook. Provided technical strategy assistance for minimum viable product.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>McGraw-Hill Education</OrganizationName>
+               <Description>
+                  <p>Lead architect on Innovate publishing platform. Participated at all levels regarding governance, physical/system architecture and team management.</p>
+                  <ul>
+                     <li>MarkLogic based content
+                repository</li>
+                     <li>Integrations with Getty, Oracle,
+                Amazon</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Janus Capital Group</OrganizationName>
+               <Description>
+                  <p>Provided architecture support and analysis to the Web Tech team</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>MarkLogic</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Created open source rails
+                framework, xqRAILS, for rapid application
+                development</li>
+                     <li>Created ContentMARK, Avalon's Web
+                Application framework, for use on MarkLogic</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>VP of Technology</Title>
+               <OrganizationName>Patheos, Inc.</OrganizationName>
+               <Description>
+                  <p>VP of Technology</p>
+                  <p>Developed and managed the technology department (Development, Content Administration, Social Media, Infrastructure) in a fast paced company. Worked directly with the CEO and COO to position the company for capital investment and rapid growth.</p>
+                  <p>Notable Projects:</p>
+                  <ul>
+                     <li>Implemented enterprise search
+                across all content leveraging Apache SOLR and
+                SOLRj.</li>
+                     <li>Designed and deployed content
+                distribution system for xml based web content.
+                System used source control provided by Mercurial to
+                distribute content from originating source to
+                staging and production environments.</li>
+                     <li>Architected highly available and
+                robust web application infrastructure on the Amazon
+                EC2 cloud via Right Scale. Environment used
+                HAProxy, Tomcat, Apache, Wordpress MU and SOLR to
+                serve content for Patheos.com.</li>
+                     <li>Created experts.patheos.com, a
+                site for experts to build and promote their online
+                and academic resumes. Used grails and Wordpress to
+                create a fully functioning site provisioning system
+                with account management and payment
+                clearing.</li>
+                     <li>Implemented content ingestion and
+                editing workflow application in grails leveraging
+                remote storage on Amazon s3 and accounts payable
+                exports to Quickbooks.</li>
+                  </ul>
+                  <p>Notable Accomplishments:</p>
+                  <ul>
+                     <li>Established and maintained system
+                uptimes exceeding 99.9%.</li>
+                     <li>Reduced website operational costs
+                by 21% through refactoring and architecture
+                optimization.</li>
+                     <li>Directed on-going SEO efforts
+                resulting in 25X growth in inbound search engine
+                traffic.</li>
+                     <li>Created a highly available and
+                redundant infrastructure able to support 1000%+
+                spikes in traffic on Amazon's EC2 services.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>VP of Software Engineering</Title>
+               <OrganizationName>Springbok Services</OrganizationName>
+               <Description>
+                  <p>Developed and managed the Software Engineering department (Development, QA, Project Management, Database Services) in a hyper-growth company. Worked directly with the CEO, COO, CFO and executive leadership team to build and maintain the technology and people to support and position the company for continued rapid growth.</p>
+                  <p>Notable Projects:</p>
+                  <ul>
+                     <li>Implemented content management
+                system for forward facing web site leveraging
+                Rainbow open source. Site serves as marketing front
+                end for payment clients.</li>
+                     <li>Developed secure .net based web
+                services API for external clients and partners to
+                place orders, retrieve account activity and manage
+                account holders.</li>
+                     <li>Architected new ERP system to
+                replace existing VB.net web application. The new
+                ERP integrated with Microsoft CRM, Dynamics GP and
+                a proprietary processor technology via SOA
+                architecture leveraging BizTalk as an ESB.</li>
+                     <li>Upgraded the existing C# .net
+                windows services processor to a direct connect to
+                MasterCard's MIP using industry standard single and
+                dual message formats.</li>
+                  </ul>
+                  <p>Notable Accomplishments:</p>
+                  <ul>
+                     <li>Increased the department staff by
+                1950% over a 1.5 year period.</li>
+                     <li>Saved the company 57% of its
+                ongoing transaction costs by implementing a
+                direction connection to MasterCard's Debit Switch
+                via the MasterCard Interface Processor (MIP) while
+                decreasing the average transaction time.</li>
+                     <li>Reduced "time to market" and
+                development costs by over 30 % by leading the
+                implementation of SCRUM (Agile Software Development
+                Practice) for the entire company. Became a
+                certified scrum master and took on the role as the
+                lead scrum master with oversight of all SCRUM
+                policies and practices.</li>
+                     <li>Established and maintained system
+                uptimes exceeding 99.9%.</li>
+                     <li>Established source control,
+                software development lifecycle and change
+                management guidance. Validated policies and
+                procedures through PCI, MasterCard, VISA and SAS 70
+                audits.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Directory of Engineering</Title>
+               <OrganizationName>TVG</OrganizationName>
+               <Description>
+                  <p>Promoted to the Director's position and became responsible for all aspects of the engineering department in the Denver R&amp;D facility. Worked daily with the VPs of all departments as well as third party vendors to produce and maintain new and existing products.</p>
+                  <p>Notable Projects:</p>
+                  <ul>
+                     <li>Implemented enterprise business
+                intelligence platform using Microsoft SQL Server
+                2005 Analysis Services.</li>
+                     <li>Created mobile application,
+                mobile.tvg.com, using WAP.</li>
+                     <li>Developed play for fun,
+                tvgfree.net, in C# leveraging windows services, web
+                services and asp.net.</li>
+                     <li>Directed the Open TV wagering
+                application project that was deployed on
+                Echostar/Dish Network.</li>
+                  </ul>
+                  <p>Notable Accomplishments:</p>
+                  <ul>
+                     <li>Received EchoStar's Developer of
+                the Year Award for 2005 for work accomplished on
+                the TVG/EchoStar interactive wagering
+                application.</li>
+                     <li>Reduced call center call times
+                30% by directing development and deployment of
+                TVG's Subscriber Management System (SMS).</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>University of Maryland University College</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>B.S.</DegreeName>
+               <DegreeMajor>
+                  <Name>Information Systems Management</Name>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="soa">
+            <CompetencyDisplayName>SOA</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oam">
+            <CompetencyDisplayName>OAM</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="tfs">
+            <CompetencyDisplayName>TFS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="biztalk">
+            <CompetencyDisplayName>BizTalk</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-office">
+            <CompetencyDisplayName>MS Office</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="operations-manager">
+            <CompetencyDisplayName>Operations Manager</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sharepoint">
+            <CompetencyDisplayName>SharePoint</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="active-directory">
+            <CompetencyDisplayName>Active Directory</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="iis">
+            <CompetencyDisplayName>IIS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="crm">
+            <CompetencyDisplayName>CRM</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dynamics-gp">
+            <CompetencyDisplayName>Dynamics GP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="aws">
+            <CompetencyDisplayName>AWS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="right-scale">
+            <CompetencyDisplayName>Right Scale</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rally">
+            <CompetencyDisplayName>Rally</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="wordpress">
+            <CompetencyDisplayName>WordPress</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="salesforce">
+            <CompetencyDisplayName>Salesforce</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="starteam">
+            <CompetencyDisplayName>StarTeam</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vmware">
+            <CompetencyDisplayName>VMWare</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mercurial">
+            <CompetencyDisplayName>Mercurial</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="git">
+            <CompetencyDisplayName>GIT</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="paysimple">
+            <CompetencyDisplayName>Paysimple</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rainbow">
+            <CompetencyDisplayName>Rainbow</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="f5-bigip">
+            <CompetencyDisplayName>F5 BigIP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="cisco-access-server">
+            <CompetencyDisplayName>Cisco Access Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="router">
+            <CompetencyDisplayName>Router</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="switch">
+            <CompetencyDisplayName>Switch</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="firewall">
+            <CompetencyDisplayName>Firewall</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="call-manager">
+            <CompetencyDisplayName>Call Manager</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="haproxy">
+            <CompetencyDisplayName>HAProxy</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="apache">
+            <CompetencyDisplayName>Apache</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="lucene">
+            <CompetencyDisplayName>Lucene</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="solr">
+            <CompetencyDisplayName>SOLR</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="tomcat">
+            <CompetencyDisplayName>Tomcat</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="open-tv">
+            <CompetencyDisplayName>Open TV</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="centos">
+            <CompetencyDisplayName>CENTOS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="linux">
+            <CompetencyDisplayName>Linux</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ingeniux">
+            <CompetencyDisplayName>Ingeniux</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mac-osx">
+            <CompetencyDisplayName>Mac OSX</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="adobe-photoshop">
+            <CompetencyDisplayName>Adobe Photoshop</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="illustrator">
+            <CompetencyDisplayName>Illustrator</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="flash">
+            <CompetencyDisplayName>Flash</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="liferay">
+            <CompetencyDisplayName>Liferay</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mongodb">
+            <CompetencyDisplayName>MongoDB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="couchbase">
+            <CompetencyDisplayName>Couchbase</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mule">
+            <CompetencyDisplayName>Mule</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="servicemix">
+            <CompetencyDisplayName>ServiceMix</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jboss">
+            <CompetencyDisplayName>JBoss</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="weblogic">
+            <CompetencyDisplayName>WebLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="microsoft-asp">
+            <CompetencyDisplayName>Microsoft ASP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="cs">
+            <CompetencyDisplayName>C#</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vb">
+            <CompetencyDisplayName>VB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jquery">
+            <CompetencyDisplayName>JQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="groovy">
+            <CompetencyDisplayName>Groovy</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="grails">
+            <CompetencyDisplayName>Grails</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="php">
+            <CompetencyDisplayName>PHP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="css">
+            <CompetencyDisplayName>CSS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xquery">
+            <CompetencyDisplayName>XQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xpath">
+            <CompetencyDisplayName>XPath</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xslt">
+            <CompetencyDisplayName>XSLT</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="actionscript">
+            <CompetencyDisplayName>Actionscript</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="chef-puppet">
+            <CompetencyDisplayName>Chef/Puppet</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="visual-studio">
+            <CompetencyDisplayName>Visual Studio</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="intellij-idea">
+            <CompetencyDisplayName>IntelliJ IDEA</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="eclipse">
+            <CompetencyDisplayName>Eclipse</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-sql-server">
+            <CompetencyDisplayName>MS SQL Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="solr">
+            <CompetencyDisplayName>Solr</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="elasticsearch">
+            <CompetencyDisplayName>ElasticSearch</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="agile-scrum">
+            <CompetencyDisplayName>Agile SCRUM</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="waterfall">
+            <CompetencyDisplayName>Waterfall</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

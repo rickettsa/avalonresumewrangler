@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Juli</GivenName>
+            <FamilyName>Allen</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Instructional Designer and e-Learning Content Developer</Title>
+               <OrganizationName>ADEPTCentral</OrganizationName>
+               <Description>
+                  <p>Ms. Allen has over 20 years of experience in the corporate training arena with a focus in both e-Learning and classroom delivery. She has the know-how to work collaboratively with a team to move a training initiative through all development phases.</p>
+                  <p>Most recently she led a project team to design and create end user training for HP Software Education using the HP ART (Adoption Readiness Tool) product. She created the best practices and standards so that the curriculum is consistent and cohesive. During the design phase, she assisted HP leaders in developing the instructional model to use for all courses. With this in-depth knowledge of ART she is now working directly with HP clients to enable them to install ART and customize the out-of-box courses to reflect their company's branding and workflow. Prior to using ART, Ms. Allen utilized the Articulate Studio rapid e-learning software suite to design and create End User Training for Hewlett-Packard's Business Technology Optimization software.</p>
+                  <p>Ms. Allen and an ADEPTCentral team worked directly with ANCILE to design and create a certification program for ANCILE's uPerform product. Ms. Allen was responsible for the design and creation of the curriculum templates and the student guides and labs related to the Author role.</p>
+                  <p>Ms. Allen has also been instrumental in the development of the Applied Dynamic e-Learning Processes &amp; Tools (ADEPT) model for ADEPTCentral. By researching best practices in the industry she helps keep the methodology current and to the point.</p>
+                  <p>Ms. Allen and the ADEPTCentral team utilized the GoCourse technology to create a business essentials certification program for the University of North Carolina's Kenan-Flagler Business School. During this project, Ms. Allen worked with professors to aid them in creating their own online content, developed courses and produced the standards guide.</p>
+                  <p>Ms. Allen has worked on several successful Vignette User Education (VUE) customization projects. These projects entail working with the client to identify system modifications and then translating those changes to the course. This includes changing the terminology, colors, logos, screen shots, etc. of an existing VUE course to match the client's specific system workflow and branding. The courses are created and updated using the Articulate Studio product suite. Ms. Allen taught workshops to train clients to maintain their own VUE courses.</p>
+                  <p>She also used her systems background and instructional design knowledge to develop systems documentation coupled with Web-based courses, including simulations, to highlight how to use a new corporate system for Catholic Health Initiatives, a $7 billion national hospital chain. She has also utilized her facilitation skills to assist clients in documenting workflow patterns that will ultimately require training.</p>
+                  <p>Ms. Allen was the lead instructional designer for the development of a multi-media Web-based course for the Ft. Worth (Texas) Independent School District. This course, using Texas Education Agency standards, was designed to teach educators how a student acquires a new language and the laws in place regarding students who are learning English as a second language. She was instrumental in facilitating the collection of course material, designing the course structure, scripts, interactions, and audio narration.</p>
+                  <p>As a former trainer, Ms. Allen understands the learning patterns of end-users and is committed to creating quality, intuitive Web resources. She approaches projects from a new-user perspective to ensure the design and user interface are consistent and user-friendly. Ms. Allen enjoys working with clients to help them achieve their business goals.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Training Specialist / Instructional Designer</Title>
+               <OrganizationName>EDS (Electronic Data Systems)</OrganizationName>
+               <Description>
+                  <p>Drawing on her lecture-style training background, Ms. Allen designed and developed the first Web-based training course for the EDS sales community. This course convinced sales leadership that Web-based training is an effective training solution. Ms. Allen is detail oriented and strives to make Web sites and documents easy to navigate and read.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Human Resource Specialist</OrganizationName>
+               <Description>
+                  <p>To expand her general human resources knowledge, Ms. Allen became the project manager for a global HR business partner. She coordinated the rollout of compensation and succession planning for a line of business and gained an appreciation for the business challenges and obstacles faced by leaders. Ms. Allen met regularly with leaders to discuss project status and thus refined her presentation and writing skills.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Training Specialist / Instructor</OrganizationName>
+               <Description>
+                  <p>Ms. Allen began her training career as an MS Office instructor. During this time, she realized a personal desire to help others achieve their business goals by teaching them the software skills necessary to succeed. After developing her classroom techniques, Ms. Allen taught other technical professionals the classroom skills necessary to become effective trainers.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Financial Analyst</OrganizationName>
+               <Description>
+                  <p>Ms. Allen started her corporate career as a financial analyst. She created monthly financial reports, wrote general ledger entries, developed budgets, and participated in the monthly accounting cycle. These duties gave her an appreciation for the business and financial side of all business activities.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory/>
+      <Qualifications>
+         <Competency abbrev="ms-office">
+            <CompetencyDisplayName>MS Office</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="presenter">
+            <CompetencyDisplayName>Presenter</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="engage">
+            <CompetencyDisplayName>Engage</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="quizmaker">
+            <CompetencyDisplayName>Quizmaker</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="adobe-captivate">
+            <CompetencyDisplayName>Adobe Captivate</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vignette">
+            <CompetencyDisplayName>Vignette</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

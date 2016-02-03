@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Madhuri</GivenName>
+            <FamilyName>Puppala</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>916-494-2531</Mobile>
+            <InternetEmailAddress>Puppalam@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Vignette Developer</Title>
+               <OrganizationName>Motorola</OrganizationName>
+               <Description>
+                  <p>Avalon was engaged by Motorola Solutions to assess their WEM implementation and there by redesign the CMA and CDA modules. Ms. Puppala was responsible in redesigning the Products module that includes creating and configuring VCM components from Presentation Templates to content lists. The product pages were broken into several configurable regions for efficiency, manageability, performance and ease of publishing.</p>
+                  <p>Environment</p>
+                  <p>: VCM 8.0, DSM 8.0, WebLogic 11g</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>The project involves design and development of two features - Dashboard Service and Resequence Global Update. As an experienced VCM developer Ms. Puppala was responsible to design and develop the backend service layer for the Dashboard on McKesson Connect Portal. Dashboard 1.1 was released to McKesson Connect limited groups where the users are presented with profile based Reports for Analysis. The Reports are generated using google charts that take a JSON Object as input. The dashboard service layer is responsible to generating the JSON object with user specific data retrieved from the database. She was also involved in creating the Resequence Account/Department Global Update feature for McKesson Connect users that involved the accounts or departments by ID/Name in ascending or descending order.</Title>
+               <OrganizationName>McKesson</OrganizationName>
+               <Description>
+                  <p>McKesson Connect</p>
+                  <p>The project involves design and development of two features - Dashboard Service and Resequence Global Update. As an experienced VCM developer Ms. Puppala was responsible to design and develop the backend service layer for the Dashboard on McKesson Connect Portal. Dashboard 1.1 was released to McKesson Connect limited groups where the users are presented with profile based Reports for Analysis. The Reports are generated using google charts that take a JSON Object as input. The dashboard service layer is responsible to generating the JSON object with user specific data retrieved from the database. She was also involved in creating the Resequence Account/Department Global Update feature for McKesson Connect users that involved the accounts or departments by ID/Name in ascending or descending order.</p>
+                  <p>Environment</p>
+                  <p>: VCM 8.0, VAP 8.0, WebLogic, JBOSS, JSON</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>The project involves enhancing the VCM features for publishing. As an experienced VCM developer Ms. Puppala was responsible to ease the process of publishing content for the producers. Many times it is a pain point for the producers to publish content as they needed to click through several windows before publishing the content. She has developed a solution by adding a button on the object editor which fastens the process of publishing.</Title>
+               <OrganizationName>Travel Channel</OrganizationName>
+               <Description>
+                  <p>Easy Publish</p>
+                  <p>The project involves enhancing the VCM features for publishing. As an experienced VCM developer Ms. Puppala was responsible to ease the process of publishing content for the producers. Many times it is a pain point for the producers to publish content as they needed to click through several windows before publishing the content. She has developed a solution by adding a button on the object editor which fastens the process of publishing.</p>
+                  <p>Environment</p>
+                  <p>: VCM 7.6, Apache Tomcat 5.0</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Vignette Developer</Title>
+               <OrganizationName>ANSYS</OrganizationName>
+               <Description>
+                  <p>ANSYS has deployed their www site (</p>
+                  <p>ansys.com</p>
+                  <p>) with OpenText's Web Experience Management Suite 8.0 and engaged Avalon to provide consulting around the creation of their Custom Portal site. The Customer Portal will allow their clients to download software, see product information, socialize with other users, and request service tickets. Madhuri's roles on the project included creating CTDs, developing portlets, migrating assets between environments and developing Social Communities.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Vignette Consultant</Title>
+               <OrganizationName>Gestra.com - Flowserve</OrganizationName>
+               <Description>
+                  <p>As a senior Vignette developer, Ms. Puppala is involved in building the site Gestra.com. The content of the site will be served from VCM 7.6 using VAP 7.4 and will replace the existing site and it look and feel. Her primary responsibility is to create the site and build the presentation templates to support the site view. The site will be serving the users with 3 different languages English, German and Polish.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Consultant</Title>
+               <OrganizationName>UK Site Redesign - Invesco</OrganizationName>
+               <Description>
+                  <p>As a senior developer, Ms. Puppala is involved in redesigning and developing Invesco's Invesco Perpetual site. Her primary responsibility was to develop and configure USP JSR 168 Portlets that are responsible for rendering site content from Idol search engine. Along with other IDOL admin tasks she also configured IDOL and File System Fetch to index xml files generated via VCM listener into the search engine.</p>
+                  <p>Environment</p>
+                  <p>: IDOL 7.5, File System Fetch, Vignette Dynamic Portal Module 7.3, Unified Search Platform (USP), VCM 7.6, Weblogic Application Server.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Vignette Consultant</Title>
+               <OrganizationName>Stelter VCM Upgrade</OrganizationName>
+               <Description>
+                  <p>As a senior Vignette developer, Ms. Puppala is involved in Stelter's VCM 7.3.0.5 to VCM 7.6 upgrade. Her primary responsibility was to install VCM, create and configure database for use with VCM, configuring DPM on management and live stages, migrate Content Type Definitions and its content, Event Listeners and workflows.</p>
+                  <p>Environment</p>
+                  <p>: VCM 7.3.0.5 to 7.6, Vignette Dynamic Site Module (DSM) to Vignette Dynamic Portal Module 7.5, Weblogic Application Server.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Vignette Consultant</Title>
+               <OrganizationName>University of Texas Southwestern, Simmons Cancer Center</OrganizationName>
+               <Description>
+                  <p>As a senior Vignette developer, Ms. Puppala is involved in UTSW's Simmons Cancer Center site development. Her primary responsibility was to design and develop new Content Type Definitions, creating Site and channel hierarchy, identifying presentation templates on the VCM. On the CDA side she was involved in writing the presentation overrides, creating VAP assets like grids, navigation items, pages and portlets etc.</p>
+                  <p>Environment</p>
+                  <p>: VCM 7.5, VAP, Vignette Dynamic Portal Module (DPM) and Weblogic Application Server.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Vignette Consultant</Title>
+               <OrganizationName>Navistar Internationalization</OrganizationName>
+               <Description>
+                  <p>As a senior Vignette developer, Ms. Puppala is involved in Navistar's VCM 7.5 internationalization project. Her primary responsibility was to migrate Content Type Definitions and its content, configuring CTD'S to support internationalization. On the CDA side she was involved in re-writing the presentation overrides with localized content based on user's language selection. The site supports six languages namely English, French, Chinese, Portuguese, Russian and Spanish.</p>
+                  <p>Environment</p>
+                  <p>: VCM 7.5, Vignette Dynamic Portal Module (DPM), Tomcat and Weblogic Application Server.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Vignette Consultant</Title>
+               <OrganizationName>Flowserve VCM Upgrade</OrganizationName>
+               <Description>
+                  <p>As a senior Vignette developer, Ms. Puppala is involved in Flowserve's VCM 7.3.0.5 to VCM 7.6 upgrade. Her primary responsibility was to migrate Content Type Definitions and its content, Event Listeners and workflows. On the CDA side she was involved in re-writing the presentation overrides.</p>
+                  <p>Environment</p>
+                  <p>: VCM 7.3.0.5 to 7.6, Vignette Dynamic Site Module (DSM) to Vignette Dynamic Portal Module 7.5, Weblogic Application Server.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Vignette Consultant</Title>
+               <OrganizationName>WSIB</OrganizationName>
+               <Description>
+                  <p>As a senior Vignette developer, Ms. Puppala designed, installed and implemented the WSIB Search presentation application with VCM and DPM. The application provides a unique user friendly and efficient search interface for finding Employers, Workers, claims etc.</p>
+                  <p>Environment</p>
+                  <p>: IDOL 5, Vignette Dynamic Site Module (DSM) 7.5, Websphere Application Server 6.1.0.9, Apache Tomcat 5.5.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Search Developer</Title>
+               <OrganizationName>PepsiCo</OrganizationName>
+               <Description>
+                  <p>As a senior search developer, Ms. Puppala implemented the Search solution for Pepsico Knowledge Management team (Goldmind Portal). This unified search tool integrated search results from five different repositories. Important features included security, guided navigation, and field searching tailored to each result type.</p>
+                  <p>Environment</p>
+                  <p>: IDOL 5.1.0.6, File System Connector 5.x, Omni Group Server 5.x, Solaris 6.x, Vignette Application Portal (VAP) 7.3.1, JSR-168, JAXB/P 2.0, XTags.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Supply Management Online for McKesson</OrganizationName>
+               <Description>
+                  <p>Project Description:</p>
+                  <p>This project was developed for McKesson Corporation as the online resource for ordering, tracking and invoicing pharmaceuticals and medical-surgical supplies. This is a one-stop place for Order Mangement, Catalog Search, Reports and Analysis, Account Management, Decision Support tools and Contracts.</p>
+                  <p>Responsibilities:</p>
+                  <ul>
+                     <li>Design, develop, and test VCM
+                extension of Metadata widgets</li>
+                     <li>Support functionalities in Supply
+                Management Online Application</li>
+                     <li>Developed previews for all VCM
+                content types</li>
+                     <li>Involved in code refactoring and
+                code optimizations for performance
+                improvements</li>
+                  </ul>
+                  <p>Environment:</p>
+                  <p>Vignette VCM, Vignette Application Portal, Dynamic Portal Module(DPM), Oracle.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Automatic Related Objects Widget</OrganizationName>
+               <Description>
+                  <p>Project Description:</p>
+                  <p>Integrate Autonomy IDOL's conceptual search technology with a custom Vignette Content Management (VCM) widget to display content IDOL identifies as conceptually similar. This reduces content authors' effort in finding related articles.</p>
+                  <p>Responsibilities:</p>
+                  <ul>
+                     <li>Design, develop, and test
+                integration between Autonomy IDOL and Vignette
+                VCM</li>
+                     <li>Overcome roadblocks in Javascript,
+                JSP, RDBMS, and search engine layers</li>
+                  </ul>
+                  <p>Environment:</p>
+                  <p>Autonomy IDOL, Vignette VCM</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>riversource.com</OrganizationName>
+               <Description>
+                  <p>Project Description</p>
+                  <p>: This project involved improving end user search experience using state of the art search technology Autonomy IDOL.</p>
+                  <p>Responsibilities</p>
+                  <p>:</p>
+                  <ul>
+                     <li>Developed custom content
+                management listener using Java to generate files
+                with metadata for indexing into Autonomy
+                IDOL.</li>
+                     <li>System respects security based on
+                user roles</li>
+                     <li>Configured File System Fetch to
+                fetch and index data generated by content
+                management listener</li>
+                  </ul>
+                  <p>Environment:</p>
+                  <p>Autonomy IDOL, File System Fetch, Vignette VCM</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>: The project involves developing the stelter.com site using Vignette Dynamic Site Module (DSM) software. The DSM provides a set of taglibraries and APIs that help in retrieving cached VCM content and in improving performance.</Title>
+               <OrganizationName>Stelter.com</OrganizationName>
+               <Description>
+                  <p>Project Description</p>
+                  <p>: The project involves developing the stelter.com site using Vignette Dynamic Site Module (DSM) software. The DSM provides a set of taglibraries and APIs that help in retrieving cached VCM content and in improving performance.</p>
+                  <p>Responsibilities</p>
+                  <p>:</p>
+                  <ul>
+                     <li>Installation and configuration of
+                DSM software.</li>
+                     <li>Design and creation of
+                CTD's</li>
+                     <li>Compiled JSP's to render VCM
+                content</li>
+                     <li>Created templates, Content
+                Instances, sites, project and other data
+                resources</li>
+                  </ul>
+                  <p>Environment:</p>
+                  <p>JSP, Vignette VCM, Vignette DSM</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>St Jude Children's Hospital</OrganizationName>
+               <Description>
+                  <p>Project Description</p>
+                  <p>: This project involves performance tuning of their existing site.</p>
+                  <p>Responsibilities</p>
+                  <p>:</p>
+                  <ul>
+                     <li>Created DSM regions wherever
+                required</li>
+                     <li>Compare performance
+                difference</li>
+                     <li>Unit testing</li>
+                  </ul>
+                  <p>Environment:</p>
+                  <p>Vignette VCM, Vignette DSM</p>
+                  <p>Collaboration Indexing Listener</p>
+                  <p>Project Description</p>
+                  <p>: The Collaboration listener is responsible for retrieving VCM objects and writing them to the file system which is picked up by the FileSystemFetch for passing on to Autonomy IDOL for indexing.</p>
+                  <p>Responsibilities</p>
+                  <p>:</p>
+                  <ul>
+                     <li>Compiled listener code to write
+                VCM object properties into HTML file.</li>
+                     <li>Defined index tasks for
+                IDOL</li>
+                     <li>Developed a custom security for
+                IDOL.</li>
+                  </ul>
+                  <p>Environment:</p>
+                  <p>J2EE, Autonomy IDOL, File System Fetch</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>File Scan</OrganizationName>
+               <Description>
+                  <p>Project Description</p>
+                  <p>: The purpose of this filescan is to read files from the file sysem and import them into the content management system (VCM). The application will be able to add, update and delete the files based on changes in the file system. Additionally, if a directory has been removed the corresponding VCM project should be removed as well.</p>
+                  <p>Responsibilities</p>
+                  <p>:</p>
+                  <ul>
+                     <li>Used Vignette VCM public API to
+                communicate with VCM and manipulate objects.</li>
+                     <li>Developing a highly configurable
+                application.  </li>
+                     <li>Used Log4j logging tool to track
+                process and debug issues (if any)</li>
+                     <li>Performed Unit Testing</li>
+                  </ul>
+                  <p>Environment:</p>
+                  <p>J2EE, XML, Java, Log4j</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Amdocs</OrganizationName>
+               <Description>
+                  <p>Project Description</p>
+                  <p>: Amdocs Billing provides flexible, real-time rating and billing for all voice, data, content and video services, as well as enhanced support for a broad range of billing-related activities. It supports prepaid-postpaid and wireline-wireless-cable-satellite convergence with one product.</p>
+                  <p>Responsibilities</p>
+                  <p>:</p>
+                  <ul>
+                     <li>Worked on designing and
+                implementing various business needs within the
+                Integration layer. The integration layer interacts
+                with the two major components of Amdocs Billing
+                System namely: Distributed Data Processing (DDP)
+                and Amdocs Broadband, Cable and Satellite
+                (BCS).</li>
+                     <li>Developed High Level Design (HLD)
+                and implemented the createChargeLevelCredits
+                API.</li>
+                     <li>Implemented and unit tested
+              CreateNewSubscriber,AddOffers and RemoveOffers API
+              Designed and developed MassCycleChange
+              API</li>
+                     <li>Worked on modifications to PC
+                Admin UI using Struts        </li>
+                     <li>Performed Unit Testing using
+              CTestand Performance Test for the API's
+              developed.</li>
+                  </ul>
+                  <p>Environment:</p>
+                  <p>J2EE, EJB2.0, XML, Weblogic8.0, Eclipse, Perforce, Oracle 10G, Struts Framework.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Vignette</OrganizationName>
+               <Description>
+                  <p>Web Content Management Solutions</p>
+                  <p>Project Description</p>
+                  <p>: The goal of WCM Solutions team is to provide solutions to common issues faced by the customers few of them being widgets, enhanced objects display for Sites, Channels etc. across various pages in the VCM.</p>
+                  <p>Responsibilities</p>
+                  <p>:</p>
+                  <ul>
+                     <li>Developed Functional Requirement
+                Specification (FRS) for Widgets Common Base
+                Layer.</li>
+                     <li>Created Software Design Document
+                (SDD) and Use Cases.</li>
+                     <li>Designed and developed common base
+              features for widgets using Widget, SPF and PPF
+              Framework, Spring andHibernate.</li>
+                     <li>Worked on code
+                internationalization and logging.</li>
+                     <li>Developed xsl code for
+                transformation, Studied and Implemented AJAX.
+                Written Tag Libraries for JSP rendering.</li>
+                     <li>Performed Code Review and Reviewed
+                QA Test Cases</li>
+                     <li>Performed Unit Testing using
+              JUNITDeveloped Acceptance, andPerformance Test cases for the
+              application.</li>
+                     <li>Worked closely with the Project
+                Manager and Client assessing the progress,
+                dependencies and risk aspects of the
+                project.</li>
+                  </ul>
+                  <p>Environment:</p>
+                  <p>Java, J2EE, EJB 2.0, XML, XSL, AJAX, CSS, Weblogic 8.0, LDAP, IntelliJ IDE, Perforce 4,SQL Server and Struts Framework.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Vignette</OrganizationName>
+               <Description>
+                  <p>Vignette Content Management (VCM) UI</p>
+                  <p>Responsibilities</p>
+                  <p>:</p>
+                  <ul>
+                     <li>Extensively used JSP's including
+                Tag Libraries and Servlets</li>
+                     <li>Worked on SPF framework, PPF,
+                Widget framework and other components of VMC</li>
+                     <li>Designed and developed new widgets
+                using Widget framework.</li>
+                     <li>Developed Ramp-up Plan document
+                that is used for beginners intended to work on
+                widgets.</li>
+                     <li>Worked on code
+                internationalization and logging. Developed xsl
+                code for transformation</li>
+                     <li>Performed Code Review and Reviewed
+                QA Test Cases, Performed Unit Testing using
+                JUNIT</li>
+                  </ul>
+                  <p>Environment:</p>
+                  <p>Java, J2EE, EJB 2.0, XML, XSL, CSS, Weblogic 8.0, LDAP, IntelliJ IDE, Perforce 4, SQL Server and Struts Framework.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>Certifications</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>MS</DegreeName>
+               <DegreeMajor>
+                  <Name/>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>Sun Certified Java Programmer</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>BS</DegreeName>
+               <DegreeMajor>
+                  <Name/>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="idol">
+            <CompetencyDisplayName>IDOL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="retina">
+            <CompetencyDisplayName>Retina</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vignette">
+            <CompetencyDisplayName>Vignette</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dynamic-portal-module">
+            <CompetencyDisplayName>Dynamic Portal Module</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dynamic-site-module">
+            <CompetencyDisplayName>Dynamic Site Module</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="j2ee">
+            <CompetencyDisplayName>J2EE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="c">
+            <CompetencyDisplayName>C</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="c++">
+            <CompetencyDisplayName>C++</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="pl-sql">
+            <CompetencyDisplayName>PL/SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rmi">
+            <CompetencyDisplayName>RMI</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jdbc">
+            <CompetencyDisplayName>JDBC</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ejb">
+            <CompetencyDisplayName>EJB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="servlets">
+            <CompetencyDisplayName>Servlets</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jsp">
+            <CompetencyDisplayName>JSP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hibernate">
+            <CompetencyDisplayName>Hibernate</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="weblogic">
+            <CompetencyDisplayName>WebLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="apache">
+            <CompetencyDisplayName>Apache</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="tomcat">
+            <CompetencyDisplayName>Tomcat</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dbm">
+            <CompetencyDisplayName>DBM</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-sql-server">
+            <CompetencyDisplayName>MS SQL Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-access">
+            <CompetencyDisplayName>MS Access</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sybase">
+            <CompetencyDisplayName>Sybase</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rational-rose">
+            <CompetencyDisplayName>Rational Rose</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="object-oriented">
+            <CompetencyDisplayName>Object Oriented</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dhtml">
+            <CompetencyDisplayName>DHTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xslt">
+            <CompetencyDisplayName>XSLT</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ajax">
+            <CompetencyDisplayName>AJAX</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="eclipse">
+            <CompetencyDisplayName>Eclipse</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="intellij-idea">
+            <CompetencyDisplayName>IntelliJ IDEA</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="netbeans">
+            <CompetencyDisplayName>NetBeans</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="visual-studio">
+            <CompetencyDisplayName>Visual Studio</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Kevin</GivenName>
+            <FamilyName>Risden</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Hadoop Tech Lead</OrganizationName>
+               <Description>
+                  <p>Kevin Risden, as the Hadoop Tech Lead at Avalon, has been involved with all aspects of Hadoop including architecture, development, and administration. Kevin has created solutions for a variety of companies across many industries that include transitioning and migrating existing processes to Hadoop. His experience spans across Hadoop 1 and 2 where he has deployed solutions successfully for both platforms.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>State Farm Insurance</OrganizationName>
+               <Description>
+                  <p>Kevin led the architecture and design of a near real-time communication ingestion and search application on top of HDP 2.2. The application required extensive use of Kafka, Storm, Solr, and HBase to meet the SLAs for the project. The cluster, secured with Kerberos, actively ingested multiple types of communication data from different sources and made them searchable within five minutes. The architecture provided an extensible approach to near real-time ingestion of data and the ability to search across the data set seamlessly as it grows. In addition to architecture, Kevin provided cluster installation and setup support and guidance throughout the project.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Cars.com</OrganizationName>
+               <Description>
+                  <p>Kevin led the cluster installation and design of a 10 node cluster. Over the next six months, Kevin provided system architecture and application architecture guidance on a monthly basis to help them evaluate various components of the HDP ecosystem including Hive, Pig, HBase, Oozie, Falcon, and Sqoop. During this project, Kevin helped migrate existing data from Teradata and transitioned ETL jobs from DataStage to HDP.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>T-Mobile</OrganizationName>
+               <Description>
+                  <p>Kevin led an upgrade from HDP 1.3 to HDP 2.1 over 7 days including diagnosing and fixing multiple issues with the 70+ node cluster before the upgrade. Prior to the upgrade, Kevin verified that the cluster was performing as expected and ensured that the workflows worked on a development cluster before the production upgrade. After the upgrade, Kevin provided on call support to ensure that the workflows operated correctly in production.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Match.com</OrganizationName>
+               <Description>
+                  <p>Kevin led an upgrade from HDP 2.0 to HDP 2.1 over 4 days including a 4 node development cluster and 30 node production cluster. In addition, he verified before and after the upgrade that their production workflows were successful. Kevin identified an issue with Hive 0.13 to Hive 0.14 upgrade and recommended a fix along with notified others doing upgrades.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Progressive Insurance</OrganizationName>
+               <Description>
+                  <p>Kevin led the architecture and design to enable analytics across a previously difficult dataset to access. Large scale analytics were performed with a combination of Hive and R enabling the analysts to explore the data using a variety of methods. In addition to the analytics project, he provided guidance to the other Hadoop implementation projects as well as helped with Hadoop administration and firewall configuration.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Verizon Wireless</OrganizationName>
+               <Description>
+                  <p>Kevin worked as a data engineer and was responsible for transitioning several data analysis processes to a Hadoop-based platform. He was responsible for building data pipelines from existing sources including Teradata and raw files with Pig and Flume, managing tables and generating reports with Hive and Sqoop, and coordinating the process with Oozie. Additionally, he architected a solution that provides full text search with Solr and retrieves the full documents from HBase. This provides a near real time response for lookup. In addition to development, he is also responsible for extensively documenting the new processes and training Verizon resources.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Dell</OrganizationName>
+               <Description>
+                  <p>Kevin led the installation and configuration of an HDP 2.0 cluster at Dell. This included configuring the major Hadoop components (HDFS, MapReduce, Hive, Pig, HBase, Hue) and smoke testing them to ensure functionality. Additional configuration of LDAP integration with Active Directory was provided for the Gateway node and Hue. System architecture and Hadoop specific questions were answered during the initial installation. Documentation and training of Dell resources was included during the initial period and will continue through the application development phase.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>HSBC</OrganizationName>
+               <Description>
+                  <p>Kevin assisted with HSBC by providing support to the system architectural lead by being an expert in HBase and Kerberos security. The client also utilized Hive HBase integration to provide SQL over HBase. He negotiated with the client to ensure that the project was successful and delivered in a timely manner. Performance troubleshooting and Hadoop specific issues were identified and resolved during this project as well.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>RealGravity/Scripps Networks Interactive</OrganizationName>
+               <Description>
+                  <p>Kevin helped with the architecture, design and development of a successful Hadoop proof of concept and then a production implementation. The cluster was migrated from an HDP 1.3 implementation to a HDP 2.0 cluster for production. RealGravity used a homegrown system written in Ruby to create summary reports for event data generated by their video players. The system was recreated on Amazon Web Services using Hadoop, Hive, Pig, Sqoop, and Oozie in less than a month. The new system also enabled historical data to be maintained and queried in an ad-hoc manner. In addition to a working system, extensive documentation and training was provided to the RealGravity engineering team.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>ATPCO</OrganizationName>
+               <Description>
+                  <p>Kevin assisted in defining the system architecture that involved a complex set of requirements. The project involved researching a large number of big data systems to determine their fit in the system. These big data systems included multiple Hadoop distributions and some engineered systems. Furthermore, he developed performance tests and small proof of concepts to evaluate the viability of many of the systems researched. Performance testing included Hive, HBase, Phoenix, Impala, MySQL, and others.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Enron Email Demo</OrganizationName>
+               <Description>
+                  <p>Kevin developed a Hadoop based system to process the 1.2 million Enron emails in about 10 minutes. By utilizing Amazon Web Services Elastic MapReduce and Tika, he was able to process the data quickly and efficiently. In addition to designing the processing algorithm, Kevin architected the system design to load the data from Hadoop to Solr for full text search capabilities. In addition, Kevin added USP as the front-end search interface to Solr.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Pope Francis Meets Big Data</OrganizationName>
+               <Description>
+                  <p>Around Pope Francis being selected, Kevin developed a visualization to show the visitors accessing Patheos.com and how the traffic changed for the hours surrounding the event. This utilized Amazon Web Services S3 and Elastic MapReduce to process the log data quickly and cost effectively. A blog post detailing the analysis was posted to Avalon's blog.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Software Developer Intern</Title>
+               <OrganizationName>National Instruments</OrganizationName>
+               <Description>
+                  <p>Kevin interned for two summers at National Instruments and worked as part of the Product Development Services group. During his internship, Kevin worked on multiple platforms including Windows, Mac, and Linux to develop tools that assisted other developers. These tools ranged from developing new features for the build system to creating a web-based metrics report application to alleviate time-consuming report generation by hand.</p>
+                  <p>Web-based Metrics Report Application</p>
+                  <p>In the course of one summer, Kevin architected a web based Metrics report application that included data visualizations. He designed the database schema, the metrics backend, and the web frontend. This required combining knowledge of databases (MySQL and MongoDB), Python, SQL, HTML, CSS, and JS. The application generated reports interactively that had taken developers hours to generate by hand before.</p>
+                  <p>Build /Automated Testing System</p>
+                  <p>Kevin maintained and extended an exiting build and automated test system that spanned multiple platforms (Windows, Mac, Linux) and created executables for a plethora of languages. This system involved adding to the compiler toolchain as well as working on the web application that controlled the build and test process.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName> </SchoolName>
+            </School>
+            <Degree>
+               <DegreeName> </DegreeName>
+               <DegreeMajor>
+                  <Name> </Name>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="hadoop">
+            <CompetencyDisplayName>Hadoop</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="elasticsearch">
+            <CompetencyDisplayName>ElasticSearch</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="aws">
+            <CompetencyDisplayName>AWS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="python">
+            <CompetencyDisplayName>Python</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="intellij-idea">
+            <CompetencyDisplayName>IntelliJ IDEA</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="eclipse">
+            <CompetencyDisplayName>Eclipse</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="unix">
+            <CompetencyDisplayName>UNIX</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xpath">
+            <CompetencyDisplayName>XPath</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="css">
+            <CompetencyDisplayName>CSS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jquery">
+            <CompetencyDisplayName>JQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="postgresql">
+            <CompetencyDisplayName>PostGreSQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mongodb">
+            <CompetencyDisplayName>MongoDB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-sql-server">
+            <CompetencyDisplayName>MS SQL Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

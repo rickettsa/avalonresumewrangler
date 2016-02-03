@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Suvarna</GivenName>
+            <FamilyName>Kamannavar</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>McKesson Connect</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Technical Lead also involved in
+                development of new features and enhancement of
+                McKesson Connect portal (Web Content Management)
+                within Supply Management Online (SMO) suite</li>
+                     <li>Participated as a key team member
+                on a major portal design project, adding WCM (VCM
+                and DPM)</li>
+                     <li>Design and development of various
+                portal and DPM components such as Profile sync,
+                Rebate center and MM25/50/100 portlets</li>
+                     <li>Involved in enhancement to Single
+                Step workflow process.</li>
+                     <li>Designed and implemented
+                integration to ImageNow service and various other
+                web services</li>
+                     <li>Delivered various documents such
+                design, functionality, unit test and test
+                cases</li>
+                     <li>Involved in requirement gathering
+                and demonstrating the functionality with client's
+                business users</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>State Farm (Work for Motus IT)</OrganizationName>
+               <Description>
+                  <p>System Analyst-Web, Bloomington, IL</p>
+                  <ul>
+                     <li>Application to achieve the
+                unified experience for agents, end customers and
+                customer service personnel, using the proprietary
+                frameworks built on struts.</li>
+                     <li>Design, develop and enhance
+                critical business requirements to the insurance
+                modules</li>
+                     <li>Design and development of the
+                critical modules such as adding property editors to
+                Customize the data, adding the UI elements for all
+                the quoting pages using Framework, enhance the opt
+                in and opt out capabilities.</li>
+                     <li>Perform various system analysis
+                duties such as impact analysis on depended modules,
+                providing the design/implementation options,
+                documentation of the requirements, design and
+                various use cases.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Developed Web based UI to Service
+                providers to enter their specifics using
+                Struts.Involved in requirement analysis,
+                requirement definition, design, build &amp; test
+                phasesDeveloped Service side components
+                such as Domain objects, Utilities, helper classes
+                to accomplish business logicUsed Java Design patterns such as
+                Service Locator, Singleton, Data Access and command
+                patterns to facilitate loosely coupled
+                designUnit Tested modules &amp;
+                software components</Title>
+               <OrganizationName>eTI Labs</OrganizationName>
+               <Description>
+                  <p>Programmer Analyst, Dallas, TX.</p>
+                  <ul>
+                     <li>Developed Web based UI to Service
+                providers to enter their specifics using
+                Struts.</li>
+                     <li>Involved in requirement analysis,
+                requirement definition, design, build &amp; test
+                phases</li>
+                     <li>Developed Service side components
+                such as Domain objects, Utilities, helper classes
+                to accomplish business logic</li>
+                     <li>Used Java Design patterns such as
+                Service Locator, Singleton, Data Access and command
+                patterns to facilitate loosely coupled
+                design</li>
+                     <li>Unit Tested modules &amp;
+                software components</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Programmer/Software Engineer, Dallas, Tx.</Title>
+               <OrganizationName>NYKLine System Research Institute</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Extensively involved in
+                architecture and development of most middle ware
+                components using Struts framework using core Java
+                deployed on JBOSS application server.</li>
+                     <li>Produced business and functional
+                requirements, technical architectures, deployment
+                and post-deployment planning.</li>
+                     <li>Development using MVC, Data
+                access object, Singleton design patterns.</li>
+                     <li>Led initial data load and code
+                conversion for legacy data using stored procedures
+                &amp; shell scripts.</li>
+                     <li>Involved in database design,
+                writing SQL queries, triggers, stored procedures,
+                and invoking them from Components.</li>
+                     <li>Used Log4J components for
+                logging. Perform daily monitoring of log files and
+                resolve issues.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Software Engineer, Bangalore, India</Title>
+               <OrganizationName>MindTree Consulting Ltd</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Involved in documenting the
+                project using UML modeling diagrams such as Use
+                case, class, sequence &amp; component diagrams. 
+                </li>
+                     <li>Development involving of user
+                interfaces using JSP, Java Beans, CSS, custom tag
+                libraries, HTML and Java Script.</li>
+                     <li>Implemented the logging mechanism
+                using Log4j libraries.</li>
+                     <li>Involved in Database Schema
+                Design and coded the business functionalities using
+                PL/SQL</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>Oracle Certified Professional Java Programmer</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>BS</DegreeName>
+               <DegreeMajor>
+                  <Name/>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="vignette">
+            <CompetencyDisplayName>Vignette</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="groovy">
+            <CompetencyDisplayName>Groovy</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jax-ws">
+            <CompetencyDisplayName>JAX-WS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="pl-sql">
+            <CompetencyDisplayName>PL/SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="css">
+            <CompetencyDisplayName>CSS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jquery">
+            <CompetencyDisplayName>JQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="svn">
+            <CompetencyDisplayName>SVN</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="cvs">
+            <CompetencyDisplayName>CVS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="harvest">
+            <CompetencyDisplayName>Harvest</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="agile-scrum">
+            <CompetencyDisplayName>Agile SCRUM</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="object-oriented">
+            <CompetencyDisplayName>Object Oriented</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="waterfall">
+            <CompetencyDisplayName>Waterfall</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="tomcat">
+            <CompetencyDisplayName>Tomcat</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="spring">
+            <CompetencyDisplayName>Spring</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="struts">
+            <CompetencyDisplayName>Struts</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="logback">
+            <CompetencyDisplayName>Logback</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="log4j">
+            <CompetencyDisplayName>Log4j</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="junit">
+            <CompetencyDisplayName>JUnit</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

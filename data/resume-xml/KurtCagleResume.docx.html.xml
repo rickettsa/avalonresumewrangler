@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName/>
+            <FamilyName/>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>717-476-6727 972-838-3620 801-884-7127 214-585-2013 303-210-6823 703-472-9206 703-585-0392 301-941-1294 253-670-3550 703-981-8466 850-346-6566 703-342-9242 571-313-0237 801-792-6896 612-987-1670 703-281-0827 202-600-8464 734-379-9438 214-621-1229 615-305-8814 630-802-2629 443-837-8725 916-494-2531 214-384-6675 214-532-9875 571-409-0392 303-834-2509 214-642-0433 469-235-1614 703-926-4600 848-203-0153 847-226-9096 703-505-0907 214-924-9225 512-294-4352 703-766-3527 801-706-9731 972-375-7967 618-344-5329 801-550-9713 608-772-8930 985-415-2192 972-333-6795 512-228-7987 720-480-2163</Mobile>
+            <InternetEmailAddress>beckera@avalonconsult.com alexanderb@avalonconsult.com Greenb@avalonconsult.com greenc@avalonconsult.com chatfieldc@avalonconsult.com marinoc@avalonconsult.com coxd@avalonconsult.com hessd@avalonconsult.com Laniusd@avalonconsult.com guilarane@avalonconsult.com baronaf@avalonconsult.com simonf@avalonconsult.com kulkarnig@avalonconsult.com bakkenh@avalonconsult.com Sahaj@avalonconsult.com hilgerj@avalonconsult.com tingj@avalonconsult.com dropiewskij@avalonconsult.com crowderk@avalonconsult.com erismanK@avalonconsult.com botk@avalonconsult.com caglek@avalonconsult.com Puppalam@avalonconsult.com reddym@avalonconsult.com Rosenzweigm@avalonconsult.com rossm@avalonconsult.com brevoortm@avalonconsult.com greenm@avalonconsult.com Rosenbergm@avalonconsult.com nielsenn@avalonconsult.com sarvin@avalonconsult.com faviap@avalonconsult.com venkatap@avalonconsult.com atkinsr@avalonconsult.com Merrimanr@avalonconsult.com carsons@avalonconsult.com meffords@avalonconsult.com blackmans@avalonconsult.com halls@avalonconsult.com meffordsp@avalonconsult.com suganthis@avalonconsult.com beneket@avalonconsult.com reidyt@avalonconsult.com jewittt@avalonconsult.com Thayerw@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Information Architect</Title>
+               <OrganizationName>Major U.S Entertainment Corporation</OrganizationName>
+               <Description>
+                  <p>Mr. Cagle prepared a metadata strategy plan to help them more effectively capture and utilize the metadata they produce through television and movie streams. The strategy was built around a Linked-Data Semantic infrastructure utilizing RDF and MarkLogic.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Information Architect</Title>
+               <OrganizationName>Center for Medicare &amp; Medicaid Services (CMS)</OrganizationName>
+               <Description>
+                  <p>CMS has adopted MarkLogic as a core technology for building a national healthcare exchange. A central component of the solution is a Data Services Hub (DSH). Kurt's role included enhancing the design of the DSH, modeling data across multiple systems, building proofs of concept, and teaching the development team to take full advantage of MarkLogic.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Information Architect</Title>
+               <OrganizationName>Reed Technology &amp; Information Services (RTIS)</OrganizationName>
+               <Description>
+                  <p>Reed Tech is the leading service provider of Structured Product Labeling (SPL) solutions and has adopted MarkLogic as a core component of their SPL solutions for pharmaceutical companies. Mr. Cagle designed and created a MarkLogic Server-based enterprise management system and ontology manager for a services portal managing Standardized Product Labeling (SPL) documents, forms and components. He also developed a formal services system for delivering and integrating SPL documents with a Microsoft SharePoint front end developed by a third party vendor. Kurt designed and refined the metadata schemas used by the system to support complex versioning, workflow management, extensive search capabilities and deployment of a custom unit testing framework.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Information Architect</Title>
+               <OrganizationName>Church of Latter Day Saints (LDS)</OrganizationName>
+               <Description>
+                  <p>The LDS Church is developing a Gold Catalog application to serve as a central content repository for information published through multiple content management systems. The published content is delivered to multiple platforms including print, web and mobile. LDS plans to build their Gold Catalog solution on a MarkLogic Server.</p>
+                  <p>Mr. Cagle was the Information Architect on the project. He helped design a schema that can support the wide range of information for the different publishing systems and mediums.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Library of Congress</OrganizationName>
+               <Description>
+                  <p>The Library of Congress needed to find better ways to generate and manage metadata for their Legislative Content. The Library contracted with Avalon Consulting, LLC to lead a research project showing how text analytics, batch metadata management and distant metadata could be used to improve the management and findability of their content. Mr. Cagle showed the library the power of open source text analytics tools, like GATE and LingPipe. Kurt used these tools to extract witnesses from hearings and to automatically identify bill introductions from the Congressional Record. In addition to his work with text analytic tools, he showed the library how MarkLogic and XML schemas could be used to manage semantic web data.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Mr. Cagle was invited to participate as an unaffiliated expert within the Web Forms Working Group. In his role, Kurt made proposed modifications to the XForms 1.2 and 2.0 specifications. He also provided feedback from vendors, developers and users of XML technology towards creating new standards and resolving inconsistencies in existing ones. Mr. Cagle worked with the Web Forms group to build a forms language that can be readily incorporated into HTML. He promoted XForms and XRX (RESTful Services) based solutions globally.</Title>
+               <OrganizationName>Web Forms Working Group</OrganizationName>
+               <Description>
+                  <p>Invited Expert</p>
+                  <p>Mr. Cagle was invited to participate as an unaffiliated expert within the Web Forms Working Group. In his role, Kurt made proposed modifications to the XForms 1.2 and 2.0 specifications. He also provided feedback from vendors, developers and users of XML technology towards creating new standards and resolving inconsistencies in existing ones. Mr. Cagle worked with the Web Forms group to build a forms language that can be readily incorporated into HTML. He promoted XForms and XRX (RESTful Services) based solutions globally.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>XML Data Architect</Title>
+               <OrganizationName>U.S. National Archives</OrganizationName>
+               <Description>
+                  <p>Mr. Cagle designed and developed the XML schemas, data models and ontologies used by the US National Archives (NARA) ERA (Electronic Record Archives) project. In his role as XML Data Architect, he worked closely with NARA personnel to establish the base and preservation schemas for use within the ERA project. Mr. Cagle developed and promoted XML-centric architectures for the best utilization of the specification and built extensive XQuery and XSLT transformations within MarkLogic and eXist XML databases in order to create application logic, reports, and administration scripts.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Mr. Cagle worked in an editorial role for a number of O'Reilly properties. Kurt was an on-line editor for O'Reilly Broadcast where he helped produce articles, webcasts and podcasts on a range of topics including: cloud computing, distributed computing, software as a service and economic issues related to computing and the technology space. Mr. Cagle served as a managing editor for the XML.com website. In this role he was responsible for recruiting and coordinating industry leading writers and bloggers, developing editorial schedules and calendars, assigning and approving articles and editorial content and interviewing thought leaders in the XML space. Kurt has been writing and blogging for O'Reilly on XML, RIA, SOA, and Web Standards related content since 2003.</Title>
+               <OrganizationName>O'Reilly and Associates</OrganizationName>
+               <Description>
+                  <p>Editor</p>
+                  <p>Mr. Cagle worked in an editorial role for a number of O'Reilly properties. Kurt was an on-line editor for O'Reilly Broadcast where he helped produce articles, webcasts and podcasts on a range of topics including: cloud computing, distributed computing, software as a service and economic issues related to computing and the technology space. Mr. Cagle served as a managing editor for the XML.com website. In this role he was responsible for recruiting and coordinating industry leading writers and bloggers, developing editorial schedules and calendars, assigning and approving articles and editorial content and interviewing thought leaders in the XML space. Kurt has been writing and blogging for O'Reilly on XML, RIA, SOA, and Web Standards related content since 2003.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Mr. Cagle served as a Research Analyst in the XML Technologies for the Data Management Strategies Group. He provided industry and technology analysis and consulting services through his two quarterly reports and industry presentations.</Title>
+               <OrganizationName>Burton Group</OrganizationName>
+               <Description>
+                  <p>Research Analyst</p>
+                  <p>Mr. Cagle served as a Research Analyst in the XML Technologies for the Data Management Strategies Group. He provided industry and technology analysis and consulting services through his two quarterly reports and industry presentations.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Standards Architect</Title>
+               <OrganizationName>CASRAI</OrganizationName>
+               <Description>
+                  <p>Mr. Cagle developed XML Standards and Style Guides for this Canadian research industry consortium. As part of his duties, he created an x2o XML data publishing server and critical modules for an XForms generation tool.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory/>
+      <Qualifications>
+         <Competency abbrev="xquery">
+            <CompetencyDisplayName>XQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xforms">
+            <CompetencyDisplayName>XForms</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xproc">
+            <CompetencyDisplayName>XProc</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="semantic-web">
+            <CompetencyDisplayName>Semantic Web</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="drupal">
+            <CompetencyDisplayName>Drupal</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="aria">
+            <CompetencyDisplayName>ARIA</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ajax">
+            <CompetencyDisplayName>AJAX</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="svg">
+            <CompetencyDisplayName>SVG</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mozilla-xui">
+            <CompetencyDisplayName>Mozilla/XUI</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vbscript">
+            <CompetencyDisplayName>VBScript</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="lisp">
+            <CompetencyDisplayName>LISP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="haskell">
+            <CompetencyDisplayName>Haskell</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="python">
+            <CompetencyDisplayName>Python</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="perl">
+            <CompetencyDisplayName>PERL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="php">
+            <CompetencyDisplayName>PHP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-sql-server">
+            <CompetencyDisplayName>MS SQL Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="data-architecture">
+            <CompetencyDisplayName>Data Architecture</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="data-modeling">
+            <CompetencyDisplayName>Data Modeling</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="uml">
+            <CompetencyDisplayName>UML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ibm-rational-rose">
+            <CompetencyDisplayName>IBM Rational Rose</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="owl-semantic-modeling">
+            <CompetencyDisplayName>OWL Semantic Modeling</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="architecture">
+            <CompetencyDisplayName>Architecture</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="training-programs">
+            <CompetencyDisplayName>Training Programs</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Sean</GivenName>
+            <FamilyName>Hall</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>618-344-5329</Mobile>
+            <InternetEmailAddress>halls@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>ANSYS, Inc</OrganizationName>
+               <Description>
+                  <p>As the premier simulation software provider, ANSYS, Inc realized the need for an updated customer facing portal allowing for paid clients, students, and manufactures, the ability to manage downloads, gather product information, and interface with deeper ANSYS internal Siebel applications. The project was a replatform and redesign of their existing web presence, with Avalon's Unified Search Platform integrated with Google Search Appliance, to provide the highest caliber search experience.</p>
+                  <ul>
+                     <li>Served as Project Manager
+                coordinating both client and Avalon
+                resources.</li>
+                     <li> Conducted Stakeholder Interviews,
+                adhered to client methodologies for deployment and
+                release, assisted in QA efforts by helping with bug
+                fixes.</li>
+                     <li> Provided on demand and scheduled
+                communication and project tracking.</li>
+                     <li> Helped guide client down
+                procurement, development, and deployment cycles
+                with vast knowledge of the Vignette product
+                suite.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Marshall &amp;Isley Bank (now part of BMO Harris)</OrganizationName>
+               <Description>
+                  <p>The current M&amp;I Bank group of web sites (13 sites) re-plat formed from an internally developed CMS to existing Vignette architecture/structure. While the look-and-feel remained largely the same, Mr Hall and team provided technical knowledge and expertise. Mr Hall was the Project Manager and served oin other technical areas:</p>
+                  <ul>
+                     <li>Served as Project Manager
+                integrating both client and Avalon resources for
+                large-scale development activities while adhering
+                to M&amp;I specific methodologies.  </li>
+                     <li>Provided on-demand and scheduled
+                project tracking.</li>
+                     <li>As Technical Resource, provided
+                knowledge and insight in requirements gathering and
+                sign off, assisted in data migration, and helped
+                fix bugs raised by client review team.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Robert Half International</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Customized the Vivisimo search
+                application</li>
+                     <li>Performed tasks associated with
+                the integration of VCM with Avalon's customized
+                file indexer</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>NASA</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>In conjunction with NASA IT
+                support, performed the upgrade for VAP/VAB 7.3 and
+                is engaged with the team on the 7.4 upgrade</li>
+                     <li>Provided support &amp; performed
+                development tasks for NASA's Builder
+                application</li>
+                     <li>Integrated functionality with
+                webservices and worked with non-ootb reporting
+                functionality (custom JSP's with Oracle
+                Views)</li>
+                     <li>Facilitated the handoff of custom
+                features with full documentation and training to
+                client</li>
+                     <li>Developed a trouble ticket
+                application for the manned lunar module</li>
+                     <li>Using Vignette Application Builder
+                (VAB), created custom reports, wrote enhancements
+                for new releases of the application and cloned
+                applications for several different groups</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Worked with web forms and dialog
+                interactionPerformed analysis of current and
+                future Dialog architectureAssisted with the integration
+                between Dialog &amp; VCM for a large-scale
+                project.</Title>
+               <OrganizationName>Stelter</OrganizationName>
+               <Description>
+                  <p>Created event-driven customizations in Vignette Dialog</p>
+                  <ul>
+                     <li>Worked with web forms and dialog
+                interaction</li>
+                     <li>Performed analysis of current and
+                future Dialog architecture</li>
+                     <li>Assisted with the integration
+                between Dialog &amp; VCM for a large-scale
+                project.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Agilent</OrganizationName>
+               <Description>
+                  <p>Delivered a custom web application for content entry, scripted complex dialogs and surfaced user generated content in outgoing messages</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Harbert Realty</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Created customized Builder reports
+                &amp; application enhancements</li>
+                     <li>Performed production support for
+                their portal site</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>WellCare Health Plans, Inc.</OrganizationName>
+               <Description>
+                  <p>As a member of the development team, designed &amp; implemented an extensive call center application</p>
+                  <p>Prior to his engagement at WellCare, Mr. Hall worked within a variety of industries to customize Vignette's Collaboration product, VBCS. Focusing in areas from look-and-feel to workflow to notification, he successfully met project requirements at client sites, which included an international religious institution; QAD, a software developer; and a national aerospace engineering firm.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Pepsi</OrganizationName>
+               <Description>
+                  <p>Served as a member of the team that successfully merged international and domestic VAP intranets</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Intermountain Health Care (IHC)</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Developed VAP standard and custom
+                JSR-168 compliant portlets</li>
+                     <li>Worked with the dynamic portal to
+                render XML-based portlet content through a
+                combination of custom transformations
+                (XSL/XSLT/XPATH) and cascading style sheets
+                (CSS)</li>
+                     <li>Utilized J2EE to integrate IHC's
+                Physician Search Tool with a web service provided
+                by MapQuest, which surfaces core functionality
+                inherent to MapQuest via the IHC site including
+                pan, scan, zoom, and reverse directions through
+                manipulation of returned XML using custom JSP, XSL
+                and Javascript.</li>
+                  </ul>
+                  <p>Mr. Hall has developed customizations of Vignette's Dialog product, delivering to the specific needs of an international religious organization. Specific requirements included customizing database tables and variables (through XML), events triggering Dialogs (through the admin console), JSP pages querying specific data (through JDBC) and remote event calls (using HTTP event requests).</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Consultant, System Architecture</Title>
+               <OrganizationName>Verizon</OrganizationName>
+               <Description>
+                  <p>Mr. Hall served as the primary developer for several web and desktop-based applications. Some of his responsibilities included:</p>
+                  <ul>
+                     <li>Developing and supporting both
+                packaged and custom applications for a variety of
+                Verizon's business channels</li>
+                     <li>Creating custom data warehouse
+                reports using ETL and OLAP tools</li>
+                     <li>Developing custom web-based
+                applications in HTML, PHP and ASP</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName> </SchoolName>
+            </School>
+            <Degree>
+               <DegreeName> </DegreeName>
+               <DegreeMajor>
+                  <Name> </Name>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="microsoft-windows">
+            <CompetencyDisplayName>Microsoft Windows</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev=".net">
+            <CompetencyDisplayName>.NET</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xslt">
+            <CompetencyDisplayName>XSLT</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="php">
+            <CompetencyDisplayName>PHP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="j2ee">
+            <CompetencyDisplayName>J2EE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jsp">
+            <CompetencyDisplayName>JSP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dreamweaver">
+            <CompetencyDisplayName>Dreamweaver</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="netbeans">
+            <CompetencyDisplayName>NetBeans</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vignette">
+            <CompetencyDisplayName>Vignette</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="portal-7.x">
+            <CompetencyDisplayName>Portal 7.x</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="wem-7.x">
+            <CompetencyDisplayName>WEM 7.x</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="velocity">
+            <CompetencyDisplayName>Velocity</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="google-search-appliance">
+            <CompetencyDisplayName>Google Search Appliance</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="apache">
+            <CompetencyDisplayName>Apache</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="tomcat">
+            <CompetencyDisplayName>Tomcat</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="weblogic">
+            <CompetencyDisplayName>WebLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="object-oriented">
+            <CompetencyDisplayName>Object Oriented</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

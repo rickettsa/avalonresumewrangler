@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Tom</GivenName>
+            <FamilyName>Reidy</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>972-333-6795</Mobile>
+            <InternetEmailAddress>reidyt@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>President and Owner</Title>
+               <OrganizationName>Avalon Consulting, LLC</OrganizationName>
+               <Description>
+                  <p>President and Owner</p>
+                  <p>Mr. Reidy is the founder and president of Avalon Consulting, a professional services firm providing enterprise-class business solutions for the Web. As a Vignette Consulting Partner, Avalon utilizes the latest Vignette software to rapidly build, manage, and deploy Web applications such as enterprise portals and content management solutions. In addition to overseeing Avalon's business operations, Mr. Reidy maintains an active role as an applications architect, project manager, and Vignette implementations consultant on many client engagements. In the past three years, he has led three large enterprise portal projects for clients in the healthcare and non-profit business sectors.</p>
+                  <p>His most recent hands-on experience includes serving as lead Vignette architect on a supply chain management portal redesign project for a Fortune 50 Pharmaceuticals distributor. In this role, he manages a team of 12 developers. Environment: Vignette Application Portal 7.4, Vignette Content Management 7.5 and Dynamic Portal Module 7.5. This site was a highly personalized, dynamic, mission critical implementation.</p>
+                  <p>Regarded as a Vignette Application Builder (VAB) subject matter expert, Mr. Reidy was a presenter at the Vignette Village User Conference, demonstrating how to create a portal, without writing code, using VAB. More recently, he spearheaded conversion of existing Vignette Portal (VAP) installations to the new Vignette Dynamic Portal (DPM)/Vignette Content Management (VCM) architecture for numerous clients when the Vignette Dynamic suite of modules were first released. Mr. Reidy has since architected, lead, and worked on 5 major VCM/DPM/Portal client implementations.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Partner, Vice President</Title>
+               <OrganizationName>eVerge Group, Inc.</OrganizationName>
+               <Description>
+                  <p>Partner, Vice President</p>
+                  <p>As the former co-owner and president of the consulting and systems integration service provider, eVerge Group, Inc., Mr. Reidy understands business benefits and the challenges of achieving high client satisfaction in a large-scale consulting project environment. He displayed his leadership skills in account and project management for five major implementations. Internally, Mr. Reidy led the diversification of solutions services beyond the core ERP offerings, including the creation of a CRM practice that grew to $3M in 2 years. He established anchor accounts, key software partnerships, and hired senior sales and delivery managers to carry the business forward.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Partner, Practice Operations Manager</Title>
+               <OrganizationName>CSC (Computer Sciences Corp.)</OrganizationName>
+               <Description>
+                  <p>Mr. Reidy was hired into a small team chartered with establishing a national object-oriented application development practice. Mr. Reidy worked on the development of methodologies, technology frameworks and systems architectures and worked on the integration of these assets into a practice offering. After validating the product with early roll-outs as a project manager and architect in the field, Mr. Reidy then took on the direction of all consulting operations related to the practice, growing client base, revenue and staff to over 30 employees nationwide.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Product Architect, Lead Developer</Title>
+               <OrganizationName>EDS (Electronic Data Systems)</OrganizationName>
+               <Description>
+                  <p>Mr. Reidy led an international research team that developed a functional product prototype that formed the basis of a $100M spin-off of the INCASE research and development group into an EDS/Amdahl joint venture.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Mr. Reidy gained expertise in large-scale implementations as a section leader for a company-wide CAD/CAM software implementation. He continued to show his leadership abilities by leading and developing an Integrated Database Management System (IDMS)-based engineering configuration management and document/drawing project.</Title>
+               <OrganizationName>Hughes Aircraft Co., Space and Communications</OrganizationName>
+               <Description>
+                  <p>Technical Supervisor</p>
+                  <p>Mr. Reidy gained expertise in large-scale implementations as a section leader for a company-wide CAD/CAM software implementation. He continued to show his leadership abilities by leading and developing an Integrated Database Management System (IDMS)-based engineering configuration management and document/drawing project.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>University of Southern California</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>MS</DegreeName>
+               <DegreeMajor>
+                  <Name>in Electrical Engineering (cum laude)</Name>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>(cum laude)</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>BS</DegreeName>
+               <DegreeMajor>
+                  <Name>in Aerospace Engineering</Name>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications/>
+   </StructuredXMLResume>
+</Resume>

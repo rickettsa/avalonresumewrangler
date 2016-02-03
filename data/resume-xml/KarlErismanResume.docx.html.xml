@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Karl</GivenName>
+            <FamilyName>Erisman</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>615-305-8814</Mobile>
+            <InternetEmailAddress>erismanK@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>MarkLogic Consulting Services</Title>
+               <OrganizationName>MarkLogic Consulting Services</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Developed successful
+                MarkLogic/XQuery components of the Affordable Care
+                Act</li>
+                     <li>Tested code,  monitored server
+                performance, refactored code for better
+                performance, fixed defects</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Project Manager</Title>
+               <OrganizationName>Torchmark</OrganizationName>
+               <Description>
+                  <p>Coordinated WordPress site migration initiative</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>FedEx</OrganizationName>
+               <Description>
+                  <p>Analyst</p>
+                  <p>Identified and understood key business processes and systems to be integrated or replaced as part of an effort to consolidate information into a central content repository</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Developer</Title>
+               <OrganizationName>Wolters Kluwer Health</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Built a MarkLogic/XQuery metadata
+                registry, part of a new Digital Asset Management
+                System we created to modernize publishing
+                efforts</li>
+                     <li>Designed data conversion and
+                import processes to bring books and anatomical
+                charts into MarkLogic</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Informatics Corporation of America</OrganizationName>
+               <Description>
+                  <p>Healthcare informatics company focused on empowering clinicians with comprehensive information</p>
+                  <p>,</p>
+                  <p>3/2008 - 12/2011</p>
+                  <ul>
+                     <li>Served as chief engineer and
+                developer of a record linkage system used by ICA
+                for patient matching, a key component of the
+                company's medical informatics products</li>
+                     <li>Designed and developed RESTful web
+                service APIs to support a healthcare
+                interoperability platform</li>
+                     <li>Designed and developed relational
+                databases and database abstraction solutions used
+                by multiple development teams</li>
+                     <li>Responsible for initial efforts
+                with MarkLogic, developing proof-of-concept
+                prototypes that demonstrated its utility for our
+                business</li>
+                     <li>Developed the Patient Population
+                Search application, a web-based tool allowing users
+                to build complex queries interactively</li>
+                     <li>Developed administrative tools to
+                make configuration and auditing of applications
+                easier and more efficient</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Murray State University</OrganizationName>
+               <Description>
+                  <p>Public university, repeatedly ranked as one of the South's best</p>
+                  <p>Linux System Administrator</p>
+                  <p>,</p>
+                  <p>8/2006 - 3/2008</p>
+                  <ul>
+                     <li>Deployed, maintained, and
+                monitored Linux systems and services</li>
+                     <li>Designed and implemented software
+                to automate system administration tasks</li>
+                     <li>Demonstrated object-oriented
+                concepts, database abstraction, and design patterns
+                to developers</li>
+                     <li>Organized efficient deployment and
+                maintenance of new database and application
+                servers</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>O'Neil &amp; Associates, Inc.</OrganizationName>
+               <Description>
+                  <p>Producer of customized product support solutions and documentation</p>
+                  <p>,</p>
+                  <p>4/2004 - 8/2006</p>
+                  <ul>
+                     <li>Led maintenance and development
+                efforts for an E-leaning web application</li>
+                     <li>Conducted software configuration
+                management tasks and software releases</li>
+                     <li>Collaborated with database, user
+                interface, and application development teams to
+                support evolving client needs</li>
+                     <li>Interacted closely with Quality
+                Assurance team to ensure thorough testing and
+                defect tracking</li>
+                     <li>Designed and developed a user
+                feedback tracking component</li>
+                     <li>Designed databases to track user
+                progress and scoring for web-based training and
+                certification software</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName> </SchoolName>
+            </School>
+            <Degree>
+               <DegreeName> </DegreeName>
+               <DegreeMajor>
+                  <Name> </Name>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="data-modeling">
+            <CompetencyDisplayName>Data Modeling</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xquery">
+            <CompetencyDisplayName>XQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="indexing">
+            <CompetencyDisplayName>indexing</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="stored-procedures">
+            <CompetencyDisplayName>stored procedures</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="perl">
+            <CompetencyDisplayName>PERL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="css">
+            <CompetencyDisplayName>CSS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jquery">
+            <CompetencyDisplayName>JQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="svn">
+            <CompetencyDisplayName>SVN</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="transformation">
+            <CompetencyDisplayName>transformation</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="database-design">
+            <CompetencyDisplayName>database design</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="agile-scrum">
+            <CompetencyDisplayName>Agile SCRUM</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

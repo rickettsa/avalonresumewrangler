@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Joel</GivenName>
+            <FamilyName>Ruisi</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Software Engineer/Hadoop Engineer</Title>
+               <OrganizationName>Amovius, LLC</OrganizationName>
+               <Description>
+                  <p>Worked on enterprise level projects at General Electric responsible for processing 100,000+ turbine log records a minute, extracting crucial sensor data from these records, transforming the records into a query ready state, and loading the data into NoSql environments. Utilized Cassandra for large data sets, and MongoDB for dashboard/BI type queries. Developed platforms and applications for accessing and visualizing large sets of structured and unstructured data, including sensor data, log files, as well as structured db, xml and csv data. Implemented MDM solutions, specifically involved in data quality and data de-duplication. Involved in data integration implementation using Spring Integration, Mule and Talend. Using these tools, created BI applications for querying and visualization, as well as set up data structure for utilization of BI software like Tableau and Pentaho.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Software Engineer</Title>
+               <OrganizationName>Ensco, Inc</OrganizationName>
+               <Description>
+                  <p>Involved in developing data access applications using JDBC. Worked on both the front end and back end of search application development utilizing MarkLogic as backend data storage. Wrote and maintained XQuery responsible for querying large sets of XML. Created and maintained data indexes, data buckets, etc. for incredibly fast querying and data retreival. Using SQL, responsible for creating data structures within Oracle and MySql that reflect user requirements.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Software Quality Assurance</Title>
+               <OrganizationName>Ensco, Inc</OrganizationName>
+               <Description>
+                  <p>Responsible for setting up automated testing environment, including testing frameworks and testing implementation. Engineered testing framework on Hudson/Jenkins and ran automated testing utilizing Selenium. Responsible for investigating user requirements and verifying that the software met the requirements.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory/>
+      <Qualifications>
+         <Competency abbrev="datastax">
+            <CompetencyDisplayName>DataStax</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hadoop">
+            <CompetencyDisplayName>Hadoop</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hive">
+            <CompetencyDisplayName>Hive</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mongodb">
+            <CompetencyDisplayName>MongoDB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mule">
+            <CompetencyDisplayName>Mule</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="nodejs">
+            <CompetencyDisplayName>NodeJS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="pig">
+            <CompetencyDisplayName>Pig</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rapidminor">
+            <CompetencyDisplayName>RapidMinor</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="talend">
+            <CompetencyDisplayName>Talend</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vectorwise">
+            <CompetencyDisplayName>Vectorwise</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="css">
+            <CompetencyDisplayName>CSS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="eclipse">
+            <CompetencyDisplayName>Eclipse</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hdfs">
+            <CompetencyDisplayName>HDFS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hql">
+            <CompetencyDisplayName>HQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="json">
+            <CompetencyDisplayName>JSON</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="php">
+            <CompetencyDisplayName>PHP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rest">
+            <CompetencyDisplayName>REST</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="spring">
+            <CompetencyDisplayName>Spring</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xpath">
+            <CompetencyDisplayName>XPath</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xquery">
+            <CompetencyDisplayName>XQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

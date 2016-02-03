@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Alice</GivenName>
+            <FamilyName>Ricketts</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Avalon Consulting, LLC</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Provides infrastructure planning,
+                installation and support for Hadoop ecosystem
+                products on multiple clusters in the Amazon Cloud
+                for a major intelligence community agency. Wrote
+                automated deployment scripts using Puppet to
+                provide easy creation of new clusters</li>
+                     <li>Assisted in integration of a new
+                log file stream into lambda architecture data
+                storage environment at Real Gravity. Project
+                involved developing a data-triggered Oozie
+                workflow, creating partitioned tables in Amazon S3
+                and HDFS, and evaluating the Optimized Row Columnar
+                (ORC) file format for Hive table storage compared
+                to compressed text files</li>
+                     <li>Assisted in initial installation
+                of Hadoop cluster for Triad Retail Media. Developed
+                ingest pipeline including Pig and Hive scripts to
+                transform data. Created complex Hive queries for
+                client's initial use cases</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Java/HBASE/NoSQL Developer</Title>
+               <OrganizationName>Georgetown University, Imaging Science and Information Systems Center</OrganizationName>
+               <Description>
+                  <p>Major contributor to the design of a data collection and visualization system for the Amazon Cloud. Integrated NoSQL and relational databases with open source, COTS/GOTS and custom components to produce a functioning system</p>
+                  <p>Primary developer responsible for migration of existing Java/Grails web applications to the Amazon Cloud (EC2)</p>
+                  <p>Developed REST-based web services for database access for web applications using Java and Spring</p>
+                  <p>Designed table schema for HBase NoSQL database. Installed, configured and performed troubleshooting for HBase and underlying Hadoop file system</p>
+                  <p>Designed major changes to semantic coding ontology for OWLIM triplestore database. Changes allowed an application to be used for widely differing domain vocabularies with minimal software changes</p>
+                  <p>Assisted the Director of Engineering with scrum master duties (Agile methodology). Wrote user stories, estimated story points, prioritized backlog and scheduled tasks. Facilitated daily standup meetings in the absence of the director</p>
+                  <p>Conducted trade studies to determine best components, particularly NoSQL databases, full text indexing systems and translation software. Trade study template was requested by the customer for future use</p>
+                  <p>Assisted and presented at customer briefings, including Engineering Review Board, sprint review demonstrations and Final Operating Capacity (FOC) sign-off. Assisted and mentored other developers. Participated in Technical Exchange Meetings with customer and other contractors</p>
+                  <p>Worked with system administrators to resolve ongoing problems with legacy data collection system and to answer help desk tickets. Responsible for identifying and correcting several elusive software bugs</p>
+                  <p>Alice's commitment to customer satisfaction was recognized in a Certificate of Appreciation from Georgetown University</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Java Developer</Title>
+               <OrganizationName>WebOS.Com</OrganizationName>
+               <Description>
+                  <p>Designed and developed Java middleware for the company's ground-breaking HyperOffice groupware web application</p>
+                  <p>Made major contributions to the design of the product's unique group interface</p>
+                  <p>Developed an automatic code generator for portions of the project that significantly reduced development time for the prototype</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>B.S., Computer Science,</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>M.S.</DegreeName>
+               <DegreeMajor>
+                  <Name/>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName/>
+            </School>
+            <Degree>
+               <DegreeName>B.S.</DegreeName>
+               <DegreeMajor>
+                  <Name/>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="grails">
+            <CompetencyDisplayName>Grails</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="cs">
+            <CompetencyDisplayName>C#</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vbscript">
+            <CompetencyDisplayName>VBScript</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="css">
+            <CompetencyDisplayName>CSS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sparql">
+            <CompetencyDisplayName>SPARQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="accumulo">
+            <CompetencyDisplayName>Accumulo</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="postgresql">
+            <CompetencyDisplayName>PostGreSQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-sql-server">
+            <CompetencyDisplayName>MS SQL Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="tomcat">
+            <CompetencyDisplayName>Tomcat</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="netbeans">
+            <CompetencyDisplayName>NetBeans</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="svn">
+            <CompetencyDisplayName>SVN</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="cvs">
+            <CompetencyDisplayName>CVS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="maven">
+            <CompetencyDisplayName>Maven</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jenkins">
+            <CompetencyDisplayName>Jenkins</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="confluence">
+            <CompetencyDisplayName>Confluence</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jira">
+            <CompetencyDisplayName>JIRA</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="uml">
+            <CompetencyDisplayName>UML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="elasticsearch">
+            <CompetencyDisplayName>ElasticSearch</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rabbit-mq">
+            <CompetencyDisplayName>Rabbit MQ</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="apache-lucene">
+            <CompetencyDisplayName>Apache Lucene</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="linux">
+            <CompetencyDisplayName>Linux</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

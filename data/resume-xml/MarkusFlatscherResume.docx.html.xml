@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Markus</GivenName>
+            <FamilyName>Flatscher</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Johnson Health Tech</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Analyzed existing SQL schema as
+                well as node.js and PHP application code</li>
+                     <li>Remodeled relational database
+                schema to JSON structures for MongoDB</li>
+                     <li>Transformed relational data to
+                JSON for MongoDB ingestion using mongify and custom
+                JavaScript code</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>SAH Archipedia Lead Technical Architect and Developer</Title>
+               <OrganizationName>University of Virginia Press</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Took project from discovery
+                through development to production release</li>
+                     <li>Managed an international team of
+                scholars, administrative staff and executives, web
+                developers, print-to-XML conversion vendors,
+                graphic designers, graduate students and 100+
+                domain experts for metadata review and QA/QC</li>
+                     <li>Solely in charge of all server-
+                and client-side code</li>
+                     <li>Wrote and maintained RelaxNG and
+                ISO Schematron</li>
+                     <li>Processed hierarchical controlled
+                vocabularies to SKOS</li>
+                     <li>Devised and implemented
+                machine-learning-based metadata augmentation and
+                auto-tagging mechanisms based on controlled
+                vocabularies</li>
+                     <li>Devised and implemented
+                semi-automated geospatial metadata workflows and
+                human domain-expert review workflows</li>
+                     <li>Built, trained  and supervised a
+                community of 100+ domain-expert volunteers for
+                metadata/content creation and approval in
+                stages</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Editor and Developer</Title>
+               <OrganizationName>ROTUNDA XML</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Handled all stages of XML data
+                flow from vendor conversion (from hardcopy and PDF)
+                through in-house QA/QC to MarkLogic
+                ingestion</li>
+                     <li>Wrote server- and client-side
+                production code involving challenging CSS3
+                positioning issues</li>
+                     <li>Wrote complex multi-stage XSLT
+                transforms for XML-to-XML, Word-to-XML, and
+                PDF-to-XML data conversion</li>
+                     <li>Implemented near-duplicate
+                detection across a corpus of 100K+ documents</li>
+                     <li>Developed a range of QA and
+                workflow tools</li>
+                     <li>Integrated an 18th century American English
+                dictionary with XML database backend to enable
+                collaboratively maintained historic spellchecker
+                feature.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>The Brenner Archives University of Innsbruck, Austria</OrganizationName>
+               <Description>
+                  <p>Electronic Archival Editor</p>
+                  <ul>
+                     <li>Initiated and managed transition
+                of entire project from proprietary database format
+                (Folio) to XML</li>
+                     <li>Wrote backend and frontend code
+                for rendering of complex diplomatic
+                transcriptions</li>
+                     <li>Acquired considerable skills in
+                InDesign, typography, print layouting, and
+                XML-driven InDesign publishing workflows</li>
+                     <li>Acquired considerable experience
+                in physical and digital preservation of manuscripts
+                and digital representations, as well as with
+                cataloguing of historic artifacts and their
+                digitized proxies</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>Innsbruck</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>M.A.</DegreeName>
+               <DegreeMajor>
+                  <Name>Leopold-Franzens University</Name>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="xslt">
+            <CompetencyDisplayName>XSLT</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="data-modeling">
+            <CompetencyDisplayName>Data Modeling</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="schema-development">
+            <CompetencyDisplayName>schema development</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="css">
+            <CompetencyDisplayName>CSS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jquery">
+            <CompetencyDisplayName>JQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xquery">
+            <CompetencyDisplayName>XQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="relaxng">
+            <CompetencyDisplayName>RelaxNG</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="python">
+            <CompetencyDisplayName>Python</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="perl">
+            <CompetencyDisplayName>PERL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="svn">
+            <CompetencyDisplayName>SVN</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="git">
+            <CompetencyDisplayName>Git</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mongodb">
+            <CompetencyDisplayName>MongoDB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

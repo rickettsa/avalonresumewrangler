@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Christopher</GivenName>
+            <FamilyName>Marino</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Fairfax County</OrganizationName>
+               <Description>
+                  <p>Fairfax County, the Washington metropolitan area's largest county, with a population of about 1 million people, has developed a repository for land use data that will make it easier for county employees, land developers and residents to access real-time information about zoning changes, county land ordinances and property history.</p>
+                  <p>The land data repository, based on the MarkLogic 5 database, will boost the productivity of county employees who have to search through multiple databases to find pertinent information and give residents, who now have to search through a plethora of websites for home history data, a single website to access information, according to a Fairfax County IT executive.</p>
+                  <p>Chris worked as a consultant on the project helping the county develop a solution to convert over 500 content sources into the MarkLogic repository. In his role, Chris:</p>
+                  <ul>
+                     <li>Analyzed the data related to
+                Mainframe and Relational Databases to ingest them
+                into MarkLogic</li>
+                     <li>Used MarkLogic data tools like
+                RecordLoad, Corb, and XQSync to load and process
+                the data</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>National Archives ERA Program</OrganizationName>
+               <Description>
+                  <p>The Electronic Records Archives (ERA) is NARA's flagship initiative to provide a long-term system solution for the preservation of, and access to the permanently valuable electronic records of the Federal government.</p>
+                  <p>Chris was brought in as a consultant to review the initial implementation and make recommendations for improvements. As part of his duties on the project, Chris:</p>
+                  <ul>
+                     <li>Developed a new process for
+                migrating content from the production server to
+                test servers.  The new process took 10% of the time
+                the original migration process took.</li>
+                     <li>Led an analysis project to review
+                the ERA system.  Produced a report providing
+                recommendations to improve security, application
+                performance and coding practices.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Avalon Unified Search and Analytics Platform</OrganizationName>
+               <Description>
+                  <p>The Unified Search and Analytics Platform (USAP) is Avalon's product offering to allow companies to provide big data analytics against structured and unstructured data repositories. USAP offers the latest search features in combination with reports, charts, graphs and dashboards.</p>
+                  <ul>
+                     <li>Developed demos using data from
+                Government Publishing Office and Wikipedia.</li>
+                     <li>Developed processes to integrate
+                USAP against new repositories.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>American Medical Association</OrganizationName>
+               <Description>
+                  <p>AMA was looking to improve the search capabilities on their website. They contracted with Project Performance Corporation and Avalon Consulting, LLC to improve the information architecture and create a website search that worked for their constituents. Mr. Marino joined the project as a senior IDOL consultant. Chris developed a custom solution for converting Category fields into Parametric fields using IndexTasks and a Lua script</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>The National Science Foundation</OrganizationName>
+               <Description>
+                  <p>The project involved implementing a cutting edge search tool that allows constituents to search</p>
+                  <p>research.gov (</p>
+                  <p>the central portal for all scientific research activities for the federal government) in order to find information about proposals, scientists and research trends. Mr. Marino's responsibilities included:</p>
+                  <ul>
+                     <li>Led the implementation of this
+                large, multi-repository Autonomy IDOL search
+                solution</li>
+                     <li>Designed and implemented a
+                site-wide search exposing Interwoven content inside
+                of an Oracle Portal  </li>
+                     <li>Implemented an expert search
+              solution calledFind Reviewers that allows NSF program officers to
+              identify experts to review proposal submissions using
+              information from previous proposal submissions to NSF
+              as well as articles in publicly available scientific
+              journals  </li>
+                  </ul>
+                  <p>The search tool aggregated information from over 20 oracle tables and 200,000 custom-parsed PDF proposals</p>
+                  <p>Designed and configured the IDOL application to run on multiple servers in non-mirrored mode to optimize performance</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Constellation Energy Group</OrganizationName>
+               <Description>
+                  <p>As part of the retooling of their company intranet, the client needed a search solution that exposed content from as many as 20 different repositories in 6 separate application silos. Mr. Marino was responsible for the following tasks:</p>
+                  <ul>
+                     <li>Designed and implemented the
+                search solution using IDOL inside of a Vignette
+                Portal</li>
+                     <li>Configured fetches to retrieve
+                information from Vignette Portal, Documentum, and
+                Vignette Content Management  </li>
+                  </ul>
+                  <p>The implementation used Autonomy's Omnigroup server to handle mapped security against a Sun One LDAP and an Active Directory user store</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Media General</OrganizationName>
+               <Description>
+                  <p>The client needed to ensure that the upgrade of their IDOL search tool, which powers search on over 24 different public web properties, did not impact any of their web properties. Mr. Marino's tasks included:</p>
+                  <ul>
+                     <li>Provided expertise on both the
+                upgrade and tuning of the IDOL
+                implementation</li>
+                     <li>Designed a new IDOL architecture;
+                installed &amp; implemented fetch modules for 20
+                different repositories</li>
+                     <li>Created load tests to tune the
+                installation</li>
+                     <li>Provided guidance for enhancing
+                the indexing process setup and configuration</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>The Intra-American Development Bank</OrganizationName>
+               <Description>
+                  <p>The project entailed upgrading the search technologies from K2 to the latest version of Autonomy's IDOL server. Mr. Mario's tasks included:</p>
+                  <ul>
+                     <li>Designed and implemented the new
+                IDOL infrastructure that included support for
+                multiple languages (Spanish and English)</li>
+                     <li>Updated the indexing approach from
+                a site crawl to an asset-based search using ODBC
+                fetch modules to pull information directly from
+                custom content management systems</li>
+                     <li>Provided expertise in enhancing
+                the front-end search results to offer guided
+                navigation as part of the search solution</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>The American Chemical Society</OrganizationName>
+               <Description>
+                  <p>The project was an implementation of a state-of-the-art search solution for the BEA Portal website. Mr. Marino's responsibilities entailed:</p>
+                  <p>Designed, configured, and implemented a complex IDOL architecture that included four servers indexing over 1MM pieces of content</p>
+                  <p>The architecture included multiple IDOL servers integrated with DIH and DAH for scalability as well as redundancy of the indexes</p>
+                  <ul>
+                     <li>Completed the setup and
+                configuration of the indexing fetches and
+                connectors  </li>
+                     <li>Supported the load testing and any
+                issues identified during the implementation phase
+                of the project</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Ameriprise</OrganizationName>
+               <Description>
+                  <p>In order to solve performance problems with their intranet search tool, Mr. Marino performed the following:</p>
+                  <ul>
+                     <li>Installed and configured
+                Autonomy's IDOL server and connectors like File
+                System Fetch</li>
+                     <li>Led the load testing and tuning
+                activities for the newly configured Idol
+                server</li>
+                     <li>Created JMeter scripts to simulate
+                load against the Idol configuration and worked with
+                other search architects to tune the server and
+                resolve performance issues</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>The Department of Homeland Security</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Worked with the client to identify
+                a complete list of issues with the current
+                implementation of Vignette Collaboration</li>
+                     <li>Determined requirements for adding
+                additional features</li>
+                     <li>Resolved all major implementation
+                issues and assisted with the upgrade
+                strategy</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Cohn &amp; Wolfe</OrganizationName>
+               <Description>
+                  <p>Performed tasks related to redeveloping the existing VBCS site as part of their upgrade to 7.1</p>
+                  <p>Developed many customizations to extend the site's functionality</p>
+                  <ul>
+                     <li>Assisted in developing their
+                heavily customized UI</li>
+                     <li>Participated in the deployment of
+                an SSO solution using IIS, Active Directory and
+                SSL</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Bearing Point</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Served as a Subject Matter Expert
+                (SME) on the upgrade of one of the largest VBCS
+                implementations in the world</li>
+                     <li>Assisted in the deployment of
+                Autonomy's distributed solution to support search
+                amongst their multiple instances of VBCS involving
+                over a terabyte of data</li>
+                     <li>Provided guidance on administering
+                and optimizing their VBCS environment</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Vignette Corporation</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Served as one of two outside
+                developers asked to create a new customer-facing
+                collaboration site, designed to power a new
+                collaboration community for their partners and
+                customers (http://connect.vignette.com)</li>
+                     <li>Created multiple customizations
+                including custom objects, Jython scripts, and
+                custom tag methods using Java classes</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName/>
+            </School>
+            <Degree>
+               <DegreeName>BA</DegreeName>
+               <DegreeMajor>
+                  <Name/>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="autonomy-idol">
+            <CompetencyDisplayName>Autonomy IDOL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dih">
+            <CompetencyDisplayName>DIH</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dah">
+            <CompetencyDisplayName>DAH</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vignette">
+            <CompetencyDisplayName>Vignette</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xquery">
+            <CompetencyDisplayName>XQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xslt">
+            <CompetencyDisplayName>XSLT</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="asp.net">
+            <CompetencyDisplayName>ASP.NET</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="load-balancing">
+            <CompetencyDisplayName>Load Balancing</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

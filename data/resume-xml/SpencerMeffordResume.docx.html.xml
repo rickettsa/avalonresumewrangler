@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Spencer</GivenName>
+            <FamilyName>Mefford</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>801-550-9713</Mobile>
+            <InternetEmailAddress>meffordsp@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Snap-on Tools</OrganizationName>
+               <Description>
+                  <p>Snap-on required a custom application to manage semantic relationships of terms used across its many entities. This application utilized SPARQL and MarkLogic Semantics in a novel way to display and modify the relationships between terms and taxonomies. Spencer architected and developed an AngularJS application that interacted with MarkLogic and SPARQL through web services.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>FedEx</OrganizationName>
+               <Description>
+                  <p>FedEx needed a solution to manage digital assets that it owned and replace an expensive third-party solution. Spencer architected and developed an AngularJS application from the ground up that offered the same features and functionality as the third-party option. The data was stored in MarkLogic, and Spencer worked closely with the data architect to help design a REST API that AngularJS could use to interact with.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>The RanchBook</OrganizationName>
+               <Description>
+                  <p>The RanchBook is an online social community for ranchers and sportsmen to connect with each other. Community members can share media and information with each other about hunting property, leases, gear, and other outdoor topics.</p>
+                  <p>Spencer provided support to The RanchBook as a business and technology analyst for two different projects. He researched and provided recommendations on the following topics:</p>
+                  <ul>
+                     <li>System architecture</li>
+                     <li>Payment gateways</li>
+                     <li>Revenue models</li>
+                     <li>Taxation</li>
+                     <li>ESB and orchestration</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>ManeGait Therapeutic Horsemanship</OrganizationName>
+               <Description>
+                  <p>At ManeGait Therapeutic Horsemanship, children and adults with disabilities move beyond their boundaries through the healing power of the horse and the dedication of a professional, caring community.</p>
+                  <p>ManeGait was struggling to manage the content of their website which was built using a legacy content management system. The content administrators found the system to be confusing and it was difficult for them to update content on the site. Mr. Mefford architected a simpler CMS solution using WordPress and the Genesis Framework by Studiopress. He implemented the new system for ManeGait and designed a more modern look and feel for the site. ManeGait now enjoys a cleaner content management workflow and feels more confident in making changes to their website.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>St. Jude Children's Research Hospital / ALSAC</OrganizationName>
+               <Description>
+                  <p>St. Jude Children's Research Hospital is a world leader in the research and treatment of pediatric catastrophic diseases. Its web presence is a necessary tool in marketing and collecting donations from people around the world. St. Jude uses the OpenText v8 ECM to manage many different web sites and donation forms.</p>
+                  <p>Spencer assisted St. Jude in managing several of these different sites and provided user interface development expertise. He participated in some of the following projects:</p>
+                  <ul>
+                     <li>Architected a solution to make
+                www.StJude.org mobile friendly and developed the
+                necessary responsive style sheets to implement the
+                solution.</li>
+                     <li>Developed a jQuery plugin that
+                allowed St. Jude to track user activity in
+                Omniture's Site Catalyst analytics tool.  The
+                plugin reduced work load on the company's content
+                team and created a consistent way to track specific
+                behaviors.</li>
+                     <li>Worked on a team to develop a
+                donation campaign called Thanks and Giving. 
+                Spencer Utilized jQuery, HTML 5, and CSS to create
+                a modern and rich web experience that St. Jude used
+                to promote its campaign.</li>
+                     <li>Improved the performance of legacy
+                jQuery code by utilizing best practices and modern
+                techniques.</li>
+                     <li>Worked with the UI and development
+                teams on the Optimized Card Experience site,
+                architected reusable solutions to UI related
+                problems, and brought modern web technologies to
+                the project.  Consulted with the development team
+                on many ways to optimize the site using front-end
+                and back-end methods.</li>
+                     <li>Assisted many other developers
+                with UI related problems and provided counsel on UI
+                best practices.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Avalon Consulting, LLC.</OrganizationName>
+               <Description>
+                  <p>Mr. Mefford managed the re-design and migration of the Avalon Consulting, LLC website. The site was built using a blend of technologies including Liferay CMS to host the corporate content, and WordPress to manage the company's Newsroom and Blogs. Spencer was the sole developer on the project, performed some of the following duties:</p>
+                  <ul>
+                     <li>Utilized the Liferay SDK to build
+                a custom theme</li>
+                     <li>Developed reusable content widgets
+                using Liferay's structured content tools</li>
+                     <li>Used jQuery to write custom UI
+                widgets with a focus on code reuse</li>
+                     <li>Built a Liferay hook to customize
+                features of the portal</li>
+                     <li>Managed two WordPress sites using
+                Multisite</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Wolters Kluwer Health</OrganizationName>
+               <Description>
+                  <p>Wolters Kluwer Health is a leading provider of information for professionals and students in medicine, nursing, allied health and pharmacy. Wolters Kluwer needed to create a digital asset management system to store binary assets and xml from all of their publications (over 6 terabytes of information). Their goal for this system was to give editors access to historical content so that it could be managed and reused across all of their products.</p>
+                  <p>Spencer joined the team as the UI architect and an XQuery developer. Some of Spencer's responsibilities included:</p>
+                  <ul>
+                     <li>Developed XQuery application layer
+                using MarkLogic and xqRAILS.</li>
+                     <li>Wrote XQuery functions to fetch
+                and format data from MarkLogic.</li>
+                     <li>Developed JavaScript API for
+                application's Ajax functionality.</li>
+                     <li>Implemented design using HTML 5
+                and Less CSS.</li>
+                     <li>Designed look and feel of the
+                application based on the client style guide.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>The Stelter Company</OrganizationName>
+               <Description>
+                  <p>Mr. Mefford developed custom Liferay portlets for Stelter's client facing Liferay portal using the Liferay SDK. Stelter needed to add a custom report to the portal that pulled information for clients and for internal Stelter employees from an external database. Spencer developed this portlet, making it community aware in order to reduce code duplication. That way the portlet would behave differently depending on which community it was placed in, fetching client specific and aggregate data for clients and employees.</p>
+                  <p>Stelter had utilized Liferay Hooks to extend the Document Library by customizing some of its JSP's, but with the upgrade to Liferay 6.1 that functionality no longer worked properly. Spencer architected a solution by building a custom portlet that utilized the Liferay API's to mimic the Document Library, but did not affect the actual core Document Library functionality. The client was able to enjoy a portlet that met their needs more specifically and would be less likely affected by future Liferay upgrades.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>SiteQuest Technologies</OrganizationName>
+               <Description>
+                  <p>SiteQuest Technologies provides compliance software called Compliance WatchDog that is used to monitor and archive Social Media, Social Networking accounts, websites and blogs.</p>
+                  <p>Mr. Mefford worked as the UI Architect for their web applications. In his role he designed and developed the UI side of a web based application that monitors and archives a financial planner's Facebook, Twitter, and LinkedIn accounts. He wrote Java based web crawlers for Twitter and LinkedIn. He was also responsible for all HTML, CSS, and JavaScript, and regularly wrote custom jQuery widgets to improve application usability.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>iCentris</OrganizationName>
+               <Description>
+                  <p>iCentris is a pioneer and leading provider of direct sales force automation (DSFA) solutions and a leading provider of applications for business intelligence and standards-based integration.</p>
+                  <p>As the UI Architect and Java developer, Mr. Mefford utilized cutting edge UI technology to create rich Internet applications for the MLM industry.</p>
+                  <p>Proficient in jQuery, CSS, and Ajax, Spencer regularly wrote custom jQuery plugins for the application. In addition to his UI work, Spencer developed Java based web applications using Spring MVC.</p>
+                  <p>Spencer also worked extensively with Liferay to create a custom portal. iCentris wanted to harness Liferay's core API's and data structures by creating custom portlets that utilized those services to extend the portal.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName/>
+            </School>
+            <Degree>
+               <DegreeName>B.A.</DegreeName>
+               <DegreeMajor>
+                  <Name/>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="angularjs">
+            <CompetencyDisplayName>AngularJS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="grunt">
+            <CompetencyDisplayName>Grunt</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="yeoman">
+            <CompetencyDisplayName>Yeoman</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="bower">
+            <CompetencyDisplayName>Bower</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jasmine">
+            <CompetencyDisplayName>Jasmine</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="karma">
+            <CompetencyDisplayName>Karma</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="protractor">
+            <CompetencyDisplayName>Protractor</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jquery">
+            <CompetencyDisplayName>jQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jquery-ui">
+            <CompetencyDisplayName>jQuery UI</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html-5">
+            <CompetencyDisplayName>HTML 5</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="css-3">
+            <CompetencyDisplayName>CSS 3</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sass,less">
+            <CompetencyDisplayName>Sass,Less</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="less">
+            <CompetencyDisplayName>Less</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="responsive-design">
+            <CompetencyDisplayName>Responsive Design</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mobile-design">
+            <CompetencyDisplayName>Mobile Design</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="bootstrap">
+            <CompetencyDisplayName>Bootstrap</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="modernizr">
+            <CompetencyDisplayName>Modernizr</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="cross-browser-issues">
+            <CompetencyDisplayName>Cross-Browser Issues</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="adobe-photoshop">
+            <CompetencyDisplayName>Adobe Photoshop</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="javascript">
+            <CompetencyDisplayName>JavaScript</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="node.js">
+            <CompetencyDisplayName>Node.js</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jsp">
+            <CompetencyDisplayName>JSP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xquery">
+            <CompetencyDisplayName>XQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="php">
+            <CompetencyDisplayName>PHP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="velocity">
+            <CompetencyDisplayName>Velocity</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="liferay">
+            <CompetencyDisplayName>Liferay</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="opentext-vcm">
+            <CompetencyDisplayName>OpenText VCM</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="wordpress">
+            <CompetencyDisplayName>WordPress</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="apache-web-server">
+            <CompetencyDisplayName>Apache Web Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="tomcat">
+            <CompetencyDisplayName>Tomcat</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="aws">
+            <CompetencyDisplayName>AWS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="bash">
+            <CompetencyDisplayName>Bash</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

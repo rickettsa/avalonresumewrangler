@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Darrel</GivenName>
+            <FamilyName>Cox</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>703-585-0392</Mobile>
+            <InternetEmailAddress>coxd@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>America's Test Kitchen</OrganizationName>
+               <Description>
+                  <p>America's Test Kitchen is a real 2,500 square foot test kitchen located just outside of Boston that is home to more than three dozen full-time cooks and product testers. Their mission is simple: to develop the absolute best recipes for all of your favorite foods.</p>
+                  <p>America's Test Kitchen asked for search interface for their archive (PDF) and K4 based content. Darrel worked with Marklogic Professional Services and ATK and was expected to perform these task:</p>
+                  <ul>
+                     <li>Assist with analysis and
+                modeling on the provided content for search.</li>
+                     <li>Assist with best practices for
+                content transformation, focused around PRISM and
+                recipe XML</li>
+                     <li>Ingest the content into
+                MarkLogic</li>
+                     <li>Provide an initial search
+                interface for review, refinement, and tuning</li>
+                     <li>Provide a simple export for
+                exporting a single document from the search results
+                set to a local rich text document</li>
+                     <li>Work with the America's Test
+                Kitchen team on content and search within the scope
+                of this engagement</li>
+                     <li>Document the accomplished
+                work</li>
+                     <li>Perform a knowledge transfer
+                with the America's Test Kitchen team</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Warner Bros</OrganizationName>
+               <Description>
+                  <p>Warner Bros. needed a user-friendly solution that would enable sales personnel to conduct a free-form text search for WB classic titles to verify distribution rights for exhibitors. Administrators of the WB Classics site also need the ability to add new titles and manage custom fields. Darrel's primary responsibility was to design, develop and unit test the back-end components for the WB Classics. This included the creation of a separate MarkLogic database/application that will accept a data feed with content for ingestion. The data feeds were in standard XML and the Microsoft Excel XML formatted. Darrel wrote services to transform the data and store it in the MarkLogic database.</p>
+                  <p>These services included processing to :</p>
+                  <ul>
+                     <li>Ingesting the content from
+                multiple sources</li>
+                     <li>Service to perform updates to
+                the data as new data came in, but only individual
+                elements that had not been previously modified
+                manually from the UI.</li>
+                     <li>Search with XML and/or JSON
+                output</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Snap-On</OrganizationName>
+               <Description>
+                  <p>Snap-on is a leading global innovator, manufacturer and marketer of</p>
+                  <p>tools, diagnostics and repair information and systems solutions for professional users performing critical tasks. Darrel was responsible for the design, development and implementation of Marklogic services that migrated Snap-On's current Suretrack Application to Marklogic. He also wrote the deployment guide for automatic server configuration, deployment processing scripts and the document REST service using CPF with Marklogic's REST API. The solution required cross communication between their .NET UI, Marklogic 4.2 and v6 (REST API) servers.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>a leading provider of scientific, engineering, systems integration and technical services and solutions</Title>
+               <OrganizationName>SAIC/US Government Agency</OrganizationName>
+               <Description>
+                  <p>SAIC</p>
+                  <p>a leading provider of scientific, engineering, systems integration and technical services and solutions</p>
+                  <p>is task for the development of the Allied Discovery and Retrieval (ADR) subsystem that provides consumer services to search, order, and retrieve intelligence products within the Allied Federated Access (AFA) system. Mr. Cox worked as one of the MarkLogic developers on the project where he focused on developing the Search Service, a service to Export Search Request to CSV, XML or KML. The XSLT transformed KML output can open directly in Google Earth. Mr. Cox also worked on defining and configuration of the integration of MarkLogic with HP's ArcSight Logger for system monitoring.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Patheos</OrganizationName>
+               <Description>
+                  <p>Patheos.com is the premier online destination to engage in the global dialogue about religion and spirituality and to explore and experience the world's beliefs.</p>
+                  <p>Mr. Cox lead the initial effort of upgrading the Amazon AWS Cloud (Rightscale) deployment of Solr 1.4.0 to Solr 4.0.0 for patheos.com. That included the integration with Avalon's USP product, indexing configuration using the DataImportHandler for JDBCDataSource and FileDataSource for full and incremental imports.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>McGraw Hill Education</OrganizationName>
+               <Description>
+                  <p>McGraw Hill Education a leader in education publishing is architecting and developing an entirely new publishing system that spans the entire lifecycle of acquiring, editing, and producing educational textbooks and other materials. The new system uses MarkLogic Server as a core repository and technology for the system. Mr. Cox was a lead developer on the project and focused on developing sophisticated metadata management capabilities to tag content for compliance to Federal and State educational standards, developed the federated search service, maintained the initial environment build/deployment process and was the leading coding standards reviewer for the Marklogic application modules.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Informatics Corporation of America (ICA)</OrganizationName>
+               <Description>
+                  <p>ICA a leader in delivering healthcare solutions that enable transformation in a dynamically changing clinical landscape were new to Marklogic deployments and were manually defining all the required components in their environments. That included their Databases, App Servers, Application Modules, Range Index and the loading of seed and patient data using the Marklogic Admin Console. That method was time consuming and prone to mistakes so they wanted a more fail-safe automated process. Darrel was task to develop the new deployment/build process for this ever-expanding Marklogic environment. They wanted a process that would allow them to add new components with minimal effort using tools they were already familiar with. Using ANT, XML configuration files along with the ant tasks for xml and http Darrel was able to automate that process to a simple ant command line call.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Warner Brothers</OrganizationName>
+               <Description>
+                  <p>A large systems integrator was looking to create a Proof of Concept to show how Warner Brothers could repurpose their content using MarkLogic. Darrel Cox worked as the lead MarkLogic developer to help implement this solution. In his role, Darrel worked with the integrator to design the system, create the content integrations and develop the core search. Darrel developed all of the content loading and content transformation processes. Darrel taught the team the search and content retrieval APIs and showed the team how to implement them. Finally, Darrel developed the process for downloading of Proxy Trailer and Thumbnail location URLs via a SOAP request.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Standard &amp; Poors Global Credit Portal</OrganizationName>
+               <Description>
+                  <p>Darrel worked with MarkLogic professional services to develop a two-month long proof of concept for the Global Credit Portal. This proof of concept included faceted search across entities, securities and research; custom publishing and dashboards for the portal. Darrel pulled the content from Oracle and imported it into MarkLogic server. Darrel also helped design and develop the faceted search on the POC site.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>XPlana</OrganizationName>
+               <Description>
+                  <p>MarkLogic Professional Services was working with XPlana to extend their web based learning tool using MarkLogic. Darrel Cox worked with the professional services team to develop a too that automatically imports taxonomies from external files into MarkLogic server. The solution allows taxonomies to be updated off-line and synchronized using MarkLogic library services.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Army Mobile Search</OrganizationName>
+               <Description>
+                  <p>Darrel created a mobile search tool for Army documents stored in MarkLogic server. This mobile search tool was use to show organizations within both the Army and the Navy how mobile search can be delivered on MarkLogic server.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>National Science Foundation, Arlington, VA</OrganizationName>
+               <Description>
+                  <p>The National Science Foundation distributes $6 billion in research grants each year and needed to help their program managers find qualified reviewers for research proposals. They have launched</p>
+                  <p>www.research.gov</p>
+                  <p>as the central portal for all scientific research activities for the federal government. The NSF engaged Avalon to develop an innovative search tool to find expert reviewers based on previous proposal submissions to NSF as well as articles in publically available scientific journals.</p>
+                  <p>Mr. Cox served as the lead search architect on an expert search application used to manage the selection of reviewers for the grant proposal process. He was responsible for the overall design of the solution (including system architecture and application design). He was also responsible for configuring IDOL to index and serve up search results for over 9 gigabytes of unstructured data. Mr. Cox developed a custom indexing process for PDF files. This process used custom scripts to parse over 200,000 PDF documents into sections defined by each documents unique table of contents. The output of this process merged with metadata from a database to produce newly structured XML documents, which feeds the IDOL indexing routines.</p>
+                  <p>Mr. Cox also tuned the performance of the search engine. He helped select the new server architecture. He made suggestions to improve the queries to the search application. He restructured the indices to minimize erroneous terms and redesigned the original index structure to save 2 gigabytes of index size. These improvements resulted in a fivefold increase in query response time.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Becton, Dickinson and Company, San Diego, CA</OrganizationName>
+               <Description>
+                  <p>Mr. Cox served as the lead architect on a project to complete the migration of the internal and external BD searches onto the Autonomy platform. He was responsible for the design and development of the back-end indexing processes as well as the front-end screens to display the search results. Mr. Cox migrated all of the BD searches so the new architecture and delivered the project both on-time and on-budget. The resulting search was faster and provided an improved search experience.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Adobe, San Jose, CA</OrganizationName>
+               <Description>
+                  <p>Mr. Cox served on the Avalon team tasked with on-going support &amp; enhancement of the Autonomy search capability for an internal product web site.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Internal Revenue Service, Washington, DC</OrganizationName>
+               <Description>
+                  <p>Accenture was looking for support as they upgraded the search on the IRS website. Autonomy recommended that Mr. Cox join this project team as an architect. Mr. Cox provided a review of the existing architecture and development plans. He provided performance enhancement suggestions. Accenture asked Mr. Cox to assist with the final phases of their search rollout to ensure that there were no problems.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>United States Geological Survey, Rockville, MD</OrganizationName>
+               <Description>
+                  <p>As a consultant at the United States Geological Survey (USGS), Mr. Cox was responsible for installing, configuring, managing and maintaining the entire search engines used within the entire agency. He wrote a Java application to build the XML file from an Oracle database; this file is used to define the search topics within the Ultraseek search engine.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>The College Board, Reston, VA</OrganizationName>
+               <Description>
+                  <p>As a consultant to the College Board, Mr. Cox provided an in-depth review of the current Ultraseek search deployment. He outlined the issues in the deployment, steps required to improve the user experience and best practices for moving forward. The environment utilized XPA (Java interface to the Ultraseek server), Weblogic AppServer and Oracle databases.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Fannie Mae, Washington, DC</OrganizationName>
+               <Description>
+                  <p>As a member of the Fannie Mae Technical Guild, Mr. Cox worked to improve the way Fannie Mae leverages technology at a corporate level.</p>
+                  <p>Technical Guild Working Groups included:</p>
+                  <p>The Shared File System Working Group</p>
+                  <p>was comprised of members of Fannie Mae's Internet Engineering, Unix and Enterprise Architectural teams and was tasked with developing and delivering the recommendations for CORE development projects.</p>
+                  <p>The Application Security Working Group</p>
+                  <p>developed the standards for the security framework for applications and the JMS prototype project. As a member of this group, Mr. Cox developed a solution for shared file systems within the company.</p>
+                  <p>The Web Services Working Group</p>
+                  <p>developed company standards for development &amp; deployment of web services within the Fannie Mae environment.</p>
+                  <p>As a senior member of the Internet Engineering/Web &amp; Application Server Engineering group, Mr. Cox was responsible for the overall installation, configuration and management of Fannie Mae's internet applications and web services infrastructure. A few highlights of his experience include:</p>
+                  <ul>
+                     <li>Led the development of the
+                Auto-Update project, which used Java and UNIX shell
+                scripts to update the collected data on all
+                configured instances of web servers, application
+                servers and DNS domain information stored in the
+                database. This data then fed other important Fannie
+                Mae systems.</li>
+                     <li>Led the web services framework
+                project, which provided other operation groups the
+                ability to improve the way they perform their
+                day-to-day tasks by allowing non-privilege user the
+                ability to execute privileged command.</li>
+                     <li>Served as the primary point of
+                contact for the installation and configuration of
+                application servers &amp; web servers in support of
+                CORE Cyclone Commerce B2B server deployment.</li>
+                  </ul>
+                  <ul>
+                     <li>Developed an XSLT, which
+                transformed the WLS config.xml into separate
+                components, one for the infrastructure elements and
+                one for the application elements. This is used
+                during an automated deployment process.</li>
+                     <li>Developed three key Java
+                components of the DXS Project. A unique filename
+                generator, a shared library in C to access the
+                selected translation product and a Java Native
+                Interface (JNI) class to call the shared library.
+                The shared library was callable from Windows and
+                UNIX.</li>
+                  </ul>
+                  <p>Before joining Internet Engineering Mr. Cox served as architect for the Customer Solutions Development projects. His responsibilities included:</p>
+                  <ul>
+                     <li>Designed the hardware/software
+                infrastructure, as well as purchased &amp; managed
+                installation of the equipment.</li>
+                     <li>Worked closely with the various
+                business clusters to bring them up to speed on the
+                use of Java and Weblogic development and deployment
+                processes.  </li>
+                     <li>Developed the original standards
+                for the configuration and installation of Weblogic
+                within Fannie Mae and wrote the initial
+                installation scripts.</li>
+                     <li>Wrote the configuration and
+                installation procedure for Java Web Start used
+                during the deployment of the RiskNet
+                application.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory/>
+      <Qualifications>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="idol">
+            <CompetencyDisplayName>IDOL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dih">
+            <CompetencyDisplayName>DIH</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dah">
+            <CompetencyDisplayName>DAH</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="filesystem">
+            <CompetencyDisplayName>FileSystem</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="custom)">
+            <CompetencyDisplayName>Custom)</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ultraseek">
+            <CompetencyDisplayName>Ultraseek</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="bea-weblogic">
+            <CompetencyDisplayName>BEA Weblogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="j2ee">
+            <CompetencyDisplayName>J2EE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="pl-sql">
+            <CompetencyDisplayName>PL/SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="c++">
+            <CompetencyDisplayName>C++</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="shell-scripts">
+            <CompetencyDisplayName>Shell Scripts</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Praveen</GivenName>
+            <FamilyName>Venkata</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>703-505-0907</Mobile>
+            <InternetEmailAddress>venkatap@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Center for Medicare &amp; Medicaid Services</OrganizationName>
+               <Description>
+                  <p>Patient Protection and Affordable Care Act</p>
+                  <p>The goal of the Affordable Care Act (ACA) is to give more Americans access to affordable quality health insurance and to reduce the growth in health care spending in United States. One of the most important features of ACA is the federally-funded exchange (FFE), accessed through</p>
+                  <p>http://www.healthcare.gov</p>
+                  <p>, where Americans can purchase federally regulated and subsidized health insurance.</p>
+                  <p>Praveen has served as a lead MarkLogic consultant on this project, designing and developing individual components, and serving as a mentor to a large development team. He has worked on multiple phases of the project, including Architecture, Implementation, Performance, Operations and Support and his duties include:</p>
+                  <ul>
+                     <li>Architect and develop the
+                deployment process to deploy projects on the
+                database tier.</li>
+                     <li>Perform upgrades on the production
+                database cluster to improve the stability of the
+                system.</li>
+                     <li>Support performance tuning
+                activities in order to improve the database health
+                and performance.</li>
+                     <li>Administer the database during
+                crucial enrollment timeframes.</li>
+                     <li>Support the operations team with
+                deployments to various database environments</li>
+                     <li>Develop management reports on
+                enrollment metrics.</li>
+                     <li>Develop data cleanup tasks to
+                improve the data quality of the existing
+                system.</li>
+                     <li>Streamlined the notices database
+                process to successfully deliver the correct notices
+                to consumers in time.</li>
+                     <li>Mentor development teams so they
+                understand and develop efficient database
+                services/queries on the database tier.</li>
+                  </ul>
+                  <p>The technologies used on this project include MarkLogic Database 6.x, XQuery, XML, Python, Shell Scription and Java 1.6. Praveen made extensive use of MarkLogic utilities such as CORB and XQsync for reporting and content updates.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Fairfax County</OrganizationName>
+               <Description>
+                  <p>Fairfax County, the Washington metropolitan area's largest county, with a population of about 1 million people, has developed a repository for land use data to give county employees, land developers and residents access to real-time information about zoning changes, county land ordinances and property history.</p>
+                  <p>The land data repository, based on the MarkLogic 5 database, boosts the productivity of county employees who previously had to search through multiple databases to find pertinent information. The site gives residents a single website to access this information.</p>
+                  <p>Praveen was a lead consultant on the project, focusing on converting legacy systems data to the new system. He served as a mentor to Fairfax County employees, helping them learn to use MarkLogic and providing best practices for application development.</p>
+                  <ul>
+                     <li>Analyzed the data related to
+                Mainframe and Relational Databases to ingest them
+                into MarkLogic</li>
+                     <li>Used MarkLogic data tools like
+                RecordLoad, Corb, and XQSync to load and process
+                the data</li>
+                     <li>Implemented Address/Tax Map
+                history to see the history of a property by
+                searching with an Address or Tax Map</li>
+                     <li>Developed ESRI Map using ArcGIS
+                JavaScript API and MarkLogic Geospatial APIs to see
+                the properties in a certain radius or a user drawn
+                area</li>
+                     <li>Developed a JQuery mobile site
+                that automatically shows up on a smart phone by
+                visiting the site. The application is with the
+                Fairfax county government app found on both the
+                Google Play Store and Apple App Store.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>American Geophysical Union</OrganizationName>
+               <Description>
+                  <p>The American Geophysical Union (AGU) is a non-profit organization serving the geophysical sciences community and has over 60,000 members from 148 different countries. AGU uses MarkLogic to provide search for their repository of publications, including 20 journals and thousands of books.</p>
+                  <ul>
+                     <li>Used MarkLogic's Content
+                Processing Framework (CPF) to enhance the content
+                load/ingestion process</li>
+                     <li>Implemented the saved search
+                functionality using an email/ pin based option to
+                store search URLs in order to retrieve them at a
+                later point of time</li>
+                     <li>Fixed xQuery and Javascript issues
+                related to search UI and displaying journal results
+                </li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>ProQuest</OrganizationName>
+               <Description>
+                  <p>ProQuest acquired University Publications of America from LexisNexis, including a new product called the History Vault. Praveen worked through Conquest Systems to complete development and deployment of the History Vault. The History Vault Portal has the front end user portal and a backend Administrative tool interacting with Marklogic Server. The design integrated Java with Marklogic Server to support billing and invoicing functions and advanced search capabilities including autocomplete, faceted navigation and browsing data.</p>
+                  <ul>
+                     <li>Developed enhancements and fixed
+                issues related to the portal and administrative
+                tool integration.</li>
+                     <li>Involved  in exporting data to
+                external online bibliographic management systems
+                like RefWorks and EndNote using Java and
+                Ajax.</li>
+                     <li>Retrieved data using XDBC from
+                MarkLogic database</li>
+                     <li>Implemented JavaMail functionality
+                to mail users regarding search results retrieved
+                from the MarkLogic repository.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Java/J2EE Developer</Title>
+               <OrganizationName>Wachovia Corporate and Investment Banking</OrganizationName>
+               <Description>
+                  <p>Wachovia's International Funds Transfer (IFT) system provides electronic payment processing for both payments and payment related data between banks, corporations and individual customers. Praveen participated in several phases of rearchitecting the system to implement a service-oriented architecture. Praveen also developed an Automated Message Simulator that allows users to simulate and automate any SOA application.</p>
+                  <p>Praveen was involved in all phases of development from requirements through implementation.</p>
+                  <ul>
+                     <li>Developed UI components using
+                Facelets , JBoss RichFaces (AJAX + JSF) and HTML,
+                CSS, JavaScript  </li>
+                     <li>Implemented PDF and Excel
+                generation using iText and JBoss seam</li>
+                     <li>Used Maven2 and CVS to set up
+                continuous integration including JUnit testing,
+                check style, code coverage and the configuration
+                management and workflow modeling tool</li>
+                     <li>Participated in client meetings
+                along with managers and other leads to discuss new
+                enhancements, requirements and changes</li>
+                     <li>Mentored and helped team members
+                solve technical issues  </li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Java/J2EE Developer</Title>
+               <OrganizationName>Everstream Corp</OrganizationName>
+               <Description>
+                  <p>Praveen was part of a team designing and developing two new services. The</p>
+                  <p>Oi™ for VOD</p>
+                  <p>service provides operations and engineering teams with crucial insight into service performance and subscriber experience for digital services such as video on demand. CAPi was the market's first enterprise-level solution for measuring and reporting bandwidth utilization for high speed data networks, VoIP, and other broadband data services. On the Oi™ for VOD project, Praveen worked on the ETL component, retrieving data from heterogeneous data repositories (disparate RDBMS, spreadsheets, text files), transforming it according to user-specified rules and loading other supported repositories and used JSP to develop user screens. For CAPi, Praveen used Google Web Toolkit's UI framework to develop the AJAX based screens which provide high interactivity for the user.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>J2EE Consultant</Title>
+               <OrganizationName>Magistrate Courts of England and Wales</OrganizationName>
+               <Description>
+                  <p>The Libra project was a National Case Management software application for all magistrate courts of England and Wales. Praveen designed and developed print management printing modules using a Struts, Model View Controller (MVC), The Façade and Data Transfer Object (DTO) J2EE patterns, JSP on the front end and JavaScript for client side validation.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory/>
+      <Qualifications>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dhtml">
+            <CompetencyDisplayName>DHTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="perl">
+            <CompetencyDisplayName>PERL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ajax">
+            <CompetencyDisplayName>AJAX</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="shell-scripts">
+            <CompetencyDisplayName>Shell Scripts</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ant">
+            <CompetencyDisplayName>Ant</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="c++">
+            <CompetencyDisplayName>C++</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="c">
+            <CompetencyDisplayName>C</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vbscript">
+            <CompetencyDisplayName>VBScript</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="pascal">
+            <CompetencyDisplayName>Pascal</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="gwt">
+            <CompetencyDisplayName>GWT</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="actionscript">
+            <CompetencyDisplayName>Actionscript</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xslt">
+            <CompetencyDisplayName>XSLT</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xpath">
+            <CompetencyDisplayName>XPath</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xquery">
+            <CompetencyDisplayName>XQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xqj">
+            <CompetencyDisplayName>XQJ</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="j2ee">
+            <CompetencyDisplayName>J2EE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="servlets">
+            <CompetencyDisplayName>Servlets</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jsp">
+            <CompetencyDisplayName>JSP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jstl">
+            <CompetencyDisplayName>JSTL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ejb">
+            <CompetencyDisplayName>EJB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="uml">
+            <CompetencyDisplayName>UML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mvc">
+            <CompetencyDisplayName>MVC</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="struts">
+            <CompetencyDisplayName>Struts</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="adobe-flex">
+            <CompetencyDisplayName>Adobe Flex</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jsf">
+            <CompetencyDisplayName>JSF</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jboss">
+            <CompetencyDisplayName>JBoss</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jdbc">
+            <CompetencyDisplayName>JDBC</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rmi">
+            <CompetencyDisplayName>RMI</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jni">
+            <CompetencyDisplayName>JNI</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="frontpage">
+            <CompetencyDisplayName>FrontPage</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dreamweaver">
+            <CompetencyDisplayName>Dreamweaver</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="myeclipse-web-editor">
+            <CompetencyDisplayName>MyEclipse web editor</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-sql-server">
+            <CompetencyDisplayName>MS SQL Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

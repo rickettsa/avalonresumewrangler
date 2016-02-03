@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Waqas</GivenName>
+            <FamilyName>Usman</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Wolters Kluwer Law &amp; Business is a leading global provider of intelligent solutions for legal and business professionals. WKLB is launching a new service for securities attorneys who are creating and reviewing filings to the SEC. This subscription service combines access to all current and past corporate filings to the SEC as well as securities law, regulations, and rulings.</OrganizationName>
+               <Description>
+                  <p>Waqas was a member of the front-end development team and performed the following tasks:</p>
+                  <ul>
+                     <li>Interacted with the client to
+                interpret an extensive UI spec, refine business
+                requirements and integrate the features into a
+                working application</li>
+                     <li>Updated the UI components of
+                the application based on user testing
+                feedback</li>
+                     <li>Enhanced the application and
+                added new features to the front-end code
+                (JavaScript, jQuery, and TypeAhead) and the
+                application framework (C#, ASP.NET, and MVC) 
+                </li>
+                     <li>Updated the XSLT renderer that
+                produces consistent HTML for document display on
+                the web  </li>
+                     <li>Wrote unit tests using Moq to
+                mock the REST API service response</li>
+                     <li>Participated in Agile Scrum
+                methodology</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Defense Threat Reduction Agency (DTRA)</OrganizationName>
+               <Description>
+                  <p>The Defense Threat Reduction Agency (DTRA) is dedicated to reducing the threat to the United States and its allies from nuclear, chemical, biological, conventional, and special weapons. DTRA executes technology security activities; cooperative threat reduction programs; arms control treaty monitoring and on-site inspection; force protection; and nuclear, biological, and chemical defense and counterproliferation.</p>
+                  <p>DTRA has several portals that are used to solicit proposals from researchers, evaluate the proposals and award grants to the researchers. As a member of the development team, Waqas:</p>
+                  <ul>
+                     <li>Modernized legacy ASP classic
+                websites for listing solicitations, accepting
+                proposal submissions and managing proposal
+                evaluations to a new platform built on C#, ASP.NET,
+                and MVC running on Windows 8 (Entity-Framework,
+                JavaScript, Kendo controls, Ajax, JQuery, Razor,
+                .NET Membership authentication)</li>
+                     <li>Worked on the architecture
+                design, data access layer, service methods,
+                controllers and GUI in Razor Views</li>
+                     <li>Used Team Foundation Server
+                (TFS) for managing agile sprints backlog items and
+                version control</li>
+                     <li>Used agile software development
+                methodology, including scrum</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Intersections, Inc</OrganizationName>
+               <Description>
+                  <p>Intersections Inc. is a leading provider of consumer and corporate identity risk management services. Intersections fulfills the credit protection services provided by some of the major banks of North America such as Chase, Citibank, Bank of America, CapitalOne. The services provided by Intersections covers more than 36 million consumers from identity fraud.</p>
+                  <p>Waqas worked on the Intersections development team and worked on multiple systems development projects, including:</p>
+                  <ul>
+                     <li>Designed and built modules for
+                financial applications (C# WinForms, VB.NET,
+                ASP.NET, ETL, T-SQL, SSIS)</li>
+                     <li>Analyzed business requirements
+                to design and implement new processes that handle
+                PII data</li>
+                     <li>Created and updated
+                requirements, design and development documentation
+                including process flow diagrams</li>
+                     <li>Reviewed and modified existing
+                processes to optimize performance and meet evolving
+                business requirements</li>
+                     <li>Maintained and enhanced legacy
+                applications using VB6 and SQL Server 2008 (T-SQL,
+                Stored Procedures)</li>
+                     <li>Worked with other teams using
+                agile software development methodology</li>
+                     <li>Coordinated the release of new
+                modules and monitored existing processes to ensure
+                data integrity</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Wage and Hour Division, U.S. Dept. of Labor</OrganizationName>
+               <Description>
+                  <p>The United States Department of Labor (DOL) is a cabinet-level department of the U.S. federal government responsible for occupational safety, wage and hour standards, unemployment insurance benefits, re-employment services, and some economic statistics.</p>
+                  <p>The Wage and Hour Division of DOL (WHD) enforces Federal minimum wage, overtime pay, recordkeeping, and child labor requirements and other employment standards and worker protections.</p>
+                  <p>Waqas worked on the tools that are used to track violations of the laws enforced by WHD. Civil Money Penalty System (CMP) application is used to facilitate the collection of civil money penalties that are levied against employers who violate laws enforced by WHD. Back Wage Financial System (BWFS) is a financial management system used by the WHD to collect back wages due to employees from employers as a result of violations of laws enforced by the WHD and to disburse those wages to employees.</p>
+                  <ul>
+                     <li>Designed and developed new
+                reports in Crystal Reports XI and DB2 RDBMS</li>
+                     <li>Migrated existing reports from
+                stand-alone custom software to Crystal Reports
+                XI</li>
+                     <li>Migrated reports from legacy
+                software to BO Desktop Intelligence and Web
+                Intelligence</li>
+                     <li>Optimized and simplified
+                existing SQL queries to improve report generation
+                performance</li>
+                     <li>Scheduled and maintained
+                automated report generation using InfoView</li>
+                     <li>Tested and identified bugs in
+                existing and new reports</li>
+                     <li>Created formal test plans in
+                Rational Test Manager and test scripts for Rational
+                Manual Tester</li>
+                     <li>Documented requirements
+                specification for new reports based on existing or
+                new business logic</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>CMS GlobalSoft</OrganizationName>
+               <Description>
+                  <p>CMS GlobalSoft provides shipping, transportation, and logistics management software for businesses such as Bertelsmann, Samsung, and Lockheed Martin. The company's primary product is its WorldLink software, a shipping application that gives companies tools for viewing worldwide shipping activities, analyzing data, simplifying administrative tasks, and enhancing productivity.</p>
+                  <p>Waqas worked on integrating WorldLink application with the database management systems of various clients.</p>
+                  <ul>
+                     <li>Customized SaaS WorldLink web
+                application GUI based on user requirements using
+                ASP and VBScript</li>
+                     <li>Integrated WorldLink with UPS,
+                FedEx, USPS, DHL, TNT, BAX and Generic and LTL
+                Carriers using XML</li>
+                     <li>Integrated WorldLink with
+                MS-SQL and Oracle SQL DB systems for new
+                clients</li>
+                     <li>Gathered new business
+                requirements from customers and traced bugs in
+                Salesforce CRM</li>
+                     <li>Developed WinForms and
+                service-based applications in C# .NET to archive
+                old data to optimize DB querying</li>
+                     <li>Enhanced the GUI and overall
+                user experience for existing VB applications that
+                update WorldLink application files, DLLs, COM+
+                components and registry entries for database
+                connection strings</li>
+                     <li>Designed and enhanced shipping
+                labels using Eltron and Zebra Programming Languages
+                (EPL and ZPL)</li>
+                     <li>Provided phone and email based
+                technical support for WorldLink Enterprise Shipping
+                Software  </li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>Developing MarkLogic Applications</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>BS</DegreeName>
+               <DegreeMajor>
+                  <Name/>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="cs">
+            <CompetencyDisplayName>C#</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev=".net">
+            <CompetencyDisplayName>.NET</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="c++">
+            <CompetencyDisplayName>C++</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vbscript">
+            <CompetencyDisplayName>VBScript</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mvc">
+            <CompetencyDisplayName>MVC</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jquery">
+            <CompetencyDisplayName>JQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="typeahead">
+            <CompetencyDisplayName>TypeAhead</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xslt">
+            <CompetencyDisplayName>XSLT</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ajax">
+            <CompetencyDisplayName>AJAX</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-sql-server">
+            <CompetencyDisplayName>MS SQL Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="db2">
+            <CompetencyDisplayName>DB2</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ssis">
+            <CompetencyDisplayName>SSIS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="entity-framework">
+            <CompetencyDisplayName>Entity Framework</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="business-objects">
+            <CompetencyDisplayName>Business Objects</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="crystal-reports">
+            <CompetencyDisplayName>Crystal Reports</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="frontpage">
+            <CompetencyDisplayName>FrontPage</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dameware">
+            <CompetencyDisplayName>Dameware</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vmware">
+            <CompetencyDisplayName>VMWare</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rational-rose">
+            <CompetencyDisplayName>Rational Rose</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="visio">
+            <CompetencyDisplayName>Visio</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="tfs">
+            <CompetencyDisplayName>TFS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jira">
+            <CompetencyDisplayName>JIRA</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="trackit">
+            <CompetencyDisplayName>TrackIt</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vault">
+            <CompetencyDisplayName>Vault</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mks">
+            <CompetencyDisplayName>MKS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="moq">
+            <CompetencyDisplayName>Moq</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

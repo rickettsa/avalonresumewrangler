@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Eugene</GivenName>
+            <FamilyName>Guilaran</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>703-981-8466</Mobile>
+            <InternetEmailAddress>guilarane@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>U.S. Department of State</OrganizationName>
+               <Description>
+                  <p>The U.S. Department of State, Bureau of Diplomatic Security, Office of the Chief Technology Officer (DoS/DS/CTO) has an application used by analysts to review diplomatic communications. The current application is very dependent on search functionality, but is outdated and needs to be replaced. Avalon is providing enterprise search and Autonomy IDOL subject matter expertise during the requirements and analysis phase for the replacement application. Avalon is engaged through Customer Value Partners (CVP).</p>
+                  <p>Mr. Guilaran is engaged on the project as a senior search consultant. Working with CVP, he is helping set an overall direction for the new application. Mr. Guilaran is working with the CVP team and the current application users to define requirements for the new system.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Travel Channel</OrganizationName>
+               <Description>
+                  <p>The Travel Channel has a Vignette 7.6 and Portal implementation. They engaged Avalon to help with solutions for issues affecting their user's productivity. They also needed recommendations for upgrading and planning for future development.</p>
+                  <p>Mr. Guilaran was engaged on the project as a senior consultant. He helped determine their upgrade path, met with users to determine their issues, and worked with their development team to formulate and implement the solutions.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>University of Michigan</OrganizationName>
+               <Description>
+                  <p>The University of Michigan required an application to manage students, scholarships and scholarship donors. The application helps university staff track which students have or are eligible for scholarships.</p>
+                  <p>Mr. Guilaran was the technical lead for the project. He focused on integration with the single sign-on solution and development of the import and export functionality for the application. He also managed the entire infrastructure running on Amazon EC2. He installed and configured MarkLogic, defined security, and integrated php, apache and Cosign, the university's single sign on system.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>American Geophysical Union</OrganizationName>
+               <Description>
+                  <p>The American Geophysical Union (AGU) had an existing MarkLogic search application to search its journal publications. Mr. Guilaran worked on a search application that searched AGU's books as well.</p>
+                  <p>Mr. Guilaran focused on the content loading process using MarkLogic's Information Studio. He created an XQuery module that extracted data from documents that had any of four different structures. The data was inserted in a standard form across all four types of documents to be more efficiently used by the search application. Mr. Guilaran also created utility modules that could perform actions on all the documents in batch processes.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>The Republic Group</OrganizationName>
+               <Description>
+                  <p>The Republic Group needed an iPhone app to assess feasibility and to prototype design. The app enables a customer to contact their agent and also a report a car accident. The customer can take pictures and send them with the report.</p>
+                  <p>Mr. Guilaran managed the entire project from gathering and writing requirements to writing the app itself. Mr. Guilaran wrote the iOS app which included basic functionality such as entering, storing and displaying data, to more intermediate functionality such as selecting and taking photos, resizing images and sending email.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>The George Washington University</OrganizationName>
+               <Description>
+                  <p>The George Washington University standardized on the Vignette product suite for their enterprise content management and web presence. The president of the university named the Unified Web Presence project as one of five of his presidential initiatives. The purpose of this initiative was to fully unite the look and feel of the GW branding across all GW entities. In addition, it would lead the way to the implementation of better integrations and new applications and technologies.</p>
+                  <p>Mr. Guilaran designed and led the development of the www.gwu.edu redesign using VCM 7.5, DPM, Autonomy IDOL and RMM. He contributed to the design of their physical and application architecture, which had a highly available, multi-data center configuration. He worked with the business analysts and information architects during the requirements and functional requirements phases, then led a small development team during implementation.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Marriott International</OrganizationName>
+               <Description>
+                  <p>Marriott International uses Vignette Content Management (VCM) for www.marriott.com and eight global sites, collectively one of the top ten eCommerce sites in the world. Over the last three years, Avalon has helped Marriott rationalize over 500,000 pieces of content, implement user security, document business and technical processes, and design content solutions for a multi-phase transformation of their sites that dramatically increased the speed of deployment for publishing new content. We have also assisted them through multiple upgrades of VCM, including to the latest version, v8, and the integration of Vignette with other systems and processes.</p>
+                  <p>Mr. Guilaran filled a unique role for Marriott, drawing on his expertise as a Vignette architect and developer while working for eCommerce Product Development, the business owner of VCM. Mr. Guilaran served as a technical adviser, analyst, and liaison to the IT organization to help the business make informed decisions about how to use and configure VCM. He helped develop new frameworks for Content Type Definitions (CTDs) and developed customizations needed to the CTDs. Mr. Guilaran also designed and developed a content reporting application with multiple reports for business users.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Intermountain Healthcare</OrganizationName>
+               <Description>
+                  <p>Intermountain Healthcare utilized VCM 7.3.0.5 and DPM for their site, intermountainhealthcare.org. Mr. Guilaran was a developer on the Dynamic Portal and Federated Search integration effort. He created indexing routines that pulled information from VCM using the VCM APIs. Mr. Guilaran set up the dynamic portal structure for the site and used XSL to develop the presentation layer within the portal.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>U.S. General Services Administration</OrganizationName>
+               <Description>
+                  <p>GSA utilized VCM 7.2 with an integrated, custom-developed display application. In 2006 they redesigned their web site www.usa.gov.</p>
+                  <p>Mr. Guilaran worked as a lead developer for the usa.gov web site redesign. He worked with government employees and contractors to coordinate, plan, and develop the site. During the implementation, he working closely with business sponsors and project managers, as well as leading the development effort. He also worked with Raytheon to help support GSA's Vignette environment. He assisted with application configuration and configuration management.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Hennepin County, Minnesota</OrganizationName>
+               <Description>
+                  <p>Hennepin County used Vignette 7.3.1.1 for their site hennepin.us. They have a highly-available multi-data center architecture. Mr. Guilaran built their VCM environment in preparation to launch of the new site. In particular, Mr. Guilaran focused on the VCM cluster installation and configuration.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>IBM/IRS</OrganizationName>
+               <Description>
+                  <p>IRS had performance issues with an internal facing site using Vignette VCM 7.3.1.1 and DPM. Mr. Guilaran worked with IBM Business Consulting to help troubleshoot performance issues. He focused on DPM caching, code optimization, and application configuration.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>American Red Cross</OrganizationName>
+               <Description>
+                  <p>American Red Cross (ARC) launched a redesign of their site www.redcross.org. The site was on VCM 7.3.1.1 and DPM and uses extensive caching and third-party solutions to handle immense spikes in traffic, especially during times of disaster. Mr. Guilaran worked with ARC developers and system administrators. He focused on coding jsp overrides for DPM portlets. He helped the development team analyze and design solutions and troubleshoot problems, and advised the system administrator on architecture and configuration.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Principal Consultant</Title>
+               <OrganizationName>Vignette Corp.</OrganizationName>
+               <Description>
+                  <p>As a Principal Consultant for Vignette Corp., Mr. Guilaran architected and implemented content management solutions for enterprise clients. He worked directly with business managers to gather requirements, served as technical lead during development implementations, worked with team leads to manage project schedules and budgets, and worked with testing and QA teams. Mr. Guilaran engaged clients of varying size and industries including brick and mortar, government organizations, and financial institutions.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>Professional Education</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>B.S.</DegreeName>
+               <DegreeMajor>
+                  <Name/>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="autonomy-idol">
+            <CompetencyDisplayName>Autonomy IDOL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="drupal">
+            <CompetencyDisplayName>Drupal</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="v8">
+            <CompetencyDisplayName>V8</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dynamic-portal-module">
+            <CompetencyDisplayName>Dynamic Portal Module</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dynamic-site-module">
+            <CompetencyDisplayName>Dynamic Site Module</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vb">
+            <CompetencyDisplayName>VB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rich-media-manager">
+            <CompetencyDisplayName>Rich Media Manager</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="apache-web-server">
+            <CompetencyDisplayName>Apache Web Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="aws">
+            <CompetencyDisplayName>AWS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jsp">
+            <CompetencyDisplayName>JSP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ajax">
+            <CompetencyDisplayName>AJAX</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dhtml">
+            <CompetencyDisplayName>DHTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xslt">
+            <CompetencyDisplayName>XSLT</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xquery">
+            <CompetencyDisplayName>XQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ant">
+            <CompetencyDisplayName>ANT</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="php">
+            <CompetencyDisplayName>PHP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

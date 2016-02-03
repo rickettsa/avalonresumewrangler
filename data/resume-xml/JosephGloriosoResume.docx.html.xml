@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Joseph</GivenName>
+            <FamilyName>Glorioso</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>The Economist Intelligence Unit (EIU)</OrganizationName>
+               <Description>
+                  <p>EIU sought to improve the relevancy of their MarkLogic search results through the use of object-based relevance</p>
+                  <ul>
+                     <li>Improved the identification of
+                candidate documents by implementing multi-word
+                synonym resolution</li>
+                     <li>Increased the relevance of search
+                results by weighting candidate documents based upon
+                phase matches, exact value matches, term proximity
+                and publication date</li>
+                     <li>Provided the flexibility to tune
+                the weighting of fields used for search relevancy
+                ranking</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Kundalini Research Institute</OrganizationName>
+               <Description>
+                  <p>KRI wished to engage their community of users by improving the find-ability, discoverability and accessibility of Yogi Bhajan's teachings.</p>
+                  <ul>
+                     <li>Migrated KRI's content from
+                Alfresco CMS to MarkLogic Server Database</li>
+                     <li>Deployed a custom website by
+                employing Avalon's ContentMARK application
+                development framework to feature videos of Yogi
+                Bhajan's lectures</li>
+                     <li>Searchable full-text transcripts
+                allow users to search the content of the
+                multi-media in addition to the metadata</li>
+                     <li>Extracted the most relevant terms
+                from documents to drive keyword based
+                navigation</li>
+                     <li>Automatically discovered related
+                documents to drive relationship based
+                navigation</li>
+                     <li>Implemented a faceted search
+                interface to allow users to narrow search
+                results</li>
+                     <li>Highlighted search terms within
+                the video transcript to accelerate the user
+                experience</li>
+                     <li>Implemented a user interface that
+                allowed the user to control the video playback by
+                interacting with the full-text transcript.</li>
+                     <li>Developed a video landing page
+                that displays a list of transcript snippets
+                containing search terms allowing users to navigate
+                to the most relevant points in the video</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>St. Jude Children's Research Hospital, ALSAC</OrganizationName>
+               <Description>
+                  <p>St. Jude is one of the nation's leading pediatric research hospitals. Our work to improve their online donation platform helped to increase funding for this amazing organization.</p>
+                  <ul>
+                     <li>Enhance the user experience on St.
+                Jude's  "Memorial and Honor Card" online store
+                implemented using the Elastic Path Enterprise
+                eCommerce Platform.</li>
+                     <li>Participated in an agile
+                development process to deploy a streamlined
+                purchase flow, updated design and enhanced
+                usability</li>
+                     <li>Implemented functionality to allow
+                consumers to select greeting card recipients from
+                multiple sources including online email providers
+                using CloudSponge and a personalized address
+                book</li>
+                     <li>Developed a "Naming Opportunities"
+                application to allow donors to purchase
+                personalized bricks and plaques to support St.
+                Jude's cause leveraging Apache Struts and
+                Velocity</li>
+                     <li>Updated St. Jude's Online Donation
+                Application utilizing the Spring Application
+                Framework</li>
+                     <li>Imported a feed of purchase and
+                donation data into and Oracle database by applying
+                Hibernate's XML Persistence API.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>The United Methodist Church, GBOD and United Methodist Communications</OrganizationName>
+               <Description>
+                  <p>These organizations required assistance exporting their content from a CMS system from which they did not have access to the underlying database</p>
+                  <ul>
+                     <li>Utilized Selenium-WebDriver to
+                crawl their legacy CMS system.  The crawler was
+                required to navigate a multi-window user interface,
+                that was AJAX and iFrame heavy.</li>
+                     <li>The extracted content and
+                meta-data was imported into MarkLogic for future
+                publication</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>American Institute of Physics</OrganizationName>
+               <Description>
+                  <p>Responsible for designing and developing the applications that drove AIP's online publishing platform.</p>
+                  <p>Journal Production System</p>
+                  <ul>
+                     <li>Designed an RSuite CMS
+                implementation to migrate AIP's Journal Production
+                System. RSuite is a web-based content management
+                system that makes use of Tomcat, JBoss, MySQL, and
+                MarkLogic.  </li>
+                     <li>Developed workflow nodes, user
+                interfaces and reports to manage the journal
+                production lifecycle</li>
+                  </ul>
+                  <p>Scitation C3</p>
+                  <ul>
+                     <li>Spearheaded the migration of AIP's
+                online publishing platform to the Polopoly Web CMS
+                by guiding a team of six developers</li>
+                     <li>Transitioned our development
+                process to an Agile approach using the Scrum
+                methodology leading to improved time estimates,
+                increased productivity, and more maintainable
+                code.</li>
+                     <li>Analyzed business needs and
+                designed solutions to increase the find-ability and
+                accessibility of AIP's content using Web 2.0 tools,
+                content metadata enrichment, and Search Engine
+                Optimization</li>
+                     <li>Devised and delivered a new
+                version control, build, and release management
+                process built upon Subversion and the Atlassian
+                Suite of JIRA, Bamboo, and Confluence.  This
+                allowed AIP to manage parallel development streams,
+                facilitate proper testing and increase the
+                reliability of deployments.</li>
+                     <li>Designed and coded a Java
+                application to load 2.5 million XML documents from
+                our MarkLogic content repository to Polopoly for
+                online rendering</li>
+                     <li>Led the team that designed the
+                content/metadata model for deployment into
+                MarkLogic Server.</li>
+                     <li>Coached the development team on
+                creating modular, maintainable, testable and
+                extendable code</li>
+                  </ul>
+                  <p>Senior Programmer / Analyst</p>
+                  <p>eCommerce Application</p>
+                  <ul>
+                     <li>Implemented a customized solution
+                built on the Elastic Path Enterprise eCommerce
+                Platform to sell digital copies of journal
+                articles.</li>
+                     <li>Designed and coded application
+                customizations leveraging Apache Struts, Velocity,
+                and Hibernate</li>
+                     <li>The new system was developed on a
+                framework that utilized open source APIs which
+                helped AIP increase their net article sales profit
+                from $100,00 to $1 million by replacing Oracle
+                iStore</li>
+                     <li>Mentored a junior programmer by
+                introducing him to design patterns, source code
+                revision control and application deployment
+                strategy</li>
+                     <li>Documented all functional and
+                system requirements;  Created UML class and
+                sequence diagrams</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>HSBC.com, Inc.</OrganizationName>
+               <Description>
+                  <p>Responsible for resource management, application design, and code development for the HSBC Business Banking administrative tools used to manage user profiles and tool entitlement.</p>
+                  <p>Access Control Tool</p>
+                  <ul>
+                     <li>Designed and developed the Access
+                Control Tool to allow administrators to entitle
+                registered users to financial services tools that
+                are displayed on a personalized home page.</li>
+                     <li>Implemented design patterns
+                including J2EE Front Controller, Factory, Helper,
+                and Facade patterns across a distributed
+                architecture on ATG Dynamo.</li>
+                     <li>Developed a presentation layer
+                leveraged Java Servlets, JAXB, and Apache Xerces to
+                create XML documents, apply XSL Stylesheets, and
+                transform data into HTML content.</li>
+                     <li>Employed a Data Interface layer to
+                abstract queries to an Oracle 9i DB using ATG
+                Relational Views and to remote systems using SOAP. 
+                </li>
+                     <li>Developed portlets to display
+                customer account financial data</li>
+                  </ul>
+                  <p>Software Developer</p>
+                  <p>National Language Support</p>
+                  <ul>
+                     <li>Updated existing Profile and
+                Entitlement Tools to provide NLS support for seven
+                languages.</li>
+                     <li>Utilized Java Resource Bundles and
+                XSL Stylesheets to render content in the preferred
+                language.</li>
+                  </ul>
+                  <p>User Search Tool</p>
+                  <ul>
+                     <li>Used JDBC calls to retrieve query
+                results in XML format from Oracle 9i stored
+                procedures.</li>
+                     <li>Implemented user input validation
+                based upon regular expressions to prevent SQL
+                injection.</li>
+                  </ul>
+                  <p>Distributed Messaging</p>
+                  <p>Established SOAP as the standard messaging framework to provide Web Services between the Presentation and Distributed Business Process Management Layers within HSBC.com worldwide.</p>
+                  <p>Additional Responsibilities</p>
+                  <ul>
+                     <li>Provided technical training for
+                new team members and peer development groups</li>
+                     <li>Maintained System Development
+                Lifecycle documentation including Project Plans,
+                Use Cases, UML Class Diagrams and Sequence
+                Diagrams.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Intranet Developer</Title>
+               <OrganizationName>HSBC Bank USA</OrganizationName>
+               <Description>
+                  <p>Designed and implemented a browser based Desktop Support Ticket Tracking System</p>
+                  <p>Senior Desktop Support Technician</p>
+                  <p>Responsible for application, operating system, and hardware support of over two hundred users</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Computer Associates</OrganizationName>
+               <Description>
+                  <p>ARCserve for Windows NY Technician</p>
+                  <p>Provided customers with telephone and online support for ARCserve</p>
+                  <p>Technical Support Representative</p>
+                  <p>Responsible for handling and directing customer technical support and presales inquiries</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory/>
+      <Qualifications>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xquery">
+            <CompetencyDisplayName>XQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xpath">
+            <CompetencyDisplayName>XPath</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xslt">
+            <CompetencyDisplayName>XSLT</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jquery">
+            <CompetencyDisplayName>JQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="css">
+            <CompetencyDisplayName>CSS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="velocity">
+            <CompetencyDisplayName>Velocity</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jsp">
+            <CompetencyDisplayName>JSP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="contentmark">
+            <CompetencyDisplayName>ContentMARK</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="struts">
+            <CompetencyDisplayName>Struts</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="polopoly">
+            <CompetencyDisplayName>Polopoly</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="elastic-path-ecommerce">
+            <CompetencyDisplayName>Elastic Path eCommerce</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rsuite">
+            <CompetencyDisplayName>RSuite</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="spring">
+            <CompetencyDisplayName>Spring</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hibernate">
+            <CompetencyDisplayName>Hibernate</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="apache-tomcat">
+            <CompetencyDisplayName>Apache Tomcat</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jboss">
+            <CompetencyDisplayName>JBoss</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="bea-weblogic">
+            <CompetencyDisplayName>BEA Weblogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-sql-server">
+            <CompetencyDisplayName>MS SQL Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

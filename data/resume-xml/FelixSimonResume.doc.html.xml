@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Felix</GivenName>
+            <FamilyName>Simon</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>703-342-9242</Mobile>
+            <InternetEmailAddress>simonf@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>National Archives and Records Administration (NARA)</OrganizationName>
+               <Description>
+                  <p>The National Archives and Records Administration (NARA) is the nation's record keeper. Each year they receive millions of documents from all government agencies for permanent archiving. Increasingly, documents are received and managed digitally through the Electronic Records Archive (ERA) system. Defining, managing, mapping, and reporting on the metadata about these records is as important as managing the records themselves.</p>
+                  <p>Felix has provided content analysis and modeling, data mapping, and data dictionary consulting services to support NARA's Annual Move and ongoing intake of records.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Wolters Kluwer Law &amp; Business (WKLB)</OrganizationName>
+               <Description>
+                  <p>Wolters Kluwer Law &amp; Business is a leading global provider of intelligent solutions for legal and business professionals. WKLB is launching a new service for securities attorneys who are creating and reviewing filings to the SEC. This subscription service combines access to all current and past corporate filings to the SEC as well as securities law, regulations, and rulings. Felix served as the scrum master for one phase of the project and analyzed user stories and defect reports so the development team could quickly and efficiently deliver the application.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Janus Capital Group</OrganizationName>
+               <Description>
+                  <p>Janus Capital Group provides growth and risk-managed investment strategies and manages equity, fixed income, money market, as well as balanced mutual funds. Through their websites, they offer investment information and services in multiple languages for institutional and individual investors.</p>
+                  <p>Felix worked with the Janus technical development team to implement the Ingeniux content management system for their global institutional websites. He analyzed their content, evaluated the visual design specifications for the site, and then created content schemas for all the content.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Marriott International</OrganizationName>
+               <Description>
+                  <p>Marriott International uses Vignette Content Management (VCM) to manage more than 500,000 pieces of content served to www.marriott.com and eight global sites which together form one of the top ten eCommerce sites in the world. Marriott has engaged Avalon Consulting since 2008 to apply best practices in content management and to support three major phases of site redevelopment.</p>
+                  <p>Felix has been involved in a series of projects for Marriott. His achievements include:</p>
+                  <ul>
+                     <li> Defining the configuration,
+                security, and integration of Endeca Workbench with
+                content managed in the Vignette Content Management
+                system</li>
+                     <li> Defining requirements,
+                prototyping, testing and helping deploy new Content
+                Type Definitions (CTDs) for a comprehensive
+                redesign of how content is managed across the
+                Marriott.com site</li>
+                     <li> Creating a detailed blueprint
+                for executing the migration of content for 3500
+                hotels, including nearly 250,000 images, from the
+                old content structure to enable the new site launch
+                 </li>
+                     <li> Developing a  new security
+                model for the VCM and then auditing the results to
+                ensure on-going improvements</li>
+                     <li> Conducting a detailed analysis
+                of the VCM project structure to reorganize and
+                rationalize how content is stored</li>
+                     <li> Participating in stakeholder
+                interviews on digital asset management, creating
+                requirements and defining metadata for the Rich
+                Media Manager tool  </li>
+                     <li> Writing requirements and
+                developing test plans for a set of content
+                management reports</li>
+                     <li> Designing and helping deploy
+                new workflows</li>
+                     <li> Supporting the creation of
+                teaching aids and exercises for content
+                managers</li>
+                     <li> Developing testing plans and
+                test scripts for two upgrades to VCM</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Constellation Energy Group</OrganizationName>
+               <Description>
+                  <p>Constellation Energy Group implemented both Vignette and Autonomy's IDOL search engine for their intranet sites. Mr. Simon analyzed existing Content Type Definitions (CTDs) to develop new CTDs, created content migration plans to the new CTDs, developed web analytics requirements using Omniture Site Catalyst, and performed hit type analysis to support the creation of an entirely new search experience on the intranet.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Securian Financial Group</OrganizationName>
+               <Description>
+                  <p>Securian Financial Group recently ported their custom intranet to a new site using Vignette Content Management, Vignette Portal and Vignette Dynamic Portal. Mr. Simon worked with Securian financial as a lead business analyst on their intranet site implementation. In this role, he worked with the business owners to organize their information architecture, define basic workflow processes, and define the page and channel layout for the project. His responsibilities included reworking the site's information architecture, extracting a content model from existing content to design CTDs, and designing how to use Omniture's Site Catalyst for web analytics. He also developed requirements and process designs for archiving, content migration, enterprise search (using hit type analysis), workflow and visual design.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Business Systems Analyst</Title>
+               <OrganizationName>COX Communications</OrganizationName>
+               <Description>
+                  <p>When Cox Communications bought the Travel Channel from Discovery, they needed to transfer their internet and intranet presence from Interwoven Teamsite to Vignette Content Management (VCM) with Vignette Application Portal (VAP) and Dynamic Portal Module (DPM). Mr. Simon helped Cox set up their use of VCM including defining requirements, developing a publishing process model, creating a migration plan, and developing test cases and test plan. Created overall test strategy and led the User Acceptance testing efforts.</p>
+                  <p>As the liaison between business, technology and project management teams, Mr. Simon served as the single point contact for all 3rd party vendors by managing the 3rd party deliverables and worked with them in setting up the relevant infrastructure to integrate their products into the Travel Channel website. He also supported the migration of Omniture for web site analytics on the new platform and related business intelligence applications.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Systems and Business Analyst</Title>
+               <OrganizationName>Freddie Mac</OrganizationName>
+               <Description>
+                  <p>While serving as a Senior Systems and Business Analyst in Freddie Mac's EUC PMO (End User Computing Program Management Office), Mr. Simon developed policy, procedure and control guidelines and created detailed process control requirements and workflows for the full lifecycle of EUC assets. He worked closely with business and technical stakeholders to gather business requirements, and created use case diagrams and scenarios, metadata models and detailed functional and technical requirements. Mr. Simon also helped deploy</p>
+                  <p>CompasSoft for change management and Remedy to register and manage EUCs .</p>
+                  <p>Served as the liaison with the testing team and was closely involved in creating the functional test cases for the business team. Performed the test audit from the business side and was involved in creating the performance testing metrics.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName/>
+            </School>
+            <Degree>
+               <DegreeName>M.S.</DegreeName>
+               <DegreeMajor>
+                  <Name/>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="vcm-v7-v8">
+            <CompetencyDisplayName>VCM v7/v8</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dpm">
+            <CompetencyDisplayName>DPM</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vcbs">
+            <CompetencyDisplayName>VCBS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="informatica">
+            <CompetencyDisplayName>Informatica</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="autonomy-idol">
+            <CompetencyDisplayName>Autonomy IDOL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="omniture">
+            <CompetencyDisplayName>Omniture</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="v7.1.1">
+            <CompetencyDisplayName>V7.1.1</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="db2">
+            <CompetencyDisplayName>DB2</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="tso-ispf">
+            <CompetencyDisplayName>TSO/ISPF</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="endeavor">
+            <CompetencyDisplayName>Endeavor</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rational-rose">
+            <CompetencyDisplayName>Rational Rose</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="clear-case">
+            <CompetencyDisplayName>Clear Case</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="clear-quest">
+            <CompetencyDisplayName>Clear Quest</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="requisite-pro">
+            <CompetencyDisplayName>Requisite Pro</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rational-soda">
+            <CompetencyDisplayName>Rational Soda</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rational-software">
+            <CompetencyDisplayName>Rational Software</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="modeler">
+            <CompetencyDisplayName>Modeler</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="erwin">
+            <CompetencyDisplayName>Erwin</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="visio">
+            <CompetencyDisplayName>Visio</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="winrunner">
+            <CompetencyDisplayName>Winrunner</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="uml">
+            <CompetencyDisplayName>UML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="remedy">
+            <CompetencyDisplayName>Remedy</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-sql-server">
+            <CompetencyDisplayName>MS SQL Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sybase-iq">
+            <CompetencyDisplayName>SYBASE IQ</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="cobol">
+            <CompetencyDisplayName>COBOL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="servlets-2.1">
+            <CompetencyDisplayName>SERVLETS 2.1</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rmi">
+            <CompetencyDisplayName>RMI</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mvs-esa">
+            <CompetencyDisplayName>MVS/ESA</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dos">
+            <CompetencyDisplayName>DOS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="microsoft-windows">
+            <CompetencyDisplayName>Microsoft Windows</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

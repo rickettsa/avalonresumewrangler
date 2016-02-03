@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Wayne</GivenName>
+            <FamilyName>Applebaum</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Vice President, Analytics Applied Innovation</Title>
+               <OrganizationName>Avalon Consulting, LLC -</OrganizationName>
+               <Description>
+                  <p>Vice President, Analytics Applied Innovation</p>
+                  <ul>
+                     <li>Analytics</li>
+                     <li>Big Data</li>
+                     <li>Information Architecture</li>
+                     <li>Data Governance</li>
+                     <li>Analytics Framework</li>
+                  </ul>
+                  <p>Responsible for the coordination and Expansion. Analytics, Big Data, Search and Semantics practices.</p>
+                  <p>Works with Avalon Customer's business and information technology executives to create analytics and data initiatives that impact a company's bottom line. Designs complex analytics and information processes. Leads Analytics Framework Initiatives. Develops service offerings.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Principal Analytic Architect</Title>
+               <OrganizationName>SAP America, Inc. -</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Analytics</li>
+                     <li>Business Intelligence</li>
+                     <li>Information Architecture</li>
+                     <li>Data Governance</li>
+                     <li>Strategic Information
+                Modeling</li>
+                  </ul>
+                  <p>Developed and implemented analytics for SAP Clients. Worked with business leaders to create analytics to enable business decisions. Designed complex analytics and information processes. Led Strategic Information Management projects involving 5-10 senior level consultants. Created analytics solutions for companies in the area of CPG, Utilities, Logistic, Petrochemicals and Manufacturing.</p>
+                  <ul>
+                     <li>Reduced the cycle time to deliver
+                analytic results by 75% by developing, implementing
+                and disseminating the "Dimensional Analysis"
+                approach.</li>
+                     <li>Created an Analytics Roadmaps
+                that identified business impacts of between $20M
+                and $50M to the client's bottom line.</li>
+                     <li>Designed and grew the Strategic
+                Information Management offering.</li>
+                     <li>Most Valuable Player Award,
+                2011.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Solution Architect</Title>
+               <OrganizationName>Oracle, Inc. -</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Analytics</li>
+                     <li>Business Intelligence</li>
+                     <li>Information Architecture</li>
+                     <li>Data Governance</li>
+                  </ul>
+                  <p>Identified and developed solutions for customers in the business intelligence space. Worked with customers to design high impact solutions. Created cost estimates and implementation plans.</p>
+                  <ul>
+                     <li>Developed and implemented a
+                solution for a major financial institution to
+                expand business with high wealth clients increasing
+                their customer service efficiency by 10%.</li>
+                     <li>Developed a solution for
+                marketing campaign rollout and evaluation for a
+                major oil company enabling the company to monitor,
+                evaluate and change customer campaigns.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Business Objects -</OrganizationName>
+               <Description>
+                  <p>Director, Extranet Business Development</p>
+                  <ul>
+                     <li>Analytics</li>
+                     <li>Business Intelligence</li>
+                     <li>Marketing</li>
+                     <li>Sales Development</li>
+                  </ul>
+                  <p>Worldwide responsibility for the business development of the extranet product line. Engaged in sales and consulting activities. Supported lead generation activities through presentations at international seminars, white papers and webinars. Represented the product to industry analysts.</p>
+                  <ul>
+                     <li>Increased revenue of the extranet
+                product line from $15M to $75M by managing a
+                product line, creating partnerships, product
+                strategy, client presentations and proposals,
+                negotiating and closing sales.</li>
+                     <li>Developed a Return on Investment
+                (ROI) tool, by applying business, financial and
+                statistical techniques, enabling field sales
+                executives to provide clients with concrete value
+                measures, shortening the sales cycle by 1-3
+                weeks.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <ul>
+            <li>Ph. D. Statistics and Research
+        Methodology, University of Pittsburgh</li>
+            <li>M. A. Statistics and Research Methodology,
+        University of Pittsburgh</li>
+            <li>B.S. Psychology/Mathematics, City College
+        of New York</li>
+         </ul>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="business-intelligence">
+            <CompetencyDisplayName>Business Intelligence</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="advanced-analytics">
+            <CompetencyDisplayName>Advanced Analytics</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="measurement-development">
+            <CompetencyDisplayName>Measurement Development</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="information-modeling">
+            <CompetencyDisplayName>Information Modeling</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="business-process-improvement">
+            <CompetencyDisplayName>Business Process Improvement</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="complexity-modeling">
+            <CompetencyDisplayName>Complexity Modeling</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="big-data">
+            <CompetencyDisplayName>Big Data</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="strategic-planning">
+            <CompetencyDisplayName>Strategic Planning</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="competitive-strategy">
+            <CompetencyDisplayName>Competitive Strategy</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="performance-measurement">
+            <CompetencyDisplayName>Performance Measurement</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="budgeting">
+            <CompetencyDisplayName>Budgeting</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="project-management">
+            <CompetencyDisplayName>Project Management</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="portfolio-management">
+            <CompetencyDisplayName>Portfolio Management</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>
