@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Brian</GivenName>
+            <FamilyName>Green</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>801-884-7127</Mobile>
+            <InternetEmailAddress>Greenb@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Senior Search Consultant</OrganizationName>
+               <Description>
+                  <p>Brian has worked on more than 25 search projects, serving clients in many industries as a developer, team lead, and architect. His work has included:</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Xplana</OrganizationName>
+               <Description>
+                  <p>The publishing division of Xplana needed to improve the functionality and performance of the book content ingestion process and chose MarkLogic as a core technology. The Avalon project team delivered a new design for a queuing system using MarkLogic's Info Studio application, MLJAM and MarkLogic APIs.</p>
+                  <p>Outcomes of the project included:</p>
+                  <ul>
+                     <li>An ingestion process that could
+                accept many books at a time</li>
+                     <li>A queueing system that handled
+                ingesting single books</li>
+                     <li>A validation process to avoid
+                delays and system disruptions due to invalid book
+                source data</li>
+                  </ul>
+                  <p>The revised design and updated system cuts ingestion time in half for each book. Brian was a developer on this project.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Warner Brothers</OrganizationName>
+               <Description>
+                  <p>Warner Brothers needed to replace their existing application that stored meta data for digital assets and allowed searches in order to increase speed and add additional functionality. The front end was developed in java and the backend was done in MarkLogic.</p>
+                  <p>The end product included search capabilities, an email system, auditing, and administration tools. Brian was a developer on this project.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Healthnet</OrganizationName>
+               <Description>
+                  <p>Developed proof of concepts in both Solr and IDOL to compare the capabilities fo both products. The search had a number of complex requirements including geospatial search. Brian's POC allowed Healthnet to determine the best course of action for their final search.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>St. Jude</OrganizationName>
+               <Description>
+                  <p>St. Jude needed a search solution that would search within its site as well as across several related sites. They needed to incorporate data from multiple locations, including web site data and managed content. Some data also needed to be presented in different languages. Brian created a custom interactive UI for query and search results display, with filtering for guided navigation. He also designed and implemented a solution to index international results and display results in the correct language for searchers.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>WSIB</OrganizationName>
+               <Description>
+                  <p>Brian designed and helped create a system to find people and companies from different data sources to avoid duplicate claims processing. The approach used fuzzy logic to find variations and misspellings of names. It was done using Autonomy IDOL and FileSystem Connector, along with complex custom Java and JSP. The searches were much faster and the results were much more reliable than what they had before.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>MassMutual</OrganizationName>
+               <Description>
+                  <p>Brian provided was instrumental in upgrading from Ultraseek 5.7.8 to Ultraseek 6.0.1, which uses the IDOL search engine. This upgrade was required so that advanced features of IDOL could be used in one of the divisions. The upgrade was at a standstill until Brian became involved. He provided support for configuration, optimization, programming customizations and troubleshooting for the upgrade.</p>
+                  <p>Standard &amp; Poors</p>
+                  <p>Standard &amp; Poors was having performance problems that caused the search to fail at times. Once these performance problems were addressed, they underwent a large project to internationalize the site. Brian made changes to Java and JSP code and configurations to support multiple regions and languages. He also installed and configured a new version of the business console to support the new regions and languages. He performed performance testing and made changes to code and configurations to improve performance when the changes for regionalization adversely impacted performance.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Ansys</OrganizationName>
+               <Description>
+                  <p>Configured repositories and crawlers for Google Search Appliance. Evaluated various techniques to index data from multiple sources and made recommendations. Helped implement the final approach to index data from multiple sources.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>A Large US Federal Government Agency</OrganizationName>
+               <Description>
+                  <p>Brian automated the deployment process for a large clustered website, helped monitor performance and debug problems. He also developed processes for migrating data between environments.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>Professional training in:</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>BS</DegreeName>
+               <DegreeMajor>
+                  <Name/>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="idol">
+            <CompetencyDisplayName>IDOL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="solr">
+            <CompetencyDisplayName>Solr</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="google-search-appliance">
+            <CompetencyDisplayName>Google Search Appliance</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="aci-api">
+            <CompetencyDisplayName>ACI API</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="cap---indextasks">
+            <CompetencyDisplayName>CAP / IndexTasks</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="lua">
+            <CompetencyDisplayName>Lua</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="business-console">
+            <CompetencyDisplayName>Business Console</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="retina">
+            <CompetencyDisplayName>Retina</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ias-security">
+            <CompetencyDisplayName>IAS/Security</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="eduction">
+            <CompetencyDisplayName>Eduction</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ultraseek">
+            <CompetencyDisplayName>Ultraseek</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="adp-enterprise">
+            <CompetencyDisplayName>ADP Enterprise</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="peoplesoft">
+            <CompetencyDisplayName>PeopleSoft</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-sql-server">
+            <CompetencyDisplayName>MS SQL Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="informix">
+            <CompetencyDisplayName>Informix</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sybase">
+            <CompetencyDisplayName>Sybase</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="db2">
+            <CompetencyDisplayName>DB2</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="r:base">
+            <CompetencyDisplayName>R:Base</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sqlbase">
+            <CompetencyDisplayName>SQLBase</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xdb">
+            <CompetencyDisplayName>XDB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="postgresql">
+            <CompetencyDisplayName>PostGreSQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jsp">
+            <CompetencyDisplayName>JSP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sqr">
+            <CompetencyDisplayName>SQR</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="c">
+            <CompetencyDisplayName>C</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="c++">
+            <CompetencyDisplayName>C++</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="coldfusion">
+            <CompetencyDisplayName>ColdFusion</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="php">
+            <CompetencyDisplayName>PHP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="powerbuilder">
+            <CompetencyDisplayName>Powerbuilder</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="gupta-sql-windows">
+            <CompetencyDisplayName>Gupta SQL Windows</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="pascal">
+            <CompetencyDisplayName>Pascal</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vbscript">
+            <CompetencyDisplayName>VBScript</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="python">
+            <CompetencyDisplayName>Python</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xquery">
+            <CompetencyDisplayName>XQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dos">
+            <CompetencyDisplayName>DOS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="os-2">
+            <CompetencyDisplayName>OS/2</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="microsoft-windows">
+            <CompetencyDisplayName>Microsoft Windows</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="linux">
+            <CompetencyDisplayName>Linux</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="aix">
+            <CompetencyDisplayName>AIX</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="solaris">
+            <CompetencyDisplayName>Solaris</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hpux">
+            <CompetencyDisplayName>HPUX</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

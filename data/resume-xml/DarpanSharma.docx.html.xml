@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Darpan</GivenName>
+            <FamilyName>Sharma</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Software Engineer /Tech Lead</Title>
+               <OrganizationName>JCPenney</OrganizationName>
+               <Description>
+                  <p>Infrastructure Tech Lead for Oracle Retail RMS implementation</p>
+                  <ul>
+                     <li>Environment  Setup Tech lead for
+                Oracle Retail RMS implementation at JCP</li>
+                     <li>Defined technology landscape of
+                RMS implementation</li>
+                     <li>Worked with different system
+                engineering teams in setting up of RMS
+                environments</li>
+                     <li>Found solutions for gaps in 
+                Oracle RMS implementation JCP systems operational
+                requirements</li>
+                  </ul>
+                  <p>Lead developer for Direct Pricing Services for jcp.com.</p>
+                  <ul>
+                     <li>Mentored new team members</li>
+                     <li>Interviewed new team members,
+                followed by team position recommendations</li>
+                     <li>Developed business components in
+                Java using Domain Driven Design concept</li>
+                     <li>Worked as an integration architect
+                for new business requirements</li>
+                     <li>Created JSF reusable validator and
+                utilities across different screens</li>
+                     <li>Developed Web Services using
+                Springframework</li>
+                     <li>Developed message driven POJO
+                using spring framework</li>
+                     <li>Used Springframework AOP to create
+                aspects and point cuts for DB transaction</li>
+                     <li>Used Hibernate to create domain
+                entities</li>
+                     <li>Created jUnit test cases using
+                Easy mock, dbUNIT and Spring test framework</li>
+                     <li>Designed and developed interfaces
+                with new systems</li>
+                     <li>Used Hudson for continuous
+                integration</li>
+                     <li>Used SPLUNK for application
+                monitoring</li>
+                     <li>Participated in peak performance
+                tuning and recommended possible changes in hardware
+                for application to perform, plan for capacity
+                upgrade for new functionality and growth</li>
+                     <li>Worked with vendors to third party
+                software issues and customization</li>
+                     <li>Coordinated different team for
+                issue resolution</li>
+                     <li>Conducted knowledge sharing
+                session for application enhancements</li>
+                     <li>Solved database performance
+                issues</li>
+                     <li>Solved dead lock issue at critical
+                time of application going live</li>
+                     <li>Worked with system engineering
+                team to determine efficient java heap to avoid out
+                of memory issues</li>
+                     <li>Introduced Orchestra and Facelets
+                technology to the project.</li>
+                     <li>Worked closely with Business
+                Analysis team for requirement analysis and change
+                in requirements.</li>
+                     <li>Installed and configured
+                application on WebSphere Application Server</li>
+                     <li>Worked with DBA for database
+                performance and issues</li>
+                  </ul>
+                  <p>Environment: JAVA, Spring Framework, Spring Web services, Apache MyFaces and Tomahak, Orchestra, Hibernate, Facelets, JMS, IBM WebSphere, TIBCO, AJAX4JSF and DB2</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Project Manager - Thomas Reuters Tax software, .com upgrade</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Created schedule and base time
+                line for project execution.</li>
+                     <li>Coordinated work with external
+                vendors</li>
+                     <li>Resolved capacity issue working
+                with vendor, WebSphere and DBA teams</li>
+                     <li>Tracked project execution and
+                mitigated risk</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Lead developer Stylewatch</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Used JQuery to develop user
+                interface</li>
+                     <li>Worked closely with Business
+                Analysis team for requirement analysis and change
+                in requirements</li>
+                     <li>Created DAO based on spring
+                template</li>
+                     <li>Created spring annotation based
+                controllers</li>
+                     <li>Application is used from 1200
+                point of sales terminal</li>
+                  </ul>
+                  <p>Environment: Spring Core, MVC and JDBC templates, JQuery, JSON, JavaScript, VBScript</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Lead Consultant</Title>
+               <OrganizationName>dRONOME</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Developed Spring FlexDS based
+                services for Flex client</li>
+                     <li>Conceptualized and implemented
+                SaaS for digital video processing</li>
+                     <li>Implemented SaaS on Amazon Web
+                Services</li>
+                     <li>Configured CentOS for application
+                deployment</li>
+                     <li>Installed tomcat web server and
+                used it as a proxy for application server</li>
+                  </ul>
+                  <p>Environment Spring Core, Spring Security, Hibernate, MySQL, Adobe Flex, CentOS</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Consultant</Title>
+               <OrganizationName>Aviall (Boeing)</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Responsible for development of EDI
+                ATA Customer order management project.</li>
+                     <li>Introduced Spring Framework
+                dependency management to orchestrate different
+                services and resource injection.</li>
+                     <li>Introduced Apache Camel, an
+                Enterprise Integration Pattern implementation, for
+                message routing and processing.        </li>
+                     <li>Created web services, using Spring
+                Web services, for Orders requests and modification
+                from Siebel.</li>
+                  </ul>
+                  <p>Environment: JAVA, Spring Framework, Tomcat, Orchestra, Hibernate, Spring Webservices, Apache Camel, Maven</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Lead-Application Developer</Title>
+               <OrganizationName>Evergreen Investments</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Responsible for the development of
+                Research Junction project for the Business units in
+                Evergreen. It is a J2EE Portal based publishing
+                application, used by research analysts to publish
+                all the research on securities and shared among
+                business units.</li>
+                     <li>Developed application using
+                WebLogic Portal and later involved in porting
+                application to JBoss environment. Utilized JSF
+                framework to port application in JBoss.</li>
+                     <li>Created views for new version
+                based on JSF specs using Apache's MyFaces Core and
+                MyFaces Tomahawk implementations.</li>
+                     <li>Developed Weblogic portal portlets
+                using JSR-168 specs and Weblogic's Java Page Flow
+                technology. New application version is in
+                development process to deploy on JBOSS application
+                server.</li>
+                     <li>Utilized Spring framework for
+                hosting core business services and utilized Spring
+                framework's core bean configuration to pre
+                instantiate services used in the
+                application.</li>
+                     <li>Created services for accessing
+                Bloomberg Market Data from the application.</li>
+                     <li>Utilized Spring - Hibernate hook
+                to use hibernate session factory in
+                services.</li>
+                     <li>Created Spring DAO templates for
+                JDBC and Hibernate to access report and transaction
+                data.</li>
+                     <li>Used interceptors to weave in
+                transactions and cache aspects in application in
+                environment agnostic way.  Interceptors are also
+                used to make hibernate session to be thread local
+                for web requests for retrieving lazy objects in OR
+                mappings.</li>
+                     <li>Developed email module to send
+                e-mails from the application using SMTP
+                servers.</li>
+                     <li>Developed JASS based
+                authentication and authorization module for JBoss
+                and integrated it with firm's authentication
+                system.</li>
+                     <li>Created portlets using Spring MVC
+                for portlets.</li>
+                     <li>Created unit test cases using
+                JUnit and EasyMock.</li>
+                     <li>Created Oracle Packages to import
+                data from different data sources.</li>
+                     <li>Developed adapter for Actuate
+                iServer for direct report execution and
+                retrieval.</li>
+                     <li>Integrated Actuate reports in
+                portal.</li>
+                  </ul>
+                  <p>Environment:J2EE, XML, JBOSS Portal, Weblogic Portal Server 8.1.4, Workshop, Hibernate, Spring framework, JMS, Portlet, JSP 2.0, Java Server Faces 1.1, My Faces 1.1.5, Tomahawk 1.1.5, Eclipse, Log4j, EasyMock, JUnit, Oracle 10g RAC, Erwin, Maven 2, CVS.</p>
+                  <p>Lead Developer Currency Exchange</p>
+                  <ul>
+                     <li>Responsible for the development
+                for the new currency trading system hosted on J2EE
+                Application server Weblogic 8.1</li>
+                     <li>Designed and developed web-based
+                real time application using Struts, Hibernate,
+                Spring framework and Weblogic Application
+                server.</li>
+                     <li>Developed multiple design patterns
+                for objects for object structure and
+                behaviors.</li>
+                     <li>Created domain objects using
+                Middle-gen.</li>
+                     <li>Utilized Hibernate HQL to access
+                data from Oracle database.</li>
+                     <li>Used Spring IoC and Dependency
+                injections.</li>
+                     <li>Used commons-net libraries to
+                access data files from ftp servers.</li>
+                     <li>Designed data access strategies to
+                access data from Sybase, Oracle and FTP
+                servers.</li>
+                  </ul>
+                  <p>Environment:J2EE, Weblogic 8.1 server, Eclipse 3.0, Struts, Hibernate, Spring Framework, JSTL, Sybase, Oracle, Maven, Log4j, XML .</p>
+                  <p>Lead Actuate Developer High Yield</p>
+                  <ul>
+                     <li>Responsible for the development of
+                the reporting system for the HighYield Equity
+                trading team.  </li>
+                     <li>Developed user interface screens
+                using JSP, JSTL and Struts.</li>
+                     <li>Developed the framework for
+                Actuate Report development.</li>
+                     <li>Created common report libraries
+                for the look and feel and data access
+                strategies.</li>
+                     <li>Created Dynamic Cross Tab
+                reports.</li>
+                     <li>Introduced the concept of Dynamic
+                sorts in the Actuate Reports.</li>
+                     <li>Set up Actuate Report server for
+                sending mails using SMTP.</li>
+                  </ul>
+                  <p>Environment: Actuate 8 eReports, Weblogic 8.1, Eclipse 3.0, Hibernate, Spring Framework, MS SQL server, JSTL, Log4j and Ant.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Consultant</Title>
+               <OrganizationName>JP Morgan Chase</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Responsible for the development of
+                custodial reporting solution Views for
+                institutional clients of Chase utilizing JAVA, EJB,
+                JSP, Servlets.</li>
+                     <li>Handled Liaison to clients and
+                other tech teams for the business requirements and
+                understanding of goals.</li>
+                     <li>Worked with Vendor development
+                teams for timely delivery of modules.</li>
+                     <li>Utilized Visual-Age for Java IDE
+                for the development and maintenance of the
+                project.</li>
+                     <li>Developed and documented plans for
+                supporting the applications in Production
+                environment.</li>
+                     <li>Developed complex SQL queries to
+                retrieve data from Oracle 9i Server.</li>
+                     <li>Tech Team Lead for development of
+                400 reports using Actuate report writer 6.</li>
+                     <li>Conceptualized and created basic
+                framework for report development.</li>
+                     <li>Created Reports using Multi Input
+                / Single Input Filters.</li>
+                     <li>Extensively used report libraries
+                for common functionalities.</li>
+                     <li>Created Dynamic reports based on
+                the Data.</li>
+                     <li>Developed data load programs to
+                incorporate data from other business units.</li>
+                     <li>Created stored procedures for data
+                retrieval.</li>
+                     <li>Developed custom data access
+                components in visual basic to use compressed data
+                in Actuate Reports.</li>
+                  </ul>
+                  <p>Environment: IBM Web Sphere, Visual Age for Java, EJB, Servlets, JSP, JMS, JNDI, XML Parsers, RMI-IIOP, ASP, IIS Server, MS SQL Server 2000, Actuate 5.0, Actuate 6.0</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName> </SchoolName>
+            </School>
+            <Degree>
+               <DegreeName> </DegreeName>
+               <DegreeMajor>
+                  <Name> </Name>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="tomcat">
+            <CompetencyDisplayName>Tomcat</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jsf">
+            <CompetencyDisplayName>JSF</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="spring">
+            <CompetencyDisplayName>Spring</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mvc">
+            <CompetencyDisplayName>MVC</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="flex">
+            <CompetencyDisplayName>Flex</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hibernate">
+            <CompetencyDisplayName>Hibernate</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="svn">
+            <CompetencyDisplayName>SVN</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="maven">
+            <CompetencyDisplayName>Maven</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="eclipse">
+            <CompetencyDisplayName>Eclipse</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="db2">
+            <CompetencyDisplayName>DB2</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

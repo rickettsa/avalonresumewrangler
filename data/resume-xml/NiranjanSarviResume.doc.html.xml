@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Niranjan</GivenName>
+            <FamilyName>Sarvi</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>848-203-0153</Mobile>
+            <InternetEmailAddress>sarvin@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Big Data - Triad Retail Media</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Developed ETL modules to
+                transform/cleans the data to be used in enterprise
+                applications.</li>
+                     <li>Developed Oozie workflows to
+                trigger on data availability/time</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Big Data - eDiscovery of Enron emails</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Developed Map/Reduce programs to
+                extract meta information, cleansing, de-duplication
+                of Enron emails.</li>
+                     <li>Designed and developed Hive2 JDBC
+                modules and Solr modules to aggregate results from
+                HBase and Solr.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Big Data - Janus Log Management</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Developed a POC to manage log
+                data and real time alerts to application support
+                owners on event of critical events or disputes from
+                the investors.</li>
+                     <li>Integrated AMQP compliant server
+                (RabbitMQ) with Storm for the real time log
+                processing.</li>
+                     <li>Evaluated Splunk Vs
+                Kibana/Logstash/ElasticSearch</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Big Data - Avalon Hadoop Cluster</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Designed and developed web
+                application to demonstrate the usage of 'Spring for
+                Hadoop' framework, Hive/Impala queries and
+                performance of queries.</li>
+                     <li>Developed various Hadoop MapReduce
+                programs to demonstrate the features such as
+                Secondary sort, chaining MapReduce programs,
+                multiple inputs/outputs, HDFS operations,
+                distributed cache, streaming etc.</li>
+                     <li>Involved in evaluating
+                interactive/near real-time big data products such
+                as Hortonworks Stinger/Cloudera Impala/CitusDB
+                speficially for the OLAP and data mining
+                capabilities.</li>
+                     <li>Installed and configured the 4
+                node Hortonworks HDP and Cloudera CDH clusters
+                within the Avalon data center</li>
+                     <li>Installed and configured the
+                4-node HDP on Amazon EC2</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Janus Capital</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Performed and documented technical
+                analysis and systems integration of Janus
+                Retail.</li>
+                     <li>Involved in the architecture and
+                redesign of the Retail.</li>
+                     <li>Designed, developed and integrated
+                the E-delivery module with DST Systems using the
+                FAN APIs.</li>
+                     <li>Enhanced and fixed the critical
+                bugs around IRA rollover, new account setup for
+                Rollover, etc. on the Janus Retail site.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Invesco</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Involved in architecture, design
+                and implementation of customer facing site 'Invesco
+                Perpetual', 'Unit Trust' trading application and
+                Portal/VCM upgrades</li>
+                     <li>Designed and implemented various
+                modules such as Product Center/Product detail, Live
+                Person Integration and Morningstar data load by
+                extending the Spring-based proprietary
+                framework.</li>
+                     <li>Designed and Implemented generic
+                audience-based and context sensitive auto-complete
+                module which seamlessly plugged into to any
+                IDOL-powered sites.</li>
+                     <li>Involved in architecture, design
+                and implementation of various modules such as
+                Transaction Rollovers/Trade corrections/Direct
+                Trade/Admin Reports/user migrations, Registrations
+                and Single-Sign-on to Unit Trust Application</li>
+                     <li>Designed and implemented various
+                JSR-286 Portlets using Spring Portlet MVC,
+                JSR-303/Spring validation/Spring Remoting/Spring
+                Web Services to .Net and Siebel services</li>
+                  </ul>
+                  <p>Technical Environment: Avalon USP/WebSphere 6.2/RAD/OpenText Portal 8.1/Spring Portlet MVC/Remoting/Spring Web Services/Autonomy IDOL 7/JQuery/JSTL/JAX-WS/JAXB/VTT/Hibernate/EhCache/Live Person Chat</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Wellstar Health System</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Designed and implemented Single
+                Sign On (SSO) and integration  between 'Mckesson
+                Physician Portal' and 'ICA CareAlign' Portal using 'Bouncy Castle encryption
+              APIs'.</li>
+                     <li>Implemented bi-directional session
+              alive/graceful logoff between these systems.</li>
+                  </ul>
+                  <p>Technical Environment: Bouncy Castle APIs, PGP encryption, McKesson Physician Portal and ICA CareAlign services.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Flowserve</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Redesigned and implemented
+                Corporate Intranet</li>
+                     <li>Served as the Content Delivery
+                Application (CDA) Architect, responsible for design
+                &amp; delivery of the end-user application</li>
+                     <li>Designed and implemented
+                authentication against MS Active Directory and
+                optimized the group/parent-child group sync with
+                Portal and as well for VCM</li>
+                     <li>Designed and implemented generic
+                application integration</li>
+                     <li>Involved in LDAP configuration for
+                extranet/intranet portals and VCM.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Sr. Application Architect</Title>
+               <OrganizationName>McKesson</OrganizationName>
+               <Description>
+                  <p>Corp.</p>
+                  <ul>
+                     <li>Projectlead for architecture and planning
+              of Vignette Portal/DPM/VCM, J2EE applications &amp;
+              Disaster Recovery (DR)</li>
+                     <li>Architected, designed and
+                implemented Dynamic Portal Module (DPM) query
+                component and Vignette VCM product extensions and
+                customization of Widget, Program tasks, Property
+                Page, Content Instance, DPM Cache &amp; Workflows
+                task editor</li>
+                     <li>Investigated &amp; fixed
+                application bottlenecks in Vignette Portal &amp;
+                DPM libraries using CA Wily and Azul RTPM and
+                improved performance at web browser, Web,
+                Application and Database Servers</li>
+                     <li>Improved HTTP and Web downloads
+                for high performance of web content and integration
+                POC with MemCached for DPM</li>
+                     <li>Automated build and deploy process
+                to QA and PROD environment thereby eliminating 20%
+                of development cost</li>
+                     <li>Proposed complete automation of
+                build and release process for SMO suite to reduce
+                30% of Total Cost of Ownership (TCO)</li>
+                     <li>Collaborated with Vignette VPS and
+                offshore team for overall development of SMO suite
+                and conducted review/measure meetings on code
+                compliance, standards and optimizations</li>
+                     <li>Delivered Performance Tips,
+                Optimization Standards and Coding standards
+                documents and estimated work efforts and involved
+                in project planning and prepared documents on
+                project designs, unit tests, integration tests and
+                deployment strategies</li>
+                     <li>Reviewed team members work for the technical standards
+                and conformance to Business Requirements</li>
+                  </ul>
+                  <p>Environment: Vignette Portal 7.4, Oracle Weblogic 10, Vignette VCM 7.5, DPM 7.5, JSR-168, Oracle 10g, VAP APIs, VCM APIs, VBIS, VCM Workflow APIs, Java 1.5, J2EE 1.4, Apache Axis, Ominiture &amp; Azul</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Vignette Developer</Title>
+               <OrganizationName>Infused Solutions</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Architected and implemented
+                various Vignette Portal Application and Content
+                management systems for Infused customers.</li>
+                     <li>Developed Custom Widgets/Property
+                Sheets/Client libraries</li>
+                     <li>Involved  in Vignette Product
+                extensions and customizations</li>
+                  </ul>
+                  <p>Environment: Vignette Portal 7.2/VCM 7.3/JSR 168/LDAP APIs/VCM APIs/Workflow APIs</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Sr. Software Engineer</Title>
+               <OrganizationName>Aalayance India Pvt Ltd</OrganizationName>
+               <Description>
+                  <p>Developed enterprise Application for Pharmaceutical Company using Struts framework which provides consolidated view of the pharma operations, maintains and keeps track of various Pharma components.</p>
+                  <p>Environment: JDK1.4, Struts 1.0, EJB2.0, JMS, JMA, XML, SAX, DOM, JDOM, Jasper Reports, Jakarta POI, JDBC, JSP, JavaScript, Oracle 9.2, Oracle XDK, Weblogic8.1/Websphere 5.1, Solaris2.7 &amp; Eclipse 3.0</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Oracle Corp. India</OrganizationName>
+               <Description>
+                  <p>Sr./Member Technical Staff</p>
+                  <ul>
+                     <li>Developed and maintained various
+                Enterprise Applications using Oracle
+                Products</li>
+                     <li>Handled high severity premium
+                technical issues for clients like British Telecom,
+                Deutche Bank, British Airways, Qantas etc.</li>
+                     <li>Bug Analysis and resolutions on
+                Oracle 9i Database Server</li>
+                  </ul>
+                  <p>Environment: C/Unix Kernel Functions/Java/J2EE/Oracle Database/Application Server/Collaboration Suite etc.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>Certifications</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>BS</DegreeName>
+               <DegreeMajor>
+                  <Name/>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="hadoop">
+            <CompetencyDisplayName>Hadoop</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="apache-hive">
+            <CompetencyDisplayName>Apache Hive</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hbase">
+            <CompetencyDisplayName>HBase</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="object-oriented">
+            <CompetencyDisplayName>Object Oriented</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="cascading">
+            <CompetencyDisplayName>Cascading</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="storm">
+            <CompetencyDisplayName>Storm</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="kafka">
+            <CompetencyDisplayName>Kafka</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="flume">
+            <CompetencyDisplayName>Flume</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mahout">
+            <CompetencyDisplayName>Mahout</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hortonworks">
+            <CompetencyDisplayName>Hortonworks</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="cloudera">
+            <CompetencyDisplayName>Cloudera</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mongodb">
+            <CompetencyDisplayName>MongoDB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vignette">
+            <CompetencyDisplayName>Vignette</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vb">
+            <CompetencyDisplayName>VB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="groovy">
+            <CompetencyDisplayName>Groovy</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ejb">
+            <CompetencyDisplayName>EJB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jax-ws">
+            <CompetencyDisplayName>JAX-WS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jaxb">
+            <CompetencyDisplayName>JAXB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="pl-sql">
+            <CompetencyDisplayName>PL/SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="css">
+            <CompetencyDisplayName>CSS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jquery">
+            <CompetencyDisplayName>JQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xquery">
+            <CompetencyDisplayName>XQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="tomcat">
+            <CompetencyDisplayName>Tomcat</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="grails">
+            <CompetencyDisplayName>Grails</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="spring">
+            <CompetencyDisplayName>Spring</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="struts">
+            <CompetencyDisplayName>Struts</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="logback">
+            <CompetencyDisplayName>Logback</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="slf4j">
+            <CompetencyDisplayName>Slf4j</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="log4j">
+            <CompetencyDisplayName>Log4j</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="junit">
+            <CompetencyDisplayName>JUnit</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="autonomy-idol">
+            <CompetencyDisplayName>Autonomy IDOL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="solr">
+            <CompetencyDisplayName>Solr</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="object-oriented-analysis">
+            <CompetencyDisplayName>Object Oriented Analysis</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="agile-scrum">
+            <CompetencyDisplayName>Agile SCRUM</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="waterfall">
+            <CompetencyDisplayName>Waterfall</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Karen</GivenName>
+            <FamilyName>Favia</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant - Scrum Master</Title>
+               <OrganizationName>FedEx</OrganizationName>
+               <Description>
+                  <p>FedEx Global Brand Management was in need of a better way to access, edit and store their creative assets (logos, icons, images). The project deliverable was to create a better user interface for uploading, editing and sharing assets. This project was a full lifecycle project using Rally and Agile Methods and developed using AngularJS and MarkLogic.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant - Scrum Master/PM/BA</Title>
+               <OrganizationName>The Stelter Company</OrganizationName>
+               <Description>
+                  <p>The Stelter Company provides comprehensive gift planning solutions to not-for-profit organizations by creating websites that engage a donor through the many charitable options available today. Stelter provides 1,300 websites across the country. Through the years, the CMS they were using became obsolete, the project deliverable was to use a new CMS to create template webpages so they can build sites faster, with better functionality and flexibility, and re-build all 1300 sites using the new CMS.</p>
+                  <p>This project was a full lifecycle project using Rally and Agile Methods and developed using Ingeniux CMS.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant - Scrum Master</Title>
+               <OrganizationName>Motorola Solutions</OrganizationName>
+               <Description>
+                  <p>Motorola Solutions provides data and telecommunication equipment. Working with teams from London, India and the United States, we updated the administration of the site and the design of the site, so Motorola could edit and maintain the website faster and easier. This project used Rally and Agile Methods and developed using Vignette - Open Text.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant - Scrum Master/PM/BA</Title>
+               <OrganizationName>The RanchBook</OrganizationName>
+               <Description>
+                  <p>The RanchBook is an on-line social network for ranchers, outdoor enthusiasts and outfitters to connect with each other. Members can upload images, post status, vote on images, upload documents, create blogs, send out announcements and create calendar events. Other features included notifications via text and email, GPS for ranches and privacy features. The user interface built supported both desktop and mobile views. This project was a full life cycle project using Rally and Agile Methods and developed using Cartella by Ingeniux.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant - Scrum Master/PM</Title>
+               <OrganizationName>Millennium Pharmacy Systems</OrganizationName>
+               <Description>
+                  <p>Millennium Pharmacy Systems provides pharmacy services to the long-term care industry. As the company grew, internal training for new hires became inconsistent across business units. The project deliverable was to create an on-line training course for all new hires. This was a full life cycle project using Rally and Agile Methods and developed using</p>
+                  <p>Articulate - Storyline.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant - Scrum Master/PM</Title>
+               <OrganizationName>MK3</OrganizationName>
+               <Description>
+                  <p>MK3 is a creative marketing firm that needed enhancements to their existing website. This project used Rally and Agile Methods and developed using Ingeniux CMS. The project deliverable included the following:</p>
+                  <ul>
+                     <li>Creating new Ingeniux Schema's for
+                enhanced data needs</li>
+                     <li>Creating and documenting standards
+                for new content creation and deployment</li>
+                     <li>Developed new jQuery driven site
+                widgets</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Principle Consultant - Information Engineering Facility</Title>
+               <OrganizationName>Texas Instruments</OrganizationName>
+               <Description>
+                  <p>Project Management:</p>
+                  <p>Managed a $1M+ project with 15 developers for a large insurance company. Responsibilities included:</p>
+                  <ul>
+                     <li>Project Leadership and Status
+                Reporting</li>
+                     <li>Product roll-out and delivery
+                timelines</li>
+                     <li>Training Development and Skills
+                Assessment</li>
+                     <li>Client training and Knowledge
+                Transfer for the IEF Methodology</li>
+                  </ul>
+                  <p>Consulting/Methodology Coach</p>
+                  <p>IT Lead Consultant for Full Life-Cycle Software Development Projects using Information Engineering Facility (IEF) CASE tools. Performed Business Analysis, Design, Development, QA and Testing using both Waterfall and Rapid Application Development (RAD) to implement projects. Trained clients on Methodology and Tool. Supported sales team by performing demos and answering technical questions during sales cycle. Became Midwest Region's lead consultant in Graphical User Interface (GUI) projects and training.</p>
+                  <p>Clients Served:</p>
+                  <p>Allstate, Mayo Clinic, Northern States Power (NSP), Motorola, American Family Insurance, Budget Rental Car, Quad Graphics, State of Wisconsin, State of Indiana</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Price Waterhouse Coopers - PWC</OrganizationName>
+               <Description>
+                  <p>Consultant - Management Consulting Services - Information Technology</p>
+                  <p>Performed all phases of full life-cycle software development projects. Gained extensive knowledge using the Summit D methodology to analyze, design and implement large-scale systems. Developed experience in Manufacturing, Financials, Not-for-Profit, Healthcare and Insurance industries.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory/>
+      <Qualifications>
+         <Competency abbrev="ingeniux">
+            <CompetencyDisplayName>Ingeniux</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="cartella">
+            <CompetencyDisplayName>Cartella</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vignette">
+            <CompetencyDisplayName>Vignette</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="storyline">
+            <CompetencyDisplayName>Storyline</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="angularjs">
+            <CompetencyDisplayName>AngularJS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rally">
+            <CompetencyDisplayName>Rally</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="agile-scrum">
+            <CompetencyDisplayName>Agile SCRUM</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="waterfall">
+            <CompetencyDisplayName>Waterfall</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

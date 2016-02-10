@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Trey</GivenName>
+            <FamilyName>Cahill</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>State Farm Insurance</OrganizationName>
+               <Description>
+                  <p>Trey worked on the development and design of a near real-time communication ingestion and search application on top of HDP 2.2. The application required extensive use of Kafka, Storm, Solr, and HBase to meet the SLAs for the project. The cluster, secured with Kerberos, actively ingested multiple types of communication data from different sources and made them searchable within five minutes. The architecture provided an extensible approach to near real-time ingestion of data and the ability to search across the data set seamlessly as it grows.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>BNSF</OrganizationName>
+               <Description>
+                  <p>Trey led the development of transforming queries from Teradata to Hive and Pig scripts as well as the installation of HDP 2.1 on to the Microsoft Azure Cloud Computing Platform. The queries include TeaLeaf logs, rail scheduling data, and sensor data while validating results with the Operations Research Teams. The project included ETL from Teradata Export Files to HDFS via Hive and Pig. Benchmarking was done with Hive, Hive on Tez, and Hive with ORC.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Scripps Media</OrganizationName>
+               <Description>
+                  <p>Trey</p>
+                  <p>developed a Hive UDF to parse JSON coming from log files. During this process Trey worked closely with the development team to create a code base that replicated their current development process. In addition Trey created a test suite for the Hive UDF..</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Software Developer</Title>
+               <OrganizationName>ORS INC.</OrganizationName>
+               <Description>
+                  <p>Trey worked at ORS in Fishers, Indiana immediately following graduation as a software developer working on automation of client billing and as general IT staff. Trey was responsible for:</p>
+                  <p>development of scripts to automate the downloading, parsing, and processing of client billing information</p>
+                  <p>creation of a Windows 7 image to be used for the standardization of computer imaging</p>
+                  <p>producing documentation for IT tasks and How-Tos for non-IT employees</p>
+                  <p>providing general IT support for ORS staff</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Software Developer Intern</Title>
+               <OrganizationName>Progressive Insurance</OrganizationName>
+               <Description>
+                  <p>Prior to his senior year at Rose-Hulman, Trey worked at Progressive Insurance in Mayfield Village, OH as an intern. During his internship, Trey worked with the Commercial Auto division where he helped create a new version of the Commercial Auto Quoting website using a multitude of technologies such as CSS, ASP.Net, and C#.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Software Developer Intern</Title>
+               <OrganizationName>Nucor Building Systems</OrganizationName>
+               <Description>
+                  <p>Trey began interning at Nucor Building Systems in Waterloo, IN as a senior in high school and continued to intern during the summers there until his senior year in college. Using a mixture of C#, Visual Basic, and XAML, Trey primarily worked on NuBert as a part of the development team. This included bug fixes, report creation, and UI redesign. Trey also worked on a Tensile Test Interface where he created a development mode and corrected bugs in the reporting system.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName> </SchoolName>
+            </School>
+            <Degree>
+               <DegreeName> </DegreeName>
+               <DegreeMajor>
+                  <Name> </Name>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="hadoop">
+            <CompetencyDisplayName>Hadoop</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mapreduce">
+            <CompetencyDisplayName>MapReduce</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hive">
+            <CompetencyDisplayName>Hive</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="pig">
+            <CompetencyDisplayName>Pig</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="storm">
+            <CompetencyDisplayName>Storm</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oozie">
+            <CompetencyDisplayName>Oozie</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="intellij-idea">
+            <CompetencyDisplayName>IntelliJ IDEA</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="eclipse">
+            <CompetencyDisplayName>Eclipse</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="visual-studio">
+            <CompetencyDisplayName>Visual Studio</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vbscript">
+            <CompetencyDisplayName>VBScript</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="php">
+            <CompetencyDisplayName>PHP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="r">
+            <CompetencyDisplayName>R</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="cs">
+            <CompetencyDisplayName>C#</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-sql-server">
+            <CompetencyDisplayName>MS SQL Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hbase">
+            <CompetencyDisplayName>HBase</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

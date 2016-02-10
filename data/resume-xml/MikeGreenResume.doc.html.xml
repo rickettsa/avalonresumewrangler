@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Mike</GivenName>
+            <FamilyName>Green</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>214-642-0433</Mobile>
+            <InternetEmailAddress>greenm@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Practice Manager</Title>
+               <OrganizationName>Avalon Consulting, LLC</OrganizationName>
+               <Description>
+                  <p>As Practice Manager of Avalon Consulting, LLC's National Search Practice, Mr. Green is responsible for managing the daily operations for a team of consultants as well as for driving new business within the practice. With over 20 years of experience in the IT industry, he works closely with Avalon's strategic partners, leading technology providers in the Enterprise Search space, to drive new business for Avalon. Once engaged, Mr. Green manages the account relationships to ensure successful delivery and client satisfaction.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Principal Consultant</Title>
+               <OrganizationName>Electronic Data Systems</OrganizationName>
+               <Description>
+                  <p>As a Principal Consultant within EDS' Applications Transformation Team, Mr. Green worked to help clients derive strategic IT transformation with a specific focus on applications modernization and agile application strategies.</p>
+                  <p>In this role, he led engagements to define IT transformation strategies for multiple public and private enterprises in various industries including Health Care, Transportation, Manufacturing and Financial Services. This includes the creation of transformational modernization strategies for Kaiser Permanente, Blue Cross Blue Shield of Massachusetts, Express Scripts, Delta Dental, US Airways, and Grupo Nacional Provencial (Mexico's largest insurance company). During these engagements, Mr. Green worked with the IT / Business leaders to understand the current business processes and technical environment and to define a roadmap and business plan to modernize and transform their IT organization and strategy.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>As Director of Product Development, Mr. Green served in many roles. He worked directly with executives, and marketing leaders to determine product strategy, direction and feature support for solutions for online Customer Relationship Management (CRM) and Identity Management with a focus on managing and respecting consumer's privacy and preferences. He also lead a team Internet application developers, where he was responsible for career development, staffing, compensation administration, performance evaluation, project assignment, and training coordination. Mr. Green opened a branch office for the firm, a process which enhanced his understanding of many of the operational issues facing small businesses today.</Title>
+               <OrganizationName>Persona, Inc.</OrganizationName>
+               <Description>
+                  <p>Director of Product Development</p>
+                  <p>As Director of Product Development, Mr. Green served in many roles. He worked directly with executives, and marketing leaders to determine product strategy, direction and feature support for solutions for online Customer Relationship Management (CRM) and Identity Management with a focus on managing and respecting consumer's privacy and preferences. He also lead a team Internet application developers, where he was responsible for career development, staffing, compensation administration, performance evaluation, project assignment, and training coordination. Mr. Green opened a branch office for the firm, a process which enhanced his understanding of many of the operational issues facing small businesses today.</p>
+                  <p>Mr. Green directed the design and development of a flexible platform for delivering online, personalized marketing capabilities to the web sites of clients. This 2-person-year effort was delivered on time, on budget, and exceeded quality expectations. The resulting platform increased flexibility to deliver custom features for clients and resulted in a reduction in the time to onboard new clients by fifty percent.</p>
+                  <p>Mr. Green managed the integration of an identity management solution with the online store-front for a Fortune 500 retailer. He was responsible for the development of the technical proposal and architecture of the solution, and also managed the delivery of the project. The solution required expertise in web application development and user experience. The project required coordination of client resources, internal resources and contract labor to deliver within an aggressive timeframe. The result expanded access to the store-front to a new user base by increasing the ease of checkout for several million potential users.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Electronic Data Systems</OrganizationName>
+               <Description>
+                  <p>Development Team Manager - Java Practice/ Senior Software Engineer</p>
+                  <p>Mr. Green focused on generating new business by providing technical consulting and delivering executive presentations on technical delivery capabilities, success stories and industry trends. At the same time, he led a team of 25 Internet developers and architects and coordinated the project management and technical staffing of several projects. Mr. Green was responsible for the financial performance of the team including budgeting and P&amp;L management.</p>
+                  <p>Mr. Green served as a technical consultant, where he delivered solutions that applied Internet technologies for clients. He also served as a software developer for over 8 years, delivering quality applications using technologies such as Java, Perl, C++, relational database, HTML, Object-Oriented Analysis and Design, Human-Computer Interaction, Unix, MacOS and Microsoft platforms.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Software Engineer / Project Lead</Title>
+               <OrganizationName>Antares Alliance Group</OrganizationName>
+               <Description>
+                  <p>Designed, developed, tested, and documented software tools as part of the Process Vision™ product suite. Process Vision was integrated set of visual business process workflow analysis and re-engineering tools initiated by EDS R&amp;D in the late 1980s. It was one of the first visual process modeling tools in the industry.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>Columbus</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>BS</DegreeName>
+               <DegreeMajor>
+                  <Name>- Computer and Information Sciences The Ohio State University</Name>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications/>
+   </StructuredXMLResume>
+</Resume>

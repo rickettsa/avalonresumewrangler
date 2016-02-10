@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Suganthi</GivenName>
+            <FamilyName>Srinivasan</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>BHS - (Bapist Health Employee Intranet) - Rebranding</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Integrated new site design with
+                their existing Portal site (v8)</li>
+                     <li>Responsible for integrating,
+                enhancing the code and components of Vignette
+                Portal (v8)</li>
+                     <li>Deployment build using Maven and
+                delivered deployment process document.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>ANSYS Customer, WWW and Sales Portal</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Acted as Lead developer</li>
+                     <li>Responsible for Upgrading Content
+                Workspace Extensions to WEM 8.1 in various
+                environment through production</li>
+                     <li>Designed and created CTD's, based
+                on client spec. While also developing, deploying
+                database schema scripts for various content types
+                in Oracle DB. Also updated existing content types
+                to aid in sharing content across WEM sites.</li>
+                     <li>Implemented WCM workflow
+                extensions for auto approval and auto Publish for
+                various CTDs as per the requirements.</li>
+                     <li>Developed the Download center
+                application module which provides dynamic Akamai
+                links of various ANSYS products personalized to
+                customers based on their license purchase level.
+                Also further integrated with the ANSYS Siebel/BPEL
+                system of record via webservice for updates on
+                downloads and requests.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Publisher's Press</OrganizationName>
+               <Description>
+                  <p>Content repository search and retrieval for customer publications</p>
+                  <ul>
+                     <li>Phase1- acted as a developer
+                delivering search solution based Avalon Unified
+                Search Platform(USP) with Marklogic Server as
+                database.</li>
+                     <li>Customized USP UI and facet
+                configuration based on client's requirement</li>
+                     <li>Code, develop content processing
+                (CPF) pipelines, Xquery modules to integrate with
+                Temis enrichment and Marklogic security api that
+                designed  per customer/division per document
+                granted through group membership</li>
+                     <li>Develop and integrate User
+                management module which authenticate and authorize
+                users based on Marklogic Security realm and
+                provides the user interface for create new user,
+                assign/unassign roles to users etc</li>
+                     <li>Technical Environment: MarkLogic
+                Server 4.2-1, Temis 5.x, GlassFish 4.x.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Marshall &amp; Ilsley Bank</OrganizationName>
+               <Description>
+                  <p>The current M&amp;I Bank group of web sites (13 sites) to be moved from an internally developed CMS and should utilize existing Vignette architecture/structure. The look and feel of the site should match the current site. Ms. Srinivasan responsibilities are as follows</p>
+                  <ul>
+                     <li>Phase1- acted as a senior vignette
+              developer, delivered
+                www.mi-imc.com</li>
+                     <li>Phase 2 - Responsible for delivering
+              two sites (www.mimaap.com and
+                www2.northstartrust.com )</li>
+                     <li>Dealt with coding to QA delivery
+                of developing the DPM site and components,
+                overriding jsps.</li>
+                     <li>Integrated SEO metadata, Omiture
+                analytics code and print templates</li>
+                     <li>Migrated the live site content
+                including Content/Verbiage/Images/ pdfs/RichMedia
+                Podcast/videos with the current site's look and
+                feel.</li>
+                     <li>Helped out other phase 1 sites in
+                terms of content migration and fixing bugs raised
+                by client technical team</li>
+                     <li>Delivered the sites with
+                no/minimal SIT/UAT issues</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>George Washington University (www.gwu.edu)</OrganizationName>
+               <Description>
+                  <p>The university needed a new public facing website as part of their 2008-2009 president's initiative that requires 24x7 availability. The team implemented a highly available solution that includes a disaster recovery plan using the Vignette suite of products, including VCM, VAP and DPM.</p>
+                  <p>Ms. Srinivasan's role entailed:</p>
+                  <ul>
+                     <li>Serving as the Portal / Content
+                Management Development Lead</li>
+                     <li>Leading the development team to
+                deliver Vignette solutions in the full life cycle
+                implementation of Vignette VCM, DPM and
+                Portal</li>
+                     <li>Performing Vignette configuration
+                and coding tasks to create the site</li>
+                  </ul>
+                  <p>design includes Java development, writing DPM extensions, and creating VCM event listeners</p>
+                  <ul>
+                     <li>Writing Implementation Guides for
+                production rollout</li>
+                     <li>Performing troubleshooting as
+                appropriate</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>American Red Cross</OrganizationName>
+               <Description>
+                  <p>The American Red Cross Society implemented a new public facing web site (www.redcross.org) that included the Vignette suite of products VAP, VCM, and DPM. Ms. Srinivasan proposed a new architecture based on their content management needs as well as their challenges with a clustered VCM environment. Ms. Srinivasan's tasks included:</p>
+                  <ul>
+                     <li>Performing VCM architecture
+                changes and fixing issues related to Vignette
+                customizations</li>
+                     <li>Assisting with performance tuning
+                of their VCM/DPM implementation to resolve issues
+                prior to go-live of the system</li>
+                     <li>Performance tuning all of the
+                integrated servers using the Jmeter Tool</li>
+                     <li>Developing custom Jmeter scripts
+                to identify performance bottlenecks and resolved
+                these issues by modifying VCM/DPM code bottlenecks,
+                tuning the portal configuration, and tuning the
+                application server configuration</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Children's Hospital of Philadelphia</OrganizationName>
+               <Description>
+                  <p>M</p>
+                  <p>s. Srinivasan worked on a proof-of-concept implementation with Children's Hospital of Philadelphia. She was responsible for the integration of third party applications into the portal, development of an RSS feed from the site, development of custom forms using Builder and modifications to the portal presentation layer.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Marriott International</OrganizationName>
+               <Description>
+                  <p>Ms. Srinivasan assisted in the implementation of reports for Marriott's content management organization. She developed Ajax enabled front-end solutions to speed up report processing.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>MediaCorp Radio Sites (MCR), Classifieds Ads Site [CAS] / MediaCorp, Singapore</OrganizationName>
+               <Description>
+                  <p>Ms. Srinivasan worked as a Vignette CMS Tech lead for Media Corp Radio Sites to deliver four radio websites (i.e. 938Live, Capital958, YES933, 987FM) that enabled the business to manage and deliver content to different delivery devices (browsers, mobile devices). Her team delivered MediaCorp's Classifieds website where public users can post general classifieds in three major categories - SG Property, SG Automobile, and General.</p>
+                  <ul>
+                     <li>Served as Vignette CMS Tech Lead
+                to configure and deploy the latest Efix to VCM in
+                development, UAT and clustered production
+                environments</li>
+                     <li>Participated in design discussions
+                to identify various content types and in the CMA
+                technical documentation following VPS
+                standards</li>
+                     <li>Created proofs of concept (POC) on
+                Authorization &amp; Roles assignment with
+                VPS-recommended design patterns and the VPO Audit
+                component</li>
+                     <li>Wrote VCM extensions including
+                event listeners, Custom CMA content input forms,
+                property sheet extensions, and DPM component
+                extensions</li>
+                     <li>Developed and deployed database
+                schema scripts for various content types to the SQL
+                Server 2005 database</li>
+                     <li>Configured CMA security by
+                defining three levels of security: role-based
+                capabilities, authorized groups and access control
+                lists</li>
+                     <li>Developed a CMA backup script for
+                various managed objects using vgnimport and
+                vgnexport utilities</li>
+                  </ul>
+                  <p>AsiaOne Portal / Singapore Press Holdings, Singapore</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>The AsiaOne portal (</OrganizationName>
+               <Description>
+                  <p>www.asiaone.com</p>
+                  <p>) required a more scalable, versatile and maintainable content platform. This project migrated their static content and applications into the Vignette V7 Platform. Ms. Srinivasan's responsibilities included:</p>
+                  <ul>
+                     <li>Developing and deploying a custom
+                web application that extended the Management
+                Console and customizing the Home Page to display
+                content and functions based on user roles.</li>
+                     <li>Coding a data migration from the
+                existing portal to the V7 CMS</li>
+                     <li>Extending the ContentInstance
+                Class</li>
+                     <li>Designing, developing and testing
+                imported content in the form of XML files from
+                other publications (Reuters/BT/TNP/ST) to AsiaOne
+                using apache Xpath API, DOM (XML parsing) and the
+                Vignette Management Console API</li>
+                     <li>Designing, developing deploying
+                database schema scripts for various content types
+                in a DB2 database</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Leadership Survey (LS) / FedEx, Singapore</OrganizationName>
+               <Description>
+                  <p>Ms. Srinivasan was a key member in building this application that provides management with automated tools to access their communication and leadership styles, approaches and techniques. She developed JSR 168 portlets implementing various Leadership Survey use cases using Java, Hibernate, and Tapestry.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Unscheduled Outage Report (UOR) / FedEx, Singapore</OrganizationName>
+               <Description>
+                  <p>The UOR application was developed based on JSR168 standard portlet specifications and deployed to Weblogic together with Vignette Portal. Ms. Srinivasan developed a JSR 168 portlet implementing various UOR use cases using Java, Hibernate, and Tapestry.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Electronic Document Management System (EDMS) / FedEx, Singapore</OrganizationName>
+               <Description>
+                  <p>The EDMS application used CAM to create custom content management portlets and applications to support use cases that the framework as shipped did not fulfill. She developed a Content Explorer Portlet based on the Vignette Portal Bean Portlet framework.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Cabin Crew Service Records (CCSR) / Singapore Airlines, Singapore</OrganizationName>
+               <Description>
+                  <p>CCSR is the web-based application that provides users (Crew Performance Department) one common access and view to the crew's service and performance-related data in a user-friendly manner. Ms. Srinivasan provided primary support for ongoing maintenance &amp; enhancement of the project and troubleshooting works, was involved in design, coding and testing of various CRs &amp; Bug Fixes, helped troubleshoot application problems, applied data patches as needed, and performed impact analysis and cost estimation on enhancement requests.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory/>
+      <Qualifications>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="v8">
+            <CompetencyDisplayName>V8</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vignette">
+            <CompetencyDisplayName>Vignette</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jsp">
+            <CompetencyDisplayName>JSP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="servlets">
+            <CompetencyDisplayName>Servlets</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ejb">
+            <CompetencyDisplayName>EJB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xquery">
+            <CompetencyDisplayName>XQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xpath">
+            <CompetencyDisplayName>XPath</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xslt">
+            <CompetencyDisplayName>XSLT</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ant">
+            <CompetencyDisplayName>ANT</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="struts">
+            <CompetencyDisplayName>Struts</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hibernate">
+            <CompetencyDisplayName>Hibernate</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jboss">
+            <CompetencyDisplayName>JBoss</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dbm">
+            <CompetencyDisplayName>DBM</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="informix">
+            <CompetencyDisplayName>Informix</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="db2">
+            <CompetencyDisplayName>DB2</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-sql-server">
+            <CompetencyDisplayName>MS SQL Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

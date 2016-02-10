@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Mark</GivenName>
+            <FamilyName>Rosenzweig</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>214-532-9875</Mobile>
+            <InternetEmailAddress>Rosenzweigm@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Ansys</OrganizationName>
+               <Description>
+                  <p>Developed a set of VBIS processes to load a variety of legacy data objects into a newly developed VCM system</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Avalon Consulting, LLC (Internal project: USAP)</OrganizationName>
+               <Description>
+                  <p>Wrote XQuery functions to simulate relational join functionality for XML data in MarkLogic, to enhance the API for Avalon's Unified Search and Analytics Platform</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Marshall &amp; Ilsley Bank</OrganizationName>
+               <Description>
+                  <p>Managed deployment and promotion process for 12 new sites being redeveloped with Vignette</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Flowserve</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Managed a project team in the
+                upgrade of VCM/DPM to the current version, in
+                addition to implementing an improved language
+                translation model</li>
+                     <li>Served as the technical lead on
+                the VCM upgrade, including content analysis and CTD
+                implementation</li>
+                     <li>Responsible for the migration and
+                conversion of data from the old to new
+                system</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Republic Group</OrganizationName>
+               <Description>
+                  <p>Managed the development and rollout of the company's new internet site built on Vignette Portal</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>McKesson</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Key contributor to all facets of
+                a large VCM/Portal/DPM upgrade, with a specialized
+                focus in CMA &amp; migration tasks</li>
+                     <li>Served as a key team member on a
+                major portal redesign project adding WCM (VCM and
+                DPM)</li>
+                     <li>Developed critical process and
+                VBIS adapters for scheduled batch jobs to migrate
+                data from existing systems into the client's new
+                Vignette application</li>
+                     <li>Designed supporting database
+                tables and created Vignette Builder portlets to
+                maintain them</li>
+                     <li>During a later return engagement,
+                implemented additional database processes for
+                portal user synchronization</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Catholic Health Initiatives</OrganizationName>
+               <Description>
+                  <p>Developed a Vignette Builder application to implement an internal project tracking system</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Martha Stewart Living Omnimedia (MSLO)</OrganizationName>
+               <Description>
+                  <p>Developed VBIS adapters for initial database population and for ongoing scheduled batch jobs for data synchronization of the client's new Vignette application from existing system data</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Wells Fargo</OrganizationName>
+               <Description>
+                  <p>Developed repeatable processes for deployment of Vignette Dynamic Portal assets from development into the production environment</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Church of Latter Day Saints</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Managed the installation of
+                hardware and software infrastructure to support the
+                new central internet site</li>
+                     <li>The project included multiple
+                subcontractors and church resources, working to
+                install heterogeneous operating systems on 17
+                servers, as well as application servers, web
+                servers, databases, and Vignette software</li>
+                     <li>Developed Vignette VBIS adapters
+                to load the new site content database from a
+                variety of legacy databases, flat files, and
+                content directories</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Pepsi</OrganizationName>
+               <Description>
+                  <p>Advised &amp; consulted on the procedures for a successful upgrade of a new release of Vignette Portal</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>McKinney (TX) Independent School District</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Utilizing the Vignette
+                Application Portal suite, extended the capabilities
+                of the intranet portal</li>
+                     <li>Enhancements included modules to
+                make the district curriculum available within the
+                portal, as well as implementation of a test builder
+                to allow teachers to leverage existing district
+                assets when creating new assessments</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Sales Engineer</Title>
+               <OrganizationName>Xchange</OrganizationName>
+               <Description>
+                  <p>Mr. Rosenzweig used a solutions approach to understand the business issues of clients, in order to demonstrate how the Xchange Dialogue Customer Relationship Management (CRM) software could combine real time e-marketing with customer analytics to solve customer communication issues.</p>
+                  <ul>
+                     <li>Constructed, customized, and
+                delivered demonstrations to prospective clients,
+                with average sales exceeding $500,000</li>
+                     <li>Trained peers on demonstration
+                customization methods, allowing them to create
+                individualized demonstrations to highlight clients'
+                unique business concerns</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Apex IT</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Consulted with clients on the
+                usage and implementation of the Vantive suite of
+                Customer Asset Management software, now PeopleSoft
+                CRM</li>
+                     <li>Prior to a new software release,
+                he performed a client-specific system analysis and
+                created the upgrade design. Based on the design, he
+                successfully led the implementation team of a new
+                corporate-wide support system.</li>
+                     <li>Using his CRM knowledge, enhanced
+                a client's system to support a manpower-saving data
+                update capability</li>
+                     <li>To ensure that a production
+                system would meet the client's requirements, he
+                benchmarked performance variations for
+                implementation of a new version of the
+                software</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Antares Alliance Group</OrganizationName>
+               <Description>
+                  <p>Product Specialist</p>
+                  <p>Mr. Rosenzweig served as the expert on the usage of company-produced tools used to create applications for Windows, Unix, MVS, and Internet environments. Based on his deep understanding of the development tools, he built product demonstrations and authored articles on product usage to increase customer proficiency and decrease help desk queries. Mr. Rosenzweig demonstrated his team player approach by coaching co-workers on VBA usage within EdgeworX, a development product for Internet applications.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Consultant and Advanced Software Engineer</Title>
+               <OrganizationName>EDS</OrganizationName>
+               <Description>
+                  <p>Mr. Rosenzweig served six months in Japan consulting on the usage of INCASE, a full life cycle CASE tool. Prior to Japan, he supervised a team of 10 software engineers responsible for developing code generation modules of INCASE. He also coordinated a quality improvement project that reduced known defects by 70%.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName> </SchoolName>
+            </School>
+            <Degree>
+               <DegreeName> </DegreeName>
+               <DegreeMajor>
+                  <Name> </Name>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="vignette">
+            <CompetencyDisplayName>Vignette</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vb">
+            <CompetencyDisplayName>VB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xpath">
+            <CompetencyDisplayName>XPath</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vbscript">
+            <CompetencyDisplayName>VBScript</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="c">
+            <CompetencyDisplayName>C</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-sql-server">
+            <CompetencyDisplayName>MS SQL Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="microsoft-windows">
+            <CompetencyDisplayName>Microsoft Windows</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="linux">
+            <CompetencyDisplayName>Linux</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

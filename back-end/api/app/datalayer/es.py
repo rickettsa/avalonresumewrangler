@@ -130,8 +130,7 @@ class ESDataLayer(DataLayer):
         return doc_id
 
     def list_resumes(self):
-        #FIXME:
-        # - is "list resume" functionality even needed?
+        #FIXME: is "list resume" functionality even needed?
         resumes = self.es.search(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, _source=False, size=10000)
         return [ r for r in resumes['hits']['hits'] ]
 
@@ -167,6 +166,11 @@ class ESDataLayer(DataLayer):
 
         self.es.index(index=self.PROJECT_INDEX, doc_type=self.PROJECT_TYPE, body=project, id=doc_id)
         return doc_id
+
+    def list_projects(self):
+        #FIXME: is "list projecct" functionality even needed?
+        projects = self.es.search(index=self.PROJECT_INDEX, doc_type=self.PROJECT_TYPE, _source=False, size=10000)
+        return [ p for p in projects['hits']['hits'] ]
 
     def find_projects_fulltext(self, q):
         fulltext_query = {

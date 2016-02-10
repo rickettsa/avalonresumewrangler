@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Pritesh</GivenName>
+            <FamilyName>Patel</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Search Engineer-Architect</Title>
+               <OrganizationName>Turner Broadcasting Systems</OrganizationName>
+               <Description>
+                  <p>Pritesh was an architect and engineer for search implementations for all of Turner's public websites and mobile sites/apps. He was involved in design, development, implementation, on-going support, and managing an enhancement roadmap of Search implementations of a fast moving digital business. He developed first of its kind Companion Sync Mobile App Backend Architect for the Team Coco Sync App (won an Emmy Award), Big Bang Theory Sync App, Leverage Sync App, Falling Skies Sync App.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Chief Consultant - Enterprise Search and Data Security</Title>
+               <OrganizationName>Concinnous Soultuions, LLC</OrganizationName>
+               <Description>
+                  <p>Pritesh was responsible for the architecting, implementing, and integrating, Enterprise Search and PCI DSS data security implementations into production environments. These responsibilities included managing client engagement</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Georgia Institute of Technology</OrganizationName>
+               <Description>
+                  <p>Visual Analytics Resarch - Data Visualization and Discovery</p>
+                  <p>Pritesh built a visually interactive platform that allows users to make sense of an entire industry or ecosystem of firms who interact with each other. This can be useful for competitive intelligence, firm research, and industry research.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Autonomy, Inc</OrganizationName>
+               <Description>
+                  <p>Professional Services Consultant - Enterprise Search &amp; Discovery</p>
+                  <p>Pritesh was involved in needs identification, architect solutions, as well as implementation of solutions for clients</p>
+                  <p>in need of Data Management in production environments</p>
+                  <p>.</p>
+                  <p>This included technology integration and QA processes for production environments, in addition to document preparation and leading training exercises.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>United Parcel Service (Investments Group)</OrganizationName>
+               <Description>
+                  <p>Quantitative Investments Analyst</p>
+                  <p>Pritesh performed quantitative model development and analyzed return streams. He also supported investing, management, and portfolio optimization of the UPS</p>
+                  <p>Retirement and Pension Fund.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Software Architect</Title>
+               <OrganizationName>United Parcel Service</OrganizationName>
+               <Description>
+                  <p>Pritesh designed, developed, and supported an entire web infrastructure that served to automate UPS's internal financial treasury process. This functional and analytical web infrastructure did not exist and was built from scratch. He also conducted system training and served as system knowledge expert for financial management users worldwide.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Federal Aviation Administration</OrganizationName>
+               <Description>
+                  <p>Information Technology Specialist</p>
+                  <p>Pritesh improved efficiency by evaluating and implementing new technologies, including VMWare. He also served as department's internal webmaster and facilitated preparations for Capability Maturity Model (CMMi) certification audit.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName/>
+            </School>
+            <Degree>
+               <DegreeName>B.S.</DegreeName>
+               <DegreeMajor>
+                  <Name/>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="python">
+            <CompetencyDisplayName>Python</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev=".net">
+            <CompetencyDisplayName>.NET</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="c">
+            <CompetencyDisplayName>C</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="c++">
+            <CompetencyDisplayName>C++</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ruby">
+            <CompetencyDisplayName>Ruby</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="lisp-scheme">
+            <CompetencyDisplayName>Lisp/Scheme</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="groovy">
+            <CompetencyDisplayName>Groovy</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="php">
+            <CompetencyDisplayName>PHP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="asp.net">
+            <CompetencyDisplayName>ASP.NET</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vb">
+            <CompetencyDisplayName>VB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="actionscript">
+            <CompetencyDisplayName>Actionscript</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="perl">
+            <CompetencyDisplayName>PERL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jstl">
+            <CompetencyDisplayName>JSTL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="angularjs">
+            <CompetencyDisplayName>AngularJS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="nodejs">
+            <CompetencyDisplayName>NodeJS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="play-framework">
+            <CompetencyDisplayName>Play Framework</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="twitter-bootstrap">
+            <CompetencyDisplayName>Twitter Bootstrap</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="spark">
+            <CompetencyDisplayName>Spark</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jubatus">
+            <CompetencyDisplayName>Jubatus</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="apache-mahout">
+            <CompetencyDisplayName>Apache Mahout</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="google-web-toolkit">
+            <CompetencyDisplayName>Google Web Toolkit</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="google-app-engine">
+            <CompetencyDisplayName>Google App Engine</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hibernate">
+            <CompetencyDisplayName>Hibernate</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mvc">
+            <CompetencyDisplayName>MVC</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jboss">
+            <CompetencyDisplayName>JBoss</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ejb">
+            <CompetencyDisplayName>EJB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="weka">
+            <CompetencyDisplayName>Weka</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="lingpipe">
+            <CompetencyDisplayName>Lingpipe</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="autonomy-idol">
+            <CompetencyDisplayName>Autonomy IDOL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="lucene">
+            <CompetencyDisplayName>Lucene</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="webspinx-web-crawler">
+            <CompetencyDisplayName>Webspinx Web Crawler</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="adobe-photoshop">
+            <CompetencyDisplayName>Adobe Photoshop</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="adobe-fireworks">
+            <CompetencyDisplayName>Adobe Fireworks</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="adobe-premiere-pro">
+            <CompetencyDisplayName>Adobe Premiere Pro</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-sql-server">
+            <CompetencyDisplayName>MS SQL Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mongodb">
+            <CompetencyDisplayName>MongoDB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

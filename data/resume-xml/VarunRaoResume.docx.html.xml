@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Varun</GivenName>
+            <FamilyName>Rao</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Hortonworks certificated developer</OrganizationName>
+               <Description>
+                  <p>HDFS, Map Reduce, HCatalog, Pig, Hive and HBase. Experience Setup HDP 2.0 cluster on EC2 using Ambari</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Big Data -Automated</OrganizationName>
+               <Description>
+                  <p>daily load process</p>
+                  <p>for a large media company - automated</p>
+                  <p>Ooozie</p>
+                  <p>workflow to download zip files from FTP server, validate, load into</p>
+                  <p>ORC hive tables</p>
+                  <p>mapped to data on</p>
+                  <p>S3.</p>
+                  <p>Used data triggers to connect Oozie jobs.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Big Data -</OrganizationName>
+               <Description>
+                  <p>Log analysis</p>
+                  <p>- transforming apache logs using</p>
+                  <p>pig, hive</p>
+                  <p>and loading into MySQL using</p>
+                  <p>Sqoop</p>
+                  <p>. Workflow created using</p>
+                  <p>Oozie</p>
+                  <p>.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Big Data -</OrganizationName>
+               <Description>
+                  <p>Stream analysis</p>
+                  <p>using</p>
+                  <p>Lamda architecture</p>
+                  <p>(in progress) - analyze twitter stream data by streaming data to</p>
+                  <p>Kafka</p>
+                  <p>queues.</p>
+                  <p>Storm</p>
+                  <p>bolts to process hashtag counts and store in Casandra. Data will be loaded to</p>
+                  <p>HDFS</p>
+                  <p>for Batch processing.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>E-discovery and</OrganizationName>
+               <Description>
+                  <p>search</p>
+                  <p>-Built a Map-reduce program to index Enron emails into</p>
+                  <p>Solr</p>
+                  <p>. Emails were stored as</p>
+                  <p>sequence files</p>
+                  <p>and the meta-data was retrieved using</p>
+                  <p>TIKA</p>
+                  <p>parser. Also evaluated the</p>
+                  <p>Behemoth</p>
+                  <p>project</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Gift Catalog - complete redesign of the gift platform used by donors to send ecards/mailcards and donate money. Technologies - Velocity, jQuery, ElasticPath, CybersourcePartner in home (PIH) - application used by donors to manage preferences (email/main/payment etc). Technologies - Struts, jQuery, web service interactions with Convio Constituent360.</OrganizationName>
+               <Description/>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName/>
+               <Description/>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Architect/Lead</Title>
+               <OrganizationName>Parago, Inc</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Architect/Tech lead - Lead a team
+                of 5 developers to build a custom paperless rebates
+                site for Walgreens. Features included Struts 2.0,
+                heavy Ajax using Jquery, 508 compliance and OWASP
+                top 10 security compliance.</li>
+                     <li>Architect/Tech lead -
+                Architect/Develop the government SEEARP program for
+                energy efficient appliances. Implemented the
+                program for 3 states - Idaho, Ohio and
+                Louisiana.</li>
+                     <li>Architect/Developer - worked on
+                the in-house incentives platform to build an
+                incentive application for Staples. The process
+                takes care of registering users, showing the payout
+                history, sending them the bonus as checks or
+                reloadable debit cards. Uses DI for file load,
+                Hibernate, Struts 2.0 for website and Maven for the
+                build.</li>
+                     <li>Architect/Tech lead - Leading the
+                offshore pilot effort as an Architect/Tech lead.
+                Image management application with a struts 2.0
+                front end and using Hibernate ORM with
+                Oracle.</li>
+                     <li>Architect - Designed a developed a
+                self-support site to perform automatic monitoring
+                of systems and processes. JSF front end, Ajax4JSF,
+                EJB 3.0, Jboss Rules.</li>
+                     <li>Finding performance
+                bottlenecks by profiling (jProfiler) and code
+                debugging. This involved changing to heavy use of
+                AJAX requests (DOJO), optimizing marshalling and
+                un-marshalling of requests.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>A Comparative Study Of Various
+                Soap Implementations And OptimizationsResearch involved exploring the
+                various possibilities to optimize SOAP
+                implementations, by performing a comparative study
+                of various SOAP optimizations, and trying to
+                incorporate them in the current Apache Axis
+                architecture.Changed the parsing mechanism used
+                by Apache Axis from an event driven approach of SAX
+                to a more intuitive approach of the Pull
+                parser.We incorporated optimizations
+                in the deserialization phase on the client side of
+                apache axis web server, with our results showing
+                performance improvement ranging from 211% to 470%
+                on the time between request sent and response
+                received for large array data</Title>
+               <OrganizationName>Kansas State University</OrganizationName>
+               <Description>
+                  <p>MS Report Thesis</p>
+                  <ul>
+                     <li>A Comparative Study Of Various
+                Soap Implementations And Optimizations</li>
+                     <li>Research involved exploring the
+                various possibilities to optimize SOAP
+                implementations, by performing a comparative study
+                of various SOAP optimizations, and trying to
+                incorporate them in the current Apache Axis
+                architecture.</li>
+                     <li>Changed the parsing mechanism used
+                by Apache Axis from an event driven approach of SAX
+                to a more intuitive approach of the Pull
+                parser.</li>
+                     <li>We incorporated optimizations
+                in the deserialization phase on the client side of
+                apache axis web server, with our results showing
+                performance improvement ranging from 211% to 470%
+                on the time between request sent and response
+                received for large array data</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>RSVPA - Rapid Syndrome Verification Project</Title>
+               <OrganizationName>Kansas State University</OrganizationName>
+               <Description>
+                  <p>GRA</p>
+                  <p>RSVPA - Rapid Syndrome Verification Project</p>
+                  <p>A palm OS application/Web Application, used by veterinarians to collect data obtained during cattle examination. It helps analyzing data about the various types of symptoms shown by cattle in various counties and states, and detects possibility of any epidemic.</p>
+                  <ul>
+                     <li>Gathered requirements and
+                implemented forms for adding various syndrome data
+                and synchronizing ultralight database with Sybase,
+                using Mobilink Syncronization. Used Codeworrier IDE
+                to create forms for displaying all the collected
+                data as graphs, and showing appropriate error
+                messages.</li>
+                     <li>Designed the web interface
+                similar to forms on the palm application and using
+                JSP. Created customized helper classes for
+                reusability. Currently, involved to converting all
+                those pages using JSF (Using Oracle Jdeveloper) and
+                EJB's (using XDoclet).</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Kansas State University</OrganizationName>
+               <Description>
+                  <p>GRA</p>
+                  <p>Kidsacookin.com</p>
+                  <p>Designed and implemented user-friendly website using Visual studio and C#.net. Created reusable user Controls (.ascx files), oracle procedures, CSS, and made the site modular resulting in easy maintenance of the website.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory/>
+      <Qualifications>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jquery">
+            <CompetencyDisplayName>JQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rest">
+            <CompetencyDisplayName>REST</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="struts">
+            <CompetencyDisplayName>Struts</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jsf">
+            <CompetencyDisplayName>JSF</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="j2ee">
+            <CompetencyDisplayName>J2EE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ejb">
+            <CompetencyDisplayName>EJB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="spring">
+            <CompetencyDisplayName>Spring</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jboss">
+            <CompetencyDisplayName>JBoss</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jdbc">
+            <CompetencyDisplayName>JDBC</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hibernate">
+            <CompetencyDisplayName>Hibernate</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="apache">
+            <CompetencyDisplayName>Apache</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="tomcat">
+            <CompetencyDisplayName>Tomcat</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev=".net">
+            <CompetencyDisplayName>.NET</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="iis">
+            <CompetencyDisplayName>IIS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="selenium">
+            <CompetencyDisplayName>Selenium</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="elasticpath">
+            <CompetencyDisplayName>ElasticPath</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="eclipse">
+            <CompetencyDisplayName>Eclipse</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jdeveloper">
+            <CompetencyDisplayName>Jdeveloper</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="toad">
+            <CompetencyDisplayName>TOAD</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jprofiler">
+            <CompetencyDisplayName>jProfiler</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jenkins">
+            <CompetencyDisplayName>Jenkins</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="grinder">
+            <CompetencyDisplayName>grinder</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="agile-scrum">
+            <CompetencyDisplayName>Agile SCRUM</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="iterative">
+            <CompetencyDisplayName>Iterative</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="waterfall">
+            <CompetencyDisplayName>Waterfall</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="clearcase">
+            <CompetencyDisplayName>ClearCase</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="svn">
+            <CompetencyDisplayName>SVN</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="cvs">
+            <CompetencyDisplayName>CVS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="git">
+            <CompetencyDisplayName>Git</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ant">
+            <CompetencyDisplayName>Ant</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hudson-ci-1.3">
+            <CompetencyDisplayName>Hudson CI 1.3</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="maven">
+            <CompetencyDisplayName>Maven</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-sql-server">
+            <CompetencyDisplayName>MS SQL Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-access">
+            <CompetencyDisplayName>MS Access</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sybase">
+            <CompetencyDisplayName>Sybase</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

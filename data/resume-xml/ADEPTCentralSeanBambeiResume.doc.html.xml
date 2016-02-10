@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Sean</GivenName>
+            <FamilyName>Bambei</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>ADEPTCentral</OrganizationName>
+               <Description>
+                  <p>Mr. Bambei</p>
+                  <p>performs instructional design, customizations, creation, development, and integration tasks related to corporate training in both e-Learning and classroom delivery techniques.</p>
+                  <p>Mr. Bambei and an ADEPTCentral team worked directly with ANCILE to design and create a certification program for</p>
+                  <p>ANCILE's uPerform and uPerform Express</p>
+                  <p>products. Mr. Bambei was responsible for the design and creation of the curriculum templates and the student guides and labs related to the Administrator and Advanced Administrator roles. Some of his other notable projects include:</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Concorde College</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Create sectional lectures for the
+                individual online college courses</li>
+                     <li>Develop and modify content, based
+                on requirements, for the courses</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Hewlett Packard (HP)</OrganizationName>
+               <Description>
+                  <p>Massachusetts Mutual</p>
+                  <ul>
+                     <li>Customize HP ART template for
+                Mass Mutual</li>
+                     <li>Create custom version of
+                e-learning web based training</li>
+                     <li>Deliver two week training on use
+                of HP ART</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>T-Mobile</OrganizationName>
+               <Description>
+                  <p>Create customized version of e-learning web based training to meet the client's needs and systems.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>TUI (ymtvacations.com, countrywalkers.com, and travcoa.com)</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Implemented a customized version
+                of Vignette FURL for url case and character
+                redirection</li>
+                     <li>Modified Apache configuration for
+                webserver url redirection</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Canadian Pacific Rail</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Determined client requirements for
+                customization of web-based training</li>
+                     <li>Modified course using Snagit and
+                Articulate software to meet clients customization
+                needs</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>IntegralLife.com</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Determined client requirements for
+                transitioning applications to a cloud computing
+                environment</li>
+                     <li>Performed migration of client
+                applications from an existing hosted stack to
+                Amazon Elastic Cloud utilizing RightScale and
+                scripting</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Scottsdale Healthcare (SHC)</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Designed and created over 15
+                complex CTDs</li>
+                     <li>Performed data migration</li>
+                     <li>Developed JSP overrides that
+                display VCM content as desired</li>
+                  </ul>
+                  <p>HTML output</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Patheos.com</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Performed design, configuration,
+                and development of a custom website utilizing
+                Ingeniux OnDemand CMS (software as a service), with
+                Grails and groovy as the display layer</li>
+                     <li>Worked with the client to
+                determine the multiple schema definitions
+                (Ingeniux's version of CTD) for each page type and
+                design of CMS content components and their
+                reuse</li>
+                     <li>Integrated and installed all
+                major components of the solution stack.  These
+                included Pluck, Google Ad Manager and Analytics,
+                Lucene, Amazon Elastic Cloud, S3, and CloudFront
+                content delivery service.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Hennepin County</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Created custom Java Server Pages
+                for use in Vignette Content Management to display
+                search results</li>
+                     <li>Installed and configured Autonomy
+                IDOL 5 for a custom implementation</li>
+                     <li>Defined &amp; configured custom
+                search indexes using FileSystemFetch and
+                HTTPFetch</li>
+                     <li>Interfaced applications with
+                Autonomy's API to create custom search tools 
+                </li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Centralized Integration Developer</Title>
+               <OrganizationName>Corporate Express</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Created Java and Flow services
+                within webMethods to integrate a multitude of
+                internal applications and 3rd party software to
+                enhance customer experience and communicate with
+                external suppliers.</li>
+                     <li>Developed JUnit testing suites for
+                streamlining the code promotion process into
+                development, testing, and production
+                environments</li>
+                     <li>Customized customer integrations
+                (XML, OAG, EDI) for inbound PO processing and
+                outbound invoicing.</li>
+                     <li>Created XSL stylesheets for
+                different custom customer outputs</li>
+                     <li>Created XML document definitions,
+                including standardizations and mappings</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Corporate Express</OrganizationName>
+               <Description>
+                  <p>e-Commerce Systems Analyst</p>
+                  <ul>
+                     <li>Configured and implemented the
+                Dante (webMethods) Optimize system monitoring
+                tool</li>
+                     <li>Created Java classes and UNIX
+                shell scripts to assist in systems
+                monitoring</li>
+                  </ul>
+                  <ul>
+                     <li>Developed deployment &amp; backup
+                scripts to streamline the iB2B code promotion
+                process</li>
+                     <li>Utilized webMethods tools to
+                monitor and support EAI and B2B products in various
+                environments</li>
+                     <li>Collaborated with customers and
+                developers to resolve 3rd party application
+                issues</li>
+                     <li>Monitored multiple web based
+                applications</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Maxim Group (Consultant for Sun MicroSystems)</OrganizationName>
+               <Description>
+                  <p>Applications Programmer, Partner Portal Project</p>
+                  <p>Developed enhanced functionality of the portal with new content providers and collaboration tools</p>
+                  <p>All code was written in Java and XML and implemented on top of iPlanet Portal Server and deployed to an international audience</p>
+                  <p>Developed new content providers for Sun's PartnerPortal implementation and assisted in streamlining the install process, which included cleaning up scripts and installing the MySun product on various environments</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>ICG Communications</OrganizationName>
+               <Description>
+                  <p>Systems Programmer</p>
+                  <ul>
+                     <li>Rewrote a telecom order entry
+                application in Java using JBuilder3 and Clear
+                Case</li>
+                     <li>Worked on JDBC connections and
+                building connection pool</li>
+                     <li>Created GUI development using
+                swing components</li>
+                     <li>Supported users and created
+                enhancements for a calling card ordering
+                system</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>Denver, Colorado</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>BS</DegreeName>
+               <DegreeMajor>
+                  <Name/>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="hp">
+            <CompetencyDisplayName>HP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="storyline">
+            <CompetencyDisplayName>Storyline</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vignette">
+            <CompetencyDisplayName>Vignette</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="autonomy-idol">
+            <CompetencyDisplayName>Autonomy IDOL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="groovy">
+            <CompetencyDisplayName>Groovy</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="grails">
+            <CompetencyDisplayName>Grails</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="pl-sql">
+            <CompetencyDisplayName>PL/SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xslt">
+            <CompetencyDisplayName>XSLT</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="c++">
+            <CompetencyDisplayName>C++</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vbscript">
+            <CompetencyDisplayName>VBScript</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="perl">
+            <CompetencyDisplayName>PERL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="aws">
+            <CompetencyDisplayName>AWS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="cloudfront">
+            <CompetencyDisplayName>CloudFront</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="tomcat">
+            <CompetencyDisplayName>Tomcat</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="weblogic">
+            <CompetencyDisplayName>WebLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dbm">
+            <CompetencyDisplayName>DBM</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-access">
+            <CompetencyDisplayName>MS Access</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-sql-server">
+            <CompetencyDisplayName>MS SQL Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="unix">
+            <CompetencyDisplayName>UNIX</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="solaris">
+            <CompetencyDisplayName>Solaris</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="aix">
+            <CompetencyDisplayName>AIX</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="linux">
+            <CompetencyDisplayName>Linux</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="microsoft-windows">
+            <CompetencyDisplayName>Microsoft Windows</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rational-rose">
+            <CompetencyDisplayName>Rational Rose</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="junit">
+            <CompetencyDisplayName>JUnit</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="eclipse">
+            <CompetencyDisplayName>Eclipse</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="quark">
+            <CompetencyDisplayName>Quark</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

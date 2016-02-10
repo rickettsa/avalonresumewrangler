@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Raphaëlle</GivenName>
+            <FamilyName>Loyer</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Developer intern</Title>
+               <OrganizationName>Bouygues Telecom</OrganizationName>
+               <Description>
+                  <p>Designed, developed and validated reachability application in SIPServlet (java), and deployed on a Telephony Application Server (Rhino OpenCloud) and integrated with IMS Core and Media Resource Function of ALU.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Educational &amp; Project Experience</OrganizationName>
+               <Description>
+                  <p>Ms. Loyer learned about IT consulting, Web development and Software programming while attending</p>
+                  <p>The Illinois Institute of Technology</p>
+                  <p>.</p>
+                  <p>At the</p>
+                  <p>Ecole Supérieure d'Electronique de l'Ouest</p>
+                  <p>in France, she learned critical and analytical thinking approaches to problem solving.</p>
+                  <p>While there, Raphaëlle completed several courses in WEB Architecture and Technologies, Computer Architecture, and Relational Databases.</p>
+                  <p>She also completed several substantial classroom projects at the Illinois Institute of Technology.</p>
+                  <p>One such project was a social networking web application based on JavaScript, HTML5, CSS3,</p>
+                  <p>JQuery/AJAX/Json,</p>
+                  <p>IndexedDB, Socket.IO, Node.js and ExpressJS.</p>
+                  <p>A second project was a Search Service web application using similar technologies.</p>
+                  <p>Raphaelle also built additional web applications using</p>
+                  <p>J2EE technologies including EJB, MVC, JSP/JSTL/EL, and JSF.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory/>
+      <Qualifications>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="c">
+            <CompetencyDisplayName>C</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="css">
+            <CompetencyDisplayName>CSS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="j2ee">
+            <CompetencyDisplayName>J2EE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="nodejs">
+            <CompetencyDisplayName>NodeJS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

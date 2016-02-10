@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Manjesh</GivenName>
+            <FamilyName>Reddy</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>214-384-6675</Mobile>
+            <InternetEmailAddress>reddym@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>ALSAC/St. Jude Children's Research Hospital</OrganizationName>
+               <Description>
+                  <p>Currently, Mr. Reddy is working extensively on their Gift Catalog, ElasticPath</p>
+                  <p>e-commerce application developed primarily using Struts, Velocity and Hibernate. He is working on redesigning their Naming Opportunities website. His work included the following tasks:</p>
+                  <ul>
+                     <li>Optimizing Cards Experience
+                project to redesign the complete Cards ordering
+                process</li>
+                     <li>Building their mobile compatible
+                Express donation forms.</li>
+                     <li>Redesigning their Optimized
+                Donation Forms.</li>
+                     <li>Phase 1&amp;2 of the Holiday
+                Tributes Redesign projects.</li>
+                     <li>RadioCaresForStJude Multi-Site
+                Management application which uses VCM 7.3.1 for its
+                content and DSM for content delivery.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Patheos</OrganizationName>
+               <Description>
+                  <p>Mr. Reddy worked on redesigning Patheos.com website from version 2.0 to version 3.0. He was involved with the following elements:</p>
+                  <ul>
+                     <li>Building new widgets using Groovy
+                to render the content stored in Ingeniux, XML based
+                CMS.</li>
+                     <li>Building custom Wordpress PHP
+                plugin to integrate Silverpop for newletter
+                signup/preferences.</li>
+                     <li>Managing their server
+                infrastructure using RightScale service.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Star Children's Charity</OrganizationName>
+               <Description>
+                  <p>Mr. Reddy worked on completely redoing the website on Wordpress platform, moving away from a DotNetNuke system.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Library of Congress</OrganizationName>
+               <Description>
+                  <p>The Library of Congress needed to find better ways to generate and manage metadata for their Legislative Content. The Library contracted with Avalon Consulting, LLC to lead a research project showing how text analytics, batch metadata management and distant metadata can be used to improve the management and findability of their content. The project used MarkLogic to build prototypes for search, text analytics and content enrichment.</p>
+                  <p>Mr. Reddy was a senior developer on the project. In this role he built the Bill Data Analysis and Vote Data Analysis prototypes. Basic front-end was built using Unified Search Portlet (USP) codebase. He wrote several XQuery scripts to smart spider the documents, ingest the documents into Marklogic server and to add document meta-data that was required to enhance the</p>
+                  <p>search experience by</p>
+                  <p>building easy to use facet-oriented search interface. JQuery plugins like QTip2, JQueryUI and JQPlot were used in building infographics and other cool UI functionalities. He also built a Continuous-Integration service using Hudson CI to manage code deployments.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>UT Southwestern Medical Center/Simmons Cancer Center</OrganizationName>
+               <Description>
+                  <p>Mr. Reddy worked on replacing their existing Find a Physician application running on pure JDBC with new search application using Apache SOLR/Lucene server on their new Simmons Cancer Center site running on VCM 7.5 and VAP 7.4.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>McKesson Corporation</OrganizationName>
+               <Description>
+                  <p>Mr. Reddy worked extensively on Supply Management Online (SMO) - Web Content Management project where he implemented several optimization techniques at various application layers to improve the performance of the site driven by VCM 7.3.1.1/7.5 with VAP 7.1/7.4. He was involved in testing the performance gain delivered by Azul's Network attached appliance. He was also involved in the VCM upgrade from 7.3.1.1 to 7.5 and VAP upgrade from 7.1 to 7.4.</p>
+                  <p>To accomplish this he performed requirements gathering and analysis, design, task estimation, implementation/review, integration tests, unit test, user acceptance test, application deployment and maintenance.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Web Engineer III</Title>
+               <OrganizationName>University of Texas Southwestern Medical Center</OrganizationName>
+               <Description>
+                  <p>As a Software System Specialist and Web Engineer at Southwestern Medical Center, Mr. Reddy heavily contributed to such projects as the Faculty Reappointment letter application, Budget Calendar application, and the Promotion and Tenure application. To accomplish this he performed such tasks as requirements gathering and analysis, design, task estimation, implementation/review, integration tests, unit test, user acceptance test, and application deployment and maintenance. He also mentored associate and junior software developers. These responsibilities required Mr. Reddy to use Struts and EJBs to create faculty reappointment letter and manage the Dean's Office customizations, as well as generating budget calendar reports for the Dean's Office. He integrated Greystone Health Library application on</p>
+                  <p>www.utsouthwestern.org</p>
+                  <p>using Vignette V6.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>J2EE Developer</Title>
+               <OrganizationName>Layered Technologies</OrganizationName>
+               <Description>
+                  <p>Throughout his role as a J2EE Developer at Layered Technologies, Mr. Reddy worked extensively on an Order Management System, a Product Management Tool, and a ModernBill v5.0 Integration using such tools as J2EE 1.4, JSF, JDEVELOPER 10.1.3 IDE, ORACLE 9i, TOAD, JBOSS 4.0.2, JAAS authentication, Apache ANT, STRUTS-TILES, JIRA, XML, XSLT, and LOG4J. His key responsibilities included designing and integrating PAYPAL and AUTHORIZE.NET payment processors to the Order Management System, designing and implementing a Product</p>
+                  <p>Management Tool to easily create and manage all the products to be sold on the company's website, and</p>
+                  <p>integrating an</p>
+                  <p>Order Management System and Product Management Tool with ModernBill v5.0, a web-based Billing Application, using XML formatted MBAPI(ModernBill API)</p>
+                  <p>Command, Requests, and Responses.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Java Developer</Title>
+               <OrganizationName>College Portal</OrganizationName>
+               <Description>
+                  <p>Using such tools as</p>
+                  <p>J2EE 1.4, JSF, JDEVELOPER 10.1.3 IDE, ORACLE 9i, TOAD, JBOSS 4.0.2, JAAS authentication, Apache ANT, STRUTS-TILES, JIRA, XML, XSLT, and LOG4J, Mr. Reddy helped build a Java web application used by the undergraduate college to maintain services like student management, employee management, and enrollment. His responsibilities included designing and implementing the database on ORACLE 9i using TOAD, gathering requirement and implementing web interfaces on JavaServer Faces (JSF), using STRUTS-TILES package to create page templates, using JAAS for providing Role based User authentication, Using XML and XSLT for dynamically adding Role based navigation links, and writing Apache ANT script to build the application and deploy it on JBOSS Application Server.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Application Developer</Title>
+               <OrganizationName>Information Systems Office, Kansas State University</OrganizationName>
+               <Description>
+                  <p>As an application developer at KSU, Mr. Reddy wrote UNIX Shell scripts for ALLFUSION HARVEST CHANGE MANAGER V5.1.1 versioning system application to provide back end support for WINDOWS-UNIX cross-platform data transfer. He also designed and developed programmable business documents including pay stubs and checks using OPTIO DESIGN STUDIO 7.X to automate large scale printing jobs, in addition to using OPTIO PRINT MANAGER to monitor network print queues.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>Kansas State University</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>M.S</DegreeName>
+               <DegreeMajor>
+                  <Name>in Computer Science</Name>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>Bangalore, India</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>B.S</DegreeName>
+               <DegreeMajor>
+                  <Name/>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="j2ee">
+            <CompetencyDisplayName>J2EE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="c">
+            <CompetencyDisplayName>C</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="c++">
+            <CompetencyDisplayName>C++</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="groovy">
+            <CompetencyDisplayName>Groovy</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="perl">
+            <CompetencyDisplayName>PERL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="shell-scripts">
+            <CompetencyDisplayName>Shell Scripts</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="pl-sql">
+            <CompetencyDisplayName>PL/SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jsf">
+            <CompetencyDisplayName>JSF</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jsp">
+            <CompetencyDisplayName>JSP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="velocity">
+            <CompetencyDisplayName>Velocity</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jdbc">
+            <CompetencyDisplayName>JDBC</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ejb">
+            <CompetencyDisplayName>EJB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xslt">
+            <CompetencyDisplayName>XSLT</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jquery">
+            <CompetencyDisplayName>JQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xquery">
+            <CompetencyDisplayName>XQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xpath">
+            <CompetencyDisplayName>XPath</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="asp.net">
+            <CompetencyDisplayName>ASP.NET</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="php">
+            <CompetencyDisplayName>PHP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dhtml">
+            <CompetencyDisplayName>DHTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="css">
+            <CompetencyDisplayName>CSS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="lucene">
+            <CompetencyDisplayName>Lucene</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-sql-server">
+            <CompetencyDisplayName>MS SQL Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sybase">
+            <CompetencyDisplayName>Sybase</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-access">
+            <CompetencyDisplayName>MS Access</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="db2">
+            <CompetencyDisplayName>DB2</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="unix">
+            <CompetencyDisplayName>UNIX</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="linux">
+            <CompetencyDisplayName>Linux</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="solaris">
+            <CompetencyDisplayName>Solaris</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="microsoft-windows">
+            <CompetencyDisplayName>Microsoft Windows</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jboss">
+            <CompetencyDisplayName>JBoss</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="apache-tomcat">
+            <CompetencyDisplayName>Apache Tomcat</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vignette">
+            <CompetencyDisplayName>Vignette</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="liferay">
+            <CompetencyDisplayName>Liferay</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ingeniux">
+            <CompetencyDisplayName>Ingeniux</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="wordpress">
+            <CompetencyDisplayName>WordPress</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dotnetnuke">
+            <CompetencyDisplayName>DotNetNuke</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="e-commerce">
+            <CompetencyDisplayName>E-Commerce</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="elasticpath">
+            <CompetencyDisplayName>ElasticPath</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

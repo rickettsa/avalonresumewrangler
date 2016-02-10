@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Andy</GivenName>
+            <FamilyName>Kruth</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Hadoop Consultant</Title>
+               <OrganizationName>InsideSales.com</OrganizationName>
+               <Description>
+                  <p>InsideSales.com offers the sales industry's first comprehensive sales acceleration platform that creates high-performance sales teams with breakthrough technology.</p>
+                  <p>Andy spent time with members of every step of InsideSales development process to consult on the efficiency and optimization of a new system meant to predict optimal potential sales connections.</p>
+                  <p>Andy advised InsideSales on how to properly create a physical infrastructure for HDP, administer an appropriate level of security features, and did basic training of administrators on how to administer the cluster in Ambari. He also spent a lot of time with the analytical team advising on best design and implementation practices for complex HBase systems including HBase Schema design, data creation and retrieval, and how to best integrate with the custom Yarn applications they were developing.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Hadoop Consultant</Title>
+               <OrganizationName>Bell Helicopter</OrganizationName>
+               <Description>
+                  <p>Bell is an industry leading helicopter company recognized globally for their state-of-the-art products and services.</p>
+                  <p>Andy architected and developed a solution to ingest flight time data, process it, and create valuable statistics. The system used a complex ETL process to read through the flight data using Python and produce valuable regime statistics and analytical aggregates. The statistics and aggregates were stored in HDP for batch analytical querying using Pig and Hive, as well as the raw data for retrospective reference and processing.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Hadoop Consultant</Title>
+               <OrganizationName>Dell Computers, INC.</OrganizationName>
+               <Description>
+                  <p>Dell is an industry leading hardware product company known for desktops, laptops, storage, servers, and consumer electronics sold world-wide.</p>
+                  <p>Andy architected and developed a pilot infrastructure to ingest several types of machine and structured data into an HDP environment. The solution supported batch analytics through custom Java MapReduce and Hive, with near real-time alerting and viewing through HBase, Kafka, and Storm. This pilot helped Dell gain insight on how they could save money and complexity by switching their current data storage model to an HDP solution. It also provided a querying interface to do previously unattainable historical and batch analytics.</p>
+                  <p>Andy was responsible for architecting an ingestion pipeline that preprocessed data in Python and stored partition data in HDP. The data was then cleaned and consolidated for concise querying using Custom MapReduce and Hive.</p>
+                  <p>For the real-time strategy Andy helped develop a solution that would process and alert using Kafka and Storm for real time ingestion. The alerts and data viewing were handled using websockets and a java HBase Client to view data immediately throughout the ingestion process from a custom web app.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Hadoop Consultant</Title>
+               <OrganizationName>Triad Retail Media</OrganizationName>
+               <Description>
+                  <p>Triad Retail Media is a growing retail advertising company. Specializing in handling advertising campaigns for large consumer companies.</p>
+                  <p>Andy worked on a project to develop an ingestion strategy for multiple file sources over FTP into an HDP solution. Andy also helped develop analytics formulas and trained Triad's developers on best practices around ingestion and querying data in Hadoop. This project would enable Triad to store previously disposable data and start to implement predictive analytics to better target their ad campaigns.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Staff Consultant</Title>
+               <OrganizationName>Patheos, INC.</OrganizationName>
+               <Description>
+                  <p>Patheos.com is the world leader in online religious discussion and provides a medium for all faiths, creeds, and beliefs to come together and talk about the world's issues. The site is currently visited by 150,000 unique visitors per day.</p>
+                  <p>Andy worked with Patheos.com to manage and develop their growing site. He participated in the following projects:</p>
+                  <ul>
+                     <li>Migrated a multisite Wordpress
+                instance of over 100 blogs to a new domain.</li>
+                     <li>Implemented a full front-end
+                overhaul of the entire site, which included new
+                HTML and CSS designs as well as created custom
+                Wordpress themes.</li>
+                     <li>Installed and configured many new
+                site applications to increase functionality
+                including: DFP Small Business, SilverPop, and
+                Apache Solr.</li>
+                     <li>Was responsible for upgrading and
+                maintaining a multisite Wordpress instance now
+                containing over 300 blogs.</li>
+                     <li>Was responsible for maintaining a
+                cloud server network comprised of over 30
+                servers.</li>
+                     <li>Utilized Amazon CloudFront to
+                provide front-end page caching and site
+                acceleration.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Staff Consultant</Title>
+               <OrganizationName>MK3 &amp; BTI Systems</OrganizationName>
+               <Description>
+                  <p>Andy worked on a very tight timeframe to meet a site upgrade need that would be rolled out in conjunction with a new product release. The project included the following:</p>
+                  <ul>
+                     <li>Creating new Ingeniux Schemes for
+                enhanced data needs</li>
+                     <li>Creating and documenting standards
+                for new content creation and deployment</li>
+                     <li>Developed new jQuery driven site
+                widgets</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Janus Capital</OrganizationName>
+               <Description>
+                  <p>Andy worked with a team of Janus Capital developers to roll out a new home page at janus.com as well as create a standard for new microsites. Andy was responsible for implementing new designs for the janus.com homepage which required developing new HTML templates in Grails. He also contributed in developing a Grails and Ingeniux framework to design microsites on the fly.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>Terre Haute, IN</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>B.A.</DegreeName>
+               <DegreeMajor>
+                  <Name/>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="python">
+            <CompetencyDisplayName>Python</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="pig">
+            <CompetencyDisplayName>Pig</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hive">
+            <CompetencyDisplayName>Hive</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oozie">
+            <CompetencyDisplayName>Oozie</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hbase">
+            <CompetencyDisplayName>HBase</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="object-oriented">
+            <CompetencyDisplayName>Object Oriented</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="falcon">
+            <CompetencyDisplayName>Falcon</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ambari">
+            <CompetencyDisplayName>Ambari</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hdfs">
+            <CompetencyDisplayName>HDFS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="storm">
+            <CompetencyDisplayName>Storm</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ranger">
+            <CompetencyDisplayName>Ranger</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jquery">
+            <CompetencyDisplayName>JQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="css">
+            <CompetencyDisplayName>CSS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="cross-browser-issues">
+            <CompetencyDisplayName>Cross-Browser Issues</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="adobe-photoshop">
+            <CompetencyDisplayName>Adobe Photoshop</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="grails">
+            <CompetencyDisplayName>Grails</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="groovy">
+            <CompetencyDisplayName>Groovy</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ingeniux">
+            <CompetencyDisplayName>Ingeniux</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="wordpress">
+            <CompetencyDisplayName>WordPress</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mercurial">
+            <CompetencyDisplayName>Mercurial</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="svn">
+            <CompetencyDisplayName>SVN</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="git">
+            <CompetencyDisplayName>Git</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="tomcat">
+            <CompetencyDisplayName>Tomcat</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="apache-web-server">
+            <CompetencyDisplayName>Apache Web Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="aws">
+            <CompetencyDisplayName>AWS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rightscale">
+            <CompetencyDisplayName>Rightscale</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ruby">
+            <CompetencyDisplayName>Ruby</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jsp">
+            <CompetencyDisplayName>JSP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xquery">
+            <CompetencyDisplayName>XQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="php">
+            <CompetencyDisplayName>PHP</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xslt">
+            <CompetencyDisplayName>XSLT</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Bob</GivenName>
+            <FamilyName>Marshall</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile/>
+            <InternetEmailAddress/>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Cloud Software Engineer</Title>
+               <OrganizationName>Cisco Systems</OrganizationName>
+               <Description>
+                  <p>Cisco Systems is a leading developer of hardware and software for networking and cloud management. Cisco Intelligent Automation for Cloud (IAC) is a product that integrates multiple cloud platform components, such as VMware vCloud Director, OpenStack, and Amazon Web Services (AWS), into a unified management environment, i.e. Cloud.</p>
+                  <p>Bob developed a set of RESTful APIs in Python for the middleware by which the IAC user interface manages OpenStack virtual servers. APIs developed provided for enumerating VMs by host, project, or owner, querying run status, and performing boot-up, shutdown, and hard reset of one or more VMs.</p>
+                  <p>The IAC user interface client, which may be located external to the datacenter, uses multiple sets of credentials to authenticate to the managed platforms within the datacenter that it is managing. IAC required a secure credential repository, or keystore. Bob evaluated several candidate implementations before choosing the Barbican project, a development of Rackspace, which was undergoing incubation for inclusion in OpenStack. Bob integrated Barbican into IAC for shipment in the Version 4.1 release. This is the first production delivery of Babican outside of Rackspace internal use.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Field Engineer</Title>
+               <OrganizationName>EMC2 Corporation</OrganizationName>
+               <Description>
+                  <p>The EMC</p>
+                  <p>2</p>
+                  <p>Greenplum Data Computing Appliance is a unified big data analytics appliance; that is, a purpose-built hardware platform sold in half-rack (one-half of a 42U data center rack) increments optimized to run the Greenplum MPP Database and the Pivotal Hadoop distribution.</p>
+                  <p>As a field engineer, Bob tested the delivered appliance, installed the Pivotal Hadoop distribution, executed final testing and performed client customizations as requested.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Client Services Engineer</Title>
+               <OrganizationName>Zenoss, Inc.</OrganizationName>
+               <Description>
+                  <p>Zenoss Enterprise unifies and automates performance and availability monitoring and event management of physical, virtual and cloud IT infrastructure. The core management and monitoring product is customized to particular device classes through customization modules called ZenPacks.</p>
+                  <p>Bob developed a ZenPack to monitor and manage the MapR distribution of Hadoop. Written in Python, the ZenPack gathered metrics from the Hadoop v.1 GangliaContext (org.apache.hadoop.metrics.ganglia.GangliaContext31) for MR metrics, by JMX for overall JVM statistics, and through the MapR FS API, because MapR implements a custom files system in place of HDFS. The gathered statistics were integrated by the ZenPack and written into the Zenoss Enterprise core for display.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Python Developer</Title>
+               <OrganizationName>HP</OrganizationName>
+               <Description>
+                  <p>RepDV is a system internal to the Tipping Point division of HP that generates list of IP Addresses (IPs) and DNS Domains (DNSs) associated with exploits, malware, viruses, Trojans, etc. Written in Python and MySQL and using the Twisted asynchronous communication package, RepDV constantly receives feeds of IPs and DNSs from honeypots, CERT teams and vendors of malware lists that are linked to an exploit. Each datum is graded, based on the severity of the exploit, frequency of observation, geographical origin, and other factors. Every 12 hours a new, severity-ordered blacklist is produced and delivered to HP Intrusion Prevention Systems (IPS) in the field.</p>
+                  <p>Bob was responsible for break/fix support for RepDV, ensuring that the 12-hour SOA was maintained. He converted an ad-hoc development environment to a development/test/production pipeline and implemented automated build/test using Buildbot, a Python-based open-source build system. Bob used various python tools, such as cprofile, snakefood, and runsnakerun to optimize the Python portion and MySQL explain plans to optimize the MySQL portion to improve the performance of RepDV in general and for diagnosing episodic poor performance.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>VMware Virtualization Engineer</Title>
+               <OrganizationName>US Army Medical Information Technology Center (USAMITC)</OrganizationName>
+               <Description>
+                  <p>USAMITC, located at Ft. Sam Houston, TX provides IT services for the US Army Medical Command worldwide, as well as secondary support services for the Military Health System, which is the combined health systems the Army, Navy, Air Force, VA, and TriCare (retirees).</p>
+                  <p>Bob provided Tier 3 support of Army Medical Command (AMC) and Military Health System (MHS) VMware Server Virtualization at US Army data centers (Europe, Korea, Hawaii, and CONUS). This involved managing from the bare metal through the hypervisor through the operating system, up to the application layer, and required coordination with the hardware vendor representatives, storage operators, and application managers. All work was performed to Defense Information Systems Agency standards and checklists. Bob upgraded 7 datacenters from vSphere 3.5 to 4.1 and performed cold installations of vSpere 4.1 on a new backup datacenter for MHS. Bob provided PKI administration functions of procurement, catalog, disbursal and retirement of X.509 and SSL certificates for servers.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>NewTek manufactures high-end video switching boards used in Broadcast Television. Bob developed a Network Operating Center (NOC) and implemented Nagios and Gangla for system and network monitoring and management that provided monitoring and control of NewTek's Engineering, Production, Test, Colorado and Washington remote sites, and their interconnections.</Title>
+               <OrganizationName>NewTek</OrganizationName>
+               <Description>
+                  <p>System Administrator</p>
+                  <p>NewTek manufactures high-end video switching boards used in Broadcast Television. Bob developed a Network Operating Center (NOC) and implemented Nagios and Gangla for system and network monitoring and management that provided monitoring and control of NewTek's Engineering, Production, Test, Colorado and Washington remote sites, and their interconnections.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Trinity Millenium specializes in the conversion of legacy systems to modern architecture. An obsolescent Honeywell system managing the educational and work records of FAA certified airframe and engine mechanics needed replacement. Bob developed a MS-SQL schema and ETL routines to move the data to an MS-SQL client-server architecture.</Title>
+               <OrganizationName>Trinity Millenium</OrganizationName>
+               <Description>
+                  <p>Data Layer Expert</p>
+                  <p>Trinity Millenium specializes in the conversion of legacy systems to modern architecture. An obsolescent Honeywell system managing the educational and work records of FAA certified airframe and engine mechanics needed replacement. Bob developed a MS-SQL schema and ETL routines to move the data to an MS-SQL client-server architecture.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Bob started A Computer For Me to build a High-Performance Compute (HPC) cluster for an associate from Southwest Research Institute who had received a USAF Research Lab (AFRL) grant to develop advanced materials modeling software. Architecturally, the code was based on distributed/scale-out computing with message passing (MPI), as opposed to a monolithic block running on a Cray. ACFM built and operated the cluster for AFRL and then delivered the cluster to USAF at the completion of the contract. Additional HPC clusters were built and delivered to Government entities and contractors. Also, several Oracle-RAC (HA) clusters were built and delivered.</Title>
+               <OrganizationName>A Computer For Me (ACFM)</OrganizationName>
+               <Description>
+                  <p>Sole Proprietor</p>
+                  <p>Bob started A Computer For Me to build a High-Performance Compute (HPC) cluster for an associate from Southwest Research Institute who had received a USAF Research Lab (AFRL) grant to develop advanced materials modeling software. Architecturally, the code was based on distributed/scale-out computing with message passing (MPI), as opposed to a monolithic block running on a Cray. ACFM built and operated the cluster for AFRL and then delivered the cluster to USAF at the completion of the contract. Additional HPC clusters were built and delivered to Government entities and contractors. Also, several Oracle-RAC (HA) clusters were built and delivered.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>System Architect</Title>
+               <OrganizationName>USAA</OrganizationName>
+               <Description>
+                  <p>USAA is a major financial institution, originally formed by US Military Officers who self-insured their vehicles and homes. USAA has major companies of Auto and Life Insurance, a Federal Savings Bank, a Financial Services Division, and other components.</p>
+                  <p>As a Systems Architect in the Life Company, Bob was involved in a major architectural transformation. USAA had a massive investment in IBM mainframes but terminal response times for users was poor. The goal was to redesign the monolithic mainframe application as a client server, maintaining the existing mainframes as servers and implementing new client technology, with appropriate middleware connectivity.</p>
+                  <p>Bob compared several products, including Oracle Procedural Gateway for APPC, and the Common Object Request Broker Architecture (CORBA). Bob implemented a</p>
+                  <p>middleware object broker using CORBA that was load tested but not chosen for production.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Research Analyst</Title>
+               <OrganizationName>Southwest Research Institute</OrganizationName>
+               <Description>
+                  <p>Southwest Research Institute (SwRI) is a not-for-profit R&amp;D Center. One division, the Center For Nuclear Waste Regulatory Analyses (CNWRA) is operated as a Federally-Funded Research and Development Center for the Nuclear Regulatory Commission (NRC) tasked with aiding the NRC in its legal requirement to evaluate a license application for a High-Level Radioactive Waste Repository from the Department of Energy (DoE). CNWRA provided basic research (what kind of metal is needed to store high-level waste for 10,000 years?) as well as regulatory analyses (what are all of the Federal, State, County, Municipality, Transportation, Health, Safety statutes, laws, executive policies, rulemakings) that deal with the disposal of HL Waste in a repository by DOE.</p>
+                  <p>As the Database Administrator (DBA) for the CNWRA, Bob was responsible for the confidentiality, integrity, and availability of all data created at CNWRA, including research data and legal analyses. Bob lead a team of five developers that developed Information Management Systems that provided storage, search and subject correlation of all laws, procedures, and policies pertaining to the repository. The first version was IBM mainframe-based, using the IBM products SQL/DS for correlation, STAIRS for full-text search, AS for project schedules, and DisplayWrite for report generation. The second version was re-architected as a client-server application using Oracle for storage and correlation, Verity for full-text search, and Zinc for cross-platform GUI.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Magnum Information Systems provided IT services to independent Yellow Page publishers such as RR Donnelly. Starting with an existing AT&amp;T telephone book, Magnum would key and verify the hardcopy to produce digital listings as well as sales leads, pre-printed contracts, address lists, and other products used by the publishers to sell Yellow Page ads.</Title>
+               <OrganizationName>Magnum Information Systems</OrganizationName>
+               <Description>
+                  <p>PL/I Programmer</p>
+                  <p>Magnum Information Systems provided IT services to independent Yellow Page publishers such as RR Donnelly. Starting with an existing AT&amp;T telephone book, Magnum would key and verify the hardcopy to produce digital listings as well as sales leads, pre-printed contracts, address lists, and other products used by the publishers to sell Yellow Page ads.</p>
+                  <p>As an entry PL/I programmer, Bob developed programs to format telephone listings in standard format, perform sort/merge/purge to eliminate duplicate errors, format listings into camera-ready copy, and generate reports to track quality and quantity of operations.</p>
+                  <p>One of Bob's first Big Data projects came about when Magnum wished to create a Texas-wide head-of-household mailing list from the Texas Drivers' License file. Contained on 12 reels of 6250BPI magnetic tape, the license holders' data was more than 20 times the available disk storage. Bob was able to design and implement a process using multiple Tape sorts to select candidate head-of-household through multiple selection passes and then sort/merge/purge to produce a final 14 million head of households and their mailing address from the 36 million driver's license holders.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Academic Consultant</Title>
+               <OrganizationName>University of Notre Dame Computing Center</OrganizationName>
+               <Description>
+                  <p>Bob's first IT position involved helping students and faculty make efficient use of the Data Center's IBM 370/158 mainframe. His first big data consulting experience involved working with a Civil Engineering professor who was simulating the airflow currents inside a building on fire. All batch jobs on the IBM where limited to 59 minutes, 59 seconds wall execution time, in the interest of fairly sharing resources. Given the mesh size and time step duration of the simulation that the professor wished to perform, it appeared the simulation would need about three weeks of wall time to execute to completion. Bob worked with the professor to modify his simulation to support Checkpoint/Restart, and the first run of the simulation was completed about 4 weeks later, running in 59 minute, 59 second "chunks".</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>Notre Dame</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>BS</DegreeName>
+               <DegreeMajor>
+                  <Name>Chemistry University of Notre Dame</Name>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="hadoop">
+            <CompetencyDisplayName>Hadoop</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="lucene">
+            <CompetencyDisplayName>Lucene</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vmware">
+            <CompetencyDisplayName>VMWare</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="openstack">
+            <CompetencyDisplayName>OpenStack</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="fortran">
+            <CompetencyDisplayName>Fortran</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="c">
+            <CompetencyDisplayName>C</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="c++">
+            <CompetencyDisplayName>C++</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="python">
+            <CompetencyDisplayName>Python</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="postgresql">
+            <CompetencyDisplayName>PostGreSQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mongodb">
+            <CompetencyDisplayName>MongoDB</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="hbase">
+            <CompetencyDisplayName>HBase</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="accumulo">
+            <CompetencyDisplayName>Accumulo</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="neo4j">
+            <CompetencyDisplayName>Neo4J</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

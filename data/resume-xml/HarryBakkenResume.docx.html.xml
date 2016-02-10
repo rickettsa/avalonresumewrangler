@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Harry</GivenName>
+            <FamilyName>Bakken</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>801-792-6896</Mobile>
+            <InternetEmailAddress>bakkenh@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Warner Brothers - Advanced Digital Services</OrganizationName>
+               <Description>
+                  <p>From September of 2012 to January 2014, Harry has been the lead MarkLogic architect and developer for two major data re-platforming initiatives at Warner Brothers. The first system involves design and implementation of a metadata search and retrieval system managing data for over 3.5 million digital assets and complex rights management of those assets for over 1500 users. The system includes over a dozen services to search, update, and interact with the metadata as well as storage, search, and retrieval of user generated content and internal messaging.</p>
+                  <p>The second system integrates the metadata from the previous effort with millions of additional records and asset metadata from the greater enterprise. A variety of internal and external customers and service providers feed data into the system from legacy SQL databases. Over two dozen outbound services and data feeds are being re-platformed from Java/Oracle to MarkLogic.</p>
+                  <p>Harry has worked closely with architects and teams of non-MarkLogic developers to determine the best possible architecture for supporting various existing applications, new applications, and future expansion. Because of Harry's leadership and passion for MarkLogic solutions, Warner Brothers was able to take greater strides in their enterprise data objectives where MarkLogic is concerned than originally slated.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Raytheon</OrganizationName>
+               <Description>
+                  <p>In the fall of 2013 Harry worked on a project with Raytheon in Garland, TX. Harry architected and developed solutions to support a project Raytheon was building for U.S. Army Intelligence. His main role was to architect and develop methods to leverage MarkLogic's built-in role based security with the single-sign-on system the Army uses to secure access to the application. The goal was to provide document level security using enterprise credentials and MarkLogic security API. Additionally, Harry provided XQuery development training to about 15 engineers to help fast-track development skills for XQuery web application development.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>FedEx</OrganizationName>
+               <Description>
+                  <p>Harry has been engaged as a developer and architect to facilitate a digital asset management project with FedEx. Harry has helped design and develop MarkLogic services for use in applications developed on an AngularJS UI. In addition Harry has been assisting with implementation of services for the system on the Amazon Cloud, including S3, EC2, CloudFormation, CloudFront, and Route53. Harry has also helped establish best practices including controlled builds for MarkLogic applications and Scrum methodology. The client has been accustomed to waterfall delivery of projects in the past and Harry has worked with the team as ScrumMaster to implement this agile approach to improve development and encourage more client involvement in the project.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Engineer</Title>
+               <OrganizationName>Information &amp; Communication Systems (The Church of Jesus Christ of Latter-day Saints)</OrganizationName>
+               <Description>
+                  <p>As a senior engineer, Harry has been a key developer of several innovative solutions built on MarkLogic Server. He has built solutions for content creation and publishing, search, and high-performance web sites and services for the Church's entire portfolio of major internet properties.</p>
+                  <p>His primary effort as part of a development team providing solutions to the Public Affairs department of the Church was to build a content authoring and management system that maintained multilingual content and digital assets for over 60 country-specific news sites in more than 20 different languages. The team built the original system to support the main headquarters site in English and under Harry's direction as lead developer and MarkLogic architect, the solution scaled to encompass the global requirements.</p>
+                  <p>Harry was one of two engineers who collaborated to build a rich search experience for the public websites. Their semantic-driven solution provided users with more accurate results and convenient answer-driven displays by implementing fast, powerful entity identification and query intent analysis on the fly.</p>
+                  <p>These projects have given Harry broad knowledge of industry best practices and development strategies for delivering content across the enterprise on multichannel platforms.</p>
+                  <p>Prior to these MarkLogic based initiatives, Harry maintained mission-critical legacy systems on Oracle with Java and VB6 application layers. Throughout the various projects he's been involved with at ICS, Harry has always taken the lead to determine the best solutions and coordinated efforts of contributors across all disciplines to successful outcomes.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Freelance Web Development</OrganizationName>
+               <Description>
+                  <p>As a freelance developer, Harry built many small business-to-customer and business-to-business applications on the ColdFusion application server technology. He functioned in all roles- systems admin, design, front-end development, and back-end development. He managed about 15 clients at its peak and built over 20 different projects, mostly to meet internal use requirements.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Research &amp; Development Lead</Title>
+               <OrganizationName>Sorenson BioScience, Inc. &amp; SimpliGen, LLC</OrganizationName>
+               <Description>
+                  <p>Sorenson BioScience, a manufacturer of products used in the laboratory, sought out Harry's laboratory experience. In addition to being a technical consultant for the distribution sales force, Harry led new product development efforts and custom solution creation. Eventually Harry lead a spin-off effort to develop more advanced products, including pathogen detection systems.</p>
+                  <p>Harry maintained the web presence for the companies and built web solutions for internal use and the distribution chains. Harry also worked with print publishing, assisting with printing catalogs, brochures, and tradeshow booth graphics.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>University of Utah Medical School/Howard Hughes Medical Institute &amp; EmerGen, LLC</OrganizationName>
+               <Description>
+                  <p>Laboratory Researcher &amp; Bioinformaticist</p>
+                  <p>Harry was involved in a few different laboratory operations under Dr. Kenneth Ward, MD at the University of Utah and at EmerGen, LLC, a spin-off biotech firm founded by Dr. Ward. As a quick study, Harry came up to speed on advanced laboratory techniques and conducted research into various birth defects and complications of pregnancy, as well as performing diagnostic genetic testing services.</p>
+                  <p>When EmerGen, LLC was founded, Harry's role was to lead the acquisition, integration, and establishment of the new technologies entering the lab, catapulting him into IT and bioinformatics as the bleeding-edge equipment was capable of generating many gigabytes of information daily. Harry led multiple disciplinary teams to architect workflows and software integration.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName> </SchoolName>
+            </School>
+            <Degree>
+               <DegreeName> </DegreeName>
+               <DegreeMajor>
+                  <Name> </Name>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="xquery">
+            <CompetencyDisplayName>XQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xpath">
+            <CompetencyDisplayName>XPath</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="coldfusion">
+            <CompetencyDisplayName>ColdFusion</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="flex">
+            <CompetencyDisplayName>Flex</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="css">
+            <CompetencyDisplayName>CSS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="perl">
+            <CompetencyDisplayName>PERL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="maven">
+            <CompetencyDisplayName>Maven</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="pl-sql">
+            <CompetencyDisplayName>PL/SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vbscript">
+            <CompetencyDisplayName>VBScript</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="c++">
+            <CompetencyDisplayName>C++</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jquery">
+            <CompetencyDisplayName>JQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dreamweaver">
+            <CompetencyDisplayName>Dreamweaver</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="flash">
+            <CompetencyDisplayName>Flash</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="adobe-photoshop">
+            <CompetencyDisplayName>Adobe Photoshop</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="indesign">
+            <CompetencyDisplayName>InDesign</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="framemaker">
+            <CompetencyDisplayName>FrameMaker</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="quark">
+            <CompetencyDisplayName>Quark</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-sql-server">
+            <CompetencyDisplayName>MS SQL Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sybase">
+            <CompetencyDisplayName>Sybase</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="linux">
+            <CompetencyDisplayName>Linux</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="aws">
+            <CompetencyDisplayName>AWS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="solaris">
+            <CompetencyDisplayName>Solaris</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sgi">
+            <CompetencyDisplayName>SGI</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

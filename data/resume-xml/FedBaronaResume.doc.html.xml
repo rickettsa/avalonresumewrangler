@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Fed</GivenName>
+            <FamilyName>Barona</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>850-346-6566</Mobile>
+            <InternetEmailAddress>baronaf@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Project Manager</Title>
+               <OrganizationName>Avalon Consulting, LLC</OrganizationName>
+               <Description>
+                  <p>Mr. Barona is responsible for the successful management and delivery of Corporate E-Learning Environments, Enterprise Content Management &amp; Enterprise Search implementations, conversions, and integrations for multiple clients in various industries. His tasks entail:</p>
+                  <ul>
+                     <li>Managing labor budgets</li>
+                     <li>Developing and managing project
+                plans &amp; timelines</li>
+                     <li>Tracking project milestones</li>
+                     <li>Creating deliverable
+                schedules</li>
+                     <li>Performing quality assurance of
+                deliverables</li>
+                     <li>Serving as the client point of
+                contact for Avalon</li>
+                     <li>Writing status reports</li>
+                     <li>Utilizing collaboration systems
+                for client communication</li>
+                     <li>Utilizing collaboration systems to
+                develop corporate repositories of standard
+                operating examples, guidelines and templates for
+                project management</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Data Commons, LLC.</OrganizationName>
+               <Description>
+                  <p>Augmented existing staff to fill the role of Operations Manager with additional responsibilities in the realms of project management and business analysis.</p>
+                  <ul>
+                     <li>Serving as a member of multiple
+                committees to ensure organizational
+                effectiveness</li>
+                     <li>Development and implementation of
+                organizational strategies, policies and
+                practices</li>
+                     <li>Development of RFP and management
+                of selection process for an outsourced IT Vendor to
+                manage all Data Center activities as well as
+                develop all future product enhancements and
+                services</li>
+                     <li>Development of job descriptions
+                and profiles for permanent staff as needed</li>
+                     <li>Attendance at Board of Director
+                meetings to give status reports and provide
+                feedback on progress or strategies</li>
+                  </ul>
+                  <p>Utilized superior project management experience to put a 2+ year development effort for this startup entity on track for their Board mandated "Summer Launch". Strategy included the creation of:</p>
+                  <ul>
+                     <li>Unified project plan covering six
+                discrete data contributing entities, an
+                infrastructure IT team made of four 3rd party vendors, finance team and
+                public relations team</li>
+                     <li>Communications Plan for
+                effectively delivering pertinent information across
+                all channels and all organizational levels
+                including Executive and Board</li>
+                     <li>Management and coordination of
+                infrastructure penetration testing and code
+                reviews</li>
+                  </ul>
+                  <p>Business analysis methods were used to create and support:</p>
+                  <ul>
+                     <li>Requirements and processes for
+                Financial System Integration and Reporting
+                sub-project</li>
+                     <li>Creation and execution of
+                prospective client focus group survey</li>
+                     <li>Data Analysis to include the
+                alignment of existing data to industry standards,
+                creation of technical and public versions of
+                essential data dictionaries for onboarding and
+                marketing</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>ANCILE</OrganizationName>
+               <Description>
+                  <p>Managed a team of content developers, content managers, and instructional designers to develop a "Level 1" certification training course for ANCILE sales staff on the use of their uPerform and uPerform Express platforms. The client had stipulated the use of an Agile PM approach for the project to support their recent Agile training and move to Agile on their software development division's part.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>BMC Software Educational Services</OrganizationName>
+               <Description>
+                  <p>Managed a team of content developers, content managers and instructional designers to transform major management courseware products from existing Articulate Studio Professional and Adobe Captivate versions to ANCILE uPerform.</p>
+                  <p>The conversion included:</p>
+                  <ul>
+                     <li>  Over 557 PowerPoint
+                slides</li>
+                     <li>  Over 77 Articulate Engage
+                interactions</li>
+                     <li>  34 Captivate simulations</li>
+                     <li>  70 Articulate knowledge
+                checks</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Hewlett Packard Software Education Services</OrganizationName>
+               <Description>
+                  <p>Functioned as a project manager for a yearlong effort that provided consulting for processes, design and development of dozens of end user training products. These products were created using their customized content development platform, HP Adoption Readiness Tool (ART).</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Mass Mutual Financial Group</OrganizationName>
+               <Description>
+                  <p>A project to deliver a world class search experience to Mass Mutual's FieldNet users. The deliverable incorporated multiple data sources and utilized Ultraseek 6.0 as the search engine. Avalon's custom Unified Search Platform (USP) was incorporated in the solution scenario to give maximum control and flexibility to the UI. Additionally, the project integrated Baynote social search to further enhance the search experience.</p>
+                  <p>Mr. Barona managed the project as well as the implementation team of analysts, architects and developers.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Workplace Safety and Insurance Board (WSIB)</OrganizationName>
+               <Description>
+                  <p>Mr. Barona managed an implementation team of analysts, architects and developers to deliver several search capabilities for multiple business streams within WSIB. The Autonomy based search solutions either provide enterprise level search capabilities where there are currently none, or enhance the existing search capabilities of a product by incorporating "fuzzy" search capabilities. Avalon's search solutions are part of WSIB's movement out of paper based business processes and into a completely electronic and automated paradigm.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>BD Biosciences</OrganizationName>
+               <Description>
+                  <p>Mr. Barona managed the project to create a public facing search application that delivers better search results for products and services to BD customers. Utilizing the Ultraseek 6.0 platform and Oracle Fetch Connector, the BD search application is designed in way to make quite a few changes like fields to display in a search results page as well as sequence of fields displayed in various popups. Most of these changes can be made without making any programming changes. This project represented a major change for BD Biosciences public facing website and commerce strategy.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>PepsiCo</OrganizationName>
+               <Description>
+                  <p>Mr. Barona managed the Autonomy search implementation for Pepsi's bottler portal, which provided the client with an internal enterprise search application that crossed multiple business groups and data sources.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>Master's Program, Medical Technology</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>BS</DegreeName>
+               <DegreeMajor>
+                  <Name/>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="project-management">
+            <CompetencyDisplayName>project management</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-project">
+            <CompetencyDisplayName>MS Project</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vignette">
+            <CompetencyDisplayName>Vignette</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="iis">
+            <CompetencyDisplayName>IIS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="liferay">
+            <CompetencyDisplayName>Liferay</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="storyline">
+            <CompetencyDisplayName>Storyline</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

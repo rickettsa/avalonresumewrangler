@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Will</GivenName>
+            <FamilyName>Thayer</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>720-480-2163</Mobile>
+            <InternetEmailAddress>Thayerw@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Lead Consultant Multi-phased project spanning four years+.</Title>
+               <OrganizationName>St. Jude Children's Hospital</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>First phase:  site UI redesign
+                involving JSP, Javascript, jQuery, CSS
+                development.</li>
+                     <li>Second phase:  upgraded server
+                environments and enterprise software applications;
+                Oracle, Weblogic, and OpenText v8.  Configured
+                environments and migrated over 100k content
+                objects.  Additional development was completed to
+                utilize new functionality of the CM system.</li>
+                     <li>Migration of all website
+                assets to new CDA framework for v8.  In depth JSP,
+                Java class, CSS, Javascript, and friendly URL
+                development.  </li>
+                     <li>Currently we are focused on
+                auditing the existing content management system in
+                preparation for a migration to Adobe CQ.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>University of Michigan</OrganizationName>
+               <Description>
+                  <p>Lead Consultant site content redundancy, disaster recovery, and environment synchronization.</p>
+                  <p>The University hosts 110 websites in OpenText CMA and this project guarantees QA and Production are synchronized on a nightly basis. In the event of failure, all content is easily recovered. Heavy API Java class development along with server configuration and scripting. Project returned on investment with full disaster recovery; switch over to QA for Prod maintenance, and sporadic recovery of corrupted content.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Lead Consultant VCM/DPM site enablement.</Title>
+               <OrganizationName>NC2, a Navistar and Caterpillar Company</OrganizationName>
+               <Description>
+                  <p>Lead Consultant on the NC2 portal application that allows dealers to check inventory, order products, and collect specs on new trucks.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Consultant VCM/DPM multiple site enablement.</Title>
+               <OrganizationName>Securian Financial</OrganizationName>
+               <Description>
+                  <p>Designed custom DPM portlets as well as custom VCM components such as Bookmark JSR portlets, VCM RSS alerts for new content, Static File Security, and VCM web services.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Consultant VCM/DPM site enablement.</Title>
+               <OrganizationName>Hennepin County Vignette Migration and Upgrade</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Migrated the Vignette database
+                from MS SQL to Oracle.</li>
+                     <li>Improved custom CTDs
+                leveraging CCE components.</li>
+                     <li>Updated WF definitions'
+                publishing efficiency for over 300 content
+                contributors.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Consultant VCM/DPM site enablement.</Title>
+               <OrganizationName>University of Utah Vignette Workflow Project</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Implemented workflow
+                functionality that enables the University to roll
+                out Content Management software to colleges as
+                required.</li>
+                     <li>Led a series of training and
+                workgroup sessions for Workflow design/
+                development.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Lead Consultant VCM/DPM multiple site enablement.</Title>
+               <OrganizationName>Catholic Health Initiative Vignette Migration and Upgrade</OrganizationName>
+               <Description>
+                  <p>Migrated &amp; upgraded CHI's intranet in two months, including the VCM server, three clustered Portal servers, two Vignette Builder servers, and five MS SQL databases.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Lead Developer/Trainer and Project Manager.</Title>
+               <OrganizationName>General Dynamics</OrganizationName>
+               <Description>
+                  <p>Mr. Thayer worked on a company-wide Reporting Metrics and Statistics</p>
+                  <p>Internet Portal that included thousands of Actuate reports, ASP pages</p>
+                  <p>,</p>
+                  <p>internal</p>
+                  <p>/ external users, and averaged 5,000 logins/ 85K pg views per month.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>University of Denver</OrganizationName>
+               <Description>
+                  <p>Adjunct Professor</p>
+                  <p>,</p>
+                  <p>The Daniels College of Business</p>
+                  <p>Mr. Thayer served as the Adjunct Professor of Management Information Systems, System Development Life Cycle, and Database Design. The courses included Management Information Systems, System Analysis and Design, Database Modeling (Oracle), and Personal Productivity workshops.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Java Developer for MySun.Sun.Com Portal Project</Title>
+               <OrganizationName>Sun Microsystems</OrganizationName>
+               <Description/>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Lead Actuate Developer and Project Manager</Title>
+               <OrganizationName>Bell South Communications</OrganizationName>
+               <Description/>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory/>
+      <Qualifications>
+         <Competency abbrev="opentext-portal">
+            <CompetencyDisplayName>OpenText Portal</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dpm">
+            <CompetencyDisplayName>DPM</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="vignette">
+            <CompetencyDisplayName>Vignette</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="j2ee">
+            <CompetencyDisplayName>J2EE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jquery">
+            <CompetencyDisplayName>JQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev=".net">
+            <CompetencyDisplayName>.NET</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="asp.net">
+            <CompetencyDisplayName>ASP.NET</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="pl-sql">
+            <CompetencyDisplayName>PL/SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="weblogic">
+            <CompetencyDisplayName>WebLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="iis">
+            <CompetencyDisplayName>IIS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="apache">
+            <CompetencyDisplayName>Apache</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="tomcat">
+            <CompetencyDisplayName>Tomcat</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="visio">
+            <CompetencyDisplayName>Visio</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dbm">
+            <CompetencyDisplayName>DBM</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oracle">
+            <CompetencyDisplayName>ORACLE</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="informix">
+            <CompetencyDisplayName>Informix</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sybase">
+            <CompetencyDisplayName>Sybase</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ms-sql-server">
+            <CompetencyDisplayName>MS SQL Server</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mysql">
+            <CompetencyDisplayName>MySQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="linux">
+            <CompetencyDisplayName>Linux</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="solaris">
+            <CompetencyDisplayName>Solaris</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="unix">
+            <CompetencyDisplayName>UNIX</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

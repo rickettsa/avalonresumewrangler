@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Abe</GivenName>
+            <FamilyName>Becker</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>717-476-6727</Mobile>
+            <InternetEmailAddress>beckera@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>The Ranchbook</OrganizationName>
+               <Description>
+                  <p>This social media tool for Hunters, Ranchers, and Outfitters sets out to create a rich resource that facilitates connection and collaboration in rural ranch areas. The system allows users to create their own account, link to others, create blogs, post photos, list their business, and control all their settings through a responsive web interface build on top of Ingeniux Cartella.</p>
+                  <ul>
+                     <li>Guided decisions on an approach to
+                making the site responsive</li>
+                     <li>Corresponded with Cartella support
+                to resolve tech issues  </li>
+                     <li>Integrated responsive design into
+                12 out-of-the-box Cartella Razor template pages
+                using a customized version of Twitter
+                Bootstrap</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>The Janus Capital Group</OrganizationName>
+               <Description>
+                  <p>The Retail division of the Janus Capital Group's website needed modernization, with a focus on improving usability of the login system. Stakeholders included internal teams from Marketing, Development, Security, Fund Services, and others.</p>
+                  <ul>
+                     <li>Provided complete site analysis,
+                including duplicate pages, bad links, and
+                deprecated content, suggested fixes</li>
+                     <li>Performed analysis of analytics on
+                2M users per year, over a 2 year period</li>
+                     <li>Worked directly with VP of fund
+                services and others to create User Stories, and
+                define scope</li>
+                     <li>Provided UI suggestions, based on
+                Google analytics analysis and stakeholder
+                interviews</li>
+                     <li>Created wireframes, HTML mockups,
+                led mockup reviews</li>
+                     <li>Authored functional and
+                non-functional specifications based on several
+                months of requirement gathering for use during
+                development cycle</li>
+                     <li>Authored user stories, converting
+                them to JIRA ticket tasks for assignment to
+                developers</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Wolters Kluwer Health</OrganizationName>
+               <Description>
+                  <p>This Scientific and Medical
+              Publishing industry leader is creating a finished
+              goods repository for all of their image assets. Users
+              have access to view, update, and edit image metadata,
+              through a guided user interface. The system allows
+              users to create an MSWord or PDF manuscript mockup of
+              images to export, which is then used during the
+              editorial process.</p>
+                  <ul>
+                     <li>Translated client requirements
+                into front end code</li>
+                     <li>Created UI components</li>
+                     <li>Suggested interface
+                improvements</li>
+                     <li>Updated JavaScript and MVC xQuery
+                libraries</li>
+                     <li>Directed writing of acceptance
+                criteria, Quality Assurance, and Defect
+                Remediation</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Wolters Kluwer Law and Business</OrganizationName>
+               <Description>
+                  <p>Wolters Kluwer Law and Business
+              developed a legal workspace for lawyers to manage all
+              areas of filings law. The application allows users to
+              search, browse, compare, annotate, and track SEC
+              rules and regulations as well as all SEC Filings
+              since 1995.</p>
+                  <ul>
+                     <li>Interpreted, queried, and
+                integrated an extensive UI spec into a working
+                application</li>
+                     <li>Created and followed SCRUM
+                methodology</li>
+                     <li>Participated in Rally, JIRA
+                workflow</li>
+                     <li>Facilitated UI HTML, CSS, and
+                Javascript integration with C# .Net</li>
+                     <li>Implemented custom jQuery UI
+                components</li>
+                     <li>Created an XSLT renderer based on
+                4000 XML document samples, which produces
+                consistent HTML for document display on the
+                web</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Kundalini Research Institute</OrganizationName>
+               <Description>
+                  <p>Teachings of the founder, Yogi Bhajan, were recorded in text, video, and audio formats over the past three decades. Avalon created a search application which allows users access to the 9000+ video lectures, with the ability to read transcripts of each video as the video plays inside this web-based application. Avalon's CMS system, ContentMark was used as a platform, and the Avalon team trained KRI's engineers in using the system for ongoing system maintenance, and updates.</p>
+                  <ul>
+                     <li>Set up Amazon S3 video streaming
+                using JWPlayer</li>
+                     <li>Redesigned the user interface of
+                ContentMark with a focus on usability</li>
+                     <li>Created custom JavaScript/jQuery
+                component, which links a scrolling transcript to
+                the video stream, as it plays</li>
+                     <li>Refactored backend xQuery MVC
+                style code as needed</li>
+                     <li>Added enhancements, such as an
+                HTML Tidy parser, to CMS functionalities per client
+                needs</li>
+                     <li>Monitored for ongoing support and
+                bug tracking</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>NIH/NLM/NCBI/PMC</OrganizationName>
+               <Description>
+                  <p>PubMed Central (PMC) is the world's leading full-text repository for Scientific and Medical Journal data produced by grantees at the completion of a research grant. PMC is the U.S. National Library of Medicine's effort to provide a public interface to this data, and facilitate permanent archiving of medical research funded in the U.S. and abroad.</p>
+                  <ul>
+                     <li>Contributed to the design of JATS
+                XML tag set, which is now published as a NISO
+                standard.</li>
+                     <li>Created data submission
+                specifications</li>
+                  </ul>
+                  <ul>
+                     <li>Requirements gathering</li>
+                     <li>Complete redesign of static
+                website</li>
+                     <li>Wire-framing</li>
+                     <li>Hand coded HTML, CSS, JS
+                mockups</li>
+                     <li>508 Compliance</li>
+                     <li>Stakeholder testing</li>
+                  </ul>
+                  <ul>
+                     <li>Tested data integrity and
+                performed regression analysis of 2.4 million
+                article database</li>
+                     <li>Managed workflow of 16,000+ full
+                text XML documents per month, submitted in 16
+                different DTDs</li>
+                     <li>Trained junior staff on quality
+                assurance of XML, HTML, CSS, and related
+                troubleshooting</li>
+                     <li>Performed maintenance and MS SQL
+                Server data migration</li>
+                     <li>Created deployment and conversion
+                systems for XML based documentation</li>
+                     <li>Created logo, conference proceedings,
+              conference Posters, and coordinated visuals for
+              the
+                Jats-Con XML markup technologies conference in 2011 and 2012</li>
+                     <li>Performed metadata gathering for 6
+                million images, identifying, categorizing, and
+                sizing appropriately based on heuristics</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>The Bobbi Becker Gallery</OrganizationName>
+               <Description>
+                  <p>This gallery website is an ecommerce site that allows users to view and purchase over 100 prints of hand-painted original artwork. The entire art catalog was captured using an ultra-high resolution scanner, images were optimized for web, and archived. The product catalog metadata and pricing was modeled as an XML database, which is then used to generate HTML product pages.</p>
+                  <p>As the lead data architect and front-end developer on the project, Abe:</p>
+                  <ul>
+                     <li>Created banner and mood boards for
+                site look and feel</li>
+                     <li>Scanned, batch optimized, and
+                archived entire catalog of artwork in multiple
+                resolutions</li>
+                     <li>Designed and wire-framed entire
+                site</li>
+                     <li>Created product catalog as an XML
+                database</li>
+                     <li>Created XSLT renderer to produce
+                HTML from XML</li>
+                     <li>Added jQuery UI components</li>
+                     <li>Integrated PayPal payment
+                buttons</li>
+                     <li>Created price check CGI in PERL to
+                avoid security issues with button price
+                modifications during HTTP</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory/>
+      <Qualifications>
+         <Competency abbrev="site-analysis">
+            <CompetencyDisplayName>Site Analysis</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="responsive-design">
+            <CompetencyDisplayName>Responsive Design</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="axure">
+            <CompetencyDisplayName>Axure</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="user-stories">
+            <CompetencyDisplayName>User Stories</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mockups">
+            <CompetencyDisplayName>Mockups</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="visual-design">
+            <CompetencyDisplayName>Visual Design</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ui-prototyping">
+            <CompetencyDisplayName>UI Prototyping</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ui-design">
+            <CompetencyDisplayName>UI Design</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ux-design">
+            <CompetencyDisplayName>UX Design</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="508-compliance">
+            <CompetencyDisplayName>508 Compliance</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="usability-testing">
+            <CompetencyDisplayName>Usability Testing</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="information-architecture">
+            <CompetencyDisplayName>Information Architecture</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="branding">
+            <CompetencyDisplayName>Branding</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="google-analytics">
+            <CompetencyDisplayName>Google Analytics</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="twitter-bootstrap">
+            <CompetencyDisplayName>Twitter Bootstrap</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="javascript">
+            <CompetencyDisplayName>JavaScript</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jquery">
+            <CompetencyDisplayName>jQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="node.js">
+            <CompetencyDisplayName>Node.js</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ajax">
+            <CompetencyDisplayName>Ajax</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html5">
+            <CompetencyDisplayName>HTML5</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="css3">
+            <CompetencyDisplayName>CSS3</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="photoshop">
+            <CompetencyDisplayName>Photoshop</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="illustrator">
+            <CompetencyDisplayName>Illustrator</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="balsamiq">
+            <CompetencyDisplayName>Balsamiq</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="razor">
+            <CompetencyDisplayName>Razor</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="less">
+            <CompetencyDisplayName>LESS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jade">
+            <CompetencyDisplayName>Jade</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="github">
+            <CompetencyDisplayName>GitHub</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="svn">
+            <CompetencyDisplayName>SVN</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="oauth">
+            <CompetencyDisplayName>OAuth</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="authentication">
+            <CompetencyDisplayName>Authentication</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="login-systems">
+            <CompetencyDisplayName>Login Systems</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xml">
+            <CompetencyDisplayName>XML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xslt">
+            <CompetencyDisplayName>XSLT</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xquery">
+            <CompetencyDisplayName>xQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xpath">
+            <CompetencyDisplayName>XPATH</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="xsd">
+            <CompetencyDisplayName>XSD</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dtd">
+            <CompetencyDisplayName>DTD</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="perl">
+            <CompetencyDisplayName>PERL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mvc">
+            <CompetencyDisplayName>MVC</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="rest">
+            <CompetencyDisplayName>REST</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sql">
+            <CompetencyDisplayName>SQL</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="shell-scripting">
+            <CompetencyDisplayName>Shell Scripting</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="imagemagick">
+            <CompetencyDisplayName>ImageMagick</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="cgi">
+            <CompetencyDisplayName>CGI</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="posix">
+            <CompetencyDisplayName>POSIX</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="marklogic">
+            <CompetencyDisplayName>MarkLogic</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jira">
+            <CompetencyDisplayName>JIRA</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="ingeniux">
+            <CompetencyDisplayName>Ingeniux</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="apache">
+            <CompetencyDisplayName>Apache</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="mathml">
+            <CompetencyDisplayName>MathML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>

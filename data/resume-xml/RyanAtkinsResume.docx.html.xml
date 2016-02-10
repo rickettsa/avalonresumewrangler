@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15">
+   <StructuredXMLResume>
+      <ContactInfo>
+         <PersonName>
+            <GivenName>Ryan</GivenName>
+            <FamilyName>Atkins</FamilyName>
+         </PersonName>
+         <ContactMethod>
+            <Mobile>214-924-9225</Mobile>
+            <InternetEmailAddress>atkinsr@avalonconsult.com</InternetEmailAddress>
+         </ContactMethod>
+      </ContactInfo>
+      <EmploymentHistory>
+         <EmployerOrg>
+            <EmployerOrgName>Avalon Consulting LLC</EmployerOrgName>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>McKesson</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Technical Lead and Scrum Master
+                for Support and continuing Feature Enhancements to
+                McKesson Connect Portal</li>
+                     <li>Participated as a key team member
+                on a major portal redesign project, adding WCM (VCM
+                and DPM)</li>
+                     <li>Designed a framework for
+                delivering segmented Program Pages on their web
+                site</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>The Stelter Company</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Architect and Technical Lead for
+                Digital Marketing Platform built on Ingeniux CMS
+                and DSS (2013-2014)</li>
+                     <li>Lead consultant responsible for
+                delivering new WWW site, upgrades for client-driven
+                sites, on-going support and guidance on emerging
+                technologies.  Solution suite includes VCM, DSM,
+                Dialog, VCA, and Baynote (2007-2012)</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>The RanchBook</OrganizationName>
+               <Description>
+                  <p>Architect and Technical Lead building a social sharing platform for ranchers, hunters, and outfitters using a solution suite of Ingeniux Cartella, .NET MVC Razor, and Google API.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>McKinney ISD</OrganizationName>
+               <Description>
+                  <p>Provided oversight and project management for a SharePoint 2007 to SharePoint 2013 upgrade and data migration project.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Flowserve</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Redesigned and implemented
+                Corporate Intranet.</li>
+                     <li>Served as the Content Delivery
+                Application (CDA) Architect, responsible for design
+                &amp; delivery of the end-user application</li>
+                     <li>Performed development and
+                architecture tasks for the client's large VCM
+                7.3.0.5/DSM  -&gt; VCM 7.6/Portal/DPM
+                upgrade</li>
+                     <li>Contributed to all facets of the
+                CMA/CDA piece of the upgrade, as well as
+                specialized in Site/DPM side work and migration
+                activity</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>PepsiCo</OrganizationName>
+               <Description>
+                  <p>Designed and implemented (Visual C#/MOSS/.NET API) new SharePoint Feature for managing and publishing document libraries in a shared environment with Vignette Portal.</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>UT Southwestern</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Team Lead and Architectural
+                Consultant for building the new UTSW Cancer Center
+                web site.</li>
+                     <li>Designed and implemented (in
+                SharePoint) an Information Security dashboard using
+                integration with Flash-driven FusionCharts
+                (POC).</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Major Travel Industry Client</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Lead consultant responsible for
+                delivering web site solutions to multiple business
+                units in the organization using Vignette software
+                (VCM, VAP, and DPM) and Autonomy Search.</li>
+                     <li>Responsibilities include account
+                management, analysis and design, development, and
+                on-going support.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Church of Latter Day Saints</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Designed and developed the portal
+                framework for the employee intranet</li>
+                     <li>Customized the display of Builder
+                Views</li>
+                     <li>Performed advanced VAP Grid and
+                Theme development, utilizing cascading style sheets
+                (CSS)</li>
+                     <li>Developed a VCM console extension
+                for content import and export</li>
+                     <li>Performed VCM upgrades on
+                development, testing, and production
+                environments</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>WellCare</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Developed a claims processing
+                system using Vignette Builder and JavaScript-driven
+                UI and forms processing</li>
+                     <li>Created SQL constructs for
+                application support</li>
+                     <li>Performed Web Services
+                integration</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Catholic Health Initiatives</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Developed Vignette Builder
+                Application using Forms, custom workflow, and
+                Reporting for capturing "Good Ideas" and Best
+                Practices, deliverable included HTML
+                documentation</li>
+                     <li>Assisted with the development of a
+                Project Portfolio application, custom Builder work
+                to incorporate status and progress graphical
+                reports.
+                </li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Department of Homeland Security</OrganizationName>
+               <Description>
+                  <p>Performed Vignette Collaboration administration, configuration, client-side development (Business Workflow, Dashboards, CTDs, ATDs, Workspace Templates) and server-side development (SHTML templates, python scripting) in creating document management, risk management, and budget workflow deliverables</p>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>WellStar Health System</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Oversaw the integration of their
+                Healthcare Physicians Portal (using Vignette
+                Portal) to third party health care
+                application</li>
+                     <li>Account manager and project
+                manager responsible for coordinating with client
+                and other 3rd party vendors.</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Senior Consultant</Title>
+               <OrganizationName>Vignette Application Portal/Vignette Application Builder Projects</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Created intranet portal Web sites
+                for educational and commercial clients including
+                Pepsi, Ft. Worth (Texas) Independent School
+                District, Catholic Health Initiatives, and
+                others</li>
+                     <li>Installed and configured new
+                Vignette software, customized the Vignette
+                user-interface using CSS, JavaScript, and
+                JSP</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Principal Software Engineer</Title>
+               <OrganizationName>Macromedia, Inc.</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Created a method of placing Flash
+                files inside FreeHand, giving FreeHand the power to
+                create and re-purpose SWF files</li>
+                     <li>Implemented a complete redesign of
+                the FreeHand user interface to make it cohesive
+                with Macromedia's MX Studio suite of products and
+                increase customer exposure to FreeHand</li>
+                     <li>Integrated a PostScript and PDF
+                interpreter (GhostScript) into Flash, greatly
+                improving the quality of imported artwork</li>
+                     <li>Created internal Web sites for
+                collaboration and led third party developer
+                discussion forums</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Advisory Software Engineer</Title>
+               <OrganizationName>Antares Alliance Group</OrganizationName>
+               <Description>
+                  <p>(EDS/Amdahl joint-venture)</p>
+                  <ul>
+                     <li>Wrote operational and interface
+                design papers for the ObjectStar product -- a
+                table-driven, rules-based enterprise business
+                solution</li>
+                     <li>Implemented prototypes for
+                client-side applications to integrate with an
+                ObjectStar server</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+            <PositionHistory positionType="contract">
+               <Title>Systems Engineer, INCASE Development Group</Title>
+               <OrganizationName>EDS (Electronic Data Systems)</OrganizationName>
+               <Description>
+                  <ul>
+                     <li>Developed enhancements and
+                maintenance solutions for EDS' proprietary CASE
+                tool to establish a more stable product</li>
+                     <li>Supported the customer hotline
+                and provided emergency solutions to customer
+                accounts</li>
+                  </ul>
+               </Description>
+               <StartDate>1000-01-01</StartDate>
+            </PositionHistory>
+         </EmployerOrg>
+      </EmploymentHistory>
+      <EducationHistory>
+         <SchoolOrInstitution schoolType="university">
+            <School>
+               <SchoolName>Technical Project Management, certified by the American Management Association</SchoolName>
+            </School>
+            <Degree>
+               <DegreeName>BS</DegreeName>
+               <DegreeMajor>
+                  <Name/>
+               </DegreeMajor>
+               <DatesOfAttendance>
+                  <StartDate>1800-01-01</StartDate>
+               </DatesOfAttendance>
+            </Degree>
+         </SchoolOrInstitution>
+      </EducationHistory>
+      <Qualifications>
+         <Competency abbrev="vignette">
+            <CompetencyDisplayName>Vignette</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="sharepoint">
+            <CompetencyDisplayName>SharePoint</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="java">
+            <CompetencyDisplayName>Java</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev=".net">
+            <CompetencyDisplayName>.NET</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="razor">
+            <CompetencyDisplayName>Razor</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="html">
+            <CompetencyDisplayName>HTML</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="css">
+            <CompetencyDisplayName>CSS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="jquery">
+            <CompetencyDisplayName>JQuery</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="c++">
+            <CompetencyDisplayName>C++</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="microsoft-windows">
+            <CompetencyDisplayName>Microsoft Windows</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="dreamweaver">
+            <CompetencyDisplayName>Dreamweaver</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="flash">
+            <CompetencyDisplayName>Flash</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="fireworks">
+            <CompetencyDisplayName>Fireworks</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="svn">
+            <CompetencyDisplayName>SVN</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="cvs">
+            <CompetencyDisplayName>CVS</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="perforce">
+            <CompetencyDisplayName>Perforce</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="agile-scrum">
+            <CompetencyDisplayName>Agile SCRUM</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="object-oriented-analysis">
+            <CompetencyDisplayName>Object Oriented Analysis</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="object-oriented">
+            <CompetencyDisplayName>Object Oriented</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+         <Competency abbrev="data-modeling">
+            <CompetencyDisplayName>Data Modeling</CompetencyDisplayName>
+            <YearsExperience>0</YearsExperience>
+         </Competency>
+      </Qualifications>
+   </StructuredXMLResume>
+</Resume>
