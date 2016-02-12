@@ -140,12 +140,12 @@
                             <td class="skillname" ng-if="skillRole.isEditing === true">
                                 <input class="form-control" ng-model="skillRole.name" placeholder="Skill Name" options="typeaheadOptions" datasets="typeaheadData" sf-typeahead autofocus/>
                             </td>
-                            <td class="experience-read" ng-if="skillRole.isEditing === false">
-                                {{ skillRole.years + ' years' || 'empty' }}
-                            </td>
-                            <td class="experience-edit" ng-if="skillRole.isEditing === true">
-                                <input class="form-control" ng-model="skillRole.years" placeholder="Years Experience" ng-pattern="'[0-9]+'"/>
-                            </td>
+                            <!--<td class="experience-read" ng-if="skillRole.isEditing === false">-->
+                                <!--{{ skillRole.years + ' years' || 'empty' }}-->
+                            <!--</td>-->
+                            <!--<td class="experience-edit" ng-if="skillRole.isEditing === true">-->
+                                <!--<input class="form-control" ng-model="skillRole.years" placeholder="Years Experience" ng-pattern="'[0-9]+'"/>-->
+                            <!--</td>-->
                         </tr>
                     </table>
                 </form>
