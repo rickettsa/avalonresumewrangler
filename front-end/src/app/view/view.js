@@ -47,7 +47,7 @@ angular.module( 'resumeWrangler.view', [
             }
       });
     })
-    .controller('ViewCtrl', function ($http, $scope, $filter, resumeResponse, skillsResponse, sessionService, contactResponse) {
+    .controller('ViewCtrl', function ($http, $scope, $filter, resumeResponse, skillsResponse, sessionService, AppConfig, contactResponse) {
 
       _.mixin({
         /**
@@ -66,10 +66,14 @@ angular.module( 'resumeWrangler.view', [
 
     $scope.view = $scope.view || {};
 
-      $scope.resume = resumeResponse.data.hits[0]._source;
-      $scope.contact = contactResponse.data.hits && contactResponse.data.hits.length > 0 ? contactResponse.data.hits[0]._source : {};
+        if(resumeResponse.data.hits.length > 0){
+            $scope.resume = resumeResponse.data.hits[0]._source;
+        }else {
+            $scope.resume = AppConfig.FAKE_RESUME._source;
+        }
+        $scope.contact = contactResponse.data.hits && contactResponse.data.hits.length > 0 ? contactResponse.data.hits[0]._source : {};
 
-      $scope.skillsData = skillsResponse.data.skills;
+        $scope.skillsData = skillsResponse.data.skills;
       $scope.skillNames = _.pluck(skillsResponse.data.skills, 'dispName');
       $scope.showSkillName = 0;
       $scope.getSkillImg = function(skillName){

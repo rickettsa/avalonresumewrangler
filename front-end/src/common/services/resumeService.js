@@ -39,11 +39,10 @@ angular.module('resumeWrangler')
       });
     };
 
-    service.createResume = function(payload) {
+    service.createResume = function() {
       return $http({
         method: "POST",
-        url: configuration.api + '/api/resumes/',
-        data: payload
+        url: configuration.api + '/api/resumes',
       });
     };
 
