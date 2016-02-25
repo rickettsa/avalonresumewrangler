@@ -55,7 +55,7 @@ angular.module( 'resumeWrangler.edit', [
           }
       });
     })
-    .controller('EditCtrl', function ($http, $scope, $filter, resumeResponse, skillsResponse, contactResponse, resumeService, skillsService) {
+    .controller('EditCtrl', function ($http, $scope, $filter, resumeResponse, skillsResponse, AppConfig, contactResponse, resumeService, skillsService) {
 
       _.mixin({
         /**
@@ -72,10 +72,23 @@ angular.module( 'resumeWrangler.edit', [
         }
       });
 
-    $scope.resume = resumeResponse.data.hits[0]._source;
-    $scope.global.rwUserId = $scope.resume.userId;
-    $scope.global.resumeId = resumeResponse.data.hits[0]._id;
-    $scope.contact = typeof contactResponse.data.hits === "object" ? contactResponse.data.hits[0]._source : {};
+        if(resumeResponse.data.hits.length > 0){
+            $scope.resume = resumeResponse.data.hits[0]._source;
+        }else {
+            var createResumePromise = resumeService.createResume();
+            createResumePromise.then(function (resp) {
+                $scope.global.resumeId = resp.data.id;
+                $scope.global.rwUserId = $scope.resume.userId;
+            }, function (error) {
+                console.log("getNextPage error!");
+                console.log(error);
+            });
+
+            $scope.resume = AppConfig.FAKE_RESUME._source;
+        }
+
+
+    $scope.contact = typeof contactResponse.data.hits === "object" && contactResponse.data.hits > 0 ? contactResponse.data.hits[0]._source : {};
 
     $scope.edit = {};
 

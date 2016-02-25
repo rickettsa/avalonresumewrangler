@@ -55,7 +55,11 @@ angular.module('resumeWrangler')
 
     var lookup = {
       "beckera@avalonconsult.com": ["editor", "admin"],
-      "abembecker@gmail.com": ["guest", "all"]
+      "kehoem@avalonconsult.com": ["editor", "admin"],
+      "holsheyj@avalonconsult.com": ["editor", "admin"],
+      "uvenkatadasari@avalonconsult.com": ["editor", "admin"],
+      "abembecker@gmail.com": ["guest", "all"],
+      "rickettsa@avalonconsult.com": ["guest", "all"]
     };
 
     this.roleLookup = function(userEmail){

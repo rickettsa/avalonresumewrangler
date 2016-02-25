@@ -16,7 +16,7 @@ angular.module('resumeWrangler')
     service.fetchProject = function(projectId) {
       return $http({
         method: "GET",
-        url: configuration.api + '/api/projects/' + projectId
+        url: configuration.api + '/api/projects/' + projectId + '?expand_user_info=true'
       });
     };
 
@@ -25,7 +25,7 @@ angular.module('resumeWrangler')
      * @returns {promise}
      */
     service.fetchProjects = function(skill) {
-      var url = configuration.api + '/api/projects/search';
+      var url = configuration.api + '/api/projects/search?expand_user_info=true';
 
       if (!_.isEmpty(skill)){
           url += '?project_skills=' + skill;

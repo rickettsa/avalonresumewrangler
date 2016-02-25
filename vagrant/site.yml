@@ -11,3 +11,4 @@
     - ans_cfg/apache.yml
   roles:
     - { role: geerlingguy.apache }
+    - { role: geerlingguy.elasticsearch}

@@ -35,15 +35,14 @@ angular.module('resumeWrangler')
     service.skillSearch = function(skillName){
       return $http({
         method: "GET",
-        url: configuration.api + '/api/resumes/search?expand_contact_info=true&skill=' + skillName
+        url: configuration.api + '/api/resumes/search?expand_user_info=true&skill=' + skillName
       });
     };
 
-    service.createResume = function(payload) {
+    service.createResume = function() {
       return $http({
         method: "POST",
-        url: configuration.api + '/api/resumes/',
-        data: payload
+        url: configuration.api + '/api/resumes',
       });
     };
 

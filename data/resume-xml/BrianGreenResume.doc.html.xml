@@ -299,6 +299,10 @@
             <CompetencyDisplayName>HPUX</CompetencyDisplayName>
             <YearsExperience>0</YearsExperience>
          </Competency>
+          <Competency abbrev="elasticsearch">
+              <CompetencyDisplayName>ElasticSearch</CompetencyDisplayName>
+              <YearsExperience>0</YearsExperience>
+          </Competency>
       </Qualifications>
    </StructuredXMLResume>
 </Resume>

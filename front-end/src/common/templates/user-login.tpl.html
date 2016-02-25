@@ -1,7 +1,7 @@
 <div id="rw-google-login-wrapper">
 <div id="google-login" class="g-signin2 btn" data-onsuccess="onSignIn"></div>
 <div class="rw-user-login-status-wrapper">
-    <span class="rw-google-user-role" ng-show="isAuthenticated">As: {{userRole}}</span>
+    <span class="rw-google-user-role" ng-show="isAuthenticated">As: {{session.userName}}</span>
     <a class="rw-sign-out" href="#" ng-show="isAuthenticated" ng-click="signOut()">Sign out</a>
 </div>
 </div>

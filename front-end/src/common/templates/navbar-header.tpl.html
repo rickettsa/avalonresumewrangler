@@ -37,7 +37,7 @@
                             Home
                         </a>
                     </li>
-                    <li ui-sref-active="active">
+                    <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
                         <a href ui-sref="view({ firstName: session.firstName, lastName: session.lastName})">
                             <i class="glyphicon glyphicon-eye-open"></i> Resume
                         </a>

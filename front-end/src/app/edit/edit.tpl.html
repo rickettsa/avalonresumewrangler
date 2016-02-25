@@ -16,7 +16,7 @@
                 <p><a href="#" e-required e-placeholder="Overall Description" editable-text="resume.EmploymentHistory.EmployerOrg.OverallDescription" onaftersave="edit.updateResume()">{{ resume.EmploymentHistory.EmployerOrg.OverallDescription || "empty" }}</a></p>
             </div>
 
-            <div class="col-md-12">
+            <div class="col-md-12" ng-if = "!_.isEmpty(contact)">
                 <h2>Experience:</h2>
                 <button class="add-skill btn btn-success" ng-click="edit.addExperience('start')"><span class="glyphicon glyphicon-plus"></i> Experience</button>
                 <div class="exper">

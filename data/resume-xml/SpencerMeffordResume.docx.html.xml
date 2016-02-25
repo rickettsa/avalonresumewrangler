@@ -319,6 +319,14 @@
             <CompetencyDisplayName>Bash</CompetencyDisplayName>
             <YearsExperience>0</YearsExperience>
          </Competency>
+          <Competency abbrev="kibana">
+              <CompetencyDisplayName>Kibana</CompetencyDisplayName>
+              <YearsExperience>0</YearsExperience>
+          </Competency>
+          <Competency abbrev="elasticsearch">
+              <CompetencyDisplayName>ElasticSearch</CompetencyDisplayName>
+              <YearsExperience>0</YearsExperience>
+          </Competency>
       </Qualifications>
    </StructuredXMLResume>
 </Resume>
