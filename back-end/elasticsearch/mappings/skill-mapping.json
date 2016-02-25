@@ -1,0 +1,12 @@
+{
+    "skill": {
+        "properties": {
+            "curated": { "type": "string" },
+            "descr": { "type": "string" },
+            "dispName": { "type": "string" },
+            "image": { "type": "string" },
+            "stackNames": { "type": "string" },
+            "stackPositions": { "type": "string", "index": "not_analyzed" }
+        }
+    }
+}
