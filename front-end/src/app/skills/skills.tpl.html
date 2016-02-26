@@ -5,7 +5,7 @@
                 <div class="col-md-5">
                     <h3>Filter By:</h3>
                     <ul class="skill-filters">
-                        <li ng-repeat="filter in skillFilters">
+                        <li ng-repeat="filter in skills.skillFilters">
                             <input type="checkbox" value="{{ filter.value }}"></input>
                             <label>{{ filter.name }}</label>
                         </li>
@@ -16,7 +16,7 @@
                     <!--<input class="form-control" ng-model="skills.skillListFilter" placeholder="Filter Skills by a Term..."></div>-->
                     <div class="master-skills-list stack-meta-well well">
                         <ul>
-                            <li ng-click="selectSkill(key, value)" ng-repeat="(key, value) in skills | orderBy: dispName" ng-class="isSkillSelected(key)">{{ value.dispName }}</li>
+                            <li ng-click="skills.selectSkill(key, value)" ng-repeat="(key, value) in skills.skillsMasterList | orderBy: dispName" ng-class="skills.isSkillSelected(key)">{{ value.dispName }}</li>
                         </ul>
                     </div>
                 </div>
@@ -27,36 +27,36 @@
             <form name="skillDetails" novalidate>
                 <div class="form-group">
                     <label>Display Name</label>
-                    <input class="form-control" ng-model="currentSkill.dispName" type="text" required></input>
+                    <input class="form-control" ng-model="skills.currentSkill.dispName" type="text" required></input>
                     <label>Normalized Name (replace spaces with dash, no special chars)</label>
-                    <input class="form-control" ng-model="currentSkill.normName" type="text" ng-disabled="editingExisting" ng-pattern="normNameRegex" required></input>
+                    <input class="form-control" ng-model="skills.currentSkill.normName" type="text" ng-disabled="modes.editingExistingSkill" ng-pattern="skills.normNameRegex" required></input>
                     <label>Image File Name</label>
-                    <input name="skillImg" class="form-control" ng-model="currentSkill.image" type="text"></input>
+                    <input name="skillImg" class="form-control" ng-model="skills.currentSkill.image" type="text"></input>
                     <label>Description</label>
-                    <textarea  ng-model="currentSkill.descr"  class="form-control" rows="3"></textarea>
+                    <textarea  ng-model="skills.currentSkill.descr"  class="form-control" rows="3"></textarea>
                     <br />
-                    <button class="add-skill btn btn-success pull-right" ng-click="saveSkill(skills)" ng-disabled="skillDetails.$pristine || skillDetails.$invalid"><i class="glyphicon glyphicon-ok"></i> Save</button>
-                    <button class="add-skill btn btn-success" ng-click="addSkill()" ng-if="editingExisting"><i class="glyphicon glyphicon-plus"></i> New Skill</button>
+                    <button class="add-skill btn btn-success pull-right" ng-click="skills.saveSkill(skills)" ng-disabled="skillDetails.$pristine || skillDetails.$invalid"><i class="glyphicon glyphicon-ok"></i> Save</button>
+                    <button class="add-skill btn btn-success" ng-click="skills.addSkill()" ng-if="skills.modes.editingExistingSkill"><i class="glyphicon glyphicon-plus"></i> New Skill</button>
                 </div>
             </form>
             <div class="row">
                 <div class="col-md-6">
                     <h3>Stack Position:</h3>
-                    <div class="well stack-meta-well">
+                    <div ng-if="!skills.modes.addStackPosition" class="well stack-meta-well">
                         <ul>
-                            <li ng-repeat="pos in positions" ng-click="togglePos(pos)" ng-class="isPosSelected(pos)">{{ pos.dispName }}</li>
+                            <li ng-repeat="pos in skills.positions" ng-click="skills.togglePos(pos)" ng-class="skills.isPosSelected(pos)">{{ pos.dispName }}</li>
                         </ul>
                     </div>
-                    <button class="add-skill btn btn-success" ng-click="addStackPos()"><i class="glyphicon glyphicon-plus"></i> Stack Position</button>
+                    <button class="add-skill btn btn-success" ng-click="skills.addStackPos()"><i class="glyphicon glyphicon-plus"></i> Stack Position</button>
                 </div>
                 <div class="col-md-6">
                     <h3>Stack Name:</h3>
-                    <div class="well stack-meta-well">
+                    <div ng-if="!skills.modes.addStackName" class="well stack-meta-well">
                         <ul>
-                            <li ng-repeat="stack in stacks" ng-click="toggleStack(stack)" ng-class="isStackSelected(stack)">{{ stack.dispName }}</li>
+                            <li ng-repeat="stack in skills.stacks" ng-click="skills.toggleStack(stack)" ng-class="skills.isStackSelected(stack)">{{ stack.dispName }}</li>
                         </ul>
                     </div>
-                    <button class="add-skill btn btn-success" ng-click="addStack()"><i class="glyphicon glyphicon-plus"></i> Stack Name</button>
+                    <button class="add-skill btn btn-success" ng-click="skills.addStackName()"><i class="glyphicon glyphicon-plus"></i> Stack Name</button>
                 </div>
             </div>
         </div>
