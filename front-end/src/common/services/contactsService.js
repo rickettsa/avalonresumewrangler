@@ -42,5 +42,12 @@ angular.module('resumeWrangler')
 //      });
 //    };
 
+      service.createUser = function(payload) {
+      return $http({
+        method: "POST",
+        url: configuration.api + '/api/users',
+        data: payload
+      });
+    };
     return service;
   });

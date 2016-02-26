@@ -54,6 +54,12 @@
                             Skills
                         </a>
                     </li>
+                    <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
+                        <a href ui-sref="admin">
+                            <i class="fa fa-edit"></i>
+                            Admin
+                        </a>
+                    </li>
                 </ul>
             </div>
 

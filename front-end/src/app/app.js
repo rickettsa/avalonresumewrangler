@@ -6,6 +6,7 @@ angular.module( 'resumeWrangler', [
   'resumeWrangler.projects',
   'resumeWrangler.view',
   'resumeWrangler.skills',
+  'resumeWrangler.admin',
   'services.config',
   'ui.router',
   'ui.bootstrap',
