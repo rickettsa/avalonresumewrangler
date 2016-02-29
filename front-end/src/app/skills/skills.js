@@ -145,10 +145,6 @@ angular.module('resumeWrangler.skills', [
                 });
         };
 
-
-        $scope.skills.stacks = stacksResponse.data.stacks;
-        $scope.skills.positions = stackPositionResponse.data.positions;
-
         $scope.skills.togglePos = function(member) {
             $scope.skillDetails.skillImg.$setDirty();
             //group already contains this member, remove
@@ -205,8 +201,44 @@ angular.module('resumeWrangler.skills', [
             $scope.skills.modes.addStackPosition = 0;
             $scope.skills.modes.addStackName = 0;
             $scope.skills.normNameRegex = new RegExp(/^[-a-zA-Z\.0-9_\+]+$/);
+            $scope.skills.stacks = stacksResponse.data.stacks;
+            $scope.skills.positions = stackPositionResponse.data.positions;
+            $scope.skills.formEl = {};
+        };
+        $scope.skills.resetUI();
+
+        $scope.skills.addStackPosition = function(){
+            var normalizedId = $scope.skills.formEl.stackPositionDispName.replace(/[^a-zA-Z0-9]/g, "_");
+            var payload = {
+                "id": normalizedId,
+                "dispName": $scope.skills.formEl.stackPositionDispName,
+                "descr": $scope.skills.formEl.stackPositionDescr
+            };
+            //add to interface before posting to backend
+            $scope.skills.positions.unshift(payload);
+            var addSkillPromise = skillsService.createStackPosition();
+            addSkillPromise.then(function(resp){
+                //do nothing successfully added!
+            }, function(err){
+                console.log(err);
+            });
         };
 
-        $scope.skills.resetUI();
+        $scope.skills.addStackName = function(){
+            var normalizedId = $scope.skills.formEl.stackDispName.replace(/[^a-zA-Z0-9]/g, "_");
+            var payload = {
+                "id": normalizedId,
+                "dispName": $scope.skills.formEl.stackDispName,
+                "descr": $scope.skills.formEl.stackDescr
+            };
+            //add to interface before posting to backend
+            $scope.skills.stacks.unshift(payload);
+            var addSkillPromise = skillsService.createStack();
+            addSkillPromise.then(function(resp){
+                //do nothing successfully added!
+            }, function(err){
+                console.log(err);
+            });
+        };
 
     });
