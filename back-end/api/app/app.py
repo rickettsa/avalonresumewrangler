@@ -166,11 +166,23 @@ def get_resume(id):
     if len(id) == 0:
         abort(404)
     else:
-        resume = dl.get_resume(id)
+        exclude_sections = request.args.getlist('exclude_sections')
+        if exclude_sections:
+            resume = dl.get_resume(id, exclude_sections)
+
+        target_stacks = request.args.getlist('filter_stack')
+        if target_stacks:
+            resume = dl.resume_with_filtered_positions(resume, target_stacks, skill_meta_key='stackNames')
+
+        target_stack_positions = request.args.getlist('filter_stackpos')
+        if target_stack_positions:
+            resume = dl.resume_with_filtered_positions(resume, target_stack_positions, skill_meta_key='stackPositions')
+
         expand_user_info = request.args.get('expand_user_info')
         if expand_user_info:
             res_data = resume['_source']
             resume['_source'] = _expanded_resume(res_data)
+
         return jsonify( resume )
 
 @app.route('/api/resumes/<id>', methods=['DELETE'])

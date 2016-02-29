@@ -15,8 +15,8 @@
 #
 import sys, os
 
-GIT_BASE_DIR = '/Volumes/Macintosh HD/Users/abembecker/Development/Avalon/resumeWrangler/BeanStalk_AvalonResumeWrangler'
-#GIT_BASE_DIR = '/home/kerisman/work/avalonresumewrangler'
+#GIT_BASE_DIR = '/Volumes/Macintosh HD/Users/abembecker/Development/Avalon/resumeWrangler/BeanStalk_AvalonResumeWrangler'
+GIT_BASE_DIR = '/home/kerisman/work/avalonresumewrangler'
 
 DATALAYER_LIB_PATH = GIT_BASE_DIR + '/back-end/api/app/datalayer'
 
@@ -25,6 +25,7 @@ from datalayer import DataLayer
 
 RESUME_MAPPING = GIT_BASE_DIR + '/back-end/elasticsearch/mappings/resume-mapping.json'
 PROJECT_MAPPING = GIT_BASE_DIR + '/back-end/elasticsearch/mappings/project-mapping.json'
+SKILL_MAPPING = GIT_BASE_DIR + '/back-end/elasticsearch/mappings/skill-mapping.json'
 
 #-------
 def delete_existing_data( datalayer ):
@@ -48,6 +49,8 @@ def create_new_mappings( datalayer ):
         datalayer.create_mapping( f.read(), datalayer.RESUME_INDEX, datalayer.RESUME_TYPE )
     with open(PROJECT_MAPPING, 'r') as f:
         datalayer.create_mapping( f.read(), datalayer.PROJECT_INDEX, datalayer.PROJECT_TYPE )
+    with open(SKILL_MAPPING, 'r') as f:
+        datalayer.create_mapping( f.read(), datalayer.SKILL_INDEX, datalayer.SKILL_TYPE )
 #-------
 
 dl = DataLayer.factory( 'Elasticsearch' )

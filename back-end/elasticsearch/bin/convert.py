@@ -13,7 +13,9 @@ import hashlib
 from uuid import uuid4
 import collections
 
-AUX_CONTACT_FILE = '/home/kerisman/Downloads/avalon_contacts.json'
+#GIT_BASE_DIR = '/Volumes/Macintosh HD/Users/abembecker/Development/Avalon/resumeWrangler/BeanStalk_AvalonResumeWrangler'
+GIT_BASE_DIR = '/home/kerisman/work/avalonresumewrangler'
+AUX_CONTACT_FILE = GIT_BASE_DIR + '/data/avalon_contacts.json'
 
 SKIP_LIST = [
     'KurtCagleResume.docx.html.xml'
@@ -24,6 +26,7 @@ ns = { 'd':'http://ns.hr-xml.org/2007-04-15' }
 aux_contact_info = {}
 
 def aux_contact_info():
+    #FIXME: not the best way to do this...but good enough for now
     lines = []
     aux_contact_info = {}
     with open(AUX_CONTACT_FILE, 'r') as f:
@@ -71,7 +74,7 @@ def transform_contact_info_for_user( root, ns ):
     tz = '(GMT-06:00) Central Standard Time (America/Chicago)'
 
     #FIXME:merge contact info from avalon_contacts.json into what has already been found in the xml
-    #   (this is ugly and complicated...just getting data ready for demo)
+    #   (this is ugly...just getting data ready for demo. We should prepare contact info more cleanly: one format, one source.)
     key = fn + ln
     if(aux_contact_info.has_key(key)):
         phone = aux_contact_info[key]['phone']
@@ -151,7 +154,6 @@ def transform_qualifications( root, ns):
 def generate_project( json_res ):
     userId = json_res['userId']
     projects_json = []
-#FIXME: notice how I have to do employmentHistory[0][positions]? A recent change in the data structure means that employmentHistory no longer needs to be an array -- all it contains is positions. Need to fix this to make it cleaner but it will affect all the API code.
     positions = json_res['employmentHistory'][0]['positions']
     for position in positions:
         contractingOrgName = position['contractingOrgName']
@@ -199,9 +201,10 @@ def generate_project( json_res ):
                           }
                       ],
                       "positionSkills": [
-                          "Elasticsearch",
-                          "Python",
-                          "Flask"
+                          random.choice(('Elasticsearch', 'Java')),
+                          random.choice(('Python', 'CSS')),
+                          random.choice(('Flask', '.NET'))
+                          
                       ]
                   }
               ]
@@ -234,17 +237,6 @@ def transform( xml_res, ns ):
     result = collections.namedtuple('result', ['resume_json', 'user_json', 'projects_json'])
     return result(resume, user, projects)
 #-------------
-
-#FIXME:
-#   [v] generate a directory with subdirs {project, resume, user} and generate the project & user data
-#   [v] user docs
-#       - email goes in user doc; 'cell' in the xml becomes 'phone' in user doc
-#       - for city, randomly choose one of ('vale', 'burg', 'haven') and append it to the firstname
-#       - random zip; random state (one of IL,TN,SC,MN,OH,CO,TX)
-#   [v] need to make userIds, put them in resumes and user docs (make these consistent)
-#   [v] project docs need to have userId keys
-#   [v] resume docs need to have clientProjectId keys
-#
 
 aux_contact_info = aux_contact_info()
 
@@ -282,7 +274,9 @@ for i in range( len(res_filenames) ):
             json.dump(result.user_json, f, sort_keys=True, indent=4)
     
         if result.projects_json:
-            project_filename = result.projects_json[0]['projectId'] + '.json'
-            with open(os.path.join(project_dir, project_filename), 'w') as f:
-                json.dump(result.projects_json[0], f, sort_keys=True, indent=4)
+            projects = result.projects_json
+            for p in projects:
+                project_filename = p['projectId'] + '.json'
+                with open(os.path.join(project_dir,project_filename), 'w') as f:
+                    json.dump(p, f, sort_keys=True, indent=4)
 

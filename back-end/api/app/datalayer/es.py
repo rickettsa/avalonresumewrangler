@@ -11,7 +11,7 @@ def bool_query( must_queries ):
         }
     }
 
-def filtered_term_query(term, value): return { 'filtered': { 'filter': { 'term': { term: value } } } }
+def filtered_term_query(key, value): return { 'filtered': { 'filter': { 'term': { key: value } } } }
 
 def nested_skills_query(s):
     return { 'nested': {
@@ -110,8 +110,6 @@ class ESDataLayer(DataLayer):
         resumes = self.find_resumes(userid=id)
         for resume in resumes['hits']:
             resume_id = resume['_id']
-            print 'would delete resume with id', resume_id
-            print resume
             self.es.delete(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, id=resume_id)
 
     #------- Resumes
@@ -130,7 +128,6 @@ class ESDataLayer(DataLayer):
         return doc_id
 
     def list_resumes(self):
-        #FIXME: is "list resume" functionality even needed?
         resumes = self.es.search(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, _source=False, size=10000)
         return [ r for r in resumes['hits']['hits'] ]
 
@@ -148,12 +145,64 @@ class ESDataLayer(DataLayer):
         combined_query = bool_query( queries )
         return self.es.search(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, body=combined_query, size=1000)['hits']
 
-    def get_resume(self, id):
-        resume = self.es.get(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, id=id, ignore=[404])
+    def get_resume(self, id, exclude_sections=[]):
+        # the following resume sections can be omitted when returning resume (the rest must be returned)
+        OPTIONAL_RESUME_KEYS = ['skills','educationHistory'] #FIXME: add certifications, publications (when data ready)
+
+        # exclude specified sections only if they are optional
+        exclude_sections = filter(lambda x: x in OPTIONAL_RESUME_KEYS, exclude_sections)
+        resume = self.es.get(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, id=id, _source_exclude=exclude_sections, ignore=[404])
         return resume
 
     def delete_resume(self, id):
         self.es.delete(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, id=id)
+
+    def _all_matching_skills(self, meta_key, values):
+        values = map(lambda x: x.lower(), values)
+        all_matching_skills = []
+        filtered_terms_query = { 'query': { 'filtered': { 'filter': { 'terms': { meta_key: values } } } } }
+        print filtered_terms_query
+        try:
+            all_matching_skills = self.es.search(index=self.SKILL_INDEX, doc_type=self.SKILL_TYPE,
+                body=filtered_terms_query, size=10000)['hits']['hits']
+        except:
+            pass
+        return map(lambda s: s['_id'], all_matching_skills)
+
+    def resume_with_filtered_positions(self, resume, target_list, skill_meta_key='stackNames'):
+        '''Return resume with employmentHistory section filtered to only show positions the consultant filled where
+        the project positionSkills for that position include a skill that has stack name or stack position specified in target_list.
+        skill_meta_key should be "stackNames" or "stackPositions" to specify whether target_list contains one or the other.
+
+        (Complexity necessitated by application side joins in ES.)
+        '''
+        employmentHistory = resume['_source']['employmentHistory']
+        all_matching_skills = self._all_matching_skills(skill_meta_key, target_list)
+        for i in range(len(employmentHistory)):
+            # i: a job
+            output_jobs = []
+            # look at all positions in this job...
+            all_job_positions = employmentHistory[i]['positions']
+            for j in range(len(all_job_positions)):
+                # j: a specific job position from resume
+                rp = all_job_positions[j]
+                if rp.has_key('clientProjectId'):
+                    project = self.get_project(rp['clientProjectId'])
+                    # look at positions in project referenced by resume job position...
+                    for pp in project['_source']['positions']:
+                        position_fillers = pp['filledBy']
+                        for filler in position_fillers:
+                            # if project job position was filled by user owning resume...
+                            if filler['userId'] == resume['_source']['userId']:
+                                # check if project position skills meet target criteria
+                                lc_pos_skills = map(lambda x: x.lower(), pp['positionSkills'])
+                                if filter( lambda x: x in lc_pos_skills, all_matching_skills ):
+                                    output_jobs.append(rp)
+            resume['_source']['employmentHistory'][i] = {
+                'positions': output_jobs,
+                'serviceProviderOrgName': employmentHistory[i]['serviceProviderOrgName']
+            }
+        return resume
 
     #------- Projects
 
@@ -168,7 +217,6 @@ class ESDataLayer(DataLayer):
         return doc_id
 
     def list_projects(self):
-        #FIXME: is "list projecct" functionality even needed?
         projects = self.es.search(index=self.PROJECT_INDEX, doc_type=self.PROJECT_TYPE, _source=False, size=10000)
         return [ p for p in projects['hits']['hits'] ]
 
