@@ -40,7 +40,7 @@ angular.module('resumeWrangler')
     service.fetchStacks = function() {
       return $http({
         method: "GET",
-        url: configuration.apiary + '/api/stacks'
+        url: configuration.api + '/api/stacks'
       });
     };
 
@@ -52,10 +52,18 @@ angular.module('resumeWrangler')
       });
     };
 
+    service.createStack = function(payload, id) {
+        return $http({
+            method: "PUT",
+            url: configuration.api + '/api/stacks/' + id,
+            data: payload
+        });
+    };
+
     service.fetchStackPositions = function() {
       return $http({
         method: "GET",
-        url: configuration.apiary + '/api/stack-positions'
+        url: configuration.api + '/api/stack-positions'
       });
     };
 
@@ -65,6 +73,14 @@ angular.module('resumeWrangler')
         url: configuration.api + '/api/stack-positions',
         data: payload
       });
+    };
+
+    service.createStackPosition = function(payload, id) {
+        return $http({
+            method: "PUT",
+            url: configuration.api + '/api/stack-positions/' + id,
+            data: payload
+        });
     };
 
     service.getTypeaheadSource = function() {

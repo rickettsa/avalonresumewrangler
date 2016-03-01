@@ -42,21 +42,57 @@
             <div class="row">
                 <div class="col-md-6">
                     <h3>Stack Position:</h3>
-                    <div ng-if="!skills.modes.addStackPosition" class="well stack-meta-well">
-                        <ul>
-                            <li ng-repeat="pos in skills.positions" ng-click="skills.togglePos(pos)" ng-class="skills.isPosSelected(pos)">{{ pos.dispName }}</li>
-                        </ul>
+                    <div ng-if="!skills.modes.addStackPosition">
+                        <div class="well stack-meta-well">
+                            <ul>
+                                <li ng-repeat="pos in skills.positions" ng-click="skills.togglePos(pos)" ng-class="skills.isPosSelected(pos)">{{ pos.dispName }}</li>
+                            </ul>
+                        </div>
+                        <button class="add-skill btn btn-success" ng-click="skills.modes.addStackPosition = 1"><i class="glyphicon glyphicon-plus"></i> Stack Position</button>
                     </div>
-                    <button class="add-skill btn btn-success" ng-click="skills.addStackPos()"><i class="glyphicon glyphicon-plus"></i> Stack Position</button>
+                    <div ng-if="skills.modes.addStackPosition">
+                        <form name="addStackPositionForm">
+                            <div class="form-group">
+                                <!--<label>Position Id:</label>-->
+                                <!--<input name="stackPositionId" class="form-control" type="text" placeholder="normalized id" disabled="disabled"/>-->
+                                <label>Position Display Name:</label>
+                                <input name="stackPositionDispName" ng-model="skills.formEl.stackPositionDispName" class="form-control" type="text" placeholder="display name" required/>
+                                <br/>
+                                <label>Position Description:</label>
+                                <input name="stackPositionDescr" ng-model="skills.formEl.stackPositionDescr" class="form-control" type="text" placeholder="stack description"/>
+                                <br/>
+                                <button class="add-skill btn btn-success pull-right" ng-click="skills.addStackPosition()"><i class="glyphicon glyphicon-plus"></i> Add</button>
+                                <button class="add-skill btn btn-warning pull-left" ng-click="skills.modes.addStackPosition = 0"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div class="col-md-6">
                     <h3>Stack Name:</h3>
-                    <div ng-if="!skills.modes.addStackName" class="well stack-meta-well">
-                        <ul>
-                            <li ng-repeat="stack in skills.stacks" ng-click="skills.toggleStack(stack)" ng-class="skills.isStackSelected(stack)">{{ stack.dispName }}</li>
-                        </ul>
+                    <div ng-if="!skills.modes.addStackName">
+                        <div class="well stack-meta-well">
+                            <ul>
+                                <li ng-repeat="stack in skills.stacks" ng-click="skills.toggleStack(stack)" ng-class="skills.isStackSelected(stack)">{{ stack.dispName }}</li>
+                            </ul>
+                        </div>
+                        <button class="add-skill btn btn-success" ng-click="skills.modes.addStackName = 1"><i class="glyphicon glyphicon-plus"></i> Stack Name</button>
                     </div>
-                    <button class="add-skill btn btn-success" ng-click="skills.addStackName()"><i class="glyphicon glyphicon-plus"></i> Stack Name</button>
+                    <div ng-if="skills.modes.addStackName">
+                        <form name="addStackNameForm">
+                            <div class="form-group">
+                                <!--<label>Stack Id:</label>-->
+                                <!--<input name="stackId" class="form-control" type="text" placeholder="normalized id" disabled="disabled"/>-->
+                                <label>Stack Display Name:</label>
+                                <input name="stackDispName" ng-model="skills.formEl.stackDispName" class="form-control" type="text" placeholder="display name" required/>
+                                <br/>
+                                <label>Stack Description:</label>
+                                <input name="stackDescr" ng-model="skills.formEl.stackDescr" class="form-control" type="text" placeholder="stack description"/>
+                                <br/>
+                                <button class="add-skill btn btn-success pull-right" ng-click="skills.addStackName()"><i class="glyphicon glyphicon-plus"></i> Add</button>
+                                <button class="add-skill btn btn-warning pull-left" ng-click="skills.modes.addStackName = 0"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
