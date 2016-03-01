@@ -201,14 +201,15 @@ angular.module('resumeWrangler.skills', [
             $scope.skills.modes.addStackPosition = 0;
             $scope.skills.modes.addStackName = 0;
             $scope.skills.normNameRegex = new RegExp(/^[-a-zA-Z\.0-9_\+]+$/);
-            $scope.skills.stacks = stacksResponse.data.stacks;
-            $scope.skills.positions = stackPositionResponse.data.positions;
+            $scope.skills.stacks = _.values(stacksResponse.data.stacks) || [];
+            $scope.skills.positions = _.values(stackPositionResponse.data.positions) || [];
             $scope.skills.formEl = {};
         };
         $scope.skills.resetUI();
 
         $scope.skills.addStackPosition = function(){
             var normalizedId = $scope.skills.formEl.stackPositionDispName.replace(/[^a-zA-Z0-9]/g, "_");
+            normalizedId.toLowerCase();
             var payload = {
                 "id": normalizedId,
                 "dispName": $scope.skills.formEl.stackPositionDispName,
@@ -216,9 +217,10 @@ angular.module('resumeWrangler.skills', [
             };
             //add to interface before posting to backend
             $scope.skills.positions.unshift(payload);
-            var addSkillPromise = skillsService.createStackPosition();
+            var addSkillPromise = skillsService.createStackPosition(payload, normalizedId);
             addSkillPromise.then(function(resp){
-                //do nothing successfully added!
+                $scope.skills.modes.addStackPosition = 0;
+                $scope.skills.formEl = {};
             }, function(err){
                 console.log(err);
             });
@@ -226,6 +228,7 @@ angular.module('resumeWrangler.skills', [
 
         $scope.skills.addStackName = function(){
             var normalizedId = $scope.skills.formEl.stackDispName.replace(/[^a-zA-Z0-9]/g, "_");
+            normalizedId.toLowerCase();
             var payload = {
                 "id": normalizedId,
                 "dispName": $scope.skills.formEl.stackDispName,
@@ -233,9 +236,10 @@ angular.module('resumeWrangler.skills', [
             };
             //add to interface before posting to backend
             $scope.skills.stacks.unshift(payload);
-            var addSkillPromise = skillsService.createStack();
+            var addSkillPromise = skillsService.createStack(payload, normalizedId);
             addSkillPromise.then(function(resp){
-                //do nothing successfully added!
+                $scope.skills.modes.addStackName = 0;
+                $scope.skills.formEl = {};
             }, function(err){
                 console.log(err);
             });

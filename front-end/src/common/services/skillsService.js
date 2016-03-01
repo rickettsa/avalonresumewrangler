@@ -40,7 +40,7 @@ angular.module('resumeWrangler')
     service.fetchStacks = function() {
       return $http({
         method: "GET",
-        url: configuration.apiary + '/api/stacks'
+        url: configuration.api + '/api/stacks'
       });
     };
 
@@ -52,10 +52,10 @@ angular.module('resumeWrangler')
       });
     };
 
-    service.createStack = function(payload) {
+    service.createStack = function(payload, id) {
         return $http({
-            method: "POST",
-            url: configuration.api + '/api/stacks',
+            method: "PUT",
+            url: configuration.api + '/api/stacks/' + id,
             data: payload
         });
     };
@@ -63,7 +63,7 @@ angular.module('resumeWrangler')
     service.fetchStackPositions = function() {
       return $http({
         method: "GET",
-        url: configuration.apiary + '/api/stack-positions'
+        url: configuration.api + '/api/stack-positions'
       });
     };
 
@@ -75,10 +75,10 @@ angular.module('resumeWrangler')
       });
     };
 
-    service.createStackPosition = function(payload) {
+    service.createStackPosition = function(payload, id) {
         return $http({
-            method: "POST",
-            url: configuration.api + '/api/stack-positions',
+            method: "PUT",
+            url: configuration.api + '/api/stack-positions/' + id,
             data: payload
         });
     };
