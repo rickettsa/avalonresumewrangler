@@ -209,11 +209,9 @@ angular.module('resumeWrangler.skills', [
 
         $scope.skills.addStackPosition = function(){
             var normalizedId = $scope.skills.formEl.stackPositionDispName.replace(/[^a-zA-Z0-9]/g, "_");
-            normalizedId.toLowerCase();
+            normalizedId = normalizedId.toLowerCase();
             var payload = {
-                "id": normalizedId,
-                "dispName": $scope.skills.formEl.stackPositionDispName,
-                "descr": $scope.skills.formEl.stackPositionDescr
+                "dispName": $scope.skills.formEl.stackPositionDispName
             };
             //add to interface before posting to backend
             $scope.skills.positions.unshift(payload);
@@ -228,9 +226,8 @@ angular.module('resumeWrangler.skills', [
 
         $scope.skills.addStackName = function(){
             var normalizedId = $scope.skills.formEl.stackDispName.replace(/[^a-zA-Z0-9]/g, "_");
-            normalizedId.toLowerCase();
+            normalizedId = normalizedId.toLowerCase();
             var payload = {
-                "id": normalizedId,
                 "dispName": $scope.skills.formEl.stackDispName,
                 "descr": $scope.skills.formEl.stackDescr
             };
