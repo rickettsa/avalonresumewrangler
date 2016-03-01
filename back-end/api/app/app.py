@@ -29,10 +29,14 @@ def _create_entity(creation_function, id=None):
 
         entity = jdata
 
+        print 'calling function', creation_function.__name__, '...'
+
         if(id is None):
             id = creation_function(entity)
         else:
             creation_function(entity, id)
+
+        print 'resulting id: ', id
 
         return id
 
@@ -166,6 +170,7 @@ def get_resume(id):
     if len(id) == 0:
         abort(404)
     else:
+        resume = None
         exclude_sections = request.args.getlist('exclude_sections')
         if exclude_sections:
             resume = dl.get_resume(id, exclude_sections)
@@ -182,6 +187,9 @@ def get_resume(id):
         if expand_user_info:
             res_data = resume['_source']
             resume['_source'] = _expanded_resume(res_data)
+
+        if resume is None:
+            resume = dl.get_resume(id)
 
         return jsonify( resume )
 

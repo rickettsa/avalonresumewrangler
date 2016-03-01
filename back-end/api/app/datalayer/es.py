@@ -81,7 +81,9 @@ class ESDataLayer(DataLayer):
         else:
             doc_id = id
 
-        self.es.index(index=self.USER_INDEX, doc_type=self.USER_TYPE, body=user, id=doc_id)
+        result = self.es.index(index=self.USER_INDEX, doc_type=self.USER_TYPE, body=user, id=doc_id)
+        print 'result:', result
+
         return doc_id
 
     def list_users(self):
@@ -124,7 +126,9 @@ class ESDataLayer(DataLayer):
         else:
             doc_id = id
 
-        self.es.index(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, body=resume, id=doc_id)
+        result = self.es.index(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, body=resume, id=doc_id)
+        print 'result:', result
+
         return doc_id
 
     def list_resumes(self):
@@ -213,7 +217,9 @@ class ESDataLayer(DataLayer):
         else:
             doc_id = id
 
-        self.es.index(index=self.PROJECT_INDEX, doc_type=self.PROJECT_TYPE, body=project, id=doc_id)
+        result = self.es.index(index=self.PROJECT_INDEX, doc_type=self.PROJECT_TYPE, body=project, id=doc_id)
+        print 'result:', result
+
         return doc_id
 
     def list_projects(self):
@@ -304,7 +310,9 @@ class ESDataLayer(DataLayer):
     #------- Skills
 
     def create_or_update_skill(self, skill, id):
-        self.es.index(index=self.SKILL_INDEX, doc_type=self.SKILL_TYPE, body=skill, id=id)
+        result = self.es.index(index=self.SKILL_INDEX, doc_type=self.SKILL_TYPE, body=skill, id=id)
+        print 'result:', result
+
         return id
 
     def list_skills(self):
@@ -317,7 +325,9 @@ class ESDataLayer(DataLayer):
     #------- Stacks
 
     def create_or_update_stack(self, stack, id):
-        self.es.index(index=self.STACK_INDEX, doc_type=self.STACK_TYPE, body=stack, id=id)
+        result = self.es.index(index=self.STACK_INDEX, doc_type=self.STACK_TYPE, body=stack, id=id)
+        print 'result:', result
+
         return id
 
     def list_stacks(self):
@@ -330,7 +340,9 @@ class ESDataLayer(DataLayer):
     #------- Stack Positions
 
     def create_or_update_stack_position(self, stack_position, id):
-        self.es.index(index=self.STACK_POS_INDEX, doc_type=self.STACK_POS_TYPE, body=stack_position, id=id)
+        result = self.es.index(index=self.STACK_POS_INDEX, doc_type=self.STACK_POS_TYPE, body=stack_position, id=id)
+        print 'result:', result
+
         return id
 
     def list_stack_positions(self):
