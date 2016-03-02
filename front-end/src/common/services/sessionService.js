@@ -59,7 +59,8 @@ angular.module('resumeWrangler')
       "holsheyj@avalonconsult.com": ["editor", "admin"],
       "uvenkatadasari@avalonconsult.com": ["editor", "admin"],
       "abembecker@gmail.com": ["guest", "all"],
-      "rickettsa@avalonconsult.com": ["guest", "all"]
+      "rickettsa@avalonconsult.com": ["guest", "all"],
+      "erismank@avalonconsult.com": ["guest", "all"]
     };
 
     this.roleLookup = function(userEmail){
