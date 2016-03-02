@@ -60,7 +60,7 @@ angular.module('resumeWrangler')
       "uvenkatadasari@avalonconsult.com": ["editor", "admin"],
       "abembecker@gmail.com": ["guest", "all"],
       "rickettsa@avalonconsult.com": ["guest", "all"],
-      "erismank@avalonconsult.com": ["guest", "all"]
+      "erismank@avalonconsult.com": ["editor", "admin"]
     };
 
     this.roleLookup = function(userEmail){
