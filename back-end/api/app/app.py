@@ -18,27 +18,24 @@ def _create_entity(creation_function, id=None):
     function is used to create the document. This will determine the type
     of document created (resume, project, etc.).'''
 
-    if request.headers['Content-Type'] == 'application/json':
+    content_type = request.headers['Content-Type'].split(';')[0] # ignore possible charset
+
+    if content_type == 'application/json':
         if not request.json:
             abort(400)
 
         jdata = json.loads(request.data)
 
-        if not request.json:
-            abort(400)
-
         entity = jdata
-
-        print 'calling function', creation_function.__name__, '...'
 
         if(id is None):
             id = creation_function(entity)
         else:
             creation_function(entity, id)
 
-        print 'resulting id: ', id
-
         return id
+    else:
+        raise Exception('Wrong Content-Type header; must be application/json')
 
 #------- Users
 

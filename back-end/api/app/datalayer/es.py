@@ -82,7 +82,6 @@ class ESDataLayer(DataLayer):
             doc_id = id
 
         result = self.es.index(index=self.USER_INDEX, doc_type=self.USER_TYPE, body=user, id=doc_id)
-        print 'result:', result
 
         return doc_id
 
@@ -127,7 +126,6 @@ class ESDataLayer(DataLayer):
             doc_id = id
 
         result = self.es.index(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, body=resume, id=doc_id)
-        print 'result:', result
 
         return doc_id
 
@@ -155,6 +153,7 @@ class ESDataLayer(DataLayer):
 
         # exclude specified sections only if they are optional
         exclude_sections = filter(lambda x: x in OPTIONAL_RESUME_KEYS, exclude_sections)
+        #FIXME:should probably remove the ignore=404 in this call
         resume = self.es.get(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, id=id, _source_exclude=exclude_sections, ignore=[404])
         return resume
 
@@ -165,7 +164,6 @@ class ESDataLayer(DataLayer):
         values = map(lambda x: x.lower(), values)
         all_matching_skills = []
         filtered_terms_query = { 'query': { 'filtered': { 'filter': { 'terms': { meta_key: values } } } } }
-        print filtered_terms_query
         try:
             all_matching_skills = self.es.search(index=self.SKILL_INDEX, doc_type=self.SKILL_TYPE,
                 body=filtered_terms_query, size=10000)['hits']['hits']
@@ -218,7 +216,6 @@ class ESDataLayer(DataLayer):
             doc_id = id
 
         result = self.es.index(index=self.PROJECT_INDEX, doc_type=self.PROJECT_TYPE, body=project, id=doc_id)
-        print 'result:', result
 
         return doc_id
 
@@ -311,7 +308,6 @@ class ESDataLayer(DataLayer):
 
     def create_or_update_skill(self, skill, id):
         result = self.es.index(index=self.SKILL_INDEX, doc_type=self.SKILL_TYPE, body=skill, id=id)
-        print 'result:', result
 
         return id
 
@@ -326,7 +322,6 @@ class ESDataLayer(DataLayer):
 
     def create_or_update_stack(self, stack, id):
         result = self.es.index(index=self.STACK_INDEX, doc_type=self.STACK_TYPE, body=stack, id=id)
-        print 'result:', result
 
         return id
 
@@ -341,7 +336,6 @@ class ESDataLayer(DataLayer):
 
     def create_or_update_stack_position(self, stack_position, id):
         result = self.es.index(index=self.STACK_POS_INDEX, doc_type=self.STACK_POS_TYPE, body=stack_position, id=id)
-        print 'result:', result
 
         return id
 
