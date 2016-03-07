@@ -4,10 +4,20 @@
 #
 #   Usage: python import-skills.py <path to input file containing skills>
 #
-import sys, json
+import sys, json, os
 
-#GIT_BASE_DIR = '/Volumes/Macintosh HD/Users/abembecker/Development/Avalon/resumeWrangler/BeanStalk_AvalonResumeWrangler'
-GIT_BASE_DIR = '/home/kerisman/work/avalonresumewrangler'
+if not os.environ["RW_GIT_BASE_DIR"] == "":
+    GIT_BASE_DIR = os.environ["RW_GIT_BASE_DIR"]
+else:
+    GIT_BASE_DIR = '/home/kerisman/work/avalonresumewrangler'
+AUX_CONTACT_FILE = GIT_BASE_DIR + '/data/avalon_contacts.json'
+
+print "************************"
+print "import_skills.py running..."
+print "Using System paths: "
+print "GIT_BASE_DIR: %s" % GIT_BASE_DIR
+print "AUX_CONTACT_FILE: %s" % AUX_CONTACT_FILE
+print "************************"
 
 DATALAYER_LIB_PATH = GIT_BASE_DIR + '/back-end/api/app/datalayer'
 
@@ -31,3 +41,6 @@ for k in skills.keys():
     skill = skills[k]
     dl.create_or_update_skill(skill, k)
 
+print "************************"
+print "import_skills.py completed successfully!"
+print "************************"

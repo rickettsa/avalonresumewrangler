@@ -15,8 +15,17 @@
 #
 import sys, os
 
-#GIT_BASE_DIR = '/Volumes/Macintosh HD/Users/abembecker/Development/Avalon/resumeWrangler/BeanStalk_AvalonResumeWrangler'
-GIT_BASE_DIR = '/home/kerisman/work/avalonresumewrangler'
+if not os.environ["RW_GIT_BASE_DIR"] == "":
+    GIT_BASE_DIR = os.environ["RW_GIT_BASE_DIR"]
+else:
+    GIT_BASE_DIR = '/home/kerisman/work/avalonresumewrangler'
+AUX_CONTACT_FILE = GIT_BASE_DIR + '/data/avalon_contacts.json'
+
+print "************************"
+print "load.py running..."
+print "Using System paths: "
+print "GIT_BASE_DIR: %s" % GIT_BASE_DIR
+print "************************"
 
 DATALAYER_LIB_PATH = GIT_BASE_DIR + '/back-end/api/app/datalayer'
 
@@ -83,3 +92,6 @@ for root, dirs, files in os.walk( input_dir ):
                 print 'indexing', doc_type, 'from file', doc, '...'
                 dl.create_or_update_doc( f.read(), doc_type, id )
 
+print "************************"
+print "load.py completed successfully!"
+print "************************"

@@ -13,9 +13,18 @@ import hashlib
 from uuid import uuid4
 import collections
 
-#GIT_BASE_DIR = '/Volumes/Macintosh HD/Users/abembecker/Development/Avalon/resumeWrangler/BeanStalk_AvalonResumeWrangler'
-GIT_BASE_DIR = '/home/kerisman/work/avalonresumewrangler'
+if not os.environ["RW_GIT_BASE_DIR"] == "":
+    GIT_BASE_DIR = os.environ["RW_GIT_BASE_DIR"]
+else:
+    GIT_BASE_DIR = '/home/kerisman/work/avalonresumewrangler'
 AUX_CONTACT_FILE = GIT_BASE_DIR + '/data/avalon_contacts.json'
+
+print "************************"
+print "convert.py running..."
+print "Using System paths: "
+print "GIT_BASE_DIR: %s" % GIT_BASE_DIR
+print "AUX_CONTACT_FILE: %s" % AUX_CONTACT_FILE
+print "************************"
 
 SKIP_LIST = [
     'KurtCagleResume.docx.html.xml'
@@ -280,3 +289,6 @@ for i in range( len(res_filenames) ):
                 with open(os.path.join(project_dir,project_filename), 'w') as f:
                     json.dump(p, f, sort_keys=True, indent=4)
 
+print "************************"
+print "convert.py completed successfully!"
+print "************************"
