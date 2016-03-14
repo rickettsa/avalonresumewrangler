@@ -21,14 +21,13 @@
                 <button class="add-skill btn btn-success" ng-click="edit.addExperience('start')"><span class="glyphicon glyphicon-plus"></i> Experience</button>
                 <div class="exper">
                     <div ng-repeat="emplyr in resume.employmentHistory">
+                    <div class="well light-well" ng-repeat="pos in emplyr.positions">
                         <h3><a href="#"
                         e-required e-placeholder="Service Provider Organization Name"
                         editable-text="emplyr.serviceProviderOrgName"
                         onaftersave="edit.updateResume()">
                         {{ emplyr.serviceProviderOrgName || "Service Provider Organization Name" }}
                         </a></h3>
-
-                        <div class="well light-well" ng-repeat="pos in emplyr.positions">
 
                         <h3><a href="#"
                         e-required e-placeholder="Contracting Organization Name"

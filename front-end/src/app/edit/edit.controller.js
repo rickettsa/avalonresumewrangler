@@ -5,7 +5,8 @@
     .module('resumeWrangler.edit')
     .controller('EditCtrl', EditCtrl);
 
-    EditCtrl.$inject = ['$http', '$scope', '$filter', 'resumeResponse', 'skillsResponse', 'AppConfig', 'contactResponse', 'resumeService', 'skillsService']
+    EditCtrl.$inject = ['$http', '$scope', '$filter', 'resumeResponse', 'skillsResponse', 'AppConfig', 'contactResponse', 'resumeService', 'skillsService'];
+
     function EditCtrl ($http, $scope, $filter, resumeResponse, skillsResponse, AppConfig, contactResponse, resumeService, skillsService) {
 
       _.mixin({
