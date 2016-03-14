@@ -21,9 +21,22 @@
                 <button class="add-skill btn btn-success" ng-click="edit.addExperience('start')"><span class="glyphicon glyphicon-plus"></i> Experience</button>
                 <div class="exper">
                     <div ng-repeat="emplyr in resume.employmentHistory">
-                    <div class="well light-well" ng-repeat="pos in emplyr.positions">
-                        <h3><a href="#" e-placeholder="Service Provider Organization Name">{{ emplyr.serviceProviderOrgName || "Service Provider Organization Name" }}</a></h3>
-                        <h3><a href="#" e-required e-placeholder="Contracting Organization Name" editable-text="pos.contractingOrgName" onaftersave="edit.updateResume()">{{ pos.contractingOrgName || "Contracting Organization Name" }}</a></h3>
+                        <h3><a href="#"
+                        e-required e-placeholder="Service Provider Organization Name"
+                        editable-text="emplyr.serviceProviderOrgName"
+                        onaftersave="edit.updateResume()">
+                        {{ emplyr.serviceProviderOrgName || "Service Provider Organization Name" }}
+                        </a></h3>
+
+                        <div class="well light-well" ng-repeat="pos in emplyr.positions">
+
+                        <h3><a href="#"
+                        e-required e-placeholder="Contracting Organization Name"
+                        editable-text="pos.contractingOrgName"
+                        onaftersave="edit.updateResume()">
+                        {{ pos.contractingOrgName || "Contracting Organization Name" }}
+                        </a></h3>
+
                         <h3><a href="#" e-required e-placeholder="Position Title" editable-text="pos.title" onaftersave="edit.updateResume()">{{ pos.title || "Position Title" }}</a></h3>
                         <!--<p><a href="#" e-required e-placeholder="Description" editable-text="pos.description">{{ pos.description || "empty" }}</a></p>-->
                         <span><a href="#" e-required e-placeholder="Start Date" editable-text="pos.startDate" onaftersave="edit.updateResume()">{{ pos.startDate || "Start Date" }}</a></span>

@@ -42,6 +42,10 @@ angular.module('resumeWrangler')
     service.createResume = function() {
       return $http({
         method: "POST",
+        headers: {
+          'Access-Control-Allow-Origin': 'http://localhost:9004'
+        },
+
         url: configuration.api + '/api/resumes',
       });
     };

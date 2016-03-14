@@ -7,7 +7,7 @@
 
     configFunction.$inject = ['$stateProvider'];
 
-    function configfunction( $stateProvider ) {
+    function configFunction( $stateProvider ) {
       $stateProvider
         .state( 'edit', {
           url: '/edit?:firstName&:lastName',
@@ -57,7 +57,7 @@
       }
     }
 
-    contactResponse.$inject = ['skilssService', '$stateParams'];
+    skillsResponse.$inject = ['skillsService', '$stateParams'];
     function skillsResponse(skillsService){
       return skillsService.fetchSkills();
     }

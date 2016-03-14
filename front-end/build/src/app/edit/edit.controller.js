@@ -5,6 +5,7 @@
     .module('resumeWrangler.edit')
     .controller('EditCtrl', EditCtrl);
 
+    EditCtrl.$inject = ['$http', '$scope', '$filter', 'resumeResponse', 'skillsResponse', 'AppConfig', 'contactResponse', 'resumeService', 'skillsService']
     function EditCtrl ($http, $scope, $filter, resumeResponse, skillsResponse, AppConfig, contactResponse, resumeService, skillsService) {
 
       _.mixin({
@@ -23,9 +24,11 @@
       });
 
         if(resumeResponse.data.hits.length > 0){
+            console.log("more than one")
             $scope.resume = resumeResponse.data.hits[0]._source;
         }else {
             var createResumePromise = resumeService.createResume();
+
             createResumePromise.then(function (resp) {
                 $scope.global.resumeId = resp.data.id;
                 $scope.global.rwUserId = $scope.resume.userId;
@@ -33,7 +36,7 @@
                 console.log("getNextPage error!");
                 console.log(error);
             });
-
+            console.log("we get the fake")
             $scope.resume = AppConfig.FAKE_RESUME._source;
         }
 
@@ -159,6 +162,8 @@
       };
 
       $scope.edit.updateResume = function(){
+        console.log($scope.global.resumeId)
+        console.log($scope.resume)
         resumeService.updateResume($scope.global.resumeId, $scope.resume)
           .success(function(){
 

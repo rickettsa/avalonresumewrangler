@@ -63,9 +63,22 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "                <button class=\"add-skill btn btn-success\" ng-click=\"edit.addExperience('start')\"><span class=\"glyphicon glyphicon-plus\"></i> Experience</button>\n" +
     "                <div class=\"exper\">\n" +
     "                    <div ng-repeat=\"emplyr in resume.employmentHistory\">\n" +
-    "                    <div class=\"well light-well\" ng-repeat=\"pos in emplyr.positions\">\n" +
-    "                        <h3><a href=\"#\" e-placeholder=\"Service Provider Organization Name\">{{ emplyr.serviceProviderOrgName || \"Service Provider Organization Name\" }}</a></h3>\n" +
-    "                        <h3><a href=\"#\" e-required e-placeholder=\"Contracting Organization Name\" editable-text=\"pos.contractingOrgName\" onaftersave=\"edit.updateResume()\">{{ pos.contractingOrgName || \"Contracting Organization Name\" }}</a></h3>\n" +
+    "                        <h3><a href=\"#\"\n" +
+    "                        e-required e-placeholder=\"Service Provider Organization Name\"\n" +
+    "                        editable-text=\"emplyr.serviceProviderOrgName\"\n" +
+    "                        onaftersave=\"edit.updateResume()\">\n" +
+    "                        {{ emplyr.serviceProviderOrgName || \"Service Provider Organization Name\" }}\n" +
+    "                        </a></h3>\n" +
+    "\n" +
+    "                        <div class=\"well light-well\" ng-repeat=\"pos in emplyr.positions\">\n" +
+    "\n" +
+    "                        <h3><a href=\"#\"\n" +
+    "                        e-required e-placeholder=\"Contracting Organization Name\"\n" +
+    "                        editable-text=\"pos.contractingOrgName\"\n" +
+    "                        onaftersave=\"edit.updateResume()\">\n" +
+    "                        {{ pos.contractingOrgName || \"Contracting Organization Name\" }}\n" +
+    "                        </a></h3>\n" +
+    "\n" +
     "                        <h3><a href=\"#\" e-required e-placeholder=\"Position Title\" editable-text=\"pos.title\" onaftersave=\"edit.updateResume()\">{{ pos.title || \"Position Title\" }}</a></h3>\n" +
     "                        <!--<p><a href=\"#\" e-required e-placeholder=\"Description\" editable-text=\"pos.description\">{{ pos.description || \"empty\" }}</a></p>-->\n" +
     "                        <span><a href=\"#\" e-required e-placeholder=\"Start Date\" editable-text=\"pos.startDate\" onaftersave=\"edit.updateResume()\">{{ pos.startDate || \"Start Date\" }}</a></span>\n" +
