@@ -1,53 +1,92 @@
-angular.module( 'resumeWrangler.view', [
-      'ui.router',
-      'placeholders',
-      'ui.bootstrap'
-    ])
-    .config(function config( $stateProvider ) {
+(function(){
+  'use strict'
+
+  angular.module( 'resumeWrangler.view', [
+    'ui.router',
+    'placeholders',
+    'ui.bootstrap'
+  ])
+
+})();
+
+(function(){
+  'use strict';
+
+  angular
+    .module('resumeWrangler.view')
+    .config(configFunction);
+
+    configFunction.$inject = ['$stateProvider'];
+
+    function configFunction( $stateProvider ) {
       $stateProvider
         .state( 'view', {
-            url: '/view?:firstName&:lastName',
-            params: {
-              firstName: {
-                value: null,
-                squash: true
-              },
-              lastName: {
-                value: null,
-                squash: true
-              }
+          url: '/view?:firstName&:lastName',
+          params: {
+            firstName: {
+              value  : null,
+              squash : true
             },
-            views: {
-              "main": {
-                controller: 'ViewCtrl',
-                templateUrl: 'view/view.tpl.html'
-              }
-            },
-            resolve: {
-              resumeResponse: function(resumeService, $stateParams){
-                if ($stateParams.firstName && $stateParams.lastName){
-                  return resumeService.fetchResume($stateParams.firstName, $stateParams.lastName);
-                } else {
-                  return {};
-                }
-              },
-              contactResponse: function(contactsService, $stateParams){
-                if ($stateParams.firstName && $stateParams.lastName){
-                  return contactsService.fetchContactByName($stateParams.firstName, $stateParams.lastName);
-                } else {
-                  return {};
-                }
-              },
-              skillsResponse: function(skillsService){
-                return skillsService.fetchSkills();
-              }
-            },
-            data:{ "pageTitle": 'View Resume',
-              "authorizedRoles": ['all', 'editor', 'admin']
+            lastName: {
+              value  : null,
+              squash : true
             }
+          },
+          views: {
+            "main": {
+              controller  : 'ViewCtrl',
+              templateUrl : 'view/view.tpl.html'
+            }
+          },
+          resolve: {
+            resumeResponse  : resumeResponse,
+            contactResponse : contactResponse,
+            skillsResponse  : skillsResponse
+          },
+          data:{
+            "pageTitle"       : 'View Resume',
+            "authorizedRoles" : ['all', 'editor', 'admin']
+          }
       });
-    })
-    .controller('ViewCtrl', function ($http, $scope, $filter, resumeResponse, skillsResponse, sessionService, AppConfig, contactResponse) {
+    }
+
+    resumeResponse.$inject = ['resumeService', '$stateParams'];
+    function resumeResponse(resumeService, $stateParams){
+      if ($stateParams.firstName && $stateParams.lastName){
+        return resumeService.fetchResume($stateParams.firstName, $stateParams.lastName);
+      } else {
+        return {};
+      }
+    }
+
+    contactResponse.$inject = ['contactsService', '$stateParams'];
+    function contactResponse(contactsService, $stateParams){
+      if ($stateParams.firstName && $stateParams.lastName){
+        return contactsService.fetchContactByName($stateParams.firstName, $stateParams.lastName);
+      } else {
+        return {};
+      }
+    }
+
+    skillsResponse.$inject = ['skillsService', '$stateParams'];
+    function skillsResponse(skillsService){
+      return skillsService.fetchSkills();
+    }
+
+})();
+
+
+
+(function(){
+  'use strict';
+
+  angular
+    .module('resumeWrangler.view')
+    .controller('ViewCtrl', ViewCtrl);
+
+    ViewCtrl.$inject = ['$http', '$scope', '$filter', 'resumeResponse', 'skillsResponse', 'sessionService', 'AppConfig', 'contactResponse']
+
+    function ViewCtrl ($http, $scope, $filter, resumeResponse, skillsResponse, sessionService, AppConfig, contactResponse) {
 
       _.mixin({
         /**
@@ -66,36 +105,36 @@ angular.module( 'resumeWrangler.view', [
 
     $scope.view = $scope.view || {};
 
-        if(resumeResponse.data.hits.length > 0){
-            $scope.resume = resumeResponse.data.hits[0]._source;
-        }else {
-            $scope.resume = AppConfig.FAKE_RESUME._source;
-        }
-        $scope.contact = contactResponse.data.hits && contactResponse.data.hits.length > 0 ? contactResponse.data.hits[0]._source : {};
+    if(resumeResponse.data.hits.length > 0){
+        $scope.resume = resumeResponse.data.hits[0]._source;
+    }else {
+        $scope.resume = AppConfig.FAKE_RESUME._source;
+    }
+    $scope.contact = contactResponse.data.hits && contactResponse.data.hits.length > 0 ? contactResponse.data.hits[0]._source : {};
 
-        $scope.skillsData = skillsResponse.data.skills;
-      $scope.skillNames = _.pluck(skillsResponse.data.skills, 'dispName');
-      $scope.showSkillName = 0;
-      $scope.getSkillImg = function(skillName){
-        var skillNode = _.findBySubVal($scope.skillsData, 'dispName', [skillName]);
-        if (skillNode.length > 0){
-          $scope.showSkillName = 0;
-          return '/assets/icons/' + skillNode[0].image;
-        } else {
-          $scope.showSkillName = 1;
-          return '/assets/icons/generic.jpg';
-        }
-
+    $scope.skillsData = skillsResponse.data.skills;
+    $scope.skillNames = _.pluck(skillsResponse.data.skills, 'dispName');
+    $scope.showSkillName = 0;
+    $scope.getSkillImg = function(skillName){
+      var skillNode = _.findBySubVal($scope.skillsData, 'dispName', [skillName]);
+      if (skillNode.length > 0){
+        $scope.showSkillName = 0;
+        return '/assets/icons/' + skillNode[0].image;
+      } else {
+        $scope.showSkillName = 1;
+        return '/assets/icons/generic.jpg';
       }
 
-      //x-editable setup
-      $scope.user = {
-        name: 'awesome user'
-      };
+    }
 
-      $scope.text = function($scope){
-        $scope.text = 'this is text';
-      };
+    //x-editable setup
+    $scope.user = {
+      name: 'awesome user'
+    };
+
+    $scope.text = function($scope){
+      $scope.text = 'this is text';
+    };
 
     //https://github.com/Siyfion/angular-typeahead
 
@@ -150,4 +189,7 @@ angular.module( 'resumeWrangler.view', [
     };
 
 
-  });
+  };
+
+})();
+
