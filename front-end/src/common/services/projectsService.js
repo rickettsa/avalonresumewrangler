@@ -12,8 +12,7 @@
     .module('resumeWrangler')
     .service('projectsService', projectsService)
 
-    projectsService.$inject = ['$rootScope', '$http', 'configuration']
-
+    projectsService.$inject = ['$rootScope', '$http', 'configuration'];
     function ProjectService($rootScope, $http, configuration) {
 
       var service = {
