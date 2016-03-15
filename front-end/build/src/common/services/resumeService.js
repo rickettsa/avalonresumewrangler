@@ -1,19 +1,34 @@
-"use strict";
-
 /**
  * @ngdoc service
  * @name resumeWrangler.resumeCRUDService
  * @description Create,Read,Update,Delete service for resume JSON from backend.
  */
-angular.module('resumeWrangler')
-  .service('resumeService', function($rootScope, $http, configuration) {
-    var service = {};
+
+(function(){
+"use strict";
+
+  angular
+    .module('resumeWrangler')
+    .service('resumeService', resumeService);
+
+  resumeService.$inject = ['$rootScope', '$http', 'configuration']
+
+  function resumeService($rootScope, $http, configuration) {
+
+    var service = {
+      fetchResume  : fetchResume,
+      skillSearch  : skillSearch,
+      createResume : createResume,
+      updateResume : updateResume
+    };
+
+    return service;
 
     /**
      * Get summary list of all resumes
      * @returns {promise}
      */
-    service.fetchResume = function(firstName,lastName) {
+    function fetchResume (firstName,lastName) {
       //http://private-b7b35-avalonresumesearch.apiary-mock.com/api/resume/0000000124
       //return $http.get('http://private-b7b35-avalonresumesearch.apiary-mock.com/api/resume/' + id);
       var nameStr;
@@ -27,39 +42,36 @@ angular.module('resumeWrangler')
       }
 
       return $http({
-        method: "GET",
-        url: configuration.api + '/api/resumes/search?' + nameStr
+        method : "GET",
+        url    : configuration.api + '/api/resumes/search?' + nameStr
       });
     };
 
-    service.skillSearch = function(skillName){
+     function skillSearch(skillName){
       return $http({
-        method: "GET",
-        url: configuration.api + '/api/resumes/search?expand_user_info=true&skill=' + skillName
+        method : "GET",
+        url    : configuration.api + '/api/resumes/search?expand_user_info=true&skill=' + skillName
       });
     };
 
-    service.createResume = function() {
+     function createResume() {
       return $http({
-        method: "POST",
-        headers: {
-          'Access-Control-Allow-Origin': 'http://localhost:9004'
-        },
-
-        url: configuration.api + '/api/resumes',
+        method  : "POST",
+        headers : {'Content-Type': 'application/json'},
+        url     : configuration.api + '/api/resumes'
       });
     };
 
-    service.updateResume = function(id, payload) {
+    function updateResume(id, payload) {
       return $http({
-        method: "PUT",
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        url: configuration.api + '/api/resumes/' + id,
-        data: payload
+        method  : "PUT",
+        headers : {'Content-Type': 'application/json'},
+        url     : configuration.api + '/api/resumes/' + id,
+        data    : payload
       });
     };
+  };
+})();
 
-    return service;
-  });
+
+

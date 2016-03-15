@@ -57,8 +57,8 @@
      function createResume() {
       return $http({
         method  : "POST",
-        headers : {'Access-Control-Allow-Origin': 'http://localhost:9004'},
-        url     : configuration.api + '/api/resumes',
+        headers : {'Content-Type': 'application/json'},
+        url     : configuration.api + '/api/resumes'
       });
     };
 
