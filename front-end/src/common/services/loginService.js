@@ -10,7 +10,7 @@
     .module('resumeWrangler')
     .service('loginService', loginService);
 
-    loginService.$inject = ['$rootScope', '$http,' 'sessionService'];
+    loginService.$inject = ['$rootScope', '$http', 'sessionService'];
 
     function loginService($rootScope, $http, sessionService) {
 

@@ -11,7 +11,7 @@
     .service('projectsService', projectsService)
 
     projectsService.$inject = ['$rootScope', '$http', 'configuration'];
-    function projectService($rootScope, $http, configuration) {
+    function projectsService($rootScope, $http, configuration) {
 
       var service = {
         fetchProject  : fetchProject,
