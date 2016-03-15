@@ -1,121 +1,142 @@
-"use strict";
-
 /**
  * @ngdoc service
  * @name resumeWrangler.SkillsService
  * @description Create,Read,Update,Delete service for skills JSON from backend.
  */
-angular.module('resumeWrangler')
-  .service('skillsService', function($rootScope, $http, configuration) {
-    var service = {};
 
-    /**
-     * Get summary list of all resumes
-     * @returns {promise}
-     */
-    service.fetchSkills = function() {
-      //http://private-b7b35-avalonresumesearch.apiary-mock.com/api/skills
-      return $http({
-        method: "GET",
-        url: configuration.api + '/api/skills'
-      });
-    };
+(function(){
+  "use strict";
 
-    service.updateSkills = function(payload) {
-      return $http({
-        method: "PUT",
-        url: configuration.api + '/api/skills',
-        data: payload
-      });
-    };
+  angular
+    .module('resumeWrangler')
+    .service('skillsService', skillsService);
 
-    service.updateSkill = function(id, payload) {
-      return $http({
-        method: "PUT",
-        url: configuration.api + '/api/skills/' + id,
-        data: payload
-      });
-    };
+    skillsService.$inject = ['$rootScope', '$http', 'configuration']
 
-    service.fetchStacks = function() {
-      return $http({
-        method: "GET",
-        url: configuration.api + '/api/stacks'
-      });
-    };
+    function skillsService($rootScope, $http, configuration) {
 
-    service.updateStacks = function(payload) {
-      return $http({
-        method: "PUT",
-        url: configuration.api + '/api/stacks',
-        data: payload
-      });
-    };
+      var service = {
+        fetchSkills         : fetchSkills,
+        updateSkills        : updateSkills,
+        updateSkill         : updateSkill,
+        fetchStacks         : fetchStacks,
+        updateStacks        : updateStacks,
+        createStack         : createStack,
+        createStackPosition : createStackPosition,
+        getTypeaheadSource  : getTypeaheadSource
+      };
 
-    service.createStack = function(payload, id) {
+      return service;
+
+
+      /**
+       * Get summary list of all resumes
+       * @returns {promise}
+       */
+      function fetchSkills() {
+        //http://private-b7b35-avalonresumesearch.apiary-mock.com/api/skills
         return $http({
-            method: "PUT",
-            url: configuration.api + '/api/stacks/' + id,
-            data: payload
+          method : "GET",
+          url    : configuration.api + '/api/skills'
         });
-    };
+      };
 
-    service.fetchStackPositions = function() {
-      return $http({
-        method: "GET",
-        url: configuration.api + '/api/stack-positions'
-      });
-    };
-
-    service.updateStackPositions = function(payload) {
-      return $http({
-        method: "PUT",
-        url: configuration.api + '/api/stack-positions',
-        data: payload
-      });
-    };
-
-    service.createStackPosition = function(payload, id) {
+      function updateSkills(payload) {
         return $http({
-            method: "PUT",
-            url: configuration.api + '/api/stack-positions/' + id,
-            data: payload
+          method : "PUT",
+          url    : configuration.api + '/api/skills',
+          data   : payload
         });
-    };
+      };
 
-    service.getTypeaheadSource = function() {
-      return new Bloodhound({
-        datumTokenizer: Bloodhound.tokenizers.obj.whitespace('hint'),
-        queryTokenizer: Bloodhound.tokenizers.whitespace,
-        limit: 10,
-        remote: {
-          //url: Authentication.getApiUrl() + '/instances/search/suggestions?q=%QUERY', // The API endpoint for search suggestions
-          url: configuration.apiary + '/api/skills',
-          /**
-           * Reduce the response down to an array of objects since the API doesn't return that outright.
-           * @param {Object} parsedResponse
-           * @returns {*}
-           */
-          filter: function(parsedResponse) {
-            var ret = [];
+      function updateSkill(id, payload) {
+        return $http({
+          method : "PUT",
+          url    : configuration.api + '/api/skills/' + id,
+          data   : payload
+        });
+      };
 
-            if (parsedResponse.skills) {
-              var skills = parsedResponse.skills;
-              var keys = _.keys(skills);
+      function fetchStacks() {
+        return $http({
+          method : "GET",
+          url    : configuration.api + '/api/stacks'
+        });
+      };
 
-              _.forEach(keys, function(skill) {
-                var retObj = {};
-                retObj.abbrev = skill;
-                retObj.displayName = skills[skill]["dispName"];
-                retObj.image = skills[skill]["image"];
-                ret.push(retObj);
-              });
+      function updateStacks(payload) {
+        return $http({
+          method : "PUT",
+          url    : configuration.api + '/api/stacks',
+          data   : payload
+        });
+      };
+
+      function createStack(payload, id) {
+        return $http({
+          method : "PUT",
+          url    : configuration.api + '/api/stacks/' + id,
+          data   : payload
+        });
+      };
+
+      function fetchStackPositions() {
+        return $http({
+          method : "GET",
+          url    : configuration.api + '/api/stack-positions'
+        });
+      };
+
+      function updateStackPositions(payload) {
+        return $http({
+          method : "PUT",
+          url    : configuration.api + '/api/stack-positions',
+          data   : payload
+        });
+      };
+
+      function createStackPosition(payload, id) {
+        return $http({
+          method : "PUT",
+          url    : configuration.api + '/api/stack-positions/' + id,
+          data   : payload
+        });
+      };
+
+      function getTypeaheadSource() {
+        return new Bloodhound({
+          datumTokenizer: Bloodhound.tokenizers.obj.whitespace('hint'),
+          queryTokenizer: Bloodhound.tokenizers.whitespace,
+          limit: 10,
+          remote: {
+            //url: Authentication.getApiUrl() + '/instances/search/suggestions?q=%QUERY', // The API endpoint for search suggestions
+            url: configuration.apiary + '/api/skills',
+            /**
+             * Reduce the response down to an array of objects since the API doesn't return that outright.
+             * @param {Object} parsedResponse
+             * @returns {*}
+             */
+            filter: function(parsedResponse) {
+              var ret = [];
+
+              if (parsedResponse.skills) {
+                var skills = parsedResponse.skills;
+                var keys = _.keys(skills);
+
+                _.forEach(keys, function(skill) {
+                  var retObj = {};
+                  retObj.abbrev = skill;
+                  retObj.displayName = skills[skill]["dispName"];
+                  retObj.image = skills[skill]["image"];
+                  ret.push(retObj);
+                });
+              }
+              return ret;
             }
-            return ret;
           }
-        }
-      });
-    };
+        });
+      };
 
-    return service;
-  });
+    };
+})();
+

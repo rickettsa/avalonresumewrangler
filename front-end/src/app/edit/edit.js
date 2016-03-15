@@ -249,6 +249,7 @@
       };
 
       $scope.edit.updateResume = function(){
+        console.log("id")
         console.log($scope.global.resumeId)
         console.log($scope.resume)
         resumeService.updateResume($scope.global.resumeId, $scope.resume)

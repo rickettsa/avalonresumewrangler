@@ -58,7 +58,8 @@
       return $http({
         method  : "POST",
         headers : {'Content-Type': 'application/json'},
-        url     : configuration.api + '/api/resumes'
+        url     : configuration.api + '/api/resumes',
+        data    : {"foo": "bar"} //make sure we are able to post to url
       });
     };
 

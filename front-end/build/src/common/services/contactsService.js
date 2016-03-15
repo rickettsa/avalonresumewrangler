@@ -1,26 +1,50 @@
-"use strict";
-
 /**
  * @ngdoc service
  * @name resumeWrangler.contactsService
  * @description Create,Read,Update,Delete service for contact JSON from backend.
  */
-angular.module('resumeWrangler')
-  .service('contactsService', function($rootScope, $http, configuration) {
-    var service = {};
+
+(function(){
+  "use strict";
+
+  angular
+    .module('resumeWrangler')
+    .service('contactsService', contactsService);
+
+    contactsService.$inject = ['$rootScope', '$http', 'configuration'];
+
+    function contactsService($rootScope, $http, configuration) {
+      var service = {
+        fetchContactByName : fetchContactByName,
+        createUser         : createUser
+      };
+
+      return service;
 
     /**
      * Get summary list of all resumes
      * @returns {promise}
      */
-    service.fetchContactByName = function(firstName,lastName) {
+    function fetchContactByName(firstName,lastName) {
       //http://private-b7b35-avalonresumesearch.apiary-mock.com/api/resume/0000000124
       //return $http.get('http://private-b7b35-avalonresumesearch.apiary-mock.com/api/resume/' + id);
       return $http({
-        method: "GET",
-        url: configuration.api + '/api/users/search?firstname=' + firstName + '&lastname=' + lastName
+        method : "GET",
+        url    : configuration.api + '/api/users/search?firstname=' + firstName + '&lastname=' + lastName
       });
     };
+
+    function createUser(payload) {
+      return $http({
+        method : "POST",
+        url    : configuration.api + '/api/users',
+        data   : payload
+      });
+    };
+
+  };
+})();
+
 
 //
 //    service.createResume = function(payload) {
@@ -42,12 +66,7 @@ angular.module('resumeWrangler')
 //      });
 //    };
 
-      service.createUser = function(payload) {
-      return $http({
-        method: "POST",
-        url: configuration.api + '/api/users',
-        data: payload
-      });
-    };
-    return service;
-  });
+
+
+
+

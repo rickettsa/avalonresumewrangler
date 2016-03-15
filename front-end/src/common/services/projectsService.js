@@ -1,10 +1,8 @@
-
 /**
  * @ngdoc service
  * @name resumeWrangler.resumeCRUDService
  * @description Create,Read,Update,Delete service for resume JSON from backend.
  */
-
  (function(){
   "use strict";
 
@@ -13,7 +11,7 @@
     .service('projectsService', projectsService)
 
     projectsService.$inject = ['$rootScope', '$http', 'configuration'];
-    function ProjectService($rootScope, $http, configuration) {
+    function projectService($rootScope, $http, configuration) {
 
       var service = {
         fetchProject  : fetchProject,
@@ -61,6 +59,5 @@
       };
 
   }
-
  })();
 
