@@ -28,54 +28,104 @@ angular.module('AppConfig', [])
       guest: 'guest'
     };
 
-      config.FAKE_RESUME ={
-          "_source": {
-              "educationHistory": [
-                  {
-                      "degreeMajor": "Your Degree",
-                      "degreeName": "BS",
-                      "endDate": "1999-01-02",
-                      "schoolName": "Your School",
-                      "startDate": "1999-01-01"
-                  }
-              ],
-              "employmentHistory": [
-                  {
-                      "employerOrgName": "Avalon Consulting, LLC",
-                      "positions": [
-                          {
-                              "clientName": "Johnson, Smith, and Jones Law Firm",
-                              "clientProjectId": "221a43b2c2",
-                              "description": "<p>This is a description of consultant's work on this client project.</p>",
-                              "endDate": "2014-12-31",
-                              "positionType": "contract",
-                              "startDate": "2013-01-01"
-                          }
-                      ]
-                  }
+    config.FAKE_RESUME = {
+        "_source": {
+            "educationHistory": [
+                {
+                    "degreeMajor": "Your Degree",
+                    "degreeName": "BS",
+                    "endDate": "1999-01-02",
+                    "schoolName": "Your School",
+                    "startDate": "1999-01-01"
+                }
+            ],
+            "employmentHistory": [
+                {
+                    "employerOrgName": "Avalon Consulting, LLC",
+                    "positions": [
+                        {
+                            "clientName": "Johnson, Smith, and Jones Law Firm",
+                            "clientProjectId": "221a43b2c2",
+                            "description": "<p>This is a description of consultant's work on this client project.</p>",
+                            "endDate": "2014-12-31",
+                            "positionType": "contract",
+                            "startDate": "2013-01-01"
+                        }
+                    ]
+                }
 
-              ],
-              "firstName": "ConsultantFirstName",
-              "lastName": "ConsultantLastname",
-              "email": "soandso@avalonconsult.com",
-              "phone": "444-555-8888",
-              "city": "Burbank",
-              "state": "CA",
-              "skills": [
-                  {
-                      "name": "Python",
-                      "years": 10
-                  },
-                  {
-                      "name": "Flask",
-                      "years": 4
-                  }
+            ],
+            "firstName": "Andres",
+            "lastName": "Macedo",
+            "email": "macedoa@avalonconsult.com",
+            "phone": "444-555-8888",
+            "city": "Burbank",
+            "state": "CA",
+            "skills": [
+                {
+                    "name": "Python",
+                    "years": 10
+                },
+                {
+                    "name": "Flask",
+                    "years": 4
+                }
+            ]
+        },
+        "_type": "resume",
+        "_version": 1,
+        "found": true
+    };
+
+
+     config.EMPTY_RESUME = {
+        "_source": {
+          "educationHistory": [
+            {
+              "degreeMajor" : "Your Degree",
+              "degreeName"  : "BS",
+              "endDate"     : "1999-01-02",
+              "schoolName"  : "Your School",
+              "startDate"   : "1999-01-01"
+            }
+          ],
+          "employmentHistory": [
+            {
+              "employerOrgName": "",
+              "positions": [
+                {
+                  "positionType"     : "contract",
+                  "clientName"       : "",
+                  "clientProjectId"  : "",
+                  "title"            : "Postition Title",
+                  "description"      : "<p>This is a description of consultant's work on this client project.</p>",
+                  "startDate"        : "1999-01-02",
+                  "endDate"          : "1999-01-02"
+                }
               ]
-          },
-          "_type": "resume",
-          "_version": 1,
-          "found": true
-      };
+            }
+          ],
+          "firstName" : "",
+          "lastName"  : "",
+          "email"     : "",
+          "phone"     : "000-000-0000",
+          "city"      : "",
+          "state"     : "",
+          "skills": [
+            {
+              "name"  : "",
+              "years" : 0
+            }
+          ]
+        },
+        "_type"    : "resume",
+        "_version" : 1,
+        "found"    : true
+      }
+
+
+
+
     /**** END CONSTANTS ****/
 
     return {

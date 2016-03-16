@@ -91,18 +91,13 @@
     .module('resumeWrangler.edit')
     .controller('EditCtrl', EditCtrl);
 
-    EditCtrl.$inject = ['$http', '$scope', '$filter', 'resumeResponse', 'skillsResponse', 'AppConfig', 'contactResponse', 'resumeService', 'skillsService'];
+    EditCtrl.$inject = ['$http', '$scope', '$filter', 'resumeResponse', 'skillsResponse', 'AppConfig', 'contactResponse', 'resumeService', '$stateParams',  'skillsService'];
 
-    function EditCtrl ($http, $scope, $filter, resumeResponse, skillsResponse, AppConfig, contactResponse, resumeService, skillsService) {
+    function EditCtrl ($http, $scope, $filter, resumeResponse, skillsResponse, AppConfig, contactResponse, resumeService,
+      $stateParams, skillsService) {
+
 
       _.mixin({
-        /**
-         * @name findBySubVal
-         * @description returns collection of nested field objects, matching a sub-level that contain specific values for a given property
-         * @param {Object} collection - associatedNodes from the Graph Visualizer API payload
-         * @param {string} property - the name of the property whose specific values we want to return
-         * @param {Array} values - specific values of the property whose parent node we want to return
-         */
         findBySubVal: function(collection, property, values) {
           return _.filter(collection, function(item) {
             return _.contains(values, item[property]);
@@ -110,30 +105,31 @@
         }
       });
 
-        if(resumeResponse.data.hits.length > 0){
-            console.log("more than one")
-            $scope.resume = resumeResponse.data.hits[0]._source;
-        }else {
-            var createResumePromise = resumeService.createResume();
 
-            createResumePromise.then(function (resp) {
-                $scope.global.resumeId = resp.data.id;
-                $scope.global.rwUserId = $scope.resume.userId;
-            }, function (error) {
-                console.log("getNextPage error!");
-                console.log(error);
-            });
-            console.log("we get the fake")
-            $scope.resume = AppConfig.FAKE_RESUME._source;
-        }
+      debugger
+      if (resumeResponse.data.hits.length > 0) {
+        $scope.resume = resumeResponse.data.hits[0]._source;
+      } else {
+        $scope.resume            = AppConfig.EMPTY_RESUME._source;
+        $scope.resume.firstName  = $stateParams.firstName;
+        $scope.resume.lastName   = $stateParams.lastName;
+
+        resumeService.createResume()
+          .then(function(response){
+            console.log("SUCCESS: created resume id")
+            console.log(response.data.id)
+            $scope.global.resumeId = response.data.id
+
+          }, function (error){
+            console.log("getNextPage error!");
+            console.log(error);
+          });
+      }
 
 
       $scope.contact = typeof contactResponse.data.hits === "object" && contactResponse.data.hits > 0 ? contactResponse.data.hits[0]._source : {};
 
       $scope.edit = {};
-
-
-
       $scope.edit.skillsData = skillsResponse.data.skills;
       $scope.edit.skillNames = _.pluck(skillsResponse.data.skills, 'dispName');
       $scope.edit.showSkillName = 0;
@@ -192,8 +188,7 @@
 
       //https://github.com/Siyfion/angular-typeahead
 
-
-     $scope.groups = [];
+      $scope.groups = [];
 
 
       $scope.edit.removeSkill = function(index, competencyArray) {
@@ -203,9 +198,9 @@
     // add user
       $scope.edit.addSkillRole = function(competencyArray) {
         $scope.inserted = {
-          abbrev: '',
-          CompetencyDisplayName: null,
-          CompetencyEvidence: null
+          abbrev                : '',
+          CompetencyDisplayName : null,
+          CompetencyEvidence    : null
         };
         competencyArray.unshift($scope.inserted);
       };
@@ -213,24 +208,24 @@
       // add user
       $scope.edit.addLifeSkillRole = function(competencyArray) {
         $scope.inserted = {
-          abbrev: '',
-          CompetencyDisplayName: null,
-          YearsExperience: null
+          abbrev                : '',
+          CompetencyDisplayName : null,
+          YearsExperience       : null
         };
         competencyArray.unshift($scope.inserted);
       };
 
       $scope.edit.addExperience = function(addPosition){
         var blankExperience = {
-          "positionType": "contract",
-          "clientName": "Client Name",
-          "clientProjectId": "",
-          "projectId": "",
-          "title": "Postition Title",
-          "description": "Description of my role in the project.",
-          "startDate": "1800-01-01",
-          "endDate": "1900-01-01",
-          "skills": []
+          "positionType"     : "contract",
+          "clientName"       : "Client Name",
+          "clientProjectId"  : "",
+          "projectId"        : "",
+          "title"            : "Postition Title",
+          "description"      : "Description of my role in the project.",
+          "startDate"        : "1800-01-01",
+          "endDate"          : "1900-01-01",
+          "skills"           : []
         };
         if (!_.isEmpty(addPosition) && addPosition === "end"){
           $scope.resume.employmentHistory[0].positions.push(blankExperience);
@@ -251,12 +246,11 @@
       $scope.edit.updateResume = function(){
         console.log("id")
         console.log($scope.global.resumeId)
+        console.log("resume sent to put")
         console.log($scope.resume)
         resumeService.updateResume($scope.global.resumeId, $scope.resume)
-          .success(function(){
-
+          .success(function(resp){
             //is this skill known? if not, make sure you post back to the skills API
-
             console.log("updateResume SUCCESS");
           })
           .error(function(){
