@@ -126,19 +126,99 @@
           });
       }
 
-
-      $scope.contact = typeof contactResponse.data.hits === "object" && contactResponse.data.hits > 0 ? contactResponse.data.hits[0]._source : {};
-
-      $scope.edit = {};
-      $scope.edit.skillsData = skillsResponse.data.skills;
-      $scope.edit.skillNames = _.pluck(skillsResponse.data.skills, 'dispName');
-      $scope.edit.showSkillName = 0;
+      $scope.edit                = {};
+      $scope.edit.skillsData     = skillsResponse.data.skills;
+      $scope.edit.skillNames     = _.pluck(skillsResponse.data.skills, 'dispName');
+      $scope.edit.showSkillName  = 0;
 
       //Make sure you save the resume for the user as they navigate away
       $scope.$on("$destroy", function(){
         $scope.edit.updateResume();
       });
 
+      $scope.edit.addExperience = function(addPosition){
+        var blankExperience = {
+          "positionType"     : "contract",
+          "clientName"       : "Client Name",
+          "clientProjectId"  : "",
+          "projectId"        : "",
+          "title"            : "Postition Title",
+          "description"      : "Description of my role in the project.",
+          "startDate"        : "1800-01-01",
+          "endDate"          : "1900-01-01",
+          "skills"           : []
+        };
+        if (!_.isEmpty(addPosition) && addPosition === "end"){
+          $scope.resume.employmentHistory[0].positions.push(blankExperience);
+        } else {
+          $scope.resume.employmentHistory[0].positions.unshift(blankExperience);
+        }
+      };
+
+      $scope.edit.delteExperience = function(){
+        console.log("Deleted!")
+      }
+
+
+      $scope.edit.getSkillImg = function(skill){
+        var skillNode = _.findBySubVal($scope.edit.skillsData, 'dispName', [skill.name]);
+        if (skillNode.length > 0 && skillNode[0].hasOwnProperty("image") && !_.isEmpty(skillNode[0].image)){
+          $scope.showSkillName = 0;
+          return '/assets/icons/' + skillNode[0].image;
+        } else {
+          $scope.showSkillName = 1;
+          return '/assets/icons/generic.jpg';
+        }
+      }
+
+       $scope.edit.removeSkill = function(index, competencyArray) {
+        competencyArray.splice(index, 1);
+      };
+
+    // add user
+      $scope.edit.addSkillRole = function(competencyArray) {
+        $scope.inserted = {
+          abbrev                : '',
+          CompetencyDisplayName : null,
+          CompetencyEvidence    : null
+        };
+        competencyArray.unshift($scope.inserted);
+      };
+
+      // add user
+      $scope.edit.addLifeSkillRole = function(competencyArray) {
+        $scope.inserted = {
+          abbrev                : '',
+          CompetencyDisplayName : null,
+          YearsExperience       : null
+        };
+        competencyArray.unshift($scope.inserted);
+      };
+
+
+      $scope.edit.editSkill = function(skillRole){
+        skillRole.isEditing = true;
+      };
+
+      $scope.edit.saveSkills = function(skills, currentSkillRole){
+        currentSkillRole.isEditing = false;
+        $scope.edit.updateResume();
+      };
+
+      $scope.edit.updateResume = function(){
+        console.log("id")
+        console.log($scope.global.resumeId)
+        console.log("resume sent to put")
+        console.log($scope.resume)
+        resumeService.updateResume($scope.global.resumeId, $scope.resume)
+          .success(function(resp){
+            //is this skill known? if not, make sure you post back to the skills API
+            console.log("updateResume SUCCESS");
+          })
+          .error(function(){
+            console.log("updateResume FAILED");
+          });
+      };
 
       var suggestions = skillsService.getTypeaheadSource();
       suggestions.initialize();
@@ -166,16 +246,7 @@
         }
       };
 
-      $scope.edit.getSkillImg = function(skill){
-        var skillNode = _.findBySubVal($scope.edit.skillsData, 'dispName', [skill.name]);
-        if (skillNode.length > 0 && skillNode[0].hasOwnProperty("image") && !_.isEmpty(skillNode[0].image)){
-          $scope.showSkillName = 0;
-          return '/assets/icons/' + skillNode[0].image;
-        } else {
-          $scope.showSkillName = 1;
-          return '/assets/icons/generic.jpg';
-        }
-      }
+      $scope.contact = typeof contactResponse.data.hits === "object" && contactResponse.data.hits > 0 ? contactResponse.data.hits[0]._source : {};
 
         //x-editable setup
       $scope.user = {
@@ -190,73 +261,6 @@
 
       $scope.groups = [];
 
-
-      $scope.edit.removeSkill = function(index, competencyArray) {
-        competencyArray.splice(index, 1);
-      };
-
-    // add user
-      $scope.edit.addSkillRole = function(competencyArray) {
-        $scope.inserted = {
-          abbrev                : '',
-          CompetencyDisplayName : null,
-          CompetencyEvidence    : null
-        };
-        competencyArray.unshift($scope.inserted);
-      };
-
-      // add user
-      $scope.edit.addLifeSkillRole = function(competencyArray) {
-        $scope.inserted = {
-          abbrev                : '',
-          CompetencyDisplayName : null,
-          YearsExperience       : null
-        };
-        competencyArray.unshift($scope.inserted);
-      };
-
-      $scope.edit.addExperience = function(addPosition){
-        var blankExperience = {
-          "positionType"     : "contract",
-          "clientName"       : "Client Name",
-          "clientProjectId"  : "",
-          "projectId"        : "",
-          "title"            : "Postition Title",
-          "description"      : "Description of my role in the project.",
-          "startDate"        : "1800-01-01",
-          "endDate"          : "1900-01-01",
-          "skills"           : []
-        };
-        if (!_.isEmpty(addPosition) && addPosition === "end"){
-          $scope.resume.employmentHistory[0].positions.push(blankExperience);
-        } else {
-          $scope.resume.employmentHistory[0].positions.unshift(blankExperience);
-        }
-      };
-
-      $scope.edit.editSkill = function(skillRole){
-        skillRole.isEditing = true;
-      };
-
-      $scope.edit.saveSkills = function(skills, currentSkillRole){
-        currentSkillRole.isEditing = false;
-        $scope.edit.updateResume();
-      };
-
-      $scope.edit.updateResume = function(){
-        console.log("id")
-        console.log($scope.global.resumeId)
-        console.log("resume sent to put")
-        console.log($scope.resume)
-        resumeService.updateResume($scope.global.resumeId, $scope.resume)
-          .success(function(resp){
-            //is this skill known? if not, make sure you post back to the skills API
-            console.log("updateResume SUCCESS");
-          })
-          .error(function(){
-            console.log("updateResume FAILED");
-          });
-      };
 
     };
 

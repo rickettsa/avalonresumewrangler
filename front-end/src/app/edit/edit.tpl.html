@@ -3,51 +3,78 @@
         <!-- click-edit-link http://plnkr.co/edit/EsW7mV?p=preview -->
         <!-- plus button http://plnkr.co/edit/xUDrOS?p=preview -->
         <!-- http://vitalets.github.io/angular-xeditable/ -->
-            <div class="col-md-6">
-                <h1>{{ contact.firstName }} {{ contact.lastName }}</h1>
-                <h3>Hire Date: <a href="#" e-required e-placeholder="Hire Date" editable-text="resume.EmploymentHistory.EmployerOrg.HireDate" onaftersave="edit.updateResume()">{{ resume.EmploymentHistory.EmployerOrg.HireDate || "empty" }}</a></h3>
-                <h3><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></h3>
-                <h3><a href="tel:+{{ contact.phone }}">{{ contact.phone }}</a></h3>
-            </div>
-            <div class="col-md-6">
-                <h2>Generic Title</h2>
-                <h3><a href="#" e-required e-placeholder="Generic Title" editable-text="resume.EmploymentHistory.EmployerOrg.GenericTitle" onaftersave="edit.updateResume()">{{ resume.EmploymentHistory.EmployerOrg.GenericTitle || "empty" }}</a></h3>
-                <h2>General Description</h2>
-                <p><a href="#" e-required e-placeholder="Overall Description" editable-text="resume.EmploymentHistory.EmployerOrg.OverallDescription" onaftersave="edit.updateResume()">{{ resume.EmploymentHistory.EmployerOrg.OverallDescription || "empty" }}</a></p>
-            </div>
+        <div class="col-md-6">
+            <h1>{{ contact.firstName }} {{ contact.lastName }}</h1>
+            <h3>Hire Date: <a href = "#" e-required e-placeholder = "Hire Date" editable-text = "resume.EmploymentHistory.EmployerOrg.HireDate" onaftersave = "edit.updateResume()"> {{ resume.EmploymentHistory.EmployerOrg.HireDate || "empty" }}</a></h3>
+            <h3><a href= "mailto : {{ contact.email }}">{{ contact.email }}</a></h3>
+            <h3><a href= "tel: +{{ contact.phone }}">{{ contact.phone }}</a></h3>
+        </div>
 
-            <div class="col-md-12" ng-if = "!_.isEmpty(contact)">
-                <h2>Experience:</h2>
-                <button class="add-skill btn btn-success" ng-click="edit.addExperience('start')"><span class="glyphicon glyphicon-plus"></i> Experience</button>
-                <div class="exper">
-                    <div ng-repeat="emplyr in resume.employmentHistory">
-                    <span>Employer</span>
-                    {{emplyr}}
-                    <div class="well light-well" ng-repeat="pos in emplyr.positions">
-                        <h3><a href="#"
-                        e-required e-placeholder="Service Provider Organization Name">
-                        {{ emplyr.employerOrgName || "Service Provider Organization Name" }}
-                        </a></h3>
+        <div class="col-md-6">
+            <h2>Generic Title</h2>
+            <h3><a href= "#" e-required e-placeholder = "Generic Title" editable-text = "resume.EmploymentHistory.EmployerOrg.GenericTitle" onaftersave="edit.updateResume()">{{ resume.EmploymentHistory.EmployerOrg.GenericTitle || "empty" }}</a></h3>
+            <h2>General Description</h2>
+                <p><a href = "#" e-required e-placeholder = "Overall Description" editable-text = "resume.EmploymentHistory.EmployerOrg.OverallDescription" onaftersave= "edit.updateResume()">{{ resume.EmploymentHistory.EmployerOrg.OverallDescription || "empty" }}</a></p>
+        </div>
 
-                        <h3><a href="#"
-                        e-required e-placeholder="Contracting Organization Name"
-                        editable-text="pos.clientName"
-                        onaftersave="edit.updateResume()">
-                        {{ pos.clientName || "Contracting Organization Name" }}
-                        </a></h3>
+        <div class="col-md-12" ng-if = "!_.isEmpty(contact)">
+            <h2>Experience:</h2>
+            <button class = "add-skill btn btn-success" ng-click = "edit.addExperience('start')"><span class="glyphicon glyphicon-plus"></i> Experience</button>
 
-                        <h3><a href="#" e-required e-placeholder="Position Title" editable-text="pos.title" onaftersave="edit.updateResume()">{{ pos.title || "Position Title" }}</a></h3>
-                        <!--<p><a href="#" e-required e-placeholder="Description" editable-text="pos.description">{{ pos.description || "empty" }}</a></p>-->
-                        <span><a href="#" e-required e-placeholder="Start Date" editable-text="pos.startDate" onaftersave="edit.updateResume()">{{ pos.startDate || "Start Date" }}</a></span>
-                        <span> to </span>
-                        <span><a href="#" e-required e-placeholder="End Date" editable-text="pos.endDate" onaftersave="edit.updateResume()">{{ pos.endDate || "End Date" }}</a></span>
-                        <h4 class="uneditable" ng-if="pos.globalDescription">{{ pos.globalDescription }}</h4>
-                        <br ng-if="!pos.GlobalDescription"/>
-                        <br ng-if="!pos.GlobalDescription"/>
-                        <!-- Integrate CKEDitor http://jsfiddle.net/jWANb/2/ -->
-                        <div class="ck-editor" ng-model="pos.description" ng-init="description = pos.description">{{ pos.description }}</div>
+            <div class="exper">
+                <div ng-repeat = "emplyr in resume.employmentHistory">
+                    <div class = "well light-well" ng-repeat = "pos in emplyr.positions">
+                    <div class="col-md-6 text-right">
+                        <button type="button" class="btn btn-danger btn-xs" ng-click="edit.deleteExperience()">Delete Experience</button>
+                    </div>
+
+                    <h3><a href="#"
+                        e-required e-placeholder = "Service Provider Organization Name">
+                        {{ emplyr.employerOrgName || "Service Provider Organization Name" }}</a></h3>
+
+                    <h3><a href="#"
+                        e-required e-placeholder = "Contracting Organization Name"
+                        editable-text            = "pos.clientName"
+                        onaftersave              = "edit.updateResume()">
+                        {{ pos.clientName || "Contracting Organization Name" }}</a></h3>
+
+                    <h3><a href="#"
+                        e-required e-placeholder = "Position Title"
+                        editable-text            = "pos.title"
+                        onaftersave              = "edit.updateResume()">
+                        {{ pos.title || "Position Title" }}</a></h3>
+
+                    <span><a href= "#"
+                        e-required e-placeholder = "Start Date"
+                        editable-text            = "pos.startDate"
+                        onaftersave              = "edit.updateResume()">
+                        {{ pos.startDate || "Start Date" }}</a></span><span> to </span>
+
+                    <span><a href = "#"
+                        e-required e-placeholder = "End Date"
+                        editable-text            = "pos.endDate"
+                        onaftersave              = "edit.updateResume()">
+                        {{ pos.endDate || "End Date" }}</a></span>
+
+                    <h4 class="uneditable" ng-if="pos.globalDescription">{{ pos.globalDescription }}</h4>
+
+                    <br ng-if = "!pos.GlobalDescription"/>
+                    <br ng-if = "!pos.GlobalDescription"/>
+
+                    <!-- Integrate CKEDitor http://jsfiddle.net/jWANb/2/ -->
+                    <div class = "ck-editor"
+                        ng-model = "pos.description"
+                        ng-init = "description = pos.description">
+                        {{ pos.description }}</div>
+
+
+
+
+
+
+
+
                         <!-- <div class="description-noEdit well" ng-bind-html="pos.Description"></div> -->
-
                         <!-- START POSITION SKILLS TABLE -->
                         <div ng-if="pos.skills.length > 0">
                             <table class="">
