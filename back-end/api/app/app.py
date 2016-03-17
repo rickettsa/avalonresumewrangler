@@ -97,7 +97,7 @@ def delete_user(id):
 @app.route('/api/resumes', methods=['POST'])
 def create_resume():
     id = _create_entity(dl.create_or_update_resume)
-    return ''
+    return jsonify({ 'id': str(id) })
 
 # OPTIONS needed for AngularJS
 @app.route('/api/resumes', methods=['OPTIONS'])

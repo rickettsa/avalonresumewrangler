@@ -157,7 +157,8 @@
                 <div class="exper">
                     <div ng-repeat="emplyr in resume.employmentHistory">
                     <div class="well light-well" ng-repeat="pos in emplyr.positions">
-                        <h3><a href="#" e-placeholder="Service Provider Organization Name">{{ emplyr.serviceProviderOrgName || "empty" }}</a></h3>
+
+                        <h3><a href="#" e-placeholder="Service Provider Organization Name">{{ emplyr.employerOrgName || "empty" }}</a></h3>
 
                         <h3>{{ pos.title || "empty" }}</h3>
                         <h4 ng-if="pos.contractingOrgName">{{ pos.contractingOrgName }}</h4>

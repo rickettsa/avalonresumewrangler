@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html ng-app="resumeWrangler" ng-controller="AppCtrl">
+  <head>
+    <title ng-bind="pageTitle"></title>
+
+    <!-- social media tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@joshdmiller">
+    <meta name="twitter:title" content="ngBoilerplate">
+    <meta name="twitter:description" content="Non-Trivial AngularJS Made Easy: Everything you need to kickstart AngularJS projects: a best-practice directory structure, an intelligent build system, and the best web design libraries around.">
+    <meta name="twitter:creator" content="@joshdmiller">
+    <meta name="twitter:image:src" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png?1366128846">
+    <meta property="og:title" content="ngBoilerplate" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://bit.ly/ngBoilerplate" />
+    <meta property="og:image" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png?1366128846" />
+    <meta property="og:description" content="Non-Trivial AngularJS Made Easy: Everything you need to kickstart AngularJS projects: a best-practice directory structure, an intelligent build system, and the best web design libraries around.">
+    <meta name="google-signin-client_id" content="486964627874-17cb51m2n935bqli498g60bvpfaj6e87.apps.googleusercontent.com">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- font awesome from BootstrapCDN -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- compiled CSS -->
+    <link rel="stylesheet" type="text/css" href="vendor/angular-xeditable/dist/css/xeditable.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/angular-loading-bar/loading-bar.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/ngbp-0.3.2.css" />
+
+    <!-- compiled JavaScript -->
+    <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/angular/angular.js"></script>
+    <script type="text/javascript" src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script type="text/javascript" src="vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="vendor/lodash/lodash.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-xeditable/dist/js/xeditable.js"></script>
+    <script type="text/javascript" src="vendor/sugar/release/sugar.min.js"></script>
+    <script type="text/javascript" src="vendor/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="vendor/typeahead.js/dist/typeahead.bundle.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-typeahead/angular-typeahead.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-sanitize/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="config/config.js"></script>
+    <script type="text/javascript" src="vendor/angular-loading-bar/loading-bar.min.js"></script>
+    <script type="text/javascript" src="src/app/admin/admin.js"></script>
+    <script type="text/javascript" src="src/app/app.js"></script>
+    <script type="text/javascript" src="src/app/config/config.js"></script>
+    <script type="text/javascript" src="src/app/edit/edit.js"></script>
+    <script type="text/javascript" src="src/app/home/home.js"></script>
+    <script type="text/javascript" src="src/app/projects/projects.js"></script>
+    <script type="text/javascript" src="src/app/skills/skills.js"></script>
+    <script type="text/javascript" src="src/app/view/view.js"></script>
+    <script type="text/javascript" src="src/common/directives/ckeditor.js"></script>
+    <script type="text/javascript" src="src/common/directives/navbar-header.js"></script>
+    <script type="text/javascript" src="src/common/directives/search-form.js"></script>
+    <script type="text/javascript" src="src/common/directives/user-login.js"></script>
+    <script type="text/javascript" src="src/common/plusOne/plusOne.js"></script>
+    <script type="text/javascript" src="src/common/services/contactsService.js"></script>
+    <script type="text/javascript" src="src/common/services/loginService.js"></script>
+    <script type="text/javascript" src="src/common/services/projectsService.js"></script>
+    <script type="text/javascript" src="src/common/services/resumeService.js"></script>
+    <script type="text/javascript" src="src/common/services/sessionService.js"></script>
+    <script type="text/javascript" src="src/common/services/skillsService.js"></script>
+    <script type="text/javascript" src="templates-common.js"></script>
+    <script type="text/javascript" src="templates-app.js"></script>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+  </head>
+  <body>
+
+  <rw-navbar-header></rw-navbar-header>
+
+    <!--<div class="container">-->
+      <!--<div class="navbar navbar-default">-->
+        <!--<div class="navbar-header">-->
+          <!--<button type="button" class="navbar-toggle" ng-init="menuCollapsed = true"-->
+            <!--ng-click="menuCollapsed = ! menuCollapsed">-->
+            <!--<span class="sr-only">Toggle navigation</span>-->
+            <!--<span class="icon-bar"></span>-->
+            <!--<span class="icon-bar"></span>-->
+            <!--<span class="icon-bar"></span>-->
+          <!--</button>-->
+          <!--<div class="navbar-brand">-->
+              <!--<img src="http://blogs.avalonconsult.com/files/2013/04/avalon-transparent.png"/>-->
+
+            <!--&#x2003;Resume Wrangler-->
+            <!--<small>-->
+              <!--<a href="http://github.com/ngbp/ngbp/blob/v0.3.2-release/CHANGELOG.md">-->
+                <!--v0.3.2-->
+              <!--</a>-->
+            <!--</small>-->
+
+        <!--</div>-->
+        <!--<div class="collapse navbar-collapse" collapse="menuCollapsed">-->
+          <!--<ul class="nav navbar-nav">-->
+            <!--<li ui-sref-active="active">-->
+              <!--<a href ui-sref="home">-->
+                <!--<i class="fa fa-home"></i>-->
+                <!--Home-->
+              <!--</a>-->
+            <!--</li>-->
+              <!--<li ui-sref-active="active">-->
+                  <!--<a href ui-sref="view({ firstName: session.firstName, lastName: session.lastName})">-->
+                      <!--<i class="glyphicon glyphicon-eye-open"></i>-->
+                      <!--My Resume-->
+                  <!--</a>-->
+              <!--</li>-->
+            <!--<li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">-->
+              <!--<a href ui-sref="edit({ firstName: session.firstName, lastName: session.lastName})">-->
+                <!--<i class="fa fa-edit"></i>-->
+                <!--Edit My Resume-->
+              <!--</a>-->
+            <!--</li>-->
+            <!--<li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">-->
+              <!--<a href ui-sref="projects">-->
+                  <!--<i class="fa fa-edit"></i>-->
+                  <!--Edit Projects-->
+              <!--</a>-->
+            <!--</li>-->
+            <!--<li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">-->
+              <!--<a href ui-sref="skills">-->
+                  <!--<i class="fa fa-edit"></i>-->
+                  <!--Edit Skills-->
+              <!--</a>-->
+            <!--</li>-->
+          <!--</ul>-->
+          <!--<div class="pull-right">-->
+              <!--<ds-user-login></ds-user-login>-->
+          <!--</div>-->
+        <!--</div>-->
+
+
+        <!--<div class="col-md-12">-->
+          <!--<div class="row">-->
+              <!--<ds-search-form></ds-search-form>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+
+  <div class="container">
+    <div ui-view="main"></div>
+  </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+            <p>Copyright Avalon Consulting LLC 2016</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
