@@ -22,10 +22,13 @@
             <button class = "add-skill btn btn-success" ng-click = "edit.addExperience('start')"><span class="glyphicon glyphicon-plus"></i> Experience</button>
 
             <div class="exper">
-                <div ng-repeat = "emplyr in resume.employmentHistory">
-                    <div class = "well light-well" ng-repeat = "pos in emplyr.positions">
-                    <div class="col-md-6 text-right">
-                        <button type="button" class="btn btn-danger btn-xs" ng-click="edit.deleteExperience()">Delete Experience</button>
+                <div ng-repeat = "emplyr in resume.employmentHistory" ng-init="outerIndex = $index" >
+                    <div class = "well light-well" ng-repeat = "pos in emplyr.positions" ng-init = "innerIndex= $index">
+                    <div class="col-md-12 text-right">
+
+
+                        <button type="button" class="btn btn-danger btn-xs" ng-click="edit.deletePosition(outerIndex, innerIndex)">Delete Position</button>
+
                     </div>
 
                     <h3><a href="#"

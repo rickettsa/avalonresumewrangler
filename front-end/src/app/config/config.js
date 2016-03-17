@@ -124,8 +124,6 @@ angular.module('AppConfig', [])
       }
 
 
-
-
     /**** END CONSTANTS ****/
 
     return {
@@ -134,3 +132,4 @@ angular.module('AppConfig', [])
       }
     };
   });
+

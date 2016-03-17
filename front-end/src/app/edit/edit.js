@@ -106,7 +106,7 @@
       });
 
 
-      debugger
+      // debugger
       if (resumeResponse.data.hits.length > 0) {
         $scope.resume = resumeResponse.data.hits[0]._source;
       } else {
@@ -125,6 +125,7 @@
             console.log(error);
           });
       }
+
 
       $scope.edit                = {};
       $scope.edit.skillsData     = skillsResponse.data.skills;
@@ -149,14 +150,17 @@
           "skills"           : []
         };
         if (!_.isEmpty(addPosition) && addPosition === "end"){
-          $scope.resume.employmentHistory[0].positions.push(blankExperience);
+          $scope.resume.employmentHistory[0].positions.push(blankExperience);//what if more than one employmenthistory?
         } else {
           $scope.resume.employmentHistory[0].positions.unshift(blankExperience);
         }
       };
 
-      $scope.edit.delteExperience = function(){
-        console.log("Deleted!")
+
+      $scope.edit.deletePosition = function(employmentHistoryIndex, positionIndex){
+        debugger
+        $scope.resume.employmentHistory[employmentHistoryIndex].positions.splice(positionIndex,1)
+        $scope.edit.updateResume();
       }
 
 
