@@ -88,6 +88,7 @@
 
     function ViewCtrl ($http, $scope, $filter, resumeResponse, skillsResponse, sessionService, AppConfig, contactResponse) {
 
+
       _.mixin({
         /**
          * @name findBySubVal

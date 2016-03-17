@@ -96,6 +96,41 @@
     function EditCtrl ($http, $scope, $filter, resumeResponse, skillsResponse, AppConfig, contactResponse, resumeService,
       $stateParams, skillsService) {
 
+      // bindable edit members
+      $scope.edit                  = {};
+      $scope.edit.addExperience    = addExperience;
+      $scope.edit.deletePosition   = deletePosition;
+      $scope.edit.skillsData       = skillsResponse.data.skills;
+      $scope.edit.skillNames       = _.pluck(skillsResponse.data.skills, 'dispName');
+      $scope.edit.showSkillName    = 0;
+      $scope.edit.getSkillImg      = getSkillImg;
+      $scope.edit.removeSkill      = removeSkill;
+      $scope.edit.addSkillRole     = addSkillRole;
+      $scope.edit.addLifeSkillRole = addLifeSkillRole;
+      $scope.edit.editSkill        = editSkill;
+      $scope.edit.saveSkills       = saveSkills;
+      $scope.edit.updateResume     = updateResume;
+
+      initEdit();
+
+      function initEdit(){
+        if (resumeResponse.data.hits.length > 0) {
+          $scope.resume = resumeResponse.data.hits[0]._source;
+          $scope.global.resumeId = resumeResponse.data.hits[0]._id;
+        } else {
+          $scope.resume = AppConfig.EMPTY_RESUME._source;
+          $scope.resume.firstName = $stateParams.firstName;
+          $scope.resume.lastName = $stateParams.lastName;
+
+          resumeService.createResume().then(function(response){
+              console.log("SUCCESS : created resume id")
+              $scope.global.resumeId = response.data.id;
+          }, function(error){
+              console.log("ERROR :  getNextPage!");
+              console.log(error);
+          });
+        }
+      };
 
       _.mixin({
         findBySubVal: function(collection, property, values) {
@@ -105,49 +140,12 @@
         }
       });
 
-      //==============================================
-      // RESUME INIT, IF NO RESUME FOUND CREATE ONE
-      //==============================================
-
-      if (resumeResponse.data.hits.length > 0) {
-
-        $scope.resume            = resumeResponse.data.hits[0]._source;
-        $scope.global.resumeId   = resumeResponse.data.hits[0]._id;
-
-      } else {
-
-        $scope.resume            = AppConfig.EMPTY_RESUME._source;
-        $scope.resume.firstName  = $stateParams.firstName;
-        $scope.resume.lastName   = $stateParams.lastName;
-
-        resumeService.createResume()
-          .then(function(response){
-
-            console.log("SUCCESS: created resume id")
-            $scope.global.resumeId = response.data.id;
-
-          }, function(error){
-
-            console.log("ERROR:  getNextPage!");
-            console.log(error);
-          });
-      }
-      //==============================================
-      // RESUME INIT END
-      //==============================================
-
-
-      $scope.edit                = {};
-      $scope.edit.skillsData     = skillsResponse.data.skills;
-      $scope.edit.skillNames     = _.pluck(skillsResponse.data.skills, 'dispName');
-      $scope.edit.showSkillName  = 0;
-
       // Make sure you save the resume for the user as they navigate away
       $scope.$on("$destroy", function(){
         $scope.edit.updateResume();
       });
 
-      $scope.edit.addExperience = function(addPosition, employmentHistoryIndex){
+      function addExperience (addPosition, employmentHistoryIndex){
         var blankExperience = {
           "positionType"     : "contract",
           "clientName"       : "Client Name",
@@ -166,14 +164,12 @@
         }
       };
 
-
-      $scope.edit.deletePosition = function(employmentHistoryIndex, positionIndex){
+      function deletePosition (employmentHistoryIndex, positionIndex){
         $scope.resume.employmentHistory[employmentHistoryIndex].positions.splice(positionIndex,1)
         $scope.edit.updateResume();
       }
 
-
-      $scope.edit.getSkillImg = function(skill){
+      function getSkillImg(skill){
         var skillNode = _.findBySubVal($scope.edit.skillsData, 'dispName', [skill.name]);
         if (skillNode.length > 0 && skillNode[0].hasOwnProperty("image") && !_.isEmpty(skillNode[0].image)){
           $scope.showSkillName = 0;
@@ -184,12 +180,12 @@
         }
       }
 
-       $scope.edit.removeSkill = function(index, competencyArray) {
+      function removeSkill(index, competencyArray) {
         competencyArray.splice(index, 1);
       };
 
-    // add user
-      $scope.edit.addSkillRole = function(competencyArray) {
+     // add user
+      function addSkillRole(competencyArray) {
         $scope.inserted = {
           abbrev                : '',
           CompetencyDisplayName : null,
@@ -199,7 +195,7 @@
       };
 
       // add user
-      $scope.edit.addLifeSkillRole = function(competencyArray) {
+      function addLifeSkillRole(competencyArray) {
         $scope.inserted = {
           abbrev                : '',
           CompetencyDisplayName : null,
@@ -208,21 +204,16 @@
         competencyArray.unshift($scope.inserted);
       };
 
-
-      $scope.edit.editSkill = function(skillRole){
+      function editSkill(skillRole){
         skillRole.isEditing = true;
       };
 
-      $scope.edit.saveSkills = function(skills, currentSkillRole){
+      function saveSkills(skills, currentSkillRole){
         currentSkillRole.isEditing = false;
         $scope.edit.updateResume();
       };
 
-      $scope.edit.updateResume = function(){
-        console.log("id")
-        console.log($scope.global.resumeId)
-        console.log("resume sent to put")
-
+      function updateResume(){
         if($scope.global.resumeId === undefined){
           console.log("undefined id!!!!")
           return
@@ -237,6 +228,8 @@
             console.log("updateResume FAILED");
           });
       };
+
+
 
       var suggestions = skillsService.getTypeaheadSource();
       suggestions.initialize();
@@ -276,9 +269,7 @@
       };
 
       //https://github.com/Siyfion/angular-typeahead
-
       $scope.groups = [];
-
 
     };
 
