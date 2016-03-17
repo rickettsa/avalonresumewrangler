@@ -239,6 +239,8 @@
         if($scope.global.resumeId === undefined){
           console.log("undefined id!!!!")
           return
+          // false
+          // if false return 500 //bubble to a 500
         }
         console.log($scope.resume)
         resumeService.updateResume($scope.global.resumeId, $scope.resume)

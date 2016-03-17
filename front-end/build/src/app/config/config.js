@@ -55,9 +55,9 @@ angular.module('AppConfig', [])
                 }
 
             ],
-            "firstName": "Andres",
-            "lastName": "Macedo",
-            "email": "macedoa@avalonconsult.com",
+            "firstName": "",
+            "lastName": "",
+            "email": "@avalonconsult.com",
             "phone": "444-555-8888",
             "city": "Burbank",
             "state": "CA",
