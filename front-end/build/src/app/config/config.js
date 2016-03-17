@@ -91,7 +91,7 @@ angular.module('AppConfig', [])
           ],
           "employmentHistory": [
             {
-              "employerOrgName": "",
+              "employerOrgName": "Avalon Consulting LLC",
               "positions": [
                 {
                   "positionType"     : "contract",

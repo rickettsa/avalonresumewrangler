@@ -64,6 +64,9 @@
     };
 
     function updateResume(id, payload) {
+      if(id===undefined){
+        id = ""
+      }
       return $http({
         method  : "PUT",
         headers : {'Content-Type': 'application/json'},

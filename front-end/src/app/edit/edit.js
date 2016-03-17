@@ -105,26 +105,36 @@
         }
       });
 
+      //==============================================
+      // RESUME INIT, IF NO RESUME FOUND CREATE ONE
+      //==============================================
 
-      // debugger
       if (resumeResponse.data.hits.length > 0) {
-        $scope.resume = resumeResponse.data.hits[0]._source;
+
+        $scope.resume            = resumeResponse.data.hits[0]._source;
+        $scope.global.resumeId   = resumeResponse.data.hits[0]._id;
+
       } else {
+
         $scope.resume            = AppConfig.EMPTY_RESUME._source;
         $scope.resume.firstName  = $stateParams.firstName;
         $scope.resume.lastName   = $stateParams.lastName;
 
         resumeService.createResume()
           .then(function(response){
-            console.log("SUCCESS: created resume id")
-            console.log(response.data.id)
-            $scope.global.resumeId = response.data.id
 
-          }, function (error){
-            console.log("getNextPage error!");
+            console.log("SUCCESS: created resume id")
+            $scope.global.resumeId = response.data.id;
+
+          }, function(error){
+
+            console.log("ERROR:  getNextPage!");
             console.log(error);
           });
       }
+      //==============================================
+      // RESUME INIT END
+      //==============================================
 
 
       $scope.edit                = {};
@@ -132,12 +142,12 @@
       $scope.edit.skillNames     = _.pluck(skillsResponse.data.skills, 'dispName');
       $scope.edit.showSkillName  = 0;
 
-      //Make sure you save the resume for the user as they navigate away
+      // Make sure you save the resume for the user as they navigate away
       $scope.$on("$destroy", function(){
         $scope.edit.updateResume();
       });
 
-      $scope.edit.addExperience = function(addPosition){
+      $scope.edit.addExperience = function(addPosition, employmentHistoryIndex){
         var blankExperience = {
           "positionType"     : "contract",
           "clientName"       : "Client Name",
@@ -158,7 +168,6 @@
 
 
       $scope.edit.deletePosition = function(employmentHistoryIndex, positionIndex){
-        debugger
         $scope.resume.employmentHistory[employmentHistoryIndex].positions.splice(positionIndex,1)
         $scope.edit.updateResume();
       }
@@ -213,6 +222,11 @@
         console.log("id")
         console.log($scope.global.resumeId)
         console.log("resume sent to put")
+
+        if($scope.global.resumeId === undefined){
+          console.log("undefined id!!!!")
+          return
+        }
         console.log($scope.resume)
         resumeService.updateResume($scope.global.resumeId, $scope.resume)
           .success(function(resp){
