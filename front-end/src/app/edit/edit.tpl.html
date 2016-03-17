@@ -23,7 +23,6 @@
         <div class="col-md-12" ng-if = "!_.isEmpty(contact)">
             <h2>Experience:</h2>
 
-
             <button class = "add-skill btn btn-success" ng-click = "edit.addExperience('start')"><span class="glyphicon glyphicon-plus"></i> Experience</button>
 
             <div ng-repeat = "emplyr in resume.employmentHistory" ng-init="outerIndex = $index" >
@@ -79,15 +78,10 @@
 
         </div><!-- finish experience section -->
 
-        <!-- ================================================= -->
-        <!-- FINISH RESUME EXPERIENCE SECTION -->
-        <!-- ================================================= -->
-
 
         <!-- ================================================= -->
         <!-- START RESUME SKILLSET SECTION -->
         <!-- ================================================= -->
-
         <div class="col-md-12">
             <h2>Lifetime Skillset:</h2>
             <button class = "add-skill btn btn-success" ng-click="edit.addLifeSkillRole(resume.skills)"><span class="glyphicon glyphicon-plus"></i> Skill</button>
@@ -140,30 +134,61 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div><!-- finish skillset section -->
 
-        <!-- ================================================= -->
-        <!-- FINISH RESUME SKILLSET SECTION -->
-        <!-- ================================================= -->
 
         <!-- ================================================= -->
         <!-- START RESUME EDUCATION SECTION -->
         <!-- ================================================= -->
-
         <div class="col-md-12">
             <h2>Education:</h2>
+            <button class = "add-skill btn btn-success" ng-click ="edit.addEducation('start')"><span class="glyphicon glyphicon-plus"></i> Education</button>
 
-            <div class="well light-well">
-            </div>
+            <div class = "well light-well" ng-repeat = "educ in resume.educationHistory" >
+
+                <div class="col-md-12 text-right">
+                    <button class="btn btn-danger btn-xs" ng-click ="edit.deleteEducation($index)">Delete Education</button>
+                </div>
 
 
-        </div>
+                <h3><a href                  = "#"
+                    e-required e-placeholder = "Degree Mayor"
+                    editable-text            = "educ.degreeMayor"
+                    onaftersave              = "edit.updateResume()">
+                    {{ educ.degreeMayor || "Degree Mayor" }}</a></h3>
+
+                <h3><a href                  = "#"
+                    e-required e-placeholder = "Degree Name"
+                    editable-text            = "educ.degreeName"
+                    onaftersave              = "edit.updateResume()">
+                    {{ educ.degreeName || "Degree Name" }}</a></h3>
+
+                <h3><a href                  = "#"
+                    e-required e-placeholder = "School Name"
+                    editable-text            = "educ.schoolName"
+                    onaftersave              = "edit.updateResume()">
+                    {{ educ.schoolName || "School Name" }}</a></h3>
+
+                <span><a href                = "#"
+                    e-required e-placeholder = "Start Date"
+                    editable-text            = "educ.startDate"
+                    onaftersave              = "edit.updateResume()">
+                    {{ educ.startDate || "Start Date" }}</a></span><span> to </span>
+
+                <span><a href                = "#"
+                    e-required e-placeholder = "End Date"
+                    editable-text            = "educ.endDate"
+                    onaftersave              = "edit.updateResume()">
+                    {{ educ.endDate || "End Date" }}</a></span>
+
+
+            </div> <!-- finish div for educ in resume.educationHistory -->
+        <button class = "add-skill btn btn-success" ng-click = "edit.addEducation('end')"><span class="glyphicon glyphicon-plus"></i> Education</button>
+    </div><!-- finish education section -->
 
 
 
-        <!-- ================================================= -->
-        <!-- FINISH RESUME EDUCATION SECTION -->
-        <!-- ================================================= -->
+
 
 
 

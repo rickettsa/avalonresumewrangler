@@ -65,7 +65,6 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "        <div class=\"col-md-12\" ng-if = \"!_.isEmpty(contact)\">\n" +
     "            <h2>Experience:</h2>\n" +
     "\n" +
-    "\n" +
     "            <button class = \"add-skill btn btn-success\" ng-click = \"edit.addExperience('start')\"><span class=\"glyphicon glyphicon-plus\"></i> Experience</button>\n" +
     "\n" +
     "            <div ng-repeat = \"emplyr in resume.employmentHistory\" ng-init=\"outerIndex = $index\" >\n" +
@@ -121,15 +120,10 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "\n" +
     "        </div><!-- finish experience section -->\n" +
     "\n" +
-    "        <!-- ================================================= -->\n" +
-    "        <!-- FINISH RESUME EXPERIENCE SECTION -->\n" +
-    "        <!-- ================================================= -->\n" +
-    "\n" +
     "\n" +
     "        <!-- ================================================= -->\n" +
     "        <!-- START RESUME SKILLSET SECTION -->\n" +
     "        <!-- ================================================= -->\n" +
-    "\n" +
     "        <div class=\"col-md-12\">\n" +
     "            <h2>Lifetime Skillset:</h2>\n" +
     "            <button class = \"add-skill btn btn-success\" ng-click=\"edit.addLifeSkillRole(resume.skills)\"><span class=\"glyphicon glyphicon-plus\"></i> Skill</button>\n" +
@@ -182,30 +176,61 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "                    </form>\n" +
     "                </div>\n" +
     "            </div>\n" +
-    "        </div>\n" +
+    "        </div><!-- finish skillset section -->\n" +
     "\n" +
-    "        <!-- ================================================= -->\n" +
-    "        <!-- FINISH RESUME SKILLSET SECTION -->\n" +
-    "        <!-- ================================================= -->\n" +
     "\n" +
     "        <!-- ================================================= -->\n" +
     "        <!-- START RESUME EDUCATION SECTION -->\n" +
     "        <!-- ================================================= -->\n" +
-    "\n" +
     "        <div class=\"col-md-12\">\n" +
     "            <h2>Education:</h2>\n" +
+    "            <button class = \"add-skill btn btn-success\" ng-click =\"edit.addEducation('start')\"><span class=\"glyphicon glyphicon-plus\"></i> Education</button>\n" +
     "\n" +
-    "            <div class=\"well light-well\">\n" +
-    "            </div>\n" +
+    "            <div class = \"well light-well\" ng-repeat = \"educ in resume.educationHistory\" >\n" +
+    "\n" +
+    "                <div class=\"col-md-12 text-right\">\n" +
+    "                    <button class=\"btn btn-danger btn-xs\" ng-click =\"edit.deleteEducation($index)\">Delete Education</button>\n" +
+    "                </div>\n" +
     "\n" +
     "\n" +
-    "        </div>\n" +
+    "                <h3><a href                  = \"#\"\n" +
+    "                    e-required e-placeholder = \"Degree Mayor\"\n" +
+    "                    editable-text            = \"educ.degreeMayor\"\n" +
+    "                    onaftersave              = \"edit.updateResume()\">\n" +
+    "                    {{ educ.degreeMayor || \"Degree Mayor\" }}</a></h3>\n" +
+    "\n" +
+    "                <h3><a href                  = \"#\"\n" +
+    "                    e-required e-placeholder = \"Degree Name\"\n" +
+    "                    editable-text            = \"educ.degreeName\"\n" +
+    "                    onaftersave              = \"edit.updateResume()\">\n" +
+    "                    {{ educ.degreeName || \"Degree Name\" }}</a></h3>\n" +
+    "\n" +
+    "                <h3><a href                  = \"#\"\n" +
+    "                    e-required e-placeholder = \"School Name\"\n" +
+    "                    editable-text            = \"educ.schoolName\"\n" +
+    "                    onaftersave              = \"edit.updateResume()\">\n" +
+    "                    {{ educ.schoolName || \"School Name\" }}</a></h3>\n" +
+    "\n" +
+    "                <span><a href                = \"#\"\n" +
+    "                    e-required e-placeholder = \"Start Date\"\n" +
+    "                    editable-text            = \"educ.startDate\"\n" +
+    "                    onaftersave              = \"edit.updateResume()\">\n" +
+    "                    {{ educ.startDate || \"Start Date\" }}</a></span><span> to </span>\n" +
+    "\n" +
+    "                <span><a href                = \"#\"\n" +
+    "                    e-required e-placeholder = \"End Date\"\n" +
+    "                    editable-text            = \"educ.endDate\"\n" +
+    "                    onaftersave              = \"edit.updateResume()\">\n" +
+    "                    {{ educ.endDate || \"End Date\" }}</a></span>\n" +
+    "\n" +
+    "\n" +
+    "            </div> <!-- finish div for educ in resume.educationHistory -->\n" +
+    "        <button class = \"add-skill btn btn-success\" ng-click = \"edit.addEducation('end')\"><span class=\"glyphicon glyphicon-plus\"></i> Education</button>\n" +
+    "    </div><!-- finish education section -->\n" +
     "\n" +
     "\n" +
     "\n" +
-    "        <!-- ================================================= -->\n" +
-    "        <!-- FINISH RESUME EDUCATION SECTION -->\n" +
-    "        <!-- ================================================= -->\n" +
+    "\n" +
     "\n" +
     "\n" +
     "\n" +

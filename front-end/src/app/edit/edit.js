@@ -97,19 +97,21 @@
       $stateParams, skillsService) {
 
       // bindable edit members
-      $scope.edit                  = {};
-      $scope.edit.addExperience    = addExperience;
-      $scope.edit.deletePosition   = deletePosition;
-      $scope.edit.skillsData       = skillsResponse.data.skills;
-      $scope.edit.skillNames       = _.pluck(skillsResponse.data.skills, 'dispName');
-      $scope.edit.showSkillName    = 0;
-      $scope.edit.getSkillImg      = getSkillImg;
-      $scope.edit.removeSkill      = removeSkill;
-      $scope.edit.addSkillRole     = addSkillRole;
-      $scope.edit.addLifeSkillRole = addLifeSkillRole;
-      $scope.edit.editSkill        = editSkill;
-      $scope.edit.saveSkills       = saveSkills;
-      $scope.edit.updateResume     = updateResume;
+      $scope.edit                   = {};
+      $scope.edit.addExperience     = addExperience;
+      $scope.edit.deletePosition    = deletePosition;
+      $scope.edit.addEducation      = addEducation;
+      $scope.edit.deleteEducation   = deleteEducation;
+      $scope.edit.skillsData        = skillsResponse.data.skills;
+      $scope.edit.skillNames        = _.pluck(skillsResponse.data.skills, 'dispName');
+      $scope.edit.showSkillName     = 0;
+      $scope.edit.getSkillImg       = getSkillImg;
+      $scope.edit.removeSkill       = removeSkill;
+      $scope.edit.addSkillRole      = addSkillRole;
+      $scope.edit.addLifeSkillRole  = addLifeSkillRole;
+      $scope.edit.editSkill         = editSkill;
+      $scope.edit.saveSkills        = saveSkills;
+      $scope.edit.updateResume      = updateResume;
 
       initEdit();
 
@@ -166,6 +168,26 @@
 
       function deletePosition (employmentHistoryIndex, positionIndex){
         $scope.resume.employmentHistory[employmentHistoryIndex].positions.splice(positionIndex,1)
+        $scope.edit.updateResume();
+      }
+
+      function addEducation(addPosition){
+        var blankEducation = {
+          "degreeMajor"  : "Degree Mayor",
+          "degreeName"   : "Degree Name",
+          "schoolName"   : "School Name",
+          "startDate"    : "1800-01-01",
+          "endDate"      : "1900-01-01"
+        };
+        if (!_.isEmpty(addPosition) && addPosition === "end"){
+          $scope.resume.educationHistory.push(blankEducation);
+        } else {
+          $scope.resume.educationHistory.unshift(blankEducation);
+        }
+      };
+
+      function deleteEducation (index){
+        $scope.resume.educationHistory.splice(index,1)
         $scope.edit.updateResume();
       }
 
