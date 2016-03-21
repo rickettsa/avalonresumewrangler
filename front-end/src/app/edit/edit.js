@@ -9,10 +9,10 @@
 
   angular
     .module( 'resumeWrangler.edit', [
-    'ui.router',
-    'placeholders',
-    'ui.bootstrap'
-  ])
+      'ui.router',
+      'placeholders',
+      'ui.bootstrap'
+    ])
 
 })();
 
@@ -99,6 +99,7 @@
       // bindable edit members
       $scope.edit                   = {};
       $scope.edit.addExperience     = addExperience;
+      $scope.edit.addEmployer       = addEmployer;
       $scope.edit.deletePosition    = deletePosition;
       $scope.edit.addEducation      = addEducation;
       $scope.edit.deleteEducation   = deleteEducation;
@@ -147,7 +148,7 @@
         $scope.edit.updateResume();
       });
 
-      function addExperience (addPosition, employmentHistoryIndex){
+      function addExperience (addPosition, index){
         var blankExperience = {
           "positionType"     : "contract",
           "clientName"       : "Client Name",
@@ -160,16 +161,50 @@
           "skills"           : []
         };
         if (!_.isEmpty(addPosition) && addPosition === "end"){
-          $scope.resume.employmentHistory[0].positions.push(blankExperience);//what if more than one employmenthistory?
+          $scope.resume.employmentHistory[index].positions.push(blankExperience);//what if more than one employmenthistory?
         } else {
-          $scope.resume.employmentHistory[0].positions.unshift(blankExperience);
+          $scope.resume.employmentHistory[index].positions.unshift(blankExperience);
         }
       };
 
       function deletePosition (employmentHistoryIndex, positionIndex){
         $scope.resume.employmentHistory[employmentHistoryIndex].positions.splice(positionIndex,1)
+
+        //delete employer if user deletes all positions
+        if($scope.resume.employmentHistory[employmentHistoryIndex].positions.length === 0){
+          console.log("eliminated employer!")
+          $scope.resume.employmentHistory.splice(employmentHistoryIndex,1)
+        }
+
         $scope.edit.updateResume();
       }
+
+      function addEmployer(addPosition){
+        var blankEmployer = {
+          "employerOrgName": "",
+          "positions": [
+            {
+              "positionType"     : "contract",
+              "clientName"       : "Client Name",
+              "clientProjectId"  : "",
+              "projectId"        : "",
+              "title"            : "Postition Title",
+              "description"      : "Description of my role in the project.",
+              "startDate"        : "1800-01-01",
+              "endDate"          : "1900-01-01",
+              "skills"           : []
+            }
+          ]
+        }
+
+        if (!_.isEmpty(addPosition) && addPosition === "end"){
+          $scope.resume.employmentHistory.push(blankEmployer);
+        } else {
+          $scope.resume.employmentHistory.unshift(blankEmployer);
+        }
+      };
+
+
 
       function addEducation(addPosition){
         var blankEducation = {
