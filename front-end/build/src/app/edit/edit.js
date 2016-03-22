@@ -4,7 +4,6 @@
  * @description Controls Editing of the user's resume.
  */
 
-(function(){
 "use strict";
 
   angular
@@ -13,19 +12,11 @@
       'placeholders',
       'ui.bootstrap'
     ])
+    .config(configFunction)
+    .controller('EditCtrl', EditCtrl);
 
-})();
-
-
-(function(){
-  'use strict';
-
-  angular
-    .module('resumeWrangler.edit')
-    .config(configFunction);
 
     configFunction.$inject = ['$stateProvider'];
-
     function configFunction( $stateProvider ) {
       $stateProvider
         .state( 'edit', {
@@ -56,7 +47,7 @@
             "authorizedRoles" : ["editor", "admin"]
           }
       });
-    }
+    };
 
     resumeResponse.$inject = ['resumeService', '$stateParams'];
     function resumeResponse(resumeService, $stateParams){
@@ -65,7 +56,7 @@
       } else {
         return {};
       }
-    }
+    };
 
     contactResponse.$inject = ['contactsService', '$stateParams'];
     function contactResponse(contactsService, $stateParams){
@@ -74,27 +65,18 @@
       } else {
         return {};
       }
-    }
+    };
 
     skillsResponse.$inject = ['skillsService', '$stateParams'];
     function skillsResponse(skillsService){
       return skillsService.fetchSkills();
-    }
-
-})();
+    };
 
 
-(function(){
-  'use strict';
-
-  angular
-    .module('resumeWrangler.edit')
-    .controller('EditCtrl', EditCtrl);
 
     EditCtrl.$inject = ['$http', '$scope', '$filter', 'resumeResponse', 'skillsResponse', 'AppConfig', 'contactResponse', 'resumeService', '$stateParams',  'skillsService'];
-
     function EditCtrl ($http, $scope, $filter, resumeResponse, skillsResponse, AppConfig, contactResponse, resumeService,
-      $stateParams, skillsService) {
+      $stateParams, skillsService){
 
       // bindable edit members
       $scope.edit                   = {};
@@ -204,8 +186,6 @@
         }
       };
 
-
-
       function addEducation(addPosition){
         var blankEducation = {
           "degreeMajor"  : "Degree Mayor",
@@ -224,7 +204,7 @@
       function deleteEducation (index){
         $scope.resume.educationHistory.splice(index,1)
         $scope.edit.updateResume();
-      }
+      };
 
       function getSkillImg(skill){
         var skillNode = _.findBySubVal($scope.edit.skillsData, 'dispName', [skill.name]);
@@ -235,7 +215,7 @@
           $scope.showSkillName = 1;
           return '/assets/icons/generic.jpg';
         }
-      }
+      };
 
       function removeSkill(index, competencyArray) {
         competencyArray.splice(index, 1);
@@ -332,4 +312,4 @@
 
     };
 
-})();
+

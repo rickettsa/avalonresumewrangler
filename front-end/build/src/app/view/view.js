@@ -1,108 +1,88 @@
-(function(){
-  'use strict'
+'use strict'
 
   angular.module( 'resumeWrangler.view', [
     'ui.router',
     'placeholders',
     'ui.bootstrap'
   ])
+  .config(configFunction)
+  .controller('ViewCtrl', ViewCtrl);
 
-})();
-
-(function(){
-  'use strict';
-
-  angular
-    .module('resumeWrangler.view')
-    .config(configFunction);
-
-    configFunction.$inject = ['$stateProvider'];
-
-    function configFunction( $stateProvider ) {
-      $stateProvider
-        .state( 'view', {
-          url: '/view?:firstName&:lastName',
-          params: {
-            firstName: {
-              value  : null,
-              squash : true
-            },
-            lastName: {
-              value  : null,
-              squash : true
-            }
+  configFunction.$inject = ['$stateProvider'];
+  function configFunction( $stateProvider ) {
+    $stateProvider
+      .state( 'view', {
+        url: '/view?:firstName&:lastName',
+        params: {
+          firstName: {
+            value  : null,
+            squash : true
           },
-          views: {
-            "main": {
-              controller  : 'ViewCtrl',
-              templateUrl : 'view/view.tpl.html'
-            }
-          },
-          resolve: {
-            resumeResponse  : resumeResponse,
-            contactResponse : contactResponse,
-            skillsResponse  : skillsResponse
-          },
-          data:{
-            "pageTitle"       : 'View Resume',
-            "authorizedRoles" : ['all', 'editor', 'admin']
+          lastName: {
+            value  : null,
+            squash : true
           }
-      });
-    }
-
-    resumeResponse.$inject = ['resumeService', '$stateParams'];
-    function resumeResponse(resumeService, $stateParams){
-      if ($stateParams.firstName && $stateParams.lastName){
-        return resumeService.fetchResume($stateParams.firstName, $stateParams.lastName);
-      } else {
-        return {};
-      }
-    }
-
-    contactResponse.$inject = ['contactsService', '$stateParams'];
-    function contactResponse(contactsService, $stateParams){
-      if ($stateParams.firstName && $stateParams.lastName){
-        return contactsService.fetchContactByName($stateParams.firstName, $stateParams.lastName);
-      } else {
-        return {};
-      }
-    }
-
-    skillsResponse.$inject = ['skillsService', '$stateParams'];
-    function skillsResponse(skillsService){
-      return skillsService.fetchSkills();
-    }
-
-})();
-
-
-
-(function(){
-  'use strict';
-
-  angular
-    .module('resumeWrangler.view')
-    .controller('ViewCtrl', ViewCtrl);
-
-    ViewCtrl.$inject = ['$http', '$scope', '$filter', 'resumeResponse', 'skillsResponse', 'sessionService', 'AppConfig', 'contactResponse']
-
-    function ViewCtrl ($http, $scope, $filter, resumeResponse, skillsResponse, sessionService, AppConfig, contactResponse) {
-
-
-      _.mixin({
-        /**
-         * @name findBySubVal
-         * @description returns collection of nested field objects, matching a sub-level that contain specific values for a given property
-         * @param {Object} collection - associatedNodes from the Graph Visualizer API payload
-         * @param {string} property - the name of the property whose specific values we want to return
-         * @param {Array} values - specific values of the property whose parent node we want to return
-         */
-        findBySubVal: function(collection, property, values) {
-          return _.filter(collection, function(item) {
-            return _.contains(values, item[property]);
-          });
+        },
+        views: {
+          "main": {
+            controller  : 'ViewCtrl',
+            templateUrl : 'view/view.tpl.html'
+          }
+        },
+        resolve: {
+          resumeResponse  : resumeResponse,
+          contactResponse : contactResponse,
+          skillsResponse  : skillsResponse
+        },
+        data:{
+          "pageTitle"       : 'View Resume',
+          "authorizedRoles" : ['all', 'editor', 'admin']
         }
-      });
+    });
+  };
+
+  resumeResponse.$inject = ['resumeService', '$stateParams'];
+  function resumeResponse(resumeService, $stateParams){
+    if ($stateParams.firstName && $stateParams.lastName){
+      return resumeService.fetchResume($stateParams.firstName, $stateParams.lastName);
+    } else {
+      return {};
+    }
+  };
+
+  contactResponse.$inject = ['contactsService', '$stateParams'];
+  function contactResponse(contactsService, $stateParams){
+    if ($stateParams.firstName && $stateParams.lastName){
+      return contactsService.fetchContactByName($stateParams.firstName, $stateParams.lastName);
+    } else {
+      return {};
+    }
+  };
+
+  skillsResponse.$inject = ['skillsService', '$stateParams'];
+  function skillsResponse(skillsService){
+    return skillsService.fetchSkills();
+  };
+
+
+  ViewCtrl.$inject = ['$http', '$scope', '$filter', 'resumeResponse', 'skillsResponse', 'sessionService', 'AppConfig', 'contactResponse']
+  function ViewCtrl ($http, $scope, $filter, resumeResponse, skillsResponse, sessionService, AppConfig, contactResponse) {
+
+
+    _.mixin({
+      /**
+       * @name findBySubVal
+       * @description returns collection of nested field objects, matching a sub-level that contain specific values for a given property
+       * @param {Object} collection - associatedNodes from the Graph Visualizer API payload
+       * @param {string} property - the name of the property whose specific values we want to return
+       * @param {Array} values - specific values of the property whose parent node we want to return
+       */
+      findBySubVal: function(collection, property, values) {
+        return _.filter(collection, function(item) {
+          return _.contains(values, item[property]);
+        });
+      }
+    });
 
     $scope.view = $scope.view || {};
 
@@ -125,8 +105,7 @@
         $scope.showSkillName = 1;
         return '/assets/icons/generic.jpg';
       }
-
-    }
+    };
 
     //x-editable setup
     $scope.user = {
@@ -188,9 +167,7 @@
         return '/assets/icons/generic.jpg';
       }
     };
-
-
   };
 
-})();
+
 

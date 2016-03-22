@@ -4,7 +4,6 @@
  * @description Create,Read,Update,Delete service for contact JSON from backend.
  */
 
-(function(){
   "use strict";
 
   angular
@@ -14,10 +13,11 @@
     contactsService.$inject = ['$rootScope', '$http', 'configuration'];
 
     function contactsService($rootScope, $http, configuration) {
+
       var service = {
         fetchContactByName : fetchContactByName,
         createUser         : createUser
-      };
+      }
 
       return service;
 
@@ -41,9 +41,8 @@
         data   : payload
       });
     };
-
   };
-})();
+
 
 
 //

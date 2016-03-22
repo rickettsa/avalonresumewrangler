@@ -4,7 +4,7 @@
  * @description Create,Read,Update,Delete service for resume JSON from backend.
  */
 
-(function(){
+
 "use strict";
 
   angular
@@ -72,7 +72,7 @@
       });
     };
   };
-})();
+
 
 
 

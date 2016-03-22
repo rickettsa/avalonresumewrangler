@@ -4,7 +4,7 @@
  * @description Create,Read,Update,Delete service for skills JSON from backend.
  */
 
-(function(){
+
   "use strict";
   angular
     .module('resumeWrangler')
@@ -44,4 +44,3 @@
       };
     };
 
-})();

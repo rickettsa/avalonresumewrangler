@@ -13,8 +13,8 @@
  * specified, as shown below.
  */
 
- (function(){
-  'use strict';
+
+'use strict';
 
   angular
     .module('resumeWrangler.home', [
@@ -22,9 +22,9 @@
       'plusOne',
       'AppConfig'
     ])
-
- })();
-
+    .config(configFunction)
+    .controller('HomeCtrl', HomeCtrl)
+    .controller('SearchResultsCtrl', SearchResultsCtrl);
 
 /**
  * Each section or module of the site can also have its own routes. AngularJS
@@ -32,114 +32,89 @@
  * this way makes each module more "self-contained".
  */
 
- (function(){
-  'use strict';
-
-  angular
-    .module('resumeWrangler.home')
-    .config(configFunction);
-
-    configFunction.$inject =['$stateProvider'];
-
-    function configFunction($stateProvider){
-       $stateProvider
-      .state('home', {
-        url   : '/home',
-        views : {
-          "main": {
-            controller  : 'HomeCtrl',
-            templateUrl : 'home/home.tpl.html'
-          }
-        },
-        resolve: {
-          searchResponse: function() {
-            return {};
-          }
-        },
-        data: {
-          "pageTitle"       : "Home",
-          "authorizedRoles" : ['all', 'editor', 'admin']
+  configFunction.$inject =['$stateProvider'];
+  function configFunction($stateProvider){
+     $stateProvider
+    .state('home', {
+      url   : '/home',
+      views : {
+        "main": {
+          controller  : 'HomeCtrl',
+          templateUrl : 'home/home.tpl.html'
         }
-      })
-      .state('searchResults', {
-        url: '/search-results?:query&:type&:skill&:last&:proj',
-        params: {
-          query: {
-            value  : null,
-            squash : true
-          },
-          type: {
-            value  : null,
-            squash : true
-          }
-        },
-        views: {
-          "main": {
-            controller  : 'SearchResultsCtrl',
-            templateUrl : 'home/home.searchResults.tpl.html'
-          }
-        },
-        resolve: {
-          searchResponse: searchResponse
-        },
-        data: {
-          "pageTitle"       : "Search Results",
-          "authorizedRoles" : ['all', 'editor', 'admin']
+      },
+      resolve: {
+        searchResponse: function() {
+          return {};
         }
-      });
-    }
-
-    searchResponse.$inject = ['$rootScope', 'resumeService', 'projectsService', '$stateParams'];
-    function searchResponse($rootScope, resumeService, projectsService, $stateParams){
-      if ($stateParams.type === "Skill"){
-          if (!_.isEmpty($stateParams.query)){
-            return resumeService.skillSearch($stateParams.query);
-          } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
-            return resumeService.skillSearch($rootScope.global.search.cachedSearch.query);
-          }
-      } else if ($stateParams.type === "Last Name"){
-          if (!_.isEmpty($stateParams.query)){
-            return resumeService.fetchResume(null,$stateParams.query);
-          } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
-            return resumeService.fetchResume(null,$rootScope.global.search.cachedSearch.query);
-          }
-      } else if ($stateParams.type === "Project"){
-          if (!_.isEmpty($stateParams.query)){
-            return projectsService.fetchProjects($stateParams.query);
-          } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
-            return projectsService.fetchProjects($rootScope.global.search.cachedSearch.query);
-          }
+      },
+      data: {
+        "pageTitle"       : "Home",
+        "authorizedRoles" : ['all', 'editor', 'admin']
       }
+    })
+    .state('searchResults', {
+      url: '/search-results?:query&:type&:skill&:last&:proj',
+      params: {
+        query: {
+          value  : null,
+          squash : true
+        },
+        type: {
+          value  : null,
+          squash : true
+        }
+      },
+      views: {
+        "main": {
+          controller  : 'SearchResultsCtrl',
+          templateUrl : 'home/home.searchResults.tpl.html'
+        }
+      },
+      resolve: {
+        searchResponse: searchResponse
+      },
+      data: {
+        "pageTitle"       : "Search Results",
+        "authorizedRoles" : ['all', 'editor', 'admin']
+      }
+    });
+  };
+
+  searchResponse.$inject = ['$rootScope', 'resumeService', 'projectsService', '$stateParams'];
+  function searchResponse($rootScope, resumeService, projectsService, $stateParams){
+    if ($stateParams.type === "Skill"){
+        if (!_.isEmpty($stateParams.query)){
+          return resumeService.skillSearch($stateParams.query);
+        } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
+          return resumeService.skillSearch($rootScope.global.search.cachedSearch.query);
+        }
+    } else if ($stateParams.type === "Last Name"){
+        if (!_.isEmpty($stateParams.query)){
+          return resumeService.fetchResume(null,$stateParams.query);
+        } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
+          return resumeService.fetchResume(null,$rootScope.global.search.cachedSearch.query);
+        }
+    } else if ($stateParams.type === "Project"){
+        if (!_.isEmpty($stateParams.query)){
+          return projectsService.fetchProjects($stateParams.query);
+        } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
+          return projectsService.fetchProjects($rootScope.global.search.cachedSearch.query);
+        }
     }
- })();
+  };
 
 
-/**
- * And of course we define a controller for our route.
- */
-(function(){
-  'use strict';
+  /**
+   * Home controller for our route.
+   */
+  HomeCtrl.$inject =['$scope', '$rootScope'];
+  function HomeCtrl($scope, $rootScope){};
 
-  angular
-    .module('resumeWrangler.home')
-    .controller('HomeCtrl', HomeCtrl);
-
-    HomeCtrl.$inject =['$scope', '$rootScope'];
-
-    function HomeCtrl($scope, $rootScope){
-
-    };
-})();
-
-(function(){
-  'use strict';
-
-  angular
-    .module('resumeWrangler.home')
-    .controller('SearchResultsCtrl', SearchResultsCtrl);
-
+  /**
+   * Search controller
+   */
   SearchResultsCtrl.$inject =['$scope', 'searchResponse', '$rootScope', '$stateParams', 'AppConfig', '$filter'];
-
   function SearchResultsCtrl( $scope, searchResponse, $rootScope, $stateParams, AppConfig, $filter ) {
 
     //bindable members
@@ -190,7 +165,7 @@
       }
     };
   };
-})();
+
 
 
 

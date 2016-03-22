@@ -70,4 +70,4 @@ angular.module('resumeWrangler')
       }
     };
 
-})
+});
