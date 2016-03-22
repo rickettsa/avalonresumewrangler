@@ -12,160 +12,141 @@
  * The dependencies block here is also where component dependencies should be
  * specified, as shown below.
  */
-
-
-
-'use strict';
-
-  angular
-    .module('resumeWrangler.home', [
-      'ui.router',
-      'plusOne',
-      'AppConfig'
-    ])
-    .config(configFunction)
-    .controller('HomeCtrl', HomeCtrl)
-    .controller('SearchResultsCtrl', SearchResultsCtrl);
+angular.module( 'resumeWrangler.home', [
+  'ui.router',
+  'plusOne',
+  'AppConfig'
+])
 
 /**
  * Each section or module of the site can also have its own routes. AngularJS
  * will handle ensuring they are all available at run-time, but splitting it
  * this way makes each module more "self-contained".
  */
-
-  configFunction.$inject =['$stateProvider'];
-  function configFunction($stateProvider){
-     $stateProvider
-    .state('home', {
-      url   : '/home',
-      views : {
-        "main": {
-          controller  : 'HomeCtrl',
-          templateUrl : 'home/home.tpl.html'
-        }
-      },
-      resolve: {
-        searchResponse: function() {
-          return {};
-        }
-      },
-      data: {
-        "pageTitle"       : "Home",
-        "authorizedRoles" : ['all', 'editor', 'admin']
-      }
-    })
-    .state('searchResults', {
-      url: '/search-results?:query&:type&:skill&:last&:proj',
-      params: {
-        query: {
-          value  : null,
-          squash : true
+.config(function config( $stateProvider ) {
+    $stateProvider
+      .state('home', {
+        url: '/home',
+        views: {
+          "main": {
+            controller: 'HomeCtrl',
+            templateUrl: 'home/home.tpl.html'
+          }
         },
-        type: {
-          value  : null,
-          squash : true
+        resolve: {
+          searchResponse: function() {
+            return {};
+          }
+        },
+        data: {"pageTitle": "Home",
+               "authorizedRoles": ['all', 'editor', 'admin']
         }
-      },
-      views: {
-        "main": {
-          controller  : 'SearchResultsCtrl',
-          templateUrl : 'home/home.searchResults.tpl.html'
+      })
+      .state('searchResults', {
+        url: '/search-results?:query&:type&:skill&:last&:proj',
+        params: {
+          query: {
+            value: null,
+            squash: true
+          },
+          type: {
+            value: null,
+            squash: true
+          }
+        },
+        views: {
+          "main": {
+            controller: 'SearchResultsCtrl',
+            templateUrl: 'home/home.searchResults.tpl.html'
+          }
+        },
+        resolve: {
+          searchResponse: function($rootScope, resumeService, projectsService, $stateParams){
+            if ($stateParams.type === "Skill"){
+                if (!_.isEmpty($stateParams.query)){
+                  return resumeService.skillSearch($stateParams.query);
+                } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
+                  return resumeService.skillSearch($rootScope.global.search.cachedSearch.query);
+                }
+            } else if ($stateParams.type === "Last Name"){
+                if (!_.isEmpty($stateParams.query)){
+                  return resumeService.fetchResume(null,$stateParams.query);
+                } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
+                  return resumeService.fetchResume(null,$rootScope.global.search.cachedSearch.query);
+                }
+            } else if ($stateParams.type === "Project"){
+                if (!_.isEmpty($stateParams.query)){
+                  return projectsService.fetchProjects($stateParams.query);
+                } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
+                  return projectsService.fetchProjects($rootScope.global.search.cachedSearch.query);
+                }
+            }
+          }
+        },
+        data: {"pageTitle": "Search Results",
+          "authorizedRoles": ['all', 'editor', 'admin']
         }
-      },
-      resolve: {
-        searchResponse: searchResponse
-      },
-      data: {
-        "pageTitle"       : "Search Results",
-        "authorizedRoles" : ['all', 'editor', 'admin']
-      }
-    });
-  };
+      });
+  })
 
-  searchResponse.$inject = ['$rootScope', 'resumeService', 'projectsService', '$stateParams'];
-  function searchResponse($rootScope, resumeService, projectsService, $stateParams){
-    if ($stateParams.type === "Skill"){
-        if (!_.isEmpty($stateParams.query)){
-          return resumeService.skillSearch($stateParams.query);
-        } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
-          return resumeService.skillSearch($rootScope.global.search.cachedSearch.query);
-        }
-    } else if ($stateParams.type === "Last Name"){
-        if (!_.isEmpty($stateParams.query)){
-          return resumeService.fetchResume(null,$stateParams.query);
-        } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
-          return resumeService.fetchResume(null,$rootScope.global.search.cachedSearch.query);
-        }
-    } else if ($stateParams.type === "Project"){
-        if (!_.isEmpty($stateParams.query)){
-          return projectsService.fetchProjects($stateParams.query);
-        } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
-          return projectsService.fetchProjects($rootScope.global.search.cachedSearch.query);
-        }
-    }
-  };
+/**
+ * And of course we define a controller for our route.
+ */
+.controller( 'HomeCtrl', function HomeController( $scope, $rootScope) {
+
+})
 
 
-  /**
-   * Home controller for our route.
-   */
-  HomeCtrl.$inject =['$scope', '$rootScope'];
-  function HomeCtrl($scope, $rootScope){};
+.controller( 'SearchResultsCtrl', function SearchResultsCtrl( $scope, searchResponse, $rootScope, $stateParams, AppConfig, $filter ) {
 
-  /**
-   * Search controller
-   */
-  SearchResultsCtrl.$inject =['$scope', 'searchResponse', '$rootScope', '$stateParams', 'AppConfig', '$filter'];
-  function SearchResultsCtrl( $scope, searchResponse, $rootScope, $stateParams, AppConfig, $filter ) {
+    $scope.searchResponse = searchResponse.data.hits;
+    $scope.global.search.query = $rootScope.cachedSearch && $rootScope.cachedSearch.query ? $rootScope.cachedSearch.query : ''; //this is needed for 1st view of search results, so highlight works
 
-    //bindable members
-    $scope.searchResponse                = searchResponse.data.hits;
-    $scope.global.search.query           = $rootScope.cachedSearch && $rootScope.cachedSearch.query ? $rootScope.cachedSearch.query : ''; //this is needed for 1st view of search results, so highlight works
+    $scope.currentSearch = {};
+    $scope.search = {};
 
-    $scope.currentSearch                 = {};
-    $scope.search                        = {};
-    $scope.search.config                 = AppConfig.search;
-    $scope.search.getMostRecentPosition  = getMostRecentPosition;
-    $scope.rearrangeArrayByQuery         = rearrangeArrayByQuery;
-    $scope.getAvatarImgName              = getAvatarImgName;
+    $scope.search.config = AppConfig.search;
 
 
     if (!_.isEmpty($stateParams.query)){
       $scope.global.search.query = $stateParams.query;
     }
 
-    function rearrangeArrayByQuery(inputArr){
-      var filtered = $filter('filter')(inputArr, $scope.global.search.query);  //find array elems that match query
+    $scope.rearrangeArrayByQuery = function(inputArr){
+      //find array elems that match query
+      var filtered = $filter('filter')(inputArr, $scope.global.search.query);
+      //remove those elements from original array
       _.remove(inputArr, function (el) {
-        return _.indexOf(filtered, el) !== -1; //remove those elements from original array
+        return _.indexOf(filtered, el) !== -1;
       });
-      var sorted = filtered.concat(inputArr); //add those elements to the beginning of array
-        return sorted;
+      //add those elements to the beginning of array
+      var sorted = filtered.concat(inputArr);
+      return sorted;
     }
 
-    function getAvatarImgName (emailAddr){
-      if(emailAddr && !_.isEmpty(emailAddr)){
+
+    $scope.getAvatarImgName = function(emailAddr){
+      if (emailAddr && !_.isEmpty(emailAddr)){
         var getEmailPrefix = function(str, group1){
           return group1.toLowerCase();
-      };
-
-      var consultantNameAbbrev = emailAddr.replace(/^(.*)@.*$/, getEmailPrefix);
-      var imgSrc = '/assets/avatars/' + consultantNameAbbrev + '.jpg';
+        };
+        var consultantNameAbbrev = emailAddr.replace(/^(.*)@.*$/, getEmailPrefix);
+        var imgSrc = '/assets/avatars/' + consultantNameAbbrev + '.jpg';
         return imgSrc;
       }
     };
 
-    function getMostRecentPosition(data, key){
-      if (!_.isEmpty(data)){
-        var mostRecentEmployer = data[data.length - 1];
-        var mostRecentPosition = mostRecentEmployer.positions[mostRecentEmployer.positions.length - 1];
-        if (_.has(mostRecentPosition, key)){
-          return mostRecentPosition[key];
-        } else {
-          return 'empty';
+    $scope.search.getMostRecentPosition = function(data, key){
+        if (!_.isEmpty(data)){
+          var mostRecentEmployer = data[data.length - 1];
+          var mostRecentPosition = mostRecentEmployer.positions[mostRecentEmployer.positions.length - 1];
+          if (_.has(mostRecentPosition, key)){
+            return mostRecentPosition[key];
+          } else {
+            return 'empty';
+          }
         }
-      }
     };
-  };
 
+});
 
