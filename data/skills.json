@@ -1,2872 +1,3396 @@
 {
- "skills": {
-   ".net": {
-     "dispName": ".NET",
-     "image": "dotnet.jpg",
-     "stackPositions": [
-       "front-end",
-       "middle"
-     ],
-     "stackNames": [
-       ".net"
-     ],
-     "curated": "true",
-     "descr": "A framework written by Microsoft. Can be coded in C#, or ASP."
-   },
-   "aci-api": {
-     "dispName": "ACI API",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "ado.net": {
-     "dispName": "ADO.NET",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "adp-enterprise": {
-     "dispName": "ADP Enterprise",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "aix": {
-     "dispName": "AIX",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "ajax": {
-     "dispName": "AJAX",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "ant": {
-     "dispName": "Ant",
-     "image": "",
-     "stackPositions": [
-       "back-end"
-     ],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "android": {
-     "dispName": "Android",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "aria": {
-     "dispName": "ARIA",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "asp.net": {
-     "dispName": "ASP.NET",
-     "image": "aspnet.gif",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "accumulo": {
-     "dispName": "Accumulo",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "actionscript": {
-     "dispName": "Actionscript",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "active-directory": {
-     "dispName": "Active Directory",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "adobe-photoshop": {
-     "dispName": "Adobe Photoshop",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "adobe-captivate": {
-     "dispName": "Adobe Captivate",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "adobe-fireworks": {
-     "dispName": "Adobe Fireworks",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "adobe-flex": {
-     "dispName": "Adobe Flex",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "adobe-premiere-pro": {
-     "dispName": "Adobe Premiere Pro",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "agile-scrum": {
-     "dispName": "Agile SCRUM",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "aws": {
-     "dispName": "AWS",
-     "image": "aws.jpg",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "ambari": {
-     "dispName": "Ambari",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "angularjs": {
-     "dispName": "AngularJS",
-     "image": "angular.png",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "apache": {
-     "dispName": "Apache",
-     "image": "apache.png",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "apache-hbase": {
-     "dispName": "Apache HBase",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "apache-accumulo": {
-     "dispName": "Apache Accumulo",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "apache-hive": {
-     "dispName": "Apache Hive",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "apache-lucene": {
-     "dispName": "Apache Lucene",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "apache-mahout": {
-     "dispName": "Apache Mahout",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "apache-tomcat": {
-     "dispName": "Apache Tomcat",
-     "image": "tomcat.png",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "apache-web-server": {
-     "dispName": "Apache Web Server",
-     "image": "apache.png",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "autonomy-idol": {
-     "dispName": "Autonomy IDOL",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "bea-weblogic": {
-     "dispName": "BEA Weblogic",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "bash": {
-     "dispName": "BASH",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "biztalk": {
-     "dispName": "BizTalk",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "budgeting": {
-     "dispName": "Budgeting",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "business-console": {
-     "dispName": "Business Console",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "business-objects": {
-     "dispName": "Business Objects",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "c": {
-     "dispName": "C",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "csharp": {
-     "dispName": "C#",
-     "image": "csharp.png",
-     "stackPositions": [
-       "back-end",
-       "middleware"
-     ],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "c++": {
-     "dispName": "C++",
-     "image": "",
-     "stackPositions": [
-       "back-end"
-     ],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "cap": {
-     "dispName": "CAP",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "cloudfront": {
-     "dispName": "CloudFront",
-     "image": "",
-     "stackPositions": [
-       "back-end"
-     ],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "centos": {
-     "dispName": "CENTOS",
-     "image": "",
-     "stackPositions": [
-       "back-end"
-     ],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "crm": {
-     "dispName": "CRM",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "css": {
-     "dispName": "CSS",
-     "image": "css3.jpg",
-     "stackPositions": [
-       "front-end"
-     ],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "less": {
-     "dispName": "LESS",
-     "image": "less.png",
-     "stackPositions": [
-       "front-end"
-     ],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "cvs": {
-     "dispName": "CVS",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "call-manager": {
-     "dispName": "Call Manager",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "cartella": {
-     "dispName": "Cartella",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "cascading": {
-     "dispName": "Cascading",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "chef": {
-     "dispName": "Chef",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "puppet": {
-     "dispName": "Puppet",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "cisco-access-server": {
-     "dispName": "Cisco Access Server",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "clear-case": {
-     "dispName": "Clear Case",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "clear-quest": {
-     "dispName": "Clear Quest",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "clearcase": {
-     "dispName": "ClearCase",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "cloudera": {
-     "dispName": "Cloudera",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "coldfusion": {
-     "dispName": "ColdFusion",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "confluence": {
-     "dispName": "Confluence",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "contentmark": {
-     "dispName": "ContentMARK",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "couchbase": {
-     "dispName": "Couchbase",
-     "image": "couchbase.png",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "cross-browser-issues": {
-     "dispName": "Cross-Browser Issues",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "crystal-reports": {
-     "dispName": "Crystal Reports",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "crystal-reports-xi": {
-     "dispName": "Crystal Reports XI",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "dah": {
-     "dispName": "DAH",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "db2": {
-     "dispName": "DB2",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "dbm": {
-     "dispName": "DBM",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "dhtml": {
-     "dispName": "DHTML",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "dih": {
-     "dispName": "DIH",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "dom": {
-     "dispName": "DOM",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "dos": {
-     "dispName": "DOS",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "dpm": {
-     "dispName": "DPM",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "dameware": {
-     "dispName": "Dameware",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "data-architecture": {
-     "dispName": "Data Architecture",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "data-modeling": {
-     "dispName": "Data Modeling",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "datastax": {
-     "dispName": "DataStax",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "datameer": {
-     "dispName": "Datameer",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "dotnetnuke": {
-     "dispName": "DotNetNuke",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "dreamweaver": {
-     "dispName": "Dreamweaver",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "drupal": {
-     "dispName": "Drupal",
-     "image": "drupal.gif",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "dynamic-portal-module": {
-     "dispName": "Dynamic Portal Module",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "dynamic-site-module": {
-     "dispName": "Dynamic Site Module",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "dynamics-gp": {
-     "dispName": "Dynamics GP",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "e-commerce": {
-     "dispName": "E-Commerce",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "ejb": {
-     "dispName": "EJB",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "ejbs": {
-     "dispName": "EJBs",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "eclipse": {
-     "dispName": "Eclipse",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "eduction": {
-     "dispName": "Eduction",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "elastic-path-ecommerce": {
-     "dispName": "Elastic Path eCommerce",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "elasticsearch": {
-     "dispName": "ElasticSearch",
-     "image": "elasticsearch.jpg",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "elasticpath": {
-     "dispName": "ElasticPath",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "endeavor": {
-     "dispName": "Endeavor",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "engage": {
-     "dispName": "Engage",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "entity-framework": {
-     "dispName": "Entity Framework",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "erwin": {
-     "dispName": "Erwin",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "f5-bigip": {
-     "dispName": "F5 BigIP",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "falcon": {
-     "dispName": "Falcon",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "filesystem": {
-     "dispName": "FileSystem",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "firewall": {
-     "dispName": "Firewall",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "fireworks": {
-     "dispName": "Fireworks",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "flash": {
-     "dispName": "Flash",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "flex": {
-     "dispName": "Flex",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "flume": {
-     "dispName": "Flume",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "fortran": {
-     "dispName": "Fortran",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "framemaker": {
-     "dispName": "FrameMaker",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "frontpage": {
-     "dispName": "FrontPage",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "git": {
-     "dispName": "Git",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "gwt": {
-     "dispName": "GWT",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "github": {
-     "dispName": "Github",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "google-app-engine": {
-     "dispName": "Google App Engine",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "google-dfp": {
-     "dispName": "Google DFP",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "google-search-appliance": {
-     "dispName": "Google Search Appliance",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "google-web-toolkit": {
-     "dispName": "Google Web Toolkit",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "grails": {
-     "dispName": "Grails",
-     "image": "grails.png",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "groovy": {
-     "dispName": "Groovy",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "gupta-sql-windows": {
-     "dispName": "Gupta SQL Windows",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "haproxy": {
-     "dispName": "HAProxy",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "hbase": {
-     "dispName": "HBase",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "hdfs": {
-     "dispName": "HDFS",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "hp": {
-     "dispName": "HP",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "hpux": {
-     "dispName": "HPUX",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "hql": {
-     "dispName": "HQL",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "html": {
-     "dispName": "HTML",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "html5": {
-     "dispName": "HTML5",
-     "image": "html5.png",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "hadoop": {
-     "dispName": "Hadoop",
-     "image": "hadoop.png",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "harvest": {
-     "dispName": "Harvest",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "haskell": {
-     "dispName": "Haskell",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "hibernate": {
-     "dispName": "Hibernate",
-     "image": "hibernate.png",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "hive": {
-     "dispName": "Hive",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "hortonworks": {
-     "dispName": "Hortonworks",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "hudson-ci": {
-     "dispName": "Hudson CI",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "ias": {
-     "dispName": "IAS/Security",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "ibm-aix": {
-     "dispName": "IBM AIX",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "ibm-db2": {
-     "dispName": "IBM DB2",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "ibm-rational-rose": {
-     "dispName": "IBM Rational Rose",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "idol": {
-     "dispName": "IDOL",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "ios": {
-     "dispName": "IOS",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "iis": {
-     "dispName": "IIS",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "illustrator": {
-     "dispName": "Illustrator",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "indesign": {
-     "dispName": "InDesign",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "informatica": {
-     "dispName": "Informatica",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "informix": {
-     "dispName": "Informix",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "ingeniux": {
-     "dispName": "Ingeniux",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "intellij-idea": {
-     "dispName": "IntelliJ IDEA",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "iterative": {
-     "dispName": "Iterative",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "j2ee": {
-     "dispName": "J2EE",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "java": {
-     "dispName": "Java",
-     "image": "java.png",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "jax-ws": {
-     "dispName": "JAX-WS",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "jaxb": {
-     "dispName": "JAXB",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "jboss": {
-     "dispName": "JBoss",
-     "image": "jboss.png",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "jdbc": {
-     "dispName": "JDBC",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "jira": {
-     "dispName": "Jira",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "jni": {
-     "dispName": "JNI",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "jpa-jdbc": {
-     "dispName": "JPA - JDBC",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "jquery": {
-     "dispName": "JQuery",
-     "image": "jquery.jpg",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "jquery-ui": {
-     "dispName": "jQuery UI",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "jsf": {
-     "dispName": "JSF",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "json": {
-     "dispName": "JSON",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "jsp": {
-     "dispName": "JSP",
-     "image": "jsp.png",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "jstl": {
-     "dispName": "JSTL",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "junit": {
-     "dispName": "JUnit",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "jasper-reports": {
-     "dispName": "Jasper Reports",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "javascript": {
-     "dispName": "JavaScript",
-     "image": "javascript.png",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "jdeveloper": {
-     "dispName": "Jdeveloper",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "jenkins": {
-     "dispName": "Jenkins",
-     "image": "jenkins.png",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "jubatus": {
-     "dispName": "Jubatus",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "kafka": {
-     "dispName": "Kafka",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "lisp": {
-     "dispName": "Lisp",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "liferay": {
-     "dispName": "Liferay",
-     "image": "liferay.png",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "lingpipe": {
-     "dispName": "Lingpipe",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "linux": {
-     "dispName": "Linux",
-     "image": "linux.jpg",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "load-balancing": {
-     "dispName": "Load Balancing",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "log4j": {
-     "dispName": "Log4j",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "logback": {
-     "dispName": "Logback",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "lua": {
-     "dispName": "Lua",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "lucene": {
-     "dispName": "Lucene",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "matlab": {
-     "dispName": "MATLAB",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "mks": {
-     "dispName": "MKS",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "ms-access": {
-     "dispName": "MS Access",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "ms-foxpro": {
-     "dispName": "MS FoxPro",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "ms-project": {
-     "dispName": "MS Project",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "ms-sql-server": {
-     "dispName": "MS SQL Server",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "mvc": {
-     "dispName": "MVC",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "mvs-esa": {
-     "dispName": "MVS/ESA",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "mac-osx": {
-     "dispName": "Mac OSX",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "mahout": {
-     "dispName": "Mahout",
-     "image": "mahout.jpg",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "marklogic": {
-     "dispName": "MarkLogic",
-     "image": "marklogic.jpg",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "maven": {
-     "dispName": "Maven",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "memcache": {
-     "dispName": "MemCache",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "mercurial": {
-     "dispName": "Mercurial",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "tfs": {
-     "dispName": "TFS",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "microsoft-asp": {
-     "dispName": "Microsoft ASP",
-     "image": "aspnet.gif",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "mockito": {
-     "dispName": "Mockito",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "modeler": {
-     "dispName": "Modeler",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "mongodb": {
-     "dispName": "MongoDB",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "moq": {
-     "dispName": "Moq",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "mozilla": {
-     "dispName": "Mozilla/XUI",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "mule": {
-     "dispName": "Mule",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "mysql": {
-     "dispName": "MySQL",
-     "image": "mysql.jpg",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "neo4j": {
-     "dispName": "Neo4J",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "netbeans": {
-     "dispName": "NetBeans",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "nodejs": {
-     "dispName": "NodeJS",
-     "image": "node.png",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "notepad++": {
-     "dispName": "Notepad++",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "oam": {
-     "dispName": "OAM",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "oracle": {
-     "dispName": "Oracle",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "os-2": {
-     "dispName": "OS/2",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "owl-semantic-modeling": {
-     "dispName": "OWL Semantic Modeling",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "object-oriented-analysis": {
-     "dispName": "Object Oriented Analysis",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "object-oriented": {
-     "dispName": "Object Oriented",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "ms-office": {
-     "dispName": "MS Office",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "omniture": {
-     "dispName": "Omniture",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "omnimark": {
-     "dispName": "Omnimark",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "oozie": {
-     "dispName": "Oozie",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "open-tv": {
-     "dispName": "Open TV",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "openstack": {
-     "dispName": "OpenStack",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "opentext-portal": {
-     "dispName": "OpenText Portal",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "operations-manager": {
-     "dispName": "Operations Manager",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "owlim": {
-     "dispName": "Owlim",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "php": {
-     "dispName": "PHP",
-     "image": "php.jpg",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "perl": {
-     "dispName": "Perl",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "pl-sql": {
-     "dispName": "PL/SQL",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "parametric": {
-     "dispName": "Parametric",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "pascal": {
-     "dispName": "Pascal",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "paysimple": {
-     "dispName": "Paysimple",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "pentaho": {
-     "dispName": "Pentaho",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "peoplesoft": {
-     "dispName": "PeopleSoft",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "perforce": {
-     "dispName": "Perforce",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "pig": {
-     "dispName": "Pig",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "play-framework": {
-     "dispName": "Play Framework",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "polopoly": {
-     "dispName": "Polopoly",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "portal": {
-     "dispName": "Portal",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "postgresql": {
-     "dispName": "PostGreSQL",
-     "image": "postgres.png",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "powerbuilder": {
-     "dispName": "Powerbuilder",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "presenter": {
-     "dispName": "Presenter",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "python": {
-     "dispName": "Python",
-     "image": "python.png",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "python-streaming": {
-     "dispName": "Python Streaming",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "quark": {
-     "dispName": "Quark",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "quizmaker": {
-     "dispName": "Quizmaker",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "rails": {
-     "dispName": "Rails",
-     "image": "rails.jpg",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "r": {
-     "dispName": "R",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "rest": {
-     "dispName": "REST",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "rmi": {
-     "dispName": "RMI",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "rsuite": {
-     "dispName": "RSuite",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "rsuite-cms": {
-     "dispName": "RSuite CMS",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "rabbit-mq": {
-     "dispName": "Rabbit MQ",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "rainbow": {
-     "dispName": "Rainbow",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "rally": {
-     "dispName": "Rally",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "ranger": {
-     "dispName": "Ranger",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "rapidminor": {
-     "dispName": "RapidMinor",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "rational-rose": {
-     "dispName": "Rational Rose",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "rational-soda": {
-     "dispName": "Rational Soda",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "rational-software": {
-     "dispName": "Rational Software",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "razor": {
-     "dispName": "Razor",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "regex": {
-     "dispName": "Regex",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "relaxng": {
-     "dispName": "RelaxNG",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "remedy": {
-     "dispName": "Remedy",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "requisite-pro": {
-     "dispName": "Requisite Pro",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "retina": {
-     "dispName": "Retina",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "rich-media-manager": {
-     "dispName": "Rich Media Manager",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "right-scale": {
-     "dispName": "Right Scale",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "rightscale": {
-     "dispName": "Rightscale",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "router": {
-     "dispName": "Router",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "ruby": {
-     "dispName": "Ruby",
-     "image": "ruby.jpg",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "sax": {
-     "dispName": "SAX",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "servlets": {
-     "dispName": "Servlets",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "sgi": {
-     "dispName": "SGI",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "sgml": {
-     "dispName": "SGML",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "soa": {
-     "dispName": "SOA",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "soap": {
-     "dispName": "SOAP",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "solr": {
-     "dispName": "Solr",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "sparql": {
-     "dispName": "SPARQL",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "sqlbase": {
-     "dispName": "SQLBase",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "sql": {
-     "dispName": "SQL",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "sqr": {
-     "dispName": "SQR",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "ssis": {
-     "dispName": "SSIS",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "svn": {
-     "dispName": "SVN",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "sybase-iq": {
-     "dispName": "SYBASE IQ",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "salesforce": {
-     "dispName": "Salesforce",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "svg": {
-     "dispName": "SVG",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "semantic-web": {
-     "dispName": "Semantic Web",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "selenium": {
-     "dispName": "Selenium",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "servicemix": {
-     "dispName": "ServiceMix",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "sharepoint": {
-     "dispName": "SharePoint",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "shell-scripts": {
-     "dispName": "Shell Scripts",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "slf4j": {
-     "dispName": "Slf4j",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "solaris": {
-     "dispName": "Solaris",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "solr-lucene": {
-     "dispName": "Solr/Lucene",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "spark": {
-     "dispName": "Spark",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "spring": {
-     "dispName": "Spring",
-     "image": "spring.png",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "sqoop": {
-     "dispName": "Sqoop",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "starteam": {
-     "dispName": "StarTeam",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "storm": {
-     "dispName": "Storm",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "storyline": {
-     "dispName": "Storyline",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "struts": {
-     "dispName": "Struts",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "sublime": {
-     "dispName": "Sublime",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "switch": {
-     "dispName": "Switch",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "sybase": {
-     "dispName": "Sybase",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "architecture": {
-     "dispName": "Architecture",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "t-sql": {
-     "dispName": "T-SQL",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "toad": {
-     "dispName": "TOAD",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "tso-ispf": {
-     "dispName": "TSO/ISPF",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "talend": {
-     "dispName": "Talend",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "thrift": {
-     "dispName": "Thrift",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "tomcat": {
-     "dispName": "Tomcat",
-     "image": "tomcat.png",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "trackit": {
-     "dispName": "TrackIt",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "training-programs": {
-     "dispName": "Training Programs",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "twitter-bootstrap": {
-     "dispName": "Twitter Bootstrap",
-     "image": "bootstrap.png",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "typeahead": {
-     "dispName": "TypeAhead",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "uml": {
-     "dispName": "UML",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "unix": {
-     "dispName": "UNIX",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "ultraseek": {
-     "dispName": "Ultraseek",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "v8": {
-     "dispName": "V8",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "vb": {
-     "dispName": "VB",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "vbcs": {
-     "dispName": "VBCS",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "vbscript": {
-     "dispName": "VBScript",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "vcbs": {
-     "dispName": "VCBS",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "vcm": {
-     "dispName": "VCM v7/v8",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "vmware": {
-     "dispName": "VMWare",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "cobol": {
-     "dispName": "COBOL",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "vault": {
-     "dispName": "Vault",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "vectorwise": {
-     "dispName": "Vectorwise",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "velocity": {
-     "dispName": "Velocity",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "vignette": {
-     "dispName": "Vignette",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "visio": {
-     "dispName": "Visio",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "visual-studio": {
-     "dispName": "Visual Studio",
-     "image": "visual-studio.jpg",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "wem-7.x": {
-     "dispName": "WEM 7.x",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "microsoft-windows": {
-     "dispName": "Microsoft Windows",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "watcom-sql": {
-     "dispName": "Watcom SQL",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "waterfall": {
-     "dispName": "Waterfall",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "web-servers": {
-     "dispName": "Web Servers",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "weblogic": {
-     "dispName": "WebLogic",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "webspinx-web-crawler": {
-     "dispName": "Webspinx Web Crawler",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "weka": {
-     "dispName": "Weka",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "winrunner": {
-     "dispName": "Winrunner",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "wordpress": {
-     "dispName": "WordPress",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "xdb": {
-     "dispName": "XDB",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "xforms": {
-     "dispName": "XForms",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "xhtml": {
-     "dispName": "XHTML",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "xml": {
-     "dispName": "XML",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "xmlrpc": {
-     "dispName": "XMLRPC",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "xpath": {
-     "dispName": "XPath",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "xproc": {
-     "dispName": "XProc",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "xqj": {
-     "dispName": "XQJ",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "xquery": {
-     "dispName": "XQuery",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "xsl-fo": {
-     "dispName": "XSL-FO",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "xslt": {
-     "dispName": "XSLT",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "yeoman": {
-     "dispName": "Yeoman",
-     "image": "yoeoman.jpg",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "database-design": {
-     "dispName": "database design",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "grinder": {
-     "dispName": "grinder",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "indexing": {
-     "dispName": "indexing",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "jprofiler": {
-     "dispName": "jProfiler",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "xsd": {
-     "dispName": "XSD",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "project-management": {
-     "dispName": "project management",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "requirements-gathering": {
-     "dispName": "requirements gathering",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "schema-development": {
-     "dispName": "schema development",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   },
-   "stored-procedures": {
-     "dispName": "stored procedures",
-     "image": "",
-     "stackPositions": [],
-     "stackNames": [],
-     "curated": "true",
-     "descr": ""
-   }
- }
+  "skills": {
+    "twitter-bootstrap": {
+      "dispName": "Twitter Bootstrap",
+      "descr": "",
+      "image": "bootstrap.png",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "twitter-bootstrap",
+      "curated": "true"
+    },
+    "web-servers": {
+      "dispName": "Web Servers",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "web-servers",
+      "curated": "true"
+    },
+    "informix": {
+      "dispName": "Informix",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "informix",
+      "curated": "true"
+    },
+    "google-dfp": {
+      "dispName": "Google DFP",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "google-dfp",
+      "curated": "true"
+    },
+    "aria": {
+      "dispName": "ARIA",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "aria",
+      "curated": "true"
+    },
+    "ibm-db2": {
+      "dispName": "IBM DB2",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "ibm-db2",
+      "curated": "true"
+    },
+    "matlab": {
+      "dispName": "MATLAB",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "matlab",
+      "curated": "true"
+    },
+    "junit": {
+      "dispName": "JUnit",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "junit",
+      "curated": "true"
+    },
+    "open-tv": {
+      "dispName": "Open TV",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "open-tv",
+      "curated": "true"
+    },
+    "dih": {
+      "dispName": "DIH",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "dih",
+      "curated": "true"
+    },
+    "ibm-aix": {
+      "dispName": "IBM AIX",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "ibm-aix",
+      "curated": "true"
+    },
+    "mercurial": {
+      "dispName": "Mercurial",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "versioning_system"
+      ],
+      "id": "mercurial",
+      "curated": "true"
+    },
+    "cascading": {
+      "dispName": "Cascading",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "cascading",
+      "curated": "true"
+    },
+    "presenter": {
+      "dispName": "Presenter",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "presenter",
+      "curated": "true"
+    },
+    "mac-osx": {
+      "dispName": "Mac OSX",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "operating_system"
+      ],
+      "id": "mac-osx",
+      "curated": "true"
+    },
+    "biztalk": {
+      "dispName": "BizTalk",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "biztalk",
+      "curated": "true"
+    },
+    "netbeans": {
+      "dispName": "NetBeans",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "netbeans",
+      "curated": "true"
+    },
+    "chef": {
+      "dispName": "Chef",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "deployment"
+      ],
+      "id": "chef",
+      "curated": "true"
+    },
+    "vmware": {
+      "dispName": "VMWare",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "vmware",
+      "curated": "true"
+    },
+    "hdfs": {
+      "dispName": "HDFS",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "hdfs",
+      "curated": "true"
+    },
+    "hortonworks": {
+      "dispName": "Hortonworks",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "back_end"
+      ],
+      "id": "hortonworks",
+      "curated": "true"
+    },
+    "ibm-rational-rose": {
+      "dispName": "IBM Rational Rose",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "ibm-rational-rose",
+      "curated": "true"
+    },
+    "jboss": {
+      "dispName": "JBoss",
+      "descr": "",
+      "image": "jboss.png",
+      "stackNames": [],
+      "stackPositions": [
+        "back_end"
+      ],
+      "id": "jboss",
+      "curated": "true"
+    },
+    "ssis": {
+      "dispName": "SSIS",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "ssis",
+      "curated": "true"
+    },
+    "f5-bigip": {
+      "dispName": "F5 BigIP",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "f5-bigip",
+      "curated": "true"
+    },
+    "rsuite": {
+      "dispName": "RSuite",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "rsuite",
+      "curated": "true"
+    },
+    "mule": {
+      "dispName": "Mule",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "mule",
+      "curated": "true"
+    },
+    "ranger": {
+      "dispName": "Ranger",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "ranger",
+      "curated": "true"
+    },
+    "agile-scrum": {
+      "dispName": "Agile SCRUM",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "agile-scrum",
+      "curated": "true"
+    },
+    "jquery-ui": {
+      "dispName": "jQuery UI",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "front_end"
+      ],
+      "id": "jquery-ui",
+      "curated": "true"
+    },
+    "quark": {
+      "dispName": "Quark",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "quark",
+      "curated": "true"
+    },
+    "thrift": {
+      "dispName": "Thrift",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "thrift",
+      "curated": "true"
+    },
+    "engage": {
+      "dispName": "Engage",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "engage",
+      "curated": "true"
+    },
+    "jax-ws": {
+      "dispName": "JAX-WS",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "jax-ws",
+      "curated": "true"
+    },
+    "eduction": {
+      "dispName": "Eduction",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "eduction",
+      "curated": "true"
+    },
+    "talend": {
+      "dispName": "Talend",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "talend",
+      "curated": "true"
+    },
+    "adobe-photoshop": {
+      "dispName": "Adobe Photoshop",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "adobe-photoshop",
+      "curated": "true"
+    },
+    "mvs-esa": {
+      "dispName": "MVS/ESA",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "mvs-esa",
+      "curated": "true"
+    },
+    "flash": {
+      "dispName": "Flash",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "flash",
+      "curated": "true"
+    },
+    "sgi": {
+      "dispName": "SGI",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "sgi",
+      "curated": "true"
+    },
+    "rational-software": {
+      "dispName": "Rational Software",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "rational-software",
+      "curated": "true"
+    },
+    "unix": {
+      "dispName": "UNIX",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "unix",
+      "curated": "true"
+    },
+    "frontpage": {
+      "dispName": "FrontPage",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "frontpage",
+      "curated": "true"
+    },
+    "logback": {
+      "dispName": "Logback",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "logback",
+      "curated": "true"
+    },
+    "vbcs": {
+      "dispName": "VBCS",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "vbcs",
+      "curated": "true"
+    },
+    "regex": {
+      "dispName": "Regex",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "regex",
+      "curated": "true"
+    },
+    "google-app-engine": {
+      "dispName": "Google App Engine",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "google-app-engine",
+      "curated": "true"
+    },
+    "perl": {
+      "dispName": "Perl",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "back_end",
+        "front_end"
+      ],
+      "id": "perl",
+      "curated": "true"
+    },
+    "visio": {
+      "dispName": "Visio",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "visio",
+      "curated": "true"
+    },
+    "datastax": {
+      "dispName": "DataStax",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "datastax",
+      "curated": "true"
+    },
+    "accumulo": {
+      "dispName": "Accumulo",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "accumulo",
+      "curated": "true"
+    },
+    "iis": {
+      "dispName": "IIS",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "iis",
+      "curated": "true"
+    },
+    "mozilla": {
+      "dispName": "Mozilla/XUI",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "mozilla",
+      "curated": "true"
+    },
+    "microsoft-asp": {
+      "dispName": "Microsoft ASP",
+      "descr": "",
+      "image": "aspnet.gif",
+      "stackNames": [
+        "_net"
+      ],
+      "stackPositions": [
+        "back_end"
+      ],
+      "id": "microsoft-asp",
+      "curated": "true"
+    },
+    "memcache": {
+      "dispName": "MemCache",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "memcache",
+      "curated": "true"
+    },
+    "harvest": {
+      "dispName": "Harvest",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "harvest",
+      "curated": "true"
+    },
+    "salesforce": {
+      "dispName": "Salesforce",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "salesforce",
+      "curated": "true"
+    },
+    "dhtml": {
+      "dispName": "DHTML",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "front_end"
+      ],
+      "id": "dhtml",
+      "curated": "true"
+    },
+    "cap": {
+      "dispName": "CAP",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "cap",
+      "curated": "true"
+    },
+    "eclipse": {
+      "dispName": "Eclipse",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        null
+      ],
+      "id": "eclipse",
+      "curated": "true"
+    },
+    "erwin": {
+      "dispName": "Erwin",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "erwin",
+      "curated": "true"
+    },
+    "business-objects": {
+      "dispName": "Business Objects",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "business-objects",
+      "curated": "true"
+    },
+    "bea-weblogic": {
+      "dispName": "BEA Weblogic",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "bea-weblogic",
+      "curated": "true"
+    },
+    "solr-lucene": {
+      "dispName": "Solr/Lucene",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "solr-lucene",
+      "curated": "true"
+    },
+    "trackit": {
+      "dispName": "TrackIt",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "trackit",
+      "curated": "true"
+    },
+    "apache-web-server": {
+      "dispName": "Apache Web Server",
+      "descr": "",
+      "image": "apache.png",
+      "stackNames": [],
+      "stackPositions": [
+        "server"
+      ],
+      "id": "apache-web-server",
+      "curated": "true"
+    },
+    "adobe-flex": {
+      "dispName": "Adobe Flex",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "adobe-flex",
+      "curated": "true"
+    },
+    "microsoft-windows": {
+      "dispName": "Microsoft Windows",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "operating_system"
+      ],
+      "id": "microsoft-windows",
+      "curated": "true"
+    },
+    "sharepoint": {
+      "dispName": "SharePoint",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "sharepoint",
+      "curated": "true"
+    },
+    "actionscript": {
+      "dispName": "Actionscript",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "actionscript",
+      "curated": "true"
+    },
+    "xhtml": {
+      "dispName": "XHTML",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "xhtml",
+      "curated": "true"
+    },
+    "css": {
+      "dispName": "CSS",
+      "descr": "",
+      "image": "css3.jpg",
+      "stackNames": [],
+      "stackPositions": [
+        "front-end",
+        "front_end"
+      ],
+      "id": "css",
+      "curated": "true"
+    },
+    "apache-hbase": {
+      "dispName": "Apache HBase",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "apache-hbase",
+      "curated": "true"
+    },
+    "powerbuilder": {
+      "dispName": "Powerbuilder",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "powerbuilder",
+      "curated": "true"
+    },
+    "shell-scripts": {
+      "dispName": "Shell Scripts",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "shell-scripts",
+      "curated": "true"
+    },
+    "pl-sql": {
+      "dispName": "PL/SQL",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "back_end"
+      ],
+      "id": "pl-sql",
+      "curated": "true"
+    },
+    "xqj": {
+      "dispName": "XQJ",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "xqj",
+      "curated": "true"
+    },
+    "github": {
+      "dispName": "Github",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "versioning_system"
+      ],
+      "id": "github",
+      "curated": "true"
+    },
+    "sparql": {
+      "dispName": "SPARQL",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "sparql",
+      "curated": "true"
+    },
+    "entity-framework": {
+      "dispName": "Entity Framework",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "entity-framework",
+      "curated": "true"
+    },
+    "grails": {
+      "dispName": "Grails",
+      "descr": "",
+      "image": "grails.png",
+      "stackNames": [],
+      "stackPositions": [
+        "back_end"
+      ],
+      "id": "grails",
+      "curated": "true"
+    },
+    "e-commerce": {
+      "dispName": "E-Commerce",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "e-commerce",
+      "curated": "true"
+    },
+    "switch": {
+      "dispName": "Switch",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "switch",
+      "curated": "true"
+    },
+    "cross-browser-issues": {
+      "dispName": "Cross-Browser Issues",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "front_end"
+      ],
+      "id": "cross-browser-issues",
+      "curated": "true"
+    },
+    "jira": {
+      "dispName": "Jira",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        null
+      ],
+      "id": "jira",
+      "curated": "true"
+    },
+    "mockito": {
+      "dispName": "Mockito",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "mockito",
+      "curated": "true"
+    },
+    "kafka": {
+      "dispName": "Kafka",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "kafka",
+      "curated": "true"
+    },
+    "xsl-fo": {
+      "dispName": "XSL-FO",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "xsl-fo",
+      "curated": "true"
+    },
+    "pascal": {
+      "dispName": "Pascal",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "pascal",
+      "curated": "true"
+    },
+    "csharp": {
+      "dispName": "C#",
+      "descr": "",
+      "image": "csharp.png",
+      "stackNames": [
+        "_net"
+      ],
+      "stackPositions": [
+        "back-end",
+        "middleware",
+        "front_end",
+        "back_end"
+      ],
+      "id": "csharp",
+      "curated": "true"
+    },
+    "relaxng": {
+      "dispName": "RelaxNG",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "relaxng",
+      "curated": "true"
+    },
+    "hbase": {
+      "dispName": "HBase",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "hbase",
+      "curated": "true"
+    },
+    "selenium": {
+      "dispName": "Selenium",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "selenium",
+      "curated": "true"
+    },
+    "starteam": {
+      "dispName": "StarTeam",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "starteam",
+      "curated": "true"
+    },
+    "yeoman": {
+      "dispName": "Yeoman",
+      "descr": "",
+      "image": "yoeoman.jpg",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "yeoman",
+      "curated": "true"
+    },
+    "flex": {
+      "dispName": "Flex",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "flex",
+      "curated": "true"
+    },
+    "python": {
+      "dispName": "Python",
+      "descr": "",
+      "image": "python.png",
+      "stackNames": [],
+      "stackPositions": [
+        "back_end"
+      ],
+      "id": "python",
+      "curated": "true"
+    },
+    "indexing": {
+      "dispName": "indexing",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "indexing",
+      "curated": "true"
+    },
+    "vcbs": {
+      "dispName": "VCBS",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "vcbs",
+      "curated": "true"
+    },
+    "polopoly": {
+      "dispName": "Polopoly",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "polopoly",
+      "curated": "true"
+    },
+    "cloudera": {
+      "dispName": "Cloudera",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "search_engine"
+      ],
+      "id": "cloudera",
+      "curated": "true"
+    },
+    ".net": {
+      "dispName": ".NET",
+      "descr": "A framework written by Microsoft. Can be coded in C#, or ASP.",
+      "image": "dotnet.jpg",
+      "stackNames": [
+        ".net",
+        "_net"
+      ],
+      "stackPositions": [
+        "front-end",
+        "middle",
+        "back_end",
+        "front_end"
+      ],
+      "id": ".net",
+      "curated": "true"
+    },
+    "lisp": {
+      "dispName": "Lisp",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "back_end"
+      ],
+      "id": "lisp",
+      "curated": "true"
+    },
+    "cisco-access-server": {
+      "dispName": "Cisco Access Server",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "cisco-access-server",
+      "curated": "true"
+    },
+    "hql": {
+      "dispName": "HQL",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "hql",
+      "curated": "true"
+    },
+    "quizmaker": {
+      "dispName": "Quizmaker",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "quizmaker",
+      "curated": "true"
+    },
+    "stored-procedures": {
+      "dispName": "stored procedures",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "stored-procedures",
+      "curated": "true"
+    },
+    "semantic-web": {
+      "dispName": "Semantic Web",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "semantic-web",
+      "curated": "true"
+    },
+    "jaxb": {
+      "dispName": "JAXB",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "jaxb",
+      "curated": "true"
+    },
+    "hive": {
+      "dispName": "Hive",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "hive",
+      "curated": "true"
+    },
+    "requisite-pro": {
+      "dispName": "Requisite Pro",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "requisite-pro",
+      "curated": "true"
+    },
+    "google-search-appliance": {
+      "dispName": "Google Search Appliance",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "google-search-appliance",
+      "curated": "true"
+    },
+    "vcm": {
+      "dispName": "VCM v7/v8",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "vcm",
+      "curated": "true"
+    },
+    "ejb": {
+      "dispName": "EJB",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "ejb",
+      "curated": "true"
+    },
+    "mahout": {
+      "dispName": "Mahout",
+      "descr": "",
+      "image": "mahout.jpg",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "mahout",
+      "curated": "true"
+    },
+    "ado.net": {
+      "dispName": "ADO.NET",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "ado.net",
+      "curated": "true"
+    },
+    "dotnetnuke": {
+      "dispName": "DotNetNuke",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "dotnetnuke",
+      "curated": "true"
+    },
+    "hibernate": {
+      "dispName": "Hibernate",
+      "descr": "",
+      "image": "hibernate.png",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "hibernate",
+      "curated": "true"
+    },
+    "framemaker": {
+      "dispName": "FrameMaker",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "framemaker",
+      "curated": "true"
+    },
+    "ajax": {
+      "dispName": "AJAX",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "front_end"
+      ],
+      "id": "ajax",
+      "curated": "true"
+    },
+    "jdbc": {
+      "dispName": "JDBC",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "jdbc",
+      "curated": "true"
+    },
+    "bash": {
+      "dispName": "BASH",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "back_end"
+      ],
+      "id": "bash",
+      "curated": "true"
+    },
+    "wem-7.x": {
+      "dispName": "WEM 7.x",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "wem-7.x",
+      "curated": "true"
+    },
+    "ambari": {
+      "dispName": "Ambari",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "ambari",
+      "curated": "true"
+    },
+    "drupal": {
+      "dispName": "Drupal",
+      "descr": "",
+      "image": "drupal.gif",
+      "stackNames": [],
+      "stackPositions": [
+        "content_management_system"
+      ],
+      "id": "drupal",
+      "curated": "true"
+    },
+    "iterative": {
+      "dispName": "Iterative",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "iterative",
+      "curated": "true"
+    },
+    "mvc": {
+      "dispName": "MVC",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "mvc",
+      "curated": "true"
+    },
+    "elasticsearch": {
+      "dispName": "ElasticSearch",
+      "descr": "",
+      "image": "elasticsearch.jpg",
+      "stackNames": [],
+      "stackPositions": [
+        "search_engine",
+        "database"
+      ],
+      "id": "elasticsearch",
+      "curated": "true"
+    },
+    "router": {
+      "dispName": "Router",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "router",
+      "curated": "true"
+    },
+    "training-programs": {
+      "dispName": "Training Programs",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "training-programs",
+      "curated": "true"
+    },
+    "indesign": {
+      "dispName": "InDesign",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "indesign",
+      "curated": "true"
+    },
+    "puppet": {
+      "dispName": "Puppet",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "deployment"
+      ],
+      "id": "puppet",
+      "curated": "true"
+    },
+    "neo4j": {
+      "dispName": "Neo4J",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "neo4j",
+      "curated": "true"
+    },
+    "razor": {
+      "dispName": "Razor",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "razor",
+      "curated": "true"
+    },
+    "weka": {
+      "dispName": "Weka",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "weka",
+      "curated": "true"
+    },
+    "struts": {
+      "dispName": "Struts",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "struts",
+      "curated": "true"
+    },
+    "rails": {
+      "dispName": "Rails",
+      "descr": "",
+      "image": "rails.jpg",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "rails",
+      "curated": "true"
+    },
+    "weblogic": {
+      "dispName": "WebLogic",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "weblogic",
+      "curated": "true"
+    },
+    "storm": {
+      "dispName": "Storm",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "storm",
+      "curated": "true"
+    },
+    "mks": {
+      "dispName": "MKS",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "mks",
+      "curated": "true"
+    },
+    "tso-ispf": {
+      "dispName": "TSO/ISPF",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "tso-ispf",
+      "curated": "true"
+    },
+    "ias": {
+      "dispName": "IAS/Security",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "ias",
+      "curated": "true"
+    },
+    "flume": {
+      "dispName": "Flume",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "flume",
+      "curated": "true"
+    },
+    "perforce": {
+      "dispName": "Perforce",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "perforce",
+      "curated": "true"
+    },
+    "opentext-portal": {
+      "dispName": "OpenText Portal",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "opentext-portal",
+      "curated": "true"
+    },
+    "ingeniux": {
+      "dispName": "Ingeniux",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "content_management_system"
+      ],
+      "id": "ingeniux",
+      "curated": "true"
+    },
+    "tfs": {
+      "dispName": "TFS",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "tfs",
+      "curated": "true"
+    },
+    "jquery": {
+      "dispName": "JQuery",
+      "descr": "",
+      "image": "jquery.jpg",
+      "stackNames": [],
+      "stackPositions": [
+        "front_end"
+      ],
+      "id": "jquery",
+      "curated": "true"
+    },
+    "xproc": {
+      "dispName": "XProc",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "xproc",
+      "curated": "true"
+    },
+    "lucene": {
+      "dispName": "Lucene",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "search_engine"
+      ],
+      "id": "lucene",
+      "curated": "true"
+    },
+    "r": {
+      "dispName": "R",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "r",
+      "curated": "true"
+    },
+    "apache-lucene": {
+      "dispName": "Apache Lucene",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "search_engine"
+      ],
+      "id": "apache-lucene",
+      "curated": "true"
+    },
+    "sublime": {
+      "dispName": "Sublime",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "sublime",
+      "curated": "true"
+    },
+    "ant": {
+      "dispName": "Ant",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "back-end",
+        "deployment",
+        "back_end"
+      ],
+      "id": "ant",
+      "curated": "true"
+    },
+    "typeahead": {
+      "dispName": "TypeAhead",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "typeahead",
+      "curated": "true"
+    },
+    "jasper-reports": {
+      "dispName": "Jasper Reports",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "jasper-reports",
+      "curated": "true"
+    },
+    "angularjs": {
+      "dispName": "AngularJS",
+      "descr": "",
+      "image": "angular.png",
+      "stackNames": [
+        null
+      ],
+      "stackPositions": [
+        "front_end"
+      ],
+      "id": "angularjs",
+      "curated": "true"
+    },
+    "dynamics-gp": {
+      "dispName": "Dynamics GP",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "dynamics-gp",
+      "curated": "true"
+    },
+    "paysimple": {
+      "dispName": "Paysimple",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "paysimple",
+      "curated": "true"
+    },
+    "object-oriented": {
+      "dispName": "Object Oriented",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "object-oriented",
+      "curated": "true"
+    },
+    "asp.net": {
+      "dispName": "ASP.NET",
+      "descr": "",
+      "image": "aspnet.gif",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "asp.net",
+      "curated": "true"
+    },
+    "rsuite-cms": {
+      "dispName": "RSuite CMS",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "rsuite-cms",
+      "curated": "true"
+    },
+    "soap": {
+      "dispName": "SOAP",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "soap",
+      "curated": "true"
+    },
+    "visual-studio": {
+      "dispName": "Visual Studio",
+      "descr": "",
+      "image": "visual-studio.jpg",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "visual-studio",
+      "curated": "true"
+    },
+    "play-framework": {
+      "dispName": "Play Framework",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "play-framework",
+      "curated": "true"
+    },
+    "jsf": {
+      "dispName": "JSF",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "jsf",
+      "curated": "true"
+    },
+    "retina": {
+      "dispName": "Retina",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "retina",
+      "curated": "true"
+    },
+    "aws": {
+      "dispName": "AWS",
+      "descr": "",
+      "image": "aws.jpg",
+      "stackNames": [],
+      "stackPositions": [
+        "cloud_service"
+      ],
+      "id": "aws",
+      "curated": "true"
+    },
+    "confluence": {
+      "dispName": "Confluence",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "wiki"
+      ],
+      "id": "confluence",
+      "curated": "true"
+    },
+    "pentaho": {
+      "dispName": "Pentaho",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "pentaho",
+      "curated": "true"
+    },
+    "oozie": {
+      "dispName": "Oozie",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "oozie",
+      "curated": "true"
+    },
+    "rich-media-manager": {
+      "dispName": "Rich Media Manager",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "rich-media-manager",
+      "curated": "true"
+    },
+    "dom": {
+      "dispName": "DOM",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "dom",
+      "curated": "true"
+    },
+    "dameware": {
+      "dispName": "Dameware",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "dameware",
+      "curated": "true"
+    },
+    "clear-quest": {
+      "dispName": "Clear Quest",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "clear-quest",
+      "curated": "true"
+    },
+    "storyline": {
+      "dispName": "Storyline",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "storyline",
+      "curated": "true"
+    },
+    "velocity": {
+      "dispName": "Velocity",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "velocity",
+      "curated": "true"
+    },
+    "dbm": {
+      "dispName": "DBM",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "dbm",
+      "curated": "true"
+    },
+    "omnimark": {
+      "dispName": "Omnimark",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "omnimark",
+      "curated": "true"
+    },
+    "xml": {
+      "dispName": "XML",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "xml",
+      "curated": "true"
+    },
+    "hpux": {
+      "dispName": "HPUX",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "hpux",
+      "curated": "true"
+    },
+    "xdb": {
+      "dispName": "XDB",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "xdb",
+      "curated": "true"
+    },
+    "datameer": {
+      "dispName": "Datameer",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "datameer",
+      "curated": "true"
+    },
+    "lingpipe": {
+      "dispName": "Lingpipe",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "lingpipe",
+      "curated": "true"
+    },
+    "remedy": {
+      "dispName": "Remedy",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "remedy",
+      "curated": "true"
+    },
+    "rapidminor": {
+      "dispName": "RapidMinor",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "rapidminor",
+      "curated": "true"
+    },
+    "ms-sql-server": {
+      "dispName": "MS SQL Server",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "search_engine",
+        "database"
+      ],
+      "id": "ms-sql-server",
+      "curated": "true"
+    },
+    "sqlbase": {
+      "dispName": "SQLBase",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "sqlbase",
+      "curated": "true"
+    },
+    "db2": {
+      "dispName": "DB2",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "db2",
+      "curated": "true"
+    },
+    "aci-api": {
+      "dispName": "ACI API",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "aci-api",
+      "curated": "true"
+    },
+    "dynamic-portal-module": {
+      "dispName": "Dynamic Portal Module",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "dynamic-portal-module",
+      "curated": "true"
+    },
+    "couchbase": {
+      "dispName": "Couchbase",
+      "descr": "",
+      "image": "couchbase.png",
+      "stackNames": [],
+      "stackPositions": [
+        "search_engine"
+      ],
+      "id": "couchbase",
+      "curated": "true"
+    },
+    "apache-mahout": {
+      "dispName": "Apache Mahout",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "apache-mahout",
+      "curated": "true"
+    },
+    "c++": {
+      "dispName": "C++",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "back-end",
+        "back_end"
+      ],
+      "id": "c++",
+      "curated": "true"
+    },
+    "architecture": {
+      "dispName": "Architecture",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "architecture",
+      "curated": "true"
+    },
+    "dpm": {
+      "dispName": "DPM",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "dpm",
+      "curated": "true"
+    },
+    "crm": {
+      "dispName": "CRM",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "crm",
+      "curated": "true"
+    },
+    "rightscale": {
+      "dispName": "Rightscale",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "rightscale",
+      "curated": "true"
+    },
+    "kibana": {
+      "id": "kibana",
+      "dispName": "Kibana",
+      "descr": "Kibana is an analytics engine that works with ElasticSearch",
+      "curated": "true"
+    },
+    "rmi": {
+      "dispName": "RMI",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "rmi",
+      "curated": "true"
+    },
+    "jni": {
+      "dispName": "JNI",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "jni",
+      "curated": "true"
+    },
+    "sybase-iq": {
+      "dispName": "SYBASE IQ",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "sybase-iq",
+      "curated": "true"
+    },
+    "lua": {
+      "dispName": "Lua",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "lua",
+      "curated": "true"
+    },
+    "dynamic-site-module": {
+      "dispName": "Dynamic Site Module",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "dynamic-site-module",
+      "curated": "true"
+    },
+    "ms-access": {
+      "dispName": "MS Access",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "database"
+      ],
+      "id": "ms-access",
+      "curated": "true"
+    },
+    "xslt": {
+      "dispName": "XSLT",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "xslt",
+      "curated": "true"
+    },
+    "javascript": {
+      "dispName": "JavaScript",
+      "descr": "",
+      "image": "javascript.png",
+      "stackNames": [],
+      "stackPositions": [
+        "front_end"
+      ],
+      "id": "javascript",
+      "curated": "true"
+    },
+    "adp-enterprise": {
+      "dispName": "ADP Enterprise",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "adp-enterprise",
+      "curated": "true"
+    },
+    "html5": {
+      "dispName": "HTML5",
+      "descr": "",
+      "image": "html5.png",
+      "stackNames": [],
+      "stackPositions": [
+        "front_end"
+      ],
+      "id": "html5",
+      "curated": "true"
+    },
+    "rabbit-mq": {
+      "dispName": "Rabbit MQ",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "rabbit-mq",
+      "curated": "true"
+    },
+    "autonomy-idol": {
+      "dispName": "Autonomy IDOL",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "search_engine"
+      ],
+      "id": "autonomy-idol",
+      "curated": "true"
+    },
+    "spark": {
+      "dispName": "Spark",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "spark",
+      "curated": "true"
+    },
+    "gupta-sql-windows": {
+      "dispName": "Gupta SQL Windows",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "gupta-sql-windows",
+      "curated": "true"
+    },
+    "solr": {
+      "dispName": "Solr",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "solr",
+      "curated": "true"
+    },
+    "c": {
+      "dispName": "C",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "back_end"
+      ],
+      "id": "c",
+      "curated": "true"
+    },
+    "coldfusion": {
+      "dispName": "ColdFusion",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "coldfusion",
+      "curated": "true"
+    },
+    "budgeting": {
+      "dispName": "Budgeting",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "budgeting",
+      "curated": "true"
+    },
+    "gwt": {
+      "dispName": "GWT",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "gwt",
+      "curated": "true"
+    },
+    "os-2": {
+      "dispName": "OS/2",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "os-2",
+      "curated": "true"
+    },
+    "vault": {
+      "dispName": "Vault",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "vault",
+      "curated": "true"
+    },
+    "xforms": {
+      "dispName": "XForms",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "xforms",
+      "curated": "true"
+    },
+    "call-manager": {
+      "dispName": "Call Manager",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "call-manager",
+      "curated": "true"
+    },
+    "jubatus": {
+      "dispName": "Jubatus",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "jubatus",
+      "curated": "true"
+    },
+    "firewall": {
+      "dispName": "Firewall",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "firewall",
+      "curated": "true"
+    },
+    "apache": {
+      "dispName": "Apache",
+      "descr": "",
+      "image": "apache.png",
+      "stackNames": [],
+      "stackPositions": [
+        "server"
+      ],
+      "id": "apache",
+      "curated": "true"
+    },
+    "linux": {
+      "dispName": "Linux",
+      "descr": "",
+      "image": "linux.jpg",
+      "stackNames": [],
+      "stackPositions": [
+        "operating_system",
+        "back_end"
+      ],
+      "id": "linux",
+      "curated": "true"
+    },
+    "endeavor": {
+      "dispName": "Endeavor",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "endeavor",
+      "curated": "true"
+    },
+    "java": {
+      "dispName": "Java",
+      "descr": "",
+      "image": "java.png",
+      "stackNames": [],
+      "stackPositions": [
+        "back_end"
+      ],
+      "id": "java",
+      "curated": "true"
+    },
+    "fortran": {
+      "dispName": "Fortran",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "fortran",
+      "curated": "true"
+    },
+    "ejbs": {
+      "dispName": "EJBs",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "ejbs",
+      "curated": "true"
+    },
+    "json": {
+      "dispName": "JSON",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "front_end"
+      ],
+      "id": "json",
+      "curated": "true"
+    },
+    "dreamweaver": {
+      "dispName": "Dreamweaver",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "front_end"
+      ],
+      "id": "dreamweaver",
+      "curated": "true"
+    },
+    "hudson-ci": {
+      "dispName": "Hudson CI",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "hudson-ci",
+      "curated": "true"
+    },
+    "object-oriented-analysis": {
+      "dispName": "Object Oriented Analysis",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "object-oriented-analysis",
+      "curated": "true"
+    },
+    "idol": {
+      "dispName": "IDOL",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "search_engine"
+      ],
+      "id": "idol",
+      "curated": "true"
+    },
+    "ultraseek": {
+      "dispName": "Ultraseek",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "ultraseek",
+      "curated": "true"
+    },
+    "rational-soda": {
+      "dispName": "Rational Soda",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "rational-soda",
+      "curated": "true"
+    },
+    "j2ee": {
+      "dispName": "J2EE",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "back_end"
+      ],
+      "id": "j2ee",
+      "curated": "true"
+    },
+    "ruby": {
+      "dispName": "Ruby",
+      "descr": "",
+      "image": "ruby.jpg",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "ruby",
+      "curated": "true"
+    },
+    "aix": {
+      "dispName": "AIX",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "aix",
+      "curated": "true"
+    },
+    "cvs": {
+      "dispName": "CVS",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        null
+      ],
+      "id": "cvs",
+      "curated": "true"
+    },
+    "jpa-jdbc": {
+      "dispName": "JPA - JDBC",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "jpa-jdbc",
+      "curated": "true"
+    },
+    "clearcase": {
+      "dispName": "ClearCase",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "clearcase",
+      "curated": "true"
+    },
+    "vb": {
+      "dispName": "VB",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "vb",
+      "curated": "true"
+    },
+    "project-management": {
+      "dispName": "project management",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "project-management",
+      "curated": "true"
+    },
+    "nodejs": {
+      "dispName": "NodeJS",
+      "descr": "",
+      "image": "node.png",
+      "stackNames": [
+        "mean"
+      ],
+      "stackPositions": [
+        "back_end"
+      ],
+      "id": "nodejs",
+      "curated": "true"
+    },
+    "cobol": {
+      "dispName": "COBOL",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "cobol",
+      "curated": "true"
+    },
+    "grinder": {
+      "dispName": "grinder",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "grinder",
+      "curated": "true"
+    },
+    "servlets": {
+      "dispName": "Servlets",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "servlets",
+      "curated": "true"
+    },
+    "hadoop": {
+      "dispName": "Hadoop",
+      "descr": "",
+      "image": "hadoop.png",
+      "stackNames": [],
+      "stackPositions": [
+        "back_end"
+      ],
+      "id": "hadoop",
+      "curated": "true"
+    },
+    "html": {
+      "dispName": "HTML",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "front_end"
+      ],
+      "id": "html",
+      "curated": "true"
+    },
+    "android": {
+      "dispName": "Android",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        null,
+        "mobile"
+      ],
+      "id": "android",
+      "curated": "true"
+    },
+    "log4j": {
+      "dispName": "Log4j",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "log4j",
+      "curated": "true"
+    },
+    "watcom-sql": {
+      "dispName": "Watcom SQL",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "watcom-sql",
+      "curated": "true"
+    },
+    "dah": {
+      "dispName": "DAH",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "dah",
+      "curated": "true"
+    },
+    "adobe-captivate": {
+      "dispName": "Adobe Captivate",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "adobe-captivate",
+      "curated": "true"
+    },
+    "ios": {
+      "dispName": "IOS",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "operating_system"
+      ],
+      "id": "ios",
+      "curated": "true"
+    },
+    "waterfall": {
+      "dispName": "Waterfall",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "waterfall",
+      "curated": "true"
+    },
+    "portal": {
+      "dispName": "Portal",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "portal",
+      "curated": "true"
+    },
+    "v8": {
+      "dispName": "V8",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "v8",
+      "curated": "true"
+    },
+    "t-sql": {
+      "dispName": "T-SQL",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "t-sql",
+      "curated": "true"
+    },
+    "php": {
+      "dispName": "PHP",
+      "descr": "",
+      "image": "php.jpg",
+      "stackNames": [],
+      "stackPositions": [
+        "front_end"
+      ],
+      "id": "php",
+      "curated": "true"
+    },
+    "crystal-reports": {
+      "dispName": "Crystal Reports",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "crystal-reports",
+      "curated": "true"
+    },
+    "data-modeling": {
+      "dispName": "Data Modeling",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "data-modeling",
+      "curated": "true"
+    },
+    "filesystem": {
+      "dispName": "FileSystem",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "filesystem",
+      "curated": "true"
+    },
+    "ms-office": {
+      "dispName": "MS Office",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "ms-office",
+      "curated": "true"
+    },
+    "apache-hive": {
+      "dispName": "Apache Hive",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "apache-hive",
+      "curated": "true"
+    },
+    "parametric": {
+      "dispName": "Parametric",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "parametric",
+      "curated": "true"
+    },
+    "modeler": {
+      "dispName": "Modeler",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "modeler",
+      "curated": "true"
+    },
+    "solaris": {
+      "dispName": "Solaris",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "solaris",
+      "curated": "true"
+    },
+    "less": {
+      "dispName": "LESS",
+      "descr": "",
+      "image": "less.png",
+      "stackNames": [],
+      "stackPositions": [
+        "front-end",
+        "front_end"
+      ],
+      "id": "less",
+      "curated": "true"
+    },
+    "apache-accumulo": {
+      "dispName": "Apache Accumulo",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "apache-accumulo",
+      "curated": "true"
+    },
+    "rest": {
+      "dispName": "REST",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "rest",
+      "curated": "true"
+    },
+    "mysql": {
+      "dispName": "MySQL",
+      "descr": "",
+      "image": "mysql.jpg",
+      "stackNames": [
+        "lamp"
+      ],
+      "stackPositions": [
+        "search_engine",
+        "database"
+      ],
+      "id": "mysql",
+      "curated": "true"
+    },
+    "openstack": {
+      "dispName": "OpenStack",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "openstack",
+      "curated": "true"
+    },
+    "jdeveloper": {
+      "dispName": "Jdeveloper",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "jdeveloper",
+      "curated": "true"
+    },
+    "sybase": {
+      "dispName": "Sybase",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "sybase",
+      "curated": "true"
+    },
+    "jprofiler": {
+      "dispName": "jProfiler",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "jprofiler",
+      "curated": "true"
+    },
+    "contentmark": {
+      "dispName": "ContentMARK",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "contentmark",
+      "curated": "true"
+    },
+    "vectorwise": {
+      "dispName": "Vectorwise",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "vectorwise",
+      "curated": "true"
+    },
+    "omniture": {
+      "dispName": "Omniture",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "omniture",
+      "curated": "true"
+    },
+    "servicemix": {
+      "dispName": "ServiceMix",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "servicemix",
+      "curated": "true"
+    },
+    "database-design": {
+      "dispName": "database design",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "database-design",
+      "curated": "true"
+    },
+    "xmlrpc": {
+      "dispName": "XMLRPC",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "xmlrpc",
+      "curated": "true"
+    },
+    "moq": {
+      "dispName": "Moq",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "moq",
+      "curated": "true"
+    },
+    "jstl": {
+      "dispName": "JSTL",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "jstl",
+      "curated": "true"
+    },
+    "falcon": {
+      "dispName": "Falcon",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "falcon",
+      "curated": "true"
+    },
+    "dos": {
+      "dispName": "DOS",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "dos",
+      "curated": "true"
+    },
+    "xquery": {
+      "dispName": "XQuery",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "xquery",
+      "curated": "true"
+    },
+    "xsd": {
+      "dispName": "XSD",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "xsd",
+      "curated": "true"
+    },
+    "centos": {
+      "dispName": "CENTOS",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "back-end",
+        null
+      ],
+      "id": "centos",
+      "curated": "true"
+    },
+    "spring": {
+      "dispName": "Spring",
+      "descr": "",
+      "image": "spring.png",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "spring",
+      "curated": "true"
+    },
+    "business-console": {
+      "dispName": "Business Console",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "business-console",
+      "curated": "true"
+    },
+    "schema-development": {
+      "dispName": "schema development",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "schema-development",
+      "curated": "true"
+    },
+    "intellij-idea": {
+      "dispName": "IntelliJ IDEA",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "intellij-idea",
+      "curated": "true"
+    },
+    "marklogic": {
+      "dispName": "MarkLogic",
+      "descr": "",
+      "image": "marklogic.jpg",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "marklogic",
+      "curated": "true"
+    },
+    "mongodb": {
+      "dispName": "MongoDB",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "search_engine",
+        "database"
+      ],
+      "id": "mongodb",
+      "curated": "true"
+    },
+    "uml": {
+      "dispName": "UML",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "uml",
+      "curated": "true"
+    },
+    "notepad++": {
+      "dispName": "Notepad++",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "notepad++",
+      "curated": "true"
+    },
+    "informatica": {
+      "dispName": "Informatica",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "informatica",
+      "curated": "true"
+    },
+    "maven": {
+      "dispName": "Maven",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "maven",
+      "curated": "true"
+    },
+    "ms-foxpro": {
+      "dispName": "MS FoxPro",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "ms-foxpro",
+      "curated": "true"
+    },
+    "logstash": {
+      "id": "logstash",
+      "dispName": "Logstash",
+      "descr": "Logstash allows streaming input to Elasticsearch indexes.",
+      "curated": "true"
+    },
+    "haproxy": {
+      "dispName": "HAProxy",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "haproxy",
+      "curated": "true"
+    },
+    "google-web-toolkit": {
+      "dispName": "Google Web Toolkit",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "google-web-toolkit",
+      "curated": "true"
+    },
+    "postgresql": {
+      "dispName": "PostGreSQL",
+      "descr": "",
+      "image": "postgres.png",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "postgresql",
+      "curated": "true"
+    },
+    "requirements-gathering": {
+      "dispName": "requirements gathering",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "requirements-gathering",
+      "curated": "true"
+    },
+    "jsp": {
+      "dispName": "JSP",
+      "descr": "",
+      "image": "jsp.png",
+      "stackNames": [],
+      "stackPositions": [
+        "front_end",
+        "back_end"
+      ],
+      "id": "jsp",
+      "curated": "true"
+    },
+    "soa": {
+      "dispName": "SOA",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "soa",
+      "curated": "true"
+    },
+    "active-directory": {
+      "dispName": "Active Directory",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "active-directory",
+      "curated": "true"
+    },
+    "haskell": {
+      "dispName": "Haskell",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "haskell",
+      "curated": "true"
+    },
+    "owl-semantic-modeling": {
+      "dispName": "OWL Semantic Modeling",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "owl-semantic-modeling",
+      "curated": "true"
+    },
+    "elasticpath": {
+      "dispName": "ElasticPath",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "elasticpath",
+      "curated": "true"
+    },
+    "webspinx-web-crawler": {
+      "dispName": "Webspinx Web Crawler",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "webspinx-web-crawler",
+      "curated": "true"
+    },
+    "git": {
+      "dispName": "Git",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "git",
+      "curated": "true"
+    },
+    "vbscript": {
+      "dispName": "VBScript",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "vbscript",
+      "curated": "true"
+    },
+    "operations-manager": {
+      "dispName": "Operations Manager",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "operations-manager",
+      "curated": "true"
+    },
+    "rational-rose": {
+      "dispName": "Rational Rose",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "rational-rose",
+      "curated": "true"
+    },
+    "wordpress": {
+      "dispName": "WordPress",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "wordpress",
+      "curated": "true"
+    },
+    "liferay": {
+      "dispName": "Liferay",
+      "descr": "",
+      "image": "liferay.png",
+      "stackNames": [],
+      "stackPositions": [
+        "content_management_system"
+      ],
+      "id": "liferay",
+      "curated": "true"
+    },
+    "xpath": {
+      "dispName": "XPath",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "xpath",
+      "curated": "true"
+    },
+    "crystal-reports-xi": {
+      "dispName": "Crystal Reports XI",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "crystal-reports-xi",
+      "curated": "true"
+    },
+    "hp": {
+      "dispName": "HP",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "hp",
+      "curated": "true"
+    },
+    "fireworks": {
+      "dispName": "Fireworks",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "image_editor"
+      ],
+      "id": "fireworks",
+      "curated": "true"
+    },
+    "cloudfront": {
+      "dispName": "CloudFront",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "back-end"
+      ],
+      "id": "cloudfront",
+      "curated": "true"
+    },
+    "clear-case": {
+      "dispName": "Clear Case",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "clear-case",
+      "curated": "true"
+    },
+    "cartella": {
+      "dispName": "Cartella",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "cartella",
+      "curated": "true"
+    },
+    "groovy": {
+      "dispName": "Groovy",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "back_end"
+      ],
+      "id": "groovy",
+      "curated": "true"
+    },
+    "illustrator": {
+      "dispName": "Illustrator",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "image_editor"
+      ],
+      "id": "illustrator",
+      "curated": "true"
+    },
+    "tomcat": {
+      "dispName": "Tomcat",
+      "descr": "",
+      "image": "tomcat.png",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "tomcat",
+      "curated": "true"
+    },
+    "sgml": {
+      "dispName": "SGML",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "sgml",
+      "curated": "true"
+    },
+    "sqoop": {
+      "dispName": "Sqoop",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "sqoop",
+      "curated": "true"
+    },
+    "pig": {
+      "dispName": "Pig",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "pig",
+      "curated": "true"
+    },
+    "rally": {
+      "dispName": "Rally",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "rally",
+      "curated": "true"
+    },
+    "sax": {
+      "dispName": "SAX",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "sax",
+      "curated": "true"
+    },
+    "rainbow": {
+      "dispName": "Rainbow",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "rainbow",
+      "curated": "true"
+    },
+    "oam": {
+      "dispName": "OAM",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "oam",
+      "curated": "true"
+    },
+    "peoplesoft": {
+      "dispName": "PeopleSoft",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "peoplesoft",
+      "curated": "true"
+    },
+    "winrunner": {
+      "dispName": "Winrunner",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "winrunner",
+      "curated": "true"
+    },
+    "load-balancing": {
+      "dispName": "Load Balancing",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "load-balancing",
+      "curated": "true"
+    },
+    "jenkins": {
+      "dispName": "Jenkins",
+      "descr": "",
+      "image": "jenkins.png",
+      "stackNames": [],
+      "stackPositions": [
+        "deployment"
+      ],
+      "id": "jenkins",
+      "curated": "true"
+    },
+    "adobe-premiere-pro": {
+      "dispName": "Adobe Premiere Pro",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "adobe-premiere-pro",
+      "curated": "true"
+    },
+    "toad": {
+      "dispName": "TOAD",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "toad",
+      "curated": "true"
+    },
+    "sqr": {
+      "dispName": "SQR",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "sqr",
+      "curated": "true"
+    },
+    "data-architecture": {
+      "dispName": "Data Architecture",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "data-architecture",
+      "curated": "true"
+    },
+    "vignette": {
+      "dispName": "Vignette",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "vignette",
+      "curated": "true"
+    },
+    "sql": {
+      "dispName": "SQL",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "sql",
+      "curated": "true"
+    },
+    "python-streaming": {
+      "dispName": "Python Streaming",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "python-streaming",
+      "curated": "true"
+    },
+    "svn": {
+      "dispName": "SVN",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "svn",
+      "curated": "true"
+    },
+    "owlim": {
+      "dispName": "Owlim",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "owlim",
+      "curated": "true"
+    },
+    "elastic-path-ecommerce": {
+      "dispName": "Elastic Path eCommerce",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "elastic-path-ecommerce",
+      "curated": "true"
+    },
+    "right-scale": {
+      "dispName": "Right Scale",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "right-scale",
+      "curated": "true"
+    },
+    "svg": {
+      "dispName": "SVG",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "svg",
+      "curated": "true"
+    },
+    "ms-project": {
+      "dispName": "MS Project",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "ms-project",
+      "curated": "true"
+    },
+    "apache-tomcat": {
+      "dispName": "Apache Tomcat",
+      "descr": "",
+      "image": "tomcat.png",
+      "stackNames": [],
+      "stackPositions": [
+        "server"
+      ],
+      "id": "apache-tomcat",
+      "curated": "true"
+    },
+    "adobe-fireworks": {
+      "dispName": "Adobe Fireworks",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "adobe-fireworks",
+      "curated": "true"
+    },
+    "slf4j": {
+      "dispName": "Slf4j",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [],
+      "id": "slf4j",
+      "curated": "true"
+    },
+    "oracle": {
+      "dispName": "Oracle",
+      "descr": "",
+      "image": "",
+      "stackNames": [],
+      "stackPositions": [
+        "search_engine",
+        "database"
+      ],
+      "id": "oracle",
+      "curated": "true"
+    }
+  }
 }
