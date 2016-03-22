@@ -34,7 +34,6 @@
 
 
       //fuzzy search function --pending review
-
       function fetchProjects (query) {
         var uri = encodeURI(query);
         var url = configuration.api + '/api/projects/search?q=';
@@ -62,11 +61,11 @@
 
 
 
-/**
+  /**
        * Get summary list of all projects
        * @returns {promise}
        */
-      //  function fetchProjects (skill) {
+      // function fetchProjects (skill) {
       //   var url = configuration.api + '/api/projects/search?expand_user_info=true';
 
       //   if (!_.isEmpty(skill)){

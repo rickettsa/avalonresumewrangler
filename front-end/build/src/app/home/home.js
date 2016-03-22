@@ -119,13 +119,14 @@
 
     //bindable members
     $scope.searchResponse                = searchResponse.data.hits;
+    $scope.global.search.query           = $rootScope.cachedSearch && $rootScope.cachedSearch.query ? $rootScope.cachedSearch.query : ''; //this is needed for 1st view of search results, so highlight works
+
     $scope.currentSearch                 = {};
     $scope.search                        = {};
     $scope.search.config                 = AppConfig.search;
     $scope.search.getMostRecentPosition  = getMostRecentPosition;
     $scope.rearrangeArrayByQuery         = rearrangeArrayByQuery;
     $scope.getAvatarImgName              = getAvatarImgName;
-    $scope.global.search.query           = $rootScope.cachedSearch && $rootScope.cachedSearch.query ? $rootScope.cachedSearch.query : ''; //this is needed for 1st view of search results, so highlight works
 
 
     if (!_.isEmpty($stateParams.query)){
