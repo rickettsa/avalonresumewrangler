@@ -117,55 +117,58 @@
   SearchResultsCtrl.$inject =['$scope', 'searchResponse', '$rootScope', '$stateParams', 'AppConfig', '$filter'];
   function SearchResultsCtrl( $scope, searchResponse, $rootScope, $stateParams, AppConfig, $filter ) {
 
-    //bindable members
-    $scope.searchResponse                = searchResponse.data.hits;
-    $scope.global.search.query           = $rootScope.cachedSearch && $rootScope.cachedSearch.query ? $rootScope.cachedSearch.query : ''; //this is needed for 1st view of search results, so highlight works
+    $scope.searchResponse = searchResponse.data.hits;
+    $scope.global.search.query = $rootScope.cachedSearch && $rootScope.cachedSearch.query ? $rootScope.cachedSearch.query : ''; //this is needed for 1st view of search results, so highlight works
 
-    $scope.currentSearch                 = {};
-    $scope.search                        = {};
-    $scope.search.config                 = AppConfig.search;
-    $scope.search.getMostRecentPosition  = getMostRecentPosition;
-    $scope.rearrangeArrayByQuery         = rearrangeArrayByQuery;
-    $scope.getAvatarImgName              = getAvatarImgName;
+    $scope.currentSearch = {};
+    $scope.search = {};
+
+    $scope.search.config = AppConfig.search;
 
 
     if (!_.isEmpty($stateParams.query)){
       $scope.global.search.query = $stateParams.query;
     }
 
-    function rearrangeArrayByQuery(inputArr){
-      var filtered = $filter('filter')(inputArr, $scope.global.search.query);  //find array elems that match query
+    $scope.rearrangeArrayByQuery = function(inputArr){
+      //find array elems that match query
+      var filtered = $filter('filter')(inputArr, $scope.global.search.query);
+      //remove those elements from original array
       _.remove(inputArr, function (el) {
-        return _.indexOf(filtered, el) !== -1; //remove those elements from original array
+        return _.indexOf(filtered, el) !== -1;
       });
-      var sorted = filtered.concat(inputArr); //add those elements to the beginning of array
-        return sorted;
-    }
+      //add those elements to the beginning of array
+      var sorted = filtered.concat(inputArr);
+      return sorted;
+    };
 
-    function getAvatarImgName (emailAddr){
-      if(emailAddr && !_.isEmpty(emailAddr)){
+
+    $scope.getAvatarImgName = function(emailAddr){
+      if (emailAddr && !_.isEmpty(emailAddr)){
         var getEmailPrefix = function(str, group1){
           return group1.toLowerCase();
-      };
-
-      var consultantNameAbbrev = emailAddr.replace(/^(.*)@.*$/, getEmailPrefix);
-      var imgSrc = '/assets/avatars/' + consultantNameAbbrev + '.jpg';
+        };
+        var consultantNameAbbrev = emailAddr.replace(/^(.*)@.*$/, getEmailPrefix);
+        var imgSrc = '/assets/avatars/' + consultantNameAbbrev + '.jpg';
         return imgSrc;
       }
     };
 
-    function getMostRecentPosition(data, key){
-      if (!_.isEmpty(data)){
-        var mostRecentEmployer = data[data.length - 1];
-        var mostRecentPosition = mostRecentEmployer.positions[mostRecentEmployer.positions.length - 1];
-        if (_.has(mostRecentPosition, key)){
-          return mostRecentPosition[key];
-        } else {
-          return 'empty';
+    $scope.search.getMostRecentPosition = function(data, key){
+        if (!_.isEmpty(data)){
+          var mostRecentEmployer = data[data.length - 1];
+          var mostRecentPosition = mostRecentEmployer.positions[mostRecentEmployer.positions.length - 1];
+          if (_.has(mostRecentPosition, key)){
+            return mostRecentPosition[key];
+          } else {
+            return 'empty';
+          }
         }
       }
     };
-  };
+
+
+
 
 
 
