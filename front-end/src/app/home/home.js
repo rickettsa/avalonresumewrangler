@@ -89,7 +89,6 @@
       });
     }
 
-
     searchResponse.$inject = ['$rootScope', 'resumeService', 'projectsService', '$stateParams'];
     function searchResponse($rootScope, resumeService, projectsService, $stateParams){
       if ($stateParams.type === "Skill"){
@@ -112,7 +111,6 @@
           }
       }
     }
-
  })();
 
 
@@ -131,9 +129,7 @@
     function HomeCtrl($scope, $rootScope){
 
     };
-
 })();
-
 
 (function(){
   'use strict';
@@ -162,15 +158,12 @@
     }
 
     function rearrangeArrayByQuery(inputArr){
-      //find array elems that match query
-      var filtered = $filter('filter')(inputArr, $scope.global.search.query);
-      //remove those elements from original array
+      var filtered = $filter('filter')(inputArr, $scope.global.search.query);  //find array elems that match query
       _.remove(inputArr, function (el) {
-        return _.indexOf(filtered, el) !== -1;
+        return _.indexOf(filtered, el) !== -1; //remove those elements from original array
       });
-      //add those elements to the beginning of array
-      var sorted = filtered.concat(inputArr);
-      return sorted;
+      var sorted = filtered.concat(inputArr); //add those elements to the beginning of array
+        return sorted;
     }
 
     function getAvatarImgName (emailAddr){
@@ -197,7 +190,6 @@
       }
     };
   };
-
 })();
 
 
