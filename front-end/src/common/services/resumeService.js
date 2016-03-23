@@ -44,7 +44,8 @@
 
       return $http({
         method : "GET",
-        url    : configuration.api + '/api/resumes/search?' + nameStr
+        url    : configuration.api + '/api/resumes/search?' + nameStr,
+        data   : {}
       });
     };
 
