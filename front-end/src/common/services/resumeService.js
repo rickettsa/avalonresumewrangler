@@ -64,7 +64,7 @@
       });
     };
 
-    function updateResume(id, payload) {
+    function updateResume(id, payload, userEmail) {
       return $http({
         method  : "PUT",
         headers : {'Content-Type': 'application/json'},

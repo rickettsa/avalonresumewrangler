@@ -74,9 +74,9 @@
 
 
 
-    EditCtrl.$inject = ['$http', '$scope', '$filter', 'resumeResponse', 'skillsResponse', 'AppConfig', 'contactResponse', 'resumeService', '$stateParams',  'skillsService'];
+    EditCtrl.$inject = ['$http', '$scope', '$filter', 'resumeResponse', 'skillsResponse', 'AppConfig', 'contactResponse', 'resumeService', '$stateParams',  'skillsService', 'sessionService'];
     function EditCtrl ($http, $scope, $filter, resumeResponse, skillsResponse, AppConfig, contactResponse, resumeService,
-      $stateParams, skillsService){
+      $stateParams, skillsService, sessionService){
 
       // bindable edit members
       $scope.edit                   = {};
@@ -97,15 +97,16 @@
       $scope.edit.updateResume      = updateResume;
 
       initEdit();
-
       function initEdit(){
         if (resumeResponse.data.hits.length > 0) {
           $scope.resume = resumeResponse.data.hits[0]._source;
           $scope.global.resumeId = resumeResponse.data.hits[0]._id;
+
         } else {
           $scope.resume = AppConfig.EMPTY_RESUME._source;
           $scope.resume.firstName = $stateParams.firstName;
           $scope.resume.lastName = $stateParams.lastName;
+          $scope.resume.email = sessionService.userEmail;
 
           resumeService.createResume().then(function(response){
               console.log("SUCCESS : created resume id")
@@ -252,12 +253,14 @@
 
       function updateResume(){
         if($scope.global.resumeId === undefined){
-          console.log("undefined id!!!!")
-          return
-          // false
-          // if false return 500 //bubble to a 500
+          console.log("undefined id!")
+          return // false// if false return 500 //bubble to a 500
         }
-        console.log($scope.resume)
+
+        if($scope.resume.email === "" || $scope.resume.email === undefined){
+          $scope.resume.email = sessionService.userEmail;
+        }
+
         resumeService.updateResume($scope.global.resumeId, $scope.resume)
           .success(function(resp){
             //is this skill known? if not, make sure you post back to the skills API

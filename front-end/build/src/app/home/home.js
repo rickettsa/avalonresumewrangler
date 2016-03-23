@@ -64,9 +64,22 @@ angular.module( 'resumeWrangler.home', [
           searchResponse: function($rootScope, resumeService, projectsService, $stateParams){
             if ($stateParams.type === "Skill"){
                 if (!_.isEmpty($stateParams.query)){
-                  return resumeService.skillSearch($stateParams.query);
+                  console.log("here")
+                  // return resumeService.skillSearch($stateParams.query);
+                  resumeService.skillSearch($stateParams.query)
+                    .then(function(response){
+                      console.log(response);
+                    })
+
+
+
+
+
                 } else if (!_.isEmpty($rootScope.global.search.cachedSearch.query)){
+                  console.log("second here")
+
                   return resumeService.skillSearch($rootScope.global.search.cachedSearch.query);
+
                 }
             } else if ($stateParams.type === "Last Name"){
                 if (!_.isEmpty($stateParams.query)){
