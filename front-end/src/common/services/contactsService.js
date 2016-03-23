@@ -10,8 +10,6 @@
     .module('resumeWrangler')
     .service('contactsService', contactsService);
 
-    contactsService.$inject = ['$rootScope', '$http', 'configuration'];
-
     function contactsService($rootScope, $http, configuration) {
 
       var service = {

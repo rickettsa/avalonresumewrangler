@@ -12,7 +12,7 @@
     .module('resumeWrangler')
     .service('resumeService', resumeService);
 
-  resumeService.$inject = ['$rootScope', '$http', 'configuration']
+
 
   function resumeService($rootScope, $http, configuration) {
 

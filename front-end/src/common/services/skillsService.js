@@ -11,7 +11,6 @@
     .module('resumeWrangler')
     .service('skillsService', skillsService);
 
-    skillsService.$inject = ['$rootScope', '$http', 'configuration']
 
     function skillsService($rootScope, $http, configuration) {
 

@@ -16,7 +16,6 @@
     .controller('EditCtrl', EditCtrl);
 
 
-    configFunction.$inject = ['$stateProvider'];
     function configFunction( $stateProvider ) {
       $stateProvider
         .state( 'edit', {
@@ -49,7 +48,6 @@
       });
     };
 
-    resumeResponse.$inject = ['resumeService', '$stateParams'];
     function resumeResponse(resumeService, $stateParams){
       if ($stateParams.firstName && $stateParams.lastName){
         return resumeService.fetchResume($stateParams.firstName, $stateParams.lastName);
@@ -58,7 +56,6 @@
       }
     };
 
-    contactResponse.$inject = ['contactsService', '$stateParams'];
     function contactResponse(contactsService, $stateParams){
       if ($stateParams.firstName && $stateParams.lastName){
         return contactsService.fetchContactByName($stateParams.firstName, $stateParams.lastName);
@@ -67,14 +64,10 @@
       }
     };
 
-    skillsResponse.$inject = ['skillsService', '$stateParams'];
     function skillsResponse(skillsService){
       return skillsService.fetchSkills();
     };
 
-
-
-    EditCtrl.$inject = ['$http', '$scope', '$filter', 'resumeResponse', 'skillsResponse', 'AppConfig', 'contactResponse', 'resumeService', '$stateParams',  'skillsService', 'sessionService'];
     function EditCtrl ($http, $scope, $filter, resumeResponse, skillsResponse, AppConfig, contactResponse, resumeService,
       $stateParams, skillsService, sessionService){
 
