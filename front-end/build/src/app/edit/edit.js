@@ -16,7 +16,6 @@
     .controller('EditCtrl', EditCtrl);
 
 
-    configFunction.$inject = ['$stateProvider'];
     function configFunction( $stateProvider ) {
       $stateProvider
         .state( 'edit', {
@@ -49,7 +48,6 @@
       });
     };
 
-    resumeResponse.$inject = ['resumeService', '$stateParams'];
     function resumeResponse(resumeService, $stateParams){
       if ($stateParams.firstName && $stateParams.lastName){
         return resumeService.fetchResume($stateParams.firstName, $stateParams.lastName);
@@ -58,7 +56,6 @@
       }
     };
 
-    contactResponse.$inject = ['contactsService', '$stateParams'];
     function contactResponse(contactsService, $stateParams){
       if ($stateParams.firstName && $stateParams.lastName){
         return contactsService.fetchContactByName($stateParams.firstName, $stateParams.lastName);
@@ -67,36 +64,15 @@
       }
     };
 
-    skillsResponse.$inject = ['skillsService', '$stateParams'];
     function skillsResponse(skillsService){
       return skillsService.fetchSkills();
     };
 
-
-
-    EditCtrl.$inject = ['$http', '$scope', '$filter', 'resumeResponse', 'skillsResponse', 'AppConfig', 'contactResponse', 'resumeService', '$stateParams',  'skillsService', 'sessionService'];
     function EditCtrl ($http, $scope, $filter, resumeResponse, skillsResponse, AppConfig, contactResponse, resumeService,
       $stateParams, skillsService, sessionService){
 
-      // bindable edit members
-      $scope.edit                   = {};
-      $scope.edit.addExperience     = addExperience;
-      $scope.edit.addEmployer       = addEmployer;
-      $scope.edit.deletePosition    = deletePosition;
-      $scope.edit.addEducation      = addEducation;
-      $scope.edit.deleteEducation   = deleteEducation;
-      $scope.edit.skillsData        = skillsResponse.data.skills;
-      $scope.edit.skillNames        = _.pluck(skillsResponse.data.skills, 'dispName');
-      $scope.edit.showSkillName     = 0;
-      $scope.edit.getSkillImg       = getSkillImg;
-      $scope.edit.removeSkill       = removeSkill;
-      $scope.edit.addSkillRole      = addSkillRole;
-      $scope.edit.addLifeSkillRole  = addLifeSkillRole;
-      $scope.edit.editSkill         = editSkill;
-      $scope.edit.saveSkills        = saveSkills;
-      $scope.edit.updateResume      = updateResume;
+      $scope.edit = {};
 
-      initEdit();
       function initEdit(){
         if (resumeResponse.data.hits.length > 0) {
           $scope.resume = resumeResponse.data.hits[0]._source;
@@ -116,9 +92,30 @@
               console.log(error);
           });
         }
+
+        // bindable edit members
+        $scope.edit.addExperience     = addExperience;
+        $scope.edit.addEmployer       = addEmployer;
+        $scope.edit.deletePosition    = deletePosition;
+        $scope.edit.addEducation      = addEducation;
+        $scope.edit.deleteEducation   = deleteEducation;
+        $scope.edit.skillsData        = skillsResponse.data.skills;
+        $scope.edit.skillNames        = _.pluck(skillsResponse.data.skills, 'dispName');
+        $scope.edit.showSkillName     = 0;
+        $scope.edit.getSkillImg       = getSkillImg;
+        $scope.edit.removeSkill       = removeSkill;
+        $scope.edit.addSkillRole      = addSkillRole;
+        $scope.edit.addLifeSkillRole  = addLifeSkillRole;
+        $scope.edit.editSkill         = editSkill;
+        $scope.edit.saveSkills        = saveSkills;
+        $scope.edit.updateResume      = updateResume;
       };
 
-      _.mixin({
+      //CALL OUR METHOD==================
+      initEdit();
+      //=================================
+
+       _.mixin({
         findBySubVal: function(collection, property, values) {
           return _.filter(collection, function(item) {
             return _.contains(values, item[property]);
