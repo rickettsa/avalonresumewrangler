@@ -752,10 +752,10 @@ angular.module("view/view.tpl.html", []).run(["$templateCache", function($templa
     "                    </div>\n" +
     "            </div>\n" +
     "            <div class=\"col-md-12\" ng-if=\"contact.firstName\">\n" +
-    "                <h1>{{ contact.firstName }} {{ contact.lastName }}</h1>\n" +
-    "                <h4><a href=\"mailto:{{ contact.email }}\">{{ contact.email }}</a></h4>\n" +
-    "                <h4><a href=\"tel:+{{ contact.phone }}\">{{ contact.phone }}</a></h4>\n" +
-    "                <h4>{{ contact.timezone }}</h4>\n" +
+    "                <h1    id=\"contactName\">{{ contact.firstName }} {{ contact.lastName }}</h1>\n" +
+    "                <h4><a id=\"contactEmail\"  href=\"mailto:{{ contact.email }}\"> {{ contact.email }} </a></h4>\n" +
+    "                <h4><a id=\"contactPhone\"  href=\"tel:+{{ contact.phone }}\"> {{ contact.phone }} </a></h4>\n" +
+    "                <h4    id=\"contactTimezone\"> {{ contact.timezone }} </h4>\n" +
     "            </div>\n" +
     "\n" +
     "\n" +
@@ -850,5 +850,43 @@ angular.module("view/view.tpl.html", []).run(["$templateCache", function($templa
     "\n" +
     "    </div>\n" +
     "</div>\n" +
-    "");
+    "\n" +
+    "\n" +
+    "<div>\n" +
+    "    <h1>Test PDF</h1>\n" +
+    "\n" +
+    "    <script type=\"text/javascript\">\n" +
+    "\n" +
+    "\n" +
+    "        function genPDF(){\n" +
+    "\n" +
+    "            var doc = new jsPDF();\n" +
+    "\n" +
+    "            var contactName     = $('#contactName').html();\n" +
+    "            var contactEmail    = $('#contactEmail').html();\n" +
+    "            var contactPhone    = $('#contactPhone').html();\n" +
+    "            var contactTimezone = $('#contactTimezone').html();\n" +
+    "\n" +
+    "\n" +
+    "            // Contact Info\n" +
+    "            doc.setFontSize(22);\n" +
+    "            doc.text(20,15, contactName);\n" +
+    "            doc.line(5,22,200,22)\n" +
+    "\n" +
+    "            doc.setFontSize(12);\n" +
+    "            doc.text(15, 30, contactEmail);\n" +
+    "            doc.text(15, 35, contactPhone);\n" +
+    "            doc.text(15, 40, contactTimezone);\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "            doc.save('test1.pdf')\n" +
+    "        }\n" +
+    "\n" +
+    "\n" +
+    "    </script>\n" +
+    "\n" +
+    "    <a href=\"javascript:genPDF()\">Test my PDF download</a>\n" +
+    "</div>");
 }]);

@@ -113,10 +113,10 @@
                     </div>
             </div>
             <div class="col-md-12" ng-if="contact.firstName">
-                <h1>{{ contact.firstName }} {{ contact.lastName }}</h1>
-                <h4><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></h4>
-                <h4><a href="tel:+{{ contact.phone }}">{{ contact.phone }}</a></h4>
-                <h4>{{ contact.timezone }}</h4>
+                <h1    id="contactName">{{ contact.firstName }} {{ contact.lastName }}</h1>
+                <h4><a id="contactEmail"  href="mailto:{{ contact.email }}"> {{ contact.email }} </a></h4>
+                <h4><a id="contactPhone"  href="tel:+{{ contact.phone }}"> {{ contact.phone }} </a></h4>
+                <h4    id="contactTimezone"> {{ contact.timezone }} </h4>
             </div>
 
 
@@ -210,4 +210,43 @@
             </div>
 
     </div>
+</div>
+
+
+<div>
+    <h1>Test PDF</h1>
+
+    <script type="text/javascript">
+
+
+        function genPDF(){
+
+            var doc = new jsPDF();
+
+            var contactName     = $('#contactName').html();
+            var contactEmail    = $('#contactEmail').html();
+            var contactPhone    = $('#contactPhone').html();
+            var contactTimezone = $('#contactTimezone').html();
+
+
+            // Contact Info
+            doc.setFontSize(22);
+            doc.text(20,15, contactName);
+            doc.line(5,22,200,22)
+
+            doc.setFontSize(12);
+            doc.text(15, 30, contactEmail);
+            doc.text(15, 35, contactPhone);
+            doc.text(15, 40, contactTimezone);
+
+
+
+
+            doc.save('test1.pdf')
+        }
+
+
+    </script>
+
+    <a href="javascript:genPDF()">Test my PDF download</a>
 </div>
