@@ -1,0 +1,288 @@
+Account,Project Name,Region,Practice,Project Manager,Start Date,End Date,Record ID
+Adobe Systems Incorporated,Adobe Search Support,NATL,,Mike Green,3/10/2014,5/30/2014,a1D70000001KCcE
+Adobe Systems Incorporated,Adobe Workshop,NATL,,Mike Green,2/10/2014,2/28/2014,a1D70000001K0JR
+All About the Data (AATD),GUICE Support,NATL,,John Holshey,9/22/2014,3/31/2015,a1D70000002LXRR
+American Society of Professional Education,Big Data Bootcamp,DC,,Niels Nielsen,9/14/2014,11/17/2014,a1D70000002LU9V
+America's Test Kitchen,ATK-ECM Print to Digital Conversion-Project,DC,NoSQL,Niels Nielsen,5/31/2015,1/30/2016,a1D70000002laVE
+America's Test Kitchen,Sage - Legacy Content Search,DC,NoSQL,Niels Nielsen,2/28/2016,7/23/2016,a1D39000003RA6X
+America's Test Kitchen,Sage Content Migration for Legacy Content Search,DC,NoSQL,Niels Nielsen,7/24/2016,10/1/2016,a1D39000003RA6c
+Apexus,VHA/Apexus.com,NATL,Enterprise Web,Mike Green,11/17/2014,6/30/2015,a1D70000002Mm54
+Association of American Medical Colleges,CoreMedia Support,DC,,Niels Nielsen,3/16/2014,9/8/2014,a1D70000001KEHP
+Association of American Medical Colleges,CoreMedia Upgrade,DC,,Niels Nielsen,12/1/2013,3/15/2014,a1D70000001JGUy
+Association of American Medical Colleges,Pivio Implementation,DC,,Niels Nielsen,10/27/2013,2/28/2014,a1D70000001ImwL
+Association of Computing Machinery,ACM Search Evaluation,DC,Enterprise Search,Niels Nielsen,4/5/2015,4/30/2015,a1D70000002k68E
+Association of Computing Machinery,ACM-Digital Library Search Enhancements - Phase 1,DC,Enterprise Search,Niels Nielsen,5/10/2015,12/12/2015,a1D70000002l3ds
+Baptist Healthcare System,Baptist CMS Support,NATL,,Mike Green,10/1/2012,12/31/2014,a1D70000001ImwN
+Baptist Healthcare System,Vignette Upgrade Assessment,NATL,,Mike Green,4/1/2012,8/3/2012,a1D70000001ImwI
+Bell Helicopter,Bell PSE Search Consulting,NATL,Enterprise Search,Mike Green,4/13/2015,9/12/2015,a1D70000002kwAo
+BuyerQuest,BuyerQuest-Solr Tuning-Project,MW-STL,Enterprise Search,Sean Hall,9/28/2015,12/31/2015,a1D70000003UblG
+Cengage Learning,Cengage - Marklogic Support,MW-CHI,,Phil Favia,3/4/2014,12/31/2014,a1D70000001KCvz
+Cengage Learning,XQuery Training,NATL,,Chad Chatfield,10/7/2013,10/31/2013,a1D70000001Imx8
+"Cloudera, Inc.",Brattle AD Support,NATL,Big Data,Mike Green,9/17/2015,9/18/2015,a1D70000003UGDn
+"Cloudera, Inc.",Cloudera - Barclay Card NATL,NATL,Big Data,Mike Green,10/18/2015,1/29/2016,a1D70000003CxKn
+"Cloudera, Inc.",Cloudera - BarclayCard,MW-CHI,Big Data,Doug Gattuso,9/8/2015,12/31/2015,a1D70000003U1xD
+"Cloudera, Inc.",Cloudera - Dell Project - Phase 1-2 completion-Project,COE,Big Data,Tom Reidy,1/31/2016,2/29/2016,a1D70000003DGeM
+"Cloudera, Inc.",Cloudera-Boulder,NATL,,Chad Chatfield,7/7/2014,9/30/2014,a1D70000001KzWh
+"Cloudera, Inc.",Cloudera-CAT,NATL,Big Data,Mike Green,4/5/2015,4/30/2015,a1D70000002k8Vb
+"Cloudera, Inc.",Cloudera-WellsFargo,NATL,Big Data,Mike Green,1/26/2015,8/15/2015,a1D70000002iiKs
+"Cloudera, Inc.",Hadoop Consulting - DIA,DC,,Niels Nielsen,3/2/2014,1/10/2015,a1D70000001K52s
+"Cloudera, Inc.",Hadoop Consulting - DIA 2015,DC,Big Data,Niels Nielsen,1/1/2015,5/23/2015,a1D70000002i6v1
+CollabIP,CollabIP - Analytics Workshop-Project,NATL,Big Data,Mike Green,2/22/2016,3/31/2016,a1D39000003R8M8
+CollabIP,CollabIP Elastic Kickstart,NATL,,Mike Green,3/16/2015,4/30/2015,a1D70000002juqT
+Couchbase,CB-CloudFoundry Implementation,NATL,NoSQL,John Holshey,9/4/2015,12/18/2015,a1D70000003TuAg
+Couchbase,CB-DocumentDB Implementation,NATL,NoSQL,John Holshey,9/18/2015,10/6/2015,a1D70000003UGPn
+Couchbase,CB-Mongo - MDS Benchmark,NATL,NoSQL,John Holshey,9/1/2015,10/16/2015,a1D70000003U5In
+Couchbase,Couchbase-Mongo Compare Round 2,MW-CHI,Enterprise Web,Phil Favia,4/6/2015,5/31/2015,a1D70000002k8XL
+Couchbase,Couchbase-Mongo Comparison,NATL,,John Holshey,2/23/2015,3/13/2015,a1D70000002jecU
+Couchbase,Nonbillable Couchbase Time,NATL,NoSQL,John Holshey,10/26/2015,12/31/2015,a1D70000003D1vn
+Customer Value Partners,CVP - Dept State 2015,DC,Enterprise Search,Niels Nielsen,1/1/2015,9/30/2015,a1D70000002i7aL
+Customer Value Partners,CVP DOS Development,DC,Enterprise Search,Niels Nielsen,10/27/2013,9/30/2014,a1D70000001Imws
+Customer Value Partners,CVP DOS Development July - Dec 2014,DC,,Niels Nielsen,7/13/2014,12/31/2014,a1D70000001LYA9
+Customer Value Partners,CVP DOS Referral Fee,DC,,Niels Nielsen,10/27/2013,12/31/2013,a1D70000001ImwQ
+"Data Commons, LLC",Data Commons Planning Support,DC,,Niels Nielsen,1/5/2014,1/31/2014,a1D70000001JlSE
+DeseretBook.com,Deseret - Architectural Support,NATL,Enterprise Search,John Holshey,1/14/2016,2/12/2016,a1D39000003Qx0L
+Disney,Disney CNRG,NATL,,Mike Green,3/6/2014,4/18/2014,a1D70000001K51f
+Disney,Elastic staff aug-Project (Disney),NATL,Enterprise Search,John Holshey,8/28/2015,9/30/2015,a1D70000003TspZ
+Disney ABC Television Group,Disney CNRG,NATL,NoSQL,Mike Green,9/1/2014,6/30/2015,a1D70000002KizZ
+Economist Intelligence Unit,EIU Sort Troubleshooting,NATL,,Mike Green,7/14/2014,8/1/2014,a1D70000001LhBc
+Encore Wire,Encore Website Work,NATL,Enterprise Web,Mike Green,4/13/2015,12/31/2015,a1D70000002kwAj
+Explicavi,Managed Mobile Service Development,DC,Enterprise Search,Niels Nielsen,6/15/2015,9/30/2015,a1D70000002lfrj
+Explicavi,Managed Mobile Services POC,DC,Enterprise Search,Niels Nielsen,3/15/2015,6/13/2015,a1D70000002juPf
+Federation of State Medical Boards,FSMB-DocInfo Search,NATL,Enterprise Search,Mike Green,3/30/2015,6/12/2015,a1D70000002k0ym
+"FedEx Corporate Services, Inc.",ASK,NATL,,Chad Chatfield,9/10/2012,11/2/2012,a1D70000001ImwJ
+"FedEx Corporate Services, Inc.",Enterprise Taxonomy Roadmap,NATL,Enterprise Search,John Holshey,3/1/2016,5/31/2016,a1D39000003RANV
+"FedEx Corporate Services, Inc.",FedEx - FY15 App Support,NATL,,John Holshey,6/1/2014,5/31/2015,a1D70000001Kiu7
+"FedEx Corporate Services, Inc.",FedEx - Getty Replacement,NATL,,John Holshey,2/1/2014,5/31/2014,a1D70000001Jwrx
+"FedEx Corporate Services, Inc.",FedEx FY15 Hosting Support,NATL,,John Holshey,6/1/2014,5/31/2015,a1D70000001Kiv7
+"FedEx Corporate Services, Inc.",FedEx-FY 16 App Support,NATL,NoSQL,John Holshey,6/1/2015,5/31/2016,a1D70000002lflL
+"FedEx Corporate Services, Inc.",FedEx-FY 16 Hosting Support,NATL,NoSQL,John Holshey,6/1/2015,5/31/2016,a1D70000002lfki
+"FedEx Corporate Services, Inc.",SSO and CMM Migration,NATL,,John Holshey,11/10/2014,3/31/2015,a1D70000002McxE
+"FedEx Corporate Services, Inc.",Taxonomy Research,NATL,,John Holshey,9/22/2014,11/29/2014,a1D70000002LXRM
+"FedEx Corporate Services, Inc.",Taxonomy work for SBC,NATL,Enterprise Search,John Holshey,12/1/2015,2/19/2016,a1D39000003Qj3H
+Genentech,Genentech - SWA Scoping,NATL,NoSQL,Mike Green,5/18/2015,6/5/2015,a1D70000002l5l8
+Genentech,Genentech SWA,NATL,NoSQL,Mike Green,6/15/2015,3/31/2016,a1D70000003FUEL
+Government of Alberta Canada,ELK & Redis,NATL,,Mike Green,8/18/2014,5/1/2015,a1D70000002LTzK
+"Hortonworks, Inc.",ATT Seagate,MW-CHI,,Phil Favia,10/1/2014,12/31/2014,a1D70000002MTA8
+"Hortonworks, Inc.",Bell Helicopter,COE,,Andy Kruth,6/1/2014,8/30/2014,a1D70000001KmHq
+"Hortonworks, Inc.",Bell Helicopter,COE,,Andy Kruth,10/1/2014,12/31/2014,a1D70000002MT0N
+"Hortonworks, Inc.",CSAA Security Implementation,COE,Big Data,Andy Kruth,7/13/2015,8/14/2015,a1D70000002dHUl
+"Hortonworks, Inc.",Dell First Phase,COE,,Andy Kruth,12/9/2013,4/30/2014,a1D70000001Jjdm
+"Hortonworks, Inc.",Dominos Ingestion,COE,Big Data,Andy Kruth,3/2/2015,8/31/2015,a1D70000002jnBn
+"Hortonworks, Inc.",Dominos Ingestion-Sub Project,NATL,Big Data,Andy Kruth,3/2/2015,8/31/2015,a1D70000003U5Q4
+"Hortonworks, Inc.",Dominos Shadow,COE,,Andy Kruth,3/2/2015,3/31/2015,a1D70000002jnUu
+"Hortonworks, Inc.",HEB-COE,COE,,Andy Kruth,7/1/2014,12/31/2015,a1D700000021sq4
+"Hortonworks, Inc.",HEB-National,NATL,,Andy Kruth,7/1/2014,12/31/2015,a1D70000001KzWc
+"Hortonworks, Inc.",Homeaway Security,COE,Big Data,Andy Kruth,8/24/2015,9/25/2015,a1D70000003SjUU
+"Hortonworks, Inc.",Hortonworks - Target - Caspian,COE,Big Data,Andy Kruth,4/27/2015,9/11/2015,a1D70000002l0ld
+"Hortonworks, Inc.",Hortonworks - Target - Team Expansion,COE,Big Data,Andy Kruth,3/23/2015,7/31/2016,a1D70000002jzCh
+"Hortonworks, Inc.",HSBC,COE,,Andy Kruth,10/15/2013,12/31/2013,a1D70000001ImxA
+"Hortonworks, Inc.",HWX - American Fam Ins-Project,COE,Big Data,Tom Reidy,12/7/2015,5/1/2016,a1D70000003DGa8
+"Hortonworks, Inc.",HWX - Geisinger Health,MW-CHI,Enterprise Search,Doug Gattuso,1/25/2016,1/29/2016,a1D39000003R5S4
+"Hortonworks, Inc.",HWX - Salesforce,MW-CHI,Big Data,Doug Gattuso,6/15/2015,7/11/2015,a1D70000003FQCn
+"Hortonworks, Inc.",HWX - Tudor subcontract-Project,COE,Big Data,Tom Reidy,11/29/2015,1/2/2016,a1D70000003DGaI
+"Hortonworks, Inc.",HWX-Kohls Security Pll Cluster,COE,,Andy Kruth,6/21/2015,7/4/2015,a1D70000003FWkN
+"Hortonworks, Inc.",HWX-Tudor Sub- STL,MW-STL,Big Data,Sean Hall,1/3/2016,1/30/2016,a1D39000003QuxQ
+"Hortonworks, Inc.",HWX-USPS(Deloitte),COE,,Andy Kruth,8/28/2013,9/6/2013,a1D70000001Imww
+"Hortonworks, Inc.",Kohl's Security Implementation,COE,Big Data,Andy Kruth,5/11/2015,5/22/2015,a1D70000002l5oQ
+"Hortonworks, Inc.",Match.com HDP 2.2 Upgrade,COE,Big Data,Andy Kruth,7/7/2015,7/10/2015,a1D70000002dFmm
+"Hortonworks, Inc.",Progressive Hadoop Support,COE,,Andy Kruth,1/1/2014,12/31/2014,a1D70000001JvNt
+"Hortonworks, Inc.",SC Johnson,COE,,Andy Kruth,5/18/2014,12/31/2014,a1D70000001KhBz
+"Hortonworks, Inc.",Sprint FLUX Migration,MW-CHI,Big Data,Phil Favia,2/23/2015,6/30/2015,a1D70000002jeGW
+"Hortonworks, Inc.",Triad Retail Media Hadoop JumpStart,DC,,Niels Nielsen,12/16/2013,12/27/2013,a1D70000001JeWk
+"Hortonworks, Inc.",Verizon,COE,,Andy Kruth,7/26/2013,12/31/2014,a1D70000001Imwt
+ICF - Ironworks,IDOL Award Search Project,DC,,Niels Nielsen,11/5/2013,12/31/2014,a1D70000001IoRJ
+INTO,INTO - Round 2,NATL,Big Data,Mike Green,5/25/2015,8/2/2015,a1D70000002laF3
+INTO,INTO Master Data Set,NATL,,Mike Green,7/14/2014,8/15/2014,a1D70000001L1Y6
+Janus Capital Management,Janus - SOW #10 (Abe),NATL,,Mike Green,9/9/2013,9/30/2014,a1D70000001Imwz
+Janus Capital Management,Janus - SOW #11,NATL,,Mike Green,9/23/2013,1/31/2014,a1D70000001Imx1
+Janus Capital Management,Janus - SOW #12,NATL,,Mike Green,10/14/2013,12/31/2013,a1D70000001Imx6
+Janus Capital Management,Janus - SOW #14 - QA,NATL,,Mike Green,1/21/2014,9/30/2014,a1D70000001Jv4j
+Janus Capital Management,Janus - SOW #15 (Advisor Fund),NATL,,Mike Green,4/1/2014,7/31/2014,a1D70000001KIPB
+Janus Capital Management,Janus - SOW#8 (Niranjan),NATL,,Mike Green,7/1/2013,3/31/2014,a1D70000001Imwh
+Janus Capital Management,Janus - SOW#9 (Architecture),NATL,,Mike Green,8/2/2013,7/31/2014,a1D70000001Imwr
+Janus Capital Management,SOW13-SW Ops,NATL,,Mike Green,12/16/2013,3/31/2014,a1D70000001Jh6J
+Johnson Health Tech,Fitness Database/Application,MW-CHI,,Phil Favia,4/7/2014,12/31/2014,a1D70000001KIJa
+Jones & Bartlett Learning,Taxonomy Server Selection,DC,Enterprise Web,Niels Nielsen,2/21/2016,3/5/2016,a1D39000003R8x2
+Mallinckrodt,Mallinckrodt-CMS Evaluation,MW-STL,Enterprise Web,Sean Hall,8/3/2015,12/11/2015,a1D70000003SOHR
+Manegait,Site Migration to WordPress,NATL,,Sean Hall,5/17/2013,6/28/2013,a1D70000001ImwZ
+ManTech International Corp.,NavAir DSE Prototype,DC,NoSQL,Niels Nielsen,12/14/2014,5/15/2015,a1D70000002i6t8
+MarkLogic,ACA - Brian,NATL,NoSQL,Mike Green,8/3/2015,2/27/2016,a1D70000003S88C
+MarkLogic,ACA - Markus Flatscher,MW-CHI,NoSQL,Doug Gattuso,6/16/2014,3/31/2016,a1D70000001Knwd
+MarkLogic,America's Test Kitchen,NATL,,Mike Green,11/13/2013,12/31/2013,a1D70000001Ioba
+MarkLogic,CGI CMS FFE for Brian Only,DC,,Niels Nielsen,7/1/2013,7/5/2014,a1D70000001Imwg
+MarkLogic,CGI CMS FFE for Joel,DC,,Niels Nielsen,12/9/2013,2/28/2014,a1D70000001JFgU
+MarkLogic,CGI CMS FFE for Mark Only,DC,,Niels Nielsen,10/27/2013,1/10/2015,a1D70000001Imwm
+MarkLogic,CMS FFE for Brian,NATL,,Mike Green,7/1/2014,9/30/2014,a1D70000001KyEv
+MarkLogic,CMS FFE for Mike Ross,DC,,Niels Nielsen,11/3/2014,1/10/2015,a1D70000002MTR7
+MarkLogic,CMS FFE for Praveen,DC,NoSQL,Niels Nielsen,10/27/2013,10/31/2014,a1D70000001ImVF
+MarkLogic,CMS Terremark - Matt Ross,DC,,Niels Nielsen,3/13/2014,1/10/2015,a1D70000001KDgU
+MarkLogic,Fairfax County FLEA Project,DC,,Niels Nielsen,10/29/2012,12/31/2014,a1D70000001ImwO
+MarkLogic,FFM 2015 Mike Ross,DC,NoSQL,Niels Nielsen,1/11/2015,4/17/2015,a1D70000002iS8a
+MarkLogic,FFM for Karl Erisman,DC,,Niels Nielsen,1/2/2014,6/27/2014,a1D70000001Jkmm
+MarkLogic,FFM for Praveen Venkata,DC,,Niels Nielsen,11/1/2014,1/10/2015,a1D70000002MKiq
+MarkLogic,Mark Rosenzweig ACA Q1 2016,DC,NoSQL,Niels Nielsen,1/10/2016,2/29/2016,a1D39000003QwPi
+MarkLogic,MarkLogic for QSSI DSH,DC,,Niels Nielsen,10/27/2013,1/17/2014,a1D70000001Imwa
+MarkLogic,Matt Ross Change Utility 2016 Q1,DC,NoSQL,Niels Nielsen,1/10/2016,2/29/2016,a1D39000003QwPd
+MarkLogic,ML License Referral-Project,NATL,DAM,Mike Green,1/30/2015,2/1/2015,a1D39000003R1Qz
+MarkLogic,MLCS-FFM 2015 Mark Rosenzweig,DC,NoSQL,Niels Nielsen,1/11/2015,1/9/2016,a1D70000002iS8V
+MarkLogic,MLCS-FFM 2015 Matt Ross,DC,NoSQL,Niels Nielsen,1/11/2015,1/9/2016,a1D70000002iS8u
+MarkLogic,MLCS-FFM 2015 Praveen Venkata,DC,NoSQL,Niels Nielsen,1/11/2015,1/9/2016,a1D70000002iS8Q
+MarkLogic,MLCS-FFM Praveen Venkata,DC,NoSQL,Niels Nielsen,1/10/2016,2/29/2016,a1D39000003QwPn
+MarkLogic,USPTO Support,DC,,Niels Nielsen,10/27/2013,2/28/2014,a1D70000001Imx9
+Marriott International,2016 Adaptive Content Support Felix Simon,DC,Enterprise Web,Niels Nielsen,1/10/2016,8/31/2016,a1D39000003QyDD
+Marriott International,Adaptive Content Modeling,DC,Enterprise Web,Niels Nielsen,10/25/2015,3/5/2016,a1D70000003D18q
+Marriott International,CMS Use Case Development - 13-ECP-913,DC,,Niels Nielsen,10/27/2013,11/30/2013,a1D70000001Imwv
+Marriott International,Content Frameworks Documentation,DC,,Niels Nielsen,11/24/2013,1/31/2014,a1D70000001JFJo
+Marriott International,Content Retirement 2015,DC,Enterprise Web,Niels Nielsen,5/17/2015,7/18/2015,a1D70000002lVet
+Marriott International,Content Support 2014 - 14-ECP-975 - Felix Simon,DC,,Niels Nielsen,2/16/2014,12/31/2014,a1D70000001K0xm
+Marriott International,Digital Brand Guide Site Hosting,DC,,Niels Nielsen,10/27/2013,8/31/2014,a1D70000001Imwl
+Marriott International,Digital Site Hosting and Support,DC,Enterprise Web,Niels Nielsen,9/1/2014,12/5/2015,a1D70000002Kln7
+Marriott International,Hosting and Support Services 2016,DC,Enterprise Web,Niels Nielsen,1/31/2016,10/18/2016,a1D39000003R6Xb
+Marriott International,Image Distribution Requirements,DC,Enterprise Web,Niels Nielsen,11/15/2015,3/5/2016,a1D70000003DCPp
+Marriott International,Marriott - Adaptive Content CTD Design - 15-BAS-006,DC,Enterprise Web,Niels Nielsen,7/1/2015,11/28/2015,a1D70000003FYgR
+Marriott International,Marriott - Content Reporting and Migration,DC,Enterprise Web,Niels Nielsen,11/15/2015,2/27/2016,a1D70000003DCSb
+Marriott International,Marriott - Taxonomy Specifications,DC,Enterprise Web,Niels Nielsen,11/15/2015,2/27/2016,a1D70000003DD5G
+Marriott International,MDAM – Possible and Unmatched Images,DC,Enterprise Web,Niels Nielsen,3/22/2015,6/30/2015,a1D70000002jy91
+Marriott International,MDAM Data Management 15-BAS-010,DC,Enterprise Web,Niels Nielsen,10/18/2015,12/31/2015,a1D70000003CxSB
+Marriott International,MDAM Image Matching,DC,Enterprise Web,Niels Nielsen,12/7/2014,1/24/2015,a1D70000002MoJj
+Marriott International,MDAM Image Metadata,DC,Enterprise Web,Niels Nielsen,1/18/2015,6/30/2015,a1D70000002igBf
+Marriott International,Mobile Content Audit,DC,Enterprise Web,Niels Nielsen,5/24/2015,3/31/2016,a1D70000002lW7N
+Marriott International,Planning Legacy Content Migration to MDAM,DC,,Niels Nielsen,7/13/2014,8/30/2014,a1D70000001LYAT
+Marriott International,Presentation Migration,DC,Enterprise Web,Niels Nielsen,10/25/2015,12/31/2015,a1D70000003D18C
+Marriott International,Pre-TNG Framework Retirement,DC,Enterprise Web,Niels Nielsen,10/25/2015,12/31/2015,a1D70000003D18b
+Marriott International,Translation Localization,DC,Enterprise Web,Niels Nielsen,10/25/2015,12/31/2015,a1D70000003D17x
+Marriott International,VCM Support,DC,,Niels Nielsen,10/27/2013,12/28/2013,a1D70000001ImwV
+Marriott International,WEM 8.5 Evaluation,DC,,Niels Nielsen,9/10/2014,10/18/2014,a1D70000002LBQl
+McKesson,McK JBoss Analysis,NATL,Enterprise Web,Mike Green,3/2/2015,4/11/2015,a1D70000002k6QW
+McKesson,McKesson - MCAP,NATL,,Mike Green,9/12/2012,3/31/2014,a1D70000001ImwK
+McKesson,McKesson Connect Development & Support-Apr-Sep 2014,NATL,,Mike Green,3/31/2014,9/30/2014,a1D70000001KIV0
+McKesson,McKesson Connect Development & Support-Apr-Sep15,NATL,Enterprise Web,Mike Green,4/1/2015,10/3/2015,a1D70000002k3zt
+McKesson,McKesson Connect Development & Support-Oct14-Mar15,NATL,,Mike Green,9/29/2014,3/31/2015,a1D70000002M7Y3
+McKesson,McKesson Connect Development & Support-Oct15-Mar16,NATL,Enterprise Web,Mike Green,9/30/2015,3/31/2016,a1D70000003UagR
+McKesson,McKesson Connect Development & Support-Oct-Mar,NATL,,Mike Green,9/29/2013,3/31/2014,a1D70000001ImX1
+McKesson,McKesson Upgrade - Analysis,NATL,,Mike Green,1/13/2014,7/31/2014,a1D70000001JpLZ
+McKesson,McKesson VCM Upgrade - SO-3396,NATL,Enterprise Web,Sean Hall,8/18/2014,3/31/2016,a1D70000002Klr0
+McKesson,McKesson VCM Upgrade - SO-3396 -MW-STL,MW-STL,Enterprise Web,Sean Hall,8/18/2014,4/1/2016,a1D70000003CzpQ
+McKinney (Texas) Independent School District,MISD Sharepoint Upgrade,NATL,,Mike Green,5/27/2013,3/31/2014,a1D70000001Imwb
+McKinney (Texas) Independent School District,MISD Staff Sites,NATL,,Mike Green,8/6/2014,8/31/2014,a1D70000002JJl5
+Mitchell 1,Mitchell1 Support-Project,NATL,NoSQL,Mike Green,6/8/2015,8/15/2015,a1D70000002leZJ
+MK3 Creative,Ingeniux Development,NATL,,Chad Chatfield,2/1/2013,4/30/2013,a1D70000001ImwS
+Motorola Solutions,Moto - OpenText CMS,MW-CHI,,Phil Favia,5/3/2013,12/31/2014,a1D70000001ImwY
+"NBC Universal Media, LLC",NBC Fall 2015-Spring 2016-Project,NATL,NoSQL,Mike Green,8/3/2015,5/14/2016,a1D70000003SFGD
+"NBC Universal Media, LLC",NBC Watch Data Analysis,NATL,NoSQL,Mike Green,6/1/2015,10/31/2015,a1D70000003FQNL
+"NBC Universal Media, LLC",Semantic DAM,NATL,,Mike Green,7/25/2014,3/31/2015,a1D70000002IpwC
+"NBC Universal Media, LLC",SNL40 Extension,NATL,NoSQL,Mike Green,3/16/2015,8/31/2015,a1D70000002jx1Z
+New England Journal of Medicine,Bryce NEJM,NATL,NoSQL,John Holshey,1/1/2016,3/31/2016,a1D39000003QtQd
+New England Journal of Medicine,Bryce Q4 2015,NATL,NoSQL,John Holshey,10/1/2015,12/31/2015,a1D70000003CSHy
+New England Journal of Medicine,Erisman Support,NATL,,John Holshey,8/18/2014,10/17/2014,a1D70000002JW0y
+New England Journal of Medicine,Finalize DR,NATL,,John Holshey,8/4/2014,8/29/2014,a1D700000022X1x
+New England Journal of Medicine,Joe Q4-2015 Q1-2016,NATL,NoSQL,John Holshey,10/1/2015,3/31/2016,a1D70000003CSGS
+New England Journal of Medicine,NEJM Year End Extension,NATL,,John Holshey,11/1/2014,12/31/2014,a1D70000002MSpP
+New England Journal of Medicine,NEJM-MarkLogic Development,NATL,,John Holshey,1/8/2014,10/31/2014,a1D70000001JksH
+New England Journal of Medicine,Q1 NEJM - Joe,NATL,,John Holshey,1/1/2015,3/31/2015,a1D70000002iQNx
+New England Journal of Medicine,Q1 NEJM - Karl,NATL,,John Holshey,1/20/2015,3/31/2015,a1D70000002iQzo
+New England Journal of Medicine,Q2 NEJM - Joe,NATL,NoSQL,John Holshey,4/1/2015,6/30/2015,a1D70000002k4JQ
+New England Journal of Medicine,Q2 NEJM - Karl,NATL,NoSQL,John Holshey,4/1/2015,6/30/2015,a1D70000002k4JV
+New England Journal of Medicine,Q3 NEJM Joe,NATL,NoSQL,John Holshey,7/1/2015,9/30/2015,a1D70000003FQZD
+Oxford University Press,OUP-Evaluation of Storing Importing and Exporting Content,DC,NoSQL,Niels Nielsen,9/27/2015,2/27/2016,a1D70000003UP7q
+Patheos,Patheos 2013 Support,NATL,,Chad Chatfield,1/1/2013,12/31/2013,a1D70000001ImMo
+Patheos,Patheos 2014 Phase 1 Support/Development,NATL,,Chad Chatfield,4/14/2014,7/31/2014,a1D70000001KRjM
+Patheos,Patheos 2014 Support,NATL,,Chad Chatfield,1/1/2014,12/31/2014,a1D70000001JpKl
+Patheos,Patheos 2015 Support,NATL,Enterprise Web,John Holshey,1/1/2015,2/26/2016,a1D70000002iR0I
+Patheos,WordPress Update,NATL,Enterprise Web,John Holshey,1/18/2016,2/26/2016,a1D39000003R0Qu
+Pioneer Electronics,Pioneer RFP Response,NATL,,Mike Green,5/26/2014,6/30/2014,a1D70000001KhSn
+Polymath,Polymath-Six Seeds-Project,NATL,Enterprise Web,John Holshey,10/6/2015,2/29/2016,a1D70000003CQrC
+Priority Payment Systems LLC,PPS - Elastic Architecture-Project,NATL,Big Data,Mike Green,2/29/2016,3/18/2016,a1D39000003R9xl
+Priority Payment Systems LLC,PPS - Hadoop Pilot -Kafka Consulting,NATL,Big Data,Mike Green,12/1/2015,3/31/2016,a1D70000003DFg5
+Priority Payment Systems LLC,PPS Discovery Workshop-Project,NATL,Big Data,Mike Green,10/5/2015,10/16/2015,a1D70000003Ujdv
+Prolung,Prolung-Portal Development,NATL,Enterprise Web,John Holshey,9/14/2015,9/19/2015,a1D70000003UF16
+Raytheon,Raytheon XQuery Class,NATL,,John Holshey,11/18/2013,11/29/2013,a1D70000001JEl7
+Raytheon,Raytheon-Fall 2015 Staff Aug,NATL,NoSQL,John Holshey,9/8/2015,12/31/2015,a1D70000003U2hb
+Raytheon,Raytheon-Ivan 2015,NATL,NoSQL,John Holshey,9/28/2015,12/31/2015,a1D70000003UjHA
+Raytheon,Raytheon-MarkLogic,NATL,,John Holshey,9/17/2013,12/31/2013,a1D70000001Imx0
+Raytheon,Ruisi ML Support,NATL,,John Holshey,7/28/2014,9/30/2014,a1D70000002IyTM
+Real Gravity,Real Gravity | SNI - Butterfly Player Data ingestion,COE,,Andy Kruth,4/1/2014,4/30/2014,a1D70000001KIKT
+Real Gravity,Real Gravity | SNI - Freewheel data ingestion,COE,,Andy Kruth,3/3/2014,3/28/2014,a1D70000001KIKO
+Real Gravity,Real Gravity | SNI - JSON/CSV Migration,COE,,Andy Kruth,1/30/2014,2/14/2014,a1D70000001Jv8f
+Real Gravity,RealGravity,COE,,Andy Kruth,7/1/2013,9/1/2013,a1D70000001Imwk
+Real Gravity,RG Hadoop Implementation,COE,,Andy Kruth,9/1/2013,12/31/2013,a1D70000001Imx2
+Redis Labs,Redis Benchmark,NATL,NoSQL,John Holshey,4/13/2015,5/22/2015,a1D70000002kAPb
+"RGA, Inc.",RGA-Electronic Health Record Search (Elastic/Kibana)-Project,MW-STL,Enterprise Search,Sean Hall,9/21/2015,5/27/2016,a1D70000003UOZL
+SAIC,NARA Annual Move 2014,DC,NoSQL,Niels Nielsen,8/3/2014,2/14/2015,a1D70000002Ipkq
+SAIC,NARA DPE Analysis and Design,DC,,Niels Nielsen,2/2/2014,4/14/2014,a1D70000001Jz8C
+SAIC,NARA MarkLogic Services,DC,,Niels Nielsen,8/25/2013,5/17/2014,a1D70000001Imwx
+SAIC,SAIC-NARA Annual Move 2015,DC,NoSQL,Niels Nielsen,6/7/2015,3/31/2016,a1D70000002lfch
+Scottsdale Health,SHC 2012 Support,NATL,,Chad Chatfield,1/1/2012,1/1/2012,a1D70000001ImxD
+Securian,Securian-OpenText WEM 8.5 Development Support-Project,MW-MN,Big Data,Stu Nelson,10/4/2015,11/14/2015,a1D70000003UbKb
+Securian,SOLR Search Assistance,MW-CHI,,Phil Favia,9/22/2014,12/31/2014,a1D70000002M5bV
+Snap-on Inc.,Global Search,NATL,,Chad Chatfield,10/14/2013,11/21/2013,a1D70000001Imx7
+Snap-on Inc.,Harry Staff Augmentation,NATL,,Chad Chatfield,3/25/2014,9/30/2014,a1D70000001KHPS
+Snap-on Inc.,Highlander - Semantics,NATL,,Chad Chatfield,4/27/2014,8/29/2014,a1D70000001KcL4
+Snap-on Inc.,Semantics - Kurt Staff Aug,NATL,,Chad Chatfield,4/21/2014,4/30/2014,a1D70000001KRhb
+Snap-on Inc.,Snap-On Ontology Manager 2,NATL,NoSQL,Mike Green,1/26/2015,6/13/2015,a1D70000002ijJK
+Snap-on Inc.,Suretrack,NATL,,Chad Chatfield,7/29/2013,12/31/2013,a1D70000001ImMr
+St. Jude Children’s Research Hospital,St Jude - Jan-Mar15,NATL,Enterprise Web,Mike Green,1/4/2015,3/31/2015,a1D70000002iQLQ
+St. Jude Children’s Research Hospital,St Jude - Jul-Aug14,NATL,Enterprise Web,Mike Green,7/1/2014,9/30/2014,a1D70000001KwnJ
+St. Jude Children’s Research Hospital,St Jude - Oct-Dec14,NATL,Enterprise Web,Mike Green,9/29/2014,12/31/2014,a1D70000002M7Y8
+St. Jude Children’s Research Hospital,St Jude Apr-Jun2015,NATL,Enterprise Web,Mike Green,4/1/2015,6/30/2015,a1D70000002k3zj
+St. Jude Children’s Research Hospital,St Jude Genome,NATL,,Mike Green,10/6/2014,11/30/2014,a1D70000002MKDL
+St. Jude Children’s Research Hospital,St Jude Jan-Mar2016,NATL,Enterprise Web,Mike Green,1/1/2016,4/1/2016,a1D39000003QuwC
+St. Jude Children’s Research Hospital,St Jude July-Sep2015,NATL,Enterprise Web,Mike Green,7/1/2015,9/30/2015,a1D70000002dFzn
+St. Jude Children’s Research Hospital,St Jude Oct-Dec2015,NATL,Enterprise Web,Mike Green,10/1/2015,12/31/2015,a1D70000003Uah0
+St. Jude Children’s Research Hospital,St Jude Search Workshop,NATL,,Mike Green,9/8/2014,9/12/2014,a1D70000002L28z
+St. Jude Children’s Research Hospital,St Jude: Mar-Jun14,NATL,Enterprise Web,Mike Green,3/2/2014,7/31/2014,a1D70000001KCTH
+St. Jude Children’s Research Hospital,St Jude: Sept-Dec13-Feb14,NATL,Enterprise Web,Mike Green,12/1/2013,2/28/2014,a1D70000001JGPI
+St. Jude Children’s Research Hospital,St Jude: Sept-Nov 2013,NATL,Enterprise Web,Mike Green,9/1/2013,11/30/2013,a1D70000001InnP
+TagCash,TagCash Startup,NATL,,Mike Green,1/27/2014,2/14/2014,a1D70000001Jv8a
+The RanchBook,Adventure Swap Analysis,NATL,Enterprise Web,Chad Chatfield,12/2/2013,12/27/2013,a1D70000001JGAu
+The RanchBook,The RanchBook Project,NATL,,Chad Chatfield,5/2/2013,12/31/2014,a1D70000001ImwW
+The RanchBook,TRB - Phase 2 & Extension,NATL,Enterprise Web,Chad Chatfield,11/4/2013,5/30/2014,a1D70000001JDcL
+The Stelter Company,Stelter - Digital Marketing Platform,NATL,Enterprise Web,Mike Green,10/1/2013,3/31/2016,a1D70000001Ip1B
+The Stelter Company,Stelter - Ongoing Support,NATL,,Phil Favia,1/27/2012,1/30/2015,a1D70000001ImxE
+The Stelter Company,Stelter - Site Building,MW-CHI,,Phil Favia,6/16/2013,12/31/2014,a1D70000001Knwn
+The Stelter Company,Stelter Site Builds 2014,NATL,,Mike Green,8/18/2014,10/4/2014,a1D70000002JlTN
+United Methodist Communications,CMS Support,NATL,,Chad Chatfield,7/8/2013,3/24/2014,a1D70000001Imwn
+"University of Michigan, LSA",UMich - Ongoing Support,MW-CHI,,Phil Favia,9/1/2010,12/31/2014,a1D70000001ImxC
+"University of Michigan, LSA",UMich - Scholarship,MW-CHI,,Phil Favia,1/1/2013,3/31/2014,a1D70000001ImwP
+University of Texas Medical Branch,UTMB - DATX Project,NATL,NoSQL,Mike Green,6/22/2015,2/29/2016,a1D70000003FRWr
+University of Utah,University of Utah Support 13/14,NATL,,Chad Chatfield,7/1/2013,6/30/2014,a1D70000001ImxF
+University of Virginia Press,Rotunda Modernization Analysis,DC,NoSQL,Niels Nielsen,3/6/2016,4/30/2016,a1D39000003RA6S
+Verato,Verato-Solr Troubleshooting,DC,Enterprise Search,Niels Nielsen,9/24/2015,10/10/2015,a1D70000003UQ3b
+Warner Bros.,Warner Bros. - Dexter,NATL,,Mike Green,3/31/2013,11/30/2013,a1D70000001ImwU
+Warner Bros.,WB-Classics,NATL,,Mike Green,7/1/2013,12/13/2013,a1D70000001Imwj
+Wells Fargo Bank,Consulting Services,NATL,,Mike Green,6/3/2013,12/31/2013,a1D70000001Imwd
+Wells Fargo Bank,Wells Fargo - 8.5 Sizing,NATL,,Sean Hall,10/26/2014,1/31/2015,a1D70000002MdnA
+Wells Fargo Bank,Wells Fargo - 8.5 Sizing (Sean),MW-CHI,,Mike Green,10/26/2014,2/2/2015,a1D70000002MdnF
+Wells Fargo Bank,Wells Fargo - Dev Prepaid,NATL,,Mike Green,5/5/2014,8/31/2014,a1D70000001KYjI
+Wells Fargo Bank,Wells Fargo - EMKR,MW-CHI,,Mike Green,8/25/2014,2/13/2015,a1D70000002M5hd
+Wells Fargo Bank,Wells Fargo - May&June PPD,NATL,,Mike Green,5/1/2014,6/30/2014,a1D70000001KUly
+Wells Fargo Bank,Wells Fargo - PM & BA 2,NATL,,Mike Green,9/2/2013,6/30/2014,a1D70000001Imwy
+Wells Fargo Bank,Wells Fargo - Sean Hall,MW-CHI,,Phil Favia,6/30/2014,12/31/2014,a1D70000001KyCx
+Wells Fargo Bank,Wells Fargo - Staff Agumentation,MW-CHI,,Sean Hall,11/3/2014,7/31/2015,a1D70000002MUTv
+Wells Fargo Bank,Wells Fargo - TM Development,NATL,,Mike Green,8/1/2014,10/31/2014,a1D70000002JraE
+Wells Fargo Bank,Wells Fargo - TM Sean,MW-CHI,,Mike Green,8/1/2014,10/31/2014,a1D70000002JrZu
+Wells Fargo Bank,Wells Fargo 10.5 Upgrade Architect,MW-STL,Enterprise Web,Sean Hall,2/2/2015,3/31/2016,a1D70000002iowR
+Wells Fargo Bank,Wells Fargo OpenText Development,MW-STL,Enterprise Web,Sean Hall,2/9/2015,1/9/2016,a1D70000002it4z
+Wells Fargo Bank,Wells Fargo OpenText Technical Analyst,MW-STL,Enterprise Web,Sean Hall,2/23/2015,7/11/2015,a1D70000002it4p
+Wells Fargo Bank,Wells Fargo PM & BA,NATL,,Mike Green,7/8/2013,8/9/2013,a1D70000001Imwi
+Wells Fargo Bank,Wells Fargo Search,NATL,,Mike Green,4/7/2014,9/30/2014,a1D70000001KLa2
+Wells Fargo Bank,Wells Fargo Solr Consulting,MW-STL,Enterprise Search,Sean Hall,6/1/2015,12/30/2016,a1D70000002dHQp
+Wells Fargo Bank,Wells Fargo STL - 8.5 Sizing,MW-STL,,Sean Hall,10/26/2014,1/31/2015,a1D70000002irVI
+Wells Fargo Bank,Wells Fargo STL - 8.5 Sizing (Sean),MW-STL,,Sean Hall,10/26/2014,2/2/2015,a1D70000002irVN
+Wells Fargo Bank,Wells Fargo STL - EMKR,MW-STL,,Sean Hall,8/25/2014,2/28/2015,a1D70000002itn2
+Wells Fargo Bank,Wells Fargo STL - Staff Augmentation,MW-STL,Enterprise Web,Sean Hall,11/3/2014,8/31/2015,a1D70000002irVD
+Wells Fargo Bank,WEM 8.5 Architect,MW-CHI,Enterprise Web,Sean Hall,11/17/2014,12/31/2014,a1D70000002MdsN
+Wells Fargo Bank,WEM Architecture Strategy,NATL,,Mike Green,10/14/2013,3/31/2014,a1D70000001ImxB
+Wolters Kluwer Health - Learning Research and Practice,Health Library Product Development Consulting,DC,,Niels Nielsen,12/17/2013,8/30/2014,a1D70000001JfQS
+Wolters Kluwer Health - Learning Research and Practice,SOW 15 - TheVault Q4 Support,DC,,Niels Nielsen,10/27/2013,7/26/2014,a1D70000001Imx5
+Wolters Kluwer Health - Learning Research and Practice,SOW 20 - Support for TheVault,DC,NoSQL,Niels Nielsen,8/31/2014,3/14/2015,a1D70000002KlmY
+Wolters Kluwer Health - Learning Research and Practice,SOW 9 The Vault Additional Data,DC,,Niels Nielsen,11/18/2012,12/31/2013,a1D70000001ImwM
+Wolters Kluwer Health - Learning Research and Practice,WK-TheVault Support 2015,DC,NoSQL,Niels Nielsen,3/8/2015,12/31/2015,a1D70000002jpPR
+Wolters Kluwer Law and Business,Editorial Systems Workshop,DC,NoSQL,Niels Nielsen,8/16/2015,9/12/2015,a1D70000003SYU5
+Wolters Kluwer Law and Business,Editorial Workbench Evaluation,DC,,Niels Nielsen,7/27/2014,9/20/2014,a1D70000002Ig1T
+Wolters Kluwer Law and Business,RBSource Filings Backend Development-Project,DC,NoSQL,Niels Nielsen,1/3/2016,4/2/2016,a1D39000003Qsaz
+Wolters Kluwer Law and Business,SECFT Amendment 6,DC,,Niels Nielsen,9/7/2014,1/3/2015,a1D70000002LIcP
+Wolters Kluwer Law and Business,Wolters Kluwer RBSource Support - Amendment 3,DC,,Niels Nielsen,10/27/2013,12/31/2013,a1D70000001ImVG
+Wolters Kluwer Law and Business,Wolters Kluwer RBSource Support - Amendment 4,DC,,Niels Nielsen,1/5/2014,3/29/2014,a1D70000001JkGP
+Wolters Kluwer Law and Business,Wolters Kluwer RBSource Support - Amendment 5,DC,,Niels Nielsen,3/26/2014,7/11/2014,a1D70000001KHee
+,C4WF Web Pages,NATL,,,3/16/2015,4/30/2015,a1D70000002jtWx
