@@ -89,49 +89,51 @@
         </form>
     </div>
 </div>
+
+<!-- ================================================= -->
+<!-- START CONTACT SECTION -->
+<!-- ================================================= -->
 <div class="col-md-9">
     <div class="row well">
         <!-- click-edit-link http://plnkr.co/edit/EsW7mV?p=preview -->
         <!-- plus button http://plnkr.co/edit/xUDrOS?p=preview -->
         <!-- http://vitalets.github.io/angular-xeditable/ -->
-            <div class="col-md-12">
-                    <div>
-                        <div class="pull-left" ng-if="isAuthorized(['editor','admin'])
-                                && contact.firstName === session.firstName
-                                && contact.lastName === session.lastName">
-                            <a href ui-sref="edit({ firstName: session.firstName, lastName: session.lastName})">
-                                <i class="fa fa-2x fa-edit"></i> Edit Resume
-                            </a>
-                        </div>
-                        <div class="pull-right">
-                            <span>Download As:</span>
-                            &#x2003;
-                            <a href="#"><img class="download-icon" src="/assets/icons/pdf.png"/></a>
-                            &#x2003;
-                            <a href="#"><img class="download-icon" src="/assets/icons/word-doc.png"/></a>
-                        </div>
-                    </div>
+        <div class="col-md-12">
+            <div>
+                <div class="pull-left" ng-if="isAuthorized(['editor','admin'])
+                        && contact.firstName === session.firstName
+                        && contact.lastName === session.lastName">
+                    <a href ui-sref="edit({ firstName: session.firstName, lastName: session.lastName})">
+                        <i class="fa fa-2x fa-edit"></i> Edit Resume
+                    </a>
+                </div>
+                <div class="pull-right">
+                    <span>Download As:</span>
+                    &#x2003;
+                    <a href="#"><img class="download-icon" src="/assets/icons/pdf.png"/></a>
+                    &#x2003;
+                    <a href="#"><img class="download-icon" src="/assets/icons/word-doc.png"/></a>
+                </div>
             </div>
-            <div class="col-md-12" ng-if="contact.firstName">
-                <h1    id="contactName">{{ contact.firstName }} {{ contact.lastName }}</h1>
-                <h4><a id="contactEmail"  href="mailto:{{ contact.email }}"> {{ contact.email }} </a></h4>
-                <h4><a id="contactPhone"  href="tel:+{{ contact.phone }}"> {{ contact.phone }} </a></h4>
-                <h4    id="contactTimezone"> {{ contact.timezone }} </h4>
-            </div>
+        </div>
 
+        <div class="col-md-12" ng-if="contact.firstName">
+            <h1    id="contactName">{{ contact.firstName }} {{ contact.lastName }}</h1>
+            <h4><a id="contactEmail"  href="mailto:{{ contact.email }}"> {{ contact.email }} </a></h4>
+            <h4><a id="contactPhone"  href="tel:+{{ contact.phone }}"> {{ contact.phone }} </a></h4>
+            <h4    id="contactTimezone"> {{ contact.timezone }} </h4>
+        </div>
 
-        <!-- skills -->
+<!-- ================================================= -->
+<!-- START SKILLS SECTION -->
+<!-- ================================================= -->
         <div class="col-md-12" ng-if="resume.skills.length > 0">
             <h2>Development Skills</h2>
             <label>Filter By:</label><input type="text" class="form-control" ng-model="view.skillFilter"></input>
             <div class="skills-scroller well">
                 <form>
                     <table class="skills-table">
-                        <!-- <thead>
-                        <th>Skill</th>
-                        <th>Experience</th>
-                        <th>Edit</th>
-                        </thead> -->
+
                         <tr ng-repeat="skillRole in resume.skills | filter:view.skillFilter | orderBy:skillRole.name" ng-init="skillRole.isEditing = false">
                             <td class="icon" ng-if="skillRole.isEditing === false">
                                 <img class="skill-icon" ng-src="{{ view.getSkillImg(skillRole) }}" alt="img"/>
@@ -152,64 +154,33 @@
             </div>
         </div>
 
-            <div class="col-md-12">
-                <h2>Experience:</h2>
-                <div class="exper">
-                    <div ng-repeat="emplyr in resume.employmentHistory">
+        <!-- ================================================= -->
+        <!-- START EXPERIENCE SECTION -->
+        <!-- ================================================= -->
+
+        <div class="col-md-12">
+            <h2>Experience:</h2>
+            <div class="exper">
+                <div ng-repeat="emplyr in resume.employmentHistory">
                     <div class="well light-well" ng-repeat="pos in emplyr.positions">
 
-                        <h3><a href="#" e-placeholder="Service Provider Organization Name">{{ emplyr.employerOrgName || "empty" }}</a></h3>
+                        <h3><a href="#" class="employerOrgName" e-placeholder="Service Provider Organization Name">{{ emplyr.employerOrgName || "empty" }}</a></h3>
+                        <h3 class="clientName">{{ pos.clientName || "empty" }}</h3>
 
-                        <h3>{{ pos.title || "empty" }}</h3>
-                        <h4 ng-if="pos.contractingOrgName">{{ pos.contractingOrgName }}</h4>
+                        <h3 class="positionTitle">{{ pos.title || "empty" }}</h3>
                         <span>{{ pos.startDate || "empty" }}</span>
                         <span> to </span>
                         <span>{{ pos.endDate || "empty" }}</span>
-                        <h4 class="uneditable" ng-if="pos.GlobalDescription">{{ pos.GlobalDescription }}</h4>
-                        <br ng-if="!pos.GlobalDescription"/>
-                        <br ng-if="!pos.GlobalDescription"/>
+
                         <!-- Integrate CKEDitor http://jsfiddle.net/jWANb/2/ -->
                         <div class="resume-descr" ng-model="description" ng-bind-html="pos.description"></div>
 
 
-
-                        <br/>
-                        <!-- <div class="description-noEdit well" ng-bind-html="pos.Description"></div> -->
-                        <!-- START SKILLS TABLE -->
-                        <div ng-if="pos.skills.length > 0">
-                            <table id="skills-table view" class="table table-hover table-condensed">
-                                <thead>
-                                <th>Skill</th>
-                                <th>Role</th>
-                                </thead>
-                                <tr ng-repeat="skillRole in pos.Competency">
-                                    <td>
-                                        <!-- if an image is found, don't bother showing text -->
-                                        <img class="skill-icon" ng-src="{{ getSkillImg(skillRole.CompetencyDisplayName) }}" alt="{{ getSkillImg(skillRole.CompetencyDisplayName) }}" ng-click="rowform.$show();$(this).hide()"/>
-                                        <!-- show text when editing and hide image -->
-                                        <p ng-show="showSkillName" class="CompetencyDisplayName" e-name="CompetencyDisplayName" e-form="rowform" ng-click="rowform.$show()" e-typeahead="skill for skill in skillNames | filter:$viewValue | limitTo:10" typeahead-editable="false">
-                                        <!-- {{ showSkill(skillRole) }} -->
-                                        {{ skillRole.CompetencyDisplayName }}</p>
-                                    </td>
-                                    <td>
-                                        <!-- editable role (text with validation) -->
-                                        <span e-name="CompetencyEvidence" e-form="rowform" ng-click="rowform.$show()">
-                                            {{ skillRole.CompetencyEvidence || 'empty' }}
-                                        </span>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-
                     </div>
-
-
-                        <!-- end emplyr -->
-
                 </div>
             </div>
-
-    </div>
+        </div>
+    <div>
 </div>
 
 
@@ -228,16 +199,65 @@
             var contactPhone    = $('#contactPhone').html();
             var contactTimezone = $('#contactTimezone').html();
 
+            var employerNameArray   = $(".employerOrgName").map(function(){
+                return $(this).text();
+            });
+
+            var positionTitleArray   = $(".clientName").map(function(){
+                return $(this).text();
+            });
+
+            var resumeDescriptionArray   = $(".resume-descr").map(function(){
+                return $(this).text();
+            });
+
+
+
+            // var firtSub = resumeDescriptionArray[0];
+            // var descriptionSize = firstSub.length
+            // var numberOfLines = Math.round(descriptionSize/75)
+            // var linesArray = []
+
+            // for(i=0; i<numberOfLines; i++){
+            //     var starting = 0
+            //     var ending = 75
+
+            //     firtSub.map(function(){
+            //         linesArray.push(firstSub.substring(starting,ending))
+            //     })
+
+            //     starting = ending+1
+            //     ending += 75
+
+            // }
+
 
             // Contact Info
             doc.setFontSize(22);
-            doc.text(20,15, contactName);
-            doc.line(5,22,200,22)
-
+            doc.text(20,12, contactName);
             doc.setFontSize(12);
-            doc.text(15, 30, contactEmail);
-            doc.text(15, 35, contactPhone);
-            doc.text(15, 40, contactTimezone);
+            doc.text(20, 20, contactEmail);
+            doc.text(20, 25, contactPhone);
+            doc.text(20, 30, contactTimezone);
+            doc.line(5,32,205,32)
+
+            // Experience
+            doc.setFontSize(22);
+            doc.text(20,40, "Experience");
+
+
+            var position = 50;
+            for(i=0; i<employerNameArray.length; i++){
+                console.log(position)
+                doc.setFontSize(18)
+                doc.text(20, position, employerNameArray[i])
+                doc.setFontSize(16)
+                doc.text(22, position+5, positionTitleArray[i])
+                doc.setFontSize(12);
+                doc.text(22, position+10, resumeDescriptionArray[i])
+
+                position += 35;
+            }
 
 
 

@@ -8,7 +8,7 @@
   .config(configFunction)
   .controller('ViewCtrl', ViewCtrl);
 
-  configFunction.$inject = ['$stateProvider'];
+
   function configFunction( $stateProvider ) {
     $stateProvider
       .state( 'view', {
@@ -41,7 +41,7 @@
     });
   };
 
-  resumeResponse.$inject = ['resumeService', '$stateParams'];
+
   function resumeResponse(resumeService, $stateParams){
     if ($stateParams.firstName && $stateParams.lastName){
       return resumeService.fetchResume($stateParams.firstName, $stateParams.lastName);
@@ -50,7 +50,7 @@
     }
   };
 
-  contactResponse.$inject = ['contactsService', '$stateParams'];
+
   function contactResponse(contactsService, $stateParams){
     if ($stateParams.firstName && $stateParams.lastName){
       return contactsService.fetchContactByName($stateParams.firstName, $stateParams.lastName);
@@ -59,13 +59,13 @@
     }
   };
 
-  skillsResponse.$inject = ['skillsService', '$stateParams'];
+
   function skillsResponse(skillsService){
     return skillsService.fetchSkills();
   };
 
 
-  ViewCtrl.$inject = ['$http', '$scope', '$filter', 'resumeResponse', 'skillsResponse', 'sessionService', 'AppConfig', 'contactResponse']
+
   function ViewCtrl ($http, $scope, $filter, resumeResponse, skillsResponse, sessionService, AppConfig, contactResponse) {
 
 
