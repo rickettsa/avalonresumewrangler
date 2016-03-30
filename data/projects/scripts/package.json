@@ -2,10 +2,11 @@
   "name": "prepare-project-data",
   "version": "1.0.0",
   "description": "Takes a CSV file, homogenizes and filters the data, and outputs json structure for ingest to Elastic or other json store.",
-  "main": "prepare-project-data.js",
+  "main": "condense-projects.js",
   "dependencies": {},
   "devDependencies": {
-    "csvtojson": "^0.5.2"
+    "csvtojson": "^0.5.2",
+    "lodash": "^4.6.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
