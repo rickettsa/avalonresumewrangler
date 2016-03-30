@@ -90,22 +90,29 @@ class ESDataLayer(DataLayer):
         users = self.es.search(index=self.USER_INDEX, doc_type=self.USER_TYPE, body={ 'query': { 'match_all': {} }}, size=10000)
         return [ u for u in users['hits']['hits'] ]
 
-    def find_users(self, username, firstname, lastname):
-        un_query = fn_query = ln_query = None
+    def find_users(self, username=None, firstname=None, lastname=None, email=None):
+        un_query = fn_query = ln_query = email_query = None
         if username is not None: un_query = filtered_term_query( 'username', username.lower() )
         if firstname is not None: fn_query = filtered_term_query( 'firstName', firstname.lower() )
         if lastname is not None: ln_query = filtered_term_query( 'lastName', lastname.lower() )
-        queries = filter( lambda q: q is not None, [un_query, fn_query, ln_query] )
+        if email is not None: email_query = filtered_term_query( 'email', email.lower() )
+        queries = filter( lambda q: q is not None, [un_query, fn_query, ln_query, email_query] )
         combined_query = bool_query( queries )
         return self.es.search(index=self.USER_INDEX, doc_type=self.USER_TYPE, body=combined_query, size=10000)['hits']
 
     def get_user(self, id):
-        user = self.es.get(index=self.USER_INDEX, doc_type=self.USER_TYPE, id=id)
+        try:
+            user = self.es.get(index=self.USER_INDEX, doc_type=self.USER_TYPE, id=id)
+        except exceptions.NotFoundError:
+            raise Exception('NotFoundError')
         return user
 
     # Delete the specified user and also delete any resumes that reference the user.
     def delete_user(self, id):
-        self.es.delete(index=self.USER_INDEX, doc_type=self.USER_TYPE, id=id)
+        try:
+            self.es.delete(index=self.USER_INDEX, doc_type=self.USER_TYPE, id=id)
+        except exceptions.NotFoundError:
+            raise Exception('NotFoundError')
 
         # maintain referential integrity: delete resumes that reference the now-obsolete user
         resumes = self.find_resumes(userid=id)
@@ -153,12 +160,17 @@ class ESDataLayer(DataLayer):
 
         # exclude specified sections only if they are optional
         exclude_sections = filter(lambda x: x in OPTIONAL_RESUME_KEYS, exclude_sections)
-        #FIXME:should probably remove the ignore=404 in this call
-        resume = self.es.get(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, id=id, _source_exclude=exclude_sections, ignore=[404])
+        try:
+            resume = self.es.get(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, id=id, _source_exclude=exclude_sections)
+        except exceptions.NotFoundError:
+            raise Exception('NotFoundError')
         return resume
 
     def delete_resume(self, id):
-        self.es.delete(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, id=id)
+        try:
+            self.es.delete(index=self.RESUME_INDEX, doc_type=self.RESUME_TYPE, id=id)
+        except exceptions.NotFoundError:
+            raise Exception('NotFoundError')
 
     def _all_matching_skills(self, meta_key, values):
         values = map(lambda x: x.lower(), values)
@@ -202,6 +214,7 @@ class ESDataLayer(DataLayer):
                                     output_jobs.append(rp)
             resume['_source']['employmentHistory'][i] = {
                 'positions': output_jobs,
+                #FIXME:change serviceProviderOrgName to employerOrgName
                 'serviceProviderOrgName': employmentHistory[i]['serviceProviderOrgName']
             }
         return resume
@@ -298,11 +311,17 @@ class ESDataLayer(DataLayer):
         return self.es.search(index=self.PROJECT_INDEX, doc_type=self.PROJECT_TYPE, body=project_query, size=10000)['hits']
 
     def get_project(self, id):
-        project = self.es.get(index=self.PROJECT_INDEX, doc_type=self.PROJECT_TYPE, id=id)
+        try:
+            project = self.es.get(index=self.PROJECT_INDEX, doc_type=self.PROJECT_TYPE, id=id)
+        except exceptions.NotFoundError:
+            raise Exception('NotFoundError')
         return project
 
     def delete_project(self, id):
-        self.es.delete(index=self.PROJECT_INDEX, doc_type=self.PROJECT_TYPE, id=id)
+        try:
+            self.es.delete(index=self.PROJECT_INDEX, doc_type=self.PROJECT_TYPE, id=id)
+        except exceptions.NotFoundError:
+            raise Exception('NotFoundError')
 
     #------- Skills
 
@@ -316,7 +335,10 @@ class ESDataLayer(DataLayer):
         return [ s for s in skills['hits']['hits'] ]
 
     def delete_skill(self, id):
-        self.es.delete(index=self.SKILL_INDEX, doc_type=self.SKILL_TYPE, id=id)
+        try:
+            self.es.delete(index=self.SKILL_INDEX, doc_type=self.SKILL_TYPE, id=id)
+        except exceptions.NotFoundError:
+            raise Exception('NotFoundError')
 
     #------- Stacks
 
@@ -330,7 +352,10 @@ class ESDataLayer(DataLayer):
         return [ s for s in stacks['hits']['hits'] ]
 
     def delete_stack(self, id):
-        self.es.delete(index=self.STACK_INDEX, doc_type=self.STACK_TYPE, id=id)
+        try:
+            self.es.delete(index=self.STACK_INDEX, doc_type=self.STACK_TYPE, id=id)
+        except exceptions.NotFoundError:
+            raise Exception('NotFoundError')
 
     #------- Stack Positions
 
@@ -344,7 +369,10 @@ class ESDataLayer(DataLayer):
         return [ s for s in stackpos['hits']['hits'] ]
 
     def delete_stack_position(self, id):
-        self.es.delete(index=self.STACK_POS_INDEX, doc_type=self.STACK_POS_TYPE, id=id)
+        try:
+            self.es.delete(index=self.STACK_POS_INDEX, doc_type=self.STACK_POS_TYPE, id=id)
+        except exceptions.NotFoundError:
+            raise Exception('NotFoundError')
 
     #-------
 

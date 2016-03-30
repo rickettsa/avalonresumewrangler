@@ -1,0 +1,37 @@
+{
+   "user": {
+      "properties": {
+         "city": {
+            "type": "string"
+         },
+         "email": {
+            "type": "string",
+            "analyzer": "keyword"
+         },
+         "firstName": {
+            "type": "string"
+         },
+         "lastName": {
+            "type": "string"
+         },
+         "phone": {
+            "type": "string"
+         },
+         "state": {
+            "type": "string"
+         },
+         "timezone": {
+            "type": "string"
+         },
+         "userId": {
+            "type": "string"
+         },
+         "username": {
+            "type": "string"
+         },
+         "zip": {
+            "type": "string"
+         }
+      }
+   }
+}

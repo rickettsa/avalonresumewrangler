@@ -32,6 +32,7 @@ DATALAYER_LIB_PATH = GIT_BASE_DIR + '/back-end/api/app/datalayer'
 sys.path.append(DATALAYER_LIB_PATH)
 from datalayer import DataLayer
 
+USER_MAPPING = GIT_BASE_DIR + '/back-end/elasticsearch/mappings/user-mapping.json'
 RESUME_MAPPING = GIT_BASE_DIR + '/back-end/elasticsearch/mappings/resume-mapping.json'
 PROJECT_MAPPING = GIT_BASE_DIR + '/back-end/elasticsearch/mappings/project-mapping.json'
 SKILL_MAPPING = GIT_BASE_DIR + '/back-end/elasticsearch/mappings/skill-mapping.json'
@@ -54,6 +55,8 @@ def create_new_indexes( datalayer ):
     datalayer.create_index( datalayer.STACK_POS_INDEX )
 
 def create_new_mappings( datalayer ):
+    with open(USER_MAPPING, 'r') as f:
+        datalayer.create_mapping( f.read(), datalayer.USER_INDEX, datalayer.USER_TYPE )
     with open(RESUME_MAPPING, 'r') as f:
         datalayer.create_mapping( f.read(), datalayer.RESUME_INDEX, datalayer.RESUME_TYPE )
     with open(PROJECT_MAPPING, 'r') as f:
