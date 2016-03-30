@@ -80,11 +80,13 @@
 
         } else {
           $scope.resume = AppConfig.EMPTY_RESUME._source;
-          $scope.resume.firstName = $stateParams.firstName;
-          $scope.resume.lastName = $stateParams.lastName;
           $scope.resume.email = sessionService.userEmail;
+          $scope.resume.lastName = $stateParams.lastName;
+          $scope.resume.firstName = $stateParams.firstName;
 
-          resumeService.createResume().then(function(response){
+          var userId = sessionService.userId
+
+          resumeService.createResume(userId).then(function(response){
               console.log("SUCCESS : created resume id")
               $scope.global.resumeId = response.data.id;
           }, function(error){
@@ -258,7 +260,10 @@
           $scope.resume.email = sessionService.userEmail;
         }
 
+        $scope.resume.userId = sessionService.userId;
+
         resumeService.updateResume($scope.global.resumeId, $scope.resume)
+        // debugger
           .success(function(resp){
             //is this skill known? if not, make sure you post back to the skills API
             console.log("updateResume SUCCESS");

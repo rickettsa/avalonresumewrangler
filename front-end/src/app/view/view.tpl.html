@@ -186,10 +186,7 @@
 
 <div>
     <h1>Test PDF</h1>
-
     <script type="text/javascript">
-
-
         function genPDF(){
 
             var doc = new jsPDF();
@@ -211,8 +208,6 @@
                 return $(this).text();
             });
 
-
-
             // var firtSub = resumeDescriptionArray[0];
             // var descriptionSize = firstSub.length
             // var numberOfLines = Math.round(descriptionSize/75)
@@ -222,9 +217,9 @@
             //     var starting = 0
             //     var ending = 75
 
-            //     firtSub.map(function(){
+            //
             //         linesArray.push(firstSub.substring(starting,ending))
-            //     })
+            //
 
             //     starting = ending+1
             //     ending += 75
@@ -260,11 +255,8 @@
             }
 
 
-
-
             doc.save('test1.pdf')
         }
-
 
     </script>
 

@@ -41,7 +41,6 @@
     });
   };
 
-
   function resumeResponse(resumeService, $stateParams){
     if ($stateParams.firstName && $stateParams.lastName){
       return resumeService.fetchResume($stateParams.firstName, $stateParams.lastName);
@@ -49,7 +48,6 @@
       return {};
     }
   };
-
 
   function contactResponse(contactsService, $stateParams){
     if ($stateParams.firstName && $stateParams.lastName){
@@ -59,12 +57,9 @@
     }
   };
 
-
   function skillsResponse(skillsService){
     return skillsService.fetchSkills();
   };
-
-
 
   function ViewCtrl ($http, $scope, $filter, resumeResponse, skillsResponse, sessionService, AppConfig, contactResponse) {
 

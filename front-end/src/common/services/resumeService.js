@@ -56,16 +56,16 @@
       });
     };
 
-     function createResume() {
+     function createResume(userid) {
       return $http({
         method  : "POST",
         headers : {'Content-Type': 'application/json'},
         url     : configuration.api + '/api/resumes',
-        data    : {"foo": "bar"} //make sure we are able to post to url
+        data    : {"userId": userid}
       });
     };
 
-    function updateResume(id, payload, userEmail) {
+    function updateResume(id, payload) {
       return $http({
         method  : "PUT",
         headers : {'Content-Type': 'application/json'},

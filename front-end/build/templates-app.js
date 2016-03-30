@@ -825,10 +825,7 @@ angular.module("view/view.tpl.html", []).run(["$templateCache", function($templa
     "\n" +
     "<div>\n" +
     "    <h1>Test PDF</h1>\n" +
-    "\n" +
     "    <script type=\"text/javascript\">\n" +
-    "\n" +
-    "\n" +
     "        function genPDF(){\n" +
     "\n" +
     "            var doc = new jsPDF();\n" +
@@ -850,8 +847,6 @@ angular.module("view/view.tpl.html", []).run(["$templateCache", function($templa
     "                return $(this).text();\n" +
     "            });\n" +
     "\n" +
-    "\n" +
-    "\n" +
     "            // var firtSub = resumeDescriptionArray[0];\n" +
     "            // var descriptionSize = firstSub.length\n" +
     "            // var numberOfLines = Math.round(descriptionSize/75)\n" +
@@ -861,9 +856,9 @@ angular.module("view/view.tpl.html", []).run(["$templateCache", function($templa
     "            //     var starting = 0\n" +
     "            //     var ending = 75\n" +
     "\n" +
-    "            //     firtSub.map(function(){\n" +
+    "            //\n" +
     "            //         linesArray.push(firstSub.substring(starting,ending))\n" +
-    "            //     })\n" +
+    "            //\n" +
     "\n" +
     "            //     starting = ending+1\n" +
     "            //     ending += 75\n" +
@@ -899,11 +894,8 @@ angular.module("view/view.tpl.html", []).run(["$templateCache", function($templa
     "            }\n" +
     "\n" +
     "\n" +
-    "\n" +
-    "\n" +
     "            doc.save('test1.pdf')\n" +
     "        }\n" +
-    "\n" +
     "\n" +
     "    </script>\n" +
     "\n" +
