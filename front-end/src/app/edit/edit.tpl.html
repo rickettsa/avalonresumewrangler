@@ -24,7 +24,7 @@
         <div class="col-md-12" ng-if = "!_.isEmpty(contact)">
             <h2>Experience:</h2>
 
-            <button class = "add-skill btn btn-success" ng-click = "edit.addEmployer('start')"><span class="glyphicon glyphicon-plus"></i> Add Employer</button>
+            <button class = "add-skill btn btn-success" ng-click = "edit.addEmployer('start')"><i class="glyphicon glyphicon-plus"></i> Add Employer</button>
 
             <div ng-repeat = "emplyr in resume.employmentHistory" ng-init="outerIndex = $index">
                 <div class="well" ng-if="resume.employmentHistory[outerIndex].positions.length > 0">
@@ -39,7 +39,7 @@
                         </div>
 
                         <div class="col-md-4 text-right">
-                           <h3><button class = "add-skill btn btn-success" ng-click = "edit.addExperience('start', outerIndex)"><span class="glyphicon glyphicon-plus"></i> Experience</button></span><h3>
+                           <h3><button class = "add-skill btn btn-success" ng-click = "edit.addExperience('start', outerIndex)"><i class="glyphicon glyphicon-plus"></i> Experience</button><h3>
                         </div>
 
 
@@ -88,13 +88,13 @@
                         </div>
 
                         <div class="col-md-12 text-right">
-                            <button class = "add-skill btn btn-success" ng-click = "edit.addExperience('end', outerIndex)"><span class="glyphicon glyphicon-plus"></i> Experience</button></span>
+                            <button class = "add-skill btn btn-success" ng-click = "edit.addExperience('end', outerIndex)"><i class="glyphicon glyphicon-plus"></i> Experience</button></span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <button class = "add-skill btn btn-success" ng-click = "edit.addEmployer('end')"><span class="glyphicon glyphicon-plus"></i> Add Employer</button>
+            <button class = "add-skill btn btn-success" ng-click = "edit.addEmployer('end')"><i class="glyphicon glyphicon-plus"></i> Add Employer</button>
         </div><!-- finish experience section -->
 
 
@@ -104,7 +104,7 @@
         <!-- ================================================= -->
         <div class="col-md-12">
             <h2>Lifetime Skillset:</h2>
-            <button class = "add-skill btn btn-success" ng-click="edit.addLifeSkillRole(resume.skills)"><span class="glyphicon glyphicon-plus"></i> Skill</button>
+            <button class = "add-skill btn btn-success" ng-click="edit.addLifeSkillRole(resume.skills)"><i class="glyphicon glyphicon-plus"></i> Skill</button>
 
             <div class="well light-well">
 
@@ -162,7 +162,7 @@
         <!-- ================================================= -->
         <div class="col-md-12">
             <h2>Education:</h2>
-            <button class = "add-skill btn btn-success" ng-click ="edit.addEducation('start')"><span class="glyphicon glyphicon-plus"></i> Education</button>
+            <button class = "add-skill btn btn-success" ng-click ="edit.addEducation('start')"><i class="glyphicon glyphicon-plus"></i> Education</button>
 
             <div class = "well light-well" ng-repeat = "educ in resume.educationHistory" >
 
@@ -203,7 +203,7 @@
 
 
             </div> <!-- finish div for educ in resume.educationHistory -->
-             <button class = "add-skill btn btn-success" ng-click = "edit.addEducation('end')"><span class="glyphicon glyphicon-plus"></i> Education</button>
+             <button ng-if="!_.isEmpty(resume.educationHistory) && resume.educationHistory.length > 0" class = "add-skill btn btn-success" ng-click = "edit.addEducation('end')"><i class="glyphicon glyphicon-plus"></i> Education</button>
         </div><!-- finish education section -->
 
 
