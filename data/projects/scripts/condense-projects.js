@@ -5,20 +5,24 @@ var async = require("async");
 
 var main = main || {};
 
-GLOBAL.session = {};
-GLOBAL.config = {};
-GLOBAL.config.projects = {};
+main.session = {};
+main.config = {};
+main.data = {};
 
-GLOBAL.config.csvFiles = [
+main.config.csvFiles = [
+    {
+        "objectName": "assigments",
+        "filepath": "/Users/abembecker/Development/Avalon/resumeWrangler/BeanStalk_AvalonResumeWrangler/data/projects/data-samples/assignments.csv"
+    },
     {
         "objectName": "projects",
         "filepath": "/Users/abembecker/Development/Avalon/resumeWrangler/BeanStalk_AvalonResumeWrangler/data/projects/data-samples/rw-accs-projects.csv"
     }
 ];
 
-GLOBAL.config.projects.jsonKeyTranslator = {
+main.config.jsonKeyTranslator = {
     "account": "clientName",
-    "project_name": "projectName",
+    "project_name": "salesForceProjectName",
     "start_date": "startDate",
     "end_date": "endDate",
     "project_manager": "_createProjManager",
@@ -35,7 +39,7 @@ init(handleError, convertCsvToJson);
 function init(handleError, callback){
     console.log("main.init called!");
 
-    //console.log(GLOBAL.config.csvFiles);
+    //console.log(main.config.csvFiles);
 
 
         /*
@@ -147,13 +151,19 @@ function convertCsvToJson(handleError, callback){
 
     console.log("convertCsvToJson");
     var rawJson = {};
-    _.forEach(GLOBAL.config.csvFiles, function(csvFil){
+    _.forEach(main.config.csvFiles, function(csvFil){
         var converter = new Converter({});
             converter.fromFile(csvFil.filepath, function(err,results){
                 if (err){
                     handleError(err);
                 } else {
-                    callback(null, cleanProjectNames, results);
+                    var dataObjName = csvFil.objectName;
+                    main.data[dataObjName] = _.clone(results);
+                    if (csvFil.objectName === 'projects'){
+                        callback(null, cleanProjectNames, results);
+                    } else if (csvFil.objectName === 'assignments'){
+                        console.log("assignments csv processed!");
+                    }
                 }
             });
     });
@@ -173,8 +183,8 @@ function convertCsvToJson(handleError, callback){
                 var nospaceKey = k.replace(" ", '_'); //get rid of spaces
                 var normKey = nospaceKey.toLowerCase();
                 /* if a key translator matches, change the name of the key */
-                if (GLOBAL.config.projects.jsonKeyTranslator.hasOwnProperty(normKey)){
-                    var transName = GLOBAL.config.projects.jsonKeyTranslator[normKey];
+                if (main.config.jsonKeyTranslator.hasOwnProperty(normKey)){
+                    var transName = main.config.jsonKeyTranslator[normKey];
                     newObj[transName] = row[k];
                 } else {
                     newObj[normKey] = row[k];
@@ -182,7 +192,7 @@ function convertCsvToJson(handleError, callback){
             });
             cleanJson.push(newObj);
         });
-    callback(null, done, cleanJson);
+    callback(null, addAssignments, cleanJson);
 }
 
 
@@ -191,40 +201,118 @@ function convertCsvToJson(handleError, callback){
         // console.log("cleanJson");
         // console.log(cleanJson);
 
-    function _getGroupProjName(rawProjName){
-        if (rawProjName.includes("-")){
-            return rawProjName.substr(0, rawProjName.indexOf('-'));
+     var printResultComparison = 0;
+
+    function _getProjDisplayLabel(rawProjName){
+        var fixedName;
+        if (!_.isEmpty(rawProjName)){
+            if (rawProjName.includes("-")){
+                fixedName = rawProjName.substr(0, rawProjName.indexOf('-'));
+            } else {
+                fixedName = rawProjName;
+            }
+            //strip all leading and trailing whitespace
+            fixedName = fixedName.replace(/^\s+|\s+$/g,'');
+
+            return fixedName;
         } else {
-            return rawProjName;
+            return "NoProjName"
         }
     }
 
-    _.forEach(cleanJson, function(ck){
-        var groupName = _getGroupProjName(ck.projectName);
-        console.log("==================");
-        console.log("Client Name:" + ck.clientName);
-        console.log("Raw Project Name");
-        console.log("===");
-        console.log(ck.projectName);
-        console.log("===");
-        console.log("Condensed Project Name");
-        console.log("===");
-        console.log(groupName);
-        console.log("===");
-        console.log("Practice:" + ck.practice);
-        console.log("Region:" + ck.region);
-        console.log("Project Manager:" + ck._createProjManager);
-        console.log("Start Date:");
-        console.log(ck.startDate);
-        console.log("End Date:");
-        console.log(ck.endDate);
-    });
+     /**
+      * Fix Project Names
+      */
+     _.forEach(cleanJson, function(ck) {
+         var groupName = _getProjDisplayLabel(ck.salesForceProjectName);
+         ck.projectDisplayName = groupName;
+     });
 
-     callback(null, null);
+     if (printResultComparison === 1){
+         _.forEach(cleanJson, function(ck){
+             var groupName = _getProjDisplayLabel(ck.salesForceProjectName);
+             console.log("==================");
+             console.log("Client Name:" + ck.clientName);
+             console.log("Raw Project Name");
+             console.log("===");
+             console.log(ck.projectName);
+             console.log("===");
+             console.log("Condensed Project Name");
+             console.log("===");
+             console.log(groupName);
+             console.log("===");
+             console.log("Practice:" + ck.practice);
+             console.log("Region:" + ck.region);
+             console.log("Project Manager:" + ck._createProjManager);
+             console.log("Start Date:");
+             console.log(ck.startDate);
+             console.log("End Date:");
+             console.log(ck.endDate);
+         });
+     }
+
+     //save cleanJson to the main for safe keeping
+     main.data.projects = _.clone(cleanJson);
+
+     callback(null, done, cleanJson);
 }
 
-function done(handleError, callback){
+function addAssignments(handleError, callback) {
+        var combined = [];
+
+    /** Target format
+     * {
+             "title": "Senior Architect",
+             "responsibilities": "Web application architecture",
+             "assignmentName": "salesforce assignment name",
+             "filledBy": [
+                 {
+                 "userId": "33cd654a2",
+                 "startDate": "2000-01-01",
+                 "endDate": "2002-01-01"
+                 }
+             ],
+             "positionSkills": [
+                 "Elasticsearch",
+                 "Python",
+                 "Flask"
+             ]
+             }
+     */
+
+        _.forEach(main.data.projects, function(proj){
+            var positions = [];
+            var matchingAssignments = _.filter(main.data.assigments, function(assn){
+                return assn.Project === proj.salesForceProjectName;
+            });
+            _.forEach(matchingAssignments, function(matchngAssn){
+                var filledByData = {};
+                filledByData.userId = matchngAssn["Resource"];
+                filledByData.startDate = matchngAssn["Start Date"];
+                filledByData.endDate = matchngAssn["End Date"];
+                var positionWrapper = {};
+                positionWrapper.assignmentName = matchngAssn["Assignment Name"];
+                positionWrapper.filledBy = [];
+                positionWrapper.filledBy.push(filledByData);
+                positions.push(positionWrapper);
+            });
+            proj.positions = positions;
+        });
+
+        callback(null, printProjData, main.data.projects);
+}
+
+
+function printProjData(handleError, callback, projectData){
+    console.log(JSON.stringify(projectData, null, 4));
+    callback(null, null);
+}
+
+
+
+function done(handleError, callback, data){hhh
     console.log("DONE");
+    //process.exit();
 }
 
 
