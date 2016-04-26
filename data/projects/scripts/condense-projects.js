@@ -254,7 +254,7 @@ function convertCsvToJson(handleError, callback){
      //save cleanJson to the main for safe keeping
      main.data.projects = _.clone(cleanJson);
 
-     callback(null, done, cleanJson);
+     callback(null, printProjData);
 }
 
 function addAssignments(handleError, callback) {
@@ -299,7 +299,7 @@ function addAssignments(handleError, callback) {
             proj.positions = positions;
         });
 
-        callback(null, printProjData, main.data.projects);
+        callback(null, done, main.data.projects);
 }
 
 
@@ -308,9 +308,7 @@ function printProjData(handleError, callback, projectData){
     callback(null, null);
 }
 
-
-
-function done(handleError, callback, data){hhh
+function done(handleError, callback, data){
     console.log("DONE");
     //process.exit();
 }
