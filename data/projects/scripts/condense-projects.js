@@ -2,6 +2,7 @@
 var Converter = require("csvtojson").Converter;
 var _ = require("lodash");
 var async = require("async");
+var file = require("fs");
 
 var main = main || {};
 
@@ -9,14 +10,15 @@ main.session = {};
 main.config = {};
 main.data = {};
 
+main.config.debug = 0; //set to 1 for lost of debug info
 main.config.csvFiles = [
     {
         "objectName": "assigments",
-        "filepath": "/Users/abembecker/Development/Avalon/resumeWrangler/BeanStalk_AvalonResumeWrangler/data/projects/data-samples/assignments.csv"
+        "filepath": process.env.RW_GIT_BASE_DIR + "/data/projects/data-samples/assignments.csv"
     },
     {
         "objectName": "projects",
-        "filepath": "/Users/abembecker/Development/Avalon/resumeWrangler/BeanStalk_AvalonResumeWrangler/data/projects/data-samples/rw-accs-projects.csv"
+        "filepath": process.env.RW_GIT_BASE_DIR + "/data/projects/data-samples/rw-accs-projects.csv"
     }
 ];
 
@@ -31,15 +33,18 @@ main.config.jsonKeyTranslator = {
 };
 
 function handleError (error) {
-    if (error) return console.error('Uhoh, there was an error', error);
+    if (error) return console.error('Uh-oh, there was an error', error);
 }
 
 init(handleError, convertCsvToJson);
 
 function init(handleError, callback){
-    console.log("main.init called!");
-
-    //console.log(main.config.csvFiles);
+    console.log("===========");
+    console.log("condense-projects.js process started");
+    if (main.config.debug){
+        console.log("main.init called!");
+        console.log(main.config.csvFiles);
+    }
 
 
         /*
@@ -148,8 +153,10 @@ function init(handleError, callback){
 
 function convertCsvToJson(handleError, callback){
     //http://stackoverflow.com/questions/25431518/write-after-end-error-with-express-csvtojson-and-node-walk
+    if (main.config.debug){
+        console.log("convertCsvToJson");
+    }
 
-    console.log("convertCsvToJson");
     var rawJson = {};
     _.forEach(main.config.csvFiles, function(csvFil){
         var converter = new Converter({});
@@ -172,9 +179,12 @@ function convertCsvToJson(handleError, callback){
 
 /** Clean up json structure to make it easy to use **/
  function cleanRawJson(handleError, callback, rawJson){
-    console.log("cleanRawJson called!");
-    // console.log("rawJson:");
-    // console.log(rawJson);
+    if (main.config.debug){
+        console.log("cleanRawJson called!");
+        console.log("rawJson:");
+        console.log(rawJson);
+    }
+
     var cleanJson = [];
         _.forEach(rawJson, function(row){
             var keys = _.keys(row);
@@ -197,9 +207,12 @@ function convertCsvToJson(handleError, callback){
 
 
  function cleanProjectNames(handleError, callback, cleanJson){
-        console.log("cleanProjectNames called!");
-        // console.log("cleanJson");
-        // console.log(cleanJson);
+     if (main.config.debug){
+         console.log("cleanProjectNames called!");
+         console.log("cleanJson");
+         console.log(cleanJson);
+     }
+
 
      var printResultComparison = 0;
 
@@ -228,7 +241,7 @@ function convertCsvToJson(handleError, callback){
          ck.projectDisplayName = groupName;
      });
 
-     if (printResultComparison === 1){
+     if (printResultComparison === 1 || main.config.debug){
          _.forEach(cleanJson, function(ck){
              var groupName = _getProjDisplayLabel(ck.salesForceProjectName);
              console.log("==================");
@@ -254,7 +267,7 @@ function convertCsvToJson(handleError, callback){
      //save cleanJson to the main for safe keeping
      main.data.projects = _.clone(cleanJson);
 
-     callback(null, printProjData);
+     callback(null, writeProjectFiles);
 }
 
 function addAssignments(handleError, callback) {
@@ -303,13 +316,31 @@ function addAssignments(handleError, callback) {
 }
 
 
-function printProjData(handleError, callback, projectData){
-    console.log(JSON.stringify(projectData, null, 4));
+function writeProjectFiles(handleError, callback, projectData){
+    if (main.config.debug){
+        console.log(JSON.stringify(projectData, null, 4));
+    }
+
+    _.forEach(projectData, function(node){
+        var filename = node.salesforceRecordId + '.json';
+        var filepath = process.env.RW_GIT_BASE_DIR + '/data/projects/toLoad/' + filename;
+        var contents = file.writeFile(filepath, JSON.stringify(node, null, 4),
+            function(error){
+                console.log("writing: " + filepath);
+                if (error){
+                    console.log("Arrgggghh! Error: ");
+                    console.log(error);
+                }
+            }
+        );
+    });
+
     callback(null, null);
 }
 
 function done(handleError, callback, data){
-    console.log("DONE");
+        console.log("condense-projects.js process completed");
+        console.log("===========");
     //process.exit();
 }
 
