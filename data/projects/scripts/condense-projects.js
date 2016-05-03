@@ -3,6 +3,7 @@ var Converter = require("csvtojson").Converter;
 var _ = require("lodash");
 var async = require("async");
 var file = require("fs");
+var moment = require("moment");
 
 var main = main || {};
 
@@ -192,12 +193,24 @@ function convertCsvToJson(handleError, callback){
             _.forEach(keys, function(k){
                 var nospaceKey = k.replace(" ", '_'); //get rid of spaces
                 var normKey = nospaceKey.toLowerCase();
+                var transValue;
+                /* if the value is a date, put it into the correct format */
+                var dateSlashRegexp = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/g;
+
+                if (row[k].match(dateSlashRegexp)){
+                    var myDate = moment(row[k], "M/D/yyyy");
+                    transValue = myDate.format("YYYY-MM-DD");
+                } else {
+                    transValue = row[k];
+                }
+
+
                 /* if a key translator matches, change the name of the key */
                 if (main.config.jsonKeyTranslator.hasOwnProperty(normKey)){
                     var transName = main.config.jsonKeyTranslator[normKey];
-                    newObj[transName] = row[k];
+                    newObj[transName] = transValue;
                 } else {
-                    newObj[normKey] = row[k];
+                    newObj[normKey] = transValue;
                 }
             });
             cleanJson.push(newObj);
@@ -301,8 +314,8 @@ function addAssignments(handleError, callback) {
             _.forEach(matchingAssignments, function(matchngAssn){
                 var filledByData = {};
                 filledByData.userId = matchngAssn["Resource"];
-                filledByData.startDate = matchngAssn["Start Date"];
-                filledByData.endDate = matchngAssn["End Date"];
+                filledByData.startDate = moment(matchngAssn["Start Date"], "M/D/yyyy").format("YYYY-MM-DD");
+                filledByData.endDate = moment(matchngAssn["End Date"], "M/D/yyyy").format("YYYY-MM-DD");
                 var positionWrapper = {};
                 positionWrapper.assignmentName = matchngAssn["Assignment Name"];
                 positionWrapper.filledBy = [];
