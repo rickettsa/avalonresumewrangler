@@ -119,9 +119,12 @@
 
         <div class="col-md-12" ng-if="contact.firstName">
             <h1    id="contactName">{{ contact.firstName }} {{ contact.lastName }}</h1>
+            <h4> Employee Title: {{resume.EmploymentHistory.employeeSuperTitle}}</h4>
+            <h4> Employee Professional Summary: {{resume.EmploymentHistory.employeeProfessionalSummary}}</h4>
             <h4><a id="contactEmail"  href="mailto:{{ contact.email }}"> {{ contact.email }} </a></h4>
             <h4><a id="contactPhone"  href="tel:+{{ contact.phone }}"> {{ contact.phone }} </a></h4>
-            <h4    id="contactTimezone"> {{ contact.timezone }} </h4>
+            <h5    id="contactTimezone"> {{ contact.timezone }} </h5>
+
         </div>
 
 <!-- ================================================= -->
@@ -202,7 +205,10 @@
     <div class="col-xs-4 chosen-resume-aside">
       <div ng-for="emplyr in resume.employmentHistory">
         <h4>Title</h4>
-        <h5>Consultant</h5>
+        <h5>{{resume.EmploymentHistory.employeeSuperTitle}}</h5>
+
+        <h4>Professional Summary</h4>
+        <h5>{{resume.EmploymentHistory.employeeProfessionalSummary}}</h5>
       </div>
 
 

@@ -47,16 +47,33 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "        <!-- http://vitalets.github.io/angular-xeditable/ -->\n" +
     "        <div class=\"col-md-6\">\n" +
     "            <h1>{{ contact.firstName }} {{ contact.lastName }}</h1>\n" +
-    "            <h3>Hire Date: <a href = \"#\" e-required e-placeholder = \"Hire Date\" editable-text = \"resume.EmploymentHistory.EmployerOrg.HireDate\" onaftersave = \"edit.updateResume()\"> {{ resume.EmploymentHistory.EmployerOrg.HireDate || \"empty\" }}</a></h3>\n" +
+    "            <h3>Hire Date:\n" +
+    "            <a href = \"#\"\n" +
+    "            e-required e-placeholder = \"Hire Date\"\n" +
+    "            editable-text= \"resume.EmploymentHistory.EmployerOrg.HireDate\"\n" +
+    "            onaftersave = \"edit.updateResume()\">\n" +
+    "            {{ resume.EmploymentHistory.EmployerOrg.HireDate || \"empty\" }}\n" +
+    "            </a></h3>\n" +
     "            <h3><a href= \"mailto : {{ contact.email }}\">{{ contact.email }}</a></h3>\n" +
-    "            <h3><a href= \"tel: +{{ contact.phone }}\">{{ contact.phone }}</a></h3>\n" +
+    "            <h3><a href= \"tel: +{{ contact.phone }}\"> {{ contact.phone }}</a></h3>\n" +
     "        </div>\n" +
     "\n" +
     "        <div class=\"col-md-6\">\n" +
-    "            <h2>Generic Title</h2>\n" +
-    "            <h3><a href= \"#\" e-required e-placeholder = \"Generic Title\" editable-text = \"resume.EmploymentHistory.EmployerOrg.GenericTitle\" onaftersave=\"edit.updateResume()\">{{ resume.EmploymentHistory.EmployerOrg.GenericTitle || \"empty\" }}</a></h3>\n" +
-    "            <h2>General Description</h2>\n" +
-    "                <p><a href = \"#\" e-required e-placeholder = \"Overall Description\" editable-text = \"resume.EmploymentHistory.EmployerOrg.OverallDescription\" onaftersave= \"edit.updateResume()\">{{ resume.EmploymentHistory.EmployerOrg.OverallDescription || \"empty\" }}</a></p>\n" +
+    "            <h2>Employee Position at Avalon</h2>\n" +
+    "            <h3>\n" +
+    "            <a href= \"#\"\n" +
+    "            e-required e-placeholder = \"Employee Position at Avalon\"\n" +
+    "            editable-text = \"resume.EmploymentHistory.employeeSuperTitle\"\n" +
+    "            onaftersave=\"edit.updateResume()\">\n" +
+    "            {{ resume.EmploymentHistory.employeeSuperTitle || \"empty\" }}\n" +
+    "            </a></h3>\n" +
+    "\n" +
+    "            <h2>Employee Professional Summary</h2>\n" +
+    "            <p><a href = \"#\"\n" +
+    "            e-required e-placeholder = \"Employee Professional Summary\"\n" +
+    "            editable-text = \"resume.EmploymentHistory.employeeProfessionalSummary\" onaftersave= \"edit.updateResume()\">\n" +
+    "            {{ resume.EmploymentHistory.employeeProfessionalSummary || \"empty\" }}\n" +
+    "            </a></p>\n" +
     "        </div>\n" +
     "\n" +
     "\n" +
@@ -66,77 +83,85 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "        <div class=\"col-md-12\" ng-if = \"!_.isEmpty(contact)\">\n" +
     "            <h2>Experience:</h2>\n" +
     "\n" +
-    "            <button class = \"add-skill btn btn-success\" ng-click = \"edit.addEmployer('start')\"><span class=\"glyphicon glyphicon-plus\"></i> Add Employer</button>\n" +
+    "            <button class = \"add-skill btn btn-success\" ng-click = \"edit.addEmployer('start')\"><i class=\"glyphicon glyphicon-plus\"></i> Add Employer</button>\n" +
     "\n" +
     "            <div ng-repeat = \"emplyr in resume.employmentHistory\" ng-init=\"outerIndex = $index\">\n" +
     "                <div class=\"well\" ng-if=\"resume.employmentHistory[outerIndex].positions.length > 0\">\n" +
     "                    <div class=\"row\" >\n" +
-    "\n" +
     "                        <div class=\"col-md-8\">\n" +
-    "                            <h3><a href                  = \"#\"\n" +
-    "                                e-required e-placeholder = \"Service Provider Organization Name\"\n" +
-    "                                editable-text            = \"emplyr.employerOrgName\"\n" +
-    "                                onaftersave              = \"edit.updateResume()\">\n" +
-    "                                {{ emplyr.employerOrgName || \"Service Provider Organization Name\" }}</a></h3>\n" +
+    "                            <h3><a href = \"#\"\n" +
+    "                            e-required e-placeholder = \"Service Provider Organization Name\"\n" +
+    "                            editable-text = \"emplyr.employerOrgName\"\n" +
+    "                            onaftersave = \"edit.updateResume()\">\n" +
+    "                            {{ emplyr.employerOrgName || \"Service Provider Organization Name\" }}\n" +
+    "                            </a></h3>\n" +
     "                        </div>\n" +
     "\n" +
     "                        <div class=\"col-md-4 text-right\">\n" +
-    "                           <h3><button class = \"add-skill btn btn-success\" ng-click = \"edit.addExperience('start', outerIndex)\"><span class=\"glyphicon glyphicon-plus\"></i> Experience</button></span><h3>\n" +
+    "                           <h3><button class = \"add-skill btn btn-success\" ng-click = \"edit.addExperience('start', outerIndex)\"><i class=\"glyphicon glyphicon-plus\"></i> Experience</button><h3>\n" +
     "                        </div>\n" +
     "\n" +
     "\n" +
     "                        <div ng-repeat = \"pos in emplyr.positions\" ng-init = \"innerIndex= $index\">\n" +
     "                            <div class=\"well light-well\">\n" +
     "                                <div class=\"col-md-12 text-right\">\n" +
-    "                                    <button class=\"btn btn-danger btn-xs\" ng-click = \"edit.deletePosition(outerIndex, innerIndex)\">Delete Position</button>\n" +
+    "                                    <button class=\"btn btn-danger btn-xs\"\n" +
+    "                                    ng-click = \"edit.deletePosition(outerIndex, innerIndex)\">Delete Position</button>\n" +
     "                                </div>\n" +
     "\n" +
+    "                                <h3><a href = \"#\"\n" +
+    "                                e-required e-placeholder = \"Contracting Organization Name\"\n" +
+    "                                editable-text            = \"pos.clientName\"\n" +
+    "                                onaftersave              = \"edit.updateResume()\">\n" +
+    "                                {{ pos.clientName || \"Contracting Organization Name\" }}\n" +
+    "                                </a></h3>\n" +
     "\n" +
-    "                                <h3><a href                  = \"#\"\n" +
-    "                                    e-required e-placeholder = \"Contracting Organization Name\"\n" +
-    "                                    editable-text            = \"pos.clientName\"\n" +
-    "                                    onaftersave              = \"edit.updateResume()\">\n" +
-    "                                    {{ pos.clientName || \"Contracting Organization Name\" }}</a></h3>\n" +
+    "                                <h3><a href = \"#\"\n" +
+    "                                e-required e-placeholder = \"Position Title\"\n" +
+    "                                editable-text            = \"pos.title\"\n" +
+    "                                onaftersave              = \"edit.updateResume()\">\n" +
+    "                                {{ pos.title || \"Position Title\" }}\n" +
+    "                                </a></h3>\n" +
     "\n" +
-    "                                <h3><a href                  = \"#\"\n" +
-    "                                    e-required e-placeholder = \"Position Title\"\n" +
-    "                                    editable-text            = \"pos.title\"\n" +
-    "                                    onaftersave              = \"edit.updateResume()\">\n" +
-    "                                    {{ pos.title || \"Position Title\" }}</a></h3>\n" +
+    "                                <span><a href = \"#\"\n" +
+    "                                e-required e-placeholder = \"Start Date\"\n" +
+    "                                editable-text            = \"pos.startDate\"\n" +
+    "                                onaftersave              = \"edit.updateResume()\">\n" +
+    "                                {{ pos.startDate || \"Start Date\" }}\n" +
+    "                                </a></span><span> to </span>\n" +
     "\n" +
-    "                                <span><a href                = \"#\"\n" +
-    "                                    e-required e-placeholder = \"Start Date\"\n" +
-    "                                    editable-text            = \"pos.startDate\"\n" +
-    "                                    onaftersave              = \"edit.updateResume()\">\n" +
-    "                                    {{ pos.startDate || \"Start Date\" }}</a></span><span> to </span>\n" +
+    "                                <span><a href = \"#\"\n" +
+    "                                e-required e-placeholder = \"End Date\"\n" +
+    "                                editable-text            = \"pos.endDate\"\n" +
+    "                                onaftersave              = \"edit.updateResume()\">\n" +
+    "                                {{ pos.endDate || \"End Date\" }}\n" +
+    "                                </a></span>\n" +
     "\n" +
-    "                                <span><a href                = \"#\"\n" +
-    "                                    e-required e-placeholder = \"End Date\"\n" +
-    "                                    editable-text            = \"pos.endDate\"\n" +
-    "                                    onaftersave              = \"edit.updateResume()\">\n" +
-    "                                    {{ pos.endDate || \"End Date\" }}</a></span>\n" +
-    "\n" +
-    "                                <h4 class=\"uneditable\" ng-if=\"pos.globalDescription\">{{ pos.globalDescription }}</h4>\n" +
+    "                                <h4 class=\"uneditable\"\n" +
+    "                                ng-if=\"pos.globalDescription\">\n" +
+    "                                {{ pos.globalDescription }}\n" +
+    "                                </h4>\n" +
     "\n" +
     "                                <br ng-if = \"!pos.GlobalDescription\"/>\n" +
     "                                <br ng-if = \"!pos.GlobalDescription\"/>\n" +
     "\n" +
     "                                <!-- Integrate CKEDitor http://jsfiddle.net/jWANb/2/ -->\n" +
-    "                                <div class   = \"ck-editor\"\n" +
-    "                                    ng-model = \"pos.description\"\n" +
-    "                                    ng-init  = \"description = pos.description\">\n" +
-    "                                    {{ pos.description }}</div>\n" +
+    "                                <div class = \"ck-editor\"\n" +
+    "                                ng-model = \"pos.description\"\n" +
+    "                                ng-init  = \"description = pos.description\">\n" +
+    "                                {{ pos.description }}\n" +
+    "                                </div>\n" +
     "                            </div>\n" +
     "                        </div>\n" +
     "\n" +
     "                        <div class=\"col-md-12 text-right\">\n" +
-    "                            <button class = \"add-skill btn btn-success\" ng-click = \"edit.addExperience('end', outerIndex)\"><span class=\"glyphicon glyphicon-plus\"></i> Experience</button></span>\n" +
+    "                            <button class = \"add-skill btn btn-success\" ng-click = \"edit.addExperience('end', outerIndex)\"><i class=\"glyphicon glyphicon-plus\"></i> Experience</button></span>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
     "                </div>\n" +
     "            </div>\n" +
     "\n" +
-    "            <button class = \"add-skill btn btn-success\" ng-click = \"edit.addEmployer('end')\"><span class=\"glyphicon glyphicon-plus\"></i> Add Employer</button>\n" +
+    "            <button class = \"add-skill btn btn-success\" ng-click = \"edit.addEmployer('end')\"><i class=\"glyphicon glyphicon-plus\"></i> Add Employer</button>\n" +
     "        </div><!-- finish experience section -->\n" +
     "\n" +
     "\n" +
@@ -146,7 +171,7 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "        <!-- ================================================= -->\n" +
     "        <div class=\"col-md-12\">\n" +
     "            <h2>Lifetime Skillset:</h2>\n" +
-    "            <button class = \"add-skill btn btn-success\" ng-click=\"edit.addLifeSkillRole(resume.skills)\"><span class=\"glyphicon glyphicon-plus\"></i> Skill</button>\n" +
+    "            <button class = \"add-skill btn btn-success\" ng-click=\"edit.addLifeSkillRole(resume.skills)\"><i class=\"glyphicon glyphicon-plus\"></i> Skill</button>\n" +
     "\n" +
     "            <div class=\"well light-well\">\n" +
     "\n" +
@@ -204,14 +229,11 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "        <!-- ================================================= -->\n" +
     "        <div class=\"col-md-12\">\n" +
     "            <h2>Education:</h2>\n" +
-    "            <button class = \"add-skill btn btn-success\" ng-click =\"edit.addEducation('start')\"><span class=\"glyphicon glyphicon-plus\"></i> Education</button>\n" +
-    "\n" +
+    "            <button class = \"add-skill btn btn-success\" ng-click =\"edit.addEducation('start')\"><i class=\"glyphicon glyphicon-plus\"></i> Education</button>\n" +
     "            <div class = \"well light-well\" ng-repeat = \"educ in resume.educationHistory\" >\n" +
-    "\n" +
     "                <div class=\"col-md-12 text-right\">\n" +
     "                    <button class=\"btn btn-danger btn-xs\" ng-click =\"edit.deleteEducation($index)\">Delete Education</button>\n" +
     "                </div>\n" +
-    "\n" +
     "\n" +
     "                <h3><a href                  = \"#\"\n" +
     "                    e-required e-placeholder = \"Degree Mayor\"\n" +
@@ -243,9 +265,8 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "                    onaftersave              = \"edit.updateResume()\">\n" +
     "                    {{ educ.endDate || \"End Date\" }}</a></span>\n" +
     "\n" +
-    "\n" +
     "            </div> <!-- finish div for educ in resume.educationHistory -->\n" +
-    "             <button class = \"add-skill btn btn-success\" ng-click = \"edit.addEducation('end')\"><span class=\"glyphicon glyphicon-plus\"></i> Education</button>\n" +
+    "             <button ng-if=\"!_.isEmpty(resume.educationHistory) && resume.educationHistory.length > 0\" class = \"add-skill btn btn-success\" ng-click = \"edit.addEducation('end')\"><i class=\"glyphicon glyphicon-plus\"></i> Education</button>\n" +
     "        </div><!-- finish education section -->\n" +
     "\n" +
     "\n" +
@@ -758,9 +779,12 @@ angular.module("view/view.tpl.html", []).run(["$templateCache", function($templa
     "\n" +
     "        <div class=\"col-md-12\" ng-if=\"contact.firstName\">\n" +
     "            <h1    id=\"contactName\">{{ contact.firstName }} {{ contact.lastName }}</h1>\n" +
+    "            <h4> Employee Title: {{resume.EmploymentHistory.employeeSuperTitle}}</h4>\n" +
+    "            <h4> Employee Professional Summary: {{resume.EmploymentHistory.employeeProfessionalSummary}}</h4>\n" +
     "            <h4><a id=\"contactEmail\"  href=\"mailto:{{ contact.email }}\"> {{ contact.email }} </a></h4>\n" +
     "            <h4><a id=\"contactPhone\"  href=\"tel:+{{ contact.phone }}\"> {{ contact.phone }} </a></h4>\n" +
-    "            <h4    id=\"contactTimezone\"> {{ contact.timezone }} </h4>\n" +
+    "            <h5    id=\"contactTimezone\"> {{ contact.timezone }} </h5>\n" +
+    "\n" +
     "        </div>\n" +
     "\n" +
     "<!-- ================================================= -->\n" +
@@ -841,7 +865,10 @@ angular.module("view/view.tpl.html", []).run(["$templateCache", function($templa
     "    <div class=\"col-xs-4 chosen-resume-aside\">\n" +
     "      <div ng-for=\"emplyr in resume.employmentHistory\">\n" +
     "        <h4>Title</h4>\n" +
-    "        <h5>Consultant</h5>\n" +
+    "        <h5>{{resume.EmploymentHistory.employeeSuperTitle}}</h5>\n" +
+    "\n" +
+    "        <h4>Professional Summary</h4>\n" +
+    "        <h5>{{resume.EmploymentHistory.employeeProfessionalSummary}}</h5>\n" +
     "      </div>\n" +
     "\n" +
     "\n" +
@@ -869,13 +896,6 @@ angular.module("view/view.tpl.html", []).run(["$templateCache", function($templa
     "    </div> <!-- content col end -->\n" +
     "  </div> <!-- row end -->\n" +
     "</div> <!-- resume-preview-parent div end -->\n" +
-    "\n" +
-    "\n" +
-    "\n" +
-    "\n" +
-    "\n" +
-    "\n" +
-    "\n" +
     "\n" +
     "\n" +
     "");

@@ -68,6 +68,9 @@
       return skillsService.fetchSkills();
     };
 
+   // ------------------------------------
+   // start Edit Controller
+   // ------------------------------------
     function EditCtrl ($http, $scope, $filter, resumeResponse, skillsResponse, AppConfig, contactResponse, resumeService,
       $stateParams, skillsService, sessionService){
 

@@ -5,16 +5,33 @@
         <!-- http://vitalets.github.io/angular-xeditable/ -->
         <div class="col-md-6">
             <h1>{{ contact.firstName }} {{ contact.lastName }}</h1>
-            <h3>Hire Date: <a href = "#" e-required e-placeholder = "Hire Date" editable-text = "resume.EmploymentHistory.EmployerOrg.HireDate" onaftersave = "edit.updateResume()"> {{ resume.EmploymentHistory.EmployerOrg.HireDate || "empty" }}</a></h3>
+            <h3>Hire Date:
+            <a href = "#"
+            e-required e-placeholder = "Hire Date"
+            editable-text= "resume.EmploymentHistory.EmployerOrg.HireDate"
+            onaftersave = "edit.updateResume()">
+            {{ resume.EmploymentHistory.EmployerOrg.HireDate || "empty" }}
+            </a></h3>
             <h3><a href= "mailto : {{ contact.email }}">{{ contact.email }}</a></h3>
-            <h3><a href= "tel: +{{ contact.phone }}">{{ contact.phone }}</a></h3>
+            <h3><a href= "tel: +{{ contact.phone }}"> {{ contact.phone }}</a></h3>
         </div>
 
         <div class="col-md-6">
-            <h2>Generic Title</h2>
-            <h3><a href= "#" e-required e-placeholder = "Generic Title" editable-text = "resume.EmploymentHistory.EmployerOrg.GenericTitle" onaftersave="edit.updateResume()">{{ resume.EmploymentHistory.EmployerOrg.GenericTitle || "empty" }}</a></h3>
-            <h2>General Description</h2>
-                <p><a href = "#" e-required e-placeholder = "Overall Description" editable-text = "resume.EmploymentHistory.EmployerOrg.OverallDescription" onaftersave= "edit.updateResume()">{{ resume.EmploymentHistory.EmployerOrg.OverallDescription || "empty" }}</a></p>
+            <h2>Employee Position at Avalon</h2>
+            <h3>
+            <a href= "#"
+            e-required e-placeholder = "Employee Position at Avalon"
+            editable-text = "resume.EmploymentHistory.employeeSuperTitle"
+            onaftersave="edit.updateResume()">
+            {{ resume.EmploymentHistory.employeeSuperTitle || "empty" }}
+            </a></h3>
+
+            <h2>Employee Professional Summary</h2>
+            <p><a href = "#"
+            e-required e-placeholder = "Employee Professional Summary"
+            editable-text = "resume.EmploymentHistory.employeeProfessionalSummary" onaftersave= "edit.updateResume()">
+            {{ resume.EmploymentHistory.employeeProfessionalSummary || "empty" }}
+            </a></p>
         </div>
 
 
@@ -29,13 +46,13 @@
             <div ng-repeat = "emplyr in resume.employmentHistory" ng-init="outerIndex = $index">
                 <div class="well" ng-if="resume.employmentHistory[outerIndex].positions.length > 0">
                     <div class="row" >
-
                         <div class="col-md-8">
-                            <h3><a href                  = "#"
-                                e-required e-placeholder = "Service Provider Organization Name"
-                                editable-text            = "emplyr.employerOrgName"
-                                onaftersave              = "edit.updateResume()">
-                                {{ emplyr.employerOrgName || "Service Provider Organization Name" }}</a></h3>
+                            <h3><a href = "#"
+                            e-required e-placeholder = "Service Provider Organization Name"
+                            editable-text = "emplyr.employerOrgName"
+                            onaftersave = "edit.updateResume()">
+                            {{ emplyr.employerOrgName || "Service Provider Organization Name" }}
+                            </a></h3>
                         </div>
 
                         <div class="col-md-4 text-right">
@@ -46,44 +63,52 @@
                         <div ng-repeat = "pos in emplyr.positions" ng-init = "innerIndex= $index">
                             <div class="well light-well">
                                 <div class="col-md-12 text-right">
-                                    <button class="btn btn-danger btn-xs" ng-click = "edit.deletePosition(outerIndex, innerIndex)">Delete Position</button>
+                                    <button class="btn btn-danger btn-xs"
+                                    ng-click = "edit.deletePosition(outerIndex, innerIndex)">Delete Position</button>
                                 </div>
 
+                                <h3><a href = "#"
+                                e-required e-placeholder = "Contracting Organization Name"
+                                editable-text            = "pos.clientName"
+                                onaftersave              = "edit.updateResume()">
+                                {{ pos.clientName || "Contracting Organization Name" }}
+                                </a></h3>
 
-                                <h3><a href                  = "#"
-                                    e-required e-placeholder = "Contracting Organization Name"
-                                    editable-text            = "pos.clientName"
-                                    onaftersave              = "edit.updateResume()">
-                                    {{ pos.clientName || "Contracting Organization Name" }}</a></h3>
+                                <h3><a href = "#"
+                                e-required e-placeholder = "Position Title"
+                                editable-text            = "pos.title"
+                                onaftersave              = "edit.updateResume()">
+                                {{ pos.title || "Position Title" }}
+                                </a></h3>
 
-                                <h3><a href                  = "#"
-                                    e-required e-placeholder = "Position Title"
-                                    editable-text            = "pos.title"
-                                    onaftersave              = "edit.updateResume()">
-                                    {{ pos.title || "Position Title" }}</a></h3>
+                                <span><a href = "#"
+                                e-required e-placeholder = "Start Date"
+                                editable-text            = "pos.startDate"
+                                onaftersave              = "edit.updateResume()">
+                                {{ pos.startDate || "Start Date" }}
+                                </a></span><span> to </span>
 
-                                <span><a href                = "#"
-                                    e-required e-placeholder = "Start Date"
-                                    editable-text            = "pos.startDate"
-                                    onaftersave              = "edit.updateResume()">
-                                    {{ pos.startDate || "Start Date" }}</a></span><span> to </span>
+                                <span><a href = "#"
+                                e-required e-placeholder = "End Date"
+                                editable-text            = "pos.endDate"
+                                onaftersave              = "edit.updateResume()">
+                                {{ pos.endDate || "End Date" }}
+                                </a></span>
 
-                                <span><a href                = "#"
-                                    e-required e-placeholder = "End Date"
-                                    editable-text            = "pos.endDate"
-                                    onaftersave              = "edit.updateResume()">
-                                    {{ pos.endDate || "End Date" }}</a></span>
-
-                                <h4 class="uneditable" ng-if="pos.globalDescription">{{ pos.globalDescription }}</h4>
+                                <h4 class="uneditable"
+                                ng-if="pos.globalDescription">
+                                {{ pos.globalDescription }}
+                                </h4>
 
                                 <br ng-if = "!pos.GlobalDescription"/>
                                 <br ng-if = "!pos.GlobalDescription"/>
 
                                 <!-- Integrate CKEDitor http://jsfiddle.net/jWANb/2/ -->
-                                <div class   = "ck-editor"
-                                    ng-model = "pos.description"
-                                    ng-init  = "description = pos.description">
-                                    {{ pos.description }}</div>
+                                <div class = "ck-editor"
+                                ng-model = "pos.description"
+                                ng-init  = "description = pos.description">
+                                {{ pos.description }}
+                                </div>
                             </div>
                         </div>
 
@@ -163,13 +188,10 @@
         <div class="col-md-12">
             <h2>Education:</h2>
             <button class = "add-skill btn btn-success" ng-click ="edit.addEducation('start')"><i class="glyphicon glyphicon-plus"></i> Education</button>
-
             <div class = "well light-well" ng-repeat = "educ in resume.educationHistory" >
-
                 <div class="col-md-12 text-right">
                     <button class="btn btn-danger btn-xs" ng-click ="edit.deleteEducation($index)">Delete Education</button>
                 </div>
-
 
                 <h3><a href                  = "#"
                     e-required e-placeholder = "Degree Mayor"
@@ -200,7 +222,6 @@
                     editable-text            = "educ.endDate"
                     onaftersave              = "edit.updateResume()">
                     {{ educ.endDate || "End Date" }}</a></span>
-
 
             </div> <!-- finish div for educ in resume.educationHistory -->
              <button ng-if="!_.isEmpty(resume.educationHistory) && resume.educationHistory.length > 0" class = "add-skill btn btn-success" ng-click = "edit.addEducation('end')"><i class="glyphicon glyphicon-plus"></i> Education</button>
