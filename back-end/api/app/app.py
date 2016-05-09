@@ -48,8 +48,32 @@ def _create_entity(creation_function, id=None):
 
 @app.route('/api/users', methods=['POST'])
 def create_user():
-    id = _create_entity(dl.create_or_update_user)
-    return make_response('ok', 200, {'id': id} )
+    user_data = json.loads(request.data)
+
+    # verify that no user with this email or username already exists
+    users_with_email = dl.find_users(email=user_data['email'])
+    users_with_username = dl.find_users(username=user_data['username'])
+    errors = []
+    if users_with_email['total'] > 0:
+        errors.append('email already taken')
+    elif users_with_email['total'] > 1:
+        make_response('Internal server error', 500)
+
+    if users_with_username['total'] > 0:
+        errors.append('username already taken')
+    elif users_with_username['total'] > 1:
+        make_response('Internal server error', 500)
+
+    if errors:
+        return make_response('Bad request: ' + '; '.join(errors), 400)
+    else:
+        id = _create_entity(dl.create_or_update_user)
+
+        # add userId to user doc
+        user_data['userId'] = str(id)
+        dl.create_or_update_user(user_data, id)
+
+        return jsonify( {'id': str(id)} )
 
 # OPTIONS needed for AngularJS
 @app.route('/api/users', methods=['OPTIONS'])
@@ -58,6 +82,40 @@ def create_user__options():
 
 @app.route('/api/users/<id>', methods=['PUT'])
 def update_user(id):
+    user = None
+    try:
+        user = dl.get_user(id)
+    except Exception as e:
+        if e.args[0] == 'NotFoundError':
+            abort(404)
+        else:
+            raise
+    user_data = json.loads(request.data)
+
+    # verify that this is not an attempt to change email address or username to that of another existing user
+    users_with_email = dl.find_users(email=user_data['email'])
+    users_with_username = dl.find_users(username=user_data['username'])
+    errors = []
+    if users_with_email['total'] > 0:
+        existing_user_data = users_with_email['hits'][0]['_source']
+        if existing_user_data['email'] == user_data['email'] and existing_user_data['userId'] != id:
+            errors.append('there is another user with this email address')
+    elif users_with_email['total'] > 1:
+        make_response('Internal server error', 500)
+
+    if users_with_username['total'] > 0:
+        existing_user_data = users_with_username['hits'][0]['_source']
+        if existing_user_data['username'] == user_data['username'] and existing_user_data['userId'] != id:
+            errors.append('there is another user with this username')
+    elif users_with_username['total'] > 1:
+        make_response('Internal server error', 500)
+
+    if errors:
+        return make_response('Bad request: ' + '; '.join(errors), 400)
+
+    # Preserve the userId in the user doc by inserting it into the request data before the update is performed
+    user_data["userId"] = id
+    request.data = json.dumps(user_data)
     _create_entity(dl.create_or_update_user, id)
     return ''
 
@@ -71,7 +129,8 @@ def find_users():
     un = request.args.get('username')
     fn = request.args.get('firstname')
     ln = request.args.get('lastname')
-    results = dl.find_users(username=un, firstname=fn, lastname=ln)
+    email = request.args.get('email')
+    results = dl.find_users(username=un, firstname=fn, lastname=ln, email=email)
     return jsonify( results )
 
 @app.route('/api/users', methods=['GET'])
@@ -81,15 +140,24 @@ def list_users():
 
 @app.route('/api/users/<id>', methods=['GET'])
 def get_user(id):
-    if len(id) == 0:
-        abort(404)
-    else:
+    try:
         user = dl.get_user(id)
-        return jsonify( user )
+    except Exception as e:
+        if e.args[0] == 'NotFoundError':
+            abort(404)
+        else:
+            raise
+    return jsonify( user )
 
 @app.route('/api/users/<id>', methods=['DELETE'])
 def delete_user(id):
-    dl.delete_user(id)
+    try:
+        dl.delete_user(id)
+    except Exception as e:
+        if e.args[0] == 'NotFoundError':
+            abort(404)
+        else:
+            raise
     return ''
 
 #------- Resumes
@@ -106,7 +174,16 @@ def create_resume__options():
 
 @app.route('/api/resumes/<id>', methods=['PUT'])
 def update_resume(id):
+    try:
+        dl.get_resume(id)
+    except Exception as e:
+        if e.args[0] == 'NotFoundError':
+            abort(404)
+        else:
+            raise
+
     _create_entity(dl.create_or_update_resume, id)
+
     return ''
 
 # OPTIONS needed for AngularJS
@@ -171,35 +248,40 @@ def find_resumes():
 
 @app.route('/api/resumes/<id>', methods=['GET'])
 def get_resume(id):
-    if len(id) == 0:
-        abort(404)
-    else:
-        resume = None
-        exclude_sections = request.args.getlist('exclude_sections')
-        if exclude_sections:
-            resume = dl.get_resume(id, exclude_sections)
+    resume = None
+    exclude_sections = request.args.getlist('exclude_sections')
+    try:
+        resume = dl.get_resume(id, exclude_sections)
+    except Exception as e:
+        if e.args[0] == 'NotFoundError':
+            abort(404)
+        else:
+            raise
 
-        target_stacks = request.args.getlist('filter_stack')
-        if target_stacks:
-            resume = dl.resume_with_filtered_positions(resume, target_stacks, skill_meta_key='stackNames')
+    target_stacks = request.args.getlist('filter_stack')
+    if target_stacks:
+        resume = dl.resume_with_filtered_positions(resume, target_stacks, skill_meta_key='stackNames')
 
-        target_stack_positions = request.args.getlist('filter_stackpos')
-        if target_stack_positions:
-            resume = dl.resume_with_filtered_positions(resume, target_stack_positions, skill_meta_key='stackPositions')
+    target_stack_positions = request.args.getlist('filter_stackpos')
+    if target_stack_positions:
+        resume = dl.resume_with_filtered_positions(resume, target_stack_positions, skill_meta_key='stackPositions')
 
-        expand_user_info = request.args.get('expand_user_info')
-        if expand_user_info:
-            res_data = resume['_source']
-            resume['_source'] = _expanded_resume(res_data)
+    expand_user_info = request.args.get('expand_user_info')
+    if expand_user_info:
+        res_data = resume['_source']
+        resume['_source'] = _expanded_resume(res_data)
 
-        if resume is None:
-            resume = dl.get_resume(id)
-
-        return jsonify( resume )
+    return jsonify( resume )
 
 @app.route('/api/resumes/<id>', methods=['DELETE'])
 def delete_resume(id):
-    dl.delete_resume(id)
+    try:
+        dl.delete_resume(id)
+    except Exception as e:
+        if e.args[0] == 'NotFoundError':
+            abort(404)
+        else:
+            raise
     return ''
 
 #------- Projects
@@ -216,6 +298,13 @@ def create_project__options():
 
 @app.route('/api/projects/<id>', methods=['PUT'])
 def update_project(id):
+    try:
+        dl.get_project(id)
+    except Exception as e:
+        if e.args[0] == 'NotFoundError':
+            abort(404)
+        else:
+            raise
     _create_entity(dl.create_or_update_project, id)
     return ''
 
@@ -267,19 +356,29 @@ def find_projects():
 
 @app.route('/api/projects/<id>', methods=['GET'])
 def get_project(id):
-    if len(id) == 0:
-        abort(404)
-    else:
+    project = None
+    try:
         project = dl.get_project(id)
-        expand_user_info = request.args.get('expand_user_info')
-        if expand_user_info:
-            proj_data = project['_source']
-            project['_source'] = _expanded_project(proj_data)
-        return jsonify(project)
+    except Exception as e:
+        if e.args[0] == 'NotFoundError':
+            abort(404)
+        else:
+            raise
+    expand_user_info = request.args.get('expand_user_info')
+    if expand_user_info:
+        proj_data = project['_source']
+        project['_source'] = _expanded_project(proj_data)
+    return jsonify(project)
 
 @app.route('/api/projects/<id>', methods=['DELETE'])
 def delete_project(id):
-    dl.delete_project(id)
+    try:
+        dl.delete_project(id)
+    except Exception as e:
+        if e.args[0] == 'NotFoundError':
+            abort(404)
+        else:
+            raise
     return ''
 
 #------- Skills
@@ -308,7 +407,13 @@ def create_or_update_skill__options(id):
 
 @app.route('/api/skills/<id>', methods=['DELETE'])
 def delete_skill(id):
-    dl.delete_skill(id)
+    try:
+        dl.delete_skill(id)
+    except Exception as e:
+        if e.args[0] == 'NotFoundError':
+            abort(404)
+        else:
+            raise
     return ''
 
 #------- Stacks
@@ -337,7 +442,13 @@ def create_or_update_stack__options(id):
 
 @app.route('/api/stacks/<id>', methods=['DELETE'])
 def delete_stack(id):
-    dl.delete_stack(id)
+    try:
+        dl.delete_stack(id)
+    except Exception as e:
+        if e.args[0] == 'NotFoundError':
+            abort(404)
+        else:
+            raise
     return ''
 
 #------- Stack Positions
@@ -366,7 +477,13 @@ def create_or_update_stack_positions__options(id):
 
 @app.route('/api/stack-positions/<id>', methods=['DELETE'])
 def delete_stack_position(id):
-    dl.delete_stack_position(id)
+    try:
+        dl.delete_stack_position(id)
+    except Exception as e:
+        if e.args[0] == 'NotFoundError':
+            abort(404)
+        else:
+            raise
     return ''
 
 #-------
