@@ -6155,6 +6155,57 @@ p a {
 .resume-descr {
   font-size: 16px;
 }
+.fade {
+  visibility: hidden;
+  opacity: 0;
+}
+.inview {
+  visibility: visible;
+  opacity: 1;
+}
+.preview-resume-parent.inview {
+  height: 20px;
+  width: 720px;
+  margin-top: -15px;
+  margin-left: -20px;
+}
+.closing-prev {
+  margin-left: 90%;
+}
+@media print {
+  .closing-prev {
+    display: none !important;
+  }
+}
+.preview-resume-parent .close-preview {
+  position: relative;
+  font-size: 1.7em;
+  color: #333333;
+  top: 10px;
+  right: -60px;
+  cursor: pointer;
+}
+.chosen-resume-aside {
+  width: 210px;
+}
+.chosen-resume-main {
+  width: 470px;
+  border-left: 1px solid grey;
+}
+.contact {
+  border-bottom: 1px solid grey;
+}
+.contact-info {
+  margin-top: -7px;
+}
+.avalon-img {
+  margin-left: 470px;
+  margin-top: 15px;
+}
+.well1 {
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+}
 table.project-dates {
   font-size: 16px;
   color: gray;

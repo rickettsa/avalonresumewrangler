@@ -162,7 +162,18 @@
         return '/assets/icons/generic.jpg';
       }
     };
+
+   $scope.view.printPreview = function(){
+      $('.navbar, .sideBar, .mainContent, .footer-inner').hide();
+      $('.preview-resume-parent').removeClass('fade').addClass('inview');
+    }
+
+    $scope.view.closePreview = function(){
+      $('.preview-resume-parent').removeClass('inview').addClass('fade');
+      $('.navbar, .sideBar, .mainContent, .footer-inner').show();
+    }
   };
+
 
 
 

@@ -221,7 +221,6 @@
         competencyArray.splice(index, 1);
       };
 
-     // add user
       function addSkillRole(competencyArray) {
         $scope.inserted = {
           abbrev                : '',
@@ -231,7 +230,6 @@
         competencyArray.unshift($scope.inserted);
       };
 
-      // add user
       function addLifeSkillRole(competencyArray) {
         $scope.inserted = {
           abbrev                : '',
@@ -251,8 +249,10 @@
       };
 
       function updateResume(){
+        $scope.resume.userId = sessionService.userId;
+
         if($scope.global.resumeId === undefined){
-          console.log("undefined id!")
+          console.log("undefined resume id!")
           return // false// if false return 500 //bubble to a 500
         }
 
@@ -260,10 +260,7 @@
           $scope.resume.email = sessionService.userEmail;
         }
 
-        $scope.resume.userId = sessionService.userId;
-
         resumeService.updateResume($scope.global.resumeId, $scope.resume)
-        // debugger
           .success(function(resp){
             //is this skill known? if not, make sure you post back to the skills API
             console.log("updateResume SUCCESS");

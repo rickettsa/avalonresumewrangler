@@ -638,7 +638,7 @@ angular.module("skills/skills.tpl.html", []).run(["$templateCache", function($te
 angular.module("view/view.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("view/view.tpl.html",
     "<div class=\"col-md-3\">\n" +
-    "    <div class=\"row well\">\n" +
+    "    <div class=\"row well sideBar\">\n" +
     "        <h2>Filter Resume:</h2>\n" +
     "        <form>\n" +
     "            <div class=\"form-group\">\n" +
@@ -733,7 +733,7 @@ angular.module("view/view.tpl.html", []).run(["$templateCache", function($templa
     "<!-- START CONTACT SECTION -->\n" +
     "<!-- ================================================= -->\n" +
     "<div class=\"col-md-9\">\n" +
-    "    <div class=\"row well\">\n" +
+    "    <div class=\"row well mainContent\">\n" +
     "        <!-- click-edit-link http://plnkr.co/edit/EsW7mV?p=preview -->\n" +
     "        <!-- plus button http://plnkr.co/edit/xUDrOS?p=preview -->\n" +
     "        <!-- http://vitalets.github.io/angular-xeditable/ -->\n" +
@@ -749,7 +749,7 @@ angular.module("view/view.tpl.html", []).run(["$templateCache", function($templa
     "                <div class=\"pull-right\">\n" +
     "                    <span>Download As:</span>\n" +
     "                    &#x2003;\n" +
-    "                    <a href=\"#\"><img class=\"download-icon\" src=\"/assets/icons/pdf.png\"/></a>\n" +
+    "                    <a href=\"#\" ng-click = \"view.printPreview()\"><img class=\"download-icon\" src=\"/assets/icons/pdf.png\"/></a>\n" +
     "                    &#x2003;\n" +
     "                    <a href=\"#\"><img class=\"download-icon\" src=\"/assets/icons/word-doc.png\"/></a>\n" +
     "                </div>\n" +
@@ -819,86 +819,64 @@ angular.module("view/view.tpl.html", []).run(["$templateCache", function($templa
     "                </div>\n" +
     "            </div>\n" +
     "        </div>\n" +
-    "    <div>\n" +
+    "    </div>\n" +
     "</div>\n" +
     "\n" +
     "\n" +
-    "<div>\n" +
-    "    <h1>Test PDF</h1>\n" +
-    "    <script type=\"text/javascript\">\n" +
-    "        function genPDF(){\n" +
     "\n" +
-    "            var doc = new jsPDF();\n" +
+    "<div class=\"col-xs-12 preview-resume-parent fade\">\n" +
+    "  <div class=\"closing-prev\">\n" +
+    "    <span class=\"close-preview\" ng-click = \"view.closePreview()\">X</span>\n" +
+    "  </div>\n" +
     "\n" +
-    "            var contactName     = $('#contactName').html();\n" +
-    "            var contactEmail    = $('#contactEmail').html();\n" +
-    "            var contactPhone    = $('#contactPhone').html();\n" +
-    "            var contactTimezone = $('#contactTimezone').html();\n" +
+    "  <div class=\"contact\">\n" +
+    "    <img src=\"/assets/site/avalon-transparent.png\" class= \"avalon-img\">\n" +
+    "    <h1 class=\"contact-info\"> {{ contact.firstName }} {{ contact.lastName }}</h1>\n" +
+    "    <h4 class=\"contact-info\"> {{ contact.email }} </h4>\n" +
+    "    <h4 class=\"contact-info\"> {{ contact.phone }} </h4>\n" +
+    "    <h6 class=\"contact-info\"> {{ contact.timezone }} </h6>\n" +
+    "  </div>\n" +
     "\n" +
-    "            var employerNameArray   = $(\".employerOrgName\").map(function(){\n" +
-    "                return $(this).text();\n" +
-    "            });\n" +
-    "\n" +
-    "            var positionTitleArray   = $(\".clientName\").map(function(){\n" +
-    "                return $(this).text();\n" +
-    "            });\n" +
-    "\n" +
-    "            var resumeDescriptionArray   = $(\".resume-descr\").map(function(){\n" +
-    "                return $(this).text();\n" +
-    "            });\n" +
-    "\n" +
-    "            // var firtSub = resumeDescriptionArray[0];\n" +
-    "            // var descriptionSize = firstSub.length\n" +
-    "            // var numberOfLines = Math.round(descriptionSize/75)\n" +
-    "            // var linesArray = []\n" +
-    "\n" +
-    "            // for(i=0; i<numberOfLines; i++){\n" +
-    "            //     var starting = 0\n" +
-    "            //     var ending = 75\n" +
-    "\n" +
-    "            //\n" +
-    "            //         linesArray.push(firstSub.substring(starting,ending))\n" +
-    "            //\n" +
-    "\n" +
-    "            //     starting = ending+1\n" +
-    "            //     ending += 75\n" +
-    "\n" +
-    "            // }\n" +
+    "  <div class=\"row\">\n" +
+    "    <div class=\"col-xs-4 chosen-resume-aside\">\n" +
+    "      <div ng-for=\"emplyr in resume.employmentHistory\">\n" +
+    "        <h4>Title</h4>\n" +
+    "        <h5>Consultant</h5>\n" +
+    "      </div>\n" +
     "\n" +
     "\n" +
-    "            // Contact Info\n" +
-    "            doc.setFontSize(22);\n" +
-    "            doc.text(20,12, contactName);\n" +
-    "            doc.setFontSize(12);\n" +
-    "            doc.text(20, 20, contactEmail);\n" +
-    "            doc.text(20, 25, contactPhone);\n" +
-    "            doc.text(20, 30, contactTimezone);\n" +
-    "            doc.line(5,32,205,32)\n" +
+    "      <h4>Development Skills</h4>\n" +
+    "      <div ng-repeat=\"skillRole in resume.skills | filter:view.skillFilter | orderBy:skillRole.name\" >\n" +
+    "        {{skillRole.name}}\n" +
+    "      </div>\n" +
     "\n" +
-    "            // Experience\n" +
-    "            doc.setFontSize(22);\n" +
-    "            doc.text(20,40, \"Experience\");\n" +
-    "\n" +
-    "\n" +
-    "            var position = 50;\n" +
-    "            for(i=0; i<employerNameArray.length; i++){\n" +
-    "                console.log(position)\n" +
-    "                doc.setFontSize(18)\n" +
-    "                doc.text(20, position, employerNameArray[i])\n" +
-    "                doc.setFontSize(16)\n" +
-    "                doc.text(22, position+5, positionTitleArray[i])\n" +
-    "                doc.setFontSize(12);\n" +
-    "                doc.text(22, position+10, resumeDescriptionArray[i])\n" +
-    "\n" +
-    "                position += 35;\n" +
-    "            }\n" +
+    "    </div>\n" +
+    "    <div class=\"col-xs-8 chosen-resume-main\">\n" +
+    "      <h4>Professional Experience</h4>\n" +
+    "      <div ng-repeat=\"emplyr in resume.employmentHistory\">\n" +
+    "        <div class=\"well1\" ng-repeat=\"pos in emplyr.positions\">\n" +
+    "          <h4><a href=\"#\" class=\"employerOrgName\" e-placeholder=\"Service Provider Organization Name\">{{ emplyr.employerOrgName || \"empty\" }}</a></h4>\n" +
+    "          <h4 class=\"clientName contact-info\">    {{ pos.clientName || \"empty\" }}</h4>\n" +
+    "          <h4 class=\"positionTitle contact-info\"> {{ pos.title      || \"empty\" }}</h4>\n" +
+    "          <span>                     {{ pos.startDate  || \"empty\" }}</span><span> to </span>\n" +
+    "          <span>                     {{ pos.endDate    || \"empty\" }}</span>\n" +
+    "          <div class=\"resume-descr\"\n" +
+    "               ng-model=\"description\"\n" +
+    "               ng-bind-html=\"pos.description\">\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div> <!-- content col end -->\n" +
+    "  </div> <!-- row end -->\n" +
+    "</div> <!-- resume-preview-parent div end -->\n" +
     "\n" +
     "\n" +
-    "            doc.save('test1.pdf')\n" +
-    "        }\n" +
     "\n" +
-    "    </script>\n" +
     "\n" +
-    "    <a href=\"javascript:genPDF()\">Test my PDF download</a>\n" +
-    "</div>");
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "");
 }]);
