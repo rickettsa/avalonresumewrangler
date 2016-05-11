@@ -318,11 +318,12 @@ def _expanded_project(project):
     for i in range(len(positions)):
         users_filling_position = positions[i]['filledBy']
         for j in range(len(users_filling_position)):
-            user = dl.get_user( users_filling_position[j]['userId'] )
-            user_data = user['_source']
-            # put fields from user_data under filledBy as siblings to userId
-            for field in user_data.keys():
-                project['positions'][i]['filledBy'][j][field] = user_data[field]
+            if users_filling_position[j].has_key('userId'):
+                user = dl.get_user( users_filling_position[j]['userId'] )
+                user_data = user['_source']
+                # put fields from user_data under filledBy as siblings to userId
+                for field in user_data.keys():
+                    project['positions'][i]['filledBy'][j][field] = user_data[field]
     return project
 
 
