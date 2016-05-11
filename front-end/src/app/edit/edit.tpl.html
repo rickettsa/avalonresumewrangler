@@ -67,10 +67,9 @@
                                     ng-click = "edit.deletePosition(outerIndex, innerIndex)">Delete Position</button>
                                 </div>
 
-                                <h3><a href = "#"
-                                e-required e-placeholder = "Contracting Organization Name"
-                                editable-text            = "pos.clientName"
-                                onaftersave              = "edit.updateResume()">
+                                <h3><a href="#"
+                                editable-text="pos.clientName"
+                                e-uib-typeahead="clientName for clientName in projects($viewValue) | filter:$viewValue | limitTo:3">
                                 {{ pos.clientName || "Contracting Organization Name" }}
                                 </a></h3>
 

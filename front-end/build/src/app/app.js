@@ -9,9 +9,8 @@ angular.module( 'resumeWrangler', [
   'resumeWrangler.admin',
   'services.config',
   'ui.router',
-  'ui.bootstrap',
   'xeditable',
-  'siyfion.sfTypeahead',
+  'ui.bootstrap',
   'ngSanitize',
   'AppConfig',
   'angular-loading-bar'

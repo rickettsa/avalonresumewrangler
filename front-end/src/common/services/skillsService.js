@@ -21,8 +21,7 @@
         fetchStacks         : fetchStacks,
         updateStacks        : updateStacks,
         createStack         : createStack,
-        createStackPosition : createStackPosition,
-        getTypeaheadSource  : getTypeaheadSource
+        createStackPosition : createStackPosition
       };
 
       return service;
@@ -99,40 +98,6 @@
           method : "PUT",
           url    : configuration.api + '/api/stack-positions/' + id,
           data   : payload
-        });
-      };
-
-      function getTypeaheadSource() {
-        return new Bloodhound({
-          datumTokenizer: Bloodhound.tokenizers.obj.whitespace('hint'),
-          queryTokenizer: Bloodhound.tokenizers.whitespace,
-          limit: 10,
-          remote: {
-            //url: Authentication.getApiUrl() + '/instances/search/suggestions?q=%QUERY', // The API endpoint for search suggestions
-            url: configuration.apiary + '/api/skills',
-            /**
-             * Reduce the response down to an array of objects since the API doesn't return that outright.
-             * @param {Object} parsedResponse
-             * @returns {*}
-             */
-            filter: function(parsedResponse) {
-              var ret = [];
-
-              if (parsedResponse.skills) {
-                var skills = parsedResponse.skills;
-                var keys = _.keys(skills);
-
-                _.forEach(keys, function(skill) {
-                  var retObj = {};
-                  retObj.abbrev = skill;
-                  retObj.displayName = skills[skill]["dispName"];
-                  retObj.image = skills[skill]["image"];
-                  ret.push(retObj);
-                });
-              }
-              return ret;
-            }
-          }
         });
       };
     };
