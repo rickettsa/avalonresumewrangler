@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Takes a CSV file, homogenizes and filters the data, and outputs json structure for ingest to Elastic or other json store.",
   "main": "condense-projects.js",
-  "dependencies": {},
+  "dependencies": {
+    "moment": "^2.13.0"
+  },
   "devDependencies": {
     "csvtojson": "^0.5.2",
     "lodash": "^4.6.1"
