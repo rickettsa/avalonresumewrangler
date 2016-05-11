@@ -128,10 +128,10 @@ def transform_employment_history( root, ns ):
                     final_desc += ElementTree.tostring(e, method='html')
 
             positions.append( { 'clientProjectId': project_id, 'positionType': position_type, 'title': title,
-                'contractingOrgName': org_name, 'description': final_desc.replace('\n', ''),
+                'clientName': org_name, 'description': final_desc.replace('\n', ''),
                 'startDate': start_date }
             )
-        eh.append( { 'serviceProviderOrgName': emp_name, 'positions': positions } )
+        eh.append( { 'employerOrgName': emp_name, 'employerSuperTitle': 'Consultant', 'employeeProfessionalSummary': 'Description of expertise and experience', 'positions': positions } )
 
     return eh
 
@@ -165,8 +165,8 @@ def generate_project( json_res ):
     projects_json = []
     positions = json_res['employmentHistory'][0]['positions']
     for position in positions:
-        contractingOrgName = position['contractingOrgName']
-        if contractingOrgName and contractingOrgName.startswith('Avalon Consulting'):
+        clientName = position['clientName']
+        if clientName and clientName.startswith('Avalon Consulting'):
             pass
         else:
             description = position['description']
@@ -176,7 +176,7 @@ def generate_project( json_res ):
         
             project_json = {
               "projectId": projectId,
-              "clientName": contractingOrgName,
+              "clientName": clientName,
               "clientDescription": description,
               "clientWebsite": "www.company.com",
               "confidential": False,

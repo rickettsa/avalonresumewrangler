@@ -115,6 +115,14 @@ class ESDataLayer(DataLayer):
             raise Exception('NotFoundError')
 
         # maintain referential integrity: delete resumes that reference the now-obsolete user
+        #FIXME:this (delete user,delete resumes) process isn't atomic. This could cause unintended results in multi-user situation.
+        #   If user A deletes a user, causing this code to run, and user B accesses a resume referencing the user before the resume is deleted, user B will see an obsolete resume
+        #   - if B attempts a GET (resume or list of resumes): obsolete resume would be returned
+        #   - POST: n/a
+        #   - if B attempts a PUT: probably harmless (it would appear to B that update was made)
+        #   - if B attempts a DELETE: 404, caught by front end
+        #   * one potential solution: update GET calls to check that user document exists for the resume
+        #   * another potential solution: is it too late to change document storage mechanism? Parent-child, perhaps?
         resumes = self.find_resumes(userid=id)
         for resume in resumes['hits']:
             resume_id = resume['_id']
@@ -247,17 +255,19 @@ class ESDataLayer(DataLayer):
         }
         return self.es.search(index=self.PROJECT_INDEX, doc_type=self.PROJECT_TYPE, body=fulltext_query, size=10000)['hits']
     
-    def find_projects(self, client_name, start_date_min, start_date_max, end_date_min, end_date_max, summary, project_skills, q=None):
+    def find_projects(self, client_name=None, start_date_min=None, start_date_max=None, end_date_min=None, end_date_max=None, summary=None, project_skills=None, q=None):
         # if q param supplied, run a full text search
         if q is not None:
             return self.find_projects_fulltext(q)
 
         # run search against specific fields
-        skill_queries = []
-        for s in project_skills:
-            skill_queries += [ { "match": { "projectSkills": s } } ]
-        if len(skill_queries) == 0:
-            skill_queries = None
+        skill_queries = None
+        if project_skills is not None:
+            skill_queries = []
+            for s in project_skills:
+                skill_queries += [ { "match": { "projectSkills": s } } ]
+            if len(skill_queries) == 0:
+                skill_queries = None
 
         client_name_query = start_date_query = end_date_query = summary_query = None
         if client_name is not None:
