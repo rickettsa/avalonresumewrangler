@@ -109,10 +109,13 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "                                    ng-click = \"edit.deletePosition(outerIndex, innerIndex)\">Delete Position</button>\n" +
     "                                </div>\n" +
     "\n" +
+    "   \n" +
     "                                <h3><a href=\"#\"\n" +
     "                                editable-text=\"pos.clientName\"\n" +
-    "                                e-uib-typeahead=\"clientName for clientName in projects($viewValue) | filter:$viewValue | limitTo:3\">\n" +
-    "                                {{ pos.clientName || \"Contracting Organization Name\" }}\n" +
+    "                                e-uib-typeahead=\"clientName as clientName._source.clientName for clientName in projects($viewValue) | filter:$viewValue |limitTo:3\"\n" +
+    "                                e-typeahead-on-select='onSelect($item, $model, $label, pos)'\n" +
+    "                                onaftersave = \"edit.updateResume()\" \n" +
+    "                                >{{pos.clientName}} \n" +
     "                                </a></h3>\n" +
     "\n" +
     "                                <h3><a href = \"#\"\n" +

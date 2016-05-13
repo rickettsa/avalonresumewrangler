@@ -113,7 +113,6 @@
         $scope.edit.editSkill         = editSkill;
         $scope.edit.saveSkills        = saveSkills;
         $scope.edit.updateResume      = updateResume;
-        // $scope.edit.searchProjects    = searchProjects;
       };
 
       //CALL OUR METHOD==================
@@ -121,19 +120,25 @@
       //=================================
 
 
-     //Search projects api, debounce will execute function only if 100 milliseconds have passed to prevent hammering server, alternatively throttle can also be used and that will execute the function at most once every 100 mms
-
+     //Search projects api, debounce will execute function only if 100 milliseconds have passed to prevent hammering server, alternatively throttle can also be used and that will execute the function at most once every 100 mms 
       $scope.projects = _.debounce(function(projectName) {
         return $http({
           method : "GET",
           url    : configuration.api + '/api/projects/search?client_name=' + projectName
         })
           .then(function(response){
-            return _.map(response.data.hits, function(hits){return hits._source.clientName})
+            return _.map(response.data.hits, function(hits){
+              return hits
+            })
           });
       },100);
 
-
+      $scope.onSelect = function ($item, $model, $label, pos){
+        var retriveProject = _.clone($item._source);      
+        pos.clientName = retriveProject.clientName;
+        pos.projectId - retriveProject.projectId;       
+      }
+      
        _.mixin({
         findBySubVal: function(collection, property, values) {
           return _.filter(collection, function(item) {
@@ -293,8 +298,6 @@
       $scope.text = function($scope){
         $scope.text = 'this is text';
       };
-
-
 
     };
 
