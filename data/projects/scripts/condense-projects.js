@@ -313,7 +313,7 @@ function addAssignments(handleError, callback) {
             });
             _.forEach(matchingAssignments, function(matchngAssn){
                 var filledByData = {};
-                filledByData.userId = matchngAssn["Resource"];
+                filledByData.userFullName = matchngAssn["Resource"];
                 filledByData.startDate = moment(matchngAssn["Start Date"], "M/D/yyyy").format("YYYY-MM-DD");
                 filledByData.endDate = moment(matchngAssn["End Date"], "M/D/yyyy").format("YYYY-MM-DD");
                 var positionWrapper = {};

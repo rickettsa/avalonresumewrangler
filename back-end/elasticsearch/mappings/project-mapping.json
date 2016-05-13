@@ -1,7 +1,12 @@
 {
     "project": {
         "properties": {
-            "clientName": { "type": "string" },
+            "clientName": {
+                "type": "string",
+                "fields": {
+                    "raw": { "type": "string", "index": "not_analyzed" }
+                }
+            },
             "clientDescription": { "type": "string" },
             "clientWebsite": { "type": "string" },
             "name": { "type": "string" },
