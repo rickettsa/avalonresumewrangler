@@ -16,15 +16,16 @@ angular.module("templates/navbar-header.tpl.html", []).run(["$templateCache", fu
     "                &#x2003;Resume Wrangler\n" +
     "            </a>\n" +
     "\n" +
+    "           \n" +
     "            <form id=\"rw-global-search\" class=\"form-inline\" ng-submit=\"runGlobalSearch()\">\n" +
-    "                <label>Search By: </label>\n" +
-    "                <div class=\"form-group\">\n" +
-    "                    <select name=\"searchType\" ng-model=\"global.search.searchType\" class=\"form-control\">\n" +
+    "                <label class=\"searchLabel\">Search By: </label>\n" +
+    "                <div class=\"form-group searchFormGroup\">\n" +
+    "                    <select name=\"searchType\" ng-model=\"global.search.searchType\" class=\"form-control optionSearch\">\n" +
     "                        <option ng-repeat=\"option in global.search.categories\" value=\"{{option}}\">{{option}}</option>\n" +
     "                    </select>\n" +
     "                </div>\n" +
-    "                <div class=\"form-group\">\n" +
-    "                    <input id=\"keywords-field\" class=\"form-control\" ng-model=\"global.search.query\" autofocus=\"autofocus\"/>\n" +
+    "                <div class=\"form-group searchFormGroup\">\n" +
+    "                    <input id=\"keywords-field\" class=\"form-control inputSearch\" ng-model=\"global.search.query\" autofocus=\"autofocus\"/>\n" +
     "                    <button class=\"btn btn-primary\">\n" +
     "                        <i class=\"fa fa-search\"></i>\n" +
     "                    </button>\n" +

@@ -22,6 +22,7 @@
 body .navbar{
     margin-top: 0px;
     padding-top: 0px;
+    padding-bottom: 12px;
 }
 
 #rw-google-login-wrapper{
@@ -72,6 +73,38 @@ hr {
         display: block !important;
     }
 
+}
+
+@media (max-width: 520px)
+{
+   .navbar-brand{
+       margin-bottom:15px;      
+    }
+    
+    #rw-global-search{        
+        width: 92%; //480/520
+        display: flex;
+    }
+    
+    .searchFormGroup{
+        display: flex;
+    }
+    
+    .searchLabel{
+        width: 28%; //80/520
+        margin-left: 6.25%; //30/520
+        margin-top: 2%; //5/520    
+    }
+    
+    .optionSearch{
+        width: 31.25%; //150px/520;
+        margin-right:2%; //5/520 
+    }
+
+    .inputSearch{
+        width: 31.25%; //150px/520; 
+        margin-right:2%; //5/520 
+    }
 }
 
 

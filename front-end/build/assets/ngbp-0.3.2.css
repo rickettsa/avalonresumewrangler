@@ -6866,6 +6866,7 @@ button.close {
 body .navbar {
   margin-top: 0px;
   padding-top: 0px;
+  padding-bottom: 12px;
 }
 #rw-google-login-wrapper {
   display: inline;
@@ -6905,6 +6906,31 @@ hr {
   }
   .navbar-collapse.display-block {
     display: block !important;
+  }
+}
+@media (max-width: 520px) {
+  .navbar-brand {
+    margin-bottom: 15px;
+  }
+  #rw-global-search {
+    width: 92%;
+    display: flex;
+  }
+  .searchFormGroup {
+    display: flex;
+  }
+  .searchLabel {
+    width: 28%;
+    margin-left: 6.25%;
+    margin-top: 2%;
+  }
+  .optionSearch {
+    width: 31.25%;
+    margin-right: 2%;
+  }
+  .inputSearch {
+    width: 31.25%;
+    margin-right: 2%;
   }
 }
 /**

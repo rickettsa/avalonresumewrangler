@@ -12,15 +12,16 @@
                 &#x2003;Resume Wrangler
             </a>
 
+           
             <form id="rw-global-search" class="form-inline" ng-submit="runGlobalSearch()">
-                <label>Search By: </label>
-                <div class="form-group">
-                    <select name="searchType" ng-model="global.search.searchType" class="form-control">
+                <label class="searchLabel">Search By: </label>
+                <div class="form-group searchFormGroup">
+                    <select name="searchType" ng-model="global.search.searchType" class="form-control optionSearch">
                         <option ng-repeat="option in global.search.categories" value="{{option}}">{{option}}</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <input id="keywords-field" class="form-control" ng-model="global.search.query" autofocus="autofocus"/>
+                <div class="form-group searchFormGroup">
+                    <input id="keywords-field" class="form-control inputSearch" ng-model="global.search.query" autofocus="autofocus"/>
                     <button class="btn btn-primary">
                         <i class="fa fa-search"></i>
                     </button>
