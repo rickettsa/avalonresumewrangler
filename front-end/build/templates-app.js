@@ -214,7 +214,7 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "                                            <span class=\"glyphicon glyphicon-edit\" aria-hidden=\"true\"></span> Edit\n" +
     "                                        </button>\n" +
     "                                        \n" +
-    "                                        <button type=\"button\" ng-click=\"edit.removeSkill(skillRole)\" class=\"btn btn-danger btn-sm\" aria-label=\"Left Align\">\n" +
+    "                                        <button type=\"button\" ng-click=\"edit.removeSkill($index, resume.skills)\" class=\"btn btn-danger btn-sm\" aria-label=\"Left Align\">\n" +
     "                                            <span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span> Delete\n" +
     "                                        </button>\n" +
     "                                        \n" +
