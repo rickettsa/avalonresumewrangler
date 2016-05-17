@@ -186,7 +186,7 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "                    </div>\n" +
     "                </form>\n" +
     "\n" +
-    "                <div class=\"skills-scroller well col-md-6 col-md-offset-3\">\n" +
+    "                <div class=\"skills-scroller well col-md-12 col-md-offset-0\">\n" +
     "                    <form ng-submit=\"edit.updateResume()\">\n" +
     "                         <table class=\"skills-table\">\n" +
     "                            <tr ng-repeat=\"skillRole in resume.skills | filter:edit.skillFilter | orderBy:skillRole.name\" ng-init=\"skillRole.isEditing = false\">\n" +
@@ -208,14 +208,24 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "                                    <input class=\"form-control\" ng-model=\"skillRole.years\" placeholder=\"Years Experience\" ng-pattern=\"'[0-9]+'\"/>\n" +
     "                                </td>\n" +
     "\n" +
-    "                                <td class=\"controls\">\n" +
+    "                                <td class=\"controls text-right\">\n" +
     "                                    <div class=\"skill-controls\" ng-if=\"skillRole.isEditing === false\">\n" +
-    "                                        <i ng-click=\"edit.editSkill(skillRole)\" class=\"fa fa-2x fa-pencil edit\"></i>\n" +
-    "                                        <i ng-click=\"edit.removeSkill($index, resume.skills)\" class=\"fa fa-2x fa-times remove\"></i>\n" +
+    "                                        <button type=\"button\" ng-click=\"edit.editSkill(skillRole)\" class=\"btn btn-info btn-sm\" aria-label=\"Left Align\">\n" +
+    "                                            <span class=\"glyphicon glyphicon-edit\" aria-hidden=\"true\"></span> Edit\n" +
+    "                                        </button>\n" +
+    "                                        \n" +
+    "                                        <button type=\"button\" ng-click=\"edit.editSkill(skillRole)\" class=\"btn btn-danger btn-sm\" aria-label=\"Left Align\">\n" +
+    "                                            <span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span> Delete\n" +
+    "                                        </button>\n" +
+    "                                        \n" +
+    "                                       \n" +
     "                                    </div>\n" +
     "                                    <div class=\"skill-controls\" ng-if=\"skillRole.isEditing === true\">\n" +
-    "                                        <button ng-click=\"edit.saveSkills(resume.skills, skillRole)\"><i class=\"fa fa-2x fa-floppy-o save\"></i></button>\n" +
-    "                                        <!--<button ng-click=\"edit.removeSkill($index, resume.skills)\"><i class=\"fa fa-2x fa-times remove\"></i></button>-->\n" +
+    "                                         <button type=\"button\" ng-click=\"edit.saveSkills(resume.skills, skillRole)\" class=\"btn btn-success btn-sm\" aria-label=\"Left Align\">\n" +
+    "                                            <span class=\"glyphicon glyphicon-floppy-disk\" aria-hidden=\"true\"></span> Save\n" +
+    "                                        </button>\n" +
+    "                                        \n" +
+    "                                        <!--<button ng-click=\"edit.removeSkill($index, resume.skills)\"><i class=\"glyphicon glyphicon-remove\"></i></button>-->\n" +
     "                                    </div>\n" +
     "                                </td>\n" +
     "                            </tr>\n" +

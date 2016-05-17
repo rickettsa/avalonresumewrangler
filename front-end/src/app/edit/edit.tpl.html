@@ -144,7 +144,7 @@
                     </div>
                 </form>
 
-                <div class="skills-scroller well col-md-6 col-md-offset-3">
+                <div class="skills-scroller well col-md-12 col-md-offset-0">
                     <form ng-submit="edit.updateResume()">
                          <table class="skills-table">
                             <tr ng-repeat="skillRole in resume.skills | filter:edit.skillFilter | orderBy:skillRole.name" ng-init="skillRole.isEditing = false">
@@ -166,14 +166,24 @@
                                     <input class="form-control" ng-model="skillRole.years" placeholder="Years Experience" ng-pattern="'[0-9]+'"/>
                                 </td>
 
-                                <td class="controls">
+                                <td class="controls text-right">
                                     <div class="skill-controls" ng-if="skillRole.isEditing === false">
-                                        <i ng-click="edit.editSkill(skillRole)" class="fa fa-2x fa-pencil edit"></i>
-                                        <i ng-click="edit.removeSkill($index, resume.skills)" class="fa fa-2x fa-times remove"></i>
+                                        <button type="button" ng-click="edit.editSkill(skillRole)" class="btn btn-info btn-sm" aria-label="Left Align">
+                                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit
+                                        </button>
+                                        
+                                        <button type="button" ng-click="edit.editSkill(skillRole)" class="btn btn-danger btn-sm" aria-label="Left Align">
+                                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Delete
+                                        </button>
+                                        
+                                       
                                     </div>
                                     <div class="skill-controls" ng-if="skillRole.isEditing === true">
-                                        <button ng-click="edit.saveSkills(resume.skills, skillRole)"><i class="fa fa-2x fa-floppy-o save"></i></button>
-                                        <!--<button ng-click="edit.removeSkill($index, resume.skills)"><i class="fa fa-2x fa-times remove"></i></button>-->
+                                         <button type="button" ng-click="edit.saveSkills(resume.skills, skillRole)" class="btn btn-success btn-sm" aria-label="Left Align">
+                                            <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Save
+                                        </button>
+                                        
+                                        <!--<button ng-click="edit.removeSkill($index, resume.skills)"><i class="glyphicon glyphicon-remove"></i></button>-->
                                     </div>
                                 </td>
                             </tr>
