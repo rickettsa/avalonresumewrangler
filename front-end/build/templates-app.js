@@ -41,7 +41,7 @@ angular.module("admin/admin.tpl.html", []).run(["$templateCache", function($temp
 angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("edit/edit.tpl.html",
     "<div class=\"col-md-12\">\n" +
-    "    <div class=\"row well dashed-well\">\n" +
+    "    <div class=\"row well\">\n" +
     "        <!-- click-edit-link http://plnkr.co/edit/EsW7mV?p=preview -->\n" +
     "        <!-- plus button http://plnkr.co/edit/xUDrOS?p=preview -->\n" +
     "        <!-- http://vitalets.github.io/angular-xeditable/ -->\n" +
