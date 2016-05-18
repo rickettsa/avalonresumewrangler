@@ -1,0 +1,43 @@
+{
+    "clientName": "Couchbase",
+    "salesForceProjectName": "Couchbase-Mongo Compare Round 2",
+    "region": "MW-CHI",
+    "practice": "Enterprise Web",
+    "_createProjManager": "Phil Favia",
+    "startDate": "2016-04-06",
+    "endDate": "2016-05-31",
+    "salesforceRecordId": "a1D70000002k8XL",
+    "projectDisplayName": "Couchbase",
+    "positions": [
+        {
+            "assignmentName": "Couchbase-Mongo Compare Round 2-Daniela Zapata",
+            "filledBy": [
+                {
+                    "userFullName": "Daniela Zapata",
+                    "startDate": "2016-04-06",
+                    "endDate": "2016-05-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Couchbase-Mongo Compare Round 2-Phil Favia",
+            "filledBy": [
+                {
+                    "userFullName": "Phil Favia",
+                    "startDate": "2016-04-06",
+                    "endDate": "2016-05-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Couchbase-Mongo Compare Round 2-Raphaelle Loyer",
+            "filledBy": [
+                {
+                    "userFullName": "Raphaelle Loyer",
+                    "startDate": "2016-04-06",
+                    "endDate": "2016-05-31"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "clientName": "Jones & Bartlett Learning",
+    "salesForceProjectName": "Taxonomy Server Selection",
+    "region": "DC",
+    "practice": "Enterprise Web",
+    "_createProjManager": "Niels Nielsen",
+    "startDate": "2016-02-21",
+    "endDate": "2016-03-05",
+    "salesforceRecordId": "a1D39000003R8x2",
+    "projectDisplayName": "Taxonomy Server Selection",
+    "positions": [
+        {
+            "assignmentName": "Taxonomy Server Selection - Demian Hess",
+            "filledBy": [
+                {
+                    "userFullName": "Demian Hess",
+                    "startDate": "2016-02-21",
+                    "endDate": "2016-03-05"
+                }
+            ]
+        }
+    ]
+}

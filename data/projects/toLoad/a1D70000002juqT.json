@@ -1,0 +1,43 @@
+{
+    "clientName": "CollabIP",
+    "salesForceProjectName": "CollabIP Elastic Kickstart",
+    "region": "NATL",
+    "practice": "",
+    "_createProjManager": "Mike Green",
+    "startDate": "2016-03-16",
+    "endDate": "2016-04-30",
+    "salesforceRecordId": "a1D70000002juqT",
+    "projectDisplayName": "CollabIP Elastic Kickstart",
+    "positions": [
+        {
+            "assignmentName": "CollabIP Elastic Kickstart - Pritesh Patel",
+            "filledBy": [
+                {
+                    "userFullName": "Pritesh Patel",
+                    "startDate": "2016-03-16",
+                    "endDate": "2016-04-30"
+                }
+            ]
+        },
+        {
+            "assignmentName": "CollabIP Elastic Kickstart Shadow - Suganthi Srinivasan",
+            "filledBy": [
+                {
+                    "userFullName": "Suganthi Srinivasan",
+                    "startDate": "2016-03-16",
+                    "endDate": "2016-04-30"
+                }
+            ]
+        },
+        {
+            "assignmentName": "CollabIP Elastic Kickstart - Suganthi Srinivasan",
+            "filledBy": [
+                {
+                    "userFullName": "Suganthi Srinivasan",
+                    "startDate": "2016-03-16",
+                    "endDate": "2016-04-30"
+                }
+            ]
+        }
+    ]
+}

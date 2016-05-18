@@ -1,0 +1,33 @@
+{
+    "clientName": "Cloudera, Inc.",
+    "salesForceProjectName": "Cloudera - Barclay Card NATL",
+    "region": "NATL",
+    "practice": "Big Data",
+    "_createProjManager": "Mike Green",
+    "startDate": "2016-10-18",
+    "endDate": "2016-01-29",
+    "salesforceRecordId": "a1D70000003CxKn",
+    "projectDisplayName": "Cloudera",
+    "positions": [
+        {
+            "assignmentName": "Cloudera - Barclay Card NATL - Bob Marshall",
+            "filledBy": [
+                {
+                    "userFullName": "Bob Marshall",
+                    "startDate": "2016-10-25",
+                    "endDate": "2016-01-30"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Cloudera - Barclay Card Shadow - Bob Marshall",
+            "filledBy": [
+                {
+                    "userFullName": "Bob Marshall",
+                    "startDate": "2016-10-18",
+                    "endDate": "2016-12-26"
+                }
+            ]
+        }
+    ]
+}

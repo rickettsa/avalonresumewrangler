@@ -1,0 +1,43 @@
+{
+    "clientName": "Marriott International",
+    "salesForceProjectName": "MDAM Image Metadata",
+    "region": "DC",
+    "practice": "Enterprise Web",
+    "_createProjManager": "Niels Nielsen",
+    "startDate": "2016-01-18",
+    "endDate": "2016-06-30",
+    "salesforceRecordId": "a1D70000002igBf",
+    "projectDisplayName": "MDAM Image Metadata",
+    "positions": [
+        {
+            "assignmentName": "MDAM Image Metadata - Chris Marino",
+            "filledBy": [
+                {
+                    "userFullName": "Chris Marino",
+                    "startDate": "2016-01-18",
+                    "endDate": "2016-03-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "MDAM Image Metadata - Felix Simon",
+            "filledBy": [
+                {
+                    "userFullName": "Felix Simon",
+                    "startDate": "2016-01-18",
+                    "endDate": "2016-06-30"
+                }
+            ]
+        },
+        {
+            "assignmentName": "MDAM Image Metadata - Niels Nielsen",
+            "filledBy": [
+                {
+                    "userFullName": "Niels Nielsen",
+                    "startDate": "2016-01-18",
+                    "endDate": "2016-03-31"
+                }
+            ]
+        }
+    ]
+}

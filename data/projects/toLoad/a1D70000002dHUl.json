@@ -1,0 +1,23 @@
+{
+    "clientName": "Hortonworks, Inc.",
+    "salesForceProjectName": "CSAA Security Implementation",
+    "region": "COE",
+    "practice": "Big Data",
+    "_createProjManager": "Andy Kruth",
+    "startDate": "2016-07-13",
+    "endDate": "2016-08-14",
+    "salesforceRecordId": "a1D70000002dHUl",
+    "projectDisplayName": "CSAA Security Implementation",
+    "positions": [
+        {
+            "assignmentName": "CSAA Security Implementation - Kevin Risden",
+            "filledBy": [
+                {
+                    "userFullName": "Kevin Risden",
+                    "startDate": "2016-07-13",
+                    "endDate": "2016-08-14"
+                }
+            ]
+        }
+    ]
+}

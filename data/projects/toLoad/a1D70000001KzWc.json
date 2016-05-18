@@ -1,0 +1,23 @@
+{
+    "clientName": "Hortonworks, Inc.",
+    "salesForceProjectName": "HEB-National",
+    "region": "NATL",
+    "practice": "",
+    "_createProjManager": "Andy Kruth",
+    "startDate": "2016-07-01",
+    "endDate": "2016-12-31",
+    "salesforceRecordId": "a1D70000001KzWc",
+    "projectDisplayName": "HEB",
+    "positions": [
+        {
+            "assignmentName": "HEB-Target 2015 - Varun Rao",
+            "filledBy": [
+                {
+                    "userFullName": "Varun Rao",
+                    "startDate": "2016-01-01",
+                    "endDate": "2016-02-01"
+                }
+            ]
+        }
+    ]
+}
