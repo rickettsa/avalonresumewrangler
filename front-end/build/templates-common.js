@@ -2,6 +2,7 @@ angular.module('templates-common', ['templates/navbar-header.tpl.html', 'templat
 
 angular.module("templates/navbar-header.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("templates/navbar-header.tpl.html",
+    "\n" +
     "<nav class=\"navbar navbar-default navbar-static-top\">\n" +
     "    <div class=\"container\">\n" +
     "        <div class=\"navbar-header\">\n" +
@@ -72,7 +73,10 @@ angular.module("templates/navbar-header.tpl.html", []).run(["$templateCache", fu
     "\n" +
     "\n" +
     "    </div>\n" +
-    "</nav>");
+    "</nav>\n" +
+    "\n" +
+    "\n" +
+    "");
 }]);
 
 angular.module("templates/search-form.tpl.html", []).run(["$templateCache", function($templateCache) {
