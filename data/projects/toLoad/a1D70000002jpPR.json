@@ -1,0 +1,33 @@
+{
+    "clientName": "Wolters Kluwer Health - Learning Research and Practice",
+    "salesForceProjectName": "WK-TheVault Support 2015",
+    "region": "DC",
+    "practice": "NoSQL",
+    "_createProjManager": "Niels Nielsen",
+    "startDate": "2016-03-08",
+    "endDate": "2016-12-31",
+    "salesforceRecordId": "a1D70000002jpPR",
+    "projectDisplayName": "WK",
+    "positions": [
+        {
+            "assignmentName": "TheVault Support 2015 - Demian Hess",
+            "filledBy": [
+                {
+                    "userFullName": "Demian Hess",
+                    "startDate": "2016-03-08",
+                    "endDate": "2016-02-01"
+                }
+            ]
+        },
+        {
+            "assignmentName": "WK-TheVault Support 2015 - Mike Ross",
+            "filledBy": [
+                {
+                    "userFullName": "Mike Ross",
+                    "startDate": "2016-11-01",
+                    "endDate": "2016-02-01"
+                }
+            ]
+        }
+    ]
+}

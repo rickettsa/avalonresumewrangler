@@ -1,0 +1,33 @@
+{
+    "clientName": "Wells Fargo Bank",
+    "salesForceProjectName": "Wells Fargo OpenText Development",
+    "region": "MW-STL",
+    "practice": "Enterprise Web",
+    "_createProjManager": "Sean Hall",
+    "startDate": "2016-02-09",
+    "endDate": "2016-01-09",
+    "salesforceRecordId": "a1D70000002it4z",
+    "projectDisplayName": "Wells Fargo OpenText Development",
+    "positions": [
+        {
+            "assignmentName": "Wells Fargo OpenText Development - Sean Hall",
+            "filledBy": [
+                {
+                    "userFullName": "Sean Hall",
+                    "startDate": "2016-02-09",
+                    "endDate": "2016-04-29"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Wells Fargo OpenText Development - William Thayer",
+            "filledBy": [
+                {
+                    "userFullName": "William Thayer",
+                    "startDate": "2016-07-06",
+                    "endDate": "2016-01-25"
+                }
+            ]
+        }
+    ]
+}

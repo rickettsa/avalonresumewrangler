@@ -1,0 +1,33 @@
+{
+    "clientName": "Couchbase",
+    "salesForceProjectName": "CB-DocumentDB Implementation",
+    "region": "NATL",
+    "practice": "NoSQL",
+    "_createProjManager": "John Holshey",
+    "startDate": "2016-09-18",
+    "endDate": "2016-10-06",
+    "salesforceRecordId": "a1D70000003UGPn",
+    "projectDisplayName": "CB",
+    "positions": [
+        {
+            "assignmentName": "DocumentDB Implementation - Andy Cohan",
+            "filledBy": [
+                {
+                    "userFullName": "Andy Cohan",
+                    "startDate": "2016-09-18",
+                    "endDate": "2016-02-02"
+                }
+            ]
+        },
+        {
+            "assignmentName": "DocumentDB Implementation - Spencer Mefford",
+            "filledBy": [
+                {
+                    "userFullName": "Spencer Mefford",
+                    "startDate": "2016-09-18",
+                    "endDate": "2016-02-02"
+                }
+            ]
+        }
+    ]
+}

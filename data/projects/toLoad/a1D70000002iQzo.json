@@ -1,0 +1,23 @@
+{
+    "clientName": "New England Journal of Medicine",
+    "salesForceProjectName": "Q1 NEJM - Karl",
+    "region": "NATL",
+    "practice": "",
+    "_createProjManager": "John Holshey",
+    "startDate": "2016-01-20",
+    "endDate": "2016-03-31",
+    "salesforceRecordId": "a1D70000002iQzo",
+    "projectDisplayName": "Q1 NEJM",
+    "positions": [
+        {
+            "assignmentName": "Q1 NEJM - Karl - Karl Erisman",
+            "filledBy": [
+                {
+                    "userFullName": "Karl Erisman",
+                    "startDate": "2016-01-20",
+                    "endDate": "2016-05-04"
+                }
+            ]
+        }
+    ]
+}

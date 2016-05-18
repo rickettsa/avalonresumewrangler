@@ -1,0 +1,23 @@
+{
+    "clientName": "Marriott International",
+    "salesForceProjectName": "Hosting and Support Services 2016",
+    "region": "DC",
+    "practice": "Enterprise Web",
+    "_createProjManager": "Niels Nielsen",
+    "startDate": "2016-01-31",
+    "endDate": "2016-10-18",
+    "salesforceRecordId": "a1D39000003R6Xb",
+    "projectDisplayName": "Hosting and Support Services 2016",
+    "positions": [
+        {
+            "assignmentName": "Hosting and Support Services 2016 - Matt Ross",
+            "filledBy": [
+                {
+                    "userFullName": "Matt Ross",
+                    "startDate": "2016-01-31",
+                    "endDate": "2016-10-18"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "clientName": "ManTech International Corp.",
+    "salesForceProjectName": "NavAir DSE Prototype",
+    "region": "DC",
+    "practice": "NoSQL",
+    "_createProjManager": "Niels Nielsen",
+    "startDate": "2016-12-14",
+    "endDate": "2016-05-15",
+    "salesforceRecordId": "a1D70000002i6t8",
+    "projectDisplayName": "NavAir DSE Prototype",
+    "positions": [
+        {
+            "assignmentName": "NavAir DSE Prototype - Ivan Terry",
+            "filledBy": [
+                {
+                    "userFullName": "Ivan Terry",
+                    "startDate": "2016-03-01",
+                    "endDate": "2016-03-31"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "clientName": "Marriott International",
+    "salesForceProjectName": "2016 Adaptive Content Support Felix Simon",
+    "region": "DC",
+    "practice": "Enterprise Web",
+    "_createProjManager": "Niels Nielsen",
+    "startDate": "2016-01-10",
+    "endDate": "2016-08-31",
+    "salesforceRecordId": "a1D39000003QyDD",
+    "projectDisplayName": "2016 Adaptive Content Support Felix Simon",
+    "positions": [
+        {
+            "assignmentName": "2016 Adaptive Content Support Felix Si - Felix Simon",
+            "filledBy": [
+                {
+                    "userFullName": "Felix Simon",
+                    "startDate": "2016-01-10",
+                    "endDate": "2016-08-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "2016 Adaptive Content Support Felix Si - Felix Simon",
+            "filledBy": [
+                {
+                    "userFullName": "Felix Simon",
+                    "startDate": "2016-01-10",
+                    "endDate": "2016-08-31"
+                }
+            ]
+        }
+    ]
+}

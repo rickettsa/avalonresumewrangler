@@ -1,0 +1,23 @@
+{
+    "clientName": "FedEx Corporate Services, Inc.",
+    "salesForceProjectName": "SSO and CMM Migration",
+    "region": "NATL",
+    "practice": "",
+    "_createProjManager": "John Holshey",
+    "startDate": "2016-11-10",
+    "endDate": "2016-03-31",
+    "salesforceRecordId": "a1D70000002McxE",
+    "projectDisplayName": "SSO and CMM Migration",
+    "positions": [
+        {
+            "assignmentName": "SSO and CMM Migration - Chad Chatfield",
+            "filledBy": [
+                {
+                    "userFullName": "Chad Chatfield",
+                    "startDate": "2016-01-15",
+                    "endDate": "2016-01-15"
+                }
+            ]
+        }
+    ]
+}

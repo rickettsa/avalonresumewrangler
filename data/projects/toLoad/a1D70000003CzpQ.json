@@ -1,0 +1,23 @@
+{
+    "clientName": "McKesson",
+    "salesForceProjectName": "McKesson VCM Upgrade - SO-3396 -MW-STL",
+    "region": "MW-STL",
+    "practice": "Enterprise Web",
+    "_createProjManager": "Sean Hall",
+    "startDate": "2016-08-18",
+    "endDate": "2016-04-01",
+    "salesforceRecordId": "a1D70000003CzpQ",
+    "projectDisplayName": "McKesson VCM Upgrade",
+    "positions": [
+        {
+            "assignmentName": "McKesson VCM Upgrade - SO-3396 -MW-STL - Sean Hall",
+            "filledBy": [
+                {
+                    "userFullName": "Sean Hall",
+                    "startDate": "2016-05-10",
+                    "endDate": "2016-04-01"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "clientName": "New England Journal of Medicine",
+    "salesForceProjectName": "Q1 NEJM - Joe",
+    "region": "NATL",
+    "practice": "",
+    "_createProjManager": "John Holshey",
+    "startDate": "2016-01-01",
+    "endDate": "2016-03-31",
+    "salesforceRecordId": "a1D70000002iQNx",
+    "projectDisplayName": "Q1 NEJM",
+    "positions": [
+        {
+            "assignmentName": "Q1 NEJM - Joe - Joe Glorioso",
+            "filledBy": [
+                {
+                    "userFullName": "Joe Glorioso",
+                    "startDate": "2016-01-01",
+                    "endDate": "2016-08-31"
+                }
+            ]
+        }
+    ]
+}
