@@ -1,0 +1,63 @@
+{
+    "clientName": "FedEx Corporate Services, Inc.",
+    "salesForceProjectName": "Enterprise Taxonomy Roadmap",
+    "region": "NATL",
+    "practice": "Enterprise Search",
+    "_createProjManager": "John Holshey",
+    "startDate": "2016-03-01",
+    "endDate": "2016-05-31",
+    "salesforceRecordId": "a1D39000003RANV",
+    "projectDisplayName": "Enterprise Taxonomy Roadmap",
+    "positions": [
+        {
+            "assignmentName": "Enterprise Taxonomy Roadmap - Derek Torrey",
+            "filledBy": [
+                {
+                    "userFullName": "Derek Torrey",
+                    "startDate": "2016-03-01",
+                    "endDate": "2016-05-02"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Enterprise Taxonomy Roadmap - Derek Torrey",
+            "filledBy": [
+                {
+                    "userFullName": "Derek Torrey",
+                    "startDate": "2016-03-01",
+                    "endDate": "2016-05-09"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Enterprise Taxonomy Roadmap - John Holshey",
+            "filledBy": [
+                {
+                    "userFullName": "John Holshey",
+                    "startDate": "2016-03-01",
+                    "endDate": "2016-03-03"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Enterprise Taxonomy Roadmap - Karl Erisman",
+            "filledBy": [
+                {
+                    "userFullName": "Karl Erisman",
+                    "startDate": "2016-03-01",
+                    "endDate": "2016-05-23"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Enterprise Taxonomy Roadmap - Karl Erisman",
+            "filledBy": [
+                {
+                    "userFullName": "Karl Erisman",
+                    "startDate": "2016-03-01",
+                    "endDate": "2016-06-02"
+                }
+            ]
+        }
+    ]
+}

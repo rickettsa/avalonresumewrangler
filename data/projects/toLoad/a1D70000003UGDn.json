@@ -1,0 +1,23 @@
+{
+    "clientName": "Cloudera, Inc.",
+    "salesForceProjectName": "Brattle AD Support",
+    "region": "NATL",
+    "practice": "Big Data",
+    "_createProjManager": "Mike Green",
+    "startDate": "2016-09-17",
+    "endDate": "2016-09-18",
+    "salesforceRecordId": "a1D70000003UGDn",
+    "projectDisplayName": "Brattle AD Support",
+    "positions": [
+        {
+            "assignmentName": "Brattle AD Support - Bob Marshall",
+            "filledBy": [
+                {
+                    "userFullName": "Bob Marshall",
+                    "startDate": "2016-09-17",
+                    "endDate": "2016-09-17"
+                }
+            ]
+        }
+    ]
+}

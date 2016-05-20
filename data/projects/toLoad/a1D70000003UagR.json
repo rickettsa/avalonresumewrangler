@@ -1,0 +1,93 @@
+{
+    "clientName": "McKesson",
+    "salesForceProjectName": "McKesson Connect Development & Support-Oct15-Mar16",
+    "region": "NATL",
+    "practice": "Enterprise Web",
+    "_createProjManager": "Mike Green",
+    "startDate": "2016-09-30",
+    "endDate": "2016-03-31",
+    "salesforceRecordId": "a1D70000003UagR",
+    "projectDisplayName": "McKesson Connect Development & Support",
+    "positions": [
+        {
+            "assignmentName": "McKesson Connect Development & Support - Guruprasad Prabhu",
+            "filledBy": [
+                {
+                    "userFullName": "Guruprasad Prabhu",
+                    "startDate": "2016-10-04",
+                    "endDate": "2016-03-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "McKesson Connect Development & Support - Manoj Cherian",
+            "filledBy": [
+                {
+                    "userFullName": "Manoj Cherian",
+                    "startDate": "2016-10-04",
+                    "endDate": "2016-03-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "McKesson Connect Development & Support - Mohd Wahid",
+            "filledBy": [
+                {
+                    "userFullName": "Mohd Wahid",
+                    "startDate": "2016-10-04",
+                    "endDate": "2016-03-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "McKesson Connect Development & Support - Ravish Malik",
+            "filledBy": [
+                {
+                    "userFullName": "Ravish Malik",
+                    "startDate": "2016-10-04",
+                    "endDate": "2016-03-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "McKesson Connect Development & Support - Ryan Atkins",
+            "filledBy": [
+                {
+                    "userFullName": "Ryan Atkins",
+                    "startDate": "2016-09-30",
+                    "endDate": "2016-10-10"
+                }
+            ]
+        },
+        {
+            "assignmentName": "McKesson Connect Development & Support - Sumeet Nembhani",
+            "filledBy": [
+                {
+                    "userFullName": "Sumeet Nembhani",
+                    "startDate": "2016-10-04",
+                    "endDate": "2016-03-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "McKesson Connect Development & Support - Suvarna Kamannavar - Sr Arch & Guidance",
+            "filledBy": [
+                {
+                    "userFullName": "Suvarna Kamannavar",
+                    "startDate": "2016-10-04",
+                    "endDate": "2016-03-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "McKesson Connect Development & Support - Suvarna Kamannavar - PS",
+            "filledBy": [
+                {
+                    "userFullName": "Suvarna Kamannavar",
+                    "startDate": "2016-10-04",
+                    "endDate": "2016-03-31"
+                }
+            ]
+        }
+    ]
+}

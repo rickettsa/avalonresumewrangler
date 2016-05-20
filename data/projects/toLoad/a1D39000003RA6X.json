@@ -1,0 +1,43 @@
+{
+    "clientName": "America's Test Kitchen",
+    "salesForceProjectName": "Sage - Legacy Content Search",
+    "region": "DC",
+    "practice": "NoSQL",
+    "_createProjManager": "Niels Nielsen",
+    "startDate": "2016-02-28",
+    "endDate": "2016-07-23",
+    "salesforceRecordId": "a1D39000003RA6X",
+    "projectDisplayName": "Sage",
+    "positions": [
+        {
+            "assignmentName": "Legacy Content Search - Demian Hess",
+            "filledBy": [
+                {
+                    "userFullName": "Demian Hess",
+                    "startDate": "2016-02-28",
+                    "endDate": "2016-07-23"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Legacy Content Search - Jeff Hendricks",
+            "filledBy": [
+                {
+                    "userFullName": "Jeff Hendricks",
+                    "startDate": "2016-02-28",
+                    "endDate": "2016-06-10"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Legacy Content Search - Stephon Harris",
+            "filledBy": [
+                {
+                    "userFullName": "Stephon Harris",
+                    "startDate": "2016-02-28",
+                    "endDate": "2016-07-23"
+                }
+            ]
+        }
+    ]
+}

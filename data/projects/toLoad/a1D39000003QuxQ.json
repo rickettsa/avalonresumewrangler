@@ -1,0 +1,23 @@
+{
+    "clientName": "Hortonworks, Inc.",
+    "salesForceProjectName": "HWX-Tudor Sub- STL",
+    "region": "MW-STL",
+    "practice": "Big Data",
+    "_createProjManager": "Sean Hall",
+    "startDate": "2016-01-03",
+    "endDate": "2016-01-30",
+    "salesforceRecordId": "a1D39000003QuxQ",
+    "projectDisplayName": "HWX",
+    "positions": [
+        {
+            "assignmentName": "HWX-Tudor Sub- STL - Trey Cahill",
+            "filledBy": [
+                {
+                    "userFullName": "Trey Cahill",
+                    "startDate": "2016-01-03",
+                    "endDate": "2016-02-05"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "clientName": "Oxford University Press",
+    "salesForceProjectName": "OUP-Evaluation of Storing Importing and Exporting Content",
+    "region": "DC",
+    "practice": "NoSQL",
+    "_createProjManager": "Niels Nielsen",
+    "startDate": "2016-09-27",
+    "endDate": "2016-02-27",
+    "salesforceRecordId": "a1D70000003UP7q",
+    "projectDisplayName": "OUP",
+    "positions": [
+        {
+            "assignmentName": "Evaluation of Storing Importing and Ex - Chad Chatfield",
+            "filledBy": [
+                {
+                    "userFullName": "Chad Chatfield",
+                    "startDate": "2016-09-27",
+                    "endDate": "2016-02-27"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Evaluation of Storing Importing and Ex - Demian Hess",
+            "filledBy": [
+                {
+                    "userFullName": "Demian Hess",
+                    "startDate": "2016-09-27",
+                    "endDate": "2016-02-27"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "clientName": "Wells Fargo Bank",
+    "salesForceProjectName": "Wells Fargo OpenText Technical Analyst",
+    "region": "MW-STL",
+    "practice": "Enterprise Web",
+    "_createProjManager": "Sean Hall",
+    "startDate": "2016-02-23",
+    "endDate": "2016-07-11",
+    "salesforceRecordId": "a1D70000002it4p",
+    "projectDisplayName": "Wells Fargo OpenText Technical Analyst",
+    "positions": [
+        {
+            "assignmentName": "OpenText Technical Analyst - Felix Simon",
+            "filledBy": [
+                {
+                    "userFullName": "Felix Simon",
+                    "startDate": "2016-02-23",
+                    "endDate": "2016-07-10"
+                }
+            ]
+        },
+        {
+            "assignmentName": "OpenText Technical Analyst - Maria Rodriguez",
+            "filledBy": [
+                {
+                    "userFullName": "Maria Rodriguez",
+                    "startDate": "2016-06-01",
+                    "endDate": "2016-08-31"
+                }
+            ]
+        }
+    ]
+}

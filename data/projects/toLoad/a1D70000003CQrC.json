@@ -1,0 +1,33 @@
+{
+    "clientName": "Polymath",
+    "salesForceProjectName": "Polymath-Six Seeds-Project",
+    "region": "NATL",
+    "practice": "Enterprise Web",
+    "_createProjManager": "John Holshey",
+    "startDate": "2016-10-06",
+    "endDate": "2016-02-29",
+    "salesforceRecordId": "a1D70000003CQrC",
+    "projectDisplayName": "Polymath",
+    "positions": [
+        {
+            "assignmentName": "Polymath-Six Seeds-Project - Ben E. Neuman",
+            "filledBy": [
+                {
+                    "userFullName": "Ben E. Neuman",
+                    "startDate": "2016-01-17",
+                    "endDate": "2016-02-29"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Six Seeds-Project - Ben Neuman",
+            "filledBy": [
+                {
+                    "userFullName": "Ben Neuman",
+                    "startDate": "2016-10-06",
+                    "endDate": "2016-12-31"
+                }
+            ]
+        }
+    ]
+}
