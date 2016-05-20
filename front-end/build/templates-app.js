@@ -193,7 +193,7 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "\n" +
     "                                <td class=\"icon\" ng-if=\"skillRole.isEditing === false\">\n" +
     "                                    <img class=\"skill-icon\" ng-src=\"{{ edit.getSkillImg(skillRole) }}\" alt=\"img\"/>\n" +
-    "                                    <p  class=\"skill-name\">{{ skillRole.name }}</p>\n" +
+    "                                    <p  class=\"skill-name\">{{ skillRole.name || \"Skill\"}}</p>\n" +
     "                                </td>\n" +
     "\n" +
     "                                <td class=\"skillname\" ng-if=\"skillRole.isEditing === true\">\n" +
@@ -201,7 +201,7 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "                                </td>\n" +
     "\n" +
     "                                <td class=\"experience-read\" ng-if=\"skillRole.isEditing === false\">\n" +
-    "                                    {{ skillRole.years + ' years' || 'empty' }}\n" +
+    "                                    {{ skillRole.years + ' years' || '0' }}\n" +
     "                                </td>\n" +
     "\n" +
     "                                <td class=\"experience-edit\" ng-if=\"skillRole.isEditing === true\">\n" +

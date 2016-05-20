@@ -51,61 +51,45 @@ hr {
     margin: 0px;
 }
 
-/* Make navigation always collapsed */
-@media (min-width: 768px)
-{
-    .navbar-header
-    {
-        float: none;
-    }
 
-    .navbar-toggle
-    {
-        display: block;
-    }
-
-    .navbar-collapse.collapse
-    {
-        display: none !important;
-    }
-
-    .navbar-collapse.display-block{
-        display: block !important;
-    }
-
+.searchLabel{
+    font-size: 14px;
+    margin-right:10px;
 }
 
-@media (max-width: 520px)
-{
-   .navbar-brand{
-       margin-bottom:15px;      
-    }
+.searchForm{
+    margin-top:10px;
+    margin-left:25%;
     
-    #rw-global-search{        
-        width: 92%; //480/520
-        display: flex;
-    }
-    
-    .searchFormGroup{
-        display: flex;
-    }
-    
-    .searchLabel{
-        width: 28%; //80/520
-        margin-left: 6.25%; //30/520
-        margin-top: 2%; //5/520    
-    }
-    
-    .optionSearch{
-        width: 31.25%; //150px/520;
-        margin-right:2%; //5/520 
-    }
+   
+}
 
-    .inputSearch{
-        width: 31.25%; //150px/520; 
-        margin-right:2%; //5/520 
+.navbar-brand{
+    margin-bottom: 10px;
+    margin-top:-5px;
+}
+
+.input-group{
+    margin-top:8px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    border-color: transparent;
+}
+
+@media screen and (min-width:767px){
+    .navbar-right{
+       margin-top:-35px;
     }
 }
+
+@media screen and (max-width:767px){
+    .searchForm{
+       margin-left:25%;
+       margin-right:25%;
+    }
+}
+
 
 
 @import 'variables.less';

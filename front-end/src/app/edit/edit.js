@@ -108,7 +108,7 @@
         $scope.edit.showSkillName     = 0;
         $scope.edit.getSkillImg       = getSkillImg;
         $scope.edit.removeSkill       = removeSkill;
-        $scope.edit.addSkillRole      = addSkillRole;
+        // $scope.edit.addSkillRole      = addSkillRole;
         $scope.edit.addLifeSkillRole  = addLifeSkillRole;
         $scope.edit.editSkill         = editSkill;
         $scope.edit.saveSkills        = saveSkills;
@@ -253,12 +253,11 @@
       };
 
       function addLifeSkillRole(competencyArray) {
-        $scope.inserted = {
-          abbrev                : '',
-          CompetencyDisplayName : null,
-          YearsExperience       : null
-        };
-        competencyArray.unshift($scope.inserted);
+        var emptySkill = {
+          "name": "Skill",
+          "years": 0
+        }
+        competencyArray.unshift(emptySkill);
       };
 
       function editSkill(skillRole){

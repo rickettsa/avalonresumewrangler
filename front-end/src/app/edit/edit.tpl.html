@@ -151,7 +151,7 @@
 
                                 <td class="icon" ng-if="skillRole.isEditing === false">
                                     <img class="skill-icon" ng-src="{{ edit.getSkillImg(skillRole) }}" alt="img"/>
-                                    <p  class="skill-name">{{ skillRole.name }}</p>
+                                    <p  class="skill-name">{{ skillRole.name || "Skill"}}</p>
                                 </td>
 
                                 <td class="skillname" ng-if="skillRole.isEditing === true">
@@ -159,7 +159,7 @@
                                 </td>
 
                                 <td class="experience-read" ng-if="skillRole.isEditing === false">
-                                    {{ skillRole.years + ' years' || 'empty' }}
+                                    {{ skillRole.years + ' years' || '0' }}
                                 </td>
 
                                 <td class="experience-edit" ng-if="skillRole.isEditing === true">

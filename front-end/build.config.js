@@ -76,6 +76,7 @@ module.exports = {
       'vendor/angular-sanitize/angular-sanitize.min.js.map',
       'config/config.js',
       'vendor/angular-loading-bar/loading-bar.min.js'
+      
     ],
     dirs: [
       'vendor/ckeditor/**'
