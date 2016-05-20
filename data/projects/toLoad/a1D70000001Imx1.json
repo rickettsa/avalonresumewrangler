@@ -1,12 +1,12 @@
 {
-    "clientName": "Janus Capital Management",
-    "salesForceProjectName": "Janus - SOW #11",
+    "clientName": "McKesson",
+    "salesForceProjectName": "McKesson Connect Development & Support-Oct-Mar",
     "region": "NATL",
     "practice": "",
     "_createProjManager": "Mike Green",
-    "startDate": "2016-09-23",
-    "endDate": "2016-01-31",
-    "salesforceRecordId": "a1D70000001Imx1",
-    "projectDisplayName": "Janus",
+    "startDate": "2016-09-29",
+    "endDate": "2016-03-31",
+    "salesforceRecordId": "a1D70000001ImX1",
+    "projectDisplayName": "McKesson Connect Development & Support",
     "positions": []
 }
