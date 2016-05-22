@@ -1,0 +1,63 @@
+{
+    "clientName": "Explicavi",
+    "salesForceProjectName": "Managed Mobile Service Development",
+    "region": "DC",
+    "practice": "Enterprise Search",
+    "_createProjManager": "Niels Nielsen",
+    "startDate": "2016-06-15",
+    "endDate": "2016-09-30",
+    "salesforceRecordId": "a1D70000002lfrj",
+    "projectDisplayName": "Managed Mobile Service Development",
+    "positions": [
+        {
+            "assignmentName": "Managed Mobile Service Development - Brian Green",
+            "filledBy": [
+                {
+                    "userFullName": "Brian Green",
+                    "startDate": "2016-06-15",
+                    "endDate": "2016-07-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Managed Mobile Service Development - Eugene Guilaran",
+            "filledBy": [
+                {
+                    "userFullName": "Eugene Guilaran",
+                    "startDate": "2016-06-15",
+                    "endDate": "2016-09-30"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Managed Mobile Service Development - Eugene Guilaran",
+            "filledBy": [
+                {
+                    "userFullName": "Eugene Guilaran",
+                    "startDate": "2016-06-15",
+                    "endDate": "2016-07-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Managed Mobile Service Development - Uday Venkatadasari",
+            "filledBy": [
+                {
+                    "userFullName": "Uday Venkatadasari",
+                    "startDate": "2016-06-15",
+                    "endDate": "2016-07-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Managed Mobile Service Development - Uday Venkatadasari",
+            "filledBy": [
+                {
+                    "userFullName": "Uday Venkatadasari",
+                    "startDate": "2016-06-15",
+                    "endDate": "2016-07-31"
+                }
+            ]
+        }
+    ]
+}

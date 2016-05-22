@@ -1,0 +1,43 @@
+{
+    "clientName": "Marriott International",
+    "salesForceProjectName": "MDAM – Possible and Unmatched Images",
+    "region": "DC",
+    "practice": "Enterprise Web",
+    "_createProjManager": "Niels Nielsen",
+    "startDate": "2016-03-22",
+    "endDate": "2016-06-30",
+    "salesforceRecordId": "a1D70000002jy91",
+    "projectDisplayName": "MDAM – Possible and Unmatched Images",
+    "positions": [
+        {
+            "assignmentName": "MDAM – Possible and Unmatched Images - Chris Marino",
+            "filledBy": [
+                {
+                    "userFullName": "Chris Marino",
+                    "startDate": "2016-03-22",
+                    "endDate": "2016-04-30"
+                }
+            ]
+        },
+        {
+            "assignmentName": "MDAM – Possible and Unmatched Images - Demian Hess",
+            "filledBy": [
+                {
+                    "userFullName": "Demian Hess",
+                    "startDate": "2016-03-22",
+                    "endDate": "2016-04-30"
+                }
+            ]
+        },
+        {
+            "assignmentName": "MDAM – Possible and Unmatched Images - Mike Ross",
+            "filledBy": [
+                {
+                    "userFullName": "Mike Ross",
+                    "startDate": "2016-03-22",
+                    "endDate": "2016-06-30"
+                }
+            ]
+        }
+    ]
+}

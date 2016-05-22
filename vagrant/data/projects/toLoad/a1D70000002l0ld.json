@@ -1,0 +1,23 @@
+{
+    "clientName": "Hortonworks, Inc.",
+    "salesForceProjectName": "Hortonworks - Target - Caspian",
+    "region": "COE",
+    "practice": "Big Data",
+    "_createProjManager": "Andy Kruth",
+    "startDate": "2016-04-27",
+    "endDate": "2016-09-11",
+    "salesforceRecordId": "a1D70000002l0ld",
+    "projectDisplayName": "Hortonworks",
+    "positions": [
+        {
+            "assignmentName": "Hortonworks - Target - Caspian - Doug Mann",
+            "filledBy": [
+                {
+                    "userFullName": "Doug Mann",
+                    "startDate": "2016-04-27",
+                    "endDate": "2016-02-01"
+                }
+            ]
+        }
+    ]
+}

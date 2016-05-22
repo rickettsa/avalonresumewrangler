@@ -1,0 +1,33 @@
+{
+    "clientName": "FedEx Corporate Services, Inc.",
+    "salesForceProjectName": "FedEx-FY 16 Hosting Support",
+    "region": "NATL",
+    "practice": "NoSQL",
+    "_createProjManager": "John Holshey",
+    "startDate": "2016-06-01",
+    "endDate": "2016-05-31",
+    "salesforceRecordId": "a1D70000002lfki",
+    "projectDisplayName": "FedEx",
+    "positions": [
+        {
+            "assignmentName": "FY 16 Hosting Support - Ben Neuman",
+            "filledBy": [
+                {
+                    "userFullName": "Ben Neuman",
+                    "startDate": "2016-06-01",
+                    "endDate": "2016-05-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "FedEx-FY 16 Hosting Support - Karl Erisman",
+            "filledBy": [
+                {
+                    "userFullName": "Karl Erisman",
+                    "startDate": "2016-01-04",
+                    "endDate": "2016-05-31"
+                }
+            ]
+        }
+    ]
+}

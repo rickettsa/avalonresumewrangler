@@ -1,0 +1,83 @@
+{
+    "clientName": "McKesson",
+    "salesForceProjectName": "McKesson Connect Development & Support-Apr-Sep15",
+    "region": "NATL",
+    "practice": "Enterprise Web",
+    "_createProjManager": "Mike Green",
+    "startDate": "2016-04-01",
+    "endDate": "2016-10-03",
+    "salesforceRecordId": "a1D70000002k3zt",
+    "projectDisplayName": "McKesson Connect Development & Support",
+    "positions": [
+        {
+            "assignmentName": "McKesson Connect Development & Support-Apr-Sep15-Guruprasad Prabhu",
+            "filledBy": [
+                {
+                    "userFullName": "Guruprasad Prabhu",
+                    "startDate": "2016-04-01",
+                    "endDate": "2016-02-01"
+                }
+            ]
+        },
+        {
+            "assignmentName": "McKesson Connect Development & Support - Manoj Cherian",
+            "filledBy": [
+                {
+                    "userFullName": "Manoj Cherian",
+                    "startDate": "2016-07-12",
+                    "endDate": "2016-02-01"
+                }
+            ]
+        },
+        {
+            "assignmentName": "McKesson Connect Development & Support-Apr-Sep15-Mohd Wahid",
+            "filledBy": [
+                {
+                    "userFullName": "Mohd Wahid",
+                    "startDate": "2016-04-01",
+                    "endDate": "2016-02-01"
+                }
+            ]
+        },
+        {
+            "assignmentName": "McKesson Connect Development & Support-Apr-Sep15-Ravish Malik",
+            "filledBy": [
+                {
+                    "userFullName": "Ravish Malik",
+                    "startDate": "2016-04-01",
+                    "endDate": "2016-02-01"
+                }
+            ]
+        },
+        {
+            "assignmentName": "McKesson Connect Development & Support-Apr-Sep15-Sumeet Nembhani",
+            "filledBy": [
+                {
+                    "userFullName": "Sumeet Nembhani",
+                    "startDate": "2016-04-01",
+                    "endDate": "2016-02-01"
+                }
+            ]
+        },
+        {
+            "assignmentName": "PS-Suvarna Kamannavar - PS",
+            "filledBy": [
+                {
+                    "userFullName": "Suvarna Kamannavar",
+                    "startDate": "2016-04-01",
+                    "endDate": "2016-02-01"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Sr Arch & Guidance - Suvarna Kamannavar",
+            "filledBy": [
+                {
+                    "userFullName": "Suvarna Kamannavar",
+                    "startDate": "2016-04-01",
+                    "endDate": "2016-02-01"
+                }
+            ]
+        }
+    ]
+}

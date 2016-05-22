@@ -1,0 +1,23 @@
+{
+    "clientName": "Hortonworks, Inc.",
+    "salesForceProjectName": "HWX - Tudor subcontract-Project",
+    "region": "COE",
+    "practice": "Big Data",
+    "_createProjManager": "Tom Reidy",
+    "startDate": "2016-11-29",
+    "endDate": "2016-01-02",
+    "salesforceRecordId": "a1D70000003DGaI",
+    "projectDisplayName": "HWX",
+    "positions": [
+        {
+            "assignmentName": "HWX - Tudor subcontract-Project - Trey Cahill",
+            "filledBy": [
+                {
+                    "userFullName": "Trey Cahill",
+                    "startDate": "2016-11-29",
+                    "endDate": "2016-01-28"
+                }
+            ]
+        }
+    ]
+}

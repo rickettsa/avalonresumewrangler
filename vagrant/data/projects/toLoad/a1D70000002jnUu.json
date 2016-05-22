@@ -1,0 +1,23 @@
+{
+    "clientName": "Hortonworks, Inc.",
+    "salesForceProjectName": "Dominos Shadow",
+    "region": "COE",
+    "practice": "",
+    "_createProjManager": "Andy Kruth",
+    "startDate": "2016-03-02",
+    "endDate": "2016-03-31",
+    "salesforceRecordId": "a1D70000002jnUu",
+    "projectDisplayName": "Dominos Shadow",
+    "positions": [
+        {
+            "assignmentName": "Dominos Shadow - Manjesh Reddy",
+            "filledBy": [
+                {
+                    "userFullName": "Manjesh Reddy",
+                    "startDate": "2016-03-02",
+                    "endDate": "2016-03-31"
+                }
+            ]
+        }
+    ]
+}

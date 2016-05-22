@@ -1,0 +1,63 @@
+{
+    "clientName": "FedEx Corporate Services, Inc.",
+    "salesForceProjectName": "FedEx-FY 16 App Support",
+    "region": "NATL",
+    "practice": "NoSQL",
+    "_createProjManager": "John Holshey",
+    "startDate": "2016-06-01",
+    "endDate": "2016-05-31",
+    "salesforceRecordId": "a1D70000002lflL",
+    "projectDisplayName": "FedEx",
+    "positions": [
+        {
+            "assignmentName": "FedEx-FY 16 App Support - Darrel Cox",
+            "filledBy": [
+                {
+                    "userFullName": "Darrel Cox",
+                    "startDate": "2016-06-01",
+                    "endDate": "2016-10-23"
+                }
+            ]
+        },
+        {
+            "assignmentName": "FedEx-FY 16 App Support - Darrel Cox",
+            "filledBy": [
+                {
+                    "userFullName": "Darrel Cox",
+                    "startDate": "2016-10-24",
+                    "endDate": "2016-05-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "FY 16 App Support - Harry Bakken",
+            "filledBy": [
+                {
+                    "userFullName": "Harry Bakken",
+                    "startDate": "2016-08-17",
+                    "endDate": "2016-09-04"
+                }
+            ]
+        },
+        {
+            "assignmentName": "FY 16 App Support - Joel Ruisi",
+            "filledBy": [
+                {
+                    "userFullName": "Joel Ruisi",
+                    "startDate": "2016-06-01",
+                    "endDate": "2016-05-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "FedEx-FY 16 App Support - Kevin Kim",
+            "filledBy": [
+                {
+                    "userFullName": "Kevin Kim",
+                    "startDate": "2016-12-04",
+                    "endDate": "2016-12-10"
+                }
+            ]
+        }
+    ]
+}

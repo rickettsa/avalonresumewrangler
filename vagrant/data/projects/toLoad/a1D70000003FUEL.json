@@ -1,0 +1,133 @@
+{
+    "clientName": "Genentech",
+    "salesForceProjectName": "Genentech SWA",
+    "region": "NATL",
+    "practice": "NoSQL",
+    "_createProjManager": "Mike Green",
+    "startDate": "2016-06-15",
+    "endDate": "2016-03-31",
+    "salesforceRecordId": "a1D70000003FUEL",
+    "projectDisplayName": "Genentech SWA",
+    "positions": [
+        {
+            "assignmentName": "Genentech SWA - Ben Neuman",
+            "filledBy": [
+                {
+                    "userFullName": "Ben Neuman",
+                    "startDate": "2016-07-19",
+                    "endDate": "2016-12-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Genentech SWA-Jeff Hendricks",
+            "filledBy": [
+                {
+                    "userFullName": "Jeff Hendricks",
+                    "startDate": "2016-08-17",
+                    "endDate": "2016-12-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Genentech SWA-Joel Ruisi",
+            "filledBy": [
+                {
+                    "userFullName": "Joel Ruisi",
+                    "startDate": "2016-06-15",
+                    "endDate": "2016-03-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Genentech SWA - Keith Smith",
+            "filledBy": [
+                {
+                    "userFullName": "Keith Smith",
+                    "startDate": "2016-08-10",
+                    "endDate": "2016-03-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Genentech SWA-Kim Curtis",
+            "filledBy": [
+                {
+                    "userFullName": "Kim Curtis",
+                    "startDate": "2016-06-15",
+                    "endDate": "2016-03-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Genentech SWA - expenses - Mike Green",
+            "filledBy": [
+                {
+                    "userFullName": "Mike Green",
+                    "startDate": "2016-06-15",
+                    "endDate": "2016-12-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Genentech SWA-Mike Green",
+            "filledBy": [
+                {
+                    "userFullName": "Mike Green",
+                    "startDate": "2016-06-15",
+                    "endDate": "2016-03-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Genentech SWA - Mohamed Keshk",
+            "filledBy": [
+                {
+                    "userFullName": "Mohamed Keshk",
+                    "startDate": "2016-06-28",
+                    "endDate": "2016-03-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Genentech SWA-Sean Dowd",
+            "filledBy": [
+                {
+                    "userFullName": "Sean Dowd",
+                    "startDate": "2016-06-15",
+                    "endDate": "2016-03-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Genentech SWA-Shilpi Reddy",
+            "filledBy": [
+                {
+                    "userFullName": "Shilpi Reddy",
+                    "startDate": "2016-06-15",
+                    "endDate": "2016-03-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Genentech SWA - Spencer Mefford",
+            "filledBy": [
+                {
+                    "userFullName": "Spencer Mefford",
+                    "startDate": "2016-10-09",
+                    "endDate": "2016-01-20"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Genentech SWA-Uday Venkatadasari",
+            "filledBy": [
+                {
+                    "userFullName": "Uday Venkatadasari",
+                    "startDate": "2016-08-17",
+                    "endDate": "2016-03-31"
+                }
+            ]
+        }
+    ]
+}

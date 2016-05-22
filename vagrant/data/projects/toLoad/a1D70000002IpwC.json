@@ -1,0 +1,23 @@
+{
+    "clientName": "NBC Universal Media, LLC",
+    "salesForceProjectName": "Semantic DAM",
+    "region": "NATL",
+    "practice": "",
+    "_createProjManager": "Mike Green",
+    "startDate": "2016-07-25",
+    "endDate": "2016-03-31",
+    "salesforceRecordId": "a1D70000002IpwC",
+    "projectDisplayName": "Semantic DAM",
+    "positions": [
+        {
+            "assignmentName": "Semantic DAM - Silvano Ravotto",
+            "filledBy": [
+                {
+                    "userFullName": "Silvano Ravotto",
+                    "startDate": "2016-01-01",
+                    "endDate": "2016-02-01"
+                }
+            ]
+        }
+    ]
+}
