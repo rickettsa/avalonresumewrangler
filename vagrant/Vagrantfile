@@ -76,12 +76,14 @@ Vagrant.configure(2) do |config|
 
 #  config.vm.provision :shell, path: "bootstrap.sh"
 
-# Ansible-local installs latest version of Ansible on VM.
-#  Bug in Vagrant 1.8.1 does not recognize existing Ansible installation, so we just let Vagrant install the latest version.
+# Ansible-local installs latest version of Ansible on VM. 
+#  Bug in Vagrant 1.8.1 does not recognize Ansible 2.0 installation
+#  Install packages not included in vagrant base box
+   config.vm.provision "shell", inline: "sudo yum install -y gcc python-pip python-devel libffi-devel openssl-devel && sudo pip install backports.ssl_match_hostname ansible==1.9.2"
+
 #  The playbook is run right after the install. This causes problems as the geerlingguy.apache and geerlingguy.java roles must be installed
 #  before the playbook is run. Workaround: the roles are included in the provisioning folder.
 #  TODO: update roles automatically
-
   config.vm.provision "ansible_local" do |ansible|
     ansible.playbook = "provisioning/site.yml"
     ansible.groups = {
@@ -103,6 +105,10 @@ Vagrant.configure(2) do |config|
     }
     newpython.verbose = 'v'
   end
+
+# Always restart grunt watch, elastic, flask for any vagrant up
+# TODO: replace elastic start with chkconfig in elastic role..
+  config.vm.provision :shell, path: "provisioning/shell/bootstrap3.sh" ,run: "always"
 
 # Always restart grunt watch, elastic, flask for any vagrant up
 # TODO: replace elastic start with chkconfig in elastic role..
