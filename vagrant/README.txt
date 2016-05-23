@@ -11,19 +11,19 @@ vagrant up
 
 Add 192.168.33.10 wrangler wrangler.example.com to your /etc/hosts file. TODO: Windows equivalent
 
-First-time installation can take half an hour. 
+First-time installation can take 20+ minutes. 
 
 To stop the virtual machine: 
-(? Stop elasticsearch first?)
-  cd path-to-clone-directory/avalonresumewrangler/vagrant 
-  vagrant ssh
-  sudo service elasticsearch stop
-Stop virtual machine
-  (cd avalonresumewrangler/vagrant)
-  vagrant halt
-Data will persist. Startup will be much faster on restart
+ (Optional, but safer: Stop elasticsearch first)
+   cd path-to-clone-directory/avalonresumewrangler/vagrant 
+   vagrant ssh
+   sudo service elasticsearch stop
+ Stop virtual machine
+   (cd path-to-clone-directory/avalonresumewrangler/vagrant)
+   vagrant halt
+Data will persist. Startup will be much faster on restart.
 
-To restart virtual machine
+To restart virtual machine: 
   cd avalonresumewrangler/vagrant 
   vagrant up
 
@@ -48,4 +48,4 @@ For the front-end, there is a grunt watch task that will automatically rebuild a
 To access the Elasticsearch cluster:
 http://wrangler:9200/...
 Test urls: http://wrangler:9200/ gives a quick response
-http://wrangler:9200/_cat/
+  http://wrangler:9200/_cat/
