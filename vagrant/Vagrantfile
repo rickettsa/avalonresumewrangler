@@ -105,6 +105,18 @@ Vagrant.configure(2) do |config|
     }
     newpython.verbose = 'v'
   end
+# Installing python components requires python2.7.9. 
+# The first provisioner run establishes a virtualenv for the vagrant user with 2.7.9 as the default
+# Using a second provisioner file uses the new default python
+  config.vm.provision "ansible_local" do |newpython|
+    newpython.playbook = "provisioning/site2.yml"
+    newpython.groups = {
+      "wrangler" => ["default"],
+      "elastic" => ["default"],
+      "flask" => ["default"]
+    }
+    newpython.verbose = 'v'
+  end
 
 # Always restart grunt watch, elastic, flask for any vagrant up
 # TODO: replace elastic start with chkconfig in elastic role..
