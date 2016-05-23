@@ -74,6 +74,10 @@
     function EditCtrl ($http, $scope, $filter, resumeResponse, skillsResponse, AppConfig, contactResponse, resumeService, $stateParams, skillsService, sessionService, configuration){
 
       $scope.edit = {};
+      
+     jQuery(function () {
+      jQuery('#myTab a:first').tab('show')
+    })
 
       function initEdit(){
         if (resumeResponse.data.hits.length > 0) {

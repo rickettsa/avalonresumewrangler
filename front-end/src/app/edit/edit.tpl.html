@@ -15,7 +15,9 @@
             <h5><a href= "mailto : {{ resume.email }}">email: {{ resume.email }}</a></h5>
             <h5><a href= "tel: +{{ resume.phone }}"> phone: {{ resume.phone }}</a></h5>
         </div>
-
+        
+        
+  
         <div class="col-md-5 col-md-offset-1">
             <h3>Employee Position at Avalon</h3>
           
@@ -34,215 +36,236 @@
             {{ resume.EmploymentHistory.employeeProfessionalSummary || "empty" }}
             </a></p>
         </div>
+        
+        
+        
+       <div class="col-md-12">         
+        <div>
 
+           <ul class="nav nav-tabs" id="myTab">
+			  <li class="active"><a data-target="#experience" data-toggle="tab">Experience</a></li>
+			  <li><a data-target="#skills" data-toggle="tab">Skills</a></li>
+			  <li><a data-target="#education" data-toggle="tab">Eduacation</a></li>
+			</ul>
 
-        <!-- ================================================= -->
-        <!-- START RESUME EXPERIENCE SECTION -->
-        <!-- ================================================= -->
-        <div class="col-md-12" ng-if = "!_.isEmpty(contact)">
-            <h2>Experience:</h2>
+			<div class="tab-content">
+			  <div class="tab-pane active" id="experience">
+                  
+                <!-- ================================================= -->
+                <!-- START RESUME EXPERIENCE SECTION -->
+                <!-- ================================================= -->
+                <div class="col-md-12" ng-if = "!_.isEmpty(contact)">
+                    <h2>Experience:</h2>
 
-            <button class = "add-skill btn btn-success" ng-click = "edit.addEmployer('start')"><i class="glyphicon glyphicon-plus"></i> Add Employer</button>
+                    <button class = "add-skill btn btn-success" ng-click = "edit.addEmployer('start')"><i class="glyphicon glyphicon-plus"></i> Add Employer</button>
 
-            <div ng-repeat = "emplyr in resume.employmentHistory" ng-init="outerIndex = $index">
-                <div class="well" ng-if="resume.employmentHistory[outerIndex].positions.length > 0">
-                    <div class="row" >
-                        <div class="col-md-8">
-                            <h3><a href = "#"
-                            e-required e-placeholder = "Service Provider Organization Name"
-                            editable-text = "emplyr.employerOrgName"
-                            onaftersave = "edit.updateResume()">
-                            {{ emplyr.employerOrgName || "Service Provider Organization Name" }}
-                            </a></h3>
-                        </div>
-
-                        <div class="col-md-4 text-right">
-                           <h3><button class = "add-skill btn btn-success" ng-click = "edit.addExperience('start', outerIndex)"><i class="glyphicon glyphicon-plus"></i> Experience</button><h3>
-                        </div>
-
-
-                        <div ng-repeat = "pos in emplyr.positions" ng-init = "innerIndex= $index">
-                            <div class="well light-well">
-                                <div class="col-md-12 text-right">
-                                    <button class="btn btn-danger btn-xs"
-                                    ng-click = "edit.deletePosition(outerIndex, innerIndex)">Delete Position</button>
+                    <div ng-repeat = "emplyr in resume.employmentHistory" ng-init="outerIndex = $index">
+                        <div class="well" ng-if="resume.employmentHistory[outerIndex].positions.length > 0">
+                            <div class="row" >
+                                <div class="col-md-8">
+                                    <h3><a href = "#"
+                                    e-required e-placeholder = "Service Provider Organization Name"
+                                    editable-text = "emplyr.employerOrgName"
+                                    onaftersave = "edit.updateResume()">
+                                    {{ emplyr.employerOrgName || "Service Provider Organization Name" }}
+                                    </a></h3>
                                 </div>
 
-   
-                                <h3><a href="#"
-                                editable-text="pos.clientName"
-                                e-uib-typeahead="clientName as clientName._source.clientName for clientName in projects($viewValue) | filter:$viewValue |limitTo:3"
-                                e-typeahead-on-select='onSelect($item, $model, $label, pos)'
-                                onaftersave = "edit.updateResume()" 
-                                >{{pos.clientName}} 
-                                </a></h3>
+                                <div class="col-md-4 text-right">
+                                <h3><button class = "add-skill btn btn-success" ng-click = "edit.addExperience('start', outerIndex)"><i class="glyphicon glyphicon-plus"></i> Experience</button><h3>
+                                </div>
 
-                                <h3><a href = "#"
-                                e-required e-placeholder = "Position Title"
-                                editable-text            = "pos.title"
-                                onaftersave              = "edit.updateResume()">
-                                {{ pos.title || "Position Title" }}
-                                </a></h3>
 
-                                <span><a href = "#"
-                                e-required e-placeholder = "Start Date"
-                                editable-text            = "pos.startDate"
-                                onaftersave              = "edit.updateResume()">
-                                {{ pos.startDate || "Start Date" }}
-                                </a></span><span> to </span>
+                                <div ng-repeat = "pos in emplyr.positions" ng-init = "innerIndex= $index">
+                                    <div class="well light-well">
+                                        <div class="col-md-12 text-right">
+                                            <button class="btn btn-danger btn-xs"
+                                            ng-click = "edit.deletePosition(outerIndex, innerIndex)">Delete Position</button>
+                                        </div>
 
-                                <span><a href = "#"
-                                e-required e-placeholder = "End Date"
-                                editable-text            = "pos.endDate"
-                                onaftersave              = "edit.updateResume()">
-                                {{ pos.endDate || "End Date" }}
-                                </a></span>
+        
+                                        <h3><a href="#"
+                                        editable-text="pos.clientName"
+                                        e-uib-typeahead="clientName as clientName._source.clientName for clientName in projects($viewValue) | filter:$viewValue |limitTo:3"
+                                        e-typeahead-on-select='onSelect($item, $model, $label, pos)'
+                                        onaftersave = "edit.updateResume()" 
+                                        >{{pos.clientName}} 
+                                        </a></h3>
 
-                                <h4 class="uneditable"
-                                ng-if="pos.globalDescription">
-                                {{ pos.globalDescription }}
-                                </h4>
+                                        <h3><a href = "#"
+                                        e-required e-placeholder = "Position Title"
+                                        editable-text            = "pos.title"
+                                        onaftersave              = "edit.updateResume()">
+                                        {{ pos.title || "Position Title" }}
+                                        </a></h3>
 
-                                <br ng-if = "!pos.GlobalDescription"/>
-                                <br ng-if = "!pos.GlobalDescription"/>
+                                        <span><a href = "#"
+                                        e-required e-placeholder = "Start Date"
+                                        editable-text            = "pos.startDate"
+                                        onaftersave              = "edit.updateResume()">
+                                        {{ pos.startDate || "Start Date" }}
+                                        </a></span><span> to </span>
 
-                                <!-- Integrate CKEDitor http://jsfiddle.net/jWANb/2/ -->
-                                <div class = "ck-editor"
-                                ng-model = "pos.description"
-                                ng-init  = "description = pos.description">
-                                {{ pos.description }}
+                                        <span><a href = "#"
+                                        e-required e-placeholder = "End Date"
+                                        editable-text            = "pos.endDate"
+                                        onaftersave              = "edit.updateResume()">
+                                        {{ pos.endDate || "End Date" }}
+                                        </a></span>
+
+                                        <h4 class="uneditable"
+                                        ng-if="pos.globalDescription">
+                                        {{ pos.globalDescription }}
+                                        </h4>
+
+                                        <br ng-if = "!pos.GlobalDescription"/>
+                                        <br ng-if = "!pos.GlobalDescription"/>
+
+                                        <!-- Integrate CKEDitor http://jsfiddle.net/jWANb/2/ -->
+                                        <div class = "ck-editor"
+                                        ng-model = "pos.description"
+                                        ng-init  = "description = pos.description">
+                                        {{ pos.description }}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 text-right">
+                                    <button class = "add-skill btn btn-success" ng-click = "edit.addExperience('end', outerIndex)"><i class="glyphicon glyphicon-plus"></i> Experience</button></span>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
+                    <button class = "add-skill btn btn-success" ng-click = "edit.addEmployer('end')"><i class="glyphicon glyphicon-plus"></i> Add Employer</button>
+                </div><!-- finish experience section -->
+                  
+                                  
+              </div>
+			  <div class="tab-pane" id="skills">
+              
+                <!-- ================================================= -->
+                <!-- START RESUME SKILLSET SECTION -->
+                <!-- ================================================= -->
+                <div class="col-md-12">
+                    <h2>Lifetime Skillset:</h2>
+                    <button class = "add-skill btn btn-success" ng-click="edit.addLifeSkillRole(resume.skills)"><i class="glyphicon glyphicon-plus"></i> Skill</button>
+
+                    <div class="well light-well">
+
+                        <form class="form-horizontal filter-form">
+                            <div class="form-group text-left">
+                                <label class="col-md-3  control-label">Filter By:</label>
+                                <div class="col-md-6">
+                                <input type="text" class="form-control" ng-model="edit.skillFilter">
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="skills-scroller well col-md-12 col-md-offset-0">
+                            <form ng-submit="edit.updateResume()">
+                                <table class="skills-table">
+                                    <tr ng-repeat="skillRole in resume.skills | filter:edit.skillFilter | orderBy:skillRole.name" ng-init="skillRole.isEditing = false">
+
+                                        <td class="icon" ng-if="skillRole.isEditing === false">
+                                            <img class="skill-icon" ng-src="{{ edit.getSkillImg(skillRole) }}" alt="img"/>
+                                            <p  class="skill-name">{{ skillRole.name || "Skill"}}</p>
+                                        </td>
+
+                                        <td class="skillname" ng-if="skillRole.isEditing === true">
+                                            <input class="form-control" ng-model="skillRole.name" placeholder="Skill Name" options="typeaheadOptions" datasets="typeaheadData" sf-typeahead autofocus/>
+                                        </td>
+
+                                        <td class="experience-read" ng-if="skillRole.isEditing === false">
+                                            {{ skillRole.years + ' years' || '0' }}
+                                        </td>
+
+                                        <td class="experience-edit" ng-if="skillRole.isEditing === true">
+                                            <input class="form-control" ng-model="skillRole.years" placeholder="Years Experience" ng-pattern="'[0-9]+'"/>
+                                        </td>
+
+                                        <td class="controls text-right">
+                                            <div class="skill-controls" ng-if="skillRole.isEditing === false">
+                                                <button type="button" ng-click="edit.editSkill(skillRole)" class="btn btn-info btn-sm" aria-label="Left Align">
+                                                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit
+                                                </button>
+                                                
+                                                <button type="button" ng-click="edit.removeSkill($index, resume.skills)" class="btn btn-danger btn-sm" aria-label="Left Align">
+                                                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Delete
+                                                </button>
+                                                
+                                            
+                                            </div>
+                                            <div class="skill-controls" ng-if="skillRole.isEditing === true">
+                                                <button type="button" ng-click="edit.saveSkills(resume.skills, skillRole)" class="btn btn-success btn-sm" aria-label="Left Align">
+                                                    <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Save
+                                                </button>
+                                                
+                                                <!--<button ng-click="edit.removeSkill($index, resume.skills)"><i class="glyphicon glyphicon-remove"></i></button>-->
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- finish skillset section -->
+                  
+                                 
+              </div>
+			  <div class="tab-pane" id="education">
+                  
+                <!-- ================================================= -->
+                <!-- START RESUME EDUCATION SECTION -->
+                <!-- ================================================= -->
+                <div class="col-md-12">
+                    <h2>Education:</h2>
+                    <button class = "add-skill btn btn-success" ng-click ="edit.addEducation('start')"><i class="glyphicon glyphicon-plus"></i> Education</button>
+                    <div class = "well light-well" ng-repeat = "educ in resume.educationHistory" >
                         <div class="col-md-12 text-right">
-                            <button class = "add-skill btn btn-success" ng-click = "edit.addExperience('end', outerIndex)"><i class="glyphicon glyphicon-plus"></i> Experience</button></span>
+                            <button class="btn btn-danger btn-xs" ng-click ="edit.deleteEducation($index)">Delete Education</button>
                         </div>
-                    </div>
-                </div>
-            </div>
 
-            <button class = "add-skill btn btn-success" ng-click = "edit.addEmployer('end')"><i class="glyphicon glyphicon-plus"></i> Add Employer</button>
-        </div><!-- finish experience section -->
+                        <h3><a href                  = "#"
+                            e-required e-placeholder = "Degree Mayor"
+                            editable-text            = "educ.degreeMayor"
+                            onaftersave              = "edit.updateResume()">
+                            {{ educ.degreeMayor || "Degree Mayor" }}</a></h3>
 
+                        <h3><a href                  = "#"
+                            e-required e-placeholder = "Degree Name"
+                            editable-text            = "educ.degreeName"
+                            onaftersave              = "edit.updateResume()">
+                            {{ educ.degreeName || "Degree Name" }}</a></h3>
 
+                        <h3><a href                  = "#"
+                            e-required e-placeholder = "School Name"
+                            editable-text            = "educ.schoolName"
+                            onaftersave              = "edit.updateResume()">
+                            {{ educ.schoolName || "School Name" }}</a></h3>
 
-        <!-- ================================================= -->
-        <!-- START RESUME SKILLSET SECTION -->
-        <!-- ================================================= -->
-        <div class="col-md-12">
-            <h2>Lifetime Skillset:</h2>
-            <button class = "add-skill btn btn-success" ng-click="edit.addLifeSkillRole(resume.skills)"><i class="glyphicon glyphicon-plus"></i> Skill</button>
+                        <span><a href                = "#"
+                            e-required e-placeholder = "Start Date"
+                            editable-text            = "educ.startDate"
+                            onaftersave              = "edit.updateResume()">
+                            {{ educ.startDate || "Start Date" }}</a></span><span> to </span>
 
-            <div class="well light-well">
+                        <span><a href                = "#"
+                            e-required e-placeholder = "End Date"
+                            editable-text            = "educ.endDate"
+                            onaftersave              = "edit.updateResume()">
+                            {{ educ.endDate || "End Date" }}</a></span>
 
-                <form class="form-horizontal filter-form">
-                    <div class="form-group text-left">
-                        <label class="col-md-3  control-label">Filter By:</label>
-                        <div class="col-md-6">
-                         <input type="text" class="form-control" ng-model="edit.skillFilter">
-                        </div>
-                    </div>
-                </form>
-
-                <div class="skills-scroller well col-md-12 col-md-offset-0">
-                    <form ng-submit="edit.updateResume()">
-                         <table class="skills-table">
-                            <tr ng-repeat="skillRole in resume.skills | filter:edit.skillFilter | orderBy:skillRole.name" ng-init="skillRole.isEditing = false">
-
-                                <td class="icon" ng-if="skillRole.isEditing === false">
-                                    <img class="skill-icon" ng-src="{{ edit.getSkillImg(skillRole) }}" alt="img"/>
-                                    <p  class="skill-name">{{ skillRole.name || "Skill"}}</p>
-                                </td>
-
-                                <td class="skillname" ng-if="skillRole.isEditing === true">
-                                    <input class="form-control" ng-model="skillRole.name" placeholder="Skill Name" options="typeaheadOptions" datasets="typeaheadData" sf-typeahead autofocus/>
-                                </td>
-
-                                <td class="experience-read" ng-if="skillRole.isEditing === false">
-                                    {{ skillRole.years + ' years' || '0' }}
-                                </td>
-
-                                <td class="experience-edit" ng-if="skillRole.isEditing === true">
-                                    <input class="form-control" ng-model="skillRole.years" placeholder="Years Experience" ng-pattern="'[0-9]+'"/>
-                                </td>
-
-                                <td class="controls text-right">
-                                    <div class="skill-controls" ng-if="skillRole.isEditing === false">
-                                        <button type="button" ng-click="edit.editSkill(skillRole)" class="btn btn-info btn-sm" aria-label="Left Align">
-                                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit
-                                        </button>
-                                        
-                                        <button type="button" ng-click="edit.removeSkill($index, resume.skills)" class="btn btn-danger btn-sm" aria-label="Left Align">
-                                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Delete
-                                        </button>
-                                        
-                                       
-                                    </div>
-                                    <div class="skill-controls" ng-if="skillRole.isEditing === true">
-                                         <button type="button" ng-click="edit.saveSkills(resume.skills, skillRole)" class="btn btn-success btn-sm" aria-label="Left Align">
-                                            <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Save
-                                        </button>
-                                        
-                                        <!--<button ng-click="edit.removeSkill($index, resume.skills)"><i class="glyphicon glyphicon-remove"></i></button>-->
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </form>
-                </div>
-            </div>
-        </div><!-- finish skillset section -->
-
-
-        <!-- ================================================= -->
-        <!-- START RESUME EDUCATION SECTION -->
-        <!-- ================================================= -->
-        <div class="col-md-12">
-            <h2>Education:</h2>
-            <button class = "add-skill btn btn-success" ng-click ="edit.addEducation('start')"><i class="glyphicon glyphicon-plus"></i> Education</button>
-            <div class = "well light-well" ng-repeat = "educ in resume.educationHistory" >
-                <div class="col-md-12 text-right">
-                    <button class="btn btn-danger btn-xs" ng-click ="edit.deleteEducation($index)">Delete Education</button>
-                </div>
-
-                <h3><a href                  = "#"
-                    e-required e-placeholder = "Degree Mayor"
-                    editable-text            = "educ.degreeMayor"
-                    onaftersave              = "edit.updateResume()">
-                    {{ educ.degreeMayor || "Degree Mayor" }}</a></h3>
-
-                <h3><a href                  = "#"
-                    e-required e-placeholder = "Degree Name"
-                    editable-text            = "educ.degreeName"
-                    onaftersave              = "edit.updateResume()">
-                    {{ educ.degreeName || "Degree Name" }}</a></h3>
-
-                <h3><a href                  = "#"
-                    e-required e-placeholder = "School Name"
-                    editable-text            = "educ.schoolName"
-                    onaftersave              = "edit.updateResume()">
-                    {{ educ.schoolName || "School Name" }}</a></h3>
-
-                <span><a href                = "#"
-                    e-required e-placeholder = "Start Date"
-                    editable-text            = "educ.startDate"
-                    onaftersave              = "edit.updateResume()">
-                    {{ educ.startDate || "Start Date" }}</a></span><span> to </span>
-
-                <span><a href                = "#"
-                    e-required e-placeholder = "End Date"
-                    editable-text            = "educ.endDate"
-                    onaftersave              = "edit.updateResume()">
-                    {{ educ.endDate || "End Date" }}</a></span>
-
-            </div> <!-- finish div for educ in resume.educationHistory -->
-             <button ng-if="!_.isEmpty(resume.educationHistory) && resume.educationHistory.length > 0" class = "add-skill btn btn-success" ng-click = "edit.addEducation('end')"><i class="glyphicon glyphicon-plus"></i> Education</button>
-        </div><!-- finish education section -->
-
-
-
-
+                    </div> <!-- finish div for educ in resume.educationHistory -->
+                    <button ng-if="!_.isEmpty(resume.educationHistory) && resume.educationHistory.length > 0" class = "add-skill btn btn-success" ng-click = "edit.addEducation('end')"><i class="glyphicon glyphicon-plus"></i> Education</button>
+                </div><!-- finish education section -->
+                  
+                  
+                  
+              </div>
+			</div>
+            
+        </div>
 
     </div> <!-- finish row -->
 </div>
