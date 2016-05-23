@@ -3,33 +3,34 @@
         <!-- click-edit-link http://plnkr.co/edit/EsW7mV?p=preview -->
         <!-- plus button http://plnkr.co/edit/xUDrOS?p=preview -->
         <!-- http://vitalets.github.io/angular-xeditable/ -->
-        <div class="col-md-6">
-            <h1>{{ contact.firstName }} {{ contact.lastName }}</h1>
-            <h3>Hire Date:
+        <div class="col-md-5">
+            <h3>{{ resume.firstName }} {{ resume.lastName }} </h3>
+            <h4>Hire Date:
             <a href = "#"
             e-required e-placeholder = "Hire Date"
             editable-text= "resume.EmploymentHistory.EmployerOrg.HireDate"
             onaftersave = "edit.updateResume()">
             {{ resume.EmploymentHistory.EmployerOrg.HireDate || "empty" }}
-            </a></h3>
-            <h3><a href= "mailto : {{ contact.email }}">{{ contact.email }}</a></h3>
-            <h3><a href= "tel: +{{ contact.phone }}"> {{ contact.phone }}</a></h3>
+            </a></h4>
+            <h5><a href= "mailto : {{ resume.email }}">email: {{ resume.email }}</a></h5>
+            <h5><a href= "tel: +{{ resume.phone }}"> phone: {{ resume.phone }}</a></h5>
         </div>
 
-        <div class="col-md-6">
-            <h2>Employee Position at Avalon</h2>
-            <h3>
-            <a href= "#"
+        <div class="col-md-5 col-md-offset-1">
+            <h3>Employee Position at Avalon</h3>
+          
+            <p><a href= "#"
             e-required e-placeholder = "Employee Position at Avalon"
             editable-text = "resume.EmploymentHistory.employeeSuperTitle"
             onaftersave="edit.updateResume()">
             {{ resume.EmploymentHistory.employeeSuperTitle || "empty" }}
-            </a></h3>
+            </a></p>
 
-            <h2>Employee Professional Summary</h2>
+            <h3>Employee Professional Summary</h3>
             <p><a href = "#"
             e-required e-placeholder = "Employee Professional Summary"
-            editable-text = "resume.EmploymentHistory.employeeProfessionalSummary" onaftersave= "edit.updateResume()">
+            editable-text = "resume.EmploymentHistory.employeeProfessionalSummary" 
+            onaftersave= "edit.updateResume()">
             {{ resume.EmploymentHistory.employeeProfessionalSummary || "empty" }}
             </a></p>
         </div>
@@ -135,7 +136,7 @@
 
             <div class="well light-well">
 
-                <form class="form-horizontal">
+                <form class="form-horizontal filter-form">
                     <div class="form-group text-left">
                         <label class="col-md-3  control-label">Filter By:</label>
                         <div class="col-md-6">

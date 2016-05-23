@@ -243,7 +243,7 @@
         competencyArray.splice(index, 1);
       };
 
-      function addSkillRole(competencyArray) {
+      function addSkillRole(competencyArray, addPosition) {
         $scope.inserted = {
           abbrev                : '',
           CompetencyDisplayName : null,

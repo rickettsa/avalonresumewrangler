@@ -45,33 +45,34 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "        <!-- click-edit-link http://plnkr.co/edit/EsW7mV?p=preview -->\n" +
     "        <!-- plus button http://plnkr.co/edit/xUDrOS?p=preview -->\n" +
     "        <!-- http://vitalets.github.io/angular-xeditable/ -->\n" +
-    "        <div class=\"col-md-6\">\n" +
-    "            <h1>{{ contact.firstName }} {{ contact.lastName }}</h1>\n" +
-    "            <h3>Hire Date:\n" +
+    "        <div class=\"col-md-5\">\n" +
+    "            <h3>{{ resume.firstName }} {{ resume.lastName }} </h3>\n" +
+    "            <h4>Hire Date:\n" +
     "            <a href = \"#\"\n" +
     "            e-required e-placeholder = \"Hire Date\"\n" +
     "            editable-text= \"resume.EmploymentHistory.EmployerOrg.HireDate\"\n" +
     "            onaftersave = \"edit.updateResume()\">\n" +
     "            {{ resume.EmploymentHistory.EmployerOrg.HireDate || \"empty\" }}\n" +
-    "            </a></h3>\n" +
-    "            <h3><a href= \"mailto : {{ contact.email }}\">{{ contact.email }}</a></h3>\n" +
-    "            <h3><a href= \"tel: +{{ contact.phone }}\"> {{ contact.phone }}</a></h3>\n" +
+    "            </a></h4>\n" +
+    "            <h5><a href= \"mailto : {{ resume.email }}\">email: {{ resume.email }}</a></h5>\n" +
+    "            <h5><a href= \"tel: +{{ resume.phone }}\"> phone: {{ resume.phone }}</a></h5>\n" +
     "        </div>\n" +
     "\n" +
-    "        <div class=\"col-md-6\">\n" +
-    "            <h2>Employee Position at Avalon</h2>\n" +
-    "            <h3>\n" +
-    "            <a href= \"#\"\n" +
+    "        <div class=\"col-md-5 col-md-offset-1\">\n" +
+    "            <h3>Employee Position at Avalon</h3>\n" +
+    "          \n" +
+    "            <p><a href= \"#\"\n" +
     "            e-required e-placeholder = \"Employee Position at Avalon\"\n" +
     "            editable-text = \"resume.EmploymentHistory.employeeSuperTitle\"\n" +
     "            onaftersave=\"edit.updateResume()\">\n" +
     "            {{ resume.EmploymentHistory.employeeSuperTitle || \"empty\" }}\n" +
-    "            </a></h3>\n" +
+    "            </a></p>\n" +
     "\n" +
-    "            <h2>Employee Professional Summary</h2>\n" +
+    "            <h3>Employee Professional Summary</h3>\n" +
     "            <p><a href = \"#\"\n" +
     "            e-required e-placeholder = \"Employee Professional Summary\"\n" +
-    "            editable-text = \"resume.EmploymentHistory.employeeProfessionalSummary\" onaftersave= \"edit.updateResume()\">\n" +
+    "            editable-text = \"resume.EmploymentHistory.employeeProfessionalSummary\" \n" +
+    "            onaftersave= \"edit.updateResume()\">\n" +
     "            {{ resume.EmploymentHistory.employeeProfessionalSummary || \"empty\" }}\n" +
     "            </a></p>\n" +
     "        </div>\n" +
@@ -177,7 +178,7 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "\n" +
     "            <div class=\"well light-well\">\n" +
     "\n" +
-    "                <form class=\"form-horizontal\">\n" +
+    "                <form class=\"form-horizontal filter-form\">\n" +
     "                    <div class=\"form-group text-left\">\n" +
     "                        <label class=\"col-md-3  control-label\">Filter By:</label>\n" +
     "                        <div class=\"col-md-6\">\n" +
