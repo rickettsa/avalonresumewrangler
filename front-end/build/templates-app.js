@@ -207,6 +207,12 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "                        <div class=\"skills-scroller well col-md-12 col-md-offset-0\">\n" +
     "                            <form ng-submit=\"edit.updateResume()\">\n" +
     "                                <table class=\"skills-table\">\n" +
+    "                                    <thead>\n" +
+    "                                        <th>Skill</th>\n" +
+    "                                        <th>Years of Experience</th>\n" +
+    "                                        <th></th>\n" +
+    "                                        \n" +
+    "                                    </thead>\n" +
     "                                    <tr ng-repeat=\"skillRole in resume.skills | filter:edit.skillFilter | orderBy:skillRole.name\" ng-init=\"skillRole.isEditing = false\">\n" +
     "\n" +
     "                                        <td class=\"icon\" ng-if=\"skillRole.isEditing === false\">\n" +

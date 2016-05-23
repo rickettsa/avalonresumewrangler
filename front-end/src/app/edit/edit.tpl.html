@@ -165,6 +165,12 @@
                         <div class="skills-scroller well col-md-12 col-md-offset-0">
                             <form ng-submit="edit.updateResume()">
                                 <table class="skills-table">
+                                    <thead>
+                                        <th>Skill</th>
+                                        <th>Years of Experience</th>
+                                        <th></th>
+                                        
+                                    </thead>
                                     <tr ng-repeat="skillRole in resume.skills | filter:edit.skillFilter | orderBy:skillRole.name" ng-init="skillRole.isEditing = false">
 
                                         <td class="icon" ng-if="skillRole.isEditing === false">

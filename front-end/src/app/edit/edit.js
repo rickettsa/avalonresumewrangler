@@ -75,9 +75,10 @@
 
       $scope.edit = {};
       
-     jQuery(function () {
-      jQuery('#myTab a:first').tab('show')
-    })
+      //jquery for tab functionality
+      jQuery(function () {
+        jQuery('#myTab a:first').tab('show')
+      })
 
       function initEdit(){
         if (resumeResponse.data.hits.length > 0) {
