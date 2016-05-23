@@ -1,0 +1,8 @@
+---
+# Install back end flask server and load data
+- hosts: flask
+  vars_files:
+  - vars/main.yml
+
+  roles:
+    - flask

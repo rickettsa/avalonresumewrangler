@@ -1,0 +1,68 @@
+---
+  - name: Install development tools
+# TODO: download just what is needed
+    yum: name="@Development tools"
+    become: yes
+
+  - name: Install optional tools to avoid errors
+    yum: name={{ item }}
+    with_items: 
+      - openssl-devel
+      - bzip2-devel
+      - expat-devel
+      - gdbm-devel
+      - readline-devel
+      - sqlite-devel
+    become: yes
+
+#   Info: https://pypi.python.org/pypi/setuptools
+  - name: Download setuptools
+    get_url: url=https://bootstrap.pypa.io/ez_setup.py dest={{ git_root }}/deps
+
+#   Add creates parameter
+  - name: Run ez_setup
+    shell: python {{ git_root }}/deps/ez_setup.py chdir={{ git_root }}/deps
+    become: yes 
+
+#   Info: https://www.digitalocean.com/community/tutorials/how-to-set-up-python-2-7-6-and-3-3-3-on-centos-6-4
+  - name: Download Python 2.7.9
+    get_url: dest={{ git_root }}/deps url=http://www.python.org/ftp/python/2.7.9/Python-2.7.9.tar.xz
+
+# Bundle all this into a script??
+#   Add creates parameter (/usr/local/python2.7?) to all?
+  - name: Unpack Python xz file
+    command: xz -d Python-2.7.9.tar.xz chdir={{ git_root }}/deps creates={{ git_root }}/deps/Python-2.7.9.tar
+
+  - name: Untar file
+    unarchive: src={{ git_root }}/deps/Python-2.7.9.tar dest={{ git_root }}/deps creates={{ git_root }}/deps/Python-2.7.9 copy=no
+
+  - name: Configure Python
+    command: ./configure chdir={{ git_root }}/deps/Python-2.7.9 creates=/usr/local/bin/python2.7
+
+  - name: Make Python
+    command: make chdir={{ git_root }}/deps/Python-2.7.9 creates=/usr/local/bin/python2.7
+
+  - name: Install Python
+    command: make altinstall chdir={{ git_root }}/deps/Python-2.7.9 creates=/usr/local/bin/python2.7
+    become: yes
+
+  - name: install virtualenv
+    pip: name=virtualenv
+    become: yes
+
+  - name: Create python2.7.9 env
+    command: virtualenv --python=/usr/local/bin/python2.7  /home/{{ default_user }}/.virtualenv/python-2.7.9 chdir=/home/{{ default_user }}
+  - name: Debug
+    command: pwd
+  - name: Debug more
+    command: ls -la /home/{{ default_user }} 
+
+#  - name: Activate env
+#    shell: source /home/{{ default_user }}/\.virtualenv/python-2.7.9/bin/activate
+
+  - name: Ensure Python 2.7.9 env activate at vagrant login
+    lineinfile: dest=/home/{{ default_user }}/.bashrc state=present line="source /home/{{ default_user }}/.virtualenv/python-2.7.9/bin/activate"
+# How much to clean up? leave downloads plus ??
+
+
+

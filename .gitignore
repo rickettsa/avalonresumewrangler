@@ -1,5 +1,10 @@
 vagrant/.vagrant
 **/*.pyc
 **/*.swp
-back-end/api/venv
-data/projects/toLoad
+vagrant/back-end/api/venv
+vagrant/data/projects/toLoad
+vagrant/deps
+vagrant/front-end/build
+vagrant/front-end/node_modules
+vagrant/front-end/bower_components
+

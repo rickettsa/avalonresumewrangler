@@ -1,0 +1,45 @@
+---
+# TODO Set up separate wrangler,elastic and flask hosts
+# Move /etc/hosts fix to 
+- hosts: wrangler
+  vars_files:
+  - vars/main.yml
+  roles:
+  -  wrangler
+##################################################
+# Start new play to install apache server
+# this needs to be sudo, but can't attach to role     
+- hosts: wrangler
+  become: yes
+  vars_files:
+  - vars/apache.yml
+
+  roles:
+    - { role: geerlingguy.apache }
+
+###################################################
+# Install elasticsearch play
+- hosts: elastic
+  become: yes
+  become_method: sudo
+  vars_files: 
+    - vars/main.yml
+  roles:
+    - { role: geerlingguy.java }
+    - elastic
+
+#################################################################
+# Upgrade Python
+# Data load scripts require Python 2.7.9.
+# Base Python in geerlingguy/centos7 is 2.7.5
+- hosts: flask
+  vars_files:
+  - vars/main.yml
+  roles:
+    - python
+# Moved to separate playbook 
+################################################################
+# Install back end flask server and load data
+#- hosts: flask
+#  roles:
+#    - flask

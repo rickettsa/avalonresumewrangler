@@ -1,0 +1,63 @@
+---
+# See if this is needed. Docs say not.
+  - name: Check if Elastic RPM exists
+    stat: path={{ git_root }}/deps/elasticsearch-{{ elastic_version_number }}.rpm
+    register: elastic_rpm
+
+  - name: Download Elastic RPM
+    get_url: url=https://download.elasticsearch.org/elasticsearch/release/org/elasticsearch/distribution/rpm/elasticsearch/{{ elastic_version_number }}/elasticsearch-{{elastic_version_number}}.rpm dest={{ git_root }}/deps
+    when: elastic_rpm.stat.exists == False
+
+  - name: Install Elastic RPM
+    yum: name={{ git_root }}/deps/elasticsearch-{{ elastic_version_number }}.rpm state=present
+    become: yes
+
+  - name: Check if Kopf plugin zip exists
+    stat: path={{ git_root }}/deps/es-kopf.zip
+    register: kopf_zip
+
+  - name: Download Kopf
+    get_url: url=https://github.com/lmenezes/elasticsearch-kopf/archive/1.0.zip dest={{ git_root }}/deps/es-kopf.zip
+    when: kopf_zip.stat.exists == False
+
+  - name: Check if Head plugin zip exists
+    stat: path={{ git_root }}/deps/es-head.zip
+    register: head_zip
+
+  - name: Download Head
+    get_url: url=https://codeload.github.com/mobz/elasticsearch-head/zip/master dest={{ git_root }}/deps/es-head.zip
+    when: head_zip.stat.exists == False
+# TODO: Figure out why these installs fail
+  - name: Install Kopf
+    shell: /usr/share/elasticsearch/bin/plugin install file://{{ git_root }}/deps/es-kopf.zip 
+    register: es_plugin_k
+    ignore_errors: True
+    become: yes
+    become_user: elasticsearch
+#  shell: /usr/share/elasticsearch/bin/plugin --install lmenezes/elasticsearch-kopf
+
+  - name: Install Head
+    shell: /usr/share/elasticsearch/bin/plugin install  file://{{ git_root }}/deps/es-head.zip
+    register: es_plugin_h
+    ignore_errors: True
+    become: yes
+    become_user: elasticsearch
+#  shell: /usr/share/elasticsearch/bin/plugin --install mobz/elasticsearch-head
+
+# Use ansible line-in-file to replace this script
+  - name: Configure Elastic Server scripts
+    shell: sh {{ git_root }}/provisioning/shell/fix-es-config.sh
+    register: es_config
+#    ignore_errors: True
+    become: yes
+
+
+#   Add chkconfig to restart on VM restart
+  - name: Start Elastic
+    service: name=elasticsearch state=started
+    when: (es_config is defined and es_plugin_k is defined and es_plugin_h is defined)
+    become: yes
+
+  - name: Wait for Elastic initialization
+    wait_for: host={{ es_ip_address }} port=9200 delay=2
+    register: es_start

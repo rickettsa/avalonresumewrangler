@@ -1,0 +1,68 @@
+---
+# Set git_root in provisioning/vars/main.yml to /vagrant for VM, /home/centos/avalonresumewrangler/vagrant for Amazon
+  - name: Make {{ git_root}}/deps directory
+    file: path={{ git_root}}/deps state=directory
+
+  - name: Check if Node setup script exists
+    stat: path={{ git_root }}/deps/setup_4.x
+    register: node_script
+
+  - name: Download nodejs setup
+    get_url: url=https://rpm.nodesource.com/setup_4.x dest="{{ git_root }}/deps/setup_4.x" mode=755
+    when: node_script.stat.exists == False
+ 
+  - name: Run nodejs setup script
+    command: "{{git_root}}/deps/setup_4.x creates=/etc/yum.repos.d/nodesource-el.repo"
+    become: yes 
+
+  - name: Install nodejs/npm
+    yum: name=nodejs-4.3.2 state=present
+    become: yes
+
+  - name: Install bower and grunt
+    npm: name={{ item }} global=yes
+    with_items:
+      - bower
+      - grunt-cli
+    become: yes
+#   Developer tools and firefox for testing
+  - name: Install linux pieces needed by bower and app dependencies and auto testing
+    yum: name={{ item }}
+    with_items:
+      - git
+      - gcc-c++
+      - firefox
+      - xorg-x11-server-Xvfb
+      - libXfont
+      - xorg-x11-server-Xorg
+    become: yes
+
+  - name: Install bower dependencies
+    bower: path="{{ git_root }}/front-end"
+
+  - name: Install app dependencies via npm (npm install)
+    npm: path="{{ git_root }}/front-end"
+
+  - name: Build app
+    shell: grunt build replace:development chdir="{{ git_root }}/front-end" creates="{{ git_root }}/front-end/build" 
+ 
+  - name: Create webapp directory if it doesn't exist
+    file: path=/var/www/vhosts state=directory mode=0755
+    become: yes
+
+# TODO: make parameters in file if still needed after grunt watch
+  - name: Symlink build directory for apache 
+    file:  src="{{ git_root }}/front-end/build" 
+           path=/var/www/vhosts/resumeWrangler
+           state=link
+    become: yes
+
+# Make IP address a varialble, and  set from Ifconfig?
+  - name: Install wrangler into /etc/hosts
+    lineinfile: dest=/etc/hosts line='{{ wrangler_ip_address }} wrangler wrangler.example.com'
+    become: yes
+#   Move to bootstrap3 once working
+  - name: Set up xvfb server 
+    shell: nohup Xvfb :99 -ac -screen 0 1280x1024x24 &
+#
+#  - name: Add DISPLAY=:99 as env variable

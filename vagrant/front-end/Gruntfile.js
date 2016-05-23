@@ -229,7 +229,7 @@ module.exports = function ( grunt ) {
       options: {
         port: 9004,
         // Change this to '0.0.0.0' to access the server from outside.
-        hostname: 'localhost',
+        hostname: '0.0.0.0',
         livereload: 35731
       },
       livereload: {
@@ -246,16 +246,6 @@ module.exports = function ( grunt ) {
             ];
           }
         }
-      }
-    },
-
-    /**
-     * grunt-open makes build open in a specific browser
-     */
-    open: {
-      dev: {
-        url: 'http://localhost:<%= connect.options.port %>',
-        app: 'Google Chrome'
       }
     },
 
@@ -596,7 +586,7 @@ module.exports = function ( grunt ) {
         files: [
           '<%= app_files.jsunit %>'
         ],
-        tasks: [ 'jshint:test', 'karma:unit:run' ],
+        tasks: [ 'jshint:test', 'karma:unit' ],
         options: {
           livereload: false
         }
@@ -615,7 +605,7 @@ module.exports = function ( grunt ) {
    */
   grunt.renameTask( 'watch', 'delta' );
   //grunt.registerTask( 'watch', [ 'build', 'karma:unit', 'connect:livereload', 'delta' ] );
-  grunt.registerTask( 'watch', [ 'build', 'connect:livereload', 'replace:development', 'open:dev', 'delta' ] );
+  grunt.registerTask( 'watch', [ 'build', 'connect:livereload', 'replace:development', 'delta' ] );
 
   /**
    * The default task is to build and compile.

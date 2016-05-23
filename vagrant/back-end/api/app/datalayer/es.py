@@ -57,7 +57,7 @@ class ESDataLayer(DataLayer):
     STACK_POS_TYPE = 'stack-position'
 
     def __init__(self):
-        self.es = Elasticsearch()
+        self.es = Elasticsearch(host='192.168.33.10')
 
     def create_index(self, index):
         self.es.indices.create(index)

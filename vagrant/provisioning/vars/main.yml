@@ -1,0 +1,6 @@
+---
+elastic_version_number: 2.0.0
+es_ip_address: 192.168.33.10
+wrangler_ip_address: 192.168.33.10
+default_user: vagrant
+git_root: /vagrant

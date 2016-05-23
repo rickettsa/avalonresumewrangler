@@ -1,0 +1,32 @@
+---
+  # Switch to python env created by python role
+  # TODO; Find out how to specify requirement
+  - name: Switch to python 2.7.9 env
+    shell: source /home/{{ default_user }}/.virtualenv/python-2.7.9/bin/activate
+  - name: debug
+    shell: echo `python --version`
+
+  - name: Install backend requirements
+    shell: pip install -r requirements.txt chdir={{ git_root }}/back-end/api
+
+  - name: Start flask server
+    shell: nohup python {{ git_root }}/back-end/api/app/app.py &
+#    ignore_errors: True
+
+#  - name: Set env variable to find git repo base
+#    lineinfile: dest=/home/{{ default_user }}/.bashrc state=present line="RW_GIT_BASE_DIR='{{ git_root }}'"
+
+  - name: Convert resume data to json
+    shell: python convert.py {{ git_root }}/data/resume-xml /tmp/resume-json chdir={{ git_root }}/back-end/elasticsearch/bin
+    environment:
+      RW_GIT_BASE_DIR: "{{ git_root }}"
+
+# TODO: Add check that elastic search is running
+  - name: Load resume data into Elasticsearch
+    shell: python load.py /tmp/resume-json chdir={{ git_root }}/back-end/elasticsearch/bin
+    environment:
+      RW_GIT_BASE_DIR: "{{ git_root }}" 
+  - name: Load skills data into Elasticsearch
+    shell: python import_skills.py {{ git_root }}/data/skills.json chdir={{ git_root }}/back-end/elasticsearch/bin
+    environment:
+      RW_GIT_BASE_DIR: "{{ git_root }}"
