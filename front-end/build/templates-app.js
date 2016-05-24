@@ -87,7 +87,7 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "           <ul class=\"nav nav-tabs\" id=\"myTab\">\n" +
     "			  <li class=\"active\"><a data-target=\"#experience\" data-toggle=\"tab\">Experience</a></li>\n" +
     "			  <li><a data-target=\"#skills\" data-toggle=\"tab\">Skills</a></li>\n" +
-    "			  <li><a data-target=\"#education\" data-toggle=\"tab\">Eduacation</a></li>\n" +
+    "			  <li><a data-target=\"#education\" data-toggle=\"tab\">Education</a></li>\n" +
     "			</ul>\n" +
     "\n" +
     "			<div class=\"tab-content\">\n" +
@@ -96,7 +96,7 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "                <!-- ================================================= -->\n" +
     "                <!-- START RESUME EXPERIENCE SECTION -->\n" +
     "                <!-- ================================================= -->\n" +
-    "                <div class=\"col-md-12\" ng-if = \"!_.isEmpty(contact)\">\n" +
+    "                <div class=\"col-md-12 panel-experience\" ng-if = \"!_.isEmpty(contact)\">\n" +
     "                    <h2>Experience:</h2>\n" +
     "\n" +
     "                    <button class = \"add-skill btn btn-success\" ng-click = \"edit.addEmployer('start')\"><i class=\"glyphicon glyphicon-plus\"></i> Add Employer</button>\n" +
@@ -189,11 +189,11 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "                <!-- ================================================= -->\n" +
     "                <!-- START RESUME SKILLSET SECTION -->\n" +
     "                <!-- ================================================= -->\n" +
-    "                <div class=\"col-md-12\">\n" +
+    "                <div class=\"col-md-12 panel-skills\">\n" +
     "                    <h2>Lifetime Skillset:</h2>\n" +
-    "                    <button class = \"add-skill btn btn-success\" ng-click=\"edit.addLifeSkillRole(resume.skills)\"><i class=\"glyphicon glyphicon-plus\"></i> Skill</button>\n" +
     "\n" +
     "                    <div class=\"well light-well\">\n" +
+    "                    <button class = \"add-skill btn btn-success\" ng-click=\"edit.addLifeSkillRole(resume.skills)\"><i class=\"glyphicon glyphicon-plus\"></i> Skill</button>\n" +
     "\n" +
     "                        <form class=\"form-horizontal filter-form\">\n" +
     "                            <div class=\"form-group text-left\">\n" +
@@ -266,7 +266,7 @@ angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templa
     "                <!-- ================================================= -->\n" +
     "                <!-- START RESUME EDUCATION SECTION -->\n" +
     "                <!-- ================================================= -->\n" +
-    "                <div class=\"col-md-12\">\n" +
+    "                <div class=\"col-md-12 panel-education\">\n" +
     "                    <h2>Education:</h2>\n" +
     "                    <button class = \"add-skill btn btn-success\" ng-click =\"edit.addEducation('start')\"><i class=\"glyphicon glyphicon-plus\"></i> Education</button>\n" +
     "                    <div class = \"well light-well\" ng-repeat = \"educ in resume.educationHistory\" >\n" +

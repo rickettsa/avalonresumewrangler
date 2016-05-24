@@ -52,12 +52,7 @@ hr {
 }
 
 
-.searchLabel{
-    font-size: 14px;
-    margin-right:10px;
-}
-
-.searchForm{
+.search-form{
     margin-top:10px;
     margin-left:25%; 
 }
@@ -71,23 +66,61 @@ hr {
     margin-top:8px;
 }
 
+.login-full-screen{
+    margin-top: -40px;
+}
+
 .navbar-default .navbar-collapse, .navbar-default .navbar-form{
     border-color: transparent;
 }
 
+.user-nav {
+    float:right;
+}
+
+.panel-experience, .panel-skills, .panel-education{
+    background: white;
+}
+
 @media screen and (min-width:767px){
     .navbar-right{
-       margin-top:-35px;
+       margin-top:-40px;
     }
 }
 
 @media screen and (max-width:767px){
-    .searchForm{
-       margin-left:25%;
-       margin-right:25%;
+    .search-form{
+       margin-left:5%;
+       margin-right:5%;
+       margin-top:10px;
+    }
+    
+    .search-input{
+        margin-top:-25px;
+    }
+    
+     .search-submit{
+        margin-top:-5px;
     }
 }
 
+@media screen and (max-width:478px){
+    .user-nav{
+        display:none;
+    }
+}
+
+@media screen and (max-width:1022px){
+    .login-full-screen{
+        display:none;
+    }
+}
+
+@media screen and (min-width:1023px){
+    .user-small-screen{
+        display:none;
+    }
+}
 
 
 @import 'variables.less';

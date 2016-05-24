@@ -45,7 +45,7 @@
            <ul class="nav nav-tabs" id="myTab">
 			  <li class="active"><a data-target="#experience" data-toggle="tab">Experience</a></li>
 			  <li><a data-target="#skills" data-toggle="tab">Skills</a></li>
-			  <li><a data-target="#education" data-toggle="tab">Eduacation</a></li>
+			  <li><a data-target="#education" data-toggle="tab">Education</a></li>
 			</ul>
 
 			<div class="tab-content">
@@ -54,7 +54,7 @@
                 <!-- ================================================= -->
                 <!-- START RESUME EXPERIENCE SECTION -->
                 <!-- ================================================= -->
-                <div class="col-md-12" ng-if = "!_.isEmpty(contact)">
+                <div class="col-md-12 panel-experience" ng-if = "!_.isEmpty(contact)">
                     <h2>Experience:</h2>
 
                     <button class = "add-skill btn btn-success" ng-click = "edit.addEmployer('start')"><i class="glyphicon glyphicon-plus"></i> Add Employer</button>
@@ -147,11 +147,11 @@
                 <!-- ================================================= -->
                 <!-- START RESUME SKILLSET SECTION -->
                 <!-- ================================================= -->
-                <div class="col-md-12">
+                <div class="col-md-12 panel-skills">
                     <h2>Lifetime Skillset:</h2>
-                    <button class = "add-skill btn btn-success" ng-click="edit.addLifeSkillRole(resume.skills)"><i class="glyphicon glyphicon-plus"></i> Skill</button>
 
                     <div class="well light-well">
+                    <button class = "add-skill btn btn-success" ng-click="edit.addLifeSkillRole(resume.skills)"><i class="glyphicon glyphicon-plus"></i> Skill</button>
 
                         <form class="form-horizontal filter-form">
                             <div class="form-group text-left">
@@ -224,7 +224,7 @@
                 <!-- ================================================= -->
                 <!-- START RESUME EDUCATION SECTION -->
                 <!-- ================================================= -->
-                <div class="col-md-12">
+                <div class="col-md-12 panel-education">
                     <h2>Education:</h2>
                     <button class = "add-skill btn btn-success" ng-click ="edit.addEducation('start')"><i class="glyphicon glyphicon-plus"></i> Education</button>
                     <div class = "well light-well" ng-repeat = "educ in resume.educationHistory" >
