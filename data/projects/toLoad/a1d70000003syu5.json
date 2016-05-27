@@ -1,0 +1,23 @@
+{
+    "clientName": "Wolters Kluwer Law and Business",
+    "salesForceProjectName": "Editorial Systems Workshop",
+    "region": "DC",
+    "practice": "NoSQL",
+    "_createProjManager": "Niels Nielsen",
+    "startDate": "2016-08-16",
+    "endDate": "2016-09-12",
+    "salesforceRecordId": "a1D70000003SYU5",
+    "projectDisplayName": "Editorial Systems Workshop",
+    "positions": [
+        {
+            "assignmentName": "Editorial Systems Workshop - Demian Hess",
+            "filledBy": [
+                {
+                    "userFullName": "Demian Hess",
+                    "startDate": "2016-08-16",
+                    "endDate": "2016-09-12"
+                }
+            ]
+        }
+    ]
+}

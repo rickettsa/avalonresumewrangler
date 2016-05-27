@@ -1,0 +1,43 @@
+{
+    "clientName": "Couchbase",
+    "salesForceProjectName": "CB-CloudFoundry Implementation",
+    "region": "NATL",
+    "practice": "NoSQL",
+    "_createProjManager": "John Holshey",
+    "startDate": "2016-09-04",
+    "endDate": "2016-12-18",
+    "salesforceRecordId": "a1D70000003TuAg",
+    "projectDisplayName": "CB",
+    "positions": [
+        {
+            "assignmentName": "CloudFoundry Implementation - Manjesh Reddy",
+            "filledBy": [
+                {
+                    "userFullName": "Manjesh Reddy",
+                    "startDate": "2016-09-04",
+                    "endDate": "2016-10-09"
+                }
+            ]
+        },
+        {
+            "assignmentName": "CB-CloudFoundry Implementation - Manjesh Reddy",
+            "filledBy": [
+                {
+                    "userFullName": "Manjesh Reddy",
+                    "startDate": "2016-09-27",
+                    "endDate": "2016-11-13"
+                }
+            ]
+        },
+        {
+            "assignmentName": "CloudFoundry Implementation - Sean Dowd",
+            "filledBy": [
+                {
+                    "userFullName": "Sean Dowd",
+                    "startDate": "2016-09-04",
+                    "endDate": "2016-11-13"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "clientName": "Wolters Kluwer Law and Business",
+    "salesForceProjectName": "RBSource Filings Backend Development-Project",
+    "region": "DC",
+    "practice": "NoSQL",
+    "_createProjManager": "Niels Nielsen",
+    "startDate": "2016-01-03",
+    "endDate": "2016-04-02",
+    "salesforceRecordId": "a1D39000003Qsaz",
+    "projectDisplayName": "RBSource Filings Backend Development",
+    "positions": [
+        {
+            "assignmentName": "RBSource Filings Backend Development-P - Chris Grimes",
+            "filledBy": [
+                {
+                    "userFullName": "Chris Grimes",
+                    "startDate": "2016-01-03",
+                    "endDate": "2016-04-02"
+                }
+            ]
+        }
+    ]
+}

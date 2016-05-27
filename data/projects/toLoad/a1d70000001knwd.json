@@ -1,0 +1,23 @@
+{
+    "clientName": "MarkLogic",
+    "salesForceProjectName": "ACA - Markus Flatscher",
+    "region": "MW-CHI",
+    "practice": "NoSQL",
+    "_createProjManager": "Doug Gattuso",
+    "startDate": "2016-06-16",
+    "endDate": "2016-03-31",
+    "salesforceRecordId": "a1D70000001Knwd",
+    "projectDisplayName": "ACA",
+    "positions": [
+        {
+            "assignmentName": "ACA - Markus Flatscher - MarkLogic",
+            "filledBy": [
+                {
+                    "userFullName": "Markus Flatscher",
+                    "startDate": "2016-09-02",
+                    "endDate": "2016-03-31"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "clientName": "Mallinckrodt",
+    "salesForceProjectName": "Mallinckrodt-CMS Evaluation",
+    "region": "MW-STL",
+    "practice": "Enterprise Web",
+    "_createProjManager": "Sean Hall",
+    "startDate": "2016-08-03",
+    "endDate": "2016-12-11",
+    "salesforceRecordId": "a1D70000003SOHR",
+    "projectDisplayName": "Mallinckrodt",
+    "positions": [
+        {
+            "assignmentName": "CMS Evaluation Stage 1 - Eugene Guilaran",
+            "filledBy": [
+                {
+                    "userFullName": "Eugene Guilaran",
+                    "startDate": "2016-08-03",
+                    "endDate": "2016-10-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "CMS Evaluation Stage 2 - Eugene Guilaran",
+            "filledBy": [
+                {
+                    "userFullName": "Eugene Guilaran",
+                    "startDate": "2016-11-01",
+                    "endDate": "2016-11-30"
+                }
+            ]
+        },
+        {
+            "assignmentName": "CMS Evaluation Stage 3 - Eugene Guilaran",
+            "filledBy": [
+                {
+                    "userFullName": "Eugene Guilaran",
+                    "startDate": "2016-08-31",
+                    "endDate": "2016-10-31"
+                }
+            ]
+        }
+    ]
+}

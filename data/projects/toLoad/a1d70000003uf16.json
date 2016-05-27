@@ -1,0 +1,73 @@
+{
+    "clientName": "Prolung",
+    "salesForceProjectName": "Prolung-Portal Development",
+    "region": "NATL",
+    "practice": "Enterprise Web",
+    "_createProjManager": "John Holshey",
+    "startDate": "2016-09-14",
+    "endDate": "2016-09-19",
+    "salesforceRecordId": "a1D70000003UF16",
+    "projectDisplayName": "Prolung",
+    "positions": [
+        {
+            "assignmentName": "Prolung-Portal Development - Andy Cohan",
+            "filledBy": [
+                {
+                    "userFullName": "Andy Cohan",
+                    "startDate": "2016-09-14",
+                    "endDate": "2016-02-01"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Portal Development - John Holshey",
+            "filledBy": [
+                {
+                    "userFullName": "John Holshey",
+                    "startDate": "2016-09-14",
+                    "endDate": "2016-02-01"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Portal Development - Ryan Atkins",
+            "filledBy": [
+                {
+                    "userFullName": "Ryan Atkins",
+                    "startDate": "2016-09-14",
+                    "endDate": "2016-02-01"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Portal Development - Ryan Atkins",
+            "filledBy": [
+                {
+                    "userFullName": "Ryan Atkins",
+                    "startDate": "2016-09-14",
+                    "endDate": "2016-02-01"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Portal Development - Spencer Mefford",
+            "filledBy": [
+                {
+                    "userFullName": "Spencer Mefford",
+                    "startDate": "2016-09-14",
+                    "endDate": "2016-02-01"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Portal Development - Spencer Mefford",
+            "filledBy": [
+                {
+                    "userFullName": "Spencer Mefford",
+                    "startDate": "2016-09-14",
+                    "endDate": "2016-02-01"
+                }
+            ]
+        }
+    ]
+}

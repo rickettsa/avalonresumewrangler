@@ -1,0 +1,53 @@
+{
+    "clientName": "DeseretBook.com",
+    "salesForceProjectName": "Deseret - Architectural Support",
+    "region": "NATL",
+    "practice": "Enterprise Search",
+    "_createProjManager": "John Holshey",
+    "startDate": "2016-01-14",
+    "endDate": "2016-02-12",
+    "salesforceRecordId": "a1D39000003Qx0L",
+    "projectDisplayName": "Deseret",
+    "positions": [
+        {
+            "assignmentName": "Architectural Support - Chad Chatfield",
+            "filledBy": [
+                {
+                    "userFullName": "Chad Chatfield",
+                    "startDate": "2016-01-14",
+                    "endDate": "2016-02-03"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Architectural Support - Chris Marino",
+            "filledBy": [
+                {
+                    "userFullName": "Chris Marino",
+                    "startDate": "2016-01-19",
+                    "endDate": "2016-02-20"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Architectural Support - John Holshey",
+            "filledBy": [
+                {
+                    "userFullName": "John Holshey",
+                    "startDate": "2016-01-14",
+                    "endDate": "2016-01-14"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Architectural Support - Kim Curtis",
+            "filledBy": [
+                {
+                    "userFullName": "Kim Curtis",
+                    "startDate": "2016-01-14",
+                    "endDate": "2016-02-19"
+                }
+            ]
+        }
+    ]
+}

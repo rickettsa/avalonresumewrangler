@@ -1,0 +1,63 @@
+{
+    "clientName": "Marriott International",
+    "salesForceProjectName": "Marriott - Content Reporting and Migration",
+    "region": "DC",
+    "practice": "Enterprise Web",
+    "_createProjManager": "Niels Nielsen",
+    "startDate": "2016-11-15",
+    "endDate": "2016-02-27",
+    "salesforceRecordId": "a1D70000003DCSb",
+    "projectDisplayName": "Marriott",
+    "positions": [
+        {
+            "assignmentName": "Content Reporting and Migration-Projec - Alice Ricketts",
+            "filledBy": [
+                {
+                    "userFullName": "Alice Ricketts",
+                    "startDate": "2016-11-15",
+                    "endDate": "2016-02-27"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Content Reporting and Migration - Felix Simon",
+            "filledBy": [
+                {
+                    "userFullName": "Felix Simon",
+                    "startDate": "2016-11-15",
+                    "endDate": "2016-01-30"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Content Reporting and Migration - Jeff Hendricks",
+            "filledBy": [
+                {
+                    "userFullName": "Jeff Hendricks",
+                    "startDate": "2016-11-15",
+                    "endDate": "2016-02-27"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Content Reporting and Migration - Mike Ross",
+            "filledBy": [
+                {
+                    "userFullName": "Mike Ross",
+                    "startDate": "2016-11-15",
+                    "endDate": "2016-11-28"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Content Reporting and Migration - William Thayer",
+            "filledBy": [
+                {
+                    "userFullName": "William Thayer",
+                    "startDate": "2016-11-15",
+                    "endDate": "2016-02-27"
+                }
+            ]
+        }
+    ]
+}

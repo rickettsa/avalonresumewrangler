@@ -1,0 +1,23 @@
+{
+    "clientName": "Mitchell 1",
+    "salesForceProjectName": "Mitchell1 Support-Project",
+    "region": "NATL",
+    "practice": "NoSQL",
+    "_createProjManager": "Mike Green",
+    "startDate": "2016-06-08",
+    "endDate": "2016-08-15",
+    "salesforceRecordId": "a1D70000002leZJ",
+    "projectDisplayName": "Mitchell1 Support",
+    "positions": [
+        {
+            "assignmentName": "Mitchell1 Support-Project - Harry Bakken",
+            "filledBy": [
+                {
+                    "userFullName": "Harry Bakken",
+                    "startDate": "2016-06-08",
+                    "endDate": "2016-08-15"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "clientName": "Explicavi",
+    "salesForceProjectName": "Managed Mobile Services POC",
+    "region": "DC",
+    "practice": "Enterprise Search",
+    "_createProjManager": "Niels Nielsen",
+    "startDate": "2016-03-15",
+    "endDate": "2016-06-13",
+    "salesforceRecordId": "a1D70000002juPf",
+    "projectDisplayName": "Managed Mobile Services POC",
+    "positions": [
+        {
+            "assignmentName": "Managed Mobile Services POC - Chris Marino",
+            "filledBy": [
+                {
+                    "userFullName": "Chris Marino",
+                    "startDate": "2016-03-15",
+                    "endDate": "2016-05-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Managed Mobile Services POC - Eugene Guilaran",
+            "filledBy": [
+                {
+                    "userFullName": "Eugene Guilaran",
+                    "startDate": "2016-03-15",
+                    "endDate": "2016-06-13"
+                }
+            ]
+        }
+    ]
+}

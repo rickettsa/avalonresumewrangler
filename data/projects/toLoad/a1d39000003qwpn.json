@@ -1,0 +1,23 @@
+{
+    "clientName": "MarkLogic",
+    "salesForceProjectName": "MLCS-FFM Praveen Venkata",
+    "region": "DC",
+    "practice": "NoSQL",
+    "_createProjManager": "Niels Nielsen",
+    "startDate": "2016-01-10",
+    "endDate": "2016-02-29",
+    "salesforceRecordId": "a1D39000003QwPn",
+    "projectDisplayName": "MLCS",
+    "positions": [
+        {
+            "assignmentName": "MLCS-FFM January 2016 Praveen Venkata - Praveen Venkata",
+            "filledBy": [
+                {
+                    "userFullName": "Praveen Venkata",
+                    "startDate": "2016-01-10",
+                    "endDate": "2016-02-29"
+                }
+            ]
+        }
+    ]
+}

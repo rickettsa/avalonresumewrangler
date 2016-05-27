@@ -1,0 +1,23 @@
+{
+    "clientName": "Marriott International",
+    "salesForceProjectName": "Content Retirement 2015",
+    "region": "DC",
+    "practice": "Enterprise Web",
+    "_createProjManager": "Niels Nielsen",
+    "startDate": "2016-05-17",
+    "endDate": "2016-07-18",
+    "salesforceRecordId": "a1D70000002lVet",
+    "projectDisplayName": "Content Retirement 2015",
+    "positions": [
+        {
+            "assignmentName": "Content Retirement 2015 - Felix Simon",
+            "filledBy": [
+                {
+                    "userFullName": "Felix Simon",
+                    "startDate": "2016-05-17",
+                    "endDate": "2016-07-18"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "clientName": "Cloudera, Inc.",
+    "salesForceProjectName": "Hadoop Consulting - DIA 2015",
+    "region": "DC",
+    "practice": "Big Data",
+    "_createProjManager": "Niels Nielsen",
+    "startDate": "2016-01-01",
+    "endDate": "2016-05-23",
+    "salesforceRecordId": "a1D70000002i6v1",
+    "projectDisplayName": "Hadoop Consulting",
+    "positions": [
+        {
+            "assignmentName": "Hadoop Consulting - DIA 2015 - Alice Ricketts",
+            "filledBy": [
+                {
+                    "userFullName": "Alice Ricketts",
+                    "startDate": "2016-01-01",
+                    "endDate": "2016-04-30"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Hadoop Consulting - DIA 2015 - Ivan Terry",
+            "filledBy": [
+                {
+                    "userFullName": "Ivan Terry",
+                    "startDate": "2016-01-01",
+                    "endDate": "2016-05-23"
+                }
+            ]
+        }
+    ]
+}

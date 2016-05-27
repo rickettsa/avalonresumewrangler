@@ -1,0 +1,33 @@
+{
+    "clientName": "Marriott International",
+    "salesForceProjectName": "Translation Localization",
+    "region": "DC",
+    "practice": "Enterprise Web",
+    "_createProjManager": "Niels Nielsen",
+    "startDate": "2016-10-25",
+    "endDate": "2016-12-31",
+    "salesforceRecordId": "a1D70000003D17x",
+    "projectDisplayName": "Translation Localization",
+    "positions": [
+        {
+            "assignmentName": "Translation Localization - Demian Hess",
+            "filledBy": [
+                {
+                    "userFullName": "Demian Hess",
+                    "startDate": "2016-10-25",
+                    "endDate": "2016-12-31"
+                }
+            ]
+        },
+        {
+            "assignmentName": "Translation Localization - Mike Ross",
+            "filledBy": [
+                {
+                    "userFullName": "Mike Ross",
+                    "startDate": "2016-10-25",
+                    "endDate": "2016-12-31"
+                }
+            ]
+        }
+    ]
+}
