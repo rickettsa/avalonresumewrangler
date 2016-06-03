@@ -242,7 +242,7 @@ function convertCsvToJson(handleError, callback){
 
             return fixedName;
         } else {
-            return "NoProjName"
+            return "NoProjName";
         }
     }
 
@@ -335,7 +335,7 @@ function writeProjectFiles(handleError, callback, projectData){
     }
 
     _.forEach(projectData, function(node){
-        var filename = node.salesforceRecordId.toLowerCase() + '.json';
+        var filename = node.salesforceRecordId + '.json';
         var filepath = process.env.RW_GIT_BASE_DIR + '/data/projects/toLoad/' + filename;
         var contents = file.writeFile(filepath, JSON.stringify(node, null, 4),
             function(error){
