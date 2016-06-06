@@ -68,10 +68,17 @@
       return skillsService.fetchSkills();
     };
 
-    function EditCtrl ($http, $scope, $filter, resumeResponse, skillsResponse, AppConfig, contactResponse, resumeService,
-      $stateParams, skillsService, sessionService){
+   // ------------------------------------
+   // start Edit Controller
+   // ------------------------------------
+    function EditCtrl ($http, $scope, $filter, resumeResponse, skillsResponse, AppConfig, contactResponse, resumeService, $stateParams, skillsService, sessionService, configuration){
 
       $scope.edit = {};
+      
+      //jquery for tab functionality
+      jQuery(function () {
+        jQuery('#myTab a:first').tab('show')
+      })
 
       function initEdit(){
         if (resumeResponse.data.hits.length > 0) {
@@ -106,7 +113,7 @@
         $scope.edit.showSkillName     = 0;
         $scope.edit.getSkillImg       = getSkillImg;
         $scope.edit.removeSkill       = removeSkill;
-        $scope.edit.addSkillRole      = addSkillRole;
+        // $scope.edit.addSkillRole      = addSkillRole;
         $scope.edit.addLifeSkillRole  = addLifeSkillRole;
         $scope.edit.editSkill         = editSkill;
         $scope.edit.saveSkills        = saveSkills;
@@ -117,6 +124,26 @@
       initEdit();
       //=================================
 
+
+     //Search projects api, debounce will execute function only if 100 milliseconds have passed to prevent hammering server, alternatively throttle can also be used and that will execute the function at most once every 100 mms 
+      $scope.projects = _.debounce(function(projectName) {
+        return $http({
+          method : "GET",
+          url    : configuration.api + '/api/projects/search?client_name=' + projectName
+        })
+          .then(function(response){
+            return _.map(response.data.hits, function(hits){
+              return hits
+            })
+          });
+      },100);
+
+      $scope.onSelect = function ($item, $model, $label, pos){
+        var retriveProject = _.clone($item._source);      
+        pos.clientName = retriveProject.clientName;
+        pos.projectId - retriveProject.projectId;       
+      }
+      
        _.mixin({
         findBySubVal: function(collection, property, values) {
           return _.filter(collection, function(item) {
@@ -221,8 +248,7 @@
         competencyArray.splice(index, 1);
       };
 
-     // add user
-      function addSkillRole(competencyArray) {
+      function addSkillRole(competencyArray, addPosition) {
         $scope.inserted = {
           abbrev                : '',
           CompetencyDisplayName : null,
@@ -231,14 +257,12 @@
         competencyArray.unshift($scope.inserted);
       };
 
-      // add user
       function addLifeSkillRole(competencyArray) {
-        $scope.inserted = {
-          abbrev                : '',
-          CompetencyDisplayName : null,
-          YearsExperience       : null
-        };
-        competencyArray.unshift($scope.inserted);
+        var emptySkill = {
+          "name": "Skill",
+          "years": 0
+        }
+        competencyArray.unshift(emptySkill);
       };
 
       function editSkill(skillRole){
@@ -251,8 +275,10 @@
       };
 
       function updateResume(){
+        $scope.resume.userId = sessionService.userId;
+
         if($scope.global.resumeId === undefined){
-          console.log("undefined id!")
+          console.log("undefined resume id!")
           return // false// if false return 500 //bubble to a 500
         }
 
@@ -260,10 +286,7 @@
           $scope.resume.email = sessionService.userEmail;
         }
 
-        $scope.resume.userId = sessionService.userId;
-
         resumeService.updateResume($scope.global.resumeId, $scope.resume)
-        // debugger
           .success(function(resp){
             //is this skill known? if not, make sure you post back to the skills API
             console.log("updateResume SUCCESS");
@@ -273,47 +296,12 @@
           });
       };
 
-
-
-      var suggestions = skillsService.getTypeaheadSource();
-      suggestions.initialize();
-
-      $scope.typeaheadOptions = { // Options for the Twitter typeahead
-        highlight: true, // Highlight suggestions
-        minLength: 2 // Don't start looking for suggestions until 3 chars are entered
-      };
-
-      $scope.typeaheadData = { // Data for the Twitter typeahead
-        displayKey: 'displayName',
-        suggestionKey: 'displayName',
-        source: suggestions.ttAdapter(),
-        templates: {
-          empty: '<div class="ds-empty-message">There are no suggestions for your query</div>',
-          header: '<span>Suggested Search Results</span>',
-          /**
-           * Suggestion template.
-           * @param {Object} data
-           * @returns {string}
-           */
-          suggestion: function(data) {
-            return _.template('<p>${displayName}</p>')(data);
-          }
-        }
-      };
-
       $scope.contact = typeof contactResponse.data.hits === "object" && contactResponse.data.hits > 0 ? contactResponse.data.hits[0]._source : {};
 
-        //x-editable setup
-      $scope.user = {
-        name: 'awesome user'
-      };
 
       $scope.text = function($scope){
         $scope.text = 'this is text';
       };
-
-      //https://github.com/Siyfion/angular-typeahead
-      $scope.groups = [];
 
     };
 

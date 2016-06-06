@@ -22,6 +22,7 @@
 body .navbar{
     margin-top: 0px;
     padding-top: 0px;
+    padding-bottom: 12px;
 }
 
 #rw-google-login-wrapper{
@@ -50,28 +51,75 @@ hr {
     margin: 0px;
 }
 
-/* Make navigation always collapsed */
-@media (min-width: 768px)
-{
-    .navbar-header
-    {
-        float: none;
-    }
 
-    .navbar-toggle
-    {
-        display: block;
-    }
+.search-form{
+    margin-top:10px;
+    margin-left:25%; 
+}
 
-    .navbar-collapse.collapse
-    {
-        display: none !important;
-    }
+.navbar-brand{
+    margin-bottom: 10px;
+    margin-top:-5px;
+}
 
-    .navbar-collapse.display-block{
-        display: block !important;
-    }
+.input-group{
+    margin-top:8px;
+}
 
+.login-full-screen{
+    margin-top: -40px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    border-color: transparent;
+}
+
+.user-nav {
+    float:right;
+}
+
+.panel-experience, .panel-skills, .panel-education{
+    background: white;
+}
+
+@media screen and (min-width:767px){
+    .navbar-right{
+       margin-top:-40px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .search-form{
+       margin-left:5%;
+       margin-right:5%;
+       margin-top:10px;
+    }
+    
+    .search-input{
+        margin-top:-25px;
+    }
+    
+     .search-submit{
+        margin-top:-5px;
+    }
+}
+
+@media screen and (max-width:478px){
+    .user-nav{
+        display:none;
+    }
+}
+
+@media screen and (max-width:1022px){
+    .login-full-screen{
+        display:none;
+    }
+}
+
+@media screen and (min-width:1023px){
+    .user-small-screen{
+        display:none;
+    }
 }
 
 

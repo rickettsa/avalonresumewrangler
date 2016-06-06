@@ -242,7 +242,7 @@ function convertCsvToJson(handleError, callback){
 
             return fixedName;
         } else {
-            return "NoProjName"
+            return "NoProjName";
         }
     }
 

@@ -42,6 +42,8 @@ angular.module('AppConfig', [])
             "employmentHistory": [
                 {
                     "employerOrgName": "Avalon Consulting, LLC",
+                    "employeeSuperTitle" : "Consultant",
+                    "employeeProfessionalSummary"  : "High level description of your expertise and experience as a consultant in Avalon Consulting LLC",
                     "positions": [
                         {
                             "clientName": "Johnson, Smith, and Jones Law Firm",
@@ -91,7 +93,9 @@ angular.module('AppConfig', [])
           ],
           "employmentHistory": [
             {
-              "employerOrgName": "Avalon Consulting LLC",
+              "employerOrgName": "Avalon Consulting, LLC",
+              "employeeSuperTitle" : "Consultant",
+              "employeeProfessionalSummary":"High level description of your expertise and experience as a consultant in Avalon Consulting LLC",
               "positions": [
                 {
                   "positionType"     : "contract",

@@ -22,7 +22,7 @@ module.exports = {
   app_files: {
     js: [ 'src/**/*.js', '!src/**/*.spec.js', '!src/assets/**/*.js'],
     jsunit: [ 'src/**/*.spec.js' ],
-    
+
     coffee: [ 'src/**/*.coffee', '!src/**/*.spec.coffee' ],
     coffeeunit: [ 'src/**/*.spec.coffee' ],
 
@@ -72,12 +72,11 @@ module.exports = {
       'vendor/angular-xeditable/dist/js/xeditable.js',
       'vendor/sugar/release/sugar.min.js',
       'vendor/ckeditor/ckeditor.js',
-      'vendor/typeahead.js/dist/typeahead.bundle.min.js',
-      'vendor/angular-typeahead/angular-typeahead.min.js',
       'vendor/angular-sanitize/angular-sanitize.min.js',
       'vendor/angular-sanitize/angular-sanitize.min.js.map',
       'config/config.js',
       'vendor/angular-loading-bar/loading-bar.min.js'
+      
     ],
     dirs: [
       'vendor/ckeditor/**'

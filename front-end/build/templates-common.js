@@ -2,76 +2,135 @@ angular.module('templates-common', ['templates/navbar-header.tpl.html', 'templat
 
 angular.module("templates/navbar-header.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("templates/navbar-header.tpl.html",
-    "<nav class=\"navbar navbar-default navbar-static-top\">\n" +
-    "    <div class=\"container\">\n" +
-    "        <div class=\"navbar-header\">\n" +
-    "            <button type=\"button\" ng-click=\"global.toggleNavVis()\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\".navbar-collapse\" aria-expanded=\"false\" aria-controls=\".navbar-collapse\">\n" +
-    "                <span class=\"sr-only\">Toggle navigation</span>\n" +
-    "                <span class=\"icon-bar\"></span>\n" +
-    "                <span class=\"icon-bar\"></span>\n" +
-    "                <span class=\"icon-bar\"></span>\n" +
-    "            </button>\n" +
-    "            <a class=\"navbar-brand\" ui-sref=\"home\">\n" +
-    "                <img src=\"/assets/site/avalon-transparent.png\" ui-sref=\"home\"/>\n" +
-    "                &#x2003;Resume Wrangler\n" +
+    "<nav class=\"navbar navbar-default \" role=\"navigation\">\n" +
+    "  <div class=\"container-fluid\">\n" +
+    "    <!-- Brand and toggle get grouped for better mobile display -->\n" +
+    "    <div class=\"navbar-header\">\n" +
+    "      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\n" +
+    "        <span class=\"sr-only\">Toggle navigation</span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "      </button>\n" +
+    "       <a class=\"navbar-brand level1-80\" ui-sref=\"home\">\n" +
+    "                <img src=\"/assets/site/avalon-transparent.png\" ui-sref=\"home\"/> &#x2003;Resume Wrangler\n" +
     "            </a>\n" +
-    "\n" +
-    "            <form id=\"rw-global-search\" class=\"form-inline\" ng-submit=\"runGlobalSearch()\">\n" +
-    "                <label>Search By: </label>\n" +
-    "                <div class=\"form-group\">\n" +
-    "                    <select name=\"searchType\" ng-model=\"global.search.searchType\" class=\"form-control\">\n" +
-    "                        <option ng-repeat=\"option in global.search.categories\" value=\"{{option}}\">{{option}}</option>\n" +
-    "                    </select>\n" +
-    "                </div>\n" +
-    "                <div class=\"form-group\">\n" +
-    "                    <input id=\"keywords-field\" class=\"form-control\" ng-model=\"global.search.query\" autofocus=\"autofocus\"/>\n" +
-    "                    <button class=\"btn btn-primary\">\n" +
-    "                        <i class=\"fa fa-search\"></i>\n" +
-    "                    </button>\n" +
-    "                </div>\n" +
-    "\n" +
-    "                <ds-user-login></ds-user-login>\n" +
-    "            </form>\n" +
-    "\n" +
-    "            <div class=\"navbar-collapse collapse navbar-right top\" ng-class=\"global.navVisible === 1 ? 'display-block' : ''\">\n" +
-    "                <ul class=\"nav navbar-nav\">\n" +
-    "                    <li ui-sref-active=\"active\">\n" +
-    "                        <a href ui-sref=\"home\">\n" +
-    "                            <i class=\"fa fa-home\"></i>\n" +
-    "                            Home\n" +
-    "                        </a>\n" +
-    "                    </li>\n" +
-    "                    <li ui-sref-active=\"active\" ng-if=\"isAuthorized(['editor','admin'])\">\n" +
-    "                        <a href ui-sref=\"view({ firstName: session.firstName, lastName: session.lastName})\">\n" +
-    "                            <i class=\"glyphicon glyphicon-eye-open\"></i> Resume\n" +
-    "                        </a>\n" +
-    "                    </li>\n" +
-    "                    <li ui-sref-active=\"active\" ng-if=\"isAuthorized(['editor','admin'])\">\n" +
-    "                        <a href ui-sref=\"projects\">\n" +
-    "                            <i class=\"fa fa-edit\"></i>\n" +
-    "                            Projects\n" +
-    "                        </a>\n" +
-    "                    </li>\n" +
-    "                    <li ui-sref-active=\"active\" ng-if=\"isAuthorized(['editor','admin'])\">\n" +
-    "                        <a href ui-sref=\"skills\">\n" +
-    "                            <i class=\"fa fa-edit\"></i>\n" +
-    "                            Skills\n" +
-    "                        </a>\n" +
-    "                    </li>\n" +
-    "                    <li ui-sref-active=\"active\" ng-if=\"isAuthorized(['editor','admin'])\">\n" +
-    "                        <a href ui-sref=\"admin\">\n" +
-    "                            <i class=\"fa fa-edit\"></i>\n" +
-    "                            Admin\n" +
-    "                        </a>\n" +
-    "                    </li>\n" +
-    "                </ul>\n" +
-    "            </div>\n" +
-    "\n" +
-    "        </div>\n" +
-    "\n" +
-    "\n" +
     "    </div>\n" +
-    "</nav>");
+    "\n" +
+    "    <!-- Collect the nav links, forms, and other content for toggling -->\n" +
+    "    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">       \n" +
+    "      <div class=\"search-form\">\n" +
+    "        <form class=\"form-inline\" ng-submit=\"runGlobalSearch()\">  \n" +
+    "             \n" +
+    "          <div class=\"form-group\">\n" +
+    "            <label for=\"exampleInputName2\">Search By:</label>\n" +
+    "            <select name=\"searchType\" ng-model=\"global.search.searchType\" class=\"form-control \">\n" +
+    "              <option ng-repeat=\"option in global.search.categories\" value=\"{{option}}\">{{option}}</option>\n" +
+    "            </select>\n" +
+    "          </div>\n" +
+    "          \n" +
+    "          <div class=\"form-group\">\n" +
+    "            <label for=\"exampleInputEmail2\"></label>\n" +
+    "            <input id=\"keywords-field\" class=\"form-control search-input\" ng-model=\"global.search.query\" autofocus=\"autofocus\"/>\n" +
+    "          </div>\n" +
+    "      \n" +
+    "          <button type=\"submit\" class=\"btn btn-default search-submit\" type=\"button\">\n" +
+    "            <span class=\"glyphicon glyphicon-search\"></span> Search\n" +
+    "          </button>\n" +
+    "        \n" +
+    "          <div class=\"login-full-screen text-right\">\n" +
+    "            <ds-user-login></ds-user-login>\n" +
+    "          </div>  \n" +
+    "          \n" +
+    "        </form>     \n" +
+    "      </div>\n" +
+    "             \n" +
+    "      <ul class=\"nav navbar-nav navbar-right user-small-screen\">    \n" +
+    "        <li class=\"dropdown\">\n" +
+    "          <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Menu <span class=\"caret\"></span></a>\n" +
+    "          <ul class=\"dropdown-menu\" role=\"menu\">\n" +
+    "            <li ng-if=\"isAuthorized(['editor','admin'])\">\n" +
+    "              <a href ui-sref=\"home\">\n" +
+    "                <i class=\"fa fa-home\"></i>\n" +
+    "                Home\n" +
+    "              </a>\n" +
+    "            </li>\n" +
+    "            <li ng-if=\"isAuthorized(['editor','admin'])\">\n" +
+    "              <a href ui-sref=\"view({ firstName: session.firstName, lastName: session.lastName})\">\n" +
+    "                <i class=\"glyphicon glyphicon-eye-open\"></i> \n" +
+    "                Resume\n" +
+    "              </a>\n" +
+    "            </li>\n" +
+    "            <li ng-if=\"isAuthorized(['editor','admin'])\">\n" +
+    "              <a href ui-sref=\"projects\">\n" +
+    "                  <i class=\"fa fa-edit\"></i>\n" +
+    "                  Projects\n" +
+    "              </a>\n" +
+    "            </li>\n" +
+    "            <li  ng-if=\"isAuthorized(['editor','admin'])\">\n" +
+    "              <a href ui-sref=\"skills\">\n" +
+    "                  <i class=\"fa fa-edit\"></i>\n" +
+    "                  Skills\n" +
+    "              </a>\n" +
+    "            </li>\n" +
+    "            <li  ng-if=\"isAuthorized(['editor','admin'])\">\n" +
+    "              <a href ui-sref=\"admin\">\n" +
+    "                  <i class=\"fa fa-edit\"></i>\n" +
+    "                  Admin\n" +
+    "              </a>\n" +
+    "            </li>\n" +
+    "            <li class=\"divider\"></li>\n" +
+    "            <li>\n" +
+    "              <div class=\"row\">\n" +
+    "                <div class=\"bottom text-center\">\n" +
+    "                  <ds-user-login></ds-user-login>\n" +
+    "                </div>\n" +
+    "              </div>\n" +
+    "				    </li>\n" +
+    "          </ul>\n" +
+    "        </li>\n" +
+    "      </ul>  \n" +
+    "    </div><!-- /.navbar-collapse -->\n" +
+    "  </div><!-- /.container-fluid -->\n" +
+    "</nav>\n" +
+    "\n" +
+    "<div class=\"row \">\n" +
+    "  <div class=\"col-md-12 \">\n" +
+    "    <ul class=\"nav nav-pills user-nav\">\n" +
+    "      <li ui-sref-active=\"active\" ng-if=\"isAuthorized(['editor','admin'])\">\n" +
+    "        <a href ui-sref=\"home\">\n" +
+    "          <i class=\"fa fa-home\"></i>\n" +
+    "          Home\n" +
+    "        </a>\n" +
+    "      </li>\n" +
+    "      <li ui-sref-active=\"active\" ng-if=\"isAuthorized(['editor','admin'])\">\n" +
+    "        <a href ui-sref=\"view({ firstName: session.firstName, lastName: session.lastName})\">\n" +
+    "          <i class=\"glyphicon glyphicon-eye-open\"></i> Resume\n" +
+    "        </a>\n" +
+    "      </li>\n" +
+    "      <li ui-sref-active=\"active\" ng-if=\"isAuthorized(['editor','admin'])\">\n" +
+    "        <a href ui-sref=\"projects\">\n" +
+    "          <i class=\"fa fa-edit\"></i>\n" +
+    "          Projects\n" +
+    "        </a>\n" +
+    "      </li>\n" +
+    "      <li ui-sref-active=\"active\" ng-if=\"isAuthorized(['editor','admin'])\">\n" +
+    "        <a href ui-sref=\"skills\">\n" +
+    "          <i class=\"fa fa-edit\"></i>\n" +
+    "          Skills\n" +
+    "        </a>\n" +
+    "      </li>\n" +
+    "      <li ui-sref-active=\"active\" ng-if=\"isAuthorized(['editor','admin'])\">\n" +
+    "        <a href ui-sref=\"admin\">\n" +
+    "          <i class=\"fa fa-edit\"></i>\n" +
+    "          Admin\n" +
+    "        </a>\n" +
+    "      </li>\n" +
+    "    </ul>        \n" +
+    "  </div>   \n" +
+    "</div>\n" +
+    "\n" +
+    "");
 }]);
 
 angular.module("templates/search-form.tpl.html", []).run(["$templateCache", function($templateCache) {

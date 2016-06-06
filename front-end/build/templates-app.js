@@ -41,216 +41,279 @@ angular.module("admin/admin.tpl.html", []).run(["$templateCache", function($temp
 angular.module("edit/edit.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("edit/edit.tpl.html",
     "<div class=\"col-md-12\">\n" +
-    "    <div class=\"row well dashed-well\">\n" +
+    "    <div class=\"row well\">\n" +
     "        <!-- click-edit-link http://plnkr.co/edit/EsW7mV?p=preview -->\n" +
     "        <!-- plus button http://plnkr.co/edit/xUDrOS?p=preview -->\n" +
     "        <!-- http://vitalets.github.io/angular-xeditable/ -->\n" +
-    "        <div class=\"col-md-6\">\n" +
-    "            <h1>{{ contact.firstName }} {{ contact.lastName }}</h1>\n" +
-    "            <h3>Hire Date: <a href = \"#\" e-required e-placeholder = \"Hire Date\" editable-text = \"resume.EmploymentHistory.EmployerOrg.HireDate\" onaftersave = \"edit.updateResume()\"> {{ resume.EmploymentHistory.EmployerOrg.HireDate || \"empty\" }}</a></h3>\n" +
-    "            <h3><a href= \"mailto : {{ contact.email }}\">{{ contact.email }}</a></h3>\n" +
-    "            <h3><a href= \"tel: +{{ contact.phone }}\">{{ contact.phone }}</a></h3>\n" +
+    "        <div class=\"col-md-5\">\n" +
+    "            <h3>{{ resume.firstName }} {{ resume.lastName }} </h3>\n" +
+    "            <h4>Hire Date:\n" +
+    "            <a href = \"#\"\n" +
+    "            e-required e-placeholder = \"Hire Date\"\n" +
+    "            editable-text= \"resume.EmploymentHistory.EmployerOrg.HireDate\"\n" +
+    "            onaftersave = \"edit.updateResume()\">\n" +
+    "            {{ resume.EmploymentHistory.EmployerOrg.HireDate || \"empty\" }}\n" +
+    "            </a></h4>\n" +
+    "            <h5><a href= \"mailto : {{ resume.email }}\">email: {{ resume.email }}</a></h5>\n" +
+    "            <h5><a href= \"tel: +{{ resume.phone }}\"> phone: {{ resume.phone }}</a></h5>\n" +
     "        </div>\n" +
+    "        \n" +
+    "        \n" +
+    "  \n" +
+    "        <div class=\"col-md-5 col-md-offset-1\">\n" +
+    "            <h3>Employee Position at Avalon</h3>\n" +
+    "          \n" +
+    "            <p><a href= \"#\"\n" +
+    "            e-required e-placeholder = \"Employee Position at Avalon\"\n" +
+    "            editable-text = \"resume.EmploymentHistory.employeeSuperTitle\"\n" +
+    "            onaftersave=\"edit.updateResume()\">\n" +
+    "            {{ resume.EmploymentHistory.employeeSuperTitle || \"empty\" }}\n" +
+    "            </a></p>\n" +
     "\n" +
-    "        <div class=\"col-md-6\">\n" +
-    "            <h2>Generic Title</h2>\n" +
-    "            <h3><a href= \"#\" e-required e-placeholder = \"Generic Title\" editable-text = \"resume.EmploymentHistory.EmployerOrg.GenericTitle\" onaftersave=\"edit.updateResume()\">{{ resume.EmploymentHistory.EmployerOrg.GenericTitle || \"empty\" }}</a></h3>\n" +
-    "            <h2>General Description</h2>\n" +
-    "                <p><a href = \"#\" e-required e-placeholder = \"Overall Description\" editable-text = \"resume.EmploymentHistory.EmployerOrg.OverallDescription\" onaftersave= \"edit.updateResume()\">{{ resume.EmploymentHistory.EmployerOrg.OverallDescription || \"empty\" }}</a></p>\n" +
+    "            <h3>Employee Professional Summary</h3>\n" +
+    "            <p><a href = \"#\"\n" +
+    "            e-required e-placeholder = \"Employee Professional Summary\"\n" +
+    "            editable-text = \"resume.EmploymentHistory.employeeProfessionalSummary\" \n" +
+    "            onaftersave= \"edit.updateResume()\">\n" +
+    "            {{ resume.EmploymentHistory.employeeProfessionalSummary || \"empty\" }}\n" +
+    "            </a></p>\n" +
     "        </div>\n" +
+    "        \n" +
+    "        \n" +
+    "        \n" +
+    "       <div class=\"col-md-12\">         \n" +
+    "        <div>\n" +
     "\n" +
+    "           <ul class=\"nav nav-tabs\" id=\"myTab\">\n" +
+    "			  <li class=\"active\"><a data-target=\"#experience\" data-toggle=\"tab\">Experience</a></li>\n" +
+    "			  <li><a data-target=\"#skills\" data-toggle=\"tab\">Skills</a></li>\n" +
+    "			  <li><a data-target=\"#education\" data-toggle=\"tab\">Education</a></li>\n" +
+    "			</ul>\n" +
     "\n" +
-    "        <!-- ================================================= -->\n" +
-    "        <!-- START RESUME EXPERIENCE SECTION -->\n" +
-    "        <!-- ================================================= -->\n" +
-    "        <div class=\"col-md-12\" ng-if = \"!_.isEmpty(contact)\">\n" +
-    "            <h2>Experience:</h2>\n" +
+    "			<div class=\"tab-content\">\n" +
+    "			  <div class=\"tab-pane active\" id=\"experience\">\n" +
+    "                  \n" +
+    "                <!-- ================================================= -->\n" +
+    "                <!-- START RESUME EXPERIENCE SECTION -->\n" +
+    "                <!-- ================================================= -->\n" +
+    "                <div class=\"col-md-12 panel-experience\" ng-if = \"!_.isEmpty(contact)\">\n" +
+    "                    <h2>Experience:</h2>\n" +
     "\n" +
-    "            <button class = \"add-skill btn btn-success\" ng-click = \"edit.addEmployer('start')\"><span class=\"glyphicon glyphicon-plus\"></i> Add Employer</button>\n" +
+    "                    <button class = \"add-skill btn btn-success\" ng-click = \"edit.addEmployer('start')\"><i class=\"glyphicon glyphicon-plus\"></i> Add Employer</button>\n" +
     "\n" +
-    "            <div ng-repeat = \"emplyr in resume.employmentHistory\" ng-init=\"outerIndex = $index\">\n" +
-    "                <div class=\"well\" ng-if=\"resume.employmentHistory[outerIndex].positions.length > 0\">\n" +
-    "                    <div class=\"row\" >\n" +
+    "                    <div ng-repeat = \"emplyr in resume.employmentHistory\" ng-init=\"outerIndex = $index\">\n" +
+    "                        <div class=\"well\" ng-if=\"resume.employmentHistory[outerIndex].positions.length > 0\">\n" +
+    "                            <div class=\"row\" >\n" +
+    "                                <div class=\"col-md-8\">\n" +
+    "                                    <h3><a href = \"#\"\n" +
+    "                                    e-required e-placeholder = \"Service Provider Organization Name\"\n" +
+    "                                    editable-text = \"emplyr.employerOrgName\"\n" +
+    "                                    onaftersave = \"edit.updateResume()\">\n" +
+    "                                    {{ emplyr.employerOrgName || \"Service Provider Organization Name\" }}\n" +
+    "                                    </a></h3>\n" +
+    "                                </div>\n" +
     "\n" +
-    "                        <div class=\"col-md-8\">\n" +
-    "                            <h3><a href                  = \"#\"\n" +
-    "                                e-required e-placeholder = \"Service Provider Organization Name\"\n" +
-    "                                editable-text            = \"emplyr.employerOrgName\"\n" +
-    "                                onaftersave              = \"edit.updateResume()\">\n" +
-    "                                {{ emplyr.employerOrgName || \"Service Provider Organization Name\" }}</a></h3>\n" +
-    "                        </div>\n" +
-    "\n" +
-    "                        <div class=\"col-md-4 text-right\">\n" +
-    "                           <h3><button class = \"add-skill btn btn-success\" ng-click = \"edit.addExperience('start', outerIndex)\"><span class=\"glyphicon glyphicon-plus\"></i> Experience</button></span><h3>\n" +
-    "                        </div>\n" +
-    "\n" +
-    "\n" +
-    "                        <div ng-repeat = \"pos in emplyr.positions\" ng-init = \"innerIndex= $index\">\n" +
-    "                            <div class=\"well light-well\">\n" +
-    "                                <div class=\"col-md-12 text-right\">\n" +
-    "                                    <button class=\"btn btn-danger btn-xs\" ng-click = \"edit.deletePosition(outerIndex, innerIndex)\">Delete Position</button>\n" +
+    "                                <div class=\"col-md-4 text-right\">\n" +
+    "                                <h3><button class = \"add-skill btn btn-success\" ng-click = \"edit.addExperience('start', outerIndex)\"><i class=\"glyphicon glyphicon-plus\"></i> Experience</button><h3>\n" +
     "                                </div>\n" +
     "\n" +
     "\n" +
-    "                                <h3><a href                  = \"#\"\n" +
-    "                                    e-required e-placeholder = \"Contracting Organization Name\"\n" +
-    "                                    editable-text            = \"pos.clientName\"\n" +
-    "                                    onaftersave              = \"edit.updateResume()\">\n" +
-    "                                    {{ pos.clientName || \"Contracting Organization Name\" }}</a></h3>\n" +
+    "                                <div ng-repeat = \"pos in emplyr.positions\" ng-init = \"innerIndex= $index\">\n" +
+    "                                    <div class=\"well light-well\">\n" +
+    "                                        <div class=\"col-md-12 text-right\">\n" +
+    "                                            <button class=\"btn btn-danger btn-xs\"\n" +
+    "                                            ng-click = \"edit.deletePosition(outerIndex, innerIndex)\">Delete Position</button>\n" +
+    "                                        </div>\n" +
     "\n" +
-    "                                <h3><a href                  = \"#\"\n" +
-    "                                    e-required e-placeholder = \"Position Title\"\n" +
-    "                                    editable-text            = \"pos.title\"\n" +
-    "                                    onaftersave              = \"edit.updateResume()\">\n" +
-    "                                    {{ pos.title || \"Position Title\" }}</a></h3>\n" +
+    "        \n" +
+    "                                        <h3><a href=\"#\"\n" +
+    "                                        editable-text=\"pos.clientName\"\n" +
+    "                                        e-uib-typeahead=\"clientName as clientName._source.clientName for clientName in projects($viewValue) | filter:$viewValue |limitTo:3\"\n" +
+    "                                        e-typeahead-on-select='onSelect($item, $model, $label, pos)'\n" +
+    "                                        onaftersave = \"edit.updateResume()\" \n" +
+    "                                        >{{pos.clientName}} \n" +
+    "                                        </a></h3>\n" +
     "\n" +
-    "                                <span><a href                = \"#\"\n" +
-    "                                    e-required e-placeholder = \"Start Date\"\n" +
-    "                                    editable-text            = \"pos.startDate\"\n" +
-    "                                    onaftersave              = \"edit.updateResume()\">\n" +
-    "                                    {{ pos.startDate || \"Start Date\" }}</a></span><span> to </span>\n" +
+    "                                        <h3><a href = \"#\"\n" +
+    "                                        e-required e-placeholder = \"Position Title\"\n" +
+    "                                        editable-text            = \"pos.title\"\n" +
+    "                                        onaftersave              = \"edit.updateResume()\">\n" +
+    "                                        {{ pos.title || \"Position Title\" }}\n" +
+    "                                        </a></h3>\n" +
     "\n" +
-    "                                <span><a href                = \"#\"\n" +
-    "                                    e-required e-placeholder = \"End Date\"\n" +
-    "                                    editable-text            = \"pos.endDate\"\n" +
-    "                                    onaftersave              = \"edit.updateResume()\">\n" +
-    "                                    {{ pos.endDate || \"End Date\" }}</a></span>\n" +
+    "                                        <span><a href = \"#\"\n" +
+    "                                        e-required e-placeholder = \"Start Date\"\n" +
+    "                                        editable-text            = \"pos.startDate\"\n" +
+    "                                        onaftersave              = \"edit.updateResume()\">\n" +
+    "                                        {{ pos.startDate || \"Start Date\" }}\n" +
+    "                                        </a></span><span> to </span>\n" +
     "\n" +
-    "                                <h4 class=\"uneditable\" ng-if=\"pos.globalDescription\">{{ pos.globalDescription }}</h4>\n" +
+    "                                        <span><a href = \"#\"\n" +
+    "                                        e-required e-placeholder = \"End Date\"\n" +
+    "                                        editable-text            = \"pos.endDate\"\n" +
+    "                                        onaftersave              = \"edit.updateResume()\">\n" +
+    "                                        {{ pos.endDate || \"End Date\" }}\n" +
+    "                                        </a></span>\n" +
     "\n" +
-    "                                <br ng-if = \"!pos.GlobalDescription\"/>\n" +
-    "                                <br ng-if = \"!pos.GlobalDescription\"/>\n" +
+    "                                        <h4 class=\"uneditable\"\n" +
+    "                                        ng-if=\"pos.globalDescription\">\n" +
+    "                                        {{ pos.globalDescription }}\n" +
+    "                                        </h4>\n" +
     "\n" +
-    "                                <!-- Integrate CKEDitor http://jsfiddle.net/jWANb/2/ -->\n" +
-    "                                <div class   = \"ck-editor\"\n" +
-    "                                    ng-model = \"pos.description\"\n" +
-    "                                    ng-init  = \"description = pos.description\">\n" +
-    "                                    {{ pos.description }}</div>\n" +
+    "                                        <br ng-if = \"!pos.GlobalDescription\"/>\n" +
+    "                                        <br ng-if = \"!pos.GlobalDescription\"/>\n" +
+    "\n" +
+    "                                        <!-- Integrate CKEDitor http://jsfiddle.net/jWANb/2/ -->\n" +
+    "                                        <div class = \"ck-editor\"\n" +
+    "                                        ng-model = \"pos.description\"\n" +
+    "                                        ng-init  = \"description = pos.description\">\n" +
+    "                                        {{ pos.description }}\n" +
+    "                                        </div>\n" +
+    "                                    </div>\n" +
+    "                                </div>\n" +
+    "\n" +
+    "                                <div class=\"col-md-12 text-right\">\n" +
+    "                                    <button class = \"add-skill btn btn-success\" ng-click = \"edit.addExperience('end', outerIndex)\"><i class=\"glyphicon glyphicon-plus\"></i> Experience</button></span>\n" +
+    "                                </div>\n" +
     "                            </div>\n" +
     "                        </div>\n" +
+    "                    </div>\n" +
     "\n" +
+    "                    <button class = \"add-skill btn btn-success\" ng-click = \"edit.addEmployer('end')\"><i class=\"glyphicon glyphicon-plus\"></i> Add Employer</button>\n" +
+    "                </div><!-- finish experience section -->\n" +
+    "                  \n" +
+    "                                  \n" +
+    "              </div>\n" +
+    "			  <div class=\"tab-pane\" id=\"skills\">\n" +
+    "              \n" +
+    "                <!-- ================================================= -->\n" +
+    "                <!-- START RESUME SKILLSET SECTION -->\n" +
+    "                <!-- ================================================= -->\n" +
+    "                <div class=\"col-md-12 panel-skills\">\n" +
+    "                    <h2>Lifetime Skillset:</h2>\n" +
+    "\n" +
+    "                    <div class=\"well light-well\">\n" +
+    "                    <button class = \"add-skill btn btn-success\" ng-click=\"edit.addLifeSkillRole(resume.skills)\"><i class=\"glyphicon glyphicon-plus\"></i> Skill</button>\n" +
+    "\n" +
+    "                        <form class=\"form-horizontal filter-form\">\n" +
+    "                            <div class=\"form-group text-left\">\n" +
+    "                                <label class=\"col-md-3  control-label\">Filter By:</label>\n" +
+    "                                <div class=\"col-md-6\">\n" +
+    "                                <input type=\"text\" class=\"form-control\" ng-model=\"edit.skillFilter\">\n" +
+    "                                </div>\n" +
+    "                            </div>\n" +
+    "                        </form>\n" +
+    "\n" +
+    "                        <div class=\"skills-scroller well col-md-12 col-md-offset-0\">\n" +
+    "                            <form ng-submit=\"edit.updateResume()\">\n" +
+    "                                <table class=\"skills-table\">\n" +
+    "                                    <thead>\n" +
+    "                                        <th>Skill</th>\n" +
+    "                                        <th>Years of Experience</th>\n" +
+    "                                        <th></th>\n" +
+    "                                        \n" +
+    "                                    </thead>\n" +
+    "                                    <tr ng-repeat=\"skillRole in resume.skills | filter:edit.skillFilter | orderBy:skillRole.name\" ng-init=\"skillRole.isEditing = false\">\n" +
+    "\n" +
+    "                                        <td class=\"icon\" ng-if=\"skillRole.isEditing === false\">\n" +
+    "                                            <img class=\"skill-icon\" ng-src=\"{{ edit.getSkillImg(skillRole) }}\" alt=\"img\"/>\n" +
+    "                                            <p  class=\"skill-name\">{{ skillRole.name || \"Skill\"}}</p>\n" +
+    "                                        </td>\n" +
+    "\n" +
+    "                                        <td class=\"skillname\" ng-if=\"skillRole.isEditing === true\">\n" +
+    "                                            <input class=\"form-control\" ng-model=\"skillRole.name\" placeholder=\"Skill Name\" options=\"typeaheadOptions\" datasets=\"typeaheadData\" sf-typeahead autofocus/>\n" +
+    "                                        </td>\n" +
+    "\n" +
+    "                                        <td class=\"experience-read\" ng-if=\"skillRole.isEditing === false\">\n" +
+    "                                            {{ skillRole.years + ' years' || '0' }}\n" +
+    "                                        </td>\n" +
+    "\n" +
+    "                                        <td class=\"experience-edit\" ng-if=\"skillRole.isEditing === true\">\n" +
+    "                                            <input class=\"form-control\" ng-model=\"skillRole.years\" placeholder=\"Years Experience\" ng-pattern=\"'[0-9]+'\"/>\n" +
+    "                                        </td>\n" +
+    "\n" +
+    "                                        <td class=\"controls text-right\">\n" +
+    "                                            <div class=\"skill-controls\" ng-if=\"skillRole.isEditing === false\">\n" +
+    "                                                <button type=\"button\" ng-click=\"edit.editSkill(skillRole)\" class=\"btn btn-info btn-sm\" aria-label=\"Left Align\">\n" +
+    "                                                    <span class=\"glyphicon glyphicon-edit\" aria-hidden=\"true\"></span> Edit\n" +
+    "                                                </button>\n" +
+    "                                                \n" +
+    "                                                <button type=\"button\" ng-click=\"edit.removeSkill($index, resume.skills)\" class=\"btn btn-danger btn-sm\" aria-label=\"Left Align\">\n" +
+    "                                                    <span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span> Delete\n" +
+    "                                                </button>\n" +
+    "                                                \n" +
+    "                                            \n" +
+    "                                            </div>\n" +
+    "                                            <div class=\"skill-controls\" ng-if=\"skillRole.isEditing === true\">\n" +
+    "                                                <button type=\"button\" ng-click=\"edit.saveSkills(resume.skills, skillRole)\" class=\"btn btn-success btn-sm\" aria-label=\"Left Align\">\n" +
+    "                                                    <span class=\"glyphicon glyphicon-floppy-disk\" aria-hidden=\"true\"></span> Save\n" +
+    "                                                </button>\n" +
+    "                                                \n" +
+    "                                                <!--<button ng-click=\"edit.removeSkill($index, resume.skills)\"><i class=\"glyphicon glyphicon-remove\"></i></button>-->\n" +
+    "                                            </div>\n" +
+    "                                        </td>\n" +
+    "                                    </tr>\n" +
+    "                                </table>\n" +
+    "                            </form>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                </div><!-- finish skillset section -->\n" +
+    "                  \n" +
+    "                                 \n" +
+    "              </div>\n" +
+    "			  <div class=\"tab-pane\" id=\"education\">\n" +
+    "                  \n" +
+    "                <!-- ================================================= -->\n" +
+    "                <!-- START RESUME EDUCATION SECTION -->\n" +
+    "                <!-- ================================================= -->\n" +
+    "                <div class=\"col-md-12 panel-education\">\n" +
+    "                    <h2>Education:</h2>\n" +
+    "                    <button class = \"add-skill btn btn-success\" ng-click =\"edit.addEducation('start')\"><i class=\"glyphicon glyphicon-plus\"></i> Education</button>\n" +
+    "                    <div class = \"well light-well\" ng-repeat = \"educ in resume.educationHistory\" >\n" +
     "                        <div class=\"col-md-12 text-right\">\n" +
-    "                            <button class = \"add-skill btn btn-success\" ng-click = \"edit.addExperience('end', outerIndex)\"><span class=\"glyphicon glyphicon-plus\"></i> Experience</button></span>\n" +
+    "                            <button class=\"btn btn-danger btn-xs\" ng-click =\"edit.deleteEducation($index)\">Delete Education</button>\n" +
     "                        </div>\n" +
-    "                    </div>\n" +
-    "                </div>\n" +
-    "            </div>\n" +
     "\n" +
-    "            <button class = \"add-skill btn btn-success\" ng-click = \"edit.addEmployer('end')\"><span class=\"glyphicon glyphicon-plus\"></i> Add Employer</button>\n" +
-    "        </div><!-- finish experience section -->\n" +
+    "                        <h3><a href                  = \"#\"\n" +
+    "                            e-required e-placeholder = \"Degree Mayor\"\n" +
+    "                            editable-text            = \"educ.degreeMayor\"\n" +
+    "                            onaftersave              = \"edit.updateResume()\">\n" +
+    "                            {{ educ.degreeMayor || \"Degree Mayor\" }}</a></h3>\n" +
     "\n" +
+    "                        <h3><a href                  = \"#\"\n" +
+    "                            e-required e-placeholder = \"Degree Name\"\n" +
+    "                            editable-text            = \"educ.degreeName\"\n" +
+    "                            onaftersave              = \"edit.updateResume()\">\n" +
+    "                            {{ educ.degreeName || \"Degree Name\" }}</a></h3>\n" +
     "\n" +
+    "                        <h3><a href                  = \"#\"\n" +
+    "                            e-required e-placeholder = \"School Name\"\n" +
+    "                            editable-text            = \"educ.schoolName\"\n" +
+    "                            onaftersave              = \"edit.updateResume()\">\n" +
+    "                            {{ educ.schoolName || \"School Name\" }}</a></h3>\n" +
     "\n" +
-    "        <!-- ================================================= -->\n" +
-    "        <!-- START RESUME SKILLSET SECTION -->\n" +
-    "        <!-- ================================================= -->\n" +
-    "        <div class=\"col-md-12\">\n" +
-    "            <h2>Lifetime Skillset:</h2>\n" +
-    "            <button class = \"add-skill btn btn-success\" ng-click=\"edit.addLifeSkillRole(resume.skills)\"><span class=\"glyphicon glyphicon-plus\"></i> Skill</button>\n" +
+    "                        <span><a href                = \"#\"\n" +
+    "                            e-required e-placeholder = \"Start Date\"\n" +
+    "                            editable-text            = \"educ.startDate\"\n" +
+    "                            onaftersave              = \"edit.updateResume()\">\n" +
+    "                            {{ educ.startDate || \"Start Date\" }}</a></span><span> to </span>\n" +
     "\n" +
-    "            <div class=\"well light-well\">\n" +
+    "                        <span><a href                = \"#\"\n" +
+    "                            e-required e-placeholder = \"End Date\"\n" +
+    "                            editable-text            = \"educ.endDate\"\n" +
+    "                            onaftersave              = \"edit.updateResume()\">\n" +
+    "                            {{ educ.endDate || \"End Date\" }}</a></span>\n" +
     "\n" +
-    "                <form class=\"form-horizontal\">\n" +
-    "                    <div class=\"form-group text-left\">\n" +
-    "                        <label class=\"col-md-3  control-label\">Filter By:</label>\n" +
-    "                        <div class=\"col-md-6\">\n" +
-    "                         <input type=\"text\" class=\"form-control\" ng-model=\"edit.skillFilter\">\n" +
-    "                        </div>\n" +
-    "                    </div>\n" +
-    "                </form>\n" +
-    "\n" +
-    "                <div class=\"skills-scroller well col-md-6 col-md-offset-3\">\n" +
-    "                    <form ng-submit=\"edit.updateResume()\">\n" +
-    "                         <table class=\"skills-table\">\n" +
-    "                            <tr ng-repeat=\"skillRole in resume.skills | filter:edit.skillFilter | orderBy:skillRole.name\" ng-init=\"skillRole.isEditing = false\">\n" +
-    "\n" +
-    "                                <td class=\"icon\" ng-if=\"skillRole.isEditing === false\">\n" +
-    "                                    <img class=\"skill-icon\" ng-src=\"{{ edit.getSkillImg(skillRole) }}\" alt=\"img\"/>\n" +
-    "                                    <p  class=\"skill-name\">{{ skillRole.name }}</p>\n" +
-    "                                </td>\n" +
-    "\n" +
-    "                                <td class=\"skillname\" ng-if=\"skillRole.isEditing === true\">\n" +
-    "                                    <input class=\"form-control\" ng-model=\"skillRole.name\" placeholder=\"Skill Name\" options=\"typeaheadOptions\" datasets=\"typeaheadData\" sf-typeahead autofocus/>\n" +
-    "                                </td>\n" +
-    "\n" +
-    "                                <td class=\"experience-read\" ng-if=\"skillRole.isEditing === false\">\n" +
-    "                                    {{ skillRole.years + ' years' || 'empty' }}\n" +
-    "                                </td>\n" +
-    "\n" +
-    "                                <td class=\"experience-edit\" ng-if=\"skillRole.isEditing === true\">\n" +
-    "                                    <input class=\"form-control\" ng-model=\"skillRole.years\" placeholder=\"Years Experience\" ng-pattern=\"'[0-9]+'\"/>\n" +
-    "                                </td>\n" +
-    "\n" +
-    "                                <td class=\"controls\">\n" +
-    "                                    <div class=\"skill-controls\" ng-if=\"skillRole.isEditing === false\">\n" +
-    "                                        <i ng-click=\"edit.editSkill(skillRole)\" class=\"fa fa-2x fa-pencil edit\"></i>\n" +
-    "                                        <i ng-click=\"edit.removeSkill($index, resume.skills)\" class=\"fa fa-2x fa-times remove\"></i>\n" +
-    "                                    </div>\n" +
-    "                                    <div class=\"skill-controls\" ng-if=\"skillRole.isEditing === true\">\n" +
-    "                                        <button ng-click=\"edit.saveSkills(resume.skills, skillRole)\"><i class=\"fa fa-2x fa-floppy-o save\"></i></button>\n" +
-    "                                        <!--<button ng-click=\"edit.removeSkill($index, resume.skills)\"><i class=\"fa fa-2x fa-times remove\"></i></button>-->\n" +
-    "                                    </div>\n" +
-    "                                </td>\n" +
-    "                            </tr>\n" +
-    "                        </table>\n" +
-    "                    </form>\n" +
-    "                </div>\n" +
-    "            </div>\n" +
-    "        </div><!-- finish skillset section -->\n" +
-    "\n" +
-    "\n" +
-    "        <!-- ================================================= -->\n" +
-    "        <!-- START RESUME EDUCATION SECTION -->\n" +
-    "        <!-- ================================================= -->\n" +
-    "        <div class=\"col-md-12\">\n" +
-    "            <h2>Education:</h2>\n" +
-    "            <button class = \"add-skill btn btn-success\" ng-click =\"edit.addEducation('start')\"><span class=\"glyphicon glyphicon-plus\"></i> Education</button>\n" +
-    "\n" +
-    "            <div class = \"well light-well\" ng-repeat = \"educ in resume.educationHistory\" >\n" +
-    "\n" +
-    "                <div class=\"col-md-12 text-right\">\n" +
-    "                    <button class=\"btn btn-danger btn-xs\" ng-click =\"edit.deleteEducation($index)\">Delete Education</button>\n" +
-    "                </div>\n" +
-    "\n" +
-    "\n" +
-    "                <h3><a href                  = \"#\"\n" +
-    "                    e-required e-placeholder = \"Degree Mayor\"\n" +
-    "                    editable-text            = \"educ.degreeMayor\"\n" +
-    "                    onaftersave              = \"edit.updateResume()\">\n" +
-    "                    {{ educ.degreeMayor || \"Degree Mayor\" }}</a></h3>\n" +
-    "\n" +
-    "                <h3><a href                  = \"#\"\n" +
-    "                    e-required e-placeholder = \"Degree Name\"\n" +
-    "                    editable-text            = \"educ.degreeName\"\n" +
-    "                    onaftersave              = \"edit.updateResume()\">\n" +
-    "                    {{ educ.degreeName || \"Degree Name\" }}</a></h3>\n" +
-    "\n" +
-    "                <h3><a href                  = \"#\"\n" +
-    "                    e-required e-placeholder = \"School Name\"\n" +
-    "                    editable-text            = \"educ.schoolName\"\n" +
-    "                    onaftersave              = \"edit.updateResume()\">\n" +
-    "                    {{ educ.schoolName || \"School Name\" }}</a></h3>\n" +
-    "\n" +
-    "                <span><a href                = \"#\"\n" +
-    "                    e-required e-placeholder = \"Start Date\"\n" +
-    "                    editable-text            = \"educ.startDate\"\n" +
-    "                    onaftersave              = \"edit.updateResume()\">\n" +
-    "                    {{ educ.startDate || \"Start Date\" }}</a></span><span> to </span>\n" +
-    "\n" +
-    "                <span><a href                = \"#\"\n" +
-    "                    e-required e-placeholder = \"End Date\"\n" +
-    "                    editable-text            = \"educ.endDate\"\n" +
-    "                    onaftersave              = \"edit.updateResume()\">\n" +
-    "                    {{ educ.endDate || \"End Date\" }}</a></span>\n" +
-    "\n" +
-    "\n" +
-    "            </div> <!-- finish div for educ in resume.educationHistory -->\n" +
-    "             <button class = \"add-skill btn btn-success\" ng-click = \"edit.addEducation('end')\"><span class=\"glyphicon glyphicon-plus\"></i> Education</button>\n" +
-    "        </div><!-- finish education section -->\n" +
-    "\n" +
-    "\n" +
-    "\n" +
-    "\n" +
+    "                    </div> <!-- finish div for educ in resume.educationHistory -->\n" +
+    "                    <button ng-if=\"!_.isEmpty(resume.educationHistory) && resume.educationHistory.length > 0\" class = \"add-skill btn btn-success\" ng-click = \"edit.addEducation('end')\"><i class=\"glyphicon glyphicon-plus\"></i> Education</button>\n" +
+    "                </div><!-- finish education section -->\n" +
+    "                  \n" +
+    "                  \n" +
+    "                  \n" +
+    "              </div>\n" +
+    "			</div>\n" +
+    "            \n" +
+    "        </div>\n" +
     "\n" +
     "    </div> <!-- finish row -->\n" +
     "</div>");
@@ -638,7 +701,7 @@ angular.module("skills/skills.tpl.html", []).run(["$templateCache", function($te
 angular.module("view/view.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("view/view.tpl.html",
     "<div class=\"col-md-3\">\n" +
-    "    <div class=\"row well\">\n" +
+    "    <div class=\"row well sideBar\">\n" +
     "        <h2>Filter Resume:</h2>\n" +
     "        <form>\n" +
     "            <div class=\"form-group\">\n" +
@@ -733,7 +796,7 @@ angular.module("view/view.tpl.html", []).run(["$templateCache", function($templa
     "<!-- START CONTACT SECTION -->\n" +
     "<!-- ================================================= -->\n" +
     "<div class=\"col-md-9\">\n" +
-    "    <div class=\"row well\">\n" +
+    "    <div class=\"row well mainContent\">\n" +
     "        <!-- click-edit-link http://plnkr.co/edit/EsW7mV?p=preview -->\n" +
     "        <!-- plus button http://plnkr.co/edit/xUDrOS?p=preview -->\n" +
     "        <!-- http://vitalets.github.io/angular-xeditable/ -->\n" +
@@ -749,7 +812,7 @@ angular.module("view/view.tpl.html", []).run(["$templateCache", function($templa
     "                <div class=\"pull-right\">\n" +
     "                    <span>Download As:</span>\n" +
     "                    &#x2003;\n" +
-    "                    <a href=\"#\"><img class=\"download-icon\" src=\"/assets/icons/pdf.png\"/></a>\n" +
+    "                    <a href=\"#\" ng-click = \"view.printPreview()\"><img class=\"download-icon\" src=\"/assets/icons/pdf.png\"/></a>\n" +
     "                    &#x2003;\n" +
     "                    <a href=\"#\"><img class=\"download-icon\" src=\"/assets/icons/word-doc.png\"/></a>\n" +
     "                </div>\n" +
@@ -758,9 +821,12 @@ angular.module("view/view.tpl.html", []).run(["$templateCache", function($templa
     "\n" +
     "        <div class=\"col-md-12\" ng-if=\"contact.firstName\">\n" +
     "            <h1    id=\"contactName\">{{ contact.firstName }} {{ contact.lastName }}</h1>\n" +
+    "            <h4> Employee Title: {{resume.EmploymentHistory.employeeSuperTitle}}</h4>\n" +
+    "            <h4> Employee Professional Summary: {{resume.EmploymentHistory.employeeProfessionalSummary}}</h4>\n" +
     "            <h4><a id=\"contactEmail\"  href=\"mailto:{{ contact.email }}\"> {{ contact.email }} </a></h4>\n" +
     "            <h4><a id=\"contactPhone\"  href=\"tel:+{{ contact.phone }}\"> {{ contact.phone }} </a></h4>\n" +
-    "            <h4    id=\"contactTimezone\"> {{ contact.timezone }} </h4>\n" +
+    "            <h5    id=\"contactTimezone\"> {{ contact.timezone }} </h5>\n" +
+    "\n" +
     "        </div>\n" +
     "\n" +
     "<!-- ================================================= -->\n" +
@@ -819,86 +885,60 @@ angular.module("view/view.tpl.html", []).run(["$templateCache", function($templa
     "                </div>\n" +
     "            </div>\n" +
     "        </div>\n" +
-    "    <div>\n" +
+    "    </div>\n" +
     "</div>\n" +
     "\n" +
     "\n" +
-    "<div>\n" +
-    "    <h1>Test PDF</h1>\n" +
-    "    <script type=\"text/javascript\">\n" +
-    "        function genPDF(){\n" +
     "\n" +
-    "            var doc = new jsPDF();\n" +
+    "<div class=\"col-xs-12 preview-resume-parent fade\">\n" +
+    "  <div class=\"closing-prev\">\n" +
+    "    <span class=\"close-preview\" ng-click = \"view.closePreview()\">X</span>\n" +
+    "  </div>\n" +
     "\n" +
-    "            var contactName     = $('#contactName').html();\n" +
-    "            var contactEmail    = $('#contactEmail').html();\n" +
-    "            var contactPhone    = $('#contactPhone').html();\n" +
-    "            var contactTimezone = $('#contactTimezone').html();\n" +
+    "  <div class=\"contact\">\n" +
+    "    <img src=\"/assets/site/avalon-transparent.png\" class= \"avalon-img\">\n" +
+    "    <h1 class=\"contact-info\"> {{ contact.firstName }} {{ contact.lastName }}</h1>\n" +
+    "    <h4 class=\"contact-info\"> {{ contact.email }} </h4>\n" +
+    "    <h4 class=\"contact-info\"> {{ contact.phone }} </h4>\n" +
+    "    <h6 class=\"contact-info\"> {{ contact.timezone }} </h6>\n" +
+    "  </div>\n" +
     "\n" +
-    "            var employerNameArray   = $(\".employerOrgName\").map(function(){\n" +
-    "                return $(this).text();\n" +
-    "            });\n" +
+    "  <div class=\"row\">\n" +
+    "    <div class=\"col-xs-4 chosen-resume-aside\">\n" +
+    "      <div ng-for=\"emplyr in resume.employmentHistory\">\n" +
+    "        <h4>Title</h4>\n" +
+    "        <h5>{{resume.EmploymentHistory.employeeSuperTitle}}</h5>\n" +
     "\n" +
-    "            var positionTitleArray   = $(\".clientName\").map(function(){\n" +
-    "                return $(this).text();\n" +
-    "            });\n" +
-    "\n" +
-    "            var resumeDescriptionArray   = $(\".resume-descr\").map(function(){\n" +
-    "                return $(this).text();\n" +
-    "            });\n" +
-    "\n" +
-    "            // var firtSub = resumeDescriptionArray[0];\n" +
-    "            // var descriptionSize = firstSub.length\n" +
-    "            // var numberOfLines = Math.round(descriptionSize/75)\n" +
-    "            // var linesArray = []\n" +
-    "\n" +
-    "            // for(i=0; i<numberOfLines; i++){\n" +
-    "            //     var starting = 0\n" +
-    "            //     var ending = 75\n" +
-    "\n" +
-    "            //\n" +
-    "            //         linesArray.push(firstSub.substring(starting,ending))\n" +
-    "            //\n" +
-    "\n" +
-    "            //     starting = ending+1\n" +
-    "            //     ending += 75\n" +
-    "\n" +
-    "            // }\n" +
+    "        <h4>Professional Summary</h4>\n" +
+    "        <h5>{{resume.EmploymentHistory.employeeProfessionalSummary}}</h5>\n" +
+    "      </div>\n" +
     "\n" +
     "\n" +
-    "            // Contact Info\n" +
-    "            doc.setFontSize(22);\n" +
-    "            doc.text(20,12, contactName);\n" +
-    "            doc.setFontSize(12);\n" +
-    "            doc.text(20, 20, contactEmail);\n" +
-    "            doc.text(20, 25, contactPhone);\n" +
-    "            doc.text(20, 30, contactTimezone);\n" +
-    "            doc.line(5,32,205,32)\n" +
+    "      <h4>Development Skills</h4>\n" +
+    "      <div ng-repeat=\"skillRole in resume.skills | filter:view.skillFilter | orderBy:skillRole.name\" >\n" +
+    "        {{skillRole.name}}\n" +
+    "      </div>\n" +
     "\n" +
-    "            // Experience\n" +
-    "            doc.setFontSize(22);\n" +
-    "            doc.text(20,40, \"Experience\");\n" +
-    "\n" +
-    "\n" +
-    "            var position = 50;\n" +
-    "            for(i=0; i<employerNameArray.length; i++){\n" +
-    "                console.log(position)\n" +
-    "                doc.setFontSize(18)\n" +
-    "                doc.text(20, position, employerNameArray[i])\n" +
-    "                doc.setFontSize(16)\n" +
-    "                doc.text(22, position+5, positionTitleArray[i])\n" +
-    "                doc.setFontSize(12);\n" +
-    "                doc.text(22, position+10, resumeDescriptionArray[i])\n" +
-    "\n" +
-    "                position += 35;\n" +
-    "            }\n" +
+    "    </div>\n" +
+    "    <div class=\"col-xs-8 chosen-resume-main\">\n" +
+    "      <h4>Professional Experience</h4>\n" +
+    "      <div ng-repeat=\"emplyr in resume.employmentHistory\">\n" +
+    "        <div class=\"well1\" ng-repeat=\"pos in emplyr.positions\">\n" +
+    "          <h4><a href=\"#\" class=\"employerOrgName\" e-placeholder=\"Service Provider Organization Name\">{{ emplyr.employerOrgName || \"empty\" }}</a></h4>\n" +
+    "          <h4 class=\"clientName contact-info\">    {{ pos.clientName || \"empty\" }}</h4>\n" +
+    "          <h4 class=\"positionTitle contact-info\"> {{ pos.title      || \"empty\" }}</h4>\n" +
+    "          <span>                     {{ pos.startDate  || \"empty\" }}</span><span> to </span>\n" +
+    "          <span>                     {{ pos.endDate    || \"empty\" }}</span>\n" +
+    "          <div class=\"resume-descr\"\n" +
+    "               ng-model=\"description\"\n" +
+    "               ng-bind-html=\"pos.description\">\n" +
+    "          </div>\n" +
+    "        </div>\n" +
+    "      </div>\n" +
+    "    </div> <!-- content col end -->\n" +
+    "  </div> <!-- row end -->\n" +
+    "</div> <!-- resume-preview-parent div end -->\n" +
     "\n" +
     "\n" +
-    "            doc.save('test1.pdf')\n" +
-    "        }\n" +
-    "\n" +
-    "    </script>\n" +
-    "\n" +
-    "    <a href=\"javascript:genPDF()\">Test my PDF download</a>\n" +
-    "</div>");
+    "");
 }]);

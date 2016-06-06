@@ -1,70 +1,128 @@
-<nav class="navbar navbar-default navbar-static-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" ng-click="global.toggleNavVis()" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" ui-sref="home">
-                <img src="/assets/site/avalon-transparent.png" ui-sref="home"/>
-                &#x2003;Resume Wrangler
+<nav class="navbar navbar-default " role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <a class="navbar-brand level1-80" ui-sref="home">
+                <img src="/assets/site/avalon-transparent.png" ui-sref="home"/> &#x2003;Resume Wrangler
             </a>
-
-            <form id="rw-global-search" class="form-inline" ng-submit="runGlobalSearch()">
-                <label>Search By: </label>
-                <div class="form-group">
-                    <select name="searchType" ng-model="global.search.searchType" class="form-control">
-                        <option ng-repeat="option in global.search.categories" value="{{option}}">{{option}}</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <input id="keywords-field" class="form-control" ng-model="global.search.query" autofocus="autofocus"/>
-                    <button class="btn btn-primary">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
-
-                <ds-user-login></ds-user-login>
-            </form>
-
-            <div class="navbar-collapse collapse navbar-right top" ng-class="global.navVisible === 1 ? 'display-block' : ''">
-                <ul class="nav navbar-nav">
-                    <li ui-sref-active="active">
-                        <a href ui-sref="home">
-                            <i class="fa fa-home"></i>
-                            Home
-                        </a>
-                    </li>
-                    <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
-                        <a href ui-sref="view({ firstName: session.firstName, lastName: session.lastName})">
-                            <i class="glyphicon glyphicon-eye-open"></i> Resume
-                        </a>
-                    </li>
-                    <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
-                        <a href ui-sref="projects">
-                            <i class="fa fa-edit"></i>
-                            Projects
-                        </a>
-                    </li>
-                    <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
-                        <a href ui-sref="skills">
-                            <i class="fa fa-edit"></i>
-                            Skills
-                        </a>
-                    </li>
-                    <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
-                        <a href ui-sref="admin">
-                            <i class="fa fa-edit"></i>
-                            Admin
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-
-
     </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">       
+      <div class="search-form">
+        <form class="form-inline" ng-submit="runGlobalSearch()">  
+             
+          <div class="form-group">
+            <label for="exampleInputName2">Search By:</label>
+            <select name="searchType" ng-model="global.search.searchType" class="form-control ">
+              <option ng-repeat="option in global.search.categories" value="{{option}}">{{option}}</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="exampleInputEmail2"></label>
+            <input id="keywords-field" class="form-control search-input" ng-model="global.search.query" autofocus="autofocus"/>
+          </div>
+      
+          <button type="submit" class="btn btn-default search-submit" type="button">
+            <span class="glyphicon glyphicon-search"></span> Search
+          </button>
+        
+          <div class="login-full-screen text-right">
+            <ds-user-login></ds-user-login>
+          </div>  
+          
+        </form>     
+      </div>
+             
+      <ul class="nav navbar-nav navbar-right user-small-screen">    
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li ng-if="isAuthorized(['editor','admin'])">
+              <a href ui-sref="home">
+                <i class="fa fa-home"></i>
+                Home
+              </a>
+            </li>
+            <li ng-if="isAuthorized(['editor','admin'])">
+              <a href ui-sref="view({ firstName: session.firstName, lastName: session.lastName})">
+                <i class="glyphicon glyphicon-eye-open"></i> 
+                Resume
+              </a>
+            </li>
+            <li ng-if="isAuthorized(['editor','admin'])">
+              <a href ui-sref="projects">
+                  <i class="fa fa-edit"></i>
+                  Projects
+              </a>
+            </li>
+            <li  ng-if="isAuthorized(['editor','admin'])">
+              <a href ui-sref="skills">
+                  <i class="fa fa-edit"></i>
+                  Skills
+              </a>
+            </li>
+            <li  ng-if="isAuthorized(['editor','admin'])">
+              <a href ui-sref="admin">
+                  <i class="fa fa-edit"></i>
+                  Admin
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <div class="row">
+                <div class="bottom text-center">
+                  <ds-user-login></ds-user-login>
+                </div>
+              </div>
+				    </li>
+          </ul>
+        </li>
+      </ul>  
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav>
+
+<div class="row ">
+  <div class="col-md-12 ">
+    <ul class="nav nav-pills user-nav">
+      <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
+        <a href ui-sref="home">
+          <i class="fa fa-home"></i>
+          Home
+        </a>
+      </li>
+      <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
+        <a href ui-sref="view({ firstName: session.firstName, lastName: session.lastName})">
+          <i class="glyphicon glyphicon-eye-open"></i> Resume
+        </a>
+      </li>
+      <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
+        <a href ui-sref="projects">
+          <i class="fa fa-edit"></i>
+          Projects
+        </a>
+      </li>
+      <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
+        <a href ui-sref="skills">
+          <i class="fa fa-edit"></i>
+          Skills
+        </a>
+      </li>
+      <li ui-sref-active="active" ng-if="isAuthorized(['editor','admin'])">
+        <a href ui-sref="admin">
+          <i class="fa fa-edit"></i>
+          Admin
+        </a>
+      </li>
+    </ul>        
+  </div>   
+</div>
+
