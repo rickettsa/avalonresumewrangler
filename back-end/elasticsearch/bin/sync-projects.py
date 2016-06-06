@@ -1,9 +1,13 @@
 
 #
 #   Reload projects from project files and update references in resumes to match.
-#FIXME:this is a temporary solution. Among other potential problems, this causes the system to be in an inconsistent state momentarily while resume ids are updated to refer to the new projects
 #
 #   Usage: python sync-projects.py <path to dir with JSON projects>
+#
+#FIXME:this is a temporary solution. Problems:
+#   - this causes the system to be in an inconsistent state momentarily while resume ids are updated to refer to the new projects (could just run sync at odd hours)
+#   - this requires resumes to reference only projects in salesforce (work on projects not found in SF can still be described in a resume). If we want to store projects that aren't synced with salesforce, we could use a flag in the project (e.g. 'synced': false) so the sync process doesn't delete it
+#   - projects have to be treated as read-only
 #
 import sys, os, glob
 from datetime import date
@@ -69,17 +73,22 @@ project_filenames = map(
     glob.glob(os.path.join(input_dir, '*.json'))
 )
 for project_filename in project_filenames:
-    project_id = project_filename[:-5]
     with open( os.path.join(input_dir, project_filename), 'r') as f:
         project = f.read()
 
         # update userIds
         updated_project = project_with_updated_userids(project)
 
+        json_project = json.loads(project)
+        project_id =json_project['salesforceRecordId']
+
         dl.create_or_update_project(updated_project, project_id)
 
 # Visit each resume, updating the ids for projects to match the new
 # projects that were just loaded
+#FIXME:
+#   This shouldn't be necessary after we get the ids to line up to begin with. This was initially done because there were fake projects that had been generated from resume project work descriptions. This code replaced the references to fake projects with references to new projects loaded from salesforce. Once fake projects are gone, resumes will have references to real projects only.
+#   *** Syncing new salesforce data will not require updating resume project id references because we now use official salesforce project identifiers that are unique and don't change ***
 r_list = dl.list_resumes()
 for r in r_list:
     res_id = r['_id']
@@ -100,7 +109,7 @@ for r in r_list:
                 # search for the project that best matches the client name from the resume
 
                 #FIXME:when resume has client name "Turtle Rattle Learning", dl.find_projects will match projects with client name "Cengage Learning"
-#                matching_projects = dl.find_projects(client_name=client_name)['hits']
+                #matching_projects = dl.find_projects(client_name=client_name)['hits']
 
                 #FIXME:I can index project.clientName as not_analyzed. But this requires salesforce client names to exactly match the client names in the resumes.
                 #project_query = { "query": { "match": { "clientName.raw": client_name } } }
@@ -115,6 +124,10 @@ for r in r_list:
                     resume['_source']['employmentHistory'][i]['positions'][j]['clientProjectId'] = project_id
                     update_resume = True
                     print "update resume (id:", res_id, "); client name is '", client_name + "' and project id is ", project_id
+                else:
+                    # if none of the new projects match, remove clientProjectId
+                    del resume['_source']['employmentHistory'][i]['positions'][j]['clientProjectId']
+                    update_resume = True
 
     if update_resume:
         dl.create_or_update_resume(resume['_source'], res_id)

@@ -214,16 +214,17 @@ class ESDataLayer(DataLayer):
                     for pp in project['_source']['positions']:
                         position_fillers = pp['filledBy']
                         for filler in position_fillers:
-                            # if project job position was filled by user owning resume...
-                            if filler['userId'] == resume['_source']['userId']:
-                                # check if project position skills meet target criteria
-                                lc_pos_skills = map(lambda x: x.lower(), pp['positionSkills'])
-                                if filter( lambda x: x in lc_pos_skills, all_matching_skills ):
-                                    output_jobs.append(rp)
+                            if 'userId' in filler:
+#FIXME:project positions.filledBy.userId can be missing. This happens when SF data has userFullName values for users that don't exist in the system. This can happen for recent hires or temp help but also for existing users whose names have been spelled differently (abe vs abraham). Using userFullName to identify users causes the second problem (need to use email). The first problem could be solved by having sync-projects.py add new users as it adds projects. However, perhaps that isn't a good idea. We don't need temp consultants in the system at all and if there's a new hire, he should enter the system through the frontend when his resume is added. He'll start appearing in searches the next time projects are synced.
+                                # if project job position was filled by user owning resume...
+                                if filler['userId'] == resume['_source']['userId']:
+                                    # check if project position skills meet target criteria
+                                    lc_pos_skills = map(lambda x: x.lower(), pp['positionSkills'])
+                                    if filter( lambda x: x in lc_pos_skills, all_matching_skills ):
+                                        output_jobs.append(rp)
             resume['_source']['employmentHistory'][i] = {
                 'positions': output_jobs,
-                #FIXME:change serviceProviderOrgName to employerOrgName
-                'serviceProviderOrgName': employmentHistory[i]['serviceProviderOrgName']
+                'employerOrgName': employmentHistory[i]['employerOrgName']
             }
         return resume
 
