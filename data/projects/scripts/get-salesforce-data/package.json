@@ -1,0 +1,16 @@
+{
+  "name": "get-salesforce-data",
+  "version": "1.0.0",
+  "description": "Retrieves salesforce data for use in resume wrangler. Initially, it will download project and assignment data.",
+  "main": "get-salesforce-data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abraham Becker",
+  "license": "ISC",
+  "dependencies": {
+    "jsforce": "^1.6.5",
+    "lodash": "^4.13.1",
+    "moment": "^2.13.0"
+  }
+}

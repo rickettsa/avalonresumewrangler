@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 var Converter = require("csvtojson").Converter;
 var _ = require("lodash");
-var async = require("async");
 var file = require("fs");
 var moment = require("moment");
 
