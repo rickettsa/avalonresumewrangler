@@ -7,4 +7,4 @@ vagrant/deps
 vagrant/front-end/build
 vagrant/front-end/node_modules
 vagrant/front-end/bower_components
-
+vagrant/jenkins/jenkins_clean

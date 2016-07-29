@@ -30,3 +30,8 @@
     shell: python import_skills.py {{ git_root }}/data/skills.json chdir={{ git_root }}/back-end/elasticsearch/bin
     environment:
       RW_GIT_BASE_DIR: "{{ git_root }}"
+
+  - name: Load project data into Elasticsearch
+    shell: python sync-projects.py {{ git_root }}/data/projects/toLoad chdir={{ git_root }}/back-end/elasticsearch/bin
+    environment:
+      RW_GIT_BASE_DIR: "{{ git_root }}"

@@ -1,3 +1,3 @@
-apache_listen_port: 4567
+#apache_listen_port: 4567
 apache_vhosts:
-  - {servername: "resumewrangler.com", documentroot: "/var/www/vhosts/resumeWrangler"}
+  - {servername: "wrangler.example.com", documentroot: "/var/www/vhosts/resumeWrangler"}
